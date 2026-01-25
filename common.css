@@ -20,10 +20,6 @@ html:not(.fonts-loaded) {
     visibility: hidden;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 :root {
     /* Colors */
     --bg-color: #080808;
