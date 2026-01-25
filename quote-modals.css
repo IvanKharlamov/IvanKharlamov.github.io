@@ -1,0 +1,243 @@
+/* quote-modals.css - Styling for quote request modals */
+
+/* Quote Modal Base Styles */
+.quote-modal-body {
+    padding: 40px;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+.quote-modal-header {
+    margin-bottom: 30px;
+}
+
+.quote-modal-header h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.quote-modal-header p {
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+
+/* Quote Form Styles */
+.quote-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.quote-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.quote-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.quote-form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.quote-form-label {
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.quote-form-label .required {
+    color: var(--accent);
+    margin-left: 2px;
+}
+
+.quote-form-input,
+.quote-form-textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-size: 1rem;
+    color: #fff;
+    transition: all 0.3s ease;
+    font-family: var(--font-body);
+}
+
+.quote-form-textarea {
+    resize: none;
+    min-height: 100px;
+}
+
+.quote-form-input:focus,
+.quote-form-textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.1);
+}
+
+.quote-form-input::placeholder,
+.quote-form-textarea::placeholder {
+    color: var(--text-muted);
+}
+
+/* Cart Items Summary */
+.quote-cart-summary {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.quote-cart-summary h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+#quote-cart-items-summary table {
+    font-size: 0.9rem;
+}
+
+#quote-cart-items-summary td,
+#quote-cart-items-summary th {
+    vertical-align: middle;
+}
+
+#quote-cart-items-summary img {
+    flex-shrink: 0;
+}
+
+/* Form Footer */
+.quote-form-footer {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid var(--glass-border);
+}
+
+.quote-form-footer .btn {
+    min-width: 140px;
+}
+
+/* Success Modal */
+.success-modal-content {
+    max-width: 500px;
+    text-align: center;
+    padding: 60px 40px;
+}
+
+.success-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 30px;
+    background: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: successPulse 0.6s ease-out;
+}
+
+@keyframes successPulse {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.success-icon svg {
+    width: 50px;
+    height: 50px;
+    stroke: #fff;
+    stroke-width: 3;
+}
+
+.success-modal-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+.success-modal-content p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.success-modal-content .btn {
+    min-width: 120px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .quote-modal-body {
+        padding: 30px 15px;
+		max-height: unset;
+    }
+
+    .quote-form-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .quote-modal-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .quote-cart-summary {
+        padding: 15px;
+    }
+
+    #quote-cart-items-summary {
+        overflow-x: auto;
+    }
+
+    #quote-cart-items-summary table {
+        font-size: 0.8rem;
+    }
+
+    #quote-cart-items-summary img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .success-modal-content {
+        padding: 40px 20px;
+    }
+
+    .quote-form-footer {
+        flex-direction: column;
+    }
+
+    .quote-form-footer .btn {
+        width: 100%;
+    }
+}
+
+/* Input validation states */
+.quote-form-input:invalid:not(:placeholder-shown),
+.quote-form-textarea:invalid:not(:placeholder-shown) {
+    border-color: rgba(239, 68, 68, 0.5);
+}
+
+.quote-form-input:valid:not(:placeholder-shown),
+.quote-form-textarea:valid:not(:placeholder-shown) {
+    border-color: rgba(16, 185, 129, 0.3);
+}

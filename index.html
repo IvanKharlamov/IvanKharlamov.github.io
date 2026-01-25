@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upstage | Alquiler Premium de Producción de Eventos</title>
+    <meta name="description" content="Equipo premium de iluminación, sonido y escenario para eventos profesionales en Madrid.">
+    <link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="quote-modals.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <script src="block-render.js"></script>
+    <div id="app">
+        <header class="site-header">
+            <div class="container header-inner">
+                <a href="#" class="logo">UPSTAGE<span class="dot">.</span></a>
+                
+                <!-- Desktop Navigation -->
+                <nav class="main-nav desktop-nav">
+                    <div class="nav-links">
+                        <a href="#" class="nav-link" style="color:#fff;" data-i18n="nav.home">El Homo</a>
+                        <a href="inventory.html" class="nav-link" data-i18n="nav.catalog">Catálogo</a>
+                        <button class="btn-icon" id="cart-toggle" style="padding: 10px;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
+                            <span class="cart-badge" id="cart-count">0</span>
+                        </button>
+                    </div>
+                </nav>
+                
+                <!-- Desktop Actions -->
+                <div class="header-actions desktop-actions">
+                    <div class="lang-switch">
+                        <span class="lang-opt" data-lang="en">EN</span>
+                        <span class="divider">/</span>
+                        <span class="lang-opt active" data-lang="es">ES</span>
+                    </div>
+                    <a href="#contact" class="btn btn-primary" data-i18n="btn.getQuote">Pedir Presupuesto</a>
+                </div>
+                
+                <!-- Mobile Actions -->
+                <div class="mobile-actions">
+                    <button class="btn-icon" id="cart-toggle-mobile">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                        <span class="cart-badge" id="cart-count-mobile">0</span>
+                    </button>
+                    <button class="menu-toggle" id="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu-header">
+                <span class="logo"></span>
+                <button class="close-mobile-menu" id="close-mobile-menu">&times;</button>
+            </div>
+            <nav class="mobile-menu-nav">
+                <a href="#" class="mobile-nav-link" data-i18n="nav.home">El Homo</a>
+                <a href="inventory.html" class="mobile-nav-link" data-i18n="nav.catalog">Catálogo</a>
+                <a href="#contact" class="mobile-nav-link btn btn-primary" data-i18n="btn.getQuote">Pedir Presupuesto</a>
+            </nav>
+            <div class="mobile-menu-footer">
+                <div class="lang-switch">
+                    <span class="lang-opt" data-lang="en">EN</span>
+                    <span class="divider">/</span>
+                    <span class="lang-opt active" data-lang="es">ES</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="hero-section">
+			<div class="hero-video-container">
+				<video id="heroVideo" class="hero-video" autoplay muted playsinline>
+					<source src="assets/video/VideoHeaderStart.webm" type="video/webm">
+				</video>
+				<video id="heroVideoPreload" preload="auto" muted playsinline style="display:none">
+					<source src="assets/video/VideoHeaderLoop.webm" type="video/webm">
+				</video>
+			</div>
+            <div class="hero-mask-container">
+                <div class="hero-content-mask">
+                    <canvas id="hero-canvas"></canvas>
+                    <h1 class="hero-title-large" data-i18n="hero.title">ELEVA<br>TU<br>PRODUCCIÓN</h1>
+                </div>
+            </div>
+            <div class="hero-outline-container">
+                <div class="hero-content-outline">
+                    <h1 class="hero-title-large outline-text" data-i18n="hero.title">ELEVA<br>TU<br>PRODUCCIÓN</h1>
+                </div>
+            </div>
+            <canvas id="hero-canvas-solid"></canvas>
+            <div class="hero-ui-overlay">
+                <p class="hero-ui-subtitle" data-i18n="hero.subtitle">iluminación, sonido y equipo de escenario</p>
+                <a href="inventory.html" class="btn btn-primary" data-i18n="hero.browse">Ver Catálogo</a>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2 class="section-title"><span data-i18n="services.title">Nuestros</span> <span class="text-gradient"
+                        data-i18n="services.titleHighlight">Servicios</span></h2>
+                <p class="section-subtitle" data-i18n="services.subtitle">Más que equipo. Soluciones integrales de producción.</p>
+
+                <div class="services-grid">
+                    <div class="glass-card service-card">
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                </path>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="services.rental.title">Alquiler de Equipo</h3>
+                        <p data-i18n="services.rental.desc">Accede a nuestro inventario masivo de iluminación, audio y video de última generación.</p>
+                    </div>
+
+                    <div class="glass-card service-card">
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="services.production.title">Producción en Vivo</h3>
+                        <p data-i18n="services.production.desc">Producción técnica llave en mano para conciertos, eventos corporativos y festivales.</p>
+                    </div>
+
+                    <div class="glass-card service-card">
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="services.design.title">Diseño de Sistemas</h3>
+                        <p data-i18n="services.design.desc">Diseño de sistemas de iluminación y audio asistido por CAD.</p>
+                    </div>
+
+                    <div class="glass-card service-card">
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path
+                                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="services.support.title">Soporte Técnico</h3>
+                        <p data-i18n="services.support.desc">Técnicos expertos disponibles para contratar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <h2 class="section-title" style="text-align: left;"><span data-i18n="about.title">Quiénes</span>
+                            <span class="text-gradient" data-i18n="about.titleHighlight">Somos</span>
+                        </h2>
+                        <p class="about-text" data-i18n="about.text1">
+                            Fundada en 2015, Upstage ha sido el socio silencioso detrás de eventos icónicos.
+                        </p>
+                        <p class="about-text" data-i18n="about.text2">
+                            Nuestro inventario se mantiene meticulosamente.
+                        </p>
+                        <a href="javascript:void(0)" id="btn-meet-team" class="btn btn-outline"
+                            style="margin-top: 20px;" data-i18n="about.meetTeam">Conoce al Equipo</a>
+                    </div>
+
+                    <!-- About Image Gallery -->
+                    <div class="about-gallery">
+                        <div class="gallery-item glass-card">
+                            <div class="gallery-img-placeholder"
+                                style="background-image: url('assets/images/warehouse.png');">
+                                <span data-i18n="about.gallery.warehouse">Almacén</span>
+                            </div>
+                        </div>
+                        <div class="gallery-item glass-card">
+                            <div class="gallery-img-placeholder"
+                                style="background-image: url('assets/images/newpics/Production.jpg');">
+                                <span data-i18n="about.gallery.production">Producción</span>
+                            </div>
+                        </div>
+                        <div class="gallery-item glass-card">
+                            <div class="gallery-img-placeholder"
+                                style="background-image: url('assets/images/newpics/Equipment.jpg');">
+                                <span data-i18n="about.gallery.equipment">Equipo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section id="partners" class="partners-section">
+            <div class="container">
+                <h2 class="section-title"><span data-i18n="partners.title">Trabajamos</span> <span class="text-gradient"
+                        data-i18n="partners.titleHighlight">Con</span></h2>
+                <div class="partners-grid" style="margin-top: 3rem;">
+                    <div class="partners-logo-row">
+                        <img src="assets/images/PNG2/logo.png" alt="Partner Logo" class="partner-logo">
+                        <img src="assets/images/PNG2/logo.png" alt="Partner Logo" class="partner-logo">
+                        <img src="assets/images/PNG2/logo.png" alt="Partner Logo" class="partner-logo">
+                        <img src="assets/images/PNG2/logo.png" alt="Partner Logo" class="partner-logo">
+                        <img src="assets/images/PNG2/logo.png" alt="Partner Logo" class="partner-logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews" class="reviews-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span data-i18n="reviews.title">Reseñas de</span>
+                    <span class="text-gradient" data-i18n="reviews.titleHighlight">Clientes</span>
+                </h2>
+
+                <div class="reviews-carousel">
+                    <button class="carousel-btn prev" id="prev-review" aria-label="Reseña Anterior">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+
+                    <div class="reviews-track" id="reviews-track">
+                        <div class="review-card">
+                            <div class="review-avatar">
+                                <img src="assets/images/PNG2/logoletter.png" alt="Avatar de Usuario">
+                            </div>
+                            <p class="review-quote" data-i18n="review.1.quote">El equipo fue de primera calidad y el soporte técnico impecable.</p>
+                            <p class="review-author">Sarah Jenkins</p>
+                            <p class="review-company" data-i18n="review.1.company">Directora del Festival de Música Horizon</p>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-avatar">
+                                <img src="assets/images/PNG2/logoletter.png" alt="Avatar de Usuario">
+                            </div>
+                            <p class="review-quote" data-i18n="review.2.quote">Equipo fiable, personal profesional y tarifas competitivas.</p>
+                            <p class="review-author">Mark Rosales</p>
+                            <p class="review-company" data-i18n="review.2.company">Gerente de Operaciones en TechPulse Global</p>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-avatar">
+                                <img src="assets/images/PNG2/logoletter.png" alt="Avatar de Usuario">
+                            </div>
+                            <p class="review-quote" data-i18n="review.3.quote">La mejor empresa de alquiler de la ciudad, sin discusión.</p>
+                            <p class="review-author">David Vane</p>
+                            <p class="review-company" data-i18n="review.3.company">Diseñador principal en Vane Creative Studios</p>
+                        </div>
+                    </div>
+
+                    <button class="carousel-btn next" id="next-review" aria-label="Siguiente Reseña">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </button>
+
+                    <div class="carousel-nav">
+                        <div class="carousel-dots" id="carousel-dots"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title"><span data-i18n="contact.title">Ponte en</span> <span class="text-gradient"
+                        data-i18n="contact.titleHighlight">Contacto</span></h2>
+                <p class="section-subtitle" data-i18n="contact.subtitle">Completa el formulario y te contactaremos pronto.</p>
+                
+                <div class="contact-grid">
+                    <div class="glass-card contact-container">
+                        <form id="contact-form" class="quote-form">
+                            <div class="quote-form-row">
+                                <div class="quote-form-group">
+                                    <label for="contact-name" class="quote-form-label">
+                                        <span data-i18n="quote.form.fullName">Nombre Completo</span>
+                                        <span class="required">*</span>
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="contact-name"
+                                        class="quote-form-input" 
+                                        required
+                                        data-i18n-placeholder="quote.form.fullName"
+                                    >
+                                </div>
+
+                                <div class="quote-form-group">
+                                    <label for="contact-phone" class="quote-form-label">
+                                        <span data-i18n="quote.form.phone">Número de Teléfono</span>
+                                        <span class="required">*</span>
+                                    </label>
+                                    <input 
+                                        type="tel" 
+                                        id="contact-phone"
+                                        class="quote-form-input" 
+                                        required
+                                        data-i18n-placeholder="quote.form.phone"
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="quote-form-group full-width">
+                                <label for="contact-email" class="quote-form-label">
+                                    <span data-i18n="quote.form.email">Correo Electrónico</span>
+                                    <span class="required">*</span>
+                                </label>
+                                <input 
+                                    type="email" 
+                                    id="contact-email"
+                                    class="quote-form-input" 
+                                    required
+                                    data-i18n-placeholder="quote.form.email"
+                                >
+                            </div>
+
+                            <div class="quote-form-group full-width">
+                                <label for="contact-org" class="quote-form-label">
+                                    <span data-i18n="quote.form.organization">Organización / Empresa</span>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="contact-org"
+                                    class="quote-form-input" 
+                                    data-i18n-placeholder="quote.form.organization"
+                                >
+                            </div>
+
+                            <div class="quote-form-group full-width">
+                                <label for="contact-project" class="quote-form-label">
+                                    <span data-i18n="quote.form.project">Nombre del Proyecto / Evento</span>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="contact-project"
+                                    class="quote-form-input" 
+                                    data-i18n-placeholder="quote.form.project"
+                                >
+                            </div>
+
+                            <div class="quote-form-group full-width">
+                                <label for="contact-message" class="quote-form-label">
+                                    <span data-i18n="quote.form.message">Mensaje</span>
+                                    <span class="required">*</span>
+                                </label>
+                                <textarea 
+                                    id="contact-message"
+                                    class="quote-form-textarea" 
+                                    required
+                                    rows="5"
+                                    data-i18n-placeholder="quote.form.message"
+                                ></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" data-i18n="quote.form.submit">
+                                Enviar Solicitud
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <div class="footer-brand">
+                    <a href="#" class="logo">UPSTAGE<span class="dot">.</span></a>
+                    <p class="footer-desc" data-i18n="footer.desc">Equipo premium de iluminación, sonido y escenario.</p>
+                </div>
+                <div class="footer-contact">
+                    <div class="footer-contact-item">
+                        <h4 data-i18n="contact.hq">Sede Central</h4>
+                        <p>Calle san Mames 36 madrid 28021</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <h4 data-i18n="contact.phone">Teléfono</h4>
+                        <p>+34 635 906 577</p>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <span data-i18n="footer.copyright">© 2026 Upstage Rentals. All rights reserved.</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Cart Drawer (Shared Component) -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3 data-i18n="cart.title">Tu Presupuesto</h3>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <div class="empty-cart-msg" data-i18n="cart.empty">Tu presupuesto está vacío.</div>
+        </div>
+        <div class="cart-footer">
+            <p class="cart-discount-notice" data-i18n="cart.discountNotice">Contacta para descuento personal de hasta 40%</p>
+            <div class="cart-total">
+                <span data-i18n="cart.estimatedTotal">Total Estimado:</span>
+                <span id="cart-total-price">€0</span>
+            </div>
+            <button class="btn btn-primary btn-block" id="btn-request-quote" data-i18n="cart.requestQuote">Solicitar Presupuesto</button>
+        </div>
+    </div>
+	
+	<div class="modal-overlay" id="general-quote-modal">
+		<div class="modal-content glass-card" style="max-width: 700px;">
+			<button class="close-modal" id="close-general-quote">&times;</button>
+			<div class="quote-modal-body">
+				<div class="quote-modal-header">
+					<h2 data-i18n="quote.modal.title">Solicitar Presupuesto</h2>
+					<p data-i18n="quote.modal.subtitle">Completa tus datos y te enviaremos un presupuesto personalizado.</p>
+				</div>
+
+				<form id="general-quote-form" class="quote-form">
+					<div class="quote-form-row">
+						<div class="quote-form-group">
+							<label for="general-quote-name" class="quote-form-label">
+								<span data-i18n="quote.form.fullName">Nombre Completo</span>
+								<span class="required">*</span>
+							</label>
+							<input 
+								type="text" 
+								id="general-quote-name" 
+								class="quote-form-input" 
+								required
+								data-i18n-placeholder="quote.form.fullName"
+							>
+						</div>
+
+						<div class="quote-form-group">
+							<label for="general-quote-phone" class="quote-form-label">
+								<span data-i18n="quote.form.phone">Número de Teléfono</span>
+								<span class="required">*</span>
+							</label>
+							<input 
+								type="tel" 
+								id="general-quote-phone" 
+								class="quote-form-input" 
+								required
+								data-i18n-placeholder="quote.form.phone"
+							>
+						</div>
+					</div>
+
+					<div class="quote-form-group full-width">
+						<label for="general-quote-email" class="quote-form-label">
+							<span data-i18n="quote.form.email">Correo Electrónico</span>
+							<span class="required">*</span>
+						</label>
+						<input 
+							type="email" 
+							id="general-quote-email" 
+							class="quote-form-input" 
+							required
+							data-i18n-placeholder="quote.form.email"
+						>
+					</div>
+
+					<div class="quote-form-group full-width">
+						<label for="general-quote-org" class="quote-form-label">
+							<span data-i18n="quote.form.organization">Organización / Empresa</span>
+						</label>
+						<input 
+							type="text" 
+							id="general-quote-org" 
+							class="quote-form-input" 
+							data-i18n-placeholder="quote.form.organization"
+						>
+					</div>
+
+					<div class="quote-form-group full-width">
+						<label for="general-quote-project" class="quote-form-label">
+							<span data-i18n="quote.form.project">Nombre del Proyecto / Evento</span>
+						</label>
+						<input 
+							type="text" 
+							id="general-quote-project" 
+							class="quote-form-input" 
+							data-i18n-placeholder="quote.form.project"
+						>
+					</div>
+
+					<div class="quote-form-group full-width">
+						<label for="general-quote-message" class="quote-form-label">
+							<span data-i18n="quote.form.message">Mensaje</span>
+							<span class="required">*</span>
+						</label>
+						<textarea 
+							id="general-quote-message" 
+							class="quote-form-textarea" 
+							required
+							rows="5"
+							data-i18n-placeholder="quote.form.message"
+						></textarea>
+					</div>
+
+					<div class="quote-form-footer">
+						<button type="button" class="btn btn-outline" id="cancel-general-quote">
+							<span data-i18n="quote.form.cancel">Cancelar</span>
+						</button>
+						<button type="submit" class="btn btn-primary">
+							<span data-i18n="quote.form.submit">Enviar Solicitud</span>
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cart Quote Modal (triggered from cart) -->
+	<div class="modal-overlay" id="cart-quote-modal">
+		<div class="modal-content glass-card" style="max-width: 900px;">
+			<button class="close-modal" id="close-cart-quote">&times;</button>
+			<div class="quote-modal-body">
+				<div class="quote-modal-header">
+					<h2 data-i18n="quote.modal.title">Solicitar Presupuesto</h2>
+					<p data-i18n="quote.modal.subtitle">Completa tus datos y te enviaremos un presupuesto personalizado.</p>
+				</div>
+
+				<!-- Cart Items Summary -->
+				<div class="quote-cart-summary">
+					<h3 data-i18n="quote.cart.yourItems">Tus Artículos</h3>
+					<div id="quote-cart-items-summary">
+						<!-- Cart items will be injected here by JavaScript -->
+					</div>
+				</div>
+
+				<form id="cart-quote-form" class="quote-form">
+					<div class="quote-form-row">
+						<div class="quote-form-group">
+							<label for="cart-quote-name" class="quote-form-label">
+								<span data-i18n="quote.form.fullName">Nombre Completo</span>
+								<span class="required">*</span>
+							</label>
+							<input 
+								type="text" 
+								id="cart-quote-name" 
+								class="quote-form-input" 
+								required
+								data-i18n-placeholder="quote.form.fullName"
+							>
+						</div>
+
+						<div class="quote-form-group">
+							<label for="cart-quote-phone" class="quote-form-label">
+								<span data-i18n="quote.form.phone">Número de Teléfono</span>
+								<span class="required">*</span>
+							</label>
+							<input 
+								type="tel" 
+								id="cart-quote-phone" 
+								class="quote-form-input" 
+								required
+								data-i18n-placeholder="quote.form.phone"
+							>
+						</div>
+					</div>
+
+					<div class="quote-form-group full-width">
+						<label for="cart-quote-email" class="quote-form-label">
+							<span data-i18n="quote.form.email">Correo Electrónico</span>
+							<span class="required">*</span>
+						</label>
+						<input 
+							type="email" 
+							id="cart-quote-email" 
+							class="quote-form-input" 
+							required
+							data-i18n-placeholder="quote.form.email"
+						>
+					</div>
+
+					<div class="quote-form-group full-width">
+						<label for="cart-quote-org" class="quote-form-label">
+							<span data-i18n="quote.form.organization">Organización / Empresa</span>
+						</label>
+						<input 
+							type="text" 
+							id="cart-quote-org" 
+							class="quote-form-input" 
+							data-i18n-placeholder="quote.form.organization"
+						>
+					</div>
+
+					<div class="quote-form-group full-width">
+						<label for="cart-quote-project" class="quote-form-label">
+							<span data-i18n="quote.form.project">Nombre del Proyecto / Evento</span>
+						</label>
+						<input 
+							type="text" 
+							id="cart-quote-project" 
+							class="quote-form-input" 
+							data-i18n-placeholder="quote.form.project"
+						>
+					</div>
+
+					<div class="quote-form-group full-width">
+						<label for="cart-quote-additional" class="quote-form-label">
+							<span data-i18n="quote.form.additionalInfo">Información Adicional</span>
+						</label>
+						<textarea 
+							id="cart-quote-additional" 
+							class="quote-form-textarea" 
+							rows="4"
+							data-i18n-placeholder="quote.form.additionalInfo"
+						></textarea>
+					</div>
+
+					<div class="quote-form-footer">
+						<button type="button" class="btn btn-outline" id="cancel-cart-quote">
+							<span data-i18n="quote.form.cancel">Cancelar</span>
+						</button>
+						<button type="submit" class="btn btn-primary">
+							<span data-i18n="quote.form.submit">Enviar Solicitud</span>
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Success Modal -->
+	<div class="modal-overlay" id="quote-success-modal">
+		<div class="modal-content glass-card success-modal-content">
+			<button class="close-modal" id="close-success-modal">&times;</button>
+			
+			<div class="success-icon">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+					<polyline points="20 6 9 17 4 12"></polyline>
+				</svg>
+			</div>
+			
+			<h2 data-i18n="quote.success.title">¡Solicitud Enviada!</h2>
+			<p data-i18n="quote.success.message">
+				Gracias por tu solicitud. Te contactaremos pronto con un presupuesto personalizado.
+			</p>
+			
+			<button class="btn btn-primary" onclick="document.getElementById('quote-success-modal').classList.remove('active')">
+				OK
+			</button>
+		</div>
+	</div>
+
+    <!-- Team Fullscreen Modal -->
+    <div class="team-modal" id="team-modal">
+        <button class="close-team-modal" id="close-team-modal">&times;</button>
+        <div class="team-modal-content">
+            <img src="assets/images/Team/team.jpg" alt="Equipo Upstage">
+        </div>
+    </div>
+
+    <!-- IMPORTANT: Load scripts in correct order -->
+    <script src="translations.js"></script>
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+    <script src="common.js"></script>
+    <script src="index.js"></script>
+	<script src="quote-forms.js"></script>
+</body>
+
+</html>
