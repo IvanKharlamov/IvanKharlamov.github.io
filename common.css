@@ -16,10 +16,6 @@
     font-display: swap;
 }
 
-html:not(.fonts-loaded) {
-    visibility: hidden;
-}
-
 :root {
     /* Colors */
     --bg-color: #080808;
