@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Auto remove
         const timeout = setTimeout(() => {
             removeToast(toast);
-        }, 4000);
+        }, 40000);
 
         // Close button
         toast.querySelector('.toast-close').addEventListener('click', () => {

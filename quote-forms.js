@@ -195,17 +195,17 @@ class QuoteFormsManager {
 
             html += `
                 <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                    <td style="padding: 15px 10px;">
+                    <td style="padding: 15px 0;">
                         <div style="display: flex; align-items: center; gap: 10px;">
                             <img src="${product.image}" alt="${displayName}" style="width: 40px; height: 40px; object-fit: contain; background: #000; border-radius: 4px;">
                             <span style="font-size: 0.9rem;"><b>${displayName}</b> &times; ${item.quantity}</span>
                         </div>
                     </td>
-                    <td style="padding: 15px 10px; text-align: center; font-size: 0.85rem;">
+                    <td style="padding: 15px 0; text-align: center; font-size: 0.85rem;">
                         ${startDate} → ${endDate}
                         <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 4px;">${item.days} ${this.t('cart.days')}</div>
                     </td>
-                    <td style="padding: 15px 10px; text-align: right; font-weight: 600; color: var(--secondary);">${priceDisplay}</td>
+                    <td style="padding: 15px 0; text-align: right; font-weight: 600; color: var(--secondary);">${priceDisplay}</td>
                 </tr>
             `;
         });

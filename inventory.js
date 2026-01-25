@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const grid = document.getElementById('product-grid');
         if (!grid) return;
 
-        const currentLang = window.currentLang || 'en';
+        const currentLang = window.currentLang || 'es';
 
         if (items.length === 0) {
             grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;">${t('catalog.empty')}</div>`;
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Filter Logic
     window.applyFilters = function () {
-        const currentLang = window.currentLang || 'en';
+        const currentLang = window.currentLang || 'es';
         let filtered = window.products.filter(product => {
             const displayName = product.name[currentLang];
             const matchesSearch = displayName.toLowerCase().includes(searchTerm.toLowerCase()) ||

@@ -53,7 +53,8 @@ canvas {
     font-size: 8vw;
     font-weight: 900;
     line-height: 1;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
+    font-family: var(--font-body);
 }
 
 .hero-outline-container {
@@ -101,7 +102,16 @@ canvas {
     gap: 20px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+	.hero-title-large {
+		font-size: 13vw;
+		margin-bottom: 20vw;
+	}
+
+	.hero-ui-subtitle {
+		font-size: 1rem;
+	}
+
     .services-grid {
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     }
@@ -375,7 +385,7 @@ canvas {
     right: -50px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .carousel-btn.prev {
         left: 0;
     }
@@ -415,7 +425,7 @@ canvas {
     margin: 0 auto;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .contact-container {
         padding: 30px 20px;
     }

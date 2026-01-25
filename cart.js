@@ -448,7 +448,7 @@ class CartUI {
         if (!this.itemsContainer) return;
 
         const items = this.cartManager.getItems();
-        const currentLang = window.currentLang || 'en';
+        const currentLang = window.currentLang || 'es';
 
         if (items.length === 0) {
             const isOnCatalog = window.location.pathname.includes('inventory.html');

@@ -336,7 +336,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			const lines = sourceTitle.innerHTML.split(/<br\s*\/?>/i);
 			const fs = parseFloat(s.fontSize);
 
-			ctxsolid.font = `${s.fontWeight} ${s.fontSize} "Outfit", sans-serif`;
+			ctxsolid.font = `${s.fontWeight} ${s.fontSize} "Inter", sans-serif`;
 			ctxsolid.textAlign = "center";
 			ctxsolid.textBaseline = "middle";
 			ctxsolid.letterSpacing = s.letterSpacing;
@@ -344,7 +344,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			ctxsolid.globalCompositeOperation = 'destination-out';
 				
 			const x = width / 2;
-			const yBase = (rectT.top + rectT.height / 2) - rectC.top + (fs * 0.08);
+			const yBase = (rectT.top + rectT.height / 2) - rectC.top + (fs * 0.06);
 			const lh = parseFloat(s.lineHeight) || fs;
 
 			lines.forEach((line, i) => {
