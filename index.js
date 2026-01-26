@@ -336,9 +336,17 @@ document.addEventListener('DOMContentLoaded', () => {
 		};
 
         window.addEventListener('resize', init);
-		window.addEventListener('mousemove', e => {
+		window.addEventListener('pointermove', e => {
+			if (e.pointerType === 'mouse' || e.pointerType === 'touch') {
+				const r = canvas.getBoundingClientRect();
+				updateMousePos(e.clientX - r.left, e.clientY - r.top);
+			}
+		});
+
+		window.addEventListener('pointerdown', e => {
 			const r = canvas.getBoundingClientRect();
 			updateMousePos(e.clientX - r.left, e.clientY - r.top);
+			isIn = true;
 		});
 		const updateMousePos = (x, y) => {
 			mouse.x = x;
