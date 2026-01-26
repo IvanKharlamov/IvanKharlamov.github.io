@@ -218,34 +218,22 @@ window.TRANSLATIONS_RAW = {
     "en": "Quote Request Submitted Successfully! We will contact you shortly.",
     "es": "¡Solicitud de Presupuesto Enviada! Te contactaremos pronto."
   },
-
   "review.1.quote": {
-    "en": "The equipment was top-notch and the technical support flawless.",
-    "es": "El equipo fue de primera calidad y el soporte técnico impecable."
+    "en": "Technicians arrived high, asked for pocket money, and tried to trade a microphone for crack.",
+    "es": "Los técnicos llegaron colocados, pidieron dinero suelto e intentaron cambiar un micrófono por crack."
   },
-  "review.1.company": {
-    "en": "Director at Horizon Music Festival",
-    "es": "Directora del Festival de Música Horizon"
-  },
-
   "review.2.quote": {
-    "en": "Reliable gear, professional staff, and competitive rates.",
-    "es": "Equipo fiable, personal profesional y tarifas competitivas."
+    "en": "The crew kept disappearing one by one to “take calls,” then came back shitfaced, despite not having phones on them at any point.",
+    "es": "El equipo desaparecía de uno en uno para “hacer llamadas” y volvía completamente borracho, a pesar de no llevar teléfonos encima en ningún momento."
   },
-  "review.2.company": {
-    "en": "Ops Manager at TechPulse Global",
-    "es": "Gerente de Operaciones en TechPulse Global"
-  },
-
   "review.3.quote": {
-    "en": "Best rental house in the city, hands down.",
-    "es": "La mejor empresa de alquiler de la ciudad, sin discusión."
+    "en": "They tried to get me to take photos of my balls for “documentation purposes,” which was confusing and a tiny bit intrusive.",
+    "es": "Intentaron que me hiciera fotos de los huevos por “motivos de documentación”, lo cual fue confuso y un poquito invasivo."
   },
-  "review.3.company": {
-    "en": "Lead Designer at Vane Creative Studios",
-    "es": "Diseñador principal en Vane Creative Studios"
+  "review.4.quote": {
+    "en": "They packed up early because the sound designer shat himself and declared the venue acoustically hostile.",
+    "es": "Recogieron antes de tiempo porque el diseñador de sonido se cagó encima y declaró el recinto acústicamente hostil."
   },
-
   "footer.desc": {
     "en": "Premium lighting, sound, and stage equipment.",
     "es": "Equipo premium de iluminación, sonido y escenario."
