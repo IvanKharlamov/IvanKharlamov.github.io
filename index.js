@@ -1,13 +1,80 @@
 // Index JS: Hero Animation, Reviews, Team Modal
 
 document.addEventListener('DOMContentLoaded', () => {
-	const video = document.getElementById("heroVideo");
-
-	video.addEventListener("ended", function() {
-		video.src = "assets/video/VideoHeaderLoop.webm";
-		video.loop = true;
-		video.play();
+	const heroVideo = document.getElementById("heroVideo");
+	const tileCanvas = document.getElementById("hero-video-tile");
+	const tctx = tileCanvas.getContext("2d");
+	let isLoopVideo = false;
+	
+	heroVideo.addEventListener("ended", () => {
+		isLoopVideo = true;
+		heroVideo.src = "assets/video/VideoHeaderLoop.webm";
+		heroVideo.loop = true;
+		heroVideo.play();
 	}, { once: true });
+	heroVideo.addEventListener("play", () => {
+		drawVideoBackground();
+	}, { once: true });
+	
+	function drawVideoBackground() {
+		if (heroVideo.readyState < 2) {
+			requestAnimationFrame(drawVideoBackground);
+			return;
+		}
+
+		tctx.clearRect(0, 0, tileCanvas.width, tileCanvas.height);
+
+		const vw = heroVideo.videoWidth;
+		const vh = heroVideo.videoHeight;
+
+		if (!isLoopVideo) {
+			const scale = Math.max(
+				tileCanvas.width / vw,
+				tileCanvas.height / vh
+			);
+
+			const w = vw * scale;
+			const h = vh * scale;
+
+			tctx.drawImage(
+				heroVideo,
+				(tileCanvas.width - w) * 0.5,
+				(tileCanvas.height - h) * 0.5,
+				w,
+				h
+			);
+		} else {
+			const cx = tileCanvas.width * 0.5;
+			const cy = tileCanvas.height * 0.5;
+
+			const tilesX = Math.ceil(tileCanvas.width / vw) + 2;
+			const tilesY = Math.ceil(tileCanvas.height / vh) + 2;
+
+			for (let iy = -tilesY; iy <= tilesY; iy++) {
+				for (let ix = -tilesX; ix <= tilesX; ix++) {
+					const x = cx - vw * 0.5 + ix * vw;
+					const y = cy - vh * 0.5 + iy * vh;
+
+					tctx.save();
+
+					const flipX = Math.abs(ix) % 2;
+					const flipY = Math.abs(iy) % 2;
+
+					tctx.translate(
+						x + (flipX ? vw : 0),
+						y + (flipY ? vh : 0)
+					);
+
+					tctx.scale(flipX ? -1 : 1, flipY ? -1 : 1);
+					tctx.drawImage(heroVideo, 0, 0);
+
+					tctx.restore();
+				}
+			}
+		}
+
+		requestAnimationFrame(drawVideoBackground);
+	}
 
     // --- Background Animation (Constellation Effect & Geometric Attraction) ---
     const canvas = document.getElementById('hero-canvas');
@@ -237,8 +304,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			const ratioX = shapeCenter ? shapeCenter.x / width : null;
 			const ratioY = shapeCenter ? shapeCenter.y / height : null;
 
-			width = canvas.width = canvassolid.width = canvas.parentElement.offsetWidth;
-			height = canvas.height = canvassolid.height = Math.max(100, canvas.parentElement.offsetHeight - 88);
+			width = canvas.width = canvassolid.width = tileCanvas.width = canvas.parentElement.offsetWidth;
+			height = canvas.height = canvassolid.height = tileCanvas.height = Math.max(100, canvas.parentElement.offsetHeight - 88);
 			scaleFactor = height / 1080;
 
 			if (shapeCenter && ratioX !== null) {
