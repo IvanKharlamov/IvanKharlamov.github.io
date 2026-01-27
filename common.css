@@ -974,6 +974,12 @@ a {
 .date-picker.active {
     border-color: var(--primary);
     background: #222;
+	position: fixed;
+	z-index: 5;
+}
+
+.date-picker.active + .rental-duration {
+	padding-top: 65px;
 }
 
 .date-picker-display {
