@@ -96,7 +96,7 @@ class QuoteFormsManager {
 
     // Setup header "Get Quote" button
     setupHeaderQuoteButton() {
-        const headerQuoteBtns = document.querySelectorAll('.btn-primary[data-i18n="btn.getQuote"]');
+        const headerQuoteBtns = document.querySelectorAll('.btn-primary[data="btn.getQuote"]');
         headerQuoteBtns.forEach(btn => {
             btn.addEventListener('click', (e) => {
                 e.preventDefault();
