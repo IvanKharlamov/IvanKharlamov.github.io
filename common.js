@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Text Content
-        document.querySelectorAll('[data]').forEach(el => {
+        document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.dataset.i18n;
             if (translations[lang][key]) {
                 if (key === 'hero.title') {
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Placeholders
-        document.querySelectorAll('[data-placeholder]').forEach(el => {
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
             const key = el.dataset.i18nPlaceholder;
             if (translations[lang][key]) {
                 el.placeholder = translations[lang][key];
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Select options
-        document.querySelectorAll('option[data]').forEach(el => {
+        document.querySelectorAll('option[data-i18n]').forEach(el => {
             const key = el.dataset.i18n;
             if (translations[lang][key]) {
                 el.textContent = translations[lang][key];
