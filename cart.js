@@ -451,8 +451,8 @@ class CartUI {
         const currentLang = window.currentLang || 'es';
 
         if (items.length === 0) {
-            const isOnCatalog = window.location.pathname.includes('inventory.html');
-            const browseButton = isOnCatalog ? '' : `<a href="inventory.html" class="btn btn-primary" style="margin-top: 20px;">${t('hero.browse')}</a>`;
+            const isOnCatalog = window.location.pathname.includes('inventory');
+            const browseButton = isOnCatalog ? '' : `<a href="inventory" class="btn btn-primary" style="margin-top: 20px;">${t('hero.browse')}</a>`;
             this.itemsContainer.innerHTML = `
                 <div class="empty-cart-msg" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
                     <p style="margin-bottom: 0;">${t('cart.empty')}</p>
