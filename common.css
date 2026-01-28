@@ -159,6 +159,10 @@ a {
     text-shadow: 0 0 20px var(--primary-glow), 0 0 35px var(--primary-glow);
 }
 
+.logo svg {
+	display: block;
+}
+
 .btn {
     display: inline-flex;
     align-items: center;

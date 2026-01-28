@@ -49,8 +49,31 @@
     <div id="app">
         <header class="site-header">
             <div class="container header-inner">
-                <a href="#" class="logo">UPSTAGE MADRID<span class="dot">.</span></a>
-                
+                <a href="#" class="logo">        
+					<svg width="47" height="47" viewBox="127 27.5 284 415" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+					  <defs>
+						<filter id="logoGlow" x="-100%" y="-100%" width="300%" height="300%">
+						  <feGaussianBlur in="SourceAlpha" stdDeviation="30" result="blur1"/>
+						  <feGaussianBlur in="SourceAlpha" stdDeviation="45" result="blur2"/>
+						  <feFlood flood-color="var(--primary-glow, #00d4ff)" flood-opacity="1" result="color"/>
+						  <feComposite in="color" in2="blur1" operator="in" result="glow1"/>
+						  <feComposite in="color" in2="blur2" operator="in" result="glow2"/>
+						  <feMerge>
+							<feMergeNode in="glow1"/>
+							<feMergeNode in="glow2"/>
+							<feMergeNode in="SourceGraphic"/>
+						  </feMerge>
+						</filter>
+					  </defs>
+
+					  <path
+						d="M 127 127.5 V 312.5 C 127 482.5 373 482.5 373 312.5 V 127.5 H 411 L 334 27.5 L 257 127.5 H 295 V 312.5 C 295 377.5 205 377.5 205 312.5 V 127.5 Z"
+						fill="#FDFCFD"
+						filter="url(#logoGlow)"
+					  />
+					</svg>
+				</a>
+
                 <!-- Desktop Navigation -->
                 <nav class="main-nav desktop-nav">
                     <div class="nav-links">
@@ -67,7 +90,6 @@
                         </button>
                     </div>
                 </nav>
-                
                 <!-- Desktop Actions -->
                 <div class="header-actions desktop-actions">
                     <div class="lang-switch">
@@ -135,15 +157,15 @@
                     <h1 class="hero-title-large" data-i18n="hero.title">ELEVA<br>TU<br>PRODUCCIÓN</h1>
                 </div>
             </div>
+            <div class="hero-ui-overlay">
+                <p class="hero-ui-subtitle" data-i18n="hero.subtitle">iluminación, sonido y equipo de escenario</p>
+                <a href="inventory" class="btn btn-primary" data-i18n="hero.browse">Ver Catálogo</a>
+            </div>
+            <canvas id="hero-canvas-solid"></canvas>
             <div class="hero-outline-container">
                 <div class="hero-content-outline">
                     <div class="hero-title-large outline-text" data-i18n="hero.title">ELEVA<br>TU<br>PRODUCCIÓN</h1>
                 </div>
-            </div>
-            <canvas id="hero-canvas-solid"></canvas>
-            <div class="hero-ui-overlay">
-                <p class="hero-ui-subtitle" data-i18n="hero.subtitle">iluminación, sonido y equipo de escenario</p>
-                <a href="inventory" class="btn btn-primary" data-i18n="hero.browse">Ver Catálogo</a>
             </div>
         </section>
 
