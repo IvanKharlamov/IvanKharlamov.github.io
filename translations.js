@@ -218,22 +218,22 @@ window.TRANSLATIONS_RAW = {
     "en": "Quote Request Submitted Successfully! We will contact you shortly.",
     "es": "¡Solicitud de Presupuesto Enviada! Te contactaremos pronto."
   },
-  "review.1.quote": {
-    "en": "Technicians arrived high, asked for pocket money, and tried to trade a microphone for crack.",
-    "es": "Los técnicos llegaron colocados, pidieron dinero suelto e intentaron cambiar un micrófono por crack."
-  },
-  "review.2.quote": {
-    "en": "The crew kept disappearing one by one to “take calls,” then came back shitfaced, despite not having phones on them at any point.",
-    "es": "El equipo desaparecía de uno en uno para “hacer llamadas” y volvía completamente borracho, a pesar de no llevar teléfonos encima en ningún momento."
-  },
-  "review.3.quote": {
-    "en": "They tried to get me to take photos of my balls for “documentation purposes,” which was confusing and a tiny bit intrusive.",
-    "es": "Intentaron que me hiciera fotos de los huevos por “motivos de documentación”, lo cual fue confuso y un poquito invasivo."
-  },
-  "review.4.quote": {
-    "en": "They packed up early because the sound designer shat himself and declared the venue acoustically hostile.",
-    "es": "Recogieron antes de tiempo porque el diseñador de sonido se cagó encima y declaró el recinto acústicamente hostil."
-  },
+	"review.1.quote": {
+	  "en": "The technicians arrived on time, fully prepared, and handled the setup efficiently and professionally.",
+	  "es": "Los técnicos llegaron puntuales, bien preparados y gestionaron el montaje de forma eficiente y profesional."
+	},
+	"review.2.quote": {
+	  "en": "The crew was focused, communicative, and maintained a high level of professionalism throughout the entire event.",
+	  "es": "El equipo estuvo concentrado, comunicativo y mantuvo un alto nivel de profesionalidad durante todo el evento."
+	},
+	"review.3.quote": {
+	  "en": "They were respectful, clear about their process, and made sure all documentation and requirements were handled appropriately.",
+	  "es": "Fueron respetuosos, claros con su proceso y se aseguraron de que toda la documentación y los requisitos se gestionaran correctamente."
+	},
+	"review.4.quote": {
+	  "en": "Everything wrapped up smoothly, with great attention to sound quality and overall venue conditions.",
+	  "es": "Todo se cerró sin problemas, con gran atención a la calidad del sonido y a las condiciones generales del recinto."
+	},
   "footer.desc": {
     "en": "Premium lighting, sound, and stage equipment.",
     "es": "Equipo premium de iluminación, sonido y escenario."
