@@ -53,8 +53,8 @@ window.TRANSLATIONS_RAW = {
   "about.title": { "en": "Who We", "es": "Quiénes" },
   "about.titleHighlight": { "en": "Are", "es": "Somos" },
   "about.text1": {
-    "en": "Founded in 2015, Upstage has been the silent partner behind iconic events.",
-    "es": "Fundada en 2015, Upstage ha sido el socio silencioso detrás de eventos icónicos."
+    "en": "Founded in 2022 by a team of event production professionals with more than ten years of hands-on experience, UPSTAGE MADRID provides high-quality technical services and end-to-end production solutions, covering everything from initial concept to final execution.",
+    "es": "Fundada en 2022 por un equipo de profesionales de la producción de eventos con más de diez años de experiencia práctica, UPSTAGE MADRID ofrece servicios técnicos de alta calidad y soluciones integrales de producción, abarcando todo el proceso desde el concepto inicial hasta la ejecución final."
   },
   "about.text2": {
     "en": "Our inventory is meticulously maintained.",
@@ -265,8 +265,8 @@ window.TRANSLATIONS_RAW = {
   "contact.form.send": { "en": "Send Message", "es": "Enviar Mensaje" },
 
   "footer.copyright": {
-    "en": "© 2026 Upstage Rentals. All rights reserved.",
-    "es": "© 2026 Upstage Rentals. All rights reserved."
+    "en": "© 2026 UPSTAGE MADRID. All rights reserved.",
+    "es": "© 2026 UPSTAGE MADRID. All rights reserved."
   },
 
   "modal.included": {

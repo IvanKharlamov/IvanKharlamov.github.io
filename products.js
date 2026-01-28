@@ -595,7 +595,7 @@ window.products = [
     id: 801,
     name: { en: "Sound engineer (8h)", es: "Técnico de sonido (8h)" },
     category: "cat.service",
-    manufacturer: "Upstage",
+    manufacturer: "UPSTAGE MADRID",
     priceDay: 150,
     image: "assets/images/PNG2/live_sound_engineering_article_image_2025.jpg",
     description: {
@@ -611,7 +611,7 @@ window.products = [
     id: 802,
     name: { en: "Light engineer (8h)", es: "Técnico de luces (8h)" },
     category: "cat.service",
-    manufacturer: "Upstage",
+    manufacturer: "UPSTAGE MADRID",
     priceDay: 150,
     image: "assets/images/PNG2/light engineer.jpeg",
     description: {
@@ -627,7 +627,7 @@ window.products = [
     id: 803,
     name: { en: "Monitoring engineer (8h)", es: "Técnico de monitores (8h)" },
     category: "cat.service",
-    manufacturer: "Upstage",
+    manufacturer: "UPSTAGE MADRID",
     priceDay: 100,
     image: "assets/images/PNG2/monitoring engineer.jpg",
     description: {
@@ -643,7 +643,7 @@ window.products = [
     id: 901,
     name: { en: "Small Event Pack", es: "Pack Evento Pequeño" },
     category: "cat.packs",
-    manufacturer: "Upstage",
+    manufacturer: "UPSTAGE MADRID",
     priceDay: 250,
     image: "assets/images/placeholder.png",
     description: {

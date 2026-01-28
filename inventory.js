@@ -48,6 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         `}).join('');
+
+		injectProductSchema(items);
     };
 
     // Sort products
@@ -64,6 +66,48 @@ document.addEventListener('DOMContentLoaded', () => {
                 return sorted;
         }
     }
+	
+	function injectProductSchema(items) {
+		const currentLang = window.currentLang || 'es';
+
+		const schema = {
+			"@context": "https://schema.org",
+			"@type": "ItemList",
+			"itemListElement": items.map((product, index) => ({
+				"@type": "ListItem",
+				"position": index + 1,
+				"item": {
+					"@type": "Product",
+					"name": product.name[currentLang],
+					"image": product.image,
+					"description": product.description && product.description[currentLang]
+						? product.description[currentLang]
+						: product.name[currentLang],
+					"brand": {
+						"@type": "Brand",
+						"name": product.manufacturer || "UPSTAGE"
+					},
+					"offers": {
+						"@type": "Offer",
+						"price": product.priceDay,
+						"priceCurrency": "EUR",
+						"availability": "https://schema.org/InStock"
+					}
+				}
+			}))
+		};
+
+		let script = document.getElementById("inventory-schema");
+		if (!script) {
+			script = document.createElement("script");
+			script.id = "inventory-schema";
+			script.type = "application/ld+json";
+			document.head.appendChild(script);
+		}
+
+		script.textContent = JSON.stringify(schema);
+	}
+
 
     // Filter Logic
     window.applyFilters = function () {

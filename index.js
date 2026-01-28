@@ -502,35 +502,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     initReviewsCarousel();
-
-    // --- Meet the Team Modal ---
-    const btnMeetTeam = document.getElementById('btn-meet-team');
-    const teamModal = document.getElementById('team-modal');
-    const closeTeamModalBtn = document.getElementById('close-team-modal');
-
-    if (btnMeetTeam && teamModal && closeTeamModalBtn) {
-        btnMeetTeam.addEventListener('click', () => {
-            teamModal.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Prevent scrolling
-        });
-
-        const closeTeamModal = () => {
-            teamModal.classList.remove('active');
-            document.body.style.overflow = ''; // Restore scrolling
-        };
-
-        closeTeamModalBtn.addEventListener('click', closeTeamModal);
-
-        // Close on background click
-        teamModal.addEventListener('click', (e) => {
-            if (e.target === teamModal) closeTeamModal();
-        });
-
-        // Close on ESC
-        window.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && teamModal.classList.contains('active')) {
-                closeTeamModal();
-            }
-        });
-    }
 });

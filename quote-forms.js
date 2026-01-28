@@ -262,7 +262,7 @@ class QuoteFormsManager {
 
         const formData = new FormData();
         formData.append('access_key', this.accessKey);
-        formData.append('subject', 'Contact Form - Upstage Rentals');
+        formData.append('subject', 'Contact Form - UPSTAGE MADRID');
         formData.append('name', fullName);
         formData.append('phone', phone);
         formData.append('email', email);
@@ -321,7 +321,7 @@ class QuoteFormsManager {
 
         const formData = new FormData();
         formData.append('access_key', this.accessKey);
-        formData.append('subject', 'General Quote Request - Upstage Rentals');
+        formData.append('subject', 'General Quote Request - UPSTAGE MADRID');
         formData.append('name', fullName);
         formData.append('phone', phone);
         formData.append('email', email);
