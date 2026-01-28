@@ -359,8 +359,8 @@ window.products = [
     priceDay: 90,
     image: "assets/images/PNG2/MIDAS M32.png",
     description: {
-        en: "Premium digital mixing console for demanding live productions and multitrack recording.",
-        es: "Consola digital premium para producciones en vivo exigentes y grabación multipista."
+        en: "Digital mixing console for demanding live productions and multitrack recording.",
+        es: "Consola digital para producciones en vivo exigentes y grabación multipista."
     },
     specs: {
         en: { "Inputs": "40", "Mix Buses": "25", "Preamps": "32 Midas", "Faders": "25 motor", "Recording": "32x32 USB", "Sample Rate": "48 kHz" },

@@ -235,8 +235,8 @@ window.TRANSLATIONS_RAW = {
 	  "es": "Todo se cerró sin problemas, con gran atención a la calidad del sonido y a las condiciones generales del recinto."
 	},
   "footer.desc": {
-    "en": "Premium lighting, sound, and stage equipment.",
-    "es": "Equipo premium de iluminación, sonido y escenario."
+    "en": "Lighting, sound, and stage equipment.",
+    "es": "Equipo de iluminación, sonido y escenario."
   },
 
 
