@@ -161,6 +161,7 @@ a {
 
 .logo svg {
 	display: block;
+	overflow: visible;
 }
 
 .btn {
