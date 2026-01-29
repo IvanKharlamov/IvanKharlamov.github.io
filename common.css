@@ -17,7 +17,6 @@
 }
 
 :root {
-    /* Colors */
     --bg-color: #080808;
     --bg-secondary: #121212;
     --text-color: #ffffff;
@@ -32,21 +31,17 @@
     --secondary-glow: rgba(6, 182, 212, 0.5);
     --accent: #f59e0b;
 
-    /* Glassmorphism */
     --glass-bg: rgba(255, 255, 255, 0.05);
     --glass-border: rgba(255, 255, 255, 0.1);
     --glass-blur: 12px;
 
-    /* Typography */
     --font-heading: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
 
-    /* Spacing */
     --spacing-md: 2rem;
     --spacing-lg: 4rem;
     --spacing-xl: 8rem;
 
-    /* Transitions */
     --transition-fast: 0.2s ease;
     --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -61,7 +56,6 @@
     scrollbar-color: rgba(255, 255, 255, 0.15) rgba(255, 255, 255, 0.03);
 }
 
-/* Global Scrollbar Styling - Webkit */
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -88,7 +82,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Typography */
 h1,
 h2,
 h3,
@@ -139,7 +132,6 @@ a {
     transition: var(--transition-fast);
 }
 
-/* Utilities */
 .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -199,24 +191,6 @@ a {
     background: rgba(255, 255, 255, 0.1);
 }
 
-/* Section Utilities */
-.section-title {
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.section-subtitle {
-    text-align: center;
-    color: var(--text-muted);
-    font-size: 1.1rem;
-    margin-bottom: var(--spacing-lg);
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Language Switcher */
 .header-actions {
     display: flex;
     align-items: center;
@@ -249,7 +223,6 @@ a {
     opacity: 0.3;
 }
 
-/* Header */
 .site-header {
     position: fixed;
     width: 100%;
@@ -283,7 +256,6 @@ a {
     align-items: center;
 }
 
-/* Mobile Menu Toggle Button */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -317,7 +289,6 @@ a {
     transform: translateY(-10.5px) rotate(-45deg);
 }
 
-/* Mobile Menu Overlay */
 .mobile-menu-overlay {
     position: fixed;
     top: 0;
@@ -337,7 +308,6 @@ a {
     visibility: visible;
 }
 
-/* Mobile Menu */
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -416,14 +386,12 @@ a {
     color: var(--primary);
 }
 
-/* Mobile Actions */
 .mobile-actions {
     display: none;
     align-items: center;
     gap: 15px;
 }
 
-/* Desktop/Mobile Visibility */
 @media (max-width: 768px) {
     .desktop-nav,
     .desktop-actions {
@@ -439,7 +407,6 @@ a {
     }
 }
 
-/* Footer */
 .site-footer {
     padding: 60px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -483,44 +450,6 @@ a {
     font-size: 0.9rem;
 }
 
-.footer-links {
-    display: flex;
-    gap: 40px;
-}
-
-.footer-col h4 {
-    margin-bottom: 20px;
-    color: #fff;
-    font-size: 1rem;
-}
-
-.footer-col ul {
-    list-style: none;
-}
-
-.footer-col li {
-    margin-bottom: 10px;
-}
-
-.footer-col a {
-    color: var(--text-muted);
-    font-size: 0.9rem;
-}
-
-.footer-col a:hover {
-    color: var(--primary);
-}
-
-.footer-bottom {
-    margin-top: 60px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    text-align: center;
-    color: #555;
-    font-size: 0.8rem;
-}
-
-/* Toast Notification */
 #toast-container {
     position: fixed;
     bottom: 20px;
@@ -616,7 +545,6 @@ a {
     background: rgba(255, 255, 255, 0.1);
 }
 
-/* Cart Badge */
 .cart-badge {
     position: absolute;
     top: 10%;
@@ -633,7 +561,6 @@ a {
     box-shadow: 0 2px 8px rgba(139, 92, 246, 0.4);
 }
 
-/* Cart Drawer & Overlay */
 .cart-overlay {
     position: fixed;
     top: 0;
@@ -685,7 +612,6 @@ a {
     flex: 1;
     overflow-y: scroll;
     padding: 20px;
-    /* Force scrollbar to always be visible to prevent width changes */
     scrollbar-gutter: stable;
 }
 
@@ -711,7 +637,6 @@ a {
     border-radius: 4px;
 }
 
-/* Cart Quantity Controls */
 .cart-qty-controls {
     display: flex;
     align-items: center;
@@ -759,7 +684,6 @@ a {
     margin: 0;
 }
 
-/* Cart Date Inputs */
 .cart-date-inputs {
     margin-top: 6px;
     display: flex;
@@ -785,7 +709,6 @@ a {
     background: rgba(255, 255, 255, 0.1);
 }
 
-/* Remove Item Button */
 .remove-cart-item {
     background: none;
     border: none;
@@ -808,7 +731,6 @@ a {
     transform: scale(1.1);
 }
 
-/* Cart Footer */
 .cart-footer {
     padding: 20px;
     border-top: 1px solid var(--glass-border);
@@ -833,7 +755,6 @@ a {
     font-weight: 700;
 }
 
-/* Close Cart Button */
 .close-cart {
     background: none;
     border: none;
@@ -847,7 +768,6 @@ a {
     color: var(--primary);
 }
 
-/* Modal Overlay */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -901,7 +821,6 @@ a {
     color: var(--primary);
 }
 
-/* Checkout Modal */
 .checkout-body {
     padding: 40px;
     overflow-y: auto;
@@ -950,7 +869,6 @@ a {
 }
 
 
-/* Glass Card */
 .glass-card {
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid var(--glass-border);
@@ -958,7 +876,6 @@ a {
     border-radius: 8px;
 }
 
-/* Date Picker */
 .date-picker {
     position: relative;
     width: 100%;

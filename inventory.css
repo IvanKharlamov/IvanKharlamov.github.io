@@ -209,7 +209,6 @@
     width: 100%;
 }
 
-/* Product Modal */
 .modal-body {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -260,12 +259,10 @@
     padding-top: 20px;
 }
 
-/* Only add top border to modal sections in quote view */
 #modal-quote-view .modal-section {
     border-top: 1px solid var(--glass-border);
 }
 
-/* Add top border to sections in details view */
 #modal-details-view .modal-section {
     border-top: 1px solid var(--glass-border);
 }
@@ -328,7 +325,6 @@
     margin: 0;
 }
 
-/* Pricing Display */
 .price-display {
     display: flex;
     flex-direction: column;
@@ -349,7 +345,6 @@
     color: var(--secondary);
 }
 
-/* Pricing Tooltip */
 .price-multiplier {
     font-size: 0.85rem;
     color: var(--secondary);
@@ -466,7 +461,6 @@
     background: var(--primary);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .catalog-layout {
         grid-template-columns: 1fr;
@@ -485,6 +479,6 @@
 	}
 	
 	.date-picker {
-		max-width: unset;
+		max-width: 85%;
 	}
 }
