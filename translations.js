@@ -1,5 +1,5 @@
 window.TRANSLATIONS_RAW = {
-  "nav.home": { "en": "Home", "es": "El Homo" },
+  "nav.home": { "en": "Home", "es": "Inicio" },
   "nav.catalog": { "en": "Catalog", "es": "Catálogo" },
   "nav.services": { "en": "Services", "es": "Servicios" },
   "nav.about": { "en": "About", "es": "Sobre Nosotros" },
