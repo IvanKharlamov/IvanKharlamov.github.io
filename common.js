@@ -90,8 +90,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.dataset.i18n;
             if (translations[lang][key]) {
-                if (key === 'hero.title') {
-                    el.innerHTML = translations[lang][key]; // Allow HTML for hero title breaks
+                if (key === 'hero.title' || key.includes('modalText')) {
+                    el.innerHTML = translations[lang][key]; // Allow HTML for hero title breaks and rich text modals
                 } else {
                     el.textContent = translations[lang][key];
                 }
