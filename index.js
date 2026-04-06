@@ -461,7 +461,7 @@ document.addEventListener('DOMContentLoaded', () => {
             stopAutoSlide();
             autoSlideTimer = setInterval(() => {
                 updateCarousel((currentIndex + 1) % cards.length);
-            }, 6000);
+            }, 5000);
         }
 
         function stopAutoSlide() {
@@ -502,4 +502,133 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     initReviewsCarousel();
+
+    // --- Services Accordion ---
+    function initServiceAccordion() {
+        const container = document.getElementById('service-details-container');
+        const titleEl = document.getElementById('service-details-title');
+        const textEl = document.getElementById('service-details-text');
+        const galleryEl = document.getElementById('service-details-gallery');
+        const grid = document.querySelector('.services-grid');
+        
+        if (!container || !grid) return;
+
+        const serviceImages = {
+            'rental': [
+                'assets/images/rental/7b88d9_9f699a54485247129b7080eebeef43f4~mv2.avif',
+                'assets/images/rental/Warehouse-scaled.webp'
+            ],
+            'production': [
+                'assets/images/Live/655e0fa544c67c1ee5ce11c2_live-performance-tips-to-help-you-put-on-a-great-show-header.jpeg',
+                'assets/images/Live/yI7qlHnlTMtH3UbAz6ePIR93YkE.jpg'
+            ],
+            'design': [
+                'assets/images/System/blog-1440x800_Mobile_Stage_Wireframe (1).webp',
+                'assets/images/System/one-of-my-first-attempts-at-creating-a-lightconcept-in-v0-qm0g5i3qfjk71.webp'
+            ],
+            'support': []
+        };
+
+        const cards = Array.from(grid.querySelectorAll('.service-card[data-service-id]'));
+
+        function placeContainer(card) {
+            // Find how many columns by looking at the grid gaps and offsetTop
+            // Elements in the same row will have the same offsetTop
+            const cardTop = card.offsetTop;
+            
+            // Find the first and last card in this visual row
+            let firstCardInRow = card;
+            let lastCardInRow = card;
+            
+            for (let i = cards.indexOf(card) - 1; i >= 0; i--) {
+                if (cards[i].offsetTop === cardTop) {
+                    firstCardInRow = cards[i];
+                } else {
+                    break;
+                }
+            }
+
+            for (let i = cards.indexOf(card) + 1; i < cards.length; i++) {
+                if (cards[i].offsetTop === cardTop) {
+                    lastCardInRow = cards[i];
+                } else {
+                    break;
+                }
+            }
+            
+            lastCardInRow.insertAdjacentElement('afterend', container);
+
+            container.classList.toggle('first-in-row', card === firstCardInRow);
+            container.classList.toggle('last-in-row', card === lastCardInRow);
+        }
+
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                const serviceId = card.dataset.serviceId;
+                const isActive = card.classList.contains('active');
+                
+                // Reset all
+                cards.forEach(c => c.classList.remove('active', 'is-first-in-row', 'is-last-in-row'));
+                
+                if (isActive) {
+                    container.style.display = 'none'; // Toggle off
+                    return;
+                }
+
+                card.classList.add('active');
+                placeContainer(card);
+
+                // Add classes directly to card to aid CSS fractional calculations
+                const isFirst = container.classList.contains('first-in-row');
+                const isLast = container.classList.contains('last-in-row');
+                if (isFirst) card.classList.add('is-first-in-row');
+                if (isLast) card.classList.add('is-last-in-row');
+                
+                titleEl.setAttribute('data-i18n', `services.${serviceId}.title`);
+                const textKey = `services.${serviceId}.modalText`;
+                textEl.setAttribute('data-i18n', textKey);
+                
+                galleryEl.innerHTML = '';
+                if (serviceImages[serviceId] && serviceImages[serviceId].length > 0) {
+                    serviceImages[serviceId].forEach(src => {
+                        const img = document.createElement('img');
+                        img.src = src;
+                        img.style.width = '100%';
+                        img.style.borderRadius = '8px';
+                        img.style.border = '1px solid rgba(255,255,255,0.1)';
+                        img.style.objectFit = 'cover';
+                        img.style.aspectRatio = '16/9';
+                        galleryEl.appendChild(img);
+                    });
+                }
+                
+                if (window.changeLanguage && window.currentLang) {
+                    window.changeLanguage(window.currentLang);
+                }
+
+                container.style.display = 'block';
+                
+                // Add a small delay then adjust scroll if needed, but for now just show it
+            });
+        });
+
+        // Initialize state on window resize
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                const activeCard = grid.querySelector('.service-card.active');
+                if (activeCard) {
+                    placeContainer(activeCard);
+                }
+            }, 100);
+        });
+
+        // Trigger first card by default
+        if (cards.length > 0) {
+            cards[0].click();
+        }
+    }
+
+    initServiceAccordion();
 });

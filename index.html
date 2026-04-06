@@ -176,7 +176,7 @@
                 <p class="section-subtitle" data-i18n="services.subtitle">Más que equipo. Soluciones integrales de producción.</p>
 
                 <div class="services-grid">
-                    <div class="glass-card service-card">
+                    <div class="glass-card service-card" data-service-id="rental" style="cursor: pointer;">
                         <div class="service-icon">
                             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="1.5">
@@ -191,7 +191,7 @@
                         <p data-i18n="services.rental.desc">Accede a nuestro inventario masivo de iluminación, audio y video de última generación.</p>
                     </div>
 
-                    <div class="glass-card service-card">
+                    <div class="glass-card service-card" data-service-id="production" style="cursor: pointer;">
                         <div class="service-icon">
                             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="1.5">
@@ -204,7 +204,7 @@
                         <p data-i18n="services.production.desc">Producción técnica llave en mano para conciertos, eventos corporativos y festivales.</p>
                     </div>
 
-                    <div class="glass-card service-card">
+                    <div class="glass-card service-card" data-service-id="design" style="cursor: pointer;">
                         <div class="service-icon">
                             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="1.5">
@@ -219,18 +219,28 @@
                         <p data-i18n="services.design.desc">Diseño de sistemas de iluminación y audio asistido por CAD.</p>
                     </div>
 
-                    <div class="glass-card service-card">
+                    <div class="glass-card service-card" data-service-id="support" style="cursor: pointer;">
                         <div class="service-icon">
                             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="1.5">
-                                <path
-                                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
-                                </path>
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                                <polyline points="2 17 12 22 22 17"></polyline>
                             </svg>
                         </div>
                         <h3 data-i18n="services.support.title">Soporte Técnico</h3>
                         <p data-i18n="services.support.desc">Técnicos expertos disponibles para contratar.</p>
                     </div>
+
+                    <!-- Service Details Accordion Container (Moves dynamically via JS) -->
+                    <div id="service-details-container" class="service-details-container">
+                        <div class="service-details-inner">
+                            <h3 id="service-details-title" style="margin-bottom: 1rem; color: var(--primary);"></h3>
+                            <div id="service-details-text" style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;"></div>
+                            <div id="service-details-gallery" class="service-details-gallery"></div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -243,32 +253,33 @@
                         <h2 class="section-title" style="text-align: left;"><span data-i18n="about.title">Quiénes</span>
                             <span class="text-gradient" data-i18n="about.titleHighlight">Somos</span>
                         </h2>
-                        <p class="about-text" data-i18n="about.text1">
-                            Fundada en 2022 por un equipo de profesionales de la producción de eventos con más de diez años de experiencia práctica, UPSTAGE MADRID ofrece servicios técnicos de alta calidad y soluciones integrales de producción, abarcando todo el proceso desde el concepto inicial hasta la ejecución final.
-                        </p>
-                        <p class="about-text" data-i18n="about.text2">
-                            Nuestro inventario se mantiene meticulosamente.
-                        </p>
+                        <p class="about-text" data-i18n="about.desc1"></p>
+                        <p class="about-text" data-i18n="about.desc2"></p>
+                        <p class="about-text" data-i18n="about.desc3"></p>
+                        <p class="about-text" data-i18n="about.desc4"></p>
+                        <p class="about-text" data-i18n="about.desc5"></p>
                     </div>
 
                     <!-- About Image Gallery -->
                     <div class="about-gallery">
                         <div class="gallery-item glass-card">
                             <div class="gallery-img-placeholder"
-                                style="background-image: url('assets/images/warehouse.png');">
-                                <span data-i18n="about.gallery.warehouse">Almacén</span>
+                                style="background-image: url('assets/images/who we are/0.jpg');">
                             </div>
                         </div>
                         <div class="gallery-item glass-card">
                             <div class="gallery-img-placeholder"
-                                style="background-image: url('assets/images/newpics/Production.jpg');">
-                                <span data-i18n="about.gallery.production">Producción</span>
+                                style="background-image: url('assets/images/who we are/1.jpeg');">
                             </div>
                         </div>
                         <div class="gallery-item glass-card">
                             <div class="gallery-img-placeholder"
-                                style="background-image: url('assets/images/newpics/Equipment.jpg');">
-                                <span data-i18n="about.gallery.equipment">Equipo</span>
+                                style="background-image: url('assets/images/who we are/2.jpeg');">
+                            </div>
+                        </div>
+                        <div class="gallery-item glass-card">
+                            <div class="gallery-img-placeholder"
+                                style="background-image: url('assets/images/who we are/3.jpg');">
                             </div>
                         </div>
                     </div>
@@ -276,22 +287,6 @@
             </div>
         </section>
 
-        <!-- Partners Section -->
-        <section id="partners" class="partners-section">
-            <div class="container">
-                <h2 class="section-title"><span data-i18n="partners.title">Trabajamos</span> <span class="text-gradient"
-                        data-i18n="partners.titleHighlight">Con</span></h2>
-                <div class="partners-grid" style="margin-top: 3rem;">
-                    <div class="partners-logo-row">
-                        <img src="assets/images/PNG2/logo.png" alt="Partner Logo" class="partner-logo">
-                        <img src="assets/images/PNG2/logo.png" alt="Partner Logo" class="partner-logo">
-                        <img src="assets/images/PNG2/logo.png" alt="Partner Logo" class="partner-logo">
-                        <img src="assets/images/PNG2/logo.png" alt="Partner Logo" class="partner-logo">
-                        <img src="assets/images/PNG2/logo.png" alt="Partner Logo" class="partner-logo">
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Reviews Section -->
         <section id="reviews" class="reviews-section">
@@ -310,40 +305,95 @@
                     </button>
 
 						<div class="reviews-track" id="reviews-track">
+							<!-- Hector -->
 							<div class="review-card">
 								<div class="review-avatar">
-									<img src="assets/images/review1.png" alt="Avatar de Usuario">
+									<img src="assets/images/review1.png" alt="Héctor Álvarez Sánchez">
+								</div>
+								<div class="review-stars" style="color: #FBBC05; font-size: 1.5rem; margin-bottom: 1rem; letter-spacing: 2px;">
+									★★★★★
 								</div>
 								<p class="review-quote" data-i18n="review.1.quote"></p>
-								<p class="review-author">Ramón de la Vega</p>
-								<p class="review-company" data-i18n="review.1.company"></p>
+								<p class="review-author">Héctor Álvarez Sánchez</p>
+								<p class="review-company" style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem;">CEO Autopia Festival</p>
 							</div>
 
+							<!-- Google Review 1 -->
 							<div class="review-card">
-								<div class="review-avatar">
-									<img src="assets/images/review1.png" alt="Avatar de Usuario">
+								<div class="review-source" style="display: flex; justify-content: center; align-items: center; gap: 8px; margin-bottom: 1rem; color: var(--text-muted); font-size: 0.9rem; opacity: 0.8;">
+									<svg width="20" height="20" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+									Google Review
+								</div>
+								<div class="review-stars" style="color: #FBBC05; font-size: 1.5rem; margin-bottom: 1rem; letter-spacing: 2px;">
+									★★★★★
 								</div>
 								<p class="review-quote" data-i18n="review.2.quote"></p>
-								<p class="review-author">Claudia Montoro</p>
-								<p class="review-company" data-i18n="review.2.company"></p>
+								<p class="review-author">Mariia М</p>
 							</div>
 
+							<!-- Google Review 2 -->
 							<div class="review-card">
-								<div class="review-avatar">
-									<img src="assets/images/review1.png" alt="Avatar de Usuario">
+								<div class="review-source" style="display: flex; justify-content: center; align-items: center; gap: 8px; margin-bottom: 1rem; color: var(--text-muted); font-size: 0.9rem; opacity: 0.8;">
+									<svg width="20" height="20" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+									Google Review
+								</div>
+								<div class="review-stars" style="color: #FBBC05; font-size: 1.5rem; margin-bottom: 1rem; letter-spacing: 2px;">
+									★★★★★
 								</div>
 								<p class="review-quote" data-i18n="review.3.quote"></p>
-								<p class="review-author">Ignacio Perales</p>
-								<p class="review-company" data-i18n="review.3.company"></p>
+								<p class="review-author">kirill kozlov</p>
 							</div>
 
+							<!-- Google Review 3 -->
 							<div class="review-card">
-								<div class="review-avatar">
-									<img src="assets/images/review1.png" alt="Avatar de Usuario">
+								<div class="review-source" style="display: flex; justify-content: center; align-items: center; gap: 8px; margin-bottom: 1rem; color: var(--text-muted); font-size: 0.9rem; opacity: 0.8;">
+									<svg width="20" height="20" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+									Google Review
+								</div>
+								<div class="review-stars" style="color: #FBBC05; font-size: 1.5rem; margin-bottom: 1rem; letter-spacing: 2px;">
+									★★★★★
 								</div>
 								<p class="review-quote" data-i18n="review.4.quote"></p>
-								<p class="review-author">Beatriz Olmedo</p>
-								<p class="review-company" data-i18n="review.4.company"></p>
+								<p class="review-author">Carmelo Hernandez</p>
+							</div>
+
+							<!-- Google Review 4 -->
+							<div class="review-card">
+								<div class="review-source" style="display: flex; justify-content: center; align-items: center; gap: 8px; margin-bottom: 1rem; color: var(--text-muted); font-size: 0.9rem; opacity: 0.8;">
+									<svg width="20" height="20" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+									Google Review
+								</div>
+								<div class="review-stars" style="color: #FBBC05; font-size: 1.5rem; margin-bottom: 1rem; letter-spacing: 2px;">
+									★★★★★
+								</div>
+								<p class="review-quote" data-i18n="review.5.quote"></p>
+								<p class="review-author">Juan Julián Cea Moran</p>
+							</div>
+
+							<!-- Google Review 5 -->
+							<div class="review-card">
+								<div class="review-source" style="display: flex; justify-content: center; align-items: center; gap: 8px; margin-bottom: 1rem; color: var(--text-muted); font-size: 0.9rem; opacity: 0.8;">
+									<svg width="20" height="20" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+									Google Review
+								</div>
+								<div class="review-stars" style="color: #FBBC05; font-size: 1.5rem; margin-bottom: 1rem; letter-spacing: 2px;">
+									★★★★★
+								</div>
+								<p class="review-quote" data-i18n="review.6.quote"></p>
+								<p class="review-author">Narek Bagratuni</p>
+							</div>
+
+							<!-- Google Review 6 -->
+							<div class="review-card">
+								<div class="review-source" style="display: flex; justify-content: center; align-items: center; gap: 8px; margin-bottom: 1rem; color: var(--text-muted); font-size: 0.9rem; opacity: 0.8;">
+									<svg width="20" height="20" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+									Google Review
+								</div>
+								<div class="review-stars" style="color: #FBBC05; font-size: 1.5rem; margin-bottom: 1rem; letter-spacing: 2px;">
+									★★★★★
+								</div>
+								<p class="review-quote" data-i18n="review.7.quote"></p>
+								<p class="review-author">Parsa</p>
 							</div>
 						</div>
 
