@@ -900,18 +900,15 @@ class QuoteFormsManager {
     }
 
     closeGeneralQuoteModal() {
-        const modal = document.getElementById('general-quote-modal');
-        if (modal) modal.classList.remove('active');
+        document.getElementById('general-quote-modal').classList.remove('active');
     }
 
     closeCartQuoteModal() {
-        const modal = document.getElementById('cart-quote-modal');
-        if (modal) modal.classList.remove('active');
+        document.getElementById('cart-quote-modal').classList.remove('active');
     }
 
     closeSuccessModal() {
-        const modal = document.getElementById('quote-success-modal');
-        if (modal) modal.classList.remove('active');
+        document.getElementById('quote-success-modal').classList.remove('active');
     }
 }
 
