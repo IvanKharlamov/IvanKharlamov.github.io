@@ -6,6 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
 	const tctx = tileCanvas.getContext("2d");
 	let isLoopVideo = false;
 
+    // === SEEDED PRNG ===
+    let seed = 42; // Seed value
+    function prng() {
+        seed = (seed * 9301 + 49297) % 233280;
+        return seed / 233280;
+    }
+
     // === ENERGY FIELD ANIMATION ===
     const nebula = document.getElementById('nebula');
     const system = document.getElementById('beamSystem');
@@ -18,13 +25,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const spot = document.createElement('div');
         spot.className = 'spotlight';
         spot.style.background = `radial-gradient(circle, ${spotColors[i%5]}, transparent 75%)`;
-        spot.style.left = Math.random()*100 + 'vw';
-        spot.style.top = Math.random()*100 + 'vh';
-        spot.style.setProperty('--sx', (Math.random()-0.5)*30 + 'vw');
-        spot.style.setProperty('--sy', (Math.random()-0.5)*30 + 'vh');
-        spot.style.setProperty('--ex', (Math.random()-0.5)*30 + 'vw');
-        spot.style.setProperty('--ey', (Math.random()-0.5)*30 + 'vh');
-        spot.style.animation = `floatSpot ${10 + Math.random()*15}s infinite ease-in-out`;
+        spot.style.left = prng()*100 + 'vw';
+        spot.style.top = prng()*100 + 'vh';
+        spot.style.setProperty('--sx', (prng()-0.5)*30 + 'vw');
+        spot.style.setProperty('--sy', (prng()-0.5)*30 + 'vh');
+        spot.style.setProperty('--ex', (prng()-0.5)*30 + 'vw');
+        spot.style.setProperty('--ey', (prng()-0.5)*30 + 'vh');
+        spot.style.animation = `floatSpot ${10 + prng()*15}s infinite ease-in-out`;
         if (nebula) nebula.appendChild(spot);
     }
 
@@ -40,23 +47,23 @@ document.addEventListener('DOMContentLoaded', () => {
     function spawnBeams(count) {
         for(let i=0; i<count; i++) {
             const ray = document.createElement('div');
-            const corner = corners[Math.floor(Math.random()*corners.length)];
+            const corner = corners[Math.floor(prng()*corners.length)];
             ray.className = 'beam';
             if(corner.left !== undefined) ray.style.left = corner.left;
             if(corner.right !== undefined) ray.style.right = corner.right;
             if(corner.top !== undefined) ray.style.top = corner.top;
             if(corner.bottom !== undefined) ray.style.bottom = corner.bottom;
             ray.style.transformOrigin = corner.origin;
-            const colorSet = [['#00d4ff', '#ffffff'], ['#cc44ff', '#22ff88'], ['#ff0055', '#cc44ff'], ['#22ff88', '#00d4ff']][Math.floor(Math.random()*4)];
-            const thickness = 2 + Math.random() * 15;
-            const glowOpacity = 0.2 + Math.random() * 0.4;
+            const colorSet = [['#00d4ff', '#ffffff'], ['#cc44ff', '#22ff88'], ['#ff0055', '#cc44ff'], ['#22ff88', '#00d4ff']][Math.floor(prng()*4)];
+            const thickness = 0.2 + prng() * 1.5; // Scaled thickness in vw
+            const glowOpacity = 0.2 + prng() * 0.4;
             ray.innerHTML = `<div class="beam-glow" style="opacity: ${glowOpacity}; background: linear-gradient(to bottom, transparent, ${colorSet[0]}, ${colorSet[1]}, transparent)"></div>
-                             <div class="beam-body" style="height: ${thickness}px; background: linear-gradient(to bottom, transparent, ${colorSet[0]}, ${colorSet[1]}, transparent)"></div>`;
-            ray.style.setProperty('--startAngle', (Math.random()*360) + 'deg');
-            ray.style.setProperty('--endAngle', (Math.random()*360) + 'deg');
-            ray.style.setProperty('--z', (Math.random()*400 - 200) + 'px');
-            ray.style.animation = `sweepSecondary ${8 + Math.random()*20}s infinite ease-in-out`;
-            ray.style.opacity = 0.3 + Math.random()*0.5;
+                             <div class="beam-body" style="height: ${thickness}vw; background: linear-gradient(to bottom, transparent, ${colorSet[0]}, ${colorSet[1]}, transparent)"></div>`;
+            ray.style.setProperty('--startAngle', (prng()*360) + 'deg');
+            ray.style.setProperty('--endAngle', (prng()*360) + 'deg');
+            ray.style.setProperty('--z', (prng()*40 - 20) + 'vw'); // Scaled Z in vw
+            ray.style.animation = `sweepSecondary ${8 + prng()*20}s infinite ease-in-out`;
+            ray.style.opacity = 0.3 + prng()*0.5;
             if (system) system.appendChild(ray);
         }
     }
