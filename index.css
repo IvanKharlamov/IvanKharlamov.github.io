@@ -701,7 +701,7 @@ canvas {
 }
 
 @keyframes masterSweep {
-    0%, 100% { transform: rotate(85deg) rotateX(15deg); }
+    0%, 100% { transform: rotate(65deg) rotateX(15deg); }
     50% { transform: rotate(8deg) rotateX(-5deg); }
 }
 
