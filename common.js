@@ -180,6 +180,27 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     };
+    const initSocialSharing = () => {
+        const shareLinks = document.querySelectorAll('.share-link');
+        if (shareLinks.length === 0) return;
+
+        const url = encodeURIComponent(window.location.href);
+        const text = encodeURIComponent(document.title);
+
+        shareLinks.forEach(link => {
+            if (link.classList.contains('facebook')) {
+                link.href = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+            } else if (link.classList.contains('x-twitter')) {
+                link.href = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
+            } else if (link.classList.contains('linkedin')) {
+                link.href = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+            } else if (link.classList.contains('whatsapp')) {
+                link.href = `https://api.whatsapp.com/send?text=${text}%20${url}`;
+            }
+        });
+    };
+
+    initSocialSharing();
 });
 /* === MERGED FROM cart.js === */
 let activeDatePicker = null;

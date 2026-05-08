@@ -428,5 +428,6 @@ window.TRANSLATIONS_RAW = {
   "quote.validation.email": {
     "en": "Please enter a valid email address",
     "es": "Por favor ingresa un correo electrónico válido"
-  }
+  },
+  "footer.share": { "en": "share:", "es": "compartir:" }
 }
