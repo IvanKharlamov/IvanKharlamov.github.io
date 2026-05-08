@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	let isLoopVideo = false;
 
     // === SEEDED PRNG ===
-    let seed = 42; // Seed value
+    let seed = 45; // Seed value
     function prng() {
         seed = (seed * 9301 + 49297) % 233280;
         return seed / 233280;
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (tileCanvas) tileCanvas.classList.add('visible');
         isLoopVideo = true;
         heroVideo.play();
-    }, 5000);
+    }, 5500);
 
 	heroVideo.addEventListener("play", () => {
 		drawVideoBackground();
