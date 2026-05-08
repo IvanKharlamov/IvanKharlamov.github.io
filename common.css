@@ -463,8 +463,8 @@ a {
     gap: 12px;
 }
 
-
 .footer-share {
+	padding-top: 48px;
     display: flex;
     align-items: center;
     gap: 12px;

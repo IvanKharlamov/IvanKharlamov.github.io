@@ -1,62 +1,25 @@
 // Common JS: Navigation, Translations, Utilities
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Header Scroll Effect
     const header = document.querySelector('.site-header');
-    if (header) {
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-    }
+    window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 50));
 
-    // Mobile Menu Toggle
-    const menuToggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
-    const closeMobileMenu = document.getElementById('close-mobile-menu');
+    const menuToggle = document.getElementById('menu-toggle'),
+          mobileMenu = document.getElementById('mobile-menu'),
+          mobileMenuOverlay = document.getElementById('mobile-menu-overlay'),
+          closeMobileMenu = document.getElementById('close-mobile-menu');
 
-    function openMobileMenu() {
-        if (mobileMenu) mobileMenu.classList.add('active');
-        if (mobileMenuOverlay) mobileMenuOverlay.classList.add('active');
-        if (menuToggle) menuToggle.classList.add('active');
-        document.body.style.overflow = 'hidden';
-    }
+    const setMenuState = (active) => {
+        [mobileMenu, mobileMenuOverlay, menuToggle].forEach(el => el?.classList.toggle('active', active));
+        document.body.style.overflow = active ? 'hidden' : '';
+    };
 
-    function closeMobileMenuFunc() {
-        if (mobileMenu) mobileMenu.classList.remove('active');
-        if (mobileMenuOverlay) mobileMenuOverlay.classList.remove('active');
-        if (menuToggle) menuToggle.classList.remove('active');
-        document.body.style.overflow = '';
-    }
+    menuToggle.addEventListener('click', () => setMenuState(!mobileMenu?.classList.contains('active')));
 
-    if (menuToggle) {
-        menuToggle.addEventListener('click', () => {
-            if (mobileMenu && mobileMenu.classList.contains('active')) {
-                closeMobileMenuFunc();
-            } else {
-                openMobileMenu();
-            }
-        });
-    }
+    closeMobileMenu.addEventListener('click', () => setMenuState(false));
+    mobileMenuOverlay.addEventListener('click', () => setMenuState(false));
 
-    if (closeMobileMenu) {
-        closeMobileMenu.addEventListener('click', closeMobileMenuFunc);
-    }
-
-    if (mobileMenuOverlay) {
-        mobileMenuOverlay.addEventListener('click', closeMobileMenuFunc);
-    }
-
-    // Close mobile menu when clicking on a link
-    document.querySelectorAll('.mobile-nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-            closeMobileMenuFunc();
-        });
-    });
+    document.querySelectorAll('.mobile-nav-link').forEach(link => link.addEventListener('click', () => setMenuState(false)));
 
     // Mobile cart toggle
     const cartToggleMobile = document.getElementById('cart-toggle-mobile');
@@ -66,138 +29,81 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Translations ---
     const translations = { en: {}, es: {} };
     if (window.TRANSLATIONS_RAW) {
-        Object.keys(window.TRANSLATIONS_RAW).forEach(key => {
-            translations.en[key] = window.TRANSLATIONS_RAW[key].en;
-            translations.es[key] = window.TRANSLATIONS_RAW[key].es;
+        Object.entries(window.TRANSLATIONS_RAW).forEach(([key, val]) => {
+            translations.en[key] = val.en;
+            translations.es[key] = val.es;
         });
     }
 
     window.currentLang = localStorage.getItem('upstage_lang') || 'es';
 
-    window.changeLanguage = function (lang) {
+    window.changeLanguage = (lang) => {
         if (!translations[lang]) return;
         window.currentLang = lang;
         localStorage.setItem('upstage_lang', lang);
 
-        document.querySelectorAll('.lang-opt').forEach(el => {
-            el.classList.toggle('active', el.dataset.lang === lang);
-        });
+        document.querySelectorAll('.lang-opt').forEach(el => el.classList.toggle('active', el.dataset.lang === lang));
 
-        // Text Content
         document.querySelectorAll('[data-i18n]').forEach(el => {
-            const key = el.dataset.i18n;
-            if (translations[lang][key]) {
-                if (key === 'hero.title' || key.includes('modalText')) {
-                    el.innerHTML = translations[lang][key]; // Allow HTML for hero title breaks and rich text modals
-                } else {
-                    el.textContent = translations[lang][key];
-                }
-            }
+            const key = el.dataset.i18n, val = translations[lang][key];
+            if (val) el[key === 'hero.title' || key.includes('modalText') ? 'innerHTML' : 'textContent'] = val;
         });
 
-        // Placeholders
-        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-            const key = el.dataset.i18nPlaceholder;
-            if (translations[lang][key]) {
-                el.placeholder = translations[lang][key];
-            }
-        });
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => el.placeholder = translations[lang][el.dataset.i18nPlaceholder]);
+        document.querySelectorAll('option[data-i18n]').forEach(el => el.textContent = translations[lang][el.dataset.i18n]);
 
-        // Select options
-        document.querySelectorAll('option[data-i18n]').forEach(el => {
-            const key = el.dataset.i18n;
-            if (translations[lang][key]) {
-                el.textContent = translations[lang][key];
-            }
-        });
-
-        // If inventory page, re-render products to update empty message etc
-        if (typeof window.renderProducts === 'function' && window.products) {
-            // Re-apply filters which triggers render
-            if (typeof window.applyFilters === 'function') {
-                window.applyFilters();
-            }
-        }
-
-        // CRITICAL: Trigger cart re-render to update dynamic content
-        if (window.cartUI) {
-            window.cartUI.render();
-        }
+        if (typeof window.applyFilters === 'function' && window.products) window.applyFilters();
+        window.cartUI?.render();
     };
 
-    document.querySelectorAll('.lang-opt').forEach(btn => {
-        btn.addEventListener('click', () => {
-            window.changeLanguage(btn.dataset.lang);
-        });
-    });
+    document.querySelectorAll('.lang-opt').forEach(btn => btn.addEventListener('click', () => window.changeLanguage(btn.dataset.lang)));
 
     // Init Language
     window.changeLanguage(window.currentLang);
 
     // --- Toast Notification System ---
-    window.showToast = function (message, type = 'info') {
-        let container = document.getElementById('toast-container');
-        if (!container) {
-            container = document.createElement('div');
-            container.id = 'toast-container';
-            document.body.appendChild(container);
-        }
+    window.showToast = (message, type = 'info') => {
+        let container = document.getElementById('toast-container') || (() => {
+            const c = document.createElement('div'); c.id = 'toast-container';
+            return document.body.appendChild(c);
+        })();
 
         const toast = document.createElement('div');
         toast.className = `toast ${type}`;
+        
+        const icons = {
+            success: '<svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>',
+            error: '<svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>',
+            info: '<svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>'
+        };
 
-        let icon = '';
-        if (type === 'success') icon = '<svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>';
-        else if (type === 'error') icon = '<svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>';
-        else icon = '<svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>';
-
-        toast.innerHTML = `
-            ${icon}
-            <span class="toast-message">${message}</span>
-            <button class="toast-close">&times;</button>
-        `;
-
+        toast.innerHTML = `${icons[type] || icons.info}<span class="toast-message">${message}</span><button class="toast-close">&times;</button>`;
         container.appendChild(toast);
 
-        // Auto remove
-        const timeout = setTimeout(() => {
-            removeToast(toast);
-        }, 40000);
+        const remove = () => {
+            toast.style.animation = 'fadeOutToast 0.3s forwards cubic-bezier(0.16, 1, 0.3, 1)';
+            toast.addEventListener('animationend', () => toast.remove());
+        };
 
-        // Close button
-        toast.querySelector('.toast-close').addEventListener('click', () => {
-            clearTimeout(timeout);
-            removeToast(toast);
-        });
-
-        function removeToast(el) {
-            el.style.animation = 'fadeOutToast 0.3s forwards cubic-bezier(0.16, 1, 0.3, 1)';
-            el.addEventListener('animationend', () => {
-                if (el.parentElement) el.parentElement.removeChild(el);
-            });
-        }
+        const timeout = setTimeout(remove, 40000);
+        toast.querySelector('.toast-close').addEventListener('click', () => { clearTimeout(timeout); remove(); });
     };
     const initSocialSharing = () => {
         const shareLinks = document.querySelectorAll('.share-link');
-        if (shareLinks.length === 0) return;
 
-        const url = encodeURIComponent(window.location.href);
-        const text = encodeURIComponent(document.title);
+        const url = encodeURIComponent(window.location.href),
+              text = encodeURIComponent(document.title);
 
-        shareLinks.forEach(link => {
-            if (link.classList.contains('facebook')) {
-                link.href = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
-            } else if (link.classList.contains('x-twitter')) {
-                link.href = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
-            } else if (link.classList.contains('linkedin')) {
-                link.href = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
-            } else if (link.classList.contains('whatsapp')) {
-                link.href = `https://api.whatsapp.com/send?text=${text}%20${url}`;
-            }
-        });
+        const bases = {
+            facebook: `https://www.facebook.com/sharer/sharer.php?u=${url}`,
+            'x-twitter': `https://twitter.com/intent/tweet?url=${url}&text=${text}`,
+            linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${url}`,
+            whatsapp: `https://api.whatsapp.com/send?text=${text}%20${url}`
+        };
+
+        shareLinks.forEach(link => link.href = bases[Object.keys(bases).find(k => link.classList.contains(k))]);
     };
 
     initSocialSharing();
@@ -205,10 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
 /* === MERGED FROM cart.js === */
 let activeDatePicker = null;
 
-function t(key) {
-    const lang = window.currentLang || 'es';
-    return window.TRANSLATIONS_RAW && window.TRANSLATIONS_RAW[key] ? window.TRANSLATIONS_RAW[key][lang] : key;
-}
+const t = (key) => window.TRANSLATIONS_RAW?.[key]?.[window.currentLang || 'es'] || key;
 
 // --- DatePicker Class (Shared between Cart and Inventory) ---
 class DatePicker {
@@ -298,57 +201,29 @@ class DatePicker {
     }
 
     render() {
-        const year = this.viewDate.getFullYear();
-        const month = this.viewDate.getMonth();
-        const currentLang = window.currentLang || 'es';
+        const year = this.viewDate.getFullYear(), month = this.viewDate.getMonth(), lang = window.currentLang || 'es';
+        this.currentMonthDisplay.textContent = `${window.TRANSLATIONS_RAW["calendar.months"][lang][month]} ${year}`;
 
-        const monthNames = window.TRANSLATIONS_RAW["calendar.months"][currentLang];
-        this.currentMonthDisplay.textContent = `${monthNames[month]} ${year}`;
-
-        const dayHeaders = this.calendar.querySelectorAll('.calendar-grid-header span');
-        const dayNames = window.TRANSLATIONS_RAW["calendar.days"][currentLang];
-        dayHeaders.forEach((header, i) => {
-            if (dayNames && dayNames[i]) {
-                header.textContent = dayNames[i];
-            }
-        });
+        const dayNames = window.TRANSLATIONS_RAW["calendar.days"][lang];
+        this.calendar.querySelectorAll('.calendar-grid-header span').forEach((h, i) => h.textContent = dayNames?.[i] || '');
 
         this.daysGrid.innerHTML = '';
+        const first = new Date(year, month, 1).getDay(), days = new Date(year, month + 1, 0).getDate(), start = first === 0 ? 6 : first - 1;
 
-        const firstDay = new Date(year, month, 1).getDay();
-        const daysInMonth = new Date(year, month + 1, 0).getDate();
-        const startingDay = firstDay === 0 ? 6 : firstDay - 1;
-
-        for (let i = 0; i < startingDay; i++) {
-            const empty = document.createElement('div');
-            empty.className = 'calendar-day empty';
-            this.daysGrid.appendChild(empty);
+        for (let i = 0; i < start; i++) {
+            const e = document.createElement('div'); e.className = 'calendar-day empty';
+            this.daysGrid.appendChild(e);
         }
 
-        const today = new Date();
-        today.setHours(0, 0, 0, 0);
-
-        for (let day = 1; day <= daysInMonth; day++) {
-            const date = new Date(year, month, day);
-            const dayEl = document.createElement('div');
-            dayEl.className = 'calendar-day';
-            dayEl.textContent = day;
-
-            if (date < today) {
-                dayEl.classList.add('disabled');
-            } else {
-                dayEl.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    this.selectDate(new Date(date));
-                });
-            }
-
-            if (date.getTime() === today.getTime()) {
-                dayEl.classList.add('today');
-            }
-
-            this.updateDayStyling(dayEl, date);
-            this.daysGrid.appendChild(dayEl);
+        const today = new Date(); today.setHours(0, 0, 0, 0);
+        for (let d = 1; d <= days; d++) {
+            const date = new Date(year, month, d), el = document.createElement('div');
+            el.className = 'calendar-day'; el.textContent = d;
+            if (date < today) el.classList.add('disabled');
+            else el.onclick = (e) => (e.stopPropagation(), this.selectDate(new Date(date)));
+            if (date.getTime() === today.getTime()) el.classList.add('today');
+            this.updateDayStyling(el, date);
+            this.daysGrid.appendChild(el);
         }
     }
 
@@ -391,19 +266,12 @@ class DatePicker {
     }
 
     updateDisplay() {
-        const currentLang = window.currentLang || 'es';
-        const locale = currentLang === 'es' ? 'es-ES' : 'en-GB';
-        const options = { day: 'numeric', month: 'short' };
-        const selectText = t('pricing.selectDates');
-
-        if (this.startDate && this.endDate) {
-            this.rangeText.textContent = `${this.startDate.toLocaleDateString(locale, options)} - ${this.endDate.toLocaleDateString(locale, options)}`;
-            this.rangeText.classList.add('has-dates');
-        } else if (this.startDate) {
-            this.rangeText.textContent = `${this.startDate.toLocaleDateString(locale, options)} - ...`;
+        const lang = window.currentLang || 'es', loc = lang === 'es' ? 'es-ES' : 'en-GB', opt = { day: 'numeric', month: 'short' };
+        if (this.startDate) {
+            this.rangeText.textContent = `${this.startDate.toLocaleDateString(loc, opt)} - ${this.endDate ? this.endDate.toLocaleDateString(loc, opt) : '...'}`;
             this.rangeText.classList.add('has-dates');
         } else {
-            this.rangeText.textContent = selectText;
+            this.rangeText.textContent = t('pricing.selectDates');
             this.rangeText.classList.remove('has-dates');
         }
     }
@@ -448,10 +316,8 @@ class CartManager {
     saveCart() {
         try {
             localStorage.setItem(this.storageKey, JSON.stringify(this.cart));
-            this.notifyListeners();
-        } catch (e) {
-            console.error('Error saving cart:', e);
-        }
+            this.listeners.forEach(cb => cb(this.cart));
+        } catch (e) { console.error('Cart error:', e); }
     }
 
     subscribe(callback) {
@@ -486,26 +352,18 @@ class CartManager {
     }
 
     updateQuantity(index, change) {
-        if (!this.cart[index]) return false;
-
         const item = this.cart[index];
+        if (!item || (item.quantity + change < 1)) return false;
         item.quantity += change;
 
-        if (item.quantity < 1) {
-            item.quantity = 1;
-            return false;
-        }
-
         if (!item.isCustom && window.products) {
-            const product = window.products.find(p => p.id === item.productId);
-            if (product) {
-				item.basePrice = product.priceDay * item.days * item.quantity;
-				item.totalPrice = product.priceDay * item.multiplier * item.quantity;
+            const p = window.products.find(x => x.id === item.productId);
+            if (p) {
+                item.basePrice = p.priceDay * item.days * item.quantity;
+                item.totalPrice = p.priceDay * item.multiplier * item.quantity;
             }
         }
-
-        this.saveCart();
-        return true;
+        this.saveCart(); return true;
     }
 
     updateDates(index, startDate, endDate) {
@@ -577,14 +435,9 @@ class CartManager {
     }
 
     getRentalMultiplier(days) {
-        if (days === 0) return 0;
+        if (!days) return 0;
         if (days === 7) return 3;
-
-        let multiplier = 1;
-        multiplier += 0.5 * Math.min(Math.max(days - 1, 0), 3);
-        multiplier += 0.25 * Math.min(Math.max(days - 4, 0), 2);
-
-        return multiplier;
+        return 1 + 0.5 * Math.min(Math.max(days - 1, 0), 3) + 0.25 * Math.min(Math.max(days - 4, 0), 2);
     }
 }
 
@@ -622,15 +475,8 @@ class CartUI {
         this.render();
     }
 
-    open() {
-        if (this.drawer) this.drawer.classList.add('active');
-        if (this.overlay) this.overlay.classList.add('active');
-    }
-
-    close() {
-        if (this.drawer) this.drawer.classList.remove('active');
-        if (this.overlay) this.overlay.classList.remove('active');
-    }
+    open() { this.drawer?.classList.add('active'); this.overlay?.classList.add('active'); }
+    close() { this.drawer?.classList.remove('active'); this.overlay?.classList.remove('active'); }
 
     render() {
         // Update count badge
@@ -819,17 +665,8 @@ class QuoteFormsManager {
     }
 
     // Validation functions
-    validateEmail(email) {
-        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return re.test(email);
-    }
-
-    validateSpanishPhone(phone) {
-        // Spanish phone format: +34 XXX XXX XXX or similar patterns
-        const cleaned = phone.replace(/\s+/g, '');
-        const re = /^(\+34|0034|34)?[6789]\d{8}$/;
-        return re.test(cleaned);
-    }
+    validateEmail(e) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e); }
+    validateSpanishPhone(p) { return /^(\+34|0034|34)?[6789]\d{8}$/.test(p.replace(/\s+/g, '')); }
 
     formatCartItems(items) {
         if (!items || items.length === 0) return '';
@@ -873,15 +710,8 @@ class QuoteFormsManager {
 
     // Show success message
     showSuccess() {
-        const modal = document.getElementById('quote-success-modal');
-        if (modal) {
-            modal.classList.add('active');
-            
-            // Auto close after 5 seconds
-            setTimeout(() => {
-                modal.classList.remove('active');
-            }, 5000);
-        }
+        const m = document.getElementById('quote-success-modal');
+        if (m) { m.classList.add('active'); setTimeout(() => m.classList.remove('active'), 5000); }
     }
 
     // Show error message
@@ -1035,191 +865,38 @@ class QuoteFormsManager {
         container.innerHTML = html;
     }
 
-    // Handle contact form submission
-    async handleContactFormSubmit(form) {
-        const submitBtn = form.querySelector('button[type="submit"]');
-        const originalText = submitBtn.textContent;
+    async handleFormSubmit(form, subject, extraData = {}) {
+        const btn = form.querySelector('button[type="submit"]'), original = btn.textContent;
+        const email = form.querySelector('[type="email"]')?.value, phone = form.querySelector('[type="tel"]')?.value;
 
-        const fullName = form.querySelector('#contact-name').value;
-        const phone = form.querySelector('#contact-phone').value;
-        const email = form.querySelector('#contact-email').value;
-        const organization = form.querySelector('#contact-org').value;
-        const project = form.querySelector('#contact-project').value;
-        const message = form.querySelector('#contact-message').value;
+        if (email && !this.validateEmail(email)) return this.showError(this.t('quote.validation.email'));
+        if (phone && !this.validateSpanishPhone(phone)) return this.showError(this.t('quote.validation.phone'));
 
-        // Validation
-        if (!this.validateEmail(email)) {
-            this.showError(this.t('quote.validation.email'));
-            return;
-        }
+        const fd = new FormData(form);
+        fd.append('access_key', this.accessKey);
+        fd.append('subject', subject);
+        Object.entries(extraData).forEach(([k, v]) => fd.append(k, v));
 
-        if (!this.validateSpanishPhone(phone)) {
-            this.showError(this.t('quote.validation.phone'));
-            return;
-        }
-
-        const formData = new FormData();
-        formData.append('access_key', this.accessKey);
-        formData.append('subject', 'Contact Form - UPSTAGE MADRID');
-        formData.append('name', fullName);
-        formData.append('phone', phone);
-        formData.append('email', email);
-        formData.append('organization', organization);
-        formData.append('project', project);
-        formData.append('message', message);
-
-        submitBtn.textContent = this.t('quote.form.sending');
-        submitBtn.disabled = true;
+        btn.textContent = this.t('quote.form.sending'); btn.disabled = true;
 
         try {
-            const response = await fetch('https://api.web3forms.com/submit', {
-                method: 'POST',
-                body: formData
-            });
-
-            const data = await response.json();
-
-            if (response.ok && data.success) {
-                this.showSuccess();
-                form.reset();
-            } else {
-                this.showError(data.message);
-            }
-        } catch (error) {
-            console.error('Contact form error:', error);
-            this.showError();
-        } finally {
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-        }
+            const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: fd });
+            const data = await res.json();
+            if (res.ok && data.success) {
+                this.closeGeneralQuoteModal(); this.closeCartQuoteModal();
+                this.showSuccess(); form.reset();
+                if (extraData.message?.includes('QUOTE ITEMS')) window.cartManager.clearCart();
+            } else this.showError(data.message);
+        } catch (e) { this.showError(); }
+        finally { btn.textContent = original; btn.disabled = false; }
     }
 
-    // Handle general quote form submission
-    async handleGeneralQuoteSubmit(form) {
-        const submitBtn = form.querySelector('button[type="submit"]');
-        const originalText = submitBtn.textContent;
-
-        const fullName = form.querySelector('#general-quote-name').value;
-        const phone = form.querySelector('#general-quote-phone').value;
-        const email = form.querySelector('#general-quote-email').value;
-        const organization = form.querySelector('#general-quote-org').value;
-        const project = form.querySelector('#general-quote-project').value;
-        const message = form.querySelector('#general-quote-message').value;
-
-        // Validation
-        if (!this.validateEmail(email)) {
-            this.showError(this.t('quote.validation.email'));
-            return;
-        }
-
-        if (!this.validateSpanishPhone(phone)) {
-            this.showError(this.t('quote.validation.phone'));
-            return;
-        }
-
-        const formData = new FormData();
-        formData.append('access_key', this.accessKey);
-        formData.append('subject', 'General Quote Request - UPSTAGE MADRID');
-        formData.append('name', fullName);
-        formData.append('phone', phone);
-        formData.append('email', email);
-        formData.append('organization', organization);
-        formData.append('project', project);
-        formData.append('message', message);
-
-        submitBtn.textContent = this.t('quote.form.sending');
-        submitBtn.disabled = true;
-
-        try {
-            const response = await fetch('https://api.web3forms.com/submit', {
-                method: 'POST',
-                body: formData
-            });
-
-            const data = await response.json();
-
-            if (response.ok && data.success) {
-                this.closeGeneralQuoteModal();
-                this.showSuccess();
-                form.reset();
-            } else {
-                this.showError(data.message);
-            }
-        } catch (error) {
-            console.error('General quote error:', error);
-            this.showError();
-        } finally {
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-        }
-    }
-
-    // Handle cart quote form submission
+    async handleContactFormSubmit(form) { await this.handleFormSubmit(form, 'Contact Form - UPSTAGE MADRID'); }
+    async handleGeneralQuoteSubmit(form) { await this.handleFormSubmit(form, 'General Quote Request - UPSTAGE MADRID'); }
     async handleCartQuoteSubmit(form) {
-        const submitBtn = form.querySelector('button[type="submit"]');
-        const originalText = submitBtn.textContent;
-
-        const fullName = form.querySelector('#cart-quote-name').value;
-        const phone = form.querySelector('#cart-quote-phone').value;
-        const email = form.querySelector('#cart-quote-email').value;
-        const organization = form.querySelector('#cart-quote-org').value;
-        const project = form.querySelector('#cart-quote-project').value;
-        const additionalInfo = form.querySelector('#cart-quote-additional').value;
-
-        // Validation
-        if (!this.validateEmail(email)) {
-            this.showError(this.t('quote.validation.email'));
-            return;
-        }
-
-        if (!this.validateSpanishPhone(phone)) {
-            this.showError(this.t('quote.validation.phone'));
-            return;
-        }
-
-        const cartItems = window.cartManager.getItems();
-        const cartItemsText = this.formatCartItems(cartItems);
-
-        const fullMessage = additionalInfo 
-            ? `${additionalInfo}\n${cartItemsText}` 
-            : cartItemsText;
-
-        const formData = new FormData();
-        formData.append('access_key', this.accessKey);
-        formData.append('subject', 'Cart Quote Request - Upstage Rentals');
-        formData.append('name', fullName);
-        formData.append('phone', phone);
-        formData.append('email', email);
-        formData.append('organization', organization);
-        formData.append('project', project);
-        formData.append('message', fullMessage);
-
-        submitBtn.textContent = this.t('quote.form.sending');
-        submitBtn.disabled = true;
-
-        try {
-            const response = await fetch('https://api.web3forms.com/submit', {
-                method: 'POST',
-                body: formData
-            });
-
-            const data = await response.json();
-
-            if (response.ok && data.success) {
-                this.closeCartQuoteModal();
-                this.showSuccess();
-                window.cartManager.clearCart();
-                form.reset();
-            } else {
-                this.showError(data.message);
-            }
-        } catch (error) {
-            console.error('Cart quote error:', error);
-            this.showError();
-        } finally {
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-        }
+        const items = window.cartManager.getItems(), text = this.formatCartItems(items);
+        const msg = form.querySelector('#cart-quote-additional')?.value;
+        await this.handleFormSubmit(form, 'Cart Quote Request - Upstage Rentals', { message: msg ? `${msg}\n${text}` : text });
     }
 
     closeGeneralQuoteModal() {

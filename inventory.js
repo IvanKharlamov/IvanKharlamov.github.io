@@ -9,63 +9,35 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentModalView = 'details';
 
     // Helper function for translations
-    function t(key) {
-        const lang = window.currentLang || 'es';
-        return window.TRANSLATIONS_RAW[key] ? window.TRANSLATIONS_RAW[key][lang] : key;
-    }
+    const t = (key) => window.TRANSLATIONS_RAW[key]?.[window.currentLang || 'es'] || key;
 
     // Render Products Function
-    window.renderProducts = function (items) {
-        const grid = document.getElementById('product-grid');
+    window.renderProducts = (items) => {
+        const grid = document.getElementById('product-grid'), lang = window.currentLang || 'es';
         if (!grid) return;
 
-        const currentLang = window.currentLang || 'es';
-
-        if (items.length === 0) {
-            grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;">${t('catalog.empty')}</div>`;
-            return;
-        }
-
-        grid.innerHTML = items.map(product => {
-            const displayName = product.name[currentLang];
-            const displayCategory = window.TRANSLATIONS_RAW[product.category][currentLang];
-            return `
-            <div class="glass-card product-card" onclick="window.openProductModal(${product.id}, 'details')">
-                <div class="product-image">
-                    <img src="${product.image}" alt="${displayName}">
-                </div>
+        grid.innerHTML = items.length ? items.map(p => `
+            <div class="glass-card product-card" onclick="window.openProductModal(${p.id}, 'details')">
+                <div class="product-image"><img src="${p.image}" alt="${p.name[lang]}"></div>
                 <div class="product-info">
-                    <div class="product-category">${displayCategory}</div>
-                    <h3 class="product-title">${displayName}</h3>
-                    <div class="product-price">
-                        <span class="price-day">€${product.priceDay}</span>
-                        <span class="price-unit">${t('rental.perDay')}</span>
-                    </div>
+                    <div class="product-category">${window.TRANSLATIONS_RAW[p.category][lang]}</div>
+                    <h3 class="product-title">${p.name[lang]}</h3>
+                    <div class="product-price"><span class="price-day">€${p.priceDay}</span><span class="price-unit">${t('rental.perDay')}</span></div>
                     <div class="product-actions">
-                        <button class="btn btn-outline btn-sm" onclick="event.stopPropagation(); window.openProductModal(${product.id}, 'details')">${t('product.details')}</button>
-                        <button class="btn btn-primary btn-sm" onclick="event.stopPropagation(); window.openProductModal(${product.id}, 'quote')">${t('product.addToQuote')}</button>
+                        <button class="btn btn-outline btn-sm" onclick="event.stopPropagation(); window.openProductModal(${p.id}, 'details')">${t('product.details')}</button>
+                        <button class="btn btn-primary btn-sm" onclick="event.stopPropagation(); window.openProductModal(${p.id}, 'quote')">${t('product.addToQuote')}</button>
                     </div>
                 </div>
-            </div>
-        `}).join('');
-
-		injectProductSchema(items);
+            </div>`).join('') : `<div style="grid-column:1/-1;text-align:center;">${t('catalog.empty')}</div>`;
+        injectProductSchema(items);
     };
 
     // Sort products
-    function sortProducts(items) {
-        const sorted = [...items];
-        
-        switch(currentSort) {
-            case 'lowToHigh':
-                return sorted.sort((a, b) => a.priceDay - b.priceDay);
-            case 'highToLow':
-                return sorted.sort((a, b) => b.priceDay - a.priceDay);
-            case 'featured':
-            default:
-                return sorted;
-        }
-    }
+    const sortProducts = (items) => {
+        const s = [...items];
+        return currentSort === 'lowToHigh' ? s.sort((a,b) => a.priceDay - b.priceDay) :
+               currentSort === 'highToLow' ? s.sort((a,b) => b.priceDay - a.priceDay) : s;
+    };
 	
 	function injectProductSchema(items) {
 		const currentLang = window.currentLang || 'es';
@@ -110,20 +82,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // Filter Logic
-    window.applyFilters = function () {
-        const currentLang = window.currentLang || 'es';
-        let filtered = window.products.filter(product => {
-            const displayName = product.name[currentLang];
-            const matchesSearch = displayName.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                product.manufacturer.toLowerCase().includes(searchTerm.toLowerCase());
-
-            const matchesCategory = activeFilters.category.length === 0 || activeFilters.category.includes(product.category);
-
-            return matchesSearch && matchesCategory;
-        });
-
-        filtered = sortProducts(filtered);
-        window.renderProducts(filtered);
+    window.applyFilters = () => {
+        const lang = window.currentLang || 'es', s = searchTerm.toLowerCase();
+        let filtered = window.products.filter(p => 
+            (p.name[lang].toLowerCase().includes(s) || p.manufacturer.toLowerCase().includes(s)) &&
+            (!activeFilters.category.length || activeFilters.category.includes(p.category))
+        );
+        window.renderProducts(sortProducts(filtered));
     };
 
     // Event Listeners - Search
@@ -212,44 +177,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Helper: Update pricing in modal
     function updateModalPricing() {
-        const days = calculateDays();
-        const product = window.products.find(p => p.id === currentProductId);
-        const qty = productQtyInput ? parseInt(productQtyInput.value) || 1 : 1;
+        const days = calculateDays(), p = window.products.find(x => x.id === currentProductId), qty = parseInt(productQtyInput?.value) || 1;
+        const durEl = document.getElementById('rental-duration'), prEl = document.getElementById('modal-price');
 
-        if (days > 0 && product) {
-            if (days > 7) {
-                const daysText = t('rental.daysAndUnits').replace('{{days}}', days).replace('{{qty}}', qty);
-                document.getElementById('rental-duration').textContent = daysText;
-                document.getElementById('modal-price').innerHTML = `<span style="font-size: 1rem; color: var(--accent);">${t('rental.customRate')}</span>`;
-            } else {
-				const multiplier = window.cartManager.getRentalMultiplier(days);
-				const basePrice = calculateBasePrice(product, days, qty);
-				const total = product.priceDay * multiplier * qty;
-
-                const daysText = t('rental.daysAndUnits').replace('{{days}}', days).replace('{{qty}}', qty);
-                document.getElementById('rental-duration').textContent = daysText;
-
-                const multiplierText = multiplier > 1 ? ` 
-                    <span class="price-multiplier">(x${multiplier.toFixed(2)})</span>
+        if (days > 0 && p) {
+            durEl.textContent = t('rental.daysAndUnits').replace('{{days}}', days).replace('{{qty}}', qty);
+            if (days > 7) prEl.innerHTML = `<span style="font-size:1rem;color:var(--accent);">${t('rental.customRate')}</span>`;
+            else {
+                const m = window.cartManager.getRentalMultiplier(days), base = p.priceDay * days * qty, total = p.priceDay * m * qty;
+                prEl.innerHTML = `<span class="price-base">€${base.toLocaleString()}</span><span class="price-final">€${total.toLocaleString()}</span>${m > 1 ? ` 
+                    <span class="price-multiplier">(x${m.toFixed(2)})</span>
                     <div class="price-info-trigger">
                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
                         <div class="price-tooltip glass-card">
-                            <strong>${t('pricing.title')}</strong>
-                            <ul>
-                                <li><strong>${t('pricing.day1')}</strong></li>
-                                <li><strong>${t('pricing.day2_4')}</strong></li>
-                                <li><strong>${t('pricing.day5_6')}</strong></li>
-                                <li><strong>${t('pricing.day7')}</strong></li>
-                            </ul>
-                            <p>${t('pricing.note')}</p>
+                            <strong>${t('pricing.title')}</strong><ul><li><strong>${t('pricing.day1')}</strong></li><li><strong>${t('pricing.day2_4')}</strong></li><li><strong>${t('pricing.day5_6')}</strong></li><li><strong>${t('pricing.day7')}</strong></li></ul><p>${t('pricing.note')}</p>
                         </div>
-                    </div>
-                ` : '';
-				document.getElementById('modal-price').innerHTML = `<span class="price-base">€${basePrice.toLocaleString()}</span><span class="price-final">€${total.toLocaleString()}</span>${multiplierText}`;
-			}
+                    </div>` : ''}`;
+            }
         } else {
-            document.getElementById('rental-duration').textContent = t('rental.selectValidDates');
-            if (product) document.getElementById('modal-price').textContent = `€${(product.priceDay * qty).toLocaleString()}`;
+            durEl.textContent = t('rental.selectValidDates');
+            if (p) prEl.textContent = `€${(p.priceDay * qty).toLocaleString()}`;
         }
     }
 
@@ -279,65 +226,28 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Open Product Modal
-    window.openProductModal = function (id, view = 'details') {
-        currentProductId = id;
-        currentModalView = view;
-        const product = window.products.find(p => p.id === id);
-        if (!product) return;
+    window.openProductModal = (id, view = 'details') => {
+        currentProductId = id; currentModalView = view;
+        const p = window.products.find(x => x.id === id), lang = window.currentLang || 'es';
+        if (!p) return;
 
-        const currentLang = window.currentLang || 'es';
-        const displayName = product.name[currentLang];
-        const displayCategory = window.TRANSLATIONS_RAW[product.category][currentLang];
+        document.getElementById('modal-img').src = p.image;
+        document.getElementById('modal-title').textContent = p.name[lang];
+        document.getElementById('modal-category').textContent = window.TRANSLATIONS_RAW[p.category][lang];
+        document.getElementById('modal-desc').textContent = p.description?.[lang] || (lang === 'es' ? `${p.name[lang]} es una solución de alto rendimiento.` : `${p.name[lang]} is a high-performance solution.`);
 
-        // Update shared elements
-        document.getElementById('modal-img').src = product.image;
-        document.getElementById('modal-title').textContent = displayName;
-        document.getElementById('modal-category').textContent = displayCategory;
-        
-        const descText = product.description && product.description[currentLang]
-            ? product.description[currentLang]
-            : (currentLang === 'es'
-                ? `${displayName} es una solución de ${displayCategory} de alto rendimiento utilizada en entornos profesionales.`
-                : `${displayName} is a high-performance ${displayCategory} solution used in professional environments.`);
-
-        document.getElementById('modal-desc').textContent = descText;
-
-        // Populate specs
-        const specGrid = document.getElementById('spec-grid');
-        specGrid.innerHTML = '';
-        const specs = product.specs ? product.specs[currentLang] : (currentLang === 'es' ? { "Estado": "Disponible" } : { "Status": "Available" });
-
-        Object.entries(specs).forEach(([key, value]) => {
-            specGrid.innerHTML += `
-                <div class="spec-item">
-                    <span class="spec-label">${key}</span>
-                    <span class="spec-value">${value}</span>
-                </div>
-            `;
+        const specGrid = document.getElementById('spec-grid'); specGrid.innerHTML = '';
+        Object.entries(p.specs?.[lang] || { [lang === 'es' ? 'Estado' : 'Status']: 'Available' }).forEach(([k, v]) => {
+            specGrid.innerHTML += `<div class="spec-item"><span class="spec-label">${k}</span><span class="spec-value">${v}</span></div>`;
         });
 
-        // Initialize/reset date picker using DatePicker from cart.js
-        if (!datePicker) {
-            const pickerElement = document.getElementById('modal-date-picker');
-            if (window.DatePicker) {
-                datePicker = new window.DatePicker(pickerElement);
-                // Set callback for date changes
-                datePicker.onDateChange = () => {
-                    updateModalPricing();
-                };
-            }
-        } else {
-            datePicker.reset();
-        }
+        if (!datePicker && window.DatePicker) datePicker = new window.DatePicker(document.getElementById('modal-date-picker')), datePicker.onDateChange = updateModalPricing;
+        else datePicker?.reset();
 
         if (productQtyInput) productQtyInput.value = 1;
         document.getElementById('rental-duration').textContent = t('rental.selectDates');
-        document.getElementById('modal-price').textContent = `€${product.priceDay}`;
-
-        // Switch to appropriate view
-        switchModalView(view);
-
-        modalOverlay.classList.add('active');
+        document.getElementById('modal-price').textContent = `€${p.priceDay}`;
+        switchModalView(view); modalOverlay.classList.add('active');
     };
 
     function closeModal() {

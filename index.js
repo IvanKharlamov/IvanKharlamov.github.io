@@ -7,11 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	let isLoopVideo = false;
 
     // === SEEDED PRNG ===
-    let seed = 45; // Seed value
-    function prng() {
-        seed = (seed * 9301 + 49297) % 233280;
-        return seed / 233280;
-    }
+    let seed = 45;
+    const prng = () => (seed = (seed * 9301 + 49297) % 233280, seed / 233280);
 
     // === ENERGY FIELD ANIMATION ===
     const nebula = document.getElementById('nebula');
@@ -44,29 +41,27 @@ document.addEventListener('DOMContentLoaded', () => {
         {top: '50%', right: 0, origin: '100% 50%'}
     ];
 
-    function spawnBeams(count) {
+    const spawnBeams = (count) => {
         for(let i=0; i<count; i++) {
-            const ray = document.createElement('div');
-            const corner = corners[Math.floor(prng()*corners.length)];
+            const ray = document.createElement('div'), corner = corners[Math.floor(prng()*corners.length)];
             ray.className = 'beam';
             if(corner.left !== undefined) ray.style.left = corner.left;
             if(corner.right !== undefined) ray.style.right = corner.right;
             if(corner.top !== undefined) ray.style.top = corner.top;
             if(corner.bottom !== undefined) ray.style.bottom = corner.bottom;
             ray.style.transformOrigin = corner.origin;
-            const colorSet = [['#00d4ff', '#ffffff'], ['#cc44ff', '#22ff88'], ['#ff0055', '#cc44ff'], ['#22ff88', '#00d4ff']][Math.floor(prng()*4)];
-            const thickness = 0.2 + prng() * 1.5; // Scaled thickness in vw
-            const glowOpacity = 0.2 + prng() * 0.4;
-            ray.innerHTML = `<div class="beam-glow" style="opacity: ${glowOpacity}; background: linear-gradient(to bottom, transparent, ${colorSet[0]}, ${colorSet[1]}, transparent)"></div>
-                             <div class="beam-body" style="height: ${thickness}vw; background: linear-gradient(to bottom, transparent, ${colorSet[0]}, ${colorSet[1]}, transparent)"></div>`;
+            const colors = [['#00d4ff', '#ffffff'], ['#cc44ff', '#22ff88'], ['#ff0055', '#cc44ff'], ['#22ff88', '#00d4ff']][Math.floor(prng()*4)];
+            const th = 0.2 + prng() * 1.5, glow = 0.2 + prng() * 0.4;
+            ray.innerHTML = `<div class="beam-glow" style="opacity: ${glow}; background: linear-gradient(to bottom, transparent, ${colors[0]}, ${colors[1]}, transparent)"></div>
+                             <div class="beam-body" style="height: ${th}vw; background: linear-gradient(to bottom, transparent, ${colors[0]}, ${colors[1]}, transparent)"></div>`;
             ray.style.setProperty('--startAngle', (prng()*360) + 'deg');
             ray.style.setProperty('--endAngle', (prng()*360) + 'deg');
-            ray.style.setProperty('--z', (prng()*40 - 20) + 'vw'); // Scaled Z in vw
+            ray.style.setProperty('--z', (prng()*40 - 20) + 'vw');
             ray.style.animation = `sweepSecondary ${8 + prng()*20}s infinite ease-in-out`;
             ray.style.opacity = 0.3 + prng()*0.5;
             if (system) system.appendChild(ray);
         }
-    }
+    };
     spawnBeams(15);
 
     setInterval(() => {
@@ -95,51 +90,20 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 
 		tctx.clearRect(0, 0, tileCanvas.width, tileCanvas.height);
-
-		const vw = heroVideo.videoWidth;
-		const vh = heroVideo.videoHeight;
+		const vw = heroVideo.videoWidth, vh = heroVideo.videoHeight;
 
 		if (!isLoopVideo) {
-			const scale = Math.max(
-				tileCanvas.width / vw,
-				tileCanvas.height / vh
-			);
-
-			const w = vw * scale;
-			const h = vh * scale;
-
-			tctx.drawImage(
-				heroVideo,
-				(tileCanvas.width - w) * 0.5,
-				(tileCanvas.height - h) * 0.5,
-				w,
-				h
-			);
+			const s = Math.max(tileCanvas.width / vw, tileCanvas.height / vh), w = vw * s, h = vh * s;
+			tctx.drawImage(heroVideo, (tileCanvas.width - w) * 0.5, (tileCanvas.height - h) * 0.5, w, h);
 		} else {
-			const cx = tileCanvas.width * 0.5;
-			const cy = tileCanvas.height * 0.5;
-
-			const tilesX = Math.ceil(tileCanvas.width / vw) + 2;
-			const tilesY = Math.ceil(tileCanvas.height / vh) + 2;
-
-			for (let iy = -tilesY; iy <= tilesY; iy++) {
-				for (let ix = -tilesX; ix <= tilesX; ix++) {
-					const x = cx - vw * 0.5 + ix * vw;
-					const y = cy - vh * 0.5 + iy * vh;
-
+			const cx = tileCanvas.width * 0.5, cy = tileCanvas.height * 0.5, tx = Math.ceil(tileCanvas.width / vw) + 2, ty = Math.ceil(tileCanvas.height / vh) + 2;
+			for (let iy = -ty; iy <= ty; iy++) {
+				for (let ix = -tx; ix <= tx; ix++) {
+					const fx = Math.abs(ix) % 2, fy = Math.abs(iy) % 2;
 					tctx.save();
-
-					const flipX = Math.abs(ix) % 2;
-					const flipY = Math.abs(iy) % 2;
-
-					tctx.translate(
-						x + (flipX ? vw : 0),
-						y + (flipY ? vh : 0)
-					);
-
-					tctx.scale(flipX ? -1 : 1, flipY ? -1 : 1);
+					tctx.translate(cx - vw * 0.5 + ix * vw + (fx ? vw : 0), cy - vh * 0.5 + iy * vh + (fy ? vh : 0));
+					tctx.scale(fx ? -1 : 1, fy ? -1 : 1);
 					tctx.drawImage(heroVideo, 0, 0);
-
 					tctx.restore();
 				}
 			}
@@ -240,34 +204,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     const y = 1 - (i / (n - 1)) * 2, r = Math.sqrt(1 - y * y), t = phi * i;
                     pts.push({ x: Math.cos(t) * r * s, y: y * s, z: Math.sin(t) * r * s });
                 }
-                for (let i = 0; i < n; i++) for (let j = i + 1; j < n; j++) {
-                    if (Math.hypot(pts[i].x - pts[j].x, pts[i].y - pts[j].y, pts[i].z - pts[j].z) < s * 1.1) edges.push([i, j]);
-                }
+                for (let i = 0; i < n; i++) for (let j = i + 1; j < n; j++) if (Math.hypot(pts[i].x - pts[j].x, pts[i].y - pts[j].y, pts[i].z - pts[j].z) < s * 1.1) edges.push([i, j]);
                 return Geo.link(pts, edges);
             },
-			calculate: (type, n, s) => {
-				if (type === 'pyramid') return Geo.pyramid(n, s);
-				if (type === 'prism') return Geo.prism(n / 2, s);
-				if (type === 'dipyramid') return Geo.dipyramid(n, s);
-				if (type === 'plane') return Geo.plane(n, s) || Geo.pyramid(n, s);
-				if (type === 'sphere') return Geo.sphere(n, s);
-				return null;
-			},
+			calculate: (type, n, s) => Geo[type]?.(type === 'prism' ? n / 2 : n, s) || Geo.pyramid(n, s),
 			getNewShapeSettings: (n) => {
-				const randScale = (1 + (Math.random() * 2 - 1) * CONFIG.scaleVar);
-				const growthFactor = 1 + (n * CONFIG.vertexScaleMult) / 100;
-				
-				let pool = [];
-				if (n == 4) pool = ['pyramid'];
-				else if (n == 5) pool = ['pyramid', 'dipyramid'];
-				else if (n <= 14) pool = ['pyramid', 'dipyramid', (n % 2 === 0 ? 'prism' : 'pyramid')];
-				else pool = ['plane', 'sphere', 'pyramid', 'dipyramid'];
-
-				let choices = pool.filter(type => type !== lastShapeID);
-				if (choices.length === 0) choices = pool;
-				const selected = choices[Math.floor(Math.random() * choices.length)];
-				
-				return { type: selected, randScale, growthFactor };
+				const rs = (1 + (Math.random() * 2 - 1) * CONFIG.scaleVar), gf = 1 + (n * CONFIG.vertexScaleMult) / 100;
+				let p = n <= 5 ? ['pyramid', 'dipyramid'] : n <= 14 ? ['pyramid', 'dipyramid', (n % 2 === 0 ? 'prism' : 'pyramid')] : ['plane', 'sphere', 'pyramid', 'dipyramid'];
+				let c = p.filter(t => t !== lastShapeID);
+				return { type: c[Math.floor(Math.random() * (c.length || p.length))] || p[0], randScale: rs, growthFactor: gf };
 			}
         };
 
@@ -279,30 +224,25 @@ document.addEventListener('DOMContentLoaded', () => {
             reset(rand = false) {
 				this.rx = rand ? Math.random() : this.x / width;
 				this.ry = rand ? Math.random() : this.y / height;
-				this.x = this.rx * width;
-				this.y = this.ry * height;
+				this.x = this.rx * width; this.y = this.ry * height;
                 this.vx = (Math.random() - 0.5) * CONFIG.freeSpeed * scaleFactor;
                 this.vy = (Math.random() - 0.5) * CONFIG.freeSpeed * scaleFactor;
                 this.mode = 'free'; this.shapeIndex = -1; this.trans = 0;
                 this.label = Math.random() < CONFIG.labelChance ? techLabels[Math.floor(Math.random() * techLabels.length)] : null;
-                this.glitchX = 0; this.glitchY = 0;
+                this.glitchX = this.glitchY = 0;
             }
             update() {
                 this.trans += ((this.mode === 'shape' ? 1 : 0) - this.trans) * CONFIG.transSpeed;
                 if (this.mode === 'shape' && Math.random() < CONFIG.glitchFreq) {
-					const glitchScale = currentScale / CONFIG.scaleBase;
-                    this.glitchX = (Math.random() - 0.5) * CONFIG.glitchStrength * glitchScale;
-                    this.glitchY = (Math.random() - 0.5) * CONFIG.glitchStrength * glitchScale;
-                } else {
-                    this.glitchX *= 0.7; this.glitchY *= 0.7;
-                }
+					const gs = currentScale / CONFIG.scaleBase;
+                    this.glitchX = (Math.random() - 0.5) * CONFIG.glitchStrength * gs;
+                    this.glitchY = (Math.random() - 0.5) * CONFIG.glitchStrength * gs;
+                } else { this.glitchX *= 0.7; this.glitchY *= 0.7; }
                 if (this.mode === 'free') {
-                    this.x += this.vx; this.y += this.vy;
-                    if (this.x < 0) this.x = this.x + width; else if (this.x > width) this.x = this.x - width;
-                    if (this.y < 0) this.y = this.y + height; else if (this.y > height) this.y = this.y - height;
+                    this.x = (this.x + this.vx + width) % width;
+                    this.y = (this.y + this.vy + height) % height;
                 } else if (shapeState === 'active' && shapePoints[this.shapeIndex]) {
-                    const p = shapePoints[this.shapeIndex];
-                    const cy = Math.cos(rotation.y), sy = Math.sin(rotation.y), cp = Math.cos(rotation.p), sp = Math.sin(rotation.p);
+                    const p = shapePoints[this.shapeIndex], cy = Math.cos(rotation.y), sy = Math.sin(rotation.y), cp = Math.cos(rotation.p), sp = Math.sin(rotation.p);
                     const dx = p.x * cy - p.z * sy, dz = p.x * sy + p.z * cy, dy = p.y * cp - dz * sp;
                     this.x += (dx + shapeCenter.x + this.glitchX - this.x) * CONFIG.lerp;
                     this.y += (dy + shapeCenter.y + this.glitchY - this.y) * CONFIG.lerp;
@@ -603,36 +543,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const cards = Array.from(grid.querySelectorAll('.service-card[data-service-id]'));
 
-        function placeContainer(card) {
-            // Find how many columns by looking at the grid gaps and offsetTop
-            // Elements in the same row will have the same offsetTop
-            const cardTop = card.offsetTop;
-            
-            // Find the first and last card in this visual row
-            let firstCardInRow = card;
-            let lastCardInRow = card;
-            
-            for (let i = cards.indexOf(card) - 1; i >= 0; i--) {
-                if (cards[i].offsetTop === cardTop) {
-                    firstCardInRow = cards[i];
-                } else {
-                    break;
-                }
-            }
-
-            for (let i = cards.indexOf(card) + 1; i < cards.length; i++) {
-                if (cards[i].offsetTop === cardTop) {
-                    lastCardInRow = cards[i];
-                } else {
-                    break;
-                }
-            }
-            
-            lastCardInRow.insertAdjacentElement('afterend', container);
-
-            container.classList.toggle('first-in-row', card === firstCardInRow);
-            container.classList.toggle('last-in-row', card === lastCardInRow);
-        }
+        const placeContainer = (card) => {
+            const top = card.offsetTop, row = cards.filter(c => c.offsetTop === top);
+            const first = row[0], last = row[row.length - 1];
+            last.insertAdjacentElement('afterend', container);
+            container.classList.toggle('first-in-row', card === first);
+            container.classList.toggle('last-in-row', card === last);
+        };
 
         cards.forEach(card => {
             card.addEventListener('click', () => {
