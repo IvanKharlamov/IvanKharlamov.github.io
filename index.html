@@ -142,13 +142,21 @@
         </div>
 
         <section class="hero-section">
-			<div class="hero-gradient-bg"></div>
 			<div class="hero-video-container">
+				<div id="energy-field-container">
+					<div class="nebula-container" id="nebula"></div>
+					<div class="viewport" id="viewport">
+						<div class="beam-system" id="beamSystem">
+							<div class="beam master-pivot">
+								<div class="beam-glow"></div>
+								<div class="beam-body"></div>
+							</div>
+						</div>
+						<div class="vignette"></div>
+					</div>
+				</div>
 				<canvas id="hero-video-tile"></canvas>
-				<video id="heroVideo" autoplay muted playsinline>
-					<source src="assets/video/VideoHeaderStart.webm" type="video/webm">
-				</video>
-				<video id="heroVideoPreload" preload="auto" muted playsinline>
+				<video id="heroVideo" preload="auto" muted playsinline loop>
 					<source src="assets/video/VideoHeaderLoop.webm" type="video/webm">
 				</video>
 			</div>
@@ -522,11 +530,15 @@
                 <div class="footer-contact">
                     <div class="footer-contact-item">
                         <h4 data-i18n="contact.hq">Sede Central</h4>
-                        <p>Calle san Mames 36, Madrid, 28021</p>
+                        <p>Calle Francisco Silvela 110, 2ª planta , 28002 Madrid</p>
                     </div>
                     <div class="footer-contact-item">
                         <h4 data-i18n="contact.phone">Teléfono</h4>
                         <p>+34 635 906 577</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <h4 data-i18n="contact.email">Email</h4>
+                        <p><a href="mailto:info@upstageprod.com">info@upstageprod.com</a></p>
                     </div>
                 </div>
                 <div class="footer-social">

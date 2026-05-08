@@ -433,8 +433,14 @@ a {
 }
 
 .footer-contact {
-    display: flex;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 40px;
+    row-gap: 20px;
+}
+
+.footer-contact-item:nth-child(3) {
+    grid-column: 2;
 }
 
 .footer-contact-item h4 {

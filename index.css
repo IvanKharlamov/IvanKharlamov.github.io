@@ -597,3 +597,137 @@ canvas {
         grid-template-columns: 1fr;
     }
 }
+
+/* --- Energy Field Animation --- */
+:root {
+    --g: rgba(34, 255, 136, 1);
+    --p: rgba(204, 68, 255, 1);
+    --b: rgba(0, 212, 255, 1);
+    --p-glow: rgba(204, 68, 255, 0);
+}
+
+#hero-video-tile {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+#hero-video-tile.visible {
+    opacity: 1;
+}
+
+#energy-field-container {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    transition: opacity 1s ease;
+}
+#energy-field-container.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nebula-container {
+    position: absolute; inset: 0; z-index: 0;
+    background: radial-gradient(circle at 50% 50%, #08081a 0%, #000 100%);
+    overflow: hidden;
+}
+
+.spotlight {
+    position: absolute;
+    width: 25vw; height: 25vw;
+    border-radius: 50%;
+    filter: blur(80px);
+    mix-blend-mode: plus-lighter;
+    opacity: 0.15;
+}
+
+.viewport {
+    position: relative;
+    width: 100%; height: 100%;
+    perspective: 1500px;
+    z-index: 1;
+}
+
+.beam-system {
+    position: absolute; inset: 0;
+    mix-blend-mode: screen;
+}
+
+.beam {
+    position: absolute;
+    width: 300vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    pointer-events: none;
+}
+
+.beam-body {
+    position: relative;
+    width: 100%;
+    filter: blur(1px);
+    animation: breathe 4s infinite ease-in-out alternate;
+}
+
+.beam-glow {
+    position: absolute;
+    width: 100%;
+    height: 500%; 
+    filter: blur(50px);
+    opacity: 0.6;
+    mix-blend-mode: screen;
+}
+
+.master-pivot {
+    top: 0; left: 0;
+    transform-origin: 0% 0%;
+    height: 120px;
+    animation: masterSweep 12s infinite ease-in-out;
+    z-index: 10;
+}
+.master-pivot .beam-body { 
+    height: 40px; 
+    background: linear-gradient(to bottom, var(--p-glow) 0%, var(--p) 35%, var(--g) 65%, var(--p-glow) 100%);
+}
+.master-pivot .beam-glow {
+    background: linear-gradient(to bottom, transparent, rgba(204, 68, 255, 0.4), rgba(34, 255, 136, 0.4), transparent);
+}
+
+@keyframes breathe {
+    0% { opacity: 0.6; transform: scaleY(0.98) brightness(0.9); }
+    100% { opacity: 1; transform: scaleY(1.02) brightness(1.2); }
+}
+
+@keyframes masterSweep {
+    0%, 100% { transform: rotate(85deg) rotateX(15deg); }
+    50% { transform: rotate(10deg) rotateX(-5deg); }
+}
+
+@keyframes sweepSecondary {
+    0% { transform: rotate(var(--startAngle)) translateZ(var(--z)) scaleX(1); }
+    50% { transform: rotate(var(--endAngle)) translateZ(var(--z)) scaleX(1.1); }
+    100% { transform: rotate(var(--startAngle)) translateZ(var(--z)) scaleX(1); }
+}
+
+@keyframes floatSpot {
+    0%, 100% { transform: translate(var(--sx), var(--sy)); }
+    50% { transform: translate(var(--ex), var(--ey)); }
+}
+
+@keyframes glitchFrame {
+    0%, 98% { transform: translate(0,0) skew(0); filter: brightness(1); }
+    99% { transform: translate(10px, -5px) skew(2deg); filter: brightness(2) hue-rotate(90deg); }
+    100% { transform: translate(-5px, 2px); filter: brightness(1.5); }
+}
+
+.glitch-active {
+    animation: glitchFrame 0.2s linear;
+}
+
+.vignette {
+    position: absolute; inset: 0;
+    background: radial-gradient(circle, transparent 30%, black 150%);
+    pointer-events: none;
+}

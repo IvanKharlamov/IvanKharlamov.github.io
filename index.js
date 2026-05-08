@@ -5,13 +5,78 @@ document.addEventListener('DOMContentLoaded', () => {
 	const tileCanvas = document.getElementById("hero-video-tile");
 	const tctx = tileCanvas.getContext("2d");
 	let isLoopVideo = false;
-	
-	heroVideo.addEventListener("ended", () => {
-		isLoopVideo = true;
-		heroVideo.src = "assets/video/VideoHeaderLoop.webm";
-		heroVideo.loop = true;
-		heroVideo.play();
-	}, { once: true });
+
+    // === ENERGY FIELD ANIMATION ===
+    const nebula = document.getElementById('nebula');
+    const system = document.getElementById('beamSystem');
+    const viewport = document.getElementById('viewport');
+    const energyFieldContainer = document.getElementById('energy-field-container');
+
+    const spotColors = ['#bc00ff', '#00ff88', '#00d4ff', '#5555ff', '#ff0055'];
+
+    for(let i=0; i<18; i++) {
+        const spot = document.createElement('div');
+        spot.className = 'spotlight';
+        spot.style.background = `radial-gradient(circle, ${spotColors[i%5]}, transparent 75%)`;
+        spot.style.left = Math.random()*100 + 'vw';
+        spot.style.top = Math.random()*100 + 'vh';
+        spot.style.setProperty('--sx', (Math.random()-0.5)*30 + 'vw');
+        spot.style.setProperty('--sy', (Math.random()-0.5)*30 + 'vh');
+        spot.style.setProperty('--ex', (Math.random()-0.5)*30 + 'vw');
+        spot.style.setProperty('--ey', (Math.random()-0.5)*30 + 'vh');
+        spot.style.animation = `floatSpot ${10 + Math.random()*15}s infinite ease-in-out`;
+        if (nebula) nebula.appendChild(spot);
+    }
+
+    const corners = [
+        {top: 0, left: 0, origin: '0% 0%'},
+        {top: 0, right: 0, origin: '100% 0%'},
+        {bottom: 0, left: 0, origin: '0% 100%'},
+        {bottom: 0, right: 0, origin: '100% 100%'},
+        {top: '50%', left: 0, origin: '0% 50%'},
+        {top: '50%', right: 0, origin: '100% 50%'}
+    ];
+
+    function spawnBeams(count) {
+        for(let i=0; i<count; i++) {
+            const ray = document.createElement('div');
+            const corner = corners[Math.floor(Math.random()*corners.length)];
+            ray.className = 'beam';
+            if(corner.left !== undefined) ray.style.left = corner.left;
+            if(corner.right !== undefined) ray.style.right = corner.right;
+            if(corner.top !== undefined) ray.style.top = corner.top;
+            if(corner.bottom !== undefined) ray.style.bottom = corner.bottom;
+            ray.style.transformOrigin = corner.origin;
+            const colorSet = [['#00d4ff', '#ffffff'], ['#cc44ff', '#22ff88'], ['#ff0055', '#cc44ff'], ['#22ff88', '#00d4ff']][Math.floor(Math.random()*4)];
+            const thickness = 2 + Math.random() * 15;
+            const glowOpacity = 0.2 + Math.random() * 0.4;
+            ray.innerHTML = `<div class="beam-glow" style="opacity: ${glowOpacity}; background: linear-gradient(to bottom, transparent, ${colorSet[0]}, ${colorSet[1]}, transparent)"></div>
+                             <div class="beam-body" style="height: ${thickness}px; background: linear-gradient(to bottom, transparent, ${colorSet[0]}, ${colorSet[1]}, transparent)"></div>`;
+            ray.style.setProperty('--startAngle', (Math.random()*360) + 'deg');
+            ray.style.setProperty('--endAngle', (Math.random()*360) + 'deg');
+            ray.style.setProperty('--z', (Math.random()*400 - 200) + 'px');
+            ray.style.animation = `sweepSecondary ${8 + Math.random()*20}s infinite ease-in-out`;
+            ray.style.opacity = 0.3 + Math.random()*0.5;
+            if (system) system.appendChild(ray);
+        }
+    }
+    spawnBeams(15);
+
+    setInterval(() => {
+        if(viewport && Math.random() > 0.85) {
+            viewport.classList.add('glitch-active');
+            setTimeout(() => viewport.classList.remove('glitch-active'), 200);
+        }
+    }, 2000);
+
+    // Transition to Loop Video after 5 seconds
+    setTimeout(() => {
+        if (energyFieldContainer) energyFieldContainer.classList.add('hidden');
+        if (tileCanvas) tileCanvas.classList.add('visible');
+        isLoopVideo = true;
+        heroVideo.play();
+    }, 5000);
+
 	heroVideo.addEventListener("play", () => {
 		drawVideoBackground();
 	}, { once: true });

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High-Fidelity Energy Field - Crowded</title>
+    <style>
+        :root {
+            --g: rgba(34, 255, 136, 1);
+            --p: rgba(204, 68, 255, 1);
+            --b: rgba(0, 212, 255, 1);
+            --p-glow: rgba(204, 68, 255, 0);
+        }
+
+        body, html {
+            margin: 0; padding: 0;
+            background: #000;
+            height: 100vh; overflow: hidden;
+        }
+
+        /* BACKGROUND SYSTEM */
+        .nebula-container {
+            position: absolute; inset: 0; z-index: 0;
+            background: radial-gradient(circle at 50% 50%, #08081a 0%, #000 100%);
+            overflow: hidden;
+        }
+
+        .spotlight {
+            position: absolute;
+            width: 25vw; height: 25vw;
+            border-radius: 50%;
+            filter: blur(80px);
+            mix-blend-mode: plus-lighter;
+            opacity: 0.15;
+        }
+
+        /* VIEWPORT */
+        .viewport {
+            position: relative;
+            width: 100vw; height: 100vh;
+            perspective: 1500px;
+            z-index: 1;
+        }
+
+        .beam-system {
+            position: absolute; inset: 0;
+            mix-blend-mode: screen;
+        }
+
+        /* BEAM ARCHITECTURE */
+        .beam {
+            position: absolute;
+            width: 300vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform-style: preserve-3d;
+            pointer-events: none;
+        }
+
+        .beam-body {
+            position: relative;
+            width: 100%;
+            filter: blur(1px);
+            /* Slower animation to reduce harsh flicker */
+            animation: breathe 4s infinite ease-in-out alternate;
+        }
+
+        .beam-glow {
+            position: absolute;
+            width: 100%;
+            height: 500%; 
+            filter: blur(50px);
+            opacity: 0.6;
+            mix-blend-mode: screen;
+        }
+
+        /* MASTER BEAM (STAYS AS IS) */
+        .master-pivot {
+            top: 0; left: 0;
+            transform-origin: 0% 0%;
+            height: 120px;
+            animation: masterSweep 12s infinite ease-in-out;
+            z-index: 10;
+        }
+        .master-pivot .beam-body { 
+            height: 40px; 
+            background: linear-gradient(to bottom, var(--p-glow) 0%, var(--p) 35%, var(--g) 65%, var(--p-glow) 100%);
+        }
+        .master-pivot .beam-glow {
+            background: linear-gradient(to bottom, transparent, rgba(204, 68, 255, 0.4), rgba(34, 255, 136, 0.4), transparent);
+        }
+
+        /* ANIMATIONS */
+        @keyframes breathe {
+            0% { opacity: 0.6; transform: scaleY(0.98) brightness(0.9); }
+            100% { opacity: 1; transform: scaleY(1.02) brightness(1.2); }
+        }
+
+        @keyframes masterSweep {
+            0%, 100% { transform: rotate(85deg) rotateX(15deg); }
+            50% { transform: rotate(10deg) rotateX(-5deg); }
+        }
+
+        @keyframes sweepSecondary {
+            0% { transform: rotate(var(--startAngle)) translateZ(var(--z)) scaleX(1); }
+            50% { transform: rotate(var(--endAngle)) translateZ(var(--z)) scaleX(1.1); }
+            100% { transform: rotate(var(--startAngle)) translateZ(var(--z)) scaleX(1); }
+        }
+
+        @keyframes floatSpot {
+            0%, 100% { transform: translate(var(--sx), var(--sy)); }
+            50% { transform: translate(var(--ex), var(--ey)); }
+        }
+
+        /* GLITCH EFFECT */
+        @keyframes glitchFrame {
+            0%, 98% { transform: translate(0,0) skew(0); filter: brightness(1); }
+            99% { transform: translate(10px, -5px) skew(2deg); filter: brightness(2) hue-rotate(90deg); }
+            100% { transform: translate(-5px, 2px); filter: brightness(1.5); }
+        }
+
+        .glitch-active {
+            animation: glitchFrame 0.2s linear;
+        }
+
+        .vignette {
+            position: absolute; inset: 0;
+            background: radial-gradient(circle, transparent 30%, black 150%);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nebula-container" id="nebula"></div>
+
+    <div class="viewport" id="viewport">
+        <div class="beam-system" id="beamSystem">
+            <div class="beam master-pivot">
+                <div class="beam-glow"></div>
+                <div class="beam-body"></div>
+            </div>
+        </div>
+        <div class="vignette"></div>
+    </div>
+
+    <script>
+        const nebula = document.getElementById('nebula');
+        const system = document.getElementById('beamSystem');
+        const viewport = document.getElementById('viewport');
+
+        const spotColors = ['#bc00ff', '#00ff88', '#00d4ff', '#5555ff', '#ff0055'];
+
+        // 1. More Nebula Background Depth
+        for(let i=0; i<18; i++) {
+            const spot = document.createElement('div');
+            spot.className = 'spotlight';
+            spot.style.background = `radial-gradient(circle, ${spotColors[i%5]}, transparent 75%)`;
+            spot.style.left = Math.random()*100 + 'vw';
+            spot.style.top = Math.random()*100 + 'vh';
+            spot.style.setProperty('--sx', (Math.random()-0.5)*30 + 'vw');
+            spot.style.setProperty('--sy', (Math.random()-0.5)*30 + 'vh');
+            spot.style.setProperty('--ex', (Math.random()-0.5)*30 + 'vw');
+            spot.style.setProperty('--ey', (Math.random()-0.5)*30 + 'vh');
+            spot.style.animation = `floatSpot ${10 + Math.random()*15}s infinite ease-in-out`;
+            nebula.appendChild(spot);
+        }
+
+        // 2. Crowd the field with Secondary Beams
+        const corners = [
+            {top: 0, left: 0, origin: '0% 0%'},
+            {top: 0, right: 0, origin: '100% 0%'},
+            {bottom: 0, left: 0, origin: '0% 100%'},
+            {bottom: 0, right: 0, origin: '100% 100%'},
+            {top: '50%', left: 0, origin: '0% 50%'},
+            {top: '50%', right: 0, origin: '100% 50%'}
+        ];
+
+        function spawnBeams(count) {
+            for(let i=0; i<count; i++) {
+                const ray = document.createElement('div');
+                const corner = corners[Math.floor(Math.random()*corners.length)];
+                ray.className = 'beam';
+                
+                // Positioning
+                if(corner.left !== undefined) ray.style.left = corner.left;
+                if(corner.right !== undefined) ray.style.right = corner.right;
+                if(corner.top !== undefined) ray.style.top = corner.top;
+                if(corner.bottom !== undefined) ray.style.bottom = corner.bottom;
+                ray.style.transformOrigin = corner.origin;
+                
+                // High-Variation Colors
+                const colorSet = [
+                    ['#00d4ff', '#ffffff'], // Blue/White
+                    ['#cc44ff', '#22ff88'], // Purple/Green
+                    ['#ff0055', '#cc44ff'], // Red/Purple
+                    ['#22ff88', '#00d4ff']  // Green/Blue
+                ][Math.floor(Math.random()*4)];
+
+                const thickness = 2 + Math.random() * 15;
+                const glowOpacity = 0.2 + Math.random() * 0.4;
+                
+                ray.innerHTML = `
+                    <div class="beam-glow" style="opacity: ${glowOpacity}; background: linear-gradient(to bottom, transparent, ${colorSet[0]}, ${colorSet[1]}, transparent)"></div>
+                    <div class="beam-body" style="height: ${thickness}px; background: linear-gradient(to bottom, transparent, ${colorSet[0]}, ${colorSet[1]}, transparent)"></div>
+                `;
+                
+                ray.style.setProperty('--startAngle', (Math.random()*360) + 'deg');
+                ray.style.setProperty('--endAngle', (Math.random()*360) + 'deg');
+                ray.style.setProperty('--z', (Math.random()*400 - 200) + 'px');
+                ray.style.animation = `sweepSecondary ${8 + Math.random()*20}s infinite ease-in-out`;
+                ray.style.opacity = 0.3 + Math.random()*0.5;
+                
+                system.appendChild(ray);
+            }
+        }
+
+        spawnBeams(15); // Increased beam count
+
+        // 3. Realistic Glitch Trigger
+        setInterval(() => {
+            if(Math.random() > 0.85) {
+                viewport.classList.add('glitch-active');
+                setTimeout(() => viewport.classList.remove('glitch-active'), 200);
+            }
+        }, 2000);
+    </script>
+</body>
+</html>
