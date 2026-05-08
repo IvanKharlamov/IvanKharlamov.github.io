@@ -69,8 +69,8 @@ window.TRANSLATIONS_RAW = {
   "about.title": { "en": "Who We", "es": "Quiénes" },
   "about.titleHighlight": { "en": "Are", "es": "Somos" },
   "about.desc1": {
-    "en": "UPSTAGE MADRID is a technical production team focused on delivering reliable, well-engineered event systems.",
-    "es": "UPSTAGE MADRID es un equipo de producción técnica enfocado en entregar sistemas de eventos confiables y bien estructurados."
+    "en": "UPSTAGE PROD is a technical production team focused on delivering reliable, well-engineered event systems.",
+    "es": "UPSTAGE PROD es un equipo de producción técnica enfocado en entregar sistemas de eventos confiables y bien estructurados."
   },
   "about.desc2": {
     "en": "Founded in 2022, the company brings together professionals with over a decade of hands-on experience in live production, covering everything from small-scale setups to complex multi-day events.",
@@ -247,8 +247,8 @@ window.TRANSLATIONS_RAW = {
     "es": "¡Solicitud de Presupuesto Enviada! Te contactaremos pronto."
   },
 	"review.1.quote": {
-	  "en": "UPSTAGE MADRID has been working with Autopia Festival for more than 3 years now. Their technical production is always top-tier, and the flawless integration of light and sound is simply unmatched. A highly recommended, professional team!",
-	  "es": "Llevamos trabajando con UPSTAGE MADRID más de 3 años para el festival Autopia y siempre ofrecen resultados de primer nivel. Su experiencia técnica, sus equipos de última generación y su ejecución impecable los convierten en un socio incalculable. ¡Totalmente recomendados!"
+	  "en": "UPSTAGE PROD has been working with Autopia Festival for more than 3 years now. Their technical production is always top-tier, and the flawless integration of light and sound is simply unmatched. A highly recommended, professional team!",
+	  "es": "Llevamos trabajando con UPSTAGE PROD más de 3 años para el festival Autopia y siempre ofrecen resultados de primer nivel. Su experiencia técnica, sus equipos de última generación y su ejecución impecable los convierten en un socio incalculable. ¡Totalmente recomendados!"
 	},
 	"review.2.quote": {
 	  "en": "We ordered some audio equipment and they are simply great!! Incredible sound and build quality, a large selection and hassle-free delivery. Very, very satisfied!",
@@ -304,8 +304,8 @@ window.TRANSLATIONS_RAW = {
   "contact.form.send": { "en": "Send Message", "es": "Enviar Mensaje" },
 
   "footer.copyright": {
-    "en": "© 2026 UPSTAGE MADRID. All rights reserved.",
-    "es": "© 2026 UPSTAGE MADRID. All rights reserved."
+    "en": "© 2026 UPSTAGE PROD. All rights reserved.",
+    "es": "© 2026 UPSTAGE PROD. All rights reserved."
   },
 
   "modal.included": {
