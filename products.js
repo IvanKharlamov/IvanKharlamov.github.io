@@ -11,7 +11,7 @@ window.products = [
         es: "Cabeza móvil beam de alta intensidad diseñada para efectos aéreos largos y visuales definidos."
     },
     specs: {
-        en: { "Source": "230W 7R lamp", "Beam Angle": "2°", "Colors": "14 + open", "Gobos": "17 static", "DMX": "16 / 20 ch", "Power": "350 W" },
+        en: { "Source": "230W 7R lamp", "Zoom ": "0 to -3.8°", "Colors": "14 + blank", "Gobos": "17 static", "Weight": "17 kg", "Power": "230 W" },
         es: { "Fuente": "Lámpara 230W 7R", "Ángulo": "2°", "Colores": "14 + abierto", "Gobos": "17 estáticos", "DMX": "16 / 20 ch", "Consumo": "350 W" }
     }
 },
@@ -27,7 +27,7 @@ window.products = [
         es: "Cabeza móvil wash LED con amplio zoom para baños suaves o haces de color concentrados."
     },
     specs: {
-        en: { "LEDs": "19x15W RGBW", "Zoom": "10°–60°", "Pan": "540°", "Tilt": "270°", "DMX": "16 / 24 ch", "Power": "350 W" },
+        en: { "LEDs": "19x15W RGBW", "Zoom": "8°–60°", "Colors": "RGBW", "Weight": "9.3 kg", "Power": "400 W" },
         es: { "LEDs": "19x15W RGBW", "Zoom": "10°–60°", "Pan": "540°", "Tilt": "270°", "DMX": "16 / 24 ch", "Consumo": "350 W" }
     }
 },
@@ -39,28 +39,12 @@ window.products = [
     priceDay: 15,
     image: "img/inventory/led par battery.png",
     description: {
-        en: "Battery powered LED uplight for events and architecture where fast cable free setup is required.",
+        en: "Battery powered LED bar for events and architecture where fast cable free setup is required.",
         es: "Uplight LED a batería para eventos y arquitectura donde se requiere montaje rápido sin cables."
     },
     specs: {
-        en: { "LEDs": "6x12W RGBWUV", "Battery": "6–8 h", "Control": "W-DMX", "IR": "Yes", "IP": "IP65", "Power": "Battery" },
+        en: { "LEDs": "6x12W RGBWUV", "Battery": "6–8 h", "Colors": "RGBWUV", "IP": "IP65", "Power": "Battery" },
         es: { "LEDs": "6x12W RGBWUV", "Batería": "6–8 h", "Control": "W-DMX", "IR": "Sí", "Protección": "IP65", "Consumo": "Batería" }
-    }
-},
-{
-    id: 104,
-    name: { en: "LED PAR 40w", es: "PAR LED 40w" },
-    category: "cat.light",
-    manufacturer: "Generic",
-    priceDay: 10,
-    image: "img/inventory/LED PAR.png",
-    description: {
-        en: "Compact LED PAR fixture for truss mounting accent lighting and general color wash use.",
-        es: "PAR LED compacto para truss iluminación de acento y usos generales de color."
-    },
-    specs: {
-        en: { "LEDs": "7x8W RGBW", "Beam Angle": "25°", "Cooling": "Fanless", "DMX": "4 / 8 ch", "Housing": "ABS", "Power": "60 W" },
-        es: { "LEDs": "7x8W RGBW", "Ángulo": "25°", "Refrig": "Sin ventilador", "DMX": "4 / 8 ch", "Carcasa": "ABS", "Consumo": "60 W" }
     }
 },
 {
@@ -75,7 +59,7 @@ window.products = [
         es: "Tubo LED RGBWW para cine broadcast y usos creativos con control preciso de color."
     },
     specs: {
-        en: { "Length": "60 cm", "CCT": "2500–7500K", "CRI": "≥95", "Color": "RGBWW", "Control": "App / DMX", "Power": "20 W" },
+        en: { "Length": "1 m", "CCT": "2500–7500K", "Color": "RGBWW", "Control": "App / DMX", "Power": "20 W/ Battery" },
         es: { "Longitud": "60 cm", "CCT": "2500–7500K", "CRI": "≥95", "Color": "RGBWW", "Control": "App / DMX", "Consumo": "20 W" }
     }
 },
@@ -87,28 +71,28 @@ window.products = [
     priceDay: 20,
     image: "img/inventory/showtec-sunstrip-active-dmx-mkii.png",
     description: {
-        en: "Classic tungsten blinder bar used for audience hits chases and warm stage lighting looks.",
-        es: "Barra cegadora clásica de tungsteno usada para impactos al público y efectos cálidos."
+        en: "Create powerful warm audience blinders and dynamic chase effects for concerts, clubs, and live stage productions.",
+        es: "Crea potentes cegadoras cálidas y efectos de persecución dinámicos para conciertos, clubes y producciones en vivo."
     },
     specs: {
-        en: { "Lamps": "10x GU10", "Lamp Power": "50/75 W", "Cells": "10", "DMX": "1–10 ch", "Dimmer": "Built-in", "Power": "750 W" },
+        en: { "Lamps": "10x GU10", "Lamp Power": "10X50 W", "Color": "Warm light", "Control": "DMX", "Power": "550 W" },
         es: { "Lámparas": "10x GU10", "Potencia": "50/75 W", "Celdas": "10", "DMX": "1–10 ch", "Dimmer": "Integrado", "Consumo": "750 W" }
     }
 },
 {
-    id: 107,
-    name: { en: "Led bar", es: "Barra LED" },
+    id: 307,
+    name: { en: "Eurolite LED Strobe ABL", es: "Eurolite LED Strobe ABL" },
     category: "cat.light",
-    manufacturer: "Generic",
-    priceDay: 15,
-    image: "img/inventory/LED BAR.png",
+    manufacturer: "Eurolite",
+    priceDay: 10,
+    image: "img/inventory/logoletter.png",
     description: {
-        en: "Linear LED bar for wall washing eye candy effects and pixel oriented lighting designs.",
-        es: "Barra LED lineal para bañado de paredes efectos visuales y diseños de píxeles."
+        en: "Add intense strobe bursts, blinder hits, and colorful ambient effects to concerts, clubs, and festival stages with the Eurolite LED Super Strobe ABL",
+        es: "Añade ráfagas de estrobo intensas, impactos de cegadora y efectos ambientales coloridos a conciertos, clubes y festivales."
     },
     specs: {
-        en: { "Length": "1 m", "LEDs": "24x3W RGB", "Beam Angle": "40°", "Sections": "8", "DMX": "3 / 7 / 24", "Power": "80 W" },
-        es: { "Longitud": "1 m", "LEDs": "24x3W RGB", "Ángulo": "40°", "Secciones": "8", "DMX": "3 / 7 / 24", "Consumo": "80 W" }
+        en: { "Lamps": "216 White LEDs + 144 RGB LEDs", "Color": "RGBW", "Flash frequency": "20 Hz", "Power": "130 W"},
+        es: { "Leds": "216 LEDs blancos + 144 LEDs RGB", "Color": "RGBW", "Frecuencia": "20 Hz", "Consumo": "130 W" }
     }
 },
 {
@@ -139,13 +123,13 @@ window.products = [
         es: "Interfaz USB a DMX fiable usada ampliamente para control profesional de iluminación."
     },
     specs: {
-        en: { "DMX Out": "1 universe", "DMX In": "Yes", "Isolation": "1500 V", "Refresh": "40 Hz", "USB": "Yes", "OS": "Win / Mac" },
+        en: { "DMX Out": "1", "DMX In": "1", "USB 2.0 type B": "1", "Refresh": "40 Hz", "OS": "Win / Mac" },
         es: { "Salida DMX": "1 universo", "Entrada DMX": "Sí", "Aislamiento": "1500 V", "Refresco": "40 Hz", "USB": "Sí", "SO": "Win / Mac" }
     }
 },
 {
     id: 201,
-    name: { en: "Truss 50 mm square 30 (1000 mm)", es: "Truss 50mm cuadrado 30 (1000mm)" },
+    name: { en: "Truss 50 mm square 30 cm and 1 meter long", es: "Truss 50mm cuadrado 30 (1000mm)" },
     category: "cat.structures",
     manufacturer: "Generic",
     priceDay: 10,
@@ -155,7 +139,7 @@ window.products = [
         es: "Tramo de truss cuadrado de aluminio para estructuras de iluminación y escenarios."
     },
     specs: {
-        en: { "Length": "1000 mm", "Width": "300 mm", "Tube": "50 mm", "Wall": "2 mm", "Material": "Aluminum", "Load": "Heavy duty" },
+        en: { "Length": "1000 mm", "Width": "300 mm", "Tube": "50 mm", "Material": "Aluminum", "Charge": "400 kg"},
         es: { "Longitud": "1000 mm", "Ancho": "300 mm", "Tubo": "50 mm", "Grosor": "2 mm", "Material": "Aluminio", "Carga": "Alta" }
     }
 },
@@ -171,7 +155,7 @@ window.products = [
         es: "Tótem vertical con base de acero pesada para montaje seguro de luminarias."
     },
     specs: {
-        en: { "Height": "2 m", "Base Weight": "30 kg", "Top Plate": "Yes", "Material": "Aluminum", "Finish": "Silver", "Use": "Lighting" },
+        en: { "Height": "1.5, 2, 3 m", "Top Plate": "Yes", "Material": "Aluminum", "Finish": "Silver", "Manufacturer": "Prolyte" },
         es: { "Altura": "2 m", "Peso Base": "30 kg", "Tapa": "Sí", "Material": "Aluminio", "Acabado": "Plata", "Uso": "Iluminación" }
     }
 },
@@ -187,7 +171,7 @@ window.products = [
         es: "Tarima modular profesional con superficie antideslizante y patas de altura ajustable."
     },
     specs: {
-        en: { "Size": "2000x1000", "Height": "Adjustable", "Load": "750 kg/m²", "Surface": "Anti-slip", "Weight": "32 kg", "Use": "Stage" },
+        en: { "Size": "2000x1000", "Height": "Adjustable", "Load": "750 kg/m²", "Weight": "32 kg"},
         es: { "Tamaño": "2000x1000", "Altura": "Ajustable", "Carga": "750 kg/m²", "Superficie": "Antidesliz", "Peso": "32 kg", "Uso": "Escenario" }
     }
 },
@@ -199,11 +183,11 @@ window.products = [
     priceDay: 30,
     image: "img/inventory/UPM-2P.png",
     description: {
-        en: "Compact high power self powered loudspeaker used for monitoring fill and small PA systems.",
-        es: "Altavoz autoamplificado compacto de alta potencia para monitores refuerzos y PA pequeños."
+        en: "Deliver clear, powerful nearfield sound reinforcement for corporate events, theaters, DJ booths, and live performances with the Meyer Sound UPM-2P.",
+        es: "Refuerzo sonoro de campo cercano claro y potente para eventos corporativos, teatros y directos."
     },
     specs: {
-        en: { "Type": "Active speaker", "LF": "2x 5 in", "HF": "1 in", "Max SPL": "123 dB", "Coverage": "80°", "Amp": "Bi-amped" },
+        en: { "Type": "Active speaker", "Drivers": "dual 5 inch low/mid drivers + 1 inch metal dome HF driver", "HF": "1 in", "Max SPL": "123 dB", "Power": "350W"},
         es: { "Tipo": "Altavoz activo", "Graves": "2x 5 in", "Agudos": "1 in", "SPL Máx": "123 dB", "Cobertura": "80°", "Amplif": "Bi-amplif" }
     }
 },
@@ -215,11 +199,11 @@ window.products = [
     priceDay: 20,
     image: "img/inventory/sonar-115-xi.png",
     description: {
-        en: "Active full range speaker for front of house use in small to medium live events.",
-        es: "Altavoz activo de rango completo para uso FOH en eventos pequeños y medianos."
+        en: "Deliver powerful, crystal-clear sound for DJs, live bands, presentations, and mobile events with the HK Audio SONAR.",
+        es: "Sonido potente y nítido para DJs, bandas en vivo, presentaciones y eventos móviles."
     },
     specs: {
-        en: { "Type": "Active speaker", "LF": "15 in", "HF": "1 in", "Max SPL": "127 dB", "Power": "800 W", "Use": "FOH" },
+        en: { "Type": "Active speaker", "Drivers": "12 inch", "Max SPL": "127 dB", "Power": "1200 W"},
         es: { "Tipo": "Altavoz activo", "Graves": "15 in", "Agudos": "1 in", "SPL Máx": "127 dB", "Potencia": "800 W", "Uso": "FOH" }
     }
 },
@@ -231,11 +215,11 @@ window.products = [
     priceDay: 30,
     image: "img/inventory/hk-audio-sonar-115-sub-d_62bf0bb9c530e.png",
     description: {
-        en: "Active subwoofer designed to extend low frequency response of Sonar PA systems.",
-        es: "Subwoofer activo diseñado para extender las bajas frecuencias de sistemas Sonar."
+        en: "Bring deep, punchy bass and powerful low-end impact to DJs, live bands, clubs, and mobile event setups with the HK Audio SONAR 115 Sub D.",
+        es: "Graves profundos y potentes para DJs, bandas en vivo, clubes y eventos móviles."
     },
     specs: {
-        en: { "Type": "Active sub", "Driver": "15 in", "Max SPL": "128 dB", "Freq Low": "45 Hz", "Freq High": "120 Hz", "Power": "1200 W" },
+        en: { "Type": "Active sub", "Driver": "15 inch", "Max SPL": "128 dB", "Freq": "36Hz - 150Hz", "Power": "1500 W" },
         es: { "Tipo": "Sub activo", "Altavoz": "15 in", "SPL Máx": "128 dB", "Freq Baja": "45 Hz", "Freq Alta": "120 Hz", "Potencia": "1200 W" }
     }
 },
@@ -247,11 +231,11 @@ window.products = [
     priceDay: 30,
     image: "img/inventory/HK PRO.png",
     description: {
-        en: "High output active loudspeaker suitable for main PA or monitor applications.",
-        es: "Altavoz activo de alta potencia adecuado para PA principal o uso como monitor."
+        en: "Deliver powerful full-range sound and strong bass performance for DJs, live bands, events, and mobile PA setups with the HK Audio Premium PR:O 15 A.",
+        es: "Sonido potente de rango completo y graves fuertes para DJs, bandas y eventos."
     },
     specs: {
-        en: { "Type": "Active speaker", "LF": "15 in", "HF": "1 in", "Max SPL": "130 dB", "Power": "1000 W", "Use": "PA/Monitor" },
+        en: { "Type": "Active speaker", "Driver": "15 inch", "Frequency": "53Hz - 19KHz", "Max SPL": "130 dB", "Power": "1200 W", "Use": "PA/Monitor" },
         es: { "Tipo": "Altavoz activo", "Graves": "15 in", "Agudos": "1 in", "SPL Máx": "130 dB", "Potencia": "1000 W", "Uso": "PA/Monitor" }
     }
 },
@@ -263,11 +247,11 @@ window.products = [
     priceDay: 100,
     image: "img/inventory/003_SUB_8008_AS_RIGHT.png",
     description: {
-        en: "Tour grade dual eighteen inch active subwoofer for large scale sound reinforcement.",
-        es: "Subwoofer activo doble de dieciocho pulgadas para refuerzo sonoro de gran escala."
+        en: "Deliver massive, deep low-end power for concerts, festivals, clubs, and large-scale live events with the RCF SUB 8008-AS.",
+        es: "Potencia masiva de bajas frecuencias para conciertos, festivales y eventos de gran escala."
     },
     specs: {
-        en: { "Type": "Active sub", "Drivers": "2x18 in", "Max SPL": "137 dB", "Freq Low": "30 Hz", "Freq High": "120 Hz", "Power": "4400 W" },
+        en: { "Type": "Active sub", "Drivers": "2x18 inch", "Max SPL": "137 dB", "Freq": "30Hz - 120Hz", "Power": "4400 W" },
         es: { "Tipo": "Sub activo", "Altavoces": "2x18 in", "SPL Máx": "137 dB", "Freq Baja": "30 Hz", "Freq Alta": "120 Hz", "Potencia": "4400 W" }
     }
 },
@@ -276,31 +260,15 @@ window.products = [
     name: { en: "Yamaha DXR10 MKII", es: "Yamaha DXR10 MKII" },
     category: "cat.sound",
     manufacturer: "Yamaha",
-    priceDay: 0,
+    priceDay: 20,
     image: "img/inventory/yAMAHA DXR.png",
     description: {
-        en: "Compact active loudspeaker with DSP processing for portable PA and monitoring tasks.",
-        es: "Altavoz activo compacto con DSP para PA portátil y tareas de monitoreo."
+        en: "Deliver powerful, crystal-clear sound for live music, DJs, corporate events, and stage monitoring with the Yamaha DXR10 MKII.",
+        es: "Sonido potente y cristalino para música en vivo, DJs y eventos corporativos."
     },
     specs: {
-        en: { "Type": "Active speaker", "LF": "10 in", "HF": "1.4 in", "Max SPL": "132 dB", "Power": "1100 W", "DSP": "Yes" },
+        en: { "Type": "Active speaker", "Drivers": "10 inch", "Freq": "56Hz - 20KHz", "Max SPL": "132 dB", "Power": "1100 W"},
         es: { "Tipo": "Altavoz activo", "Graves": "10 in", "Agudos": "1.4 in", "SPL Máx": "132 dB", "Potencia": "1100 W", "DSP": "Sí" }
-    }
-},
-{
-    id: 307,
-    name: { en: "DB tech altavoz", es: "DB tech altavoz" },
-    category: "cat.sound",
-    manufacturer: "DB Technologies",
-    priceDay: 0,
-    image: "img/inventory/logoletter.png",
-    description: {
-        en: "General purpose active loudspeaker for small events rehearsals and auxiliary audio.",
-        es: "Altavoz activo de propósito general para eventos pequeños ensayos y audio auxiliar."
-    },
-    specs: {
-        en: { "Type": "Active speaker", "LF": "12 in", "HF": "1 in", "Max SPL": "126 dB", "Power": "700 W", "Use": "General" },
-        es: { "Tipo": "Altavoz activo", "Graves": "12 in", "Agudos": "1 in", "SPL Máx": "126 dB", "Potencia": "700 W", "Uso": "General" }
     }
 },
 {
@@ -315,7 +283,7 @@ window.products = [
         es: "Mesa analógica compacta para bandas pequeñas eventos de voz y configuraciones simples."
     },
     specs: {
-        en: { "Channels": "4–8", "EQ": "3-band", "Aux Sends": "1", "Phantom": "+48 V", "Outputs": "Main L/R", "Format": "Analog" },
+        en: { "Channels": "4–8", "Outputs": "Main L/R", "Format": "Analog" },
         es: { "Canales": "4–8", "EQ": "3 bandas", "Auxiliares": "1", "Phantom": "+48 V", "Salidas": "Main L/R", "Formato": "Analógico" }
     }
 },
@@ -327,11 +295,11 @@ window.products = [
     priceDay: 30,
     image: "img/inventory/DL32.png",
     description: {
-        en: "Digital stage box providing remote mic inputs and outputs over AES50 network.",
-        es: "Caja de escenario digital que ofrece entradas y salidas remotas mediante AES50."
+        en: "Bring professional-grade stage connectivity and ultra-clean audio routing to live sound setups with the Midas DL32 digital stage box.",
+        es: "Conectividad profesional y enrutamiento de audio limpio con el stage box digital Midas DL32."
     },
     specs: {
-        en: { "Inputs": "32 mic", "Outputs": "16 XLR", "Preamps": "Midas", "Network": "AES50", "Sample Rate": "48 kHz", "Rack": "4U" },
+        en: { "Inputs": "32 mic", "Outputs": "16 XLR", "Preamps": "Midas", "Network": "AES50", "Sample Rate": "48 kHz" },
         es: { "Entradas": "32 mic", "Salidas": "16 XLR", "Previos": "Midas", "Red": "AES50", "Muestreo": "48 kHz", "Rack": "4U" }
     }
 },
@@ -343,11 +311,11 @@ window.products = [
     priceDay: 50,
     image: "img/inventory/X32.png",
     description: {
-        en: "Rack digital mixer offering full X32 processing power for live sound and recording setups.",
-        es: "Mezclador digital en rack con potencia X32 completa para directo y grabación."
+        en: "Deliver full professional digital mixing power in a compact rack unit with full remote control, multi-channel routing, and studio-grade processing for live sound, installations, and recording setups using the Behringer X32 Rack.",
+        es: "Potencia de mezcla digital profesional en rack con control remoto y procesamiento de estudio."
     },
     specs: {
-        en: { "Inputs": "40", "Mix Buses": "25", "Preamps": "16 Midas", "Recording": "32x32 USB", "Sample Rate": "48 kHz", "Rack": "3U" },
+        en: { "Inputs": "40", "Mix Buses": "25", "Preamps": "16 Midas", "Recording": "32x32 USB", "Sample Rate": "48 kHz"},
         es: { "Entradas": "40", "Buses": "25", "Previos": "16 Midas", "Grabación": "32x32 USB", "Muestreo": "48 kHz", "Rack": "3U" }
     }
 },
@@ -359,8 +327,8 @@ window.products = [
     priceDay: 90,
     image: "img/inventory/MIDAS M32.png",
     description: {
-        en: "Digital mixing console for demanding live productions and multitrack recording.",
-        es: "Consola digital para producciones en vivo exigentes y grabación multipista."
+        en: "Deliver a fully featured digital mixing powerhouse with pro-grade sound quality, flexible routing, and intuitive live control for concerts, installations, and touring productions with the Midas M32 Live.",
+        es: "Mezclador digital de alto rendimiento con calidad de sonido profesional y control intuitivo."
     },
     specs: {
         en: { "Inputs": "40", "Mix Buses": "25", "Preamps": "32 Midas", "Faders": "25 motor", "Recording": "32x32 USB", "Sample Rate": "48 kHz" },
@@ -379,7 +347,7 @@ window.products = [
         es: "Sistema inalámbrico digital de mano con rendimiento RF fiable y voces claras."
     },
     specs: {
-        en: { "Type": "Digital wireless", "Capsule": "SM58", "Band": "470–514 MHz", "Range": "100 m", "Audio": "24-bit", "Latency": "<4 ms" },
+        en: { "Type": "Digital wireless", "Head": "SM58", "Battery time": "8 hours" },
         es: { "Tipo": "Inalámbrico dig", "Cápsula": "SM58", "Banda": "470–514 MHz", "Rango": "100 m", "Audio": "24-bit", "Latencia": "<4 ms" }
     }
 },
@@ -391,11 +359,11 @@ window.products = [
     priceDay: 10,
     image: "img/inventory/Sennheiser E 906.png",
     description: {
-        en: "Dynamic instrument microphone optimized for guitar cabinets percussion and brass sources.",
-        es: "Micrófono dinámico optimizado para amplificadores de guitarra percusión y metales."
+        en: "The Sennheiser e 906 is a professional dynamic instrument microphone designed mainly for close-miking guitar amps, drums, and brass, known for its fast attack and very natural, detailed sound reproduction.",
+        es: "Micrófono profesional para amplificadores de guitarra y percusión, conocido por su ataque rápido."
     },
     specs: {
-        en: { "Type": "Dynamic", "Pattern": "Supercardioid", "Freq Low": "40 Hz", "Freq High": "18 kHz", "Switch": "Presence", "Connector": "XLR" },
+        en: { "Type": "Dynamic", "Pattern": "Supercardioid", "Freq Low": "40 Hz", "Freq High": "18 kHz", "Use": "Inst"},
         es: { "Tipo": "Dinámico", "Patrón": "Supercardioide", "Freq Baja": "40 Hz", "Freq Alta": "18 kHz", "Interruptor": "Presencia", "Conector": "XLR" }
     }
 },
@@ -411,7 +379,7 @@ window.products = [
         es: "Micrófonos dinámicos estándar de la industria para voces instrumentos y directo."
     },
     specs: {
-        en: { "Type": "Dynamic", "Pattern": "Cardioid", "Freq Low": "50 Hz", "Freq High": "15 kHz", "Use": "Vocal/Inst", "Connector": "XLR" },
+        en: { "Type": "Dynamic", "Pattern": "Cardioid", "Freq": "50Hz - 15KHz", "Use": "Vocal/Inst"},
         es: { "Tipo": "Dinámico", "Patrón": "Cardioide", "Freq Baja": "50 Hz", "Freq Alta": "15 kHz", "Uso": "Voz/Inst", "Conector": "XLR" }
     }
 },
@@ -423,11 +391,11 @@ window.products = [
     priceDay: 20,
     image: "img/inventory/Re20 .png",
     description: {
-        en: "Broadcast grade dynamic microphone known for natural tone and minimal proximity effect.",
-        es: "Micrófono dinámico de broadcast conocido por tono natural y bajo efecto proximidad."
+        en: "Deliver broadcast-quality, smooth and natural voice reproduction with excellent background rejection for radio, podcasting, and studio recording using the Electro-Voice RE20.",
+        es: "Reproducción de voz suave y natural con calidad broadcast para radio y estudio."
     },
     specs: {
-        en: { "Type": "Dynamic", "Pattern": "Cardioid", "Freq Low": "45 Hz", "Freq High": "18 kHz", "Tech": "Variable-D", "Use": "Broadcast" },
+        en: { "Type": "Dynamic", "Pattern": "Cardioid with Variable-D", "Freq": "45Hz - 18KHz", "Use": "Voice/Inst" },
         es: { "Tipo": "Dinámico", "Patrón": "Cardioide", "Freq Baja": "45 Hz", "Freq Alta": "18 kHz", "Tecnología": "Variable-D", "Uso": "Broadcast" }
     }
 },
@@ -439,11 +407,11 @@ window.products = [
     priceDay: 40,
     image: "img/inventory/cdj-2000nxs2-angle.png",
     description: {
-        en: "Professional DJ media player supporting high resolution audio and club standard workflows.",
-        es: "Reproductor DJ profesional compatible con audio alta resolución y flujos estándar."
+        en: "Deliver professional club-standard DJ performance with fast browsing, precise beat syncing, and reliable playback from USB, CDs, and rekordbox libraries using the Pioneer CDJ-2000 Nexus.",
+        es: "Rendimiento DJ estándar de club con navegación rápida y sincronización precisa."
     },
     specs: {
-        en: { "Media": "USB/SD/CD", "Formats": "WAV FLAC MP3", "Audio": "24-bit", "Screen": "6.1 in", "Link": "Pro DJ", "DAC": "32-bit" },
+        en: { "Media": "USB/SD/CD", "Formats": "WAV FLAC MP3", "Audio": "24-bit", "Screen": "6.1 in", "Link": "Pro DJ" },
         es: { "Medios": "USB/SD/CD", "Formatos": "WAV FLAC MP3", "Audio": "24-bit", "Pantalla": "6.1 in", "Link": "Pro DJ", "DAC": "32-bit" }
     }
 },
@@ -455,8 +423,8 @@ window.products = [
     priceDay: 40,
     image: "img/inventory/DJM900.png",
     description: {
-        en: "Four channel digital DJ mixer delivering club standard sound quality and performance effects.",
-        es: "Mezclador DJ digital de cuatro canales con sonido estándar de club y efectos."
+        en: "The Pioneer DJ DJM-900 Nexus is a club-standard 4-channel digital DJ mixer designed for professional live performance, offering high-quality sound processing, built-in effects, and seamless integration with CDJs and DJ software.",
+        es: "Mezclador DJ digital de cuatro canales para directo profesional con efectos integrados."
     },
     specs: {
         en: { "Channels": "4", "FX": "Color + Beat", "Audio": "24-bit", "Inputs": "Phono/Line", "USB": "Yes", "Sound Card": "Built-in" },
@@ -471,8 +439,8 @@ window.products = [
     priceDay: 40,
     image: "img/inventory/technics-sl-1200-mk2.png",
     description: {
-        en: "Legendary direct drive turntable offering high torque stability for DJ performance.",
-        es: "Giradiscos legendario de tracción directa con alto par y estabilidad para DJs."
+        en: "Deliver precise, stable, and iconic vinyl playback for DJing and turntablism with the Technics SL-1200 MK3D.",
+        es: "Reproducción de vinilo icónica, estable y precisa para DJ y turntablism."
     },
     specs: {
         en: { "Drive": "Direct", "Speeds": "33/45 rpm", "Torque": "1.5 kgf", "Pitch": "±8 %", "Wow Flutter": "0.01%", "Weight": "12.5 kg" },
@@ -539,7 +507,7 @@ window.products = [
         es: "Cable trifásico resistente vendido por metro para alimentación profesional."
     },
     specs: {
-        en: { "Rating": "32A 400 V", "Conductors": "5G6", "Jacket": "H07RN-F", "IP": "IP44", "Length": "Per meter", "Use": "Outdoor" },
+        en: { "Rating": "32A 400 V", "Conductors": "5G6", "Jacket": "H07RN-F", "IP": "IP44"},
         es: { "Clasificación": "32A 400 V", "Conductores": "5G6", "Cubierta": "H07RN-F", "IP": "IP44", "Longitud": "Por metro", "Uso": "Exterior" }
     }
 },
@@ -555,7 +523,7 @@ window.products = [
         es: "Cable trifásico de alta corriente para alimentaciones principales y grandes sistemas."
     },
     specs: {
-        en: { "Rating": "63A 400 V", "Conductors": "5G16", "Jacket": "H07RN-F", "IP": "IP67", "Length": "Per meter", "Use": "Outdoor" },
+        en: { "Rating": "63A 400 V", "Conductors": "5G16", "Jacket": "H07RN-F", "IP": "IP67"},
         es: { "Clasificación": "63A 400 V", "Conductores": "5G16", "Cubierta": "H07RN-F", "IP": "IP67", "Longitud": "Por metro", "Uso": "Exterior" }
     }
 },
@@ -571,7 +539,7 @@ window.products = [
         es: "Cable de extensión trifásico estándar para necesidades de potencia moderadas."
     },
     specs: {
-        en: { "Rating": "16A 400 V", "Conductors": "5G2.5", "Jacket": "Rubber", "IP": "IP44", "Length": "Per meter", "Use": "Power" },
+        en: { "Rating": "16A 400 V", "Conductors": "5G2.5", "Jacket": "Rubber", "IP": "IP44" },
         es: { "Clasificación": "16A 400 V", "Conductores": "5G2.5", "Cubierta": "Goma", "IP": "IP44", "Longitud": "Por metro", "Uso": "Energía" }
     }
 },
@@ -587,7 +555,7 @@ window.products = [
         es: "Cable Schuko monofásico estándar para conexión de equipos a la red eléctrica."
     },
     specs: {
-        en: { "Rating": "16A 230 V", "Length": "3–5 m", "Conductors": "3G2.5", "Connector": "Schuko", "Color": "Black", "Use": "Power" },
+        en: { "Rating": "16A 230 V", "Length": "3–5 m", "Conductors": "3G2.5", "Connector": "Schuko", "Color": "Black" },
         es: { "Clasificación": "16A 230 V", "Longitud": "3–5 m", "Conductores": "3G2.5", "Conector": "Schuko", "Color": "Negro", "Uso": "Energía" }
     }
 },
@@ -603,7 +571,7 @@ window.products = [
         es: "Técnico de sonido profesional que realiza montaje prueba y mezcla en directo."
     },
     specs: {
-        en: { "Shift": "8 h", "Role": "FOH/Mon", "Setup": "Included", "Console": "Digital", "Experience": "5+ yrs", "Language": "EN/ES" },
+        en: { "Shift": "8 h", "Console": "Digital", "Experience": "5+ yrs", "Language": "EN/ES" },
         es: { "Turno": "8 h", "Rol": "FOH/Mon", "Montaje": "Incluido", "Consola": "Digital", "Experiencia": "5+ años", "Idioma": "EN/ES" }
     }
 },
@@ -619,7 +587,7 @@ window.products = [
         es: "Operador de iluminación experimentado encargado de programación y operación en vivo."
     },
     specs: {
-        en: { "Shift": "8 h", "Role": "Operator", "Systems": "MA/Avo", "Programming": "Yes", "Busking": "Yes", "Experience": "5+ yrs" },
+        en: { "Shift": "8 h", "Systems": "MA/Avo", "Experience": "5+ yrs", "Language": "EN/ES"  },
         es: { "Turno": "8 h", "Rol": "Operador", "Sistemas": "MA/Avo", "Programación": "Sí", "Busking": "Sí", "Experiencia": "5+ años" }
     }
 },
@@ -635,7 +603,7 @@ window.products = [
         es: "Técnico dedicado a monitores que garantiza mezclas estables y precisas en escenario."
     },
     specs: {
-        en: { "Shift": "8 h", "Role": "Monitors", "Systems": "IEM/Wedge", "Talkback": "Yes", "Console": "Digital", "Experience": "5+ yrs" },
+        en: { "Shift": "8 h",  "Systems": "IEM/Wedge", "Experience": "5+ yrs", "Language": "EN/ES" },
         es: { "Turno": "8 h", "Rol": "Monitores", "Sistemas": "IEM/Cuñas", "Talkback": "Sí", "Consola": "Digital", "Experiencia": "5+ años" }
     }
 },
@@ -647,11 +615,11 @@ window.products = [
     priceDay: 250,
     image: "img/inventory/placeholder.png",
     description: {
-        en: "All in one audiovisual solution for small parties weddings and intimate live events.",
+        en: "All in one audiovisual solution for small parties, weddings and intimate live events.",
         es: "Solución audiovisual todo en uno para fiestas pequeñas bodas y eventos íntimos."
     },
     specs: {
-        en: { "Audience": "≤100 pax", "Sound": "2 kW PA", "Lights": "4x PAR", "Setup": "Plug&Play", "Crew": "Optional", "Transport": "Car" },
+        en: { "Audience": "≤100 pax", "Sound": "2 kW PA", "Lights": "4x PAR", "Setup": "Plug&Play" },
         es: { "Público": "≤100 pax", "Sonido": "PA 2 kW", "Luces": "4x PAR", "Montaje": "Plug&Play", "Técnicos": "Opcional", "Transporte": "Coche" }
     }
 },
@@ -667,7 +635,7 @@ window.products = [
         es: "Pack completo de conferencia con sonido micrófonos y proyección para uso corporativo."
     },
     specs: {
-        en: { "Audience": "≤200 pax", "Sound": "4-point PA", "Mics": "3 wireless", "Video": "5000 lm", "Crew": "Included", "Use": "Corporate" },
+        en: { "Audience": "≤200 pax", "Sound": "4-point PA", "Mics": "3 wireless", "Crew": "Included"},
         es: { "Público": "≤200 pax", "Sonido": "PA 4 puntos", "Micros": "3 inalámbricos", "Video": "5000 lm", "Técnicos": "Incluido", "Uso": "Corporativo" }
     }
 }

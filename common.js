@@ -61,7 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.lang-opt').forEach(btn => btn.addEventListener('click', () => window.changeLanguage(btn.dataset.lang)));
 
     // Init Language
-    window.changeLanguage(window.currentLang);
+    if (window.currentLang !== 'es') {
+        window.changeLanguage(window.currentLang);
+    } else {
+        document.querySelectorAll('.lang-opt').forEach(el => el.classList.toggle('active', el.dataset.lang === 'es'));
+    }
 
     // --- Toast Notification System ---
     window.showToast = (message, type = 'info') => {
