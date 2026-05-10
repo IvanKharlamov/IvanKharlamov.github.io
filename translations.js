@@ -275,8 +275,8 @@ window.TRANSLATIONS_RAW = {
 	  "es": "Excelente servicio y gran profesionalidad. Todo el proceso estuvo organizado, fue puntual y estuvo de maravilla coordinado. El equipo es atento y muy responsable."
 	},
   "footer.desc": {
-    "en": "Lighting, sound, and stage equipment.",
-    "es": "Equipo de iluminación, sonido y escenario."
+    "en": "From concept to showtime",
+    "es": "Del concepto al espectáculo"
   },
 
 

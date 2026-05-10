@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let internalWidth, rows, cols;
     const INTERNAL_HEIGHT = 877; 
-    const spacing = 19; 
+    const spacing = 15.8; 
     let grid, activeLines = [];
     const tieredSprites = [];
 
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function drawLED() {
-        lctx.fillStyle = '#060402';
+        lctx.fillStyle = '#0c0a05';
         lctx.fillRect(0, 0, internalWidth, INTERNAL_HEIGHT);
         lctx.globalCompositeOperation = 'screen';
         const halfSize = 50; 

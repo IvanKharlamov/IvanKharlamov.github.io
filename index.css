@@ -709,7 +709,7 @@
     .reviews-carousel {
         margin-top: 2rem;
         padding: 0 10px;
-        overflow: visible; /* Allow buttons to be positioned relative to card */
+        overflow: hidden;
     }
 
     .review-card {
