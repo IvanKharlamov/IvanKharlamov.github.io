@@ -64,7 +64,7 @@
                 <nav class="main-nav desktop-nav">
                     <div class="nav-links">
                         <a href="index" class="nav-link" data-i18n="nav.home">Inicio</a>
-                        <a href="#" class="nav-link" style="color:#fff;" data-i18n="nav.catalog">Catálogo</a>
+                        <a href="#" class="nav-link nav-link-active" data-i18n="nav.catalog">Catálogo</a>
                         <button class="btn-icon" id="cart-toggle">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2">
@@ -128,7 +128,7 @@
             </div>
         </div>
 
-        <main class="catalog-section" style="padding-top: 120px; padding-bottom: 60px;">
+        <main class="catalog-section">
             <div class="container-wide">
                 <div class="catalog-layout">
                     <aside class="catalog-sidebar">
@@ -220,7 +220,7 @@
                 <div class="footer-contact">
                     <div class="footer-contact-item">
                         <h4 data-i18n="contact.hq">Sede Central</h4>
-                        <p>Calle Francisco Silvela 110, 2ª planta, 28002 Madrid</p>
+                        <p>C. San Mames, 36, Villaverde, 28021 Madrid</p>
                     </div>
                     <div class="footer-contact-item">
                         <h4 data-i18n="contact.phone">Teléfono</h4>
@@ -286,7 +286,7 @@
                     <h2 id="modal-title">Título del Producto</h2>
                     <div class="modal-header-line">
                         <div class="modal-category" id="modal-category">Categoría</div>
-                        <button class="btn btn-outline btn-sm" id="btn-show-details" style="display: none;" data-i18n="product.details">Detalles</button>
+                        <button class="btn btn-outline btn-sm" id="btn-show-details" data-i18n="product.details">Detalles</button>
                     </div>
 
                     <!-- Details View -->
@@ -306,7 +306,7 @@
                     </div>
 
                     <!-- Quote View -->
-                    <div id="modal-quote-view" style="display: none;">
+                    <div id="modal-quote-view">
                         <div class="modal-section">
                             <h4 data-i18n="modal.rentalDates">Fechas de alquiler</h4>
                             
@@ -366,7 +366,7 @@
 
     <!-- General Quote Modal (triggered from header button) -->
     <div class="modal-overlay" id="general-quote-modal">
-		<div class="modal-content glass-card" style="max-width: 700px;">
+		<div class="modal-content glass-card">
 			<button class="close-modal" id="close-general-quote">&times;</button>
 			<div class="quote-modal-body">
 				<div class="quote-modal-header">
@@ -472,7 +472,7 @@
 
 	<!-- Cart Quote Modal (triggered from cart) -->
 	<div class="modal-overlay" id="cart-quote-modal">
-		<div class="modal-content glass-card" style="max-width: 900px;">
+		<div class="modal-content glass-card">
 			<button class="close-modal" id="close-cart-quote">&times;</button>
 			<div class="quote-modal-body">
 				<div class="quote-modal-header">

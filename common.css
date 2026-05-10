@@ -103,6 +103,10 @@ h6 {
     padding-bottom: 4px;
 }
 
+.nav-link.nav-link-active {
+    color: #fff;
+}
+
 .nav-link::after {
     content: '';
     position: absolute;
@@ -392,20 +396,7 @@ a {
     gap: 15px;
 }
 
-@media (max-width: 768px) {
-    .desktop-nav,
-    .desktop-actions {
-        display: none;
-    }
 
-    .mobile-actions {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-}
 
 .site-footer {
     padding: 60px 0;
@@ -886,6 +877,14 @@ a {
     border-radius: 12px;
 }
 
+#general-quote-modal .modal-content {
+    max-width: 700px;
+}
+
+#cart-quote-modal .modal-content {
+    max-width: 900px;
+}
+
 .close-modal {
     background: none;
     border: none;
@@ -1168,42 +1167,7 @@ a {
 }
 
 
-@media (max-width: 768px) {
-	.lang-opt {
-		font-size: larger;
-	}
-	
-	.modal-overlay {
-		padding: 0;
-	}
-	
-    .cart-drawer {
-        max-width: 100%;
-        right: -100%;
-    }
-	
-	.modal-content {
-		max-height: 100vh;
-	}
-	
-	.footer-social {
-		flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-	}
-    
-    .footer-inner {
-        flex-direction: column;
-        padding-left: 20px;
-    }
-    
-    .footer-contact {
-		grid-template-columns: auto;
-    }
-	.footer-contact-item:nth-child(3) {
-		grid-column: 1;
-	}
-}
+
 
 .quote-modal-body {
     padding: 40px;
@@ -1391,9 +1355,55 @@ a {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .desktop-nav,
+    .desktop-actions,
+    .service-details-inner h3 {
+        display: none;
+    }
+
+    .mobile-actions,
+    .menu-toggle {
+        display: flex;
+    }
+
+    .lang-opt {
+        font-size: larger;
+    }
+    
+    .modal-overlay {
+        padding: 0;
+    }
+    
+    .cart-drawer {
+        max-width: 100%;
+        right: -100%;
+    }
+    
+    .modal-content {
+        max-height: 100vh;
+    }
+    
+    .footer-social {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .footer-inner {
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    
+    .footer-contact {
+        grid-template-columns: auto;
+    }
+    .footer-contact-item:nth-child(3) {
+        grid-column: 1;
+    }
+
     .quote-modal-body {
         padding: 30px 15px;
-		max-height: unset;
+        max-height: unset;
     }
 
     .quote-form-row {

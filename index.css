@@ -18,6 +18,9 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-gradient-bg {
@@ -122,14 +125,12 @@
 .hero-content-outline {
     text-align: center;
     width: 100%;
-}
-
-.hero-section,
-.hero-content-mask {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+
 
 canvas {
     position: absolute;
@@ -192,21 +193,7 @@ canvas {
     gap: 20px;
 }
 
-@media (max-width: 768px) {
-	.hero-title-large {
-		font-size: 13vw;
-		margin-bottom: 20vw;
-	}
 
-	.hero-ui-subtitle {
-		font-size: 1rem;
-	}
-
-    .services-grid {
-        grid-template-columns: 1fr;
-        gap: 12px;
-    }
-}
 
 .service-card {
     padding: 40px;
@@ -217,6 +204,9 @@ canvas {
     height: 100%;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
 }
 
 .service-card:hover {
@@ -262,10 +252,25 @@ canvas {
     line-height: 1.6;
 }
 
+#service-details-title {
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+#service-details-text {
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
 .about-section {
     padding: var(--spacing-xl) 0;
     position: relative;
     background: linear-gradient(180deg, #000 0%, var(--bg-color) 100%);
+}
+
+.about-section .section-title {
+    text-align: left;
 }
 
 .about-grid {
@@ -310,6 +315,11 @@ canvas {
     transition: var(--transition-smooth);
 }
 
+.gallery-item:nth-child(1) .gallery-img-placeholder { background-image: url('assets/images/who we are/0.jpg'); }
+.gallery-item:nth-child(2) .gallery-img-placeholder { background-image: url('assets/images/who we are/1.jpeg'); }
+.gallery-item:nth-child(3) .gallery-img-placeholder { background-image: url('assets/images/who we are/2.jpeg'); }
+.gallery-item:nth-child(4) .gallery-img-placeholder { background-image: url('assets/images/who we are/3.jpg'); }
+
 .gallery-item:hover .gallery-img-placeholder {
     transform: scale(1.05);
 }
@@ -350,6 +360,24 @@ canvas {
     border: 1px solid var(--glass-border);
     border-radius: 24px;
     backdrop-filter: blur(12px);
+}
+
+.review-stars {
+    color: #FBBC05;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.review-source {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 1rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    opacity: 0.8;
 }
 
 .review-quote {
@@ -450,25 +478,7 @@ canvas {
     right: -50px;
 }
 
-@media (max-width: 768px) {
-    .carousel-btn.prev {
-        left: 0;
-    }
 
-    .carousel-btn.next {
-        right: 0;
-    }
-
-    .about-gallery {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        height: auto;
-    }
-
-    .gallery-item {
-        height: 200px;
-    }
-}
 
 .contact-section {
     padding: var(--spacing-xl) 0;
@@ -489,11 +499,7 @@ canvas {
     margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-    .contact-container {
-        padding: 30px 20px;
-    }
-}
+
 
 .service-modal-gallery {
     display: grid;
@@ -502,18 +508,10 @@ canvas {
     margin-top: 1rem;
 }
 
-@media (max-width: 768px) {
-    .service-modal-gallery {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-}
+
 
 /* --- Services Accordion Styles --- */
-.service-card {
-    position: relative;
-    z-index: 1;
-}
+
 
 .service-card.active {
     background: #060606;
@@ -575,7 +573,17 @@ canvas {
 }
 
 @media (max-width: 768px) {
+    .hero-title-large {
+        font-size: 13vw;
+        margin-bottom: 20vw;
+    }
+
+    .hero-ui-subtitle {
+        font-size: 1rem;
+    }
+
     .services-grid {
+        grid-template-columns: 1fr;
         gap: 10px;
     }
 
@@ -621,10 +629,9 @@ canvas {
     }
 
     .service-card p {
-        display: none; /* Hide preview text in accordion header */
+        display: none;
     }
 
-    /* Accordion Chevron Indicator */
     .service-card::after {
         content: '';
         width: 8px;
@@ -646,10 +653,12 @@ canvas {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        height: auto;
+        margin-bottom: 0;
     }
 
     .service-details-container {
-        margin-top: -10px; /* Bridge the gap to the header */
+        margin-top: -10px;
         border-top: none;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
@@ -667,12 +676,35 @@ canvas {
     }
 
     .service-details-inner h3 {
-        display: none; /* Title is already in the accordion header */
+        display: none;
     }
 
-    .service-details-gallery {
+    .service-details-gallery,
+    .service-modal-gallery {
         grid-template-columns: 1fr;
         gap: 12px;
+    }
+
+    .carousel-btn.prev {
+        left: 0;
+    }
+
+    .carousel-btn.next {
+        right: 0;
+    }
+
+    .about-gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: auto;
+    }
+
+    .gallery-item {
+        height: 200px;
+    }
+
+    .contact-container {
+        padding: 30px 20px;
     }
 }
 
