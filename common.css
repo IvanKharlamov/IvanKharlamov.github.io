@@ -1,21 +1,3 @@
-@font-face {
-    font-family: 'Inter';
-    src: url('fonts/Inter.woff2') format('woff2'),
-         url('fonts/Inter.woff') format('woff');
-    font-weight: 100 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Outfit';
-    src: url('fonts/Outfit.woff2') format('woff2'),
-         url('fonts/Outfit.woff') format('woff');
-    font-weight: 100 900;
-    font-style: normal;
-    font-display: swap;
-}
-
 :root {
     --bg-color: #080808;
     --bg-secondary: #121212;
@@ -33,8 +15,8 @@
     --glass-border: rgba(255, 255, 255, 0.1);
     --glass-blur: 12px;
 
-    --font-heading: 'Outfit', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-body: system-ui, sans-serif;
+    --font-alt: Noto Sans, sans-serif;
 
     --spacing-md: 2rem;
     --spacing-lg: 4rem;
@@ -86,7 +68,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-heading);
+    font-family: var(--font-body);
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: -0.02em;
@@ -94,6 +76,7 @@ h6 {
 
 .nav-link {
     font-size: 0.9rem;
+	font-family: var(--font-alt);
     font-weight: 500;
     color: var(--text-muted);
     position: relative;
