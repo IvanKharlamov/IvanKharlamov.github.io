@@ -766,10 +766,10 @@ canvas {
 
 /* --- Energy Field Animation --- */
 :root {
-    --g: rgba(220, 38, 38, 1);
-    --p: rgba(153, 27, 27, 1);
-    --b: rgba(127, 29, 29, 1);
-    --p-glow: rgba(153, 27, 27, 0);
+    --g: rgba(34, 255, 136, 1);
+    --p: rgba(204, 68, 255, 1);
+    --b: rgba(0, 212, 255, 1);
+    --p-glow: rgba(204, 68, 255, 0);
 }
 
 #hero-video-tile {
