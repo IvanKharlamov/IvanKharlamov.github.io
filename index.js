@@ -1,10 +1,124 @@
 // Index JS: Hero Animation, Reviews, Team Modal
 
 document.addEventListener('DOMContentLoaded', () => {
-	const heroVideo = document.getElementById("heroVideo");
-	const tileCanvas = document.getElementById("hero-video-tile");
-	const tctx = tileCanvas.getContext("2d");
-	let isLoopVideo = false;
+	const ledCanvas = document.getElementById("ledCanvas");
+	const lctx = ledCanvas.getContext("2d", { alpha: false });
+
+    let internalWidth, rows, cols;
+    const INTERNAL_HEIGHT = 877; 
+    const spacing = 19; 
+    let grid, activeLines = [];
+    const tieredSprites = [];
+
+    const LINES_PER_FRAME = 30;   
+    const PULSE_SPEED = 0.024;
+    const MIN_LEN = 5;            
+    const MAX_LEN = 15;           
+    const LED_RANDOMNESS = 0.25;
+    const SPAWN_CHANCE = 0.8;
+
+    function preRenderLED() {
+        for (let i = 0; i <= 10; i++) {
+            const intensity = i / 10;
+            const displayInt = Math.max(0.06, intensity);
+            const sCanvas = document.createElement('canvas');
+            const sCtx = sCanvas.getContext('2d');
+            const size = 100; 
+            sCanvas.width = size; sCanvas.height = size;
+            const centerX = size / 2; const centerY = size / 2;
+
+            if (displayInt < 0.5) {
+                const t = displayInt * 2;
+                const r = 139 + (255 - 139) * t; 
+                const g = 69 + (179 - 69) * t; 
+                const b = 0 + (30 - 0) * t;
+                const rad = 1.3 + t * 1.5;
+                sCtx.shadowBlur = t * 12;
+                sCtx.shadowColor = `rgba(255, 140, 0, 0.3)`;
+                sCtx.fillStyle = `rgb(${Math.floor(r)},${Math.floor(g)},${Math.floor(b)})`;
+                sCtx.beginPath(); sCtx.arc(centerX, centerY, rad, 0, Math.PI*2); sCtx.fill();
+            } else {
+                const t = (displayInt - 0.5) * 2;
+                const coreRad = 2.5 + t * 4.5;
+                const haloRad = coreRad * 1.18;
+                sCtx.shadowBlur = 15 + t * 30;
+                sCtx.shadowColor = `rgba(255, 165, 0, 0.5)`;
+                sCtx.fillStyle = "#FFB300";
+                sCtx.beginPath(); sCtx.arc(centerX, centerY, haloRad, 0, Math.PI * 2); sCtx.fill();
+                sCtx.shadowBlur = 0;
+                sCtx.fillStyle = "#FFF9E5"; 
+                sCtx.beginPath(); sCtx.arc(centerX, centerY, coreRad, 0, Math.PI * 2); sCtx.fill();
+            }
+            tieredSprites[i] = sCanvas;
+        }
+    }
+
+    function initLED() {
+        const aspect = window.innerWidth / window.innerHeight;
+        internalWidth = INTERNAL_HEIGHT * aspect;
+        ledCanvas.width = internalWidth;
+        ledCanvas.height = INTERNAL_HEIGHT;
+        cols = Math.ceil(internalWidth / spacing);
+        rows = Math.ceil(INTERNAL_HEIGHT / spacing);
+        grid = new Float32Array(rows * cols);
+        activeLines = [];
+    }
+
+    function updateLED() {
+        grid.fill(0);
+        if (Math.random() < SPAWN_CHANCE) {
+            for(let i = 0; i < LINES_PER_FRAME; i++) {
+                activeLines.push({
+                    r: Math.floor(Math.random() * rows),
+                    c: Math.floor(Math.random() * cols),
+                    len: Math.floor(Math.random() * (MAX_LEN - MIN_LEN + 1) + MIN_LEN),
+                    age: 0,
+                    speed: PULSE_SPEED + (Math.random() * 0.01),
+                    noiseFactors: Array.from({length: MAX_LEN * 2 + 1}, () => 1 - (Math.random() * LED_RANDOMNESS))
+                });
+            }
+        }
+        for (let i = activeLines.length - 1; i >= 0; i--) {
+            const p = activeLines[i];
+            p.age += p.speed;
+            if (p.age >= 1) {
+                activeLines.splice(i, 1);
+                continue;
+            }
+            const masterIntensity = Math.sin(p.age * Math.PI);
+            for (let offset = -p.len; offset <= p.len; offset++) {
+                const targetC = p.c + offset;
+                if (targetC >= 0 && targetC < cols) {
+                    const distFalloff = 1 - (Math.abs(offset) / p.len);
+                    const noise = p.noiseFactors[offset + MAX_LEN];
+                    const finalVal = masterIntensity * distFalloff * noise;
+                    const idx = p.r * cols + targetC;
+                    if (finalVal > grid[idx]) grid[idx] = finalVal;
+                }
+            }
+        }
+    }
+
+    function drawLED() {
+        lctx.fillStyle = '#060402';
+        lctx.fillRect(0, 0, internalWidth, INTERNAL_HEIGHT);
+        lctx.globalCompositeOperation = 'screen';
+        const halfSize = 50; 
+        for (let r = 0; r < rows; r++) {
+            const rowOff = r * cols;
+            const yPos = (r * spacing + spacing/2) - halfSize;
+            for (let c = 0; c < cols; c++) {
+                const intensity = grid[rowOff + c];
+                const cacheIdx = Math.min(10, Math.max(0, Math.floor(intensity * 10)));
+                lctx.drawImage(tieredSprites[cacheIdx], (c * spacing + spacing/2) - halfSize, yPos);
+            }
+        }
+        lctx.globalCompositeOperation = 'source-over';
+    }
+
+    preRenderLED();
+    initLED();
+    window.addEventListener('resize', initLED);
 
     // === SEEDED PRNG ===
     let seed = 45;
@@ -69,44 +183,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 2000);
 
     // Transition to Loop Video after 5 seconds
+    // Transition to LED Matrix after 5.5 seconds
     setTimeout(() => {
         if (energyFieldContainer) energyFieldContainer.classList.add('hidden');
-        if (tileCanvas) tileCanvas.classList.add('visible');
-        isLoopVideo = true;
-        heroVideo.play();
+        if (ledCanvas) ledCanvas.classList.add('visible');
+        loopBackground();
     }, 5500);
-
-	heroVideo.addEventListener("play", () => {
-		drawVideoBackground();
-	}, { once: true });
 	
-	function drawVideoBackground() {
-		if (heroVideo.readyState < 2) {
-			requestAnimationFrame(drawVideoBackground);
-			return;
-		}
-
-		tctx.clearRect(0, 0, tileCanvas.width, tileCanvas.height);
-		const vw = heroVideo.videoWidth, vh = heroVideo.videoHeight;
-
-		if (!isLoopVideo) {
-			const s = Math.max(tileCanvas.width / vw, tileCanvas.height / vh), w = vw * s, h = vh * s;
-			tctx.drawImage(heroVideo, (tileCanvas.width - w) * 0.5, (tileCanvas.height - h) * 0.5, w, h);
-		} else {
-			const cx = tileCanvas.width * 0.5, cy = tileCanvas.height * 0.5, tx = Math.ceil(tileCanvas.width / vw) + 2, ty = Math.ceil(tileCanvas.height / vh) + 2;
-			for (let iy = -ty; iy <= ty; iy++) {
-				for (let ix = -tx; ix <= tx; ix++) {
-					const fx = Math.abs(ix) % 2, fy = Math.abs(iy) % 2;
-					tctx.save();
-					tctx.translate(cx - vw * 0.5 + ix * vw + (fx ? vw : 0), cy - vh * 0.5 + iy * vh + (fy ? vh : 0));
-					tctx.scale(fx ? -1 : 1, fy ? -1 : 1);
-					tctx.drawImage(heroVideo, 0, 0);
-					tctx.restore();
-				}
-			}
-		}
-
-		requestAnimationFrame(drawVideoBackground);
+	function loopBackground() {
+        updateLED();
+        drawLED();
+		requestAnimationFrame(loopBackground);
 	}
 
     // --- Background Animation (Constellation Effect & Geometric Attraction) ---
@@ -313,8 +400,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			const ratioX = shapeCenter ? shapeCenter.x / width : null;
 			const ratioY = shapeCenter ? shapeCenter.y / height : null;
 
-			width = canvas.width = canvassolid.width = tileCanvas.width = canvas.parentElement.offsetWidth;
-			height = canvas.height = canvassolid.height = tileCanvas.height = Math.max(100, canvas.parentElement.offsetHeight - 88);
+			width = canvas.width = canvassolid.width = canvas.parentElement.offsetWidth;
+			height = canvas.height = canvassolid.height = Math.max(100, canvas.parentElement.offsetHeight - 88);
 			scaleFactor = height / 1080;
 
 			if (shapeCenter && ratioX !== null) {
@@ -529,15 +616,16 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             'production': [
                 'img/index/service_production1.jpg',
-                'img/index/service_production2.jpg',
-                'img/index/service_production3.png',
-                'img/index/service_production4.png'
+                'img/index/service_production2.jpg'
             ],
             'design': [
                 'img/index/service_design1.webp',
                 'img/index/service_design2.webp'
             ],
-            'support': []
+            'support': [
+                'img/index/service_event1.png',
+                'img/index/service_event2.png'
+            ]
         };
 
         const cards = Array.from(grid.querySelectorAll('.service-card[data-service-id]'));
