@@ -293,6 +293,8 @@ window.TRANSLATIONS_RAW = {
   },
   "contact.hq": { "en": "Headquarters", "es": "Sede Central" },
   "contact.phone": { "en": "Phone", "es": "Teléfono" },
+  "contact.email": { "en": "Email", "es": "Email" },
+  "contact.hours": { "en": "Working Hours", "es": "Horario" },
 
   "contact.form.title": { "en": "Send a Message", "es": "Enviar Mensaje" },
   "contact.form.name": { "en": "Name", "es": "Nombre" },

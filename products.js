@@ -5,7 +5,7 @@ window.products = [
     category: "cat.light",
     manufacturer: "Generic",
     priceDay: 30,
-    image: "assets/images/PNG2/230W.png",
+    image: "img/inventory/230W.png",
     description: {
         en: "High intensity beam moving head designed for long throw aerial effects and sharp stage visuals.",
         es: "Cabeza móvil beam de alta intensidad diseñada para efectos aéreos largos y visuales definidos."
@@ -21,7 +21,7 @@ window.products = [
     category: "cat.light",
     manufacturer: "Generic",
     priceDay: 20,
-    image: "assets/images/PNG2/Wash 17x19.png",
+    image: "img/inventory/Wash 17x19.png",
     description: {
         en: "LED wash moving head with wide zoom range for smooth washes or concentrated color beams.",
         es: "Cabeza móvil wash LED con amplio zoom para baños suaves o haces de color concentrados."
@@ -37,7 +37,7 @@ window.products = [
     category: "cat.light",
     manufacturer: "Generic",
     priceDay: 15,
-    image: "assets/images/PNG2/led par battery.png",
+    image: "img/inventory/led par battery.png",
     description: {
         en: "Battery powered LED uplight for events and architecture where fast cable free setup is required.",
         es: "Uplight LED a batería para eventos y arquitectura donde se requiere montaje rápido sin cables."
@@ -53,7 +53,7 @@ window.products = [
     category: "cat.light",
     manufacturer: "Generic",
     priceDay: 10,
-    image: "assets/images/PNG2/LED PAR.png",
+    image: "img/inventory/LED PAR.png",
     description: {
         en: "Compact LED PAR fixture for truss mounting accent lighting and general color wash use.",
         es: "PAR LED compacto para truss iluminación de acento y usos generales de color."
@@ -69,7 +69,7 @@ window.products = [
     category: "cat.light",
     manufacturer: "Aputure",
     priceDay: 20,
-    image: "assets/images/PNG2/amaran-t2c.png",
+    image: "img/inventory/amaran-t2c.png",
     description: {
         en: "RGBWW LED tube light for film broadcast and creative applications with precise color control.",
         es: "Tubo LED RGBWW para cine broadcast y usos creativos con control preciso de color."
@@ -85,7 +85,7 @@ window.products = [
     category: "cat.light",
     manufacturer: "Showtec",
     priceDay: 20,
-    image: "assets/images/PNG2/showtec-sunstrip-active-dmx-mkii.png",
+    image: "img/inventory/showtec-sunstrip-active-dmx-mkii.png",
     description: {
         en: "Classic tungsten blinder bar used for audience hits chases and warm stage lighting looks.",
         es: "Barra cegadora clásica de tungsteno usada para impactos al público y efectos cálidos."
@@ -101,7 +101,7 @@ window.products = [
     category: "cat.light",
     manufacturer: "Generic",
     priceDay: 15,
-    image: "assets/images/PNG2/LED BAR.png",
+    image: "img/inventory/LED BAR.png",
     description: {
         en: "Linear LED bar for wall washing eye candy effects and pixel oriented lighting designs.",
         es: "Barra LED lineal para bañado de paredes efectos visuales y diseños de píxeles."
@@ -117,7 +117,7 @@ window.products = [
     category: "cat.light",
     manufacturer: "MA Lighting",
     priceDay: 100,
-    image: "assets/images/PNG2/MA WING.png",
+    image: "img/inventory/MA WING.png",
     description: {
         en: "Portable professional lighting control surface providing full MA2 workflow via computer.",
         es: "Superficie portátil de control profesional que ofrece flujo completo MA2 mediante ordenador."
@@ -133,7 +133,7 @@ window.products = [
     category: "cat.light",
     manufacturer: "ENTTEC",
     priceDay: 15,
-    image: "assets/images/PNG2/ENTTEC.png",
+    image: "img/inventory/ENTTEC.png",
     description: {
         en: "Reliable USB to DMX interface widely used for computer based professional lighting control.",
         es: "Interfaz USB a DMX fiable usada ampliamente para control profesional de iluminación."
@@ -149,7 +149,7 @@ window.products = [
     category: "cat.structures",
     manufacturer: "Generic",
     priceDay: 10,
-    image: "assets/images/PNG2/Truss.png",
+    image: "img/inventory/Truss.png",
     description: {
         en: "Heavy duty square aluminum truss segment for building lighting rigs and stage structures.",
         es: "Tramo de truss cuadrado de aluminio para estructuras de iluminación y escenarios."
@@ -165,7 +165,7 @@ window.products = [
     category: "cat.structures",
     manufacturer: "Generic",
     priceDay: 20,
-    image: "assets/images/PNG2/Totem.png",
+    image: "img/inventory/Totem.png",
     description: {
         en: "Vertical truss totem with heavy steel base for safe mounting of lighting fixtures.",
         es: "Tótem vertical con base de acero pesada para montaje seguro de luminarias."
@@ -181,7 +181,7 @@ window.products = [
     category: "cat.structures",
     manufacturer: "Generic",
     priceDay: 30,
-    image: "assets/images/PNG2/STAGE MODULE.png",
+    image: "img/inventory/STAGE MODULE.png",
     description: {
         en: "Professional modular stage deck with anti slip surface and adjustable height legs.",
         es: "Tarima modular profesional con superficie antideslizante y patas de altura ajustable."
@@ -197,7 +197,7 @@ window.products = [
     category: "cat.sound",
     manufacturer: "Meyer Sound",
     priceDay: 30,
-    image: "assets/images/PNG2/UPM-2P.png",
+    image: "img/inventory/UPM-2P.png",
     description: {
         en: "Compact high power self powered loudspeaker used for monitoring fill and small PA systems.",
         es: "Altavoz autoamplificado compacto de alta potencia para monitores refuerzos y PA pequeños."
@@ -213,7 +213,7 @@ window.products = [
     category: "cat.sound",
     manufacturer: "HK Audio",
     priceDay: 20,
-    image: "assets/images/PNG2/sonar-115-xi.png",
+    image: "img/inventory/sonar-115-xi.png",
     description: {
         en: "Active full range speaker for front of house use in small to medium live events.",
         es: "Altavoz activo de rango completo para uso FOH en eventos pequeños y medianos."
@@ -229,7 +229,7 @@ window.products = [
     category: "cat.sound",
     manufacturer: "HK Audio",
     priceDay: 30,
-    image: "assets/images/PNG2/hk-audio-sonar-115-sub-d_62bf0bb9c530e.png",
+    image: "img/inventory/hk-audio-sonar-115-sub-d_62bf0bb9c530e.png",
     description: {
         en: "Active subwoofer designed to extend low frequency response of Sonar PA systems.",
         es: "Subwoofer activo diseñado para extender las bajas frecuencias de sistemas Sonar."
@@ -245,7 +245,7 @@ window.products = [
     category: "cat.sound",
     manufacturer: "HK Audio",
     priceDay: 30,
-    image: "assets/images/PNG2/HK PRO.png",
+    image: "img/inventory/HK PRO.png",
     description: {
         en: "High output active loudspeaker suitable for main PA or monitor applications.",
         es: "Altavoz activo de alta potencia adecuado para PA principal o uso como monitor."
@@ -261,7 +261,7 @@ window.products = [
     category: "cat.sound",
     manufacturer: "RCF",
     priceDay: 100,
-    image: "assets/images/PNG2/003_SUB_8008_AS_RIGHT.png",
+    image: "img/inventory/003_SUB_8008_AS_RIGHT.png",
     description: {
         en: "Tour grade dual eighteen inch active subwoofer for large scale sound reinforcement.",
         es: "Subwoofer activo doble de dieciocho pulgadas para refuerzo sonoro de gran escala."
@@ -277,7 +277,7 @@ window.products = [
     category: "cat.sound",
     manufacturer: "Yamaha",
     priceDay: 0,
-    image: "assets/images/PNG2/yAMAHA DXR.png",
+    image: "img/inventory/yAMAHA DXR.png",
     description: {
         en: "Compact active loudspeaker with DSP processing for portable PA and monitoring tasks.",
         es: "Altavoz activo compacto con DSP para PA portátil y tareas de monitoreo."
@@ -293,7 +293,7 @@ window.products = [
     category: "cat.sound",
     manufacturer: "DB Technologies",
     priceDay: 0,
-    image: "assets/images/PNG2/logoletter.png",
+    image: "img/inventory/logoletter.png",
     description: {
         en: "General purpose active loudspeaker for small events rehearsals and auxiliary audio.",
         es: "Altavoz activo de propósito general para eventos pequeños ensayos y audio auxiliar."
@@ -309,7 +309,7 @@ window.products = [
     category: "cat.console",
     manufacturer: "Generic",
     priceDay: 15,
-    image: "assets/images/PNG2/Analogue console 4 8 .png",
+    image: "img/inventory/Analogue console 4 8 .png",
     description: {
         en: "Compact analogue mixing console for small bands speech events and simple audio setups.",
         es: "Mesa analógica compacta para bandas pequeñas eventos de voz y configuraciones simples."
@@ -325,7 +325,7 @@ window.products = [
     category: "cat.console",
     manufacturer: "Midas",
     priceDay: 30,
-    image: "assets/images/PNG2/DL32.png",
+    image: "img/inventory/DL32.png",
     description: {
         en: "Digital stage box providing remote mic inputs and outputs over AES50 network.",
         es: "Caja de escenario digital que ofrece entradas y salidas remotas mediante AES50."
@@ -341,7 +341,7 @@ window.products = [
     category: "cat.console",
     manufacturer: "Behringer",
     priceDay: 50,
-    image: "assets/images/PNG2/X32.png",
+    image: "img/inventory/X32.png",
     description: {
         en: "Rack digital mixer offering full X32 processing power for live sound and recording setups.",
         es: "Mezclador digital en rack con potencia X32 completa para directo y grabación."
@@ -357,7 +357,7 @@ window.products = [
     category: "cat.console",
     manufacturer: "Midas",
     priceDay: 90,
-    image: "assets/images/PNG2/MIDAS M32.png",
+    image: "img/inventory/MIDAS M32.png",
     description: {
         en: "Digital mixing console for demanding live productions and multitrack recording.",
         es: "Consola digital para producciones en vivo exigentes y grabación multipista."
@@ -373,7 +373,7 @@ window.products = [
     category: "cat.mics",
     manufacturer: "Shure",
     priceDay: 40,
-    image: "assets/images/PNG2/slxd24e-b58-g59.png",
+    image: "img/inventory/slxd24e-b58-g59.png",
     description: {
         en: "Digital wireless handheld microphone system delivering reliable RF performance and clear vocals.",
         es: "Sistema inalámbrico digital de mano con rendimiento RF fiable y voces claras."
@@ -389,7 +389,7 @@ window.products = [
     category: "cat.mics",
     manufacturer: "Sennheiser",
     priceDay: 10,
-    image: "assets/images/PNG2/Sennheiser E 906.png",
+    image: "img/inventory/Sennheiser E 906.png",
     description: {
         en: "Dynamic instrument microphone optimized for guitar cabinets percussion and brass sources.",
         es: "Micrófono dinámico optimizado para amplificadores de guitarra percusión y metales."
@@ -405,7 +405,7 @@ window.products = [
     category: "cat.mics",
     manufacturer: "Shure",
     priceDay: 10,
-    image: "assets/images/PNG2/Shure 57 58 .png",
+    image: "img/inventory/Shure 57 58 .png",
     description: {
         en: "Industry standard dynamic microphones for vocals instruments and general live sound use.",
         es: "Micrófonos dinámicos estándar de la industria para voces instrumentos y directo."
@@ -421,7 +421,7 @@ window.products = [
     category: "cat.mics",
     manufacturer: "Electro-Voice",
     priceDay: 20,
-    image: "assets/images/PNG2/Re20 .png",
+    image: "img/inventory/Re20 .png",
     description: {
         en: "Broadcast grade dynamic microphone known for natural tone and minimal proximity effect.",
         es: "Micrófono dinámico de broadcast conocido por tono natural y bajo efecto proximidad."
@@ -437,7 +437,7 @@ window.products = [
     category: "cat.dj",
     manufacturer: "Pioneer DJ",
     priceDay: 40,
-    image: "assets/images/PNG2/cdj-2000nxs2-angle.png",
+    image: "img/inventory/cdj-2000nxs2-angle.png",
     description: {
         en: "Professional DJ media player supporting high resolution audio and club standard workflows.",
         es: "Reproductor DJ profesional compatible con audio alta resolución y flujos estándar."
@@ -453,7 +453,7 @@ window.products = [
     category: "cat.dj",
     manufacturer: "Pioneer DJ",
     priceDay: 40,
-    image: "assets/images/PNG2/DJM900.png",
+    image: "img/inventory/DJM900.png",
     description: {
         en: "Four channel digital DJ mixer delivering club standard sound quality and performance effects.",
         es: "Mezclador DJ digital de cuatro canales con sonido estándar de club y efectos."
@@ -469,7 +469,7 @@ window.products = [
     category: "cat.dj",
     manufacturer: "Technics",
     priceDay: 40,
-    image: "assets/images/PNG2/technics-sl-1200-mk2.png",
+    image: "img/inventory/technics-sl-1200-mk2.png",
     description: {
         en: "Legendary direct drive turntable offering high torque stability for DJ performance.",
         es: "Giradiscos legendario de tracción directa con alto par y estabilidad para DJs."
@@ -485,7 +485,7 @@ window.products = [
     category: "cat.dj",
     manufacturer: "UDG",
     priceDay: 15,
-    image: "assets/images/PNG2/DJ TABLE.png",
+    image: "img/inventory/DJ TABLE.png",
     description: {
         en: "Foldable professional DJ table providing stable support for mixers and players.",
         es: "Mesa DJ profesional plegable que ofrece soporte estable para mezcladores y reproductores."
@@ -501,7 +501,7 @@ window.products = [
     category: "cat.electricity",
     manufacturer: "Generic",
     priceDay: 20,
-    image: "assets/images/PNG2/Distribution 32.png",
+    image: "img/inventory/Distribution 32.png",
     description: {
         en: "Professional three phase power distribution unit for lighting and audio systems.",
         es: "Cuadro de distribución trifásico profesional para sistemas de iluminación y sonido."
@@ -517,7 +517,7 @@ window.products = [
     category: "cat.electricity",
     manufacturer: "Generic",
     priceDay: 30,
-    image: "assets/images/PNG2/logoletter.png",
+    image: "img/inventory/logoletter.png",
     description: {
         en: "High capacity three phase power distribution for large scale event productions.",
         es: "Distribución de energía trifásica de alta capacidad para producciones de gran escala."
@@ -533,7 +533,7 @@ window.products = [
     category: "cat.electricity",
     manufacturer: "Generic",
     priceDay: 1.5,
-    image: "assets/images/PNG2/cee-cable-32a-5g6-5m.png",
+    image: "img/inventory/cee-cable-32a-5g6-5m.png",
     description: {
         en: "Heavy duty three phase extension cable sold per meter for professional power runs.",
         es: "Cable trifásico resistente vendido por metro para alimentación profesional."
@@ -549,7 +549,7 @@ window.products = [
     category: "cat.electricity",
     manufacturer: "Generic",
     priceDay: 2.5,
-    image: "assets/images/PNG2/Cable 63.png",
+    image: "img/inventory/Cable 63.png",
     description: {
         en: "High current three phase power cable for main feeds and large distribution systems.",
         es: "Cable trifásico de alta corriente para alimentaciones principales y grandes sistemas."
@@ -565,7 +565,7 @@ window.products = [
     category: "cat.electricity",
     manufacturer: "Generic",
     priceDay: 1,
-    image: "assets/images/PNG2/16a 3 phase.png",
+    image: "img/inventory/16a 3 phase.png",
     description: {
         en: "Standard three phase extension cable for moderate power distribution needs.",
         es: "Cable de extensión trifásico estándar para necesidades de potencia moderadas."
@@ -581,7 +581,7 @@ window.products = [
     category: "cat.electricity",
     manufacturer: "Generic",
     priceDay: 2,
-    image: "assets/images/PNG2/SCHUKO.png",
+    image: "img/inventory/SCHUKO.png",
     description: {
         en: "Standard single phase Schuko power cable for connecting equipment to mains supply.",
         es: "Cable Schuko monofásico estándar para conexión de equipos a la red eléctrica."
@@ -597,7 +597,7 @@ window.products = [
     category: "cat.service",
     manufacturer: "UPSTAGE MADRID",
     priceDay: 150,
-    image: "assets/images/PNG2/live_sound_engineering_article_image_2025.jpg",
+    image: "img/inventory/live_sound_engineering_article_image_2025.jpg",
     description: {
         en: "Professional sound engineer providing setup soundcheck and live mixing during events.",
         es: "Técnico de sonido profesional que realiza montaje prueba y mezcla en directo."
@@ -613,7 +613,7 @@ window.products = [
     category: "cat.service",
     manufacturer: "UPSTAGE MADRID",
     priceDay: 150,
-    image: "assets/images/PNG2/light engineer.jpeg",
+    image: "img/inventory/light engineer.jpeg",
     description: {
         en: "Experienced lighting operator handling programming and live operation during shows.",
         es: "Operador de iluminación experimentado encargado de programación y operación en vivo."
@@ -629,7 +629,7 @@ window.products = [
     category: "cat.service",
     manufacturer: "UPSTAGE MADRID",
     priceDay: 100,
-    image: "assets/images/PNG2/monitoring engineer.jpg",
+    image: "img/inventory/monitoring engineer.jpg",
     description: {
         en: "Dedicated monitor engineer ensuring performers receive accurate and stable stage mixes.",
         es: "Técnico dedicado a monitores que garantiza mezclas estables y precisas en escenario."
@@ -645,7 +645,7 @@ window.products = [
     category: "cat.packs",
     manufacturer: "UPSTAGE MADRID",
     priceDay: 250,
-    image: "assets/images/placeholder.png",
+    image: "img/inventory/placeholder.png",
     description: {
         en: "All in one audiovisual solution for small parties weddings and intimate live events.",
         es: "Solución audiovisual todo en uno para fiestas pequeñas bodas y eventos íntimos."
@@ -661,7 +661,7 @@ window.products = [
     category: "cat.packs",
     manufacturer: "Upstage",
     priceDay: 350,
-    image: "assets/images/placeholder.png",
+    image: "img/inventory/placeholder.png",
     description: {
         en: "Complete conference package including sound microphones and projection for corporate use.",
         es: "Pack completo de conferencia con sonido micrófonos y proyección para uso corporativo."

@@ -524,16 +524,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const serviceImages = {
             'rental': [
-                'assets/images/rental/7b88d9_9f699a54485247129b7080eebeef43f4~mv2.avif',
-                'assets/images/rental/Warehouse-scaled.webp'
+                'img/index/service_rental1.avif',
+                'img/index/service_rental2.webp'
             ],
             'production': [
-                'assets/images/Live/655e0fa544c67c1ee5ce11c2_live-performance-tips-to-help-you-put-on-a-great-show-header.jpeg',
-                'assets/images/Live/yI7qlHnlTMtH3UbAz6ePIR93YkE.jpg'
+                'img/index/service_production1.jpg',
+                'img/index/service_production2.jpg',
+                'img/index/service_production3.png',
+                'img/index/service_production4.png'
             ],
             'design': [
-                'assets/images/System/blog-1440x800_Mobile_Stage_Wireframe (1).webp',
-                'assets/images/System/one-of-my-first-attempts-at-creating-a-lightconcept-in-v0-qm0g5i3qfjk71.webp'
+                'img/index/service_design1.webp',
+                'img/index/service_design2.webp'
             ],
             'support': []
         };

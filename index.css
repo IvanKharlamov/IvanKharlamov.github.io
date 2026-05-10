@@ -212,7 +212,7 @@ canvas {
 .service-card:hover {
     transform: translateY(-10px);
     border-color: var(--primary);
-    box-shadow: 0 10px 40px -10px rgba(139, 92, 246, 0.3);
+    box-shadow: 0 10px 40px -10px rgba(153, 27, 27, 0.3);
     background: rgba(255, 255, 255, 0.08);
 }
 
@@ -314,10 +314,10 @@ canvas {
     transition: var(--transition-smooth);
 }
 
-.gallery-item:nth-child(1) .gallery-img-placeholder { background-image: url('assets/images/who we are/0.jpg'); }
-.gallery-item:nth-child(2) .gallery-img-placeholder { background-image: url('assets/images/who we are/1.jpeg'); }
-.gallery-item:nth-child(3) .gallery-img-placeholder { background-image: url('assets/images/who we are/2.jpeg'); }
-.gallery-item:nth-child(4) .gallery-img-placeholder { background-image: url('assets/images/who we are/3.jpg'); }
+.gallery-item:nth-child(1) .gallery-img-placeholder { background-image: url('img/index/whoweare1.jpg'); }
+.gallery-item:nth-child(2) .gallery-img-placeholder { background-image: url('img/index/whoweare2.jpg'); }
+.gallery-item:nth-child(3) .gallery-img-placeholder { background-image: url('img/index/whoweare3.jpg'); }
+.gallery-item:nth-child(4) .gallery-img-placeholder { background-image: url('img/index/whoweare4.jpg'); }
 
 .gallery-item:hover .gallery-img-placeholder {
     transform: scale(1.05);
@@ -603,7 +603,7 @@ canvas {
         width: 40px;
         height: 40px;
         margin-bottom: 0;
-        background: rgba(2, 132, 199, 0.1);
+        background: rgba(153, 27, 27, 0.1);
         border-radius: 8px;
         flex-shrink: 0;
         display: flex;
