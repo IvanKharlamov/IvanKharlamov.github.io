@@ -218,7 +218,7 @@ canvas {
 
 .service-card.active:hover {
     transform: none;
-    box-shadow: none; /* prevents disconnecting from the expanding window */
+    box-shadow: none;
 }
 
 .service-icon {
@@ -254,7 +254,6 @@ canvas {
 
 #service-details-title {
     margin-bottom: 1rem;
-    color: var(--primary);
 }
 
 #service-details-text {
@@ -685,22 +684,79 @@ canvas {
         gap: 12px;
     }
 
-    .carousel-btn.prev {
-        left: 0;
-    }
-
-    .carousel-btn.next {
-        right: 0;
-    }
-
     .about-gallery {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         height: auto;
+        gap: 8px;
     }
 
     .gallery-item {
-        height: 200px;
+        height: 180px;
+        border-radius: 12px;
+    }
+
+    .about-text {
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    .reviews-section {
+        padding: 4rem 0;
+    }
+
+    .reviews-carousel {
+        margin-top: 2rem;
+        padding: 0 10px;
+        overflow: visible; /* Allow buttons to be positioned relative to card */
+    }
+
+    .review-card {
+        padding: 2rem 1.5rem;
+        border-radius: 20px;
+    }
+
+    .review-quote {
+        font-size: 1.15rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .review-avatar {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1rem;
+    }
+
+    .carousel-btn {
+        width: 36px;
+        height: 36px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .carousel-btn.prev {
+        left: 5px;
+    }
+
+    .carousel-btn.next {
+        right: 5px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+
+
+    .section-title {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        text-align: center;
+        margin-bottom: 2rem;
     }
 
     .contact-container {
@@ -710,10 +766,10 @@ canvas {
 
 /* --- Energy Field Animation --- */
 :root {
-    --g: rgba(34, 255, 136, 1);
-    --p: rgba(204, 68, 255, 1);
-    --b: rgba(0, 212, 255, 1);
-    --p-glow: rgba(204, 68, 255, 0);
+    --g: rgba(220, 38, 38, 1);
+    --p: rgba(153, 27, 27, 1);
+    --b: rgba(127, 29, 29, 1);
+    --p-glow: rgba(153, 27, 27, 0);
 }
 
 #hero-video-tile {

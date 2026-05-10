@@ -603,6 +603,53 @@
 			</button>
 		</div>
 	</div>
+    <div id="toast-container"></div>
+
+    <template id="product-card-template">
+        <div class="glass-card product-card">
+            <div class="product-image"><img src="" alt=""></div>
+            <div class="product-info">
+                <div class="product-category"></div>
+                <h3 class="product-title"></h3>
+                <div class="product-price">
+                    <span class="price-day"></span>
+                    <span class="price-unit"></span>
+                </div>
+                <div class="product-actions">
+                    <button class="btn btn-outline btn-sm details-btn"></button>
+                    <button class="btn btn-primary btn-sm add-to-quote-btn"></button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="spec-item-template">
+        <div class="spec-item">
+            <span class="spec-label"></span>
+            <span class="spec-value"></span>
+        </div>
+    </template>
+
+    <template id="cart-item-template">
+        <div class="cart-item glass-card">
+            <img class="cart-item-img" src="" alt="">
+            <div class="cart-item-info">
+                <div class="cart-item-name"></div>
+                <div class="cart-item-meta">
+                    <div class="cart-qty-controls">
+                        <button class="cart-qty-btn decrease">-</button>
+                        <input type="number" class="cart-qty-input" value="1" readonly>
+                        <button class="cart-qty-btn increase">+</button>
+                    </div>
+                    <div class="cart-item-days"></div>
+                </div>
+                <div class="cart-item-picker-container"></div>
+                <div class="cart-item-price"></div>
+            </div>
+            <button class="remove-cart-item">&times;</button>
+        </div>
+    </template>
+
 	<script src="translations.js"></script>
 	<script src="products.js"></script>
 

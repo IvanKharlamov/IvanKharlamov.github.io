@@ -65,10 +65,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Toast Notification System ---
     window.showToast = (message, type = 'info') => {
-        let container = document.getElementById('toast-container') || (() => {
-            const c = document.createElement('div'); c.id = 'toast-container';
-            return document.body.appendChild(c);
-        })();
+        const container = document.getElementById('toast-container');
+        if (!container) return;
 
         const toast = document.createElement('div');
         toast.className = `toast ${type}`;
@@ -505,83 +503,81 @@ class CartUI {
             const isOnCatalog = window.location.pathname.includes('inventory');
             const browseButton = isOnCatalog ? '' : `<a href="inventory" class="btn btn-primary" style="margin-top: 20px;">${t('hero.browse')}</a>`;
             this.itemsContainer.innerHTML = `
-                <div class="empty-cart-msg" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
-                    <p style="margin-bottom: 0;">${t('cart.empty')}</p>
+                <div class="empty-cart-msg">
+                    <p>${t('cart.empty')}</p>
                     ${browseButton}
                 </div>
             `;
             return;
         }
 
-        this.itemsContainer.innerHTML = items.map((item, index) => {
+        this.itemsContainer.innerHTML = '';
+        items.forEach((item, index) => {
             const product = window.products ? window.products.find(p => p.id === item.productId) : null;
-            
-            if (!product) {
-                return '';
-            }
+            if (!product) return;
 
+            const template = document.getElementById('cart-item-template');
+            if (!template) return;
+
+            const clone = template.content.cloneNode(true);
             const displayName = product.name[currentLang] || product.name.en;
-			const priceDisplay = item.isCustom
-				? `<span style="color: var(--accent);">${t('cart.customRate')}</span>`
-				: `
-					<span class="price-base">€${item.basePrice.toLocaleString()}</span>
-					<span class="price-final">€${item.totalPrice.toLocaleString()}</span>
-				  `;
-
+            
+            const img = clone.querySelector('.cart-item-img');
+            img.src = product.image;
+            img.alt = displayName;
+            clone.querySelector('.cart-item-name').textContent = displayName;
+            
             const locale = currentLang === 'es' ? 'es-ES' : 'en-GB';
             const options = { day: 'numeric', month: 'short' };
             const dateDisplay = `${new Date(item.start).toLocaleDateString(locale, options)} - ${new Date(item.end).toLocaleDateString(locale, options)}`;
-
-            return `
-                <div class="cart-item glass-card" style="padding: 10px; margin-bottom: 10px; display: flex; gap: 10px;">
-                    <img src="${product.image}" style="width: 50px; height: 50px; object-fit: contain; background: #000; border-radius: 4px;">
-                    <div style="flex: 1;">
-                        <div style="font-weight: 600; font-size: 0.9rem;">${displayName}</div>
-                        
-                        <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 5px;">
-                            <div class="cart-qty-controls">
-                                <button class="cart-qty-btn" onclick="window.cartUI.updateQuantity(${index}, -1)">-</button>
-                                <input type="number" class="cart-qty-input" value="${item.quantity}" readonly>
-                                <button class="cart-qty-btn" onclick="window.cartUI.updateQuantity(${index}, 1)">+</button>
-                            </div>
-                            <div style="font-size: 0.8rem; color: var(--text-muted);">${item.days} ${t('cart.days')}</div>
-                        </div>
-
-                        <!-- Single-element date picker for cart -->
-                        <div class="date-picker cart-date-picker-${index}" style="margin-top: 6px;" data-cart-index="${index}">
-                            <div class="date-picker-display">
-                                <span class="date-range-text has-dates">${dateDisplay}</span>
-                                <div class="picker-icon">
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                                        <line x1="16" y1="2" x2="16" y2="6"></line>
-                                        <line x1="8" y1="2" x2="8" y2="6"></line>
-                                        <line x1="3" y1="10" x2="21" y2="10"></line>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="calendar-content">
-                                <div class="calendar-nav">
-                                    <button type="button" class="calendar-nav-btn">&lt;</button>
-                                    <div class="calendar-current-month">Enero 2026</div>
-                                    <button type="button" class="calendar-nav-btn">&gt;</button>
-                                </div>
-                                <div class="calendar-grid-header">
-                                    <span>Lu</span><span>Ma</span><span>Mi</span><span>Ju</span><span>Vi</span><span>Sá</span><span>Do</span>
-                                </div>
-                                <div class="calendar-days-grid">
-                                    <!-- Days injected by JS -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <div style="font-weight: 700; color: var(--secondary); margin-top: 4px;">${priceDisplay}</div>
+            
+            clone.querySelector('.cart-qty-input').value = item.quantity;
+            clone.querySelector('.decrease').onclick = () => window.cartUI.updateQuantity(index, -1);
+            clone.querySelector('.increase').onclick = () => window.cartUI.updateQuantity(index, 1);
+            clone.querySelector('.cart-item-days').textContent = `${item.days} ${t('cart.days')}`;
+            
+            const pickerContainer = clone.querySelector('.cart-item-picker-container');
+            pickerContainer.className = `date-picker cart-date-picker-${index}`;
+            pickerContainer.dataset.cartIndex = index;
+            pickerContainer.innerHTML = `
+                <div class="date-picker-display">
+                    <span class="date-range-text has-dates">${dateDisplay}</span>
+                    <div class="picker-icon">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
                     </div>
-                    <button onclick="window.cartUI.removeItem(${index})" class="remove-cart-item" 
-                        style="width: 24px; height: 24px; font-size: 1.2rem;">&times;</button>
+                </div>
+                <div class="calendar-content">
+                    <div class="calendar-nav">
+                        <button type="button" class="calendar-nav-btn">&lt;</button>
+                        <div class="calendar-current-month"></div>
+                        <button type="button" class="calendar-nav-btn">&gt;</button>
+                    </div>
+                    <div class="calendar-grid-header">
+                        <span>Lu</span><span>Ma</span><span>Mi</span><span>Ju</span><span>Vi</span><span>Sá</span><span>Do</span>
+                    </div>
+                    <div class="calendar-days-grid"></div>
                 </div>
             `;
-        }).join('');
+
+            const priceEl = clone.querySelector('.cart-item-price');
+            if (item.isCustom) {
+                priceEl.innerHTML = `<span style="color: var(--accent);">${t('cart.customRate')}</span>`;
+            } else {
+                priceEl.innerHTML = `
+                    <span class="price-base">€${item.basePrice.toLocaleString()}</span>
+                    <span class="price-final">€${item.totalPrice.toLocaleString()}</span>
+                `;
+            }
+
+            clone.querySelector('.remove-cart-item').onclick = () => window.cartUI.removeItem(index);
+            
+            this.itemsContainer.appendChild(clone);
+        });
 
         // Initialize date pickers for each cart item
         this.initializeDatePickers();
@@ -798,12 +794,12 @@ class QuoteFormsManager {
         }
 
         let html = `
-            <table style="width: 100%; border-collapse: collapse;">
+            <table class="quote-summary-table">
                 <thead>
-                    <tr style="border-bottom: 1px solid var(--glass-border);">
-                        <th style="text-align: left; padding: 10px; font-size: 0.85rem; color: var(--text-muted);">${this.t('quote.cart.item')}</th>
-                        <th style="text-align: center; padding: 10px; font-size: 0.85rem; color: var(--text-muted);">${this.t('quote.cart.dates')}</th>
-                        <th style="text-align: right; padding: 10px; font-size: 0.85rem; color: var(--text-muted);">${this.t('quote.cart.price')}</th>
+                    <tr class="quote-summary-th-row">
+                        <th class="quote-summary-th text-left">${this.t('quote.cart.item')}</th>
+                        <th class="quote-summary-th text-center">${this.t('quote.cart.dates')}</th>
+                        <th class="quote-summary-th text-right">${this.t('quote.cart.price')}</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -818,22 +814,22 @@ class QuoteFormsManager {
             const endDate = new Date(item.end).toLocaleDateString(locale, options);
 
             const priceDisplay = item.isCustom
-                ? `<span style="color: var(--accent); font-size: 0.85rem;">${this.t('cart.customRate')}</span>`
+                ? `<span class="cart-item-custom-rate" style="font-size: 0.85rem;">${this.t('cart.customRate')}</span>`
                 : `€${item.totalPrice.toLocaleString()}`;
 
             html += `
-                <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                    <td style="padding: 15px 0;">
-                        <div style="display: flex; align-items: center; gap: 10px;">
-                            <img src="${product.image}" alt="${displayName}" style="width: 40px; height: 40px; object-fit: contain; background: #000; border-radius: 4px;">
-                            <span style="font-size: 0.9rem;"><b>${displayName}</b> &times; ${item.quantity}</span>
+                <tr class="quote-summary-tr">
+                    <td class="quote-summary-td">
+                        <div class="quote-summary-item-box">
+                            <img src="${product.image}" alt="${displayName}" class="quote-summary-img">
+                            <span class="quote-summary-item-name"><b>${displayName}</b> &times; ${item.quantity}</span>
                         </div>
                     </td>
-                    <td style="padding: 15px 0; text-align: center; font-size: 0.85rem;">
-                        ${startDate} → ${endDate}
-                        <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 4px;">${item.days} ${this.t('cart.days')}</div>
+                    <td class="quote-summary-td text-center">
+                        <div class="quote-summary-dates">${startDate} → ${endDate}</div>
+                        <div class="quote-summary-days-label">${item.days} ${this.t('cart.days')}</div>
                     </td>
-                    <td style="padding: 15px 0; text-align: right; font-weight: 600; color: var(--secondary);">${priceDisplay}</td>
+                    <td class="quote-summary-td quote-summary-price text-right">${priceDisplay}</td>
                 </tr>
             `;
         });
@@ -841,9 +837,9 @@ class QuoteFormsManager {
         html += `
                 </tbody>
                 <tfoot>
-                    <tr style="border-top: 2px solid var(--glass-border);">
-                        <td colspan="2" style="padding: 15px 10px; font-weight: 600; text-align: right;">${this.t('cart.estimatedTotal')}</td>
-                        <td style="padding: 15px 10px; text-align: right; font-size: 1.2rem; font-weight: 700; color: var(--secondary);">
+                    <tr class="quote-summary-footer-tr">
+                        <td colspan="2" class="quote-summary-total-label">${this.t('cart.estimatedTotal')}</td>
+                        <td class="quote-summary-total-value">
         `;
 
         const total = window.cartManager.getTotal();

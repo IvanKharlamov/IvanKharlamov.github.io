@@ -18,9 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const spotColors = ['#bc00ff', '#00ff88', '#00d4ff', '#5555ff', '#ff0055'];
 
-    for(let i=0; i<18; i++) {
-        const spot = document.createElement('div');
-        spot.className = 'spotlight';
+    const spotlights = nebula?.querySelectorAll('.spotlight') || [];
+    spotlights.forEach((spot, i) => {
         spot.style.background = `radial-gradient(circle, ${spotColors[i%5]}, transparent 75%)`;
         spot.style.left = prng()*100 + 'vw';
         spot.style.top = prng()*100 + 'vh';
@@ -29,8 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         spot.style.setProperty('--ex', (prng()-0.5)*30 + 'vw');
         spot.style.setProperty('--ey', (prng()-0.5)*30 + 'vh');
         spot.style.animation = `floatSpot ${10 + prng()*15}s infinite ease-in-out`;
-        if (nebula) nebula.appendChild(spot);
-    }
+    });
 
     const corners = [
         {top: 0, left: 0, origin: '0% 0%'},
@@ -41,10 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
         {top: '50%', right: 0, origin: '100% 50%'}
     ];
 
-    const spawnBeams = (count) => {
-        for(let i=0; i<count; i++) {
-            const ray = document.createElement('div'), corner = corners[Math.floor(prng()*corners.length)];
-            ray.className = 'beam';
+    const setupBeams = () => {
+        const beams = system?.querySelectorAll('.beam:not(.master-pivot)') || [];
+        beams.forEach(ray => {
+            const corner = corners[Math.floor(prng()*corners.length)];
             if(corner.left !== undefined) ray.style.left = corner.left;
             if(corner.right !== undefined) ray.style.right = corner.right;
             if(corner.top !== undefined) ray.style.top = corner.top;
@@ -59,10 +57,9 @@ document.addEventListener('DOMContentLoaded', () => {
             ray.style.setProperty('--z', (prng()*40 - 20) + 'vw');
             ray.style.animation = `sweepSecondary ${8 + prng()*20}s infinite ease-in-out`;
             ray.style.opacity = 0.3 + prng()*0.5;
-            if (system) system.appendChild(ray);
-        }
+        });
     };
-    spawnBeams(15);
+    setupBeams();
 
     setInterval(() => {
         if(viewport && Math.random() > 0.85) {
@@ -579,15 +576,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 galleryEl.innerHTML = '';
                 if (serviceImages[serviceId] && serviceImages[serviceId].length > 0) {
+                    const template = document.getElementById('service-img-template');
                     serviceImages[serviceId].forEach(src => {
-                        const img = document.createElement('img');
-                        img.src = src;
-                        img.style.width = '100%';
-                        img.style.borderRadius = '8px';
-                        img.style.border = '1px solid rgba(255,255,255,0.1)';
-                        img.style.objectFit = 'cover';
-                        img.style.aspectRatio = '16/9';
-                        galleryEl.appendChild(img);
+                        if (template) {
+                            const clone = template.content.cloneNode(true);
+                            const img = clone.querySelector('img');
+                            img.src = src;
+                            galleryEl.appendChild(clone);
+                        }
                     });
                 }
                 
