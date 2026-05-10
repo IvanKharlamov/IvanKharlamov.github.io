@@ -1198,14 +1198,13 @@ a {
     }
     
     .footer-contact {
-        flex-direction: column;
-        gap: 20px;
+		grid-template-columns: auto;
     }
+	.footer-contact-item:nth-child(3) {
+		grid-column: 1;
+	}
 }
-/* === MERGED FROM quote-modals.css === */
-/* quote-modals.css - Styling for quote request modals */
 
-/* Quote Modal Base Styles */
 .quote-modal-body {
     padding: 40px;
     overflow-y: auto;

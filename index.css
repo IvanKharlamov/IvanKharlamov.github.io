@@ -203,7 +203,8 @@ canvas {
 	}
 
     .services-grid {
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        grid-template-columns: 1fr;
+        gap: 12px;
     }
 }
 
@@ -243,7 +244,8 @@ canvas {
     transition: var(--transition-fast);
 }
 
-.service-card:hover .service-icon {
+.service-card:hover .service-icon,
+.service-card.active .service-icon {
     background: var(--primary);
     color: #fff;
     transform: scale(1.1);
@@ -516,25 +518,16 @@ canvas {
 .service-card.active {
     background: #060606;
     border-color: var(--primary);
-    border-bottom-color: transparent;
+    border-bottom: none;
     border-radius: 8px 8px 0 0;
     z-index: 10;
+    position: relative;
+    height: calc(100% + 21px);
+    margin-bottom: -22px;
+    backdrop-filter: none;
 }
 
-/* The 'road' connecting the active card to the detail box */
-.service-card.active::after {
-    content: '';
-    position: absolute;
-    bottom: -21px; /* cover the 20px gap + 1px top border exactly */
-    left: -1px;
-    right: -1px;
-    height: 22px;
-    background: #060606;
-    background-clip: padding-box; /* Prevent background bleeding */
-    border-left: 1px solid var(--primary);
-    border-right: 1px solid var(--primary);
-    z-index: 10;
-}
+/* Pseudo-element removed for visual continuity */
 
 .service-details-container {
     grid-column: 1 / -1;
@@ -546,7 +539,7 @@ canvas {
     margin-top: 0;
     position: relative;
     z-index: 5;
-    animation: dropDown 0.3s ease-out forwards;
+    animation: dropDown 0.6s ease-out forwards;
     transform-origin: top;
 }
 
@@ -560,12 +553,12 @@ canvas {
 
 @keyframes dropDown {
     from {
-        opacity: 0;
-        transform: translateY(-15px) scaleY(0.95);
+        opacity: 0.5;
+		border: 1px solid rgba(0,0,0,0);
     }
     to {
         opacity: 1;
-        transform: translateY(0) scaleY(1);
+		border: 1px solid var(--primary);
     }
 }
 
@@ -582,19 +575,104 @@ canvas {
 }
 
 @media (max-width: 768px) {
-    .service-card.active {
-        border-bottom-color: var(--primary);
+    .services-grid {
+        gap: 10px;
+    }
+
+    .service-card {
+        padding: 16px 20px;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        height: auto !important;
+        margin-bottom: 0;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .service-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0;
+        background: rgba(2, 132, 199, 0.1);
         border-radius: 8px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+
+    .service-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .service-card.active .service-icon {
+        background: var(--primary);
+        color: #fff;
+    }
+
+    .service-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0;
+        color: #fff;
+    }
+
+    .service-card p {
+        display: none; /* Hide preview text in accordion header */
+    }
+
+    /* Accordion Chevron Indicator */
+    .service-card::after {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-right: 2px solid var(--primary);
+        border-bottom: 2px solid var(--primary);
+        transform: rotate(45deg);
+        margin-left: auto;
+        transition: transform 0.3s ease;
+    }
+
     .service-card.active::after {
-        display: none; /* remove road on tricky mobile layouts */
+        transform: rotate(-135deg);
     }
+
+    .service-card.active {
+        background: rgba(2, 132, 199, 0.1);
+        border-color: var(--primary);
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
     .service-details-container {
-        padding: 1.5rem;
-        margin-top: -10px;
+        margin-top: -10px; /* Bridge the gap to the header */
+        border-top: none;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.05);
+        border-color: var(--primary);
+        animation: accordionFadeIn 0.4s ease-out;
     }
+
+    @keyframes accordionFadeIn {
+        from { opacity: 0; transform: translateY(-5px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .service-details-inner h3 {
+        display: none; /* Title is already in the accordion header */
+    }
+
     .service-details-gallery {
         grid-template-columns: 1fr;
+        gap: 12px;
     }
 }
 
