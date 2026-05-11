@@ -6,8 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const spacing = 15.8; 
     let grid, activeLines = [];
     const tieredSprites = [];
-    const LINES_PER_FRAME = 30;   
-    const PULSE_SPEED = 0.024;
     const MIN_LEN = 5;            
     const MAX_LEN = 15;           
     const LED_RANDOMNESS = 0.25;
@@ -62,13 +60,13 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateLED() {
         grid.fill(0);
         if (Math.random() < SPAWN_CHANCE) {
-            for(let i = 0; i < LINES_PER_FRAME; i++) {
+            for(let i = 0; i < 30; i++) {
                 activeLines.push({
                     r: Math.floor(Math.random() * rows),
                     c: Math.floor(Math.random() * cols),
                     len: Math.floor(Math.random() * (MAX_LEN - MIN_LEN + 1) + MIN_LEN),
                     age: 0,
-                    speed: PULSE_SPEED + (Math.random() * 0.01),
+                    speed: 0.024 + (Math.random() * 0.01),
                     noiseFactors: Array.from({length: MAX_LEN * 2 + 1}, () => 1 - (Math.random() * LED_RANDOMNESS))
                 });
             }
@@ -590,6 +588,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         };
         const cards = Array.from(grid.querySelectorAll('.service-card[data-service-id]'));
+        let isInitialLoad = true;
         const placeContainer = (card) => {
             const top = card.offsetTop, row = cards.filter(c => c.offsetTop === top);
             const first = row[0], last = row[row.length - 1];
@@ -604,7 +603,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 cards.forEach(c => c.classList.remove('active', 'is-first-in-row', 'is-last-in-row'));
                 if (isActive) {
-                    container.style.display = 'none'; // Toggle off
+                    container.style.display = 'none';
                     return;
                 }
                 card.classList.add('active');
@@ -633,16 +632,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     window.changeLanguage(window.currentLang);
                 }
                 container.style.display = 'block';
-                setTimeout(() => {
-                    const header = document.querySelector('.site-header');
-                    const headerHeight = header ? header.offsetHeight : 0;
-                    const offset = 20;
-                    const targetY = card.getBoundingClientRect().top + window.pageYOffset - headerHeight - offset;
-                    window.scrollTo({
-                        top: targetY,
-                        behavior: 'smooth'
-                    });
-                }, 100);
+                
+                if (window.innerWidth <= 768 && !isInitialLoad) {
+                    setTimeout(() => {
+                        const headerHeight = document.querySelector('.site-header').offsetHeight;
+                        const targetY = card.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
+                        window.scrollTo({ top: targetY, behavior: 'smooth' });
+                    }, 100);
+                }
+                isInitialLoad = false;
             });
         });
 
@@ -650,7 +648,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let prevWidth = window.innerWidth;
         window.addEventListener('resize', () => {
             const currentWidth = window.innerWidth;
-            if (currentWidth === prevWidth) return; // Ignore height-only changes (mobile URL bar)
+            if (currentWidth === prevWidth) return; 
             prevWidth = currentWidth;
             clearTimeout(resizeTimer);
             resizeTimer = setTimeout(() => {
