@@ -724,7 +724,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 container.style.display = 'block';
                 
-                // Add a small delay then adjust scroll if needed, but for now just show it
+                setTimeout(() => {
+                    const header = document.querySelector('.site-header');
+                    const headerHeight = header ? header.offsetHeight : 0;
+                    const offset = 20;
+                    const targetY = card.getBoundingClientRect().top + window.pageYOffset - headerHeight - offset;
+                    window.scrollTo({
+                        top: targetY,
+                        behavior: 'smooth'
+                    });
+                }, 100);
             });
         });
 
