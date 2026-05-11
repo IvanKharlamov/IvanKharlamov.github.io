@@ -123,7 +123,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     preRenderLED();
     initLED();
-    window.addEventListener('resize', initLED);
+    let prevLedWidth = window.innerWidth;
+    window.addEventListener('resize', () => {
+        // If the user is zooming (scale is not 1), don't re-initialize the canvas.
+        // This lets the browser just "zoom in" on the existing pixels.
+        if (window.visualViewport && Math.abs(window.visualViewport.scale - 1) > 0.01) {
+            return;
+        }
+
+        const currentWidth = window.innerWidth;
+        if (currentWidth === prevLedWidth) return;
+        prevLedWidth = currentWidth;
+        initLED();
+    });
 
     // === SEEDED PRNG ===
     let seed = 45;
