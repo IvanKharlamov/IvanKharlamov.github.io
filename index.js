@@ -60,8 +60,13 @@ document.addEventListener('DOMContentLoaded', () => {
         ledCanvas.height = INTERNAL_HEIGHT;
         cols = Math.ceil(internalWidth / spacing);
         rows = Math.ceil(INTERNAL_HEIGHT / spacing);
-        grid = new Float32Array(rows * cols);
-        activeLines = [];
+        
+        const newSize = rows * cols;
+        if (!grid || grid.length !== newSize) {
+            grid = new Float32Array(newSize);
+        }
+
+        activeLines = activeLines.filter(p => p.r < rows && p.c < cols);
     }
 
     function updateLED() {
@@ -689,7 +694,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Initialize state on window resize
         let resizeTimer;
+        let prevWidth = window.innerWidth;
         window.addEventListener('resize', () => {
+            const currentWidth = window.innerWidth;
+            if (currentWidth === prevWidth) return; // Ignore height-only changes (mobile URL bar)
+            prevWidth = currentWidth;
+
             clearTimeout(resizeTimer);
             resizeTimer = setTimeout(() => {
                 const activeCard = grid.querySelector('.service-card.active');
