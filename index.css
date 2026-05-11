@@ -15,7 +15,7 @@
 }
 
 .hero-section {
-    height: 100vh;
+    height: 100svh;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -167,7 +167,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    padding-bottom: 5vh;
+    padding-bottom: 5svh;
 }
 
 .hero-ui-subtitle {
