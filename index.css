@@ -314,10 +314,10 @@
     transition: var(--transition-smooth);
 }
 
-.gallery-item:nth-child(1) .gallery-img-placeholder { background-image: url('img/index/whoweare1.jpg'); }
-.gallery-item:nth-child(2) .gallery-img-placeholder { background-image: url('img/index/whoweare2.jpg'); }
-.gallery-item:nth-child(3) .gallery-img-placeholder { background-image: url('img/index/whoweare3.jpg'); }
-.gallery-item:nth-child(4) .gallery-img-placeholder { background-image: url('img/index/whoweare4.jpg'); }
+.gallery-item:nth-child(1) .gallery-img-placeholder { background-image: url('img/index/whoweare1.webp'); }
+.gallery-item:nth-child(2) .gallery-img-placeholder { background-image: url('img/index/whoweare2.webp'); }
+.gallery-item:nth-child(3) .gallery-img-placeholder { background-image: url('img/index/whoweare3.webp'); }
+.gallery-item:nth-child(4) .gallery-img-placeholder { background-image: url('img/index/whoweare4.webp'); }
 
 .gallery-item:hover .gallery-img-placeholder {
     transform: scale(1.05);
