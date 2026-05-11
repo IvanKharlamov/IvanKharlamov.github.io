@@ -686,9 +686,8 @@
     }
 
     .about-gallery {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 180px);
         gap: 8px;
     }
 
@@ -700,7 +699,7 @@
     .about-text {
         font-size: 1rem;
         line-height: 1.6;
-        text-align: center;
+        text-align: left;
     }
 
     .reviews-section {
