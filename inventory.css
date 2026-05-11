@@ -40,6 +40,7 @@
     padding: 12px 12px 12px 40px;
     outline: none;
     transition: all 0.2s;
+	font-size: .9rem;
 }
 
 .search-input:focus {

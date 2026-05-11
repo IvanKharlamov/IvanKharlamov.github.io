@@ -57,23 +57,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         activeLines = activeLines.filter(p => p.r < rows && p.c < cols);
     }
-    function updateLED() {
+    function updateLED(dt = 1) {
         grid.fill(0);
-        if (Math.random() < SPAWN_CHANCE) {
+        if (Math.random() < (1 - Math.pow(1 - SPAWN_CHANCE, dt))) {
             for(let i = 0; i < 30; i++) {
                 activeLines.push({
                     r: Math.floor(Math.random() * rows),
                     c: Math.floor(Math.random() * cols),
                     len: Math.floor(Math.random() * (MAX_LEN - MIN_LEN + 1) + MIN_LEN),
                     age: 0,
-                    speed: 0.024 + (Math.random() * 0.01),
+                    speed: (0.024 + (Math.random() * 0.01)),
                     noiseFactors: Array.from({length: MAX_LEN * 2 + 1}, () => 1 - (Math.random() * LED_RANDOMNESS))
                 });
             }
         }
         for (let i = activeLines.length - 1; i >= 0; i--) {
             const p = activeLines[i];
-            p.age += p.speed;
+            p.age += p.speed * dt;
             if (p.age >= 1) {
                 activeLines.splice(i, 1);
                 continue;
@@ -179,10 +179,13 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         if (energyFieldContainer) energyFieldContainer.classList.add('hidden');
         if (ledCanvas) ledCanvas.classList.add('visible');
-        loopBackground();
+        requestAnimationFrame(loopBackground);
     }, 5500);
-	function loopBackground() {
-        updateLED();
+    let lastLedTime = performance.now();
+	function loopBackground(currentTime) {
+        const dt = (currentTime - lastLedTime) / (1000 / 60);
+        lastLedTime = currentTime;
+        updateLED(dt || 1);
         drawLED();
 		requestAnimationFrame(loopBackground);
 	}
@@ -300,21 +303,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 this.label = Math.random() < CONFIG.labelChance ? techLabels[Math.floor(Math.random() * techLabels.length)] : null;
                 this.glitchX = this.glitchY = 0;
             }
-            update() {
-                this.trans += ((this.mode === 'shape' ? 1 : 0) - this.trans) * CONFIG.transSpeed;
-                if (this.mode === 'shape' && Math.random() < CONFIG.glitchFreq) {
+            update(dt = 1) {
+                const transFactor = 1 - Math.pow(1 - CONFIG.transSpeed, dt);
+                this.trans += ((this.mode === 'shape' ? 1 : 0) - this.trans) * transFactor;
+                if (this.mode === 'shape' && Math.random() < (1 - Math.pow(1 - CONFIG.glitchFreq, dt))) {
 					const gs = currentScale / CONFIG.scaleBase;
                     this.glitchX = (Math.random() - 0.5) * CONFIG.glitchStrength * gs;
                     this.glitchY = (Math.random() - 0.5) * CONFIG.glitchStrength * gs;
-                } else { this.glitchX *= 0.7; this.glitchY *= 0.7; }
+                } else { 
+                    const glitchDecay = Math.pow(0.7, dt);
+                    this.glitchX *= glitchDecay; this.glitchY *= glitchDecay; 
+                }
                 if (this.mode === 'free') {
-                    this.x = (this.x + this.vx + width) % width;
-                    this.y = (this.y + this.vy + height) % height;
+                    this.x = (this.x + this.vx * dt + width) % width;
+                    this.y = (this.y + this.vy * dt + height) % height;
                 } else if (shapeState === 'active' && shapePoints[this.shapeIndex]) {
                     const p = shapePoints[this.shapeIndex], cy = Math.cos(rotation.y), sy = Math.sin(rotation.y), cp = Math.cos(rotation.p), sp = Math.sin(rotation.p);
                     const dx = p.x * cy - p.z * sy, dz = p.x * sy + p.z * cy, dy = p.y * cp - dz * sp;
-                    this.x += (dx + shapeCenter.x + this.glitchX - this.x) * CONFIG.lerp;
-                    this.y += (dy + shapeCenter.y + this.glitchY - this.y) * CONFIG.lerp;
+                    const lerpFactor = 1 - Math.pow(1 - CONFIG.lerp, dt);
+                    this.x += (dx + shapeCenter.x + this.glitchX - this.x) * lerpFactor;
+                    this.y += (dy + shapeCenter.y + this.glitchY - this.y) * lerpFactor;
                 }
 				this.rx = this.x / width; this.ry = this.y / height;
             }
@@ -403,7 +411,13 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 			updateMousePos(mouse.x, mouse.y);
 		};
-        window.addEventListener('resize', init);
+        let prevHeroWidth = window.innerWidth;
+        window.addEventListener('resize', () => {
+            if (window.visualViewport && Math.abs(window.visualViewport.scale - 1) > 0.01) return;
+            if (window.innerWidth === prevHeroWidth) return;
+            prevHeroWidth = window.innerWidth;
+            init();
+        });
 		window.addEventListener('pointermove', e => {
 			if (e.pointerType === 'mouse' || e.pointerType === 'touch') {
 				const r = canvas.getBoundingClientRect();
@@ -421,7 +435,12 @@ document.addEventListener('DOMContentLoaded', () => {
 			isIn = (mouse.x >= 0 && mouse.x <= width && mouse.y >= 0 && mouse.y <= height);
 		};
         init();
-        function animate() {
+        let lastAnimateTime = performance.now();
+        function animate(currentTime) {
+            const dt = (currentTime - lastAnimateTime) / (1000 / 60);
+            lastAnimateTime = currentTime;
+            const validDt = Math.min(dt || 1, 5); 
+
             ctx.clearRect(0, 0, width, height);
             if (isIn) {
                 const potential = particles.filter(p => Math.hypot(p.x - mouse.x, p.y - mouse.y) < CONFIG.gatherRadius * scaleFactor);
@@ -444,9 +463,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
             if (shapeState === 'active') {
-                rotation.y += 0.008; rotation.p += 0.005;
-                shapeCenter.x += (mouse.x - shapeCenter.x) * CONFIG.followSpeed;
-                shapeCenter.y += (mouse.y - shapeCenter.y) * CONFIG.followSpeed;
+                rotation.y += 0.008 * validDt; rotation.p += 0.005 * validDt;
+                const followFactor = 1 - Math.pow(1 - CONFIG.followSpeed, validDt);
+                shapeCenter.x += (mouse.x - shapeCenter.x) * followFactor;
+                shapeCenter.y += (mouse.y - shapeCenter.y) * followFactor;
                 renderFullStructure(activeGroup, shapeEdges, false);
             }
             if (ghostGroup.length > 0) {
@@ -460,10 +480,11 @@ document.addEventListener('DOMContentLoaded', () => {
                         visible = true;
                     }
                 });
-                ghostGroup.forEach(p => p.trans *= 0.88);
+                const ghostDecay = Math.pow(0.88, validDt);
+                ghostGroup.forEach(p => p.trans *= ghostDecay);
                 if (!visible) ghostGroup = [];
             }
-            particles.forEach(p => { if (p.mode === 'free') { p.update(); p.draw(); } else { p.update(); } });
+            particles.forEach(p => { if (p.mode === 'free') { p.update(validDt); p.draw(); } else { p.update(validDt); } });
 			ctxsolid.clearRect(0, 0, width, height);
 			ctxsolid.drawImage(canvas, 0, 0);
 			const sourceTitle = document.querySelector('.hero-title-large');
@@ -486,7 +507,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			ctxsolid.globalCompositeOperation = 'source-over';
             requestAnimationFrame(animate);
         }
-        animate();
+        requestAnimationFrame(animate);
     function initReviewsCarousel() {
         const track = document.getElementById('reviews-track');
         const dotsContainer = document.getElementById('carousel-dots');
@@ -647,6 +668,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let resizeTimer;
         let prevWidth = window.innerWidth;
         window.addEventListener('resize', () => {
+            if (window.visualViewport && Math.abs(window.visualViewport.scale - 1) > 0.01) return;
             const currentWidth = window.innerWidth;
             if (currentWidth === prevWidth) return; 
             prevWidth = currentWidth;

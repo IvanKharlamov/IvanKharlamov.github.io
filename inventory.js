@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // --- State ---
     let activeFilters = {
         category: []
     };
@@ -8,10 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentSort = "featured";
     let currentModalView = 'details';
 
-    // Helper function for translations
     const t = (key) => window.TRANSLATIONS_RAW[key]?.[window.currentLang || 'es'] || key;
 
-    // Render Products Function
     window.renderProducts = (items) => {
         const grid = document.getElementById('product-grid'), lang = window.currentLang || 'es';
         if (!grid) return;
@@ -47,7 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
         injectProductSchema(items);
     };
 
-    // Sort products
     const sortProducts = (items) => {
         const s = [...items];
         return currentSort === 'lowToHigh' ? s.sort((a,b) => a.priceDay - b.priceDay) :
@@ -148,7 +144,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let datePicker = null;
 
-    // Modal elements
     const productQtyInput = document.getElementById('product-qty');
     const qtyMinusBtn = document.getElementById('qty-minus');
     const qtyPlusBtn = document.getElementById('qty-plus');
@@ -175,7 +170,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Helper: Calculate days
     function calculateDays() {
         if (!datePicker) return 0;
         const { start, end } = datePicker.getDates();
@@ -190,7 +184,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return 0;
     }
 
-    // Helper: Update pricing in modal
     function updateModalPricing() {
         const days = calculateDays(), p = window.products.find(x => x.id === currentProductId), qty = parseInt(productQtyInput?.value) || 1;
         const durEl = document.getElementById('rental-duration'), prEl = document.getElementById('modal-price');
@@ -219,7 +212,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		return product.priceDay * days * qty;
 	}
 
-    // Switch Modal View
     function switchModalView(view) {
         currentModalView = view;
         const detailsView = document.getElementById('modal-details-view');
@@ -240,7 +232,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Open Product Modal
     window.openProductModal = (id, view = 'details') => {
         currentProductId = id; currentModalView = view;
         const p = window.products.find(x => x.id === id), lang = window.currentLang || 'es';
@@ -283,13 +274,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // View switching buttons
     const btnShowQuote = document.getElementById('btn-show-quote');
     const btnShowDetails = document.getElementById('btn-show-details');
     if (btnShowQuote) btnShowQuote.addEventListener('click', () => switchModalView('quote'));
     if (btnShowDetails) btnShowDetails.addEventListener('click', () => switchModalView('details'));
 
-    // Add to Quote
     if (addToQuoteBtn) {
         addToQuoteBtn.addEventListener('click', () => {
             if (!currentProductId) return;
@@ -331,7 +320,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Checkout Logic ---
     const checkoutModal = document.getElementById('checkout-modal');
     const closeCheckoutBtn = document.getElementById('close-checkout');
     const cancelCheckoutBtn = document.getElementById('cancel-checkout');
@@ -388,6 +376,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Initial Render
     window.renderProducts(window.products);
 });
