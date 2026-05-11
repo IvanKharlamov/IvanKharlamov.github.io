@@ -554,8 +554,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
         function updateCarousel(index) {
             currentIndex = index;
-            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            track.style.transform = `translateX(calc(-${currentIndex} * (100% + 40px)))`;
             dots.forEach((dot, i) => dot.classList.toggle('active', i === currentIndex));
+        }
+
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        track.addEventListener('touchstart', e => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        track.addEventListener('touchend', e => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, { passive: true });
+
+        function handleSwipe() {
+            const swipeDist = touchStartX - touchEndX;
+            if (Math.abs(swipeDist) > 50) {
+                if (swipeDist > 0) {
+                    updateCarousel((currentIndex + 1) % cards.length);
+                } else {
+                    updateCarousel((currentIndex - 1 + cards.length) % cards.length);
+                }
+                startAutoSlide();
+            }
         }
 
         function startAutoSlide() {
