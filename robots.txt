@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://upstagemadrid.com/sitemap.xml
+Sitemap: https://upstageprod.com/sitemap.xml
