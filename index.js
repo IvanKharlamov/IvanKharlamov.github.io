@@ -1,22 +1,17 @@
-// Index JS: Hero Animation, Reviews, Team Modal
-
 document.addEventListener('DOMContentLoaded', () => {
 	const ledCanvas = document.getElementById("ledCanvas");
 	const lctx = ledCanvas.getContext("2d", { alpha: false });
-
     let internalWidth, rows, cols;
     const INTERNAL_HEIGHT = 877; 
     const spacing = 15.8; 
     let grid, activeLines = [];
     const tieredSprites = [];
-
     const LINES_PER_FRAME = 30;   
     const PULSE_SPEED = 0.024;
     const MIN_LEN = 5;            
     const MAX_LEN = 15;           
     const LED_RANDOMNESS = 0.25;
     const SPAWN_CHANCE = 0.8;
-
     function preRenderLED() {
         for (let i = 0; i <= 10; i++) {
             const intensity = i / 10;
@@ -26,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const size = 100; 
             sCanvas.width = size; sCanvas.height = size;
             const centerX = size / 2; const centerY = size / 2;
-
             if (displayInt < 0.5) {
                 const t = displayInt * 2;
                 const r = 139 + (255 - 139) * t; 
@@ -52,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
             tieredSprites[i] = sCanvas;
         }
     }
-
     function initLED() {
         const aspect = window.innerWidth / window.innerHeight;
         internalWidth = INTERNAL_HEIGHT * aspect;
@@ -60,15 +53,12 @@ document.addEventListener('DOMContentLoaded', () => {
         ledCanvas.height = INTERNAL_HEIGHT;
         cols = Math.ceil(internalWidth / spacing);
         rows = Math.ceil(INTERNAL_HEIGHT / spacing);
-        
         const newSize = rows * cols;
         if (!grid || grid.length !== newSize) {
             grid = new Float32Array(newSize);
         }
-
         activeLines = activeLines.filter(p => p.r < rows && p.c < cols);
     }
-
     function updateLED() {
         grid.fill(0);
         if (Math.random() < SPAWN_CHANCE) {
@@ -103,7 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
-
     function drawLED() {
         lctx.fillStyle = '#0c0a05';
         lctx.fillRect(0, 0, internalWidth, INTERNAL_HEIGHT);
@@ -120,35 +109,28 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         lctx.globalCompositeOperation = 'source-over';
     }
-
     preRenderLED();
     initLED();
     let prevLedWidth = window.innerWidth;
     window.addEventListener('resize', () => {
-        // If the user is zooming (scale is not 1), don't re-initialize the canvas.
-        // This lets the browser just "zoom in" on the existing pixels.
+
         if (window.visualViewport && Math.abs(window.visualViewport.scale - 1) > 0.01) {
             return;
         }
-
         const currentWidth = window.innerWidth;
         if (currentWidth === prevLedWidth) return;
         prevLedWidth = currentWidth;
         initLED();
     });
 
-    // === SEEDED PRNG ===
     let seed = 45;
     const prng = () => (seed = (seed * 9301 + 49297) % 233280, seed / 233280);
 
-    // === ENERGY FIELD ANIMATION ===
     const nebula = document.getElementById('nebula');
     const system = document.getElementById('beamSystem');
     const viewport = document.getElementById('viewport');
     const energyFieldContainer = document.getElementById('energy-field-container');
-
     const spotColors = ['#bc00ff', '#00ff88', '#00d4ff', '#5555ff', '#ff0055'];
-
     const spotlights = nebula?.querySelectorAll('.spotlight') || [];
     spotlights.forEach((spot, i) => {
         spot.style.background = `radial-gradient(circle, ${spotColors[i%5]}, transparent 75%)`;
@@ -160,7 +142,6 @@ document.addEventListener('DOMContentLoaded', () => {
         spot.style.setProperty('--ey', (prng()-0.5)*30 + 'vh');
         spot.style.animation = `floatSpot ${10 + prng()*15}s infinite ease-in-out`;
     });
-
     const corners = [
         {top: 0, left: 0, origin: '0% 0%'},
         {top: 0, right: 0, origin: '100% 0%'},
@@ -169,7 +150,6 @@ document.addEventListener('DOMContentLoaded', () => {
         {top: '50%', left: 0, origin: '0% 50%'},
         {top: '50%', right: 0, origin: '100% 50%'}
     ];
-
     const setupBeams = () => {
         const beams = system?.querySelectorAll('.beam:not(.master-pivot)') || [];
         beams.forEach(ray => {
@@ -191,7 +171,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
     setupBeams();
-
     setInterval(() => {
         if(viewport && Math.random() > 0.85) {
             viewport.classList.add('glitch-active');
@@ -199,27 +178,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, 2000);
 
-    // Transition to Loop Video after 5 seconds
-    // Transition to LED Matrix after 5.5 seconds
     setTimeout(() => {
         if (energyFieldContainer) energyFieldContainer.classList.add('hidden');
         if (ledCanvas) ledCanvas.classList.add('visible');
         loopBackground();
     }, 5500);
-	
 	function loopBackground() {
         updateLED();
         drawLED();
 		requestAnimationFrame(loopBackground);
 	}
 
-    // --- Background Animation (Constellation Effect & Geometric Attraction) ---
     const canvas = document.getElementById('hero-canvas');
 	const canvassolid = document.getElementById('hero-canvas-solid');
         const ctx = canvas.getContext('2d');
 		const ctxsolid = canvassolid.getContext('2d');
         let width, height, scaleFactor, particles = [];
-
         const CONFIG = {
             baseCount: 225,
             baseDist: 85,
@@ -238,21 +212,18 @@ document.addEventListener('DOMContentLoaded', () => {
             vertexScaleMult: 2,
 			shapeGracePeriod: 1000
         };
-
         const techLabels = [
             "LX12→", "DMX(?)", "CH7*", "U4#", "FX-A", "BUS-?", "AUX+", "GND!",
             "16A-3P", "32A~", "PH3", "3Ø", "V230~", "Hz50", "RX-1", "TX(9)",
             "PWR-2", "PSU(A)", "SIG-L", "I/O", "DM3<", "LX05(C)", "UNI2(B)",
             "SUB4.1", "CH09-", "FX7→", "REF(3)", "ALT-1", "TMP*", "LIVE", "CUT", "OFF"
         ];
-
         let mouse = { x: -1000, y: -1000 }, rotation = { y: 0, p: 0 }, isIn = false;
         let shapeCenter = null, shapePoints = [], shapeEdges = [], activeGroup = [], ghostGroup = [], ghostEdges = [], shapeState = 'idle';
         let currentScale = 70;
 		let shapeStartTime = 0;
 		let currentShapeSettings = null;
 		let lastShapeID = -1;
-		
         const Geo = {
             link: (pts, edges) => ({ pts, edges }),
             pyramid: (n, s) => {
@@ -316,7 +287,6 @@ document.addEventListener('DOMContentLoaded', () => {
 				return { type: c[Math.floor(Math.random() * (c.length || p.length))] || p[0], randScale: rs, growthFactor: gf };
 			}
         };
-
         class Particle {
             constructor(id) {
                 this.id = id;
@@ -362,11 +332,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         }
-
         const renderFullStructure = (group, edges, ghost = false) => {
 			const needsTilingX = shapeCenter.x < currentScale || shapeCenter.x > width - currentScale;
 			const needsTilingY = shapeCenter.y < currentScale || shapeCenter.y > height - currentScale;
-	
 			for (let ox = needsTilingX ? -1 : 0; ox <= (needsTilingX ? 1 : 0); ox++) {
 				for (let oy = needsTilingY ? -1 : 0; oy <= (needsTilingY ? 1 : 0); oy++) {
                     const offX = ox * width, offY = oy * height;
@@ -384,16 +352,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         };
-
 		const triggerShape = (potential) => {
 			if (shapeState === 'active' && (Date.now() - shapeStartTime < CONFIG.shapeGracePeriod)) return; 
 			if (activeGroup.length > 0) release();
-			
 			activeGroup = potential.sort((a, b) => a.id - b.id);
-			
 			currentShapeSettings = Geo.getNewShapeSettings(activeGroup.length);
 			lastShapeID = currentShapeSettings.type;
-			
 			currentScale = CONFIG.scaleBase * currentShapeSettings.randScale * currentShapeSettings.growthFactor * scaleFactor;
 			const data = Geo.calculate(currentShapeSettings.type, activeGroup.length, currentScale);
 			shapeStartTime = Date.now();
@@ -403,7 +367,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			activeGroup.forEach((p, i) => { p.mode = 'shape'; p.shapeIndex = i; });
 			shapeState = 'active';
 		};
-
         const release = () => {
             if (activeGroup.length > 0) {
                 ghostGroup = activeGroup.map(p => ({ x: p.x, y: p.y, trans: p.trans }));
@@ -412,20 +375,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             activeGroup = []; shapeState = 'idle';
         };
-
 		const init = () => {
 			const ratioX = shapeCenter ? shapeCenter.x / width : null;
 			const ratioY = shapeCenter ? shapeCenter.y / height : null;
-
 			width = canvas.width = canvassolid.width = canvas.parentElement.offsetWidth;
 			height = canvas.height = canvassolid.height = Math.max(100, canvas.parentElement.offsetHeight - 88);
 			scaleFactor = height / 1080;
-
 			if (shapeCenter && ratioX !== null) {
 				shapeCenter.x = ratioX * width;
 				shapeCenter.y = ratioY * height;
 			}
-
 			if (particles.length > 0) {
 				particles.forEach(p => {
 					p.x = p.rx * width;
@@ -434,7 +393,6 @@ document.addEventListener('DOMContentLoaded', () => {
 					p.vx = Math.cos(angle) * CONFIG.freeSpeed * scaleFactor;
 					p.vy = Math.sin(angle) * CONFIG.freeSpeed * scaleFactor;
 				});
-
 				if (shapeState === 'active' && activeGroup.length > 0 && currentShapeSettings) {
 					currentScale = CONFIG.scaleBase * currentShapeSettings.randScale * currentShapeSettings.growthFactor * scaleFactor;
 					const data = Geo.calculate(currentShapeSettings.type, activeGroup.length, currentScale);
@@ -447,7 +405,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 			updateMousePos(mouse.x, mouse.y);
 		};
-
         window.addEventListener('resize', init);
 		window.addEventListener('pointermove', e => {
 			if (e.pointerType === 'mouse' || e.pointerType === 'touch') {
@@ -455,7 +412,6 @@ document.addEventListener('DOMContentLoaded', () => {
 				updateMousePos(e.clientX - r.left, e.clientY - r.top);
 			}
 		});
-
 		window.addEventListener('pointerdown', e => {
 			const r = canvas.getBoundingClientRect();
 			updateMousePos(e.clientX - r.left, e.clientY - r.top);
@@ -467,7 +423,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			isIn = (mouse.x >= 0 && mouse.x <= width && mouse.y >= 0 && mouse.y <= height);
 		};
         init();
-
         function animate() {
             ctx.clearRect(0, 0, width, height);
             if (isIn) {
@@ -478,7 +433,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     else if (potential.length > activeGroup.length + CONFIG.upgradeThreshold) triggerShape(potential);
                 }
             } else if (shapeState !== 'idle') release();
-
             for (let i = 0; i < particles.length; i++) {
                 const p1 = particles[i];
                 for (let j = i + 1; j < particles.length; j++) {
@@ -491,14 +445,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 }
             }
-
             if (shapeState === 'active') {
                 rotation.y += 0.008; rotation.p += 0.005;
                 shapeCenter.x += (mouse.x - shapeCenter.x) * CONFIG.followSpeed;
                 shapeCenter.y += (mouse.y - shapeCenter.y) * CONFIG.followSpeed;
                 renderFullStructure(activeGroup, shapeEdges, false);
             }
-
             if (ghostGroup.length > 0) {
                 let visible = false;
                 ghostEdges.forEach(e => {
@@ -513,75 +465,56 @@ document.addEventListener('DOMContentLoaded', () => {
                 ghostGroup.forEach(p => p.trans *= 0.88);
                 if (!visible) ghostGroup = [];
             }
-
             particles.forEach(p => { if (p.mode === 'free') { p.update(); p.draw(); } else { p.update(); } });
 			ctxsolid.clearRect(0, 0, width, height);
 			ctxsolid.drawImage(canvas, 0, 0);
-			
 			const sourceTitle = document.querySelector('.hero-title-large');
 			const s = window.getComputedStyle(sourceTitle);
 			const rectT = sourceTitle.getBoundingClientRect(), rectC = canvassolid.getBoundingClientRect();
 			const lines = sourceTitle.innerHTML.split(/<br\s*\/?>/i);
 			const fs = parseFloat(s.fontSize);
-
 			ctxsolid.font = `${s.fontWeight} ${s.fontSize} system-ui, sans-serif`;
 			ctxsolid.textAlign = "center";
 			ctxsolid.textBaseline = "middle";
 			ctxsolid.letterSpacing = s.letterSpacing;
-
 			ctxsolid.globalCompositeOperation = 'destination-out';
-				
 			const x = width / 2;
 			const yBase = (rectT.top + rectT.height / 2) - rectC.top + (fs * 0.135);
 			const lh = parseFloat(s.lineHeight) || fs;
-
 			lines.forEach((line, i) => {
 				const txt = line.replace(/<\/?[^>]+(>|$)/g, "").trim();
 				ctxsolid.fillText(txt, x, yBase + (i - (lines.length - 1) / 2) * lh);
 			});
-
 			ctxsolid.globalCompositeOperation = 'source-over';
-			
             requestAnimationFrame(animate);
         }
         animate();
-
-
     function initReviewsCarousel() {
         const track = document.getElementById('reviews-track');
         const dotsContainer = document.getElementById('carousel-dots');
         if (!track || !dotsContainer) return;
-
         const cards = track.children;
         if (cards.length === 0) return;
-
         let currentIndex = 0;
         let autoSlideTimer;
-
         dotsContainer.innerHTML = Array.from(cards).map((_, i) => `
             <div class="carousel-dot ${i === 0 ? 'active' : ''}" data-index="${i}"></div>
         `).join('');
-
         const dots = dotsContainer.querySelectorAll('.carousel-dot');
-
         function updateCarousel(index) {
             currentIndex = index;
             track.style.transform = `translateX(calc(-${currentIndex} * (100% + 40px)))`;
             dots.forEach((dot, i) => dot.classList.toggle('active', i === currentIndex));
         }
-
         let touchStartX = 0;
         let touchEndX = 0;
-
         track.addEventListener('touchstart', e => {
             touchStartX = e.changedTouches[0].screenX;
         }, { passive: true });
-
         track.addEventListener('touchend', e => {
             touchEndX = e.changedTouches[0].screenX;
             handleSwipe();
         }, { passive: true });
-
         function handleSwipe() {
             const swipeDist = touchStartX - touchEndX;
             if (Math.abs(swipeDist) > 50) {
@@ -593,63 +526,51 @@ document.addEventListener('DOMContentLoaded', () => {
                 startAutoSlide();
             }
         }
-
         function startAutoSlide() {
             stopAutoSlide();
             autoSlideTimer = setInterval(() => {
                 updateCarousel((currentIndex + 1) % cards.length);
             }, 5000);
         }
-
         function stopAutoSlide() {
             clearInterval(autoSlideTimer);
         }
-
         dots.forEach(dot => {
             dot.addEventListener('click', () => {
                 updateCarousel(parseInt(dot.dataset.index, 10));
                 startAutoSlide();
             });
         });
-
         const prevBtn = document.getElementById('prev-review');
         const nextBtn = document.getElementById('next-review');
-
         if (prevBtn) {
             prevBtn.addEventListener('click', () => {
                 updateCarousel((currentIndex - 1 + cards.length) % cards.length);
                 startAutoSlide();
             });
         }
-
         if (nextBtn) {
             nextBtn.addEventListener('click', () => {
                 updateCarousel((currentIndex + 1) % cards.length);
                 startAutoSlide();
             });
         }
-
         const carousel = document.querySelector('.reviews-carousel');
         if (carousel) {
             carousel.addEventListener('mouseenter', stopAutoSlide);
             carousel.addEventListener('mouseleave', startAutoSlide);
         }
-
         startAutoSlide();
     }
-
     initReviewsCarousel();
 
-    // --- Services Accordion ---
     function initServiceAccordion() {
         const container = document.getElementById('service-details-container');
         const titleEl = document.getElementById('service-details-title');
         const textEl = document.getElementById('service-details-text');
         const galleryEl = document.getElementById('service-details-gallery');
         const grid = document.querySelector('.services-grid');
-        
         if (!container || !grid) return;
-
         const serviceImages = {
             'rental': [
                 'img/index/service_rental1.avif',
@@ -668,9 +589,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 'img/index/service_event2.png'
             ]
         };
-
         const cards = Array.from(grid.querySelectorAll('.service-card[data-service-id]'));
-
         const placeContainer = (card) => {
             const top = card.offsetTop, row = cards.filter(c => c.offsetTop === top);
             const first = row[0], last = row[row.length - 1];
@@ -678,33 +597,26 @@ document.addEventListener('DOMContentLoaded', () => {
             container.classList.toggle('first-in-row', card === first);
             container.classList.toggle('last-in-row', card === last);
         };
-
         cards.forEach(card => {
             card.addEventListener('click', () => {
                 const serviceId = card.dataset.serviceId;
                 const isActive = card.classList.contains('active');
-                
-                // Reset all
+
                 cards.forEach(c => c.classList.remove('active', 'is-first-in-row', 'is-last-in-row'));
-                
                 if (isActive) {
                     container.style.display = 'none'; // Toggle off
                     return;
                 }
-
                 card.classList.add('active');
                 placeContainer(card);
 
-                // Add classes directly to card to aid CSS fractional calculations
                 const isFirst = container.classList.contains('first-in-row');
                 const isLast = container.classList.contains('last-in-row');
                 if (isFirst) card.classList.add('is-first-in-row');
                 if (isLast) card.classList.add('is-last-in-row');
-                
                 titleEl.setAttribute('data-i18n', `services.${serviceId}.title`);
                 const textKey = `services.${serviceId}.modalText`;
                 textEl.setAttribute('data-i18n', textKey);
-                
                 galleryEl.innerHTML = '';
                 if (serviceImages[serviceId] && serviceImages[serviceId].length > 0) {
                     const template = document.getElementById('service-img-template');
@@ -717,13 +629,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
                     });
                 }
-                
                 if (window.changeLanguage && window.currentLang) {
                     window.changeLanguage(window.currentLang);
                 }
-
                 container.style.display = 'block';
-                
                 setTimeout(() => {
                     const header = document.querySelector('.site-header');
                     const headerHeight = header ? header.offsetHeight : 0;
@@ -737,14 +646,12 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        // Initialize state on window resize
         let resizeTimer;
         let prevWidth = window.innerWidth;
         window.addEventListener('resize', () => {
             const currentWidth = window.innerWidth;
             if (currentWidth === prevWidth) return; // Ignore height-only changes (mobile URL bar)
             prevWidth = currentWidth;
-
             clearTimeout(resizeTimer);
             resizeTimer = setTimeout(() => {
                 const activeCard = grid.querySelector('.service-card.active');
@@ -754,11 +661,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 100);
         });
 
-        // Trigger first card by default
         if (cards.length > 0) {
             cards[0].click();
         }
     }
-
     initServiceAccordion();
 });

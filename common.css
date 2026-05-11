@@ -1159,7 +1159,7 @@ a {
     font-size: 1rem;
 }
 
-/* Quote Form Styles */
+
 .quote-form {
     display: flex;
     flex-direction: column;
@@ -1224,7 +1224,7 @@ a {
     color: var(--text-muted);
 }
 
-/* Cart Items Summary */
+
 .quote-cart-summary {
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid var(--glass-border);
@@ -1251,7 +1251,7 @@ a {
     flex-shrink: 0;
 }
 
-/* Form Footer */
+
 .quote-form-footer {
     display: flex;
     gap: 15px;
@@ -1265,7 +1265,7 @@ a {
     min-width: 140px;
 }
 
-/* Success Modal */
+
 .success-modal-content {
     max-width: 500px;
     text-align: center;
@@ -1322,7 +1322,7 @@ a {
     min-width: 120px;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .desktop-nav,
     .desktop-actions,
@@ -1410,7 +1410,7 @@ a {
     }
 }
 
-/* Input validation states */
+
 .quote-form-input:invalid:not(:placeholder-shown),
 .quote-form-textarea:invalid:not(:placeholder-shown) {
     border-color: rgba(239, 68, 68, 0.5);
@@ -1425,7 +1425,7 @@ a {
 .text-center { text-align: center; }
 .text-right { text-align: right; }
 
-/* === Cart & Quote Summary Styles === */
+
 .cart-item {
     padding: 10px;
     margin-bottom: 10px;
@@ -1535,7 +1535,7 @@ a {
     margin-bottom: 0;
 }
 
-/* Quote Summary Table */
+
 .quote-summary-table {
     width: 100%;
     border-collapse: collapse;
@@ -1610,11 +1610,27 @@ a {
     color: var(--primary);
 }
 
-/* Service Image Styling */
+
 .service-gallery-img {
     width: 100%;
     border-radius: 8px;
     border: 1px solid rgba(255,255,255,0.1);
     object-fit: cover;
     aspect-ratio: 16/9;
-}
+}
+
+.section-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-lg);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}

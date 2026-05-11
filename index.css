@@ -292,9 +292,9 @@
     grid-template-rows: repeat(2, 250px);
     max-width: 900px;
     margin: 0 auto;
-    gap: 4px; /* tight mosaic spacing */
+    gap: 4px; 
     width: 100%;
-    border-radius: 8px; /* wrap entire mosaic loosely */
+    border-radius: 8px; 
 }
 
 .gallery-item {
@@ -510,7 +510,7 @@
 
 
 
-/* --- Services Accordion Styles --- */
+
 
 
 .service-card.active {
@@ -525,7 +525,7 @@
     backdrop-filter: none;
 }
 
-/* Pseudo-element removed for visual continuity */
+
 
 .service-details-container {
     grid-column: 1 / -1;
@@ -754,7 +754,7 @@
     }
 }
 
-/* --- Energy Field Animation --- */
+
 :root {
     --g: rgba(34, 255, 136, 1);
     --p: rgba(204, 68, 255, 1);
@@ -891,4 +891,3 @@
     position: absolute; inset: 0;
     background: radial-gradient(circle, transparent 30%, black 150%);
     pointer-events: none;
-}
