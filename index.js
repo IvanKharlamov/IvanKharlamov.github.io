@@ -45,12 +45,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     function initLED() {
-        const aspect = window.innerWidth / window.innerHeight;
-        internalWidth = INTERNAL_HEIGHT * aspect;
-        ledCanvas.width = internalWidth;
+        const aspect = window.innerWidth / 1000; 
+        const newWidth = Math.ceil(INTERNAL_HEIGHT * aspect);
+        const newCols = Math.ceil(newWidth / spacing);
+        const newRows = Math.ceil(INTERNAL_HEIGHT / spacing);
+        
+        if (ledCanvas.width === newWidth && cols === newCols && rows === newRows) return;
+
+        ledCanvas.width = newWidth;
         ledCanvas.height = INTERNAL_HEIGHT;
-        cols = Math.ceil(internalWidth / spacing);
-        rows = Math.ceil(INTERNAL_HEIGHT / spacing);
+        cols = newCols;
+        rows = newRows;
+        
         const newSize = rows * cols;
         if (!grid || grid.length !== newSize) {
             grid = new Float32Array(newSize);
@@ -93,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     function drawLED() {
         lctx.fillStyle = '#0c0a05';
-        lctx.fillRect(0, 0, internalWidth, INTERNAL_HEIGHT);
+        lctx.fillRect(0, 0, ledCanvas.width, INTERNAL_HEIGHT);
         lctx.globalCompositeOperation = 'screen';
         const halfSize = 50; 
         for (let r = 0; r < rows; r++) {
@@ -110,15 +116,16 @@ document.addEventListener('DOMContentLoaded', () => {
     preRenderLED();
     initLED();
     let prevLedWidth = window.innerWidth;
+    let ledResizeTimer;
     window.addEventListener('resize', () => {
-
-        if (window.visualViewport && Math.abs(window.visualViewport.scale - 1) > 0.01) {
-            return;
-        }
+        if (window.visualViewport && Math.abs(window.visualViewport.scale - 1) > 0.01) return;
+        
         const currentWidth = window.innerWidth;
-        if (currentWidth === prevLedWidth) return;
+        if (currentWidth === prevLedWidth) return; 
         prevLedWidth = currentWidth;
-        initLED();
+
+        clearTimeout(ledResizeTimer);
+        ledResizeTimer = setTimeout(initLED, 150);
     });
 
     let seed = 45;
