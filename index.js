@@ -45,17 +45,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     function initLED() {
-        const aspect = window.innerWidth / 1000; 
-        const newWidth = Math.ceil(INTERNAL_HEIGHT * aspect);
-        const newCols = Math.ceil(newWidth / spacing);
-        const newRows = Math.ceil(INTERNAL_HEIGHT / spacing);
+        // Use a stable, large fixed width to avoid any re-initialization during zoom or scroll.
+        // 2560px covers almost all mobile and desktop screens.
+        const TARGET_WIDTH = 2560;
         
-        if (ledCanvas.width === newWidth && cols === newCols && rows === newRows) return;
+        if (ledCanvas.width === TARGET_WIDTH) return;
 
-        ledCanvas.width = newWidth;
+        ledCanvas.width = TARGET_WIDTH;
         ledCanvas.height = INTERNAL_HEIGHT;
-        cols = newCols;
-        rows = newRows;
+        cols = Math.ceil(TARGET_WIDTH / spacing);
+        rows = Math.ceil(INTERNAL_HEIGHT / spacing);
         
         const newSize = rows * cols;
         if (!grid || grid.length !== newSize) {
@@ -116,17 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
     preRenderLED();
     initLED();
     let prevLedWidth = window.innerWidth;
-    let ledResizeTimer;
-    window.addEventListener('resize', () => {
-        if (window.visualViewport && Math.abs(window.visualViewport.scale - 1) > 0.01) return;
-        
-        const currentWidth = window.innerWidth;
-        if (currentWidth === prevLedWidth) return; 
-        prevLedWidth = currentWidth;
-
-        clearTimeout(ledResizeTimer);
-        ledResizeTimer = setTimeout(initLED, 150);
-    });
+    // No resize listener for LED canvas - fixed size is more stable for Safari zoom.
 
     let seed = 45;
     const prng = () => (seed = (seed * 9301 + 49297) % 233280, seed / 233280);
