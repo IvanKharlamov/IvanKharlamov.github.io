@@ -773,6 +773,9 @@
     will-change: transform;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    background-image: radial-gradient(circle, rgba(139, 69, 0, 0.08) 1.2px, transparent 1.8px);
+    background-size: 15.8px 15.8px;
+    background-position: center;
 }
 #ledCanvas.visible {
     opacity: 1;

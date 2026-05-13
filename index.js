@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let internalWidth, rows, cols;
     const INTERNAL_HEIGHT = 877; 
     const spacing = 15.8; 
-    let grid, activeLines = [];
+    let activeLines = [];
     const tieredSprites = [];
     const MIN_LEN = 5;            
     const MAX_LEN = 15;           
@@ -12,8 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const SPAWN_CHANCE = 0.8;
     function preRenderLED() {
         for (let i = 0; i <= 10; i++) {
-            const intensity = i / 10;
-            const displayInt = Math.max(0.06, intensity);
+            const displayInt = i / 10;
             const sCanvas = document.createElement('canvas');
             const sCtx = sCanvas.getContext('2d');
             const size = 100; 
@@ -56,14 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
         cols = Math.ceil(TARGET_WIDTH / spacing);
         rows = Math.ceil(INTERNAL_HEIGHT / spacing);
         
-        const newSize = rows * cols;
-        if (!grid || grid.length !== newSize) {
-            grid = new Float32Array(newSize);
-        }
         activeLines = activeLines.filter(p => p.r < rows && p.c < cols);
     }
     function updateLED(dt = 1) {
-        grid.fill(0);
         if (Math.random() < (1 - Math.pow(1 - SPAWN_CHANCE, dt))) {
             for(let i = 0; i < 30; i++) {
                 activeLines.push({
@@ -83,17 +77,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 activeLines.splice(i, 1);
                 continue;
             }
-            const masterIntensity = Math.sin(p.age * Math.PI);
-            for (let offset = -p.len; offset <= p.len; offset++) {
-                const targetC = p.c + offset;
-                if (targetC >= 0 && targetC < cols) {
-                    const distFalloff = 1 - (Math.abs(offset) / p.len);
-                    const noise = p.noiseFactors[offset + MAX_LEN];
-                    const finalVal = masterIntensity * distFalloff * noise;
-                    const idx = p.r * cols + targetC;
-                    if (finalVal > grid[idx]) grid[idx] = finalVal;
-                }
-            }
         }
     }
     function drawLED() {
@@ -101,15 +84,21 @@ document.addEventListener('DOMContentLoaded', () => {
         lctx.fillRect(0, 0, ledCanvas.width, INTERNAL_HEIGHT);
         lctx.globalCompositeOperation = 'screen';
         const halfSize = 50; 
-        for (let r = 0; r < rows; r++) {
-            const rowOff = r * cols;
-            const yPos = (r * spacing + spacing/2) - halfSize;
-            for (let c = 0; c < cols; c++) {
-                const intensity = grid[rowOff + c];
-                const cacheIdx = Math.min(10, Math.max(0, Math.floor(intensity * 10)));
-                lctx.drawImage(tieredSprites[cacheIdx], (c * spacing + spacing/2) - halfSize, yPos);
+        activeLines.forEach(p => {
+            const masterIntensity = Math.sin(p.age * Math.PI);
+            const y = (p.r * spacing + spacing/2) - halfSize;
+            for (let offset = -p.len; offset <= p.len; offset++) {
+                const targetC = p.c + offset;
+                if (targetC >= 0 && targetC < cols) {
+                    const distFalloff = 1 - (Math.abs(offset) / p.len);
+                    const noise = p.noiseFactors[offset + MAX_LEN];
+                    const intensity = masterIntensity * distFalloff * noise;
+                    if (intensity < 0.1) continue;
+                    const cacheIdx = Math.min(10, Math.max(0, Math.floor(intensity * 10)));
+                    lctx.drawImage(tieredSprites[cacheIdx], (targetC * spacing + spacing/2) - halfSize, y);
+                }
             }
-        }
+        });
         lctx.globalCompositeOperation = 'source-over';
     }
     preRenderLED();
