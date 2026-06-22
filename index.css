@@ -134,7 +134,9 @@
 
 #hero-canvas, #hero-canvas-solid {
     position: absolute;
-    margin-top: 88px;
+    top: 0;
+    left: 0;
+    margin-top: 0;
 }
 
 #hero-canvas-solid {
@@ -484,6 +486,7 @@
     padding: var(--spacing-xl) 0;
     position: relative;
     background: linear-gradient(to top, rgba(139, 92, 246, 0.05), transparent);
+    overflow: hidden;
 }
 
 .contact-grid {

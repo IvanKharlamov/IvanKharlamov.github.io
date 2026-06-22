@@ -499,7 +499,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			const ratioX = shapeCenter ? shapeCenter.x / width : null;
 			const ratioY = shapeCenter ? shapeCenter.y / height : null;
 			width = canvas.width = canvassolid.width = canvas.parentElement.offsetWidth;
-			height = canvas.height = canvassolid.height = Math.max(100, canvas.parentElement.offsetHeight - 88);
+			height = canvas.height = canvassolid.height = Math.max(100, canvas.parentElement.offsetHeight);
 			scaleFactor = height / 1080;
 			if (shapeCenter && ratioX !== null) {
 				shapeCenter.x = ratioX * width;

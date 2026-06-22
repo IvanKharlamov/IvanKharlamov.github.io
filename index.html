@@ -178,11 +178,10 @@
 			</div>
             <div class="hero-mask-container">
                 <div class="hero-content-mask">
-                    <canvas id="hero-canvas"></canvas>
                     <h1 class="hero-title-large" data-i18n="hero.title">ELEVA<br>TU<br>PRODUCCIÓN</h1>
                 </div>
             </div>
-            <canvas id="hero-canvas-solid"></canvas>
+
             <div class="hero-ui-overlay">
                 <p class="hero-ui-subtitle" data-i18n="hero.subtitle">Diseño de escenario · Iluminación · Soundvision · Escenografía visual · Dirección técnica · Control de show</p>
                 <!-- CATALOG FUNCTIONALITY
@@ -436,7 +435,9 @@
 
         
         <section id="contact" class="contact-section">
-            <div class="container">
+            <canvas id="hero-canvas"></canvas>
+            <canvas id="hero-canvas-solid"></canvas>
+            <div class="container" style="position: relative; z-index: 10;">
                 <h2 class="section-title"><span data-i18n="contact.title">Ponte en</span> <span class="text-gradient"
                         data-i18n="contact.titleHighlight">Contacto</span></h2>
                 <p class="section-subtitle" data-i18n="contact.subtitle">Completa el formulario y te contactaremos pronto.</p>
