@@ -14,12 +14,14 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileMenuOverlay.addEventListener('click', () => setMenuState(false));
     document.querySelectorAll('.mobile-nav-link').forEach(link => link.addEventListener('click', () => setMenuState(false)));
 
+    /* CATALOG FUNCTIONALITY
     const cartToggleMobile = document.getElementById('cart-toggle-mobile');
     if (cartToggleMobile) {
         cartToggleMobile.addEventListener('click', () => {
             if (window.cartUI) window.cartUI.open();
         });
     }
+    */
     const translations = { en: {}, es: {} };
     if (window.TRANSLATIONS_RAW) {
         Object.entries(window.TRANSLATIONS_RAW).forEach(([key, val]) => {
@@ -40,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('[data-i18n-placeholder]').forEach(el => el.placeholder = translations[lang][el.dataset.i18nPlaceholder]);
         document.querySelectorAll('option[data-i18n]').forEach(el => el.textContent = translations[lang][el.dataset.i18n]);
         if (typeof window.applyFilters === 'function' && window.products) window.applyFilters();
-        window.cartUI?.render();
+        /* CATALOG FUNCTIONALITY window.cartUI?.render(); */
     };
     document.querySelectorAll('.lang-opt').forEach(btn => btn.addEventListener('click', () => window.changeLanguage(btn.dataset.lang)));
 
@@ -235,6 +237,7 @@ class DatePicker {
 
 window.DatePicker = DatePicker;
 
+/* CATALOG FUNCTIONALITY
 class CartManager {
     constructor() {
         this.storageKey = 'upstage_cart';
@@ -397,8 +400,8 @@ class CartUI {
             const total = this.cartManager.getTotal();
             const hasCustom = this.cartManager.hasCustomItems();
             this.totalElement.textContent = hasCustom 
-                ? `€${total.toLocaleString()} + ${t('cart.customRate')}`
-                : `€${total.toLocaleString()}`;
+                ? \`€\${total.toLocaleString()} + \${t('cart.customRate')}\`
+                : \`€\${total.toLocaleString()}\`;
         }
 
         if (!this.itemsContainer) return;
@@ -406,13 +409,13 @@ class CartUI {
         const currentLang = window.currentLang || 'es';
         if (items.length === 0) {
             const isOnCatalog = window.location.pathname.includes('inventory');
-            const browseButton = isOnCatalog ? '' : `<a href="inventory" class="btn btn-primary" style="margin-top: 20px;">${t('hero.browse')}</a>`;
-            this.itemsContainer.innerHTML = `
+            const browseButton = isOnCatalog ? '' : \`<a href="inventory" class="btn btn-primary" style="margin-top: 20px;">\${t('hero.browse')}</a>\`;
+            this.itemsContainer.innerHTML = \`
                 <div class="empty-cart-msg">
-                    <p>${t('cart.empty')}</p>
-                    ${browseButton}
+                    <p>\${t('cart.empty')}</p>
+                    \${browseButton}
                 </div>
-            `;
+            \`;
             return;
         }
         this.itemsContainer.innerHTML = '';
@@ -429,17 +432,17 @@ class CartUI {
             clone.querySelector('.cart-item-name').textContent = displayName;
             const locale = currentLang === 'es' ? 'es-ES' : 'en-GB';
             const options = { day: 'numeric', month: 'short' };
-            const dateDisplay = `${new Date(item.start).toLocaleDateString(locale, options)} - ${new Date(item.end).toLocaleDateString(locale, options)}`;
+            const dateDisplay = \`\${new Date(item.start).toLocaleDateString(locale, options)} - \${new Date(item.end).toLocaleDateString(locale, options)}\`;
             clone.querySelector('.cart-qty-input').value = item.quantity;
             clone.querySelector('.decrease').onclick = () => window.cartUI.updateQuantity(index, -1);
             clone.querySelector('.increase').onclick = () => window.cartUI.updateQuantity(index, 1);
-            clone.querySelector('.cart-item-days').textContent = `${item.days} ${t('cart.days')}`;
+            clone.querySelector('.cart-item-days').textContent = \`\${item.days} \${t('cart.days')}\`;
             const pickerContainer = clone.querySelector('.cart-item-picker-container');
-            pickerContainer.className = `date-picker cart-date-picker-${index}`;
+            pickerContainer.className = \`date-picker cart-date-picker-\${index}\`;
             pickerContainer.dataset.cartIndex = index;
-            pickerContainer.innerHTML = `
+            pickerContainer.innerHTML = \`
                 <div class="date-picker-display">
-                    <span class="date-range-text has-dates">${dateDisplay}</span>
+                    <span class="date-range-text has-dates">\${dateDisplay}</span>
                     <div class="picker-icon">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
@@ -460,15 +463,15 @@ class CartUI {
                     </div>
                     <div class="calendar-days-grid"></div>
                 </div>
-            `;
+            \`;
             const priceEl = clone.querySelector('.cart-item-price');
             if (item.isCustom) {
-                priceEl.innerHTML = `<span style="color: var(--accent);">${t('cart.customRate')}</span>`;
+                priceEl.innerHTML = \`<span style="color: var(--accent);">\${t('cart.customRate')}</span>\`;
             } else {
-                priceEl.innerHTML = `
-                    <span class="price-base">€${item.basePrice.toLocaleString()}</span>
-                    <span class="price-final">€${item.totalPrice.toLocaleString()}</span>
-                `;
+                priceEl.innerHTML = \`
+                    <span class="price-base">€\${item.basePrice.toLocaleString()}</span>
+                    <span class="price-final">€\${item.totalPrice.toLocaleString()}</span>
+                \`;
             }
             clone.querySelector('.remove-cart-item').onclick = () => window.cartUI.removeItem(index);
             this.itemsContainer.appendChild(clone);
@@ -480,7 +483,7 @@ class CartUI {
         setTimeout(() => {
             const items = this.cartManager.getItems();
             items.forEach((item, index) => {
-                const pickerElement = document.querySelector(`.cart-date-picker-${index}`);
+                const pickerElement = document.querySelector(\`.cart-date-picker-\${index}\`);
                 if (pickerElement && window.DatePicker) {
                     const picker = new window.DatePicker(pickerElement);
                     if (item.start && item.end) {
@@ -498,7 +501,7 @@ class CartUI {
                             }
                         }
                     };
-                    this.datePickers[`item-${index}`] = picker;
+                    this.datePickers[\`item-\${index}\`] = picker;
                 }
             });
         }, 0);
@@ -523,6 +526,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 window.CartManager = CartManager;
 window.CartUI = CartUI;
+*/
 
 class QuoteFormsManager {
     constructor() {
@@ -598,6 +602,7 @@ class QuoteFormsManager {
     }
 
     setupCartQuoteButton() {
+        /* CATALOG FUNCTIONALITY
         const cartQuoteBtn = document.getElementById('btn-request-quote');
         if (cartQuoteBtn) {
             cartQuoteBtn.addEventListener('click', (e) => {
@@ -605,6 +610,7 @@ class QuoteFormsManager {
                 this.openCartQuoteModal();
             });
         }
+        */
     }
 
     setupContactForm() {
@@ -625,6 +631,7 @@ class QuoteFormsManager {
     }
 
     openCartQuoteModal() {
+        /* CATALOG FUNCTIONALITY
         if (window.cartManager.getCount() === 0) {
             if (window.showToast) {
                 window.showToast(this.t('toast.emptyQuote'), 'error');
@@ -634,13 +641,14 @@ class QuoteFormsManager {
         if (window.cartUI) window.cartUI.close();
         const modal = document.getElementById('cart-quote-modal');
         if (modal) {
-
             this.renderCartItemsSummary();
             modal.classList.add('active');
         }
+        */
     }
 
     renderCartItemsSummary() {
+        /* CATALOG FUNCTIONALITY
         const container = document.getElementById('quote-cart-items-summary');
         if (!container) return;
         const items = window.cartManager.getItems();
@@ -708,6 +716,8 @@ class QuoteFormsManager {
             </table>
         `;
         container.innerHTML = html;
+        */
+    }nnerHTML = html;
     }
     async handleFormSubmit(form, subject, extraData = {}) {
         const btn = form.querySelector('button[type="submit"]'), original = btn.textContent;
@@ -733,9 +743,11 @@ class QuoteFormsManager {
     async handleContactFormSubmit(form) { await this.handleFormSubmit(form, 'Contact Form - UPSTAGE MADRID'); }
     async handleGeneralQuoteSubmit(form) { await this.handleFormSubmit(form, 'General Quote Request - UPSTAGE MADRID'); }
     async handleCartQuoteSubmit(form) {
+        /* CATALOG FUNCTIONALITY
         const items = window.cartManager.getItems(), text = this.formatCartItems(items);
         const msg = form.querySelector('#cart-quote-additional')?.value;
         await this.handleFormSubmit(form, 'Cart Quote Request - Upstage Rentals', { message: msg ? `${msg}\n${text}` : text });
+        */
     }
     closeGeneralQuoteModal() {
         document.getElementById('general-quote-modal').classList.remove('active');
@@ -758,6 +770,7 @@ document.addEventListener('DOMContentLoaded', () => {
             window.quoteFormsManager.handleGeneralQuoteSubmit(generalQuoteForm);
         });
     }
+    /* CATALOG FUNCTIONALITY
     const cartQuoteForm = document.getElementById('cart-quote-form');
     if (cartQuoteForm) {
         cartQuoteForm.addEventListener('submit', (e) => {
@@ -765,6 +778,7 @@ document.addEventListener('DOMContentLoaded', () => {
             window.quoteFormsManager.handleCartQuoteSubmit(cartQuoteForm);
         });
     }
+    */
 
     const closeGeneralQuote = document.getElementById('close-general-quote');
     if (closeGeneralQuote) {
@@ -778,6 +792,7 @@ document.addEventListener('DOMContentLoaded', () => {
             window.quoteFormsManager.closeGeneralQuoteModal();
         });
     }
+    /* CATALOG FUNCTIONALITY
     const closeCartQuote = document.getElementById('close-cart-quote');
     if (closeCartQuote) {
         closeCartQuote.addEventListener('click', () => {
@@ -790,6 +805,7 @@ document.addEventListener('DOMContentLoaded', () => {
             window.quoteFormsManager.closeCartQuoteModal();
         });
     }
+    */
     const closeSuccess = document.getElementById('close-success-modal');
     if (closeSuccess) {
         closeSuccess.addEventListener('click', () => {
