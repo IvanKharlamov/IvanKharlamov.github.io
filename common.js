@@ -717,7 +717,6 @@ class QuoteFormsManager {
         `;
         container.innerHTML = html;
         */
-    }nnerHTML = html;
     }
     async handleFormSubmit(form, subject, extraData = {}) {
         const btn = form.querySelector('button[type="submit"]'), original = btn.textContent;
