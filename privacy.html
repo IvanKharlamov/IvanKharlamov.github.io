@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="canonical" href="https://upstageprod.com/privacy.html">
+    <title>Política de Privacidad | UPSTAGE PROD</title>
+    <meta name="description" content="Política de privacidad de UPSTAGE PROD.">
+	<link rel="icon" type="image/svg+xml" href="favicon.svg">
+	<link rel="icon" type="image/x-icon" href="favicon.ico" sizes="any">
+	<link rel="apple-touch-icon" href="apple.png">
+    <link rel="stylesheet" href="common.css">
+    <style>
+        .privacy-section {
+            padding: calc(var(--spacing-xl) + 88px) 0 var(--spacing-xl);
+            min-height: calc(100vh - 300px);
+            background: linear-gradient(to bottom, var(--bg-color), #050505);
+        }
+        
+        .privacy-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+        }
+
+        .privacy-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .privacy-content .last-updated {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            display: block;
+        }
+
+        .privacy-content h2 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .privacy-content p {
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <header class="site-header">
+            <div class="container header-inner">
+                <a href="index.html" class="logo">        
+					<svg width="47" height="47" viewBox="127 27.5 284 415" xmlns="http://www.w3.org/2000/svg">
+					  <defs>
+						<filter id="logoGlow" x="-100%" y="-100%" width="300%" height="300%">
+						  <feGaussianBlur in="SourceAlpha" stdDeviation="30" result="blur1"/>
+						  <feGaussianBlur in="SourceAlpha" stdDeviation="45" result="blur2"/>
+						  <feFlood flood-color="var(--primary-glow, #00d4ff)" flood-opacity="1" result="color"/>
+						  <feComposite in="color" in2="blur1" operator="in" result="glow1"/>
+						  <feComposite in="color" in2="blur2" operator="in" result="glow2"/>
+						  <feMerge>
+							<feMergeNode in="glow1"/>
+							<feMergeNode in="glow2"/>
+							<feMergeNode in="SourceGraphic"/>
+						  </feMerge>
+						</filter>
+					  </defs>
+
+					  <path
+						d="M 127 127.5 V 312.5 C 127 482.5 373 482.5 373 312.5 V 127.5 H 411 L 334 27.5 L 257 127.5 H 295 V 312.5 C 295 377.5 205 377.5 205 312.5 V 127.5 Z"
+						fill="#FDFCFD"
+						filter="url(#logoGlow)"
+					  />
+					</svg>
+				</a>
+
+                <nav class="main-nav desktop-nav">
+                    <div class="nav-links">
+                        <a href="index.html" class="nav-link" data-i18n="nav.home">Inicio</a>
+                    </div>
+                </nav>
+                
+                <div class="header-actions desktop-actions">
+                    <div class="lang-switch">
+                        <span class="lang-opt" data-lang="en">EN</span>
+                        <span class="divider">/</span>
+                        <span class="lang-opt active" data-lang="es">ES</span>
+                    </div>
+                </div>
+
+                <div class="header-actions mobile-actions">
+                    <button class="menu-toggle" id="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu-header">
+                <span class="logo"></span>
+                <button class="close-mobile-menu" id="close-mobile-menu">&times;</button>
+            </div>
+            <nav class="mobile-menu-nav">
+                <a href="index.html" class="mobile-nav-link" data-i18n="nav.home">Inicio</a>
+            </nav>
+            <div class="mobile-menu-footer">
+                <div class="lang-switch">
+                    <span class="lang-opt" data-lang="en">EN</span>
+                    <span class="divider">/</span>
+                    <span class="lang-opt active" data-lang="es">ES</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="privacy-section">
+            <div class="container">
+                <div class="privacy-content">
+                    <h1 data-i18n="privacy.title">Política de Privacidad</h1>
+                    <span class="last-updated" data-i18n="privacy.lastUpdated">Última actualización: Junio 2026</span>
+
+                    <p data-i18n="privacy.intro">En UPSTAGE PROD, estamos comprometidos a proteger tu privacidad. Esta política explica cómo recopilamos, usamos y salvaguardamos tu información personal cuando usas nuestro sitio web.</p>
+
+                    <h2 data-i18n="privacy.dataCollected.title">Información que Recopilamos</h2>
+                    <p data-i18n="privacy.dataCollected.desc">Cuando envías un formulario de contacto o solicitud de presupuesto, recopilamos la siguiente información personal: Nombre, Número de teléfono, Correo electrónico, Organización/Empresa, Detalles del proyecto y tu Mensaje.</p>
+
+                    <h2 data-i18n="privacy.cookies.title">Almacenamiento Local y Cookies</h2>
+                    <p data-i18n="privacy.cookies.desc">Utilizamos el Almacenamiento Local de tu navegador para guardar tu preferencia de idioma (`upstage_lang`) y los datos del carrito (`upstage_cart`). No utilizamos cookies de rastreo ni de marketing de terceros.</p>
+
+                    <h2 data-i18n="privacy.howWeUse.title">Cómo Usamos tu Información</h2>
+                    <p data-i18n="privacy.howWeUse.desc">La información que proporcionas se utiliza exclusivamente para responder a tus consultas, proporcionar presupuestos de producción precisos y facilitar los servicios del evento. No vendemos ni compartimos tus datos personales con terceros.</p>
+
+                    <h2 data-i18n="privacy.contact.title">Contáctanos</h2>
+                    <p data-i18n="privacy.contact.desc">Si tienes alguna pregunta sobre esta Política de Privacidad, contáctanos a través del formulario de contacto en nuestra página principal.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">UPSTAGE PROD<span class="dot">.</span></a>
+                    <p class="footer-desc" data-i18n="footer.desc">Del concepto al espectáculo</p>
+                </div>
+                <div class="footer-contact">
+                    <div class="footer-contact-item">
+                        <h4 data-i18n="contact.hq">Sede Central</h4>
+                        <p>C. San Mames, 36, Villaverde, 28021 Madrid</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <h4 data-i18n="contact.hours">Horario</h4>
+                        <p>Mon-Sun 10:00-19:00</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <h4 data-i18n="contact.phone">Teléfono</h4>
+                        <p>+34 685 24 55 06</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <h4 data-i18n="contact.email">Email</h4>
+                        <p><a href="mailto:info@upstageprod.com">info@upstageprod.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <div style="display: flex; flex-direction: column; gap: 5px; align-items: flex-end;">
+                        <span data-i18n="footer.copyright">© 2026 UPSTAGE PROD. All rights reserved.</span>
+                        <a href="privacy.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.9rem; margin-top: 5px;" data-i18n="nav.privacy">Política de Privacidad</a>
+                    </div>
+                    <div class="footer-share">
+                        <span data-i18n="footer.share">share:</span>
+                        <div class="share-links">
+                            <a href="#" class="share-link facebook" title="Facebook">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                            </a>
+                            <a href="#" class="share-link x-twitter" title="X (Twitter)">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+                            </a>
+                            <a href="#" class="share-link linkedin" title="LinkedIn">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </a>
+                            <a href="#" class="share-link whatsapp" title="WhatsApp">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.432 5.628 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="translations.js"></script>
+    <script src="common.js"></script>
+</body>
+</html>

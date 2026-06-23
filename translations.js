@@ -431,5 +431,32 @@ window.TRANSLATIONS_RAW = {
     "en": "Please enter a valid email address",
     "es": "Por favor ingresa un correo electrónico válido"
   },
-  "footer.share": { "en": "share:", "es": "compartir:" }
+  "footer.share": { "en": "share:", "es": "compartir:" },
+  "nav.privacy": { "en": "Privacy Policy", "es": "Política de Privacidad" },
+  "privacy.title": { "en": "Privacy Policy", "es": "Política de Privacidad" },
+  "privacy.lastUpdated": { "en": "Last Updated: June 2026", "es": "Última actualización: Junio 2026" },
+  "privacy.intro": { 
+    "en": "At UPSTAGE PROD, we are committed to protecting your privacy. This policy explains how we collect, use, and safeguard your personal information when you use our website.",
+    "es": "En UPSTAGE PROD, estamos comprometidos a proteger tu privacidad. Esta política explica cómo recopilamos, usamos y salvaguardamos tu información personal cuando usas nuestro sitio web."
+  },
+  "privacy.dataCollected.title": { "en": "Information We Collect", "es": "Información que Recopilamos" },
+  "privacy.dataCollected.desc": { 
+    "en": "When you submit a contact or quote request form, we collect the following personal information: Name, Phone Number, Email Address, Organization/Company, Project Details, and your Message.",
+    "es": "Cuando envías un formulario de contacto o solicitud de presupuesto, recopilamos la siguiente información personal: Nombre, Número de teléfono, Correo electrónico, Organización/Empresa, Detalles del proyecto y tu Mensaje."
+  },
+  "privacy.cookies.title": { "en": "Local Storage & Cookies", "es": "Almacenamiento Local y Cookies" },
+  "privacy.cookies.desc": { 
+    "en": "We use your browser's Local Storage to save your language preference (`upstage_lang`) and cart data (`upstage_cart`). We do not use tracking or third-party marketing cookies.",
+    "es": "Utilizamos el Almacenamiento Local de tu navegador para guardar tu preferencia de idioma (`upstage_lang`) y los datos del carrito (`upstage_cart`). No utilizamos cookies de rastreo ni de marketing de terceros."
+  },
+  "privacy.howWeUse.title": { "en": "How We Use Your Information", "es": "Cómo Usamos tu Información" },
+  "privacy.howWeUse.desc": { 
+    "en": "The information you provide is exclusively used to respond to your inquiries, provide accurate production quotes, and facilitate event services. We do not sell or share your personal data with any third parties.",
+    "es": "La información que proporcionas se utiliza exclusivamente para responder a tus consultas, proporcionar presupuestos de producción precisos y facilitar los servicios del evento. No vendemos ni compartimos tus datos personales con terceros."
+  },
+  "privacy.contact.title": { "en": "Contact Us", "es": "Contáctanos" },
+  "privacy.contact.desc": { 
+    "en": "If you have any questions about this Privacy Policy, please contact us via the contact form on our home page.",
+    "es": "Si tienes alguna pregunta sobre esta Política de Privacidad, contáctanos a través del formulario de contacto en nuestra página principal."
+  }
 }
