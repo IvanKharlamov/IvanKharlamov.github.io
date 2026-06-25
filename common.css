@@ -226,7 +226,9 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-	padding: 0 20px;
+	padding: 0 40px;
+    max-width: none;
+    width: 100%;
 }
 
 /*
@@ -1637,6 +1639,12 @@ a {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 10px;
+}
+
+.highlight-text {
+    font-weight: 800;
+    font-size: 1.1em;
+    color: #ffffff;
 }
 
 .section-subtitle {

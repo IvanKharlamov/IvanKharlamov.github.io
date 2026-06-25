@@ -35,10 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const key = el.dataset.i18n;
             let val = translations[lang][key];
             if (val) {
-                if (key.includes('modalText')) {
-                    val = val.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-                }
-                el[key === 'hero.title' || key.includes('modalText') ? 'innerHTML' : 'textContent'] = val;
+                val = val.replace(/\*\*(.*?)\*\*/g, '<strong class="highlight-text">$1</strong>');
+                el.innerHTML = val;
             }
         });
         document.querySelectorAll('[data-i18n-placeholder]').forEach(el => el.placeholder = translations[lang][el.dataset.i18nPlaceholder]);

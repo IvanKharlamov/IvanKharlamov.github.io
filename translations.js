@@ -69,8 +69,8 @@ window.TRANSLATIONS_RAW = {
   "about.title": { "en": "Who We", "es": "Quiénes" },
   "about.titleHighlight": { "en": "Are", "es": "Somos" },
   "about.desc1": {
-    "en": "UPSTAGE PROD is a technical production team focused on delivering reliable, well-engineered event systems.",
-    "es": "UPSTAGE PROD es un equipo de producción técnica enfocado en entregar sistemas de eventos confiables y bien estructurados."
+    "en": "**UPSTAGE PROD** is a technical production team focused on delivering reliable, well-engineered event systems.",
+    "es": "**UPSTAGE PROD** es un equipo de producción técnica enfocado en entregar sistemas de eventos confiables y bien estructurados."
   },
   "about.desc2": {
     "en": "Founded in 2022, the company brings together professionals with over a decade of hands-on experience in live production, covering everything from small-scale setups to complex multi-day events.",
