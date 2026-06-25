@@ -244,8 +244,8 @@
             <div class="hero-content-left">
                 <h1 class="hero-title-left"><span data-i18n="hero.title">ELEVA<br>TU<br>PRODUCCIÓN</span></h1>
                 <div class="hero-ui-subtitle-marquee">
-                    <p class="hero-ui-subtitle" data-i18n="hero.subtitle">Diseño de escenario · Iluminación · Soundvision · Escenografía visual · Dirección técnica · Control de show</p>
-                    <p class="hero-ui-subtitle" aria-hidden="true" data-i18n="hero.subtitle">Diseño de escenario · Iluminación · Soundvision · Escenografía visual · Dirección técnica · Control de show</p>
+                    <p class="hero-ui-subtitle" data-i18n="hero.subtitle">Diseño de escenario · Iluminación · Soundvision · Escenografía visual · Dirección técnica · Control de show ·</p>
+                    <p class="hero-ui-subtitle" aria-hidden="true" data-i18n="hero.subtitle">Diseño de escenario · Iluminación · Soundvision · Escenografía visual · Dirección técnica · Control de show ·</p>
                 </div>
                 
                 <div class="hero-about-text">
@@ -275,6 +275,7 @@
                         </div>
                         <h3 data-i18n="services.production.title">Producción en Vivo</h3>
                         <p data-i18n="services.production.desc">Producción técnica llave en mano para conciertos, eventos corporativos y festivales.</p>
+                        <div class="hidden-modal-text" style="display: none;" data-i18n="services.production.modalText">Ofrecemos producción técnica integral 'llave en mano' para tus eventos. Desde el concepto inicial hasta el desmontaje, nuestro experimentado equipo gestiona la construcción del escenario, ingeniería de sonido rigurosa y sistemas de iluminación dinámicos para crear experiencias en vivo inolvidables, sin importar la escala.</div>
                     </div>
 
                     <div class="glass-card service-card" data-service-id="design">
@@ -290,6 +291,7 @@
                         </div>
                         <h3 data-i18n="services.design.title">Diseño de Sistemas</h3>
                         <p data-i18n="services.design.desc">Diseño de sistemas de iluminación y audio asistido por CAD.</p>
+                        <div class="hidden-modal-text" style="display: none;" data-i18n="services.design.modalText">Creamos sistemas técnicos detallados a cualquier escala, integrando iluminación, audio, video y estructuras con <strong>Vectorworks, AutoCAD y SketchUp</strong>. Nuestros diseños incluyen esquemas de rigging, planos de iluminación con direccionamiento, zonificación de audio y planificación de carga estructural. Desde la integración de escenarios hasta el cableado y distribución de energía, garantizamos un sistema coherente y ejecutable, optimizado para el impacto visual, la seguridad y la eficiencia.</div>
                     </div>
 
                     <div class="glass-card service-card" data-service-id="support">
@@ -301,8 +303,9 @@
                                 <polyline points="2 17 12 22 22 17"></polyline>
                             </svg>
                         </div>
-                        <h3 data-i18n="services.support.title">Soporte Técnico</h3>
-                        <p data-i18n="services.support.desc">Técnicos expertos disponibles para contratar.</p>
+                        <h3 data-i18n="services.support.title">Producción de Eventos</h3>
+                        <p data-i18n="services.support.desc">Realización completa de un concepto, desde la idea inicial hasta la ejecución impecable.</p>
+                        <div class="hidden-modal-text" style="display: none;" data-i18n="services.support.modalText">Ofrecemos servicios completos de producción de eventos que transforman tu visión en realidad. Desde la chispa inicial de una idea, nuestro equipo se encarga de la planificación meticulosa, diseño creativo, coordinación logística y ejecución técnica precisa. Garantizamos la realización a gran escala de tu concepto para que cada detalle se capture a la perfección.</div>
                     </div>
 
                     <div class="glass-card service-card" data-service-id="rental">
@@ -318,6 +321,7 @@
                         </div>
                         <h3 data-i18n="services.rental.title">Alquiler de Equipo</h3>
                         <p data-i18n="services.rental.desc">Accede a nuestro inventario masivo de iluminación, audio y video de última generación.</p>
+                        <div class="hidden-modal-text" style="display: none;" data-i18n="services.rental.modalText">Ofrecemos una amplia gama de equipos de iluminación profesional, sistemas PA, micrófonos inalámbricos, mesas de mezclas, trusses, motores y efectos especiales. Nuestro equipo se prueba y prepara antes de cada pedido de salida para garantizar la máxima fiabilidad in situ.</div>
                     </div>
 
                     
@@ -483,6 +487,7 @@
                                         class="quote-form-input" 
                                         required
                                         data-i18n-placeholder="quote.form.fullName"
+                                        placeholder="Nombre Completo"
                                     >
                                 </div>
 
@@ -497,6 +502,7 @@
                                         class="quote-form-input" 
                                         required
                                         data-i18n-placeholder="quote.form.phone"
+                                        placeholder="Número de Teléfono"
                                     >
                                 </div>
                             </div>
@@ -512,6 +518,7 @@
                                     class="quote-form-input" 
                                     required
                                     data-i18n-placeholder="quote.form.email"
+                                        placeholder="Correo Electrónico"
                                 >
                             </div>
 
@@ -524,6 +531,7 @@
                                     id="contact-org"
                                     class="quote-form-input" 
                                     data-i18n-placeholder="quote.form.organization"
+                                        placeholder="Organización / Empresa"
                                 >
                             </div>
 
@@ -536,6 +544,7 @@
                                     id="contact-project"
                                     class="quote-form-input" 
                                     data-i18n-placeholder="quote.form.project"
+                                        placeholder="Nombre del Proyecto / Evento"
                                 >
                             </div>
 
@@ -550,6 +559,7 @@
                                     required
                                     rows="5"
                                     data-i18n-placeholder="quote.form.message"
+                                        placeholder="Mensaje"
                                 ></textarea>
                             </div>
 
@@ -592,7 +602,7 @@
                         <a href="privacy" style="color: var(--text-muted); text-decoration: none; font-size: 0.9rem; margin-top: 5px;" data-i18n="nav.privacy">Política de Privacidad</a>
                     </div>
                     <div class="footer-share">
-                        <span data-i18n="footer.share">share:</span>
+                        <span data-i18n="footer.share">compartir:</span>
                         <div class="share-links">
                             <a href="#" class="share-link facebook" title="Facebook">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
@@ -657,6 +667,7 @@
 								class="quote-form-input" 
 								required
 								data-i18n-placeholder="quote.form.fullName"
+                                        placeholder="Nombre Completo"
 							>
 						</div>
 
@@ -671,6 +682,7 @@
 								class="quote-form-input" 
 								required
 								data-i18n-placeholder="quote.form.phone"
+                                        placeholder="Número de Teléfono"
 							>
 						</div>
 					</div>
@@ -686,6 +698,7 @@
 							class="quote-form-input" 
 							required
 							data-i18n-placeholder="quote.form.email"
+                                        placeholder="Correo Electrónico"
 						>
 					</div>
 
@@ -698,6 +711,7 @@
 							id="general-quote-org" 
 							class="quote-form-input" 
 							data-i18n-placeholder="quote.form.organization"
+                                        placeholder="Organización / Empresa"
 						>
 					</div>
 
@@ -710,6 +724,7 @@
 							id="general-quote-project" 
 							class="quote-form-input" 
 							data-i18n-placeholder="quote.form.project"
+                                        placeholder="Nombre del Proyecto / Evento"
 						>
 					</div>
 
@@ -724,6 +739,7 @@
 							required
 							rows="5"
 							data-i18n-placeholder="quote.form.message"
+                                        placeholder="Mensaje"
 						></textarea>
 					</div>
 
@@ -772,6 +788,7 @@
 								class="quote-form-input" 
 								required
 								data-i18n-placeholder="quote.form.fullName"
+                                        placeholder="Nombre Completo"
 							>
 						</div>
 
@@ -786,6 +803,7 @@
 								class="quote-form-input" 
 								required
 								data-i18n-placeholder="quote.form.phone"
+                                        placeholder="Número de Teléfono"
 							>
 						</div>
 					</div>
@@ -801,6 +819,7 @@
 							class="quote-form-input" 
 							required
 							data-i18n-placeholder="quote.form.email"
+                                        placeholder="Correo Electrónico"
 						>
 					</div>
 
@@ -813,6 +832,7 @@
 							id="cart-quote-org" 
 							class="quote-form-input" 
 							data-i18n-placeholder="quote.form.organization"
+                                        placeholder="Organización / Empresa"
 						>
 					</div>
 
@@ -825,6 +845,7 @@
 							id="cart-quote-project" 
 							class="quote-form-input" 
 							data-i18n-placeholder="quote.form.project"
+                                        placeholder="Nombre del Proyecto / Evento"
 						>
 					</div>
 
@@ -837,6 +858,7 @@
 							class="quote-form-textarea" 
 							rows="4"
 							data-i18n-placeholder="quote.form.additionalInfo"
+                                        placeholder="Información Adicional"
 						></textarea>
 					</div>
 

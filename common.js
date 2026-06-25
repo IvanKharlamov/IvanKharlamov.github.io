@@ -32,8 +32,14 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('upstage_lang', lang);
         document.querySelectorAll('.lang-opt').forEach(el => el.classList.toggle('active', el.dataset.lang === lang));
         document.querySelectorAll('[data-i18n]').forEach(el => {
-            const key = el.dataset.i18n, val = translations[lang][key];
-            if (val) el[key === 'hero.title' || key.includes('modalText') ? 'innerHTML' : 'textContent'] = val;
+            const key = el.dataset.i18n;
+            let val = translations[lang][key];
+            if (val) {
+                if (key.includes('modalText')) {
+                    val = val.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+                }
+                el[key === 'hero.title' || key.includes('modalText') ? 'innerHTML' : 'textContent'] = val;
+            }
         });
         document.querySelectorAll('[data-i18n-placeholder]').forEach(el => el.placeholder = translations[lang][el.dataset.i18nPlaceholder]);
         document.querySelectorAll('option[data-i18n]').forEach(el => el.textContent = translations[lang][el.dataset.i18n]);

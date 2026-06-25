@@ -128,9 +128,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 const isLast = container.classList.contains('last-in-row');
                 if (isFirst) card.classList.add('is-first-in-row');
                 if (isLast) card.classList.add('is-last-in-row');
+                
                 titleEl.setAttribute('data-i18n', `services.${serviceId}.title`);
                 const textKey = `services.${serviceId}.modalText`;
                 textEl.setAttribute('data-i18n', textKey);
+                
+                titleEl.innerHTML = card.querySelector('h3').innerHTML;
+                textEl.innerHTML = card.querySelector('.hidden-modal-text').innerHTML;
+                
                 galleryEl.innerHTML = '';
                 if (serviceImages[serviceId] && serviceImages[serviceId].length > 0) {
                     const template = document.getElementById('service-img-template');
