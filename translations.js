@@ -458,5 +458,11 @@ window.TRANSLATIONS_RAW = {
   "privacy.contact.desc": { 
     "en": "If you have any questions about this Privacy Policy, please contact us via the contact form on our home page.",
     "es": "Si tienes alguna pregunta sobre esta Política de Privacidad, contáctanos a través del formulario de contacto en nuestra página principal."
-  }
+  },
+  "404.title": { "en": "Page Not Found", "es": "Página No Encontrada" },
+  "404.desc": { 
+    "en": "Sorry, the page you are looking for does not exist or has been moved.",
+    "es": "Lo sentimos, la página que estás buscando no existe o ha sido movida."
+  },
+  "404.back": { "en": "Back to Home", "es": "Volver al Inicio" }
 }

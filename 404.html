@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="canonical" href="https://upstageprod.com/privacy">
-    <title>Política de Privacidad | UPSTAGE PROD</title>
-    <meta name="description" content="Política de privacidad de UPSTAGE PROD.">
+	<link rel="canonical" href="https://upstageprod.com/404.html">
+    <title>404 - Página No Encontrada | UPSTAGE PROD</title>
+    <meta name="description" content="Página no encontrada en UPSTAGE PROD.">
 	<link rel="icon" type="image/svg+xml" href="favicon.svg">
 	<link rel="icon" type="image/x-icon" href="favicon.ico" sizes="any">
 	<link rel="apple-touch-icon" href="apple.png">
@@ -22,42 +22,94 @@
             padding: calc(var(--spacing-xl) + 88px) 0 var(--spacing-xl);
             min-height: calc(100vh - 300px);
             background: linear-gradient(to bottom, var(--bg-color), #050505);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
         }
         
         .privacy-content {
             max-width: 800px;
             margin: 0 auto;
             padding: 40px;
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid var(--glass-border);
-            border-radius: 16px;
-            backdrop-filter: blur(10px);
         }
 
         .privacy-content h1 {
-            font-size: 2.5rem;
+            font-size: 24rem;
             margin-bottom: 0.5rem;
             color: #fff;
-        }
-
-        .privacy-content .last-updated {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            margin-bottom: 2rem;
-            display: block;
+            line-height: 1;
+            font-family: var(--font-alt);
+            font-weight: 900;
         }
 
         .privacy-content h2 {
-            font-size: 1.5rem;
-            margin-top: 2rem;
+            font-size: 2rem;
+            margin-top: 1rem;
             margin-bottom: 1rem;
-            color: var(--primary);
+            color: #fff;
         }
 
         .privacy-content p {
             color: var(--text-muted);
             line-height: 1.7;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        #ledCanvas {
+            opacity: 0;
+            transition: opacity 1s ease;
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            will-change: transform;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            background-image: radial-gradient(circle, rgba(139, 69, 0, 0.08) 1.2px, transparent 1.8px);
+            background-size: 15.8px 15.8px;
+            background-position: center;
+            z-index: 0;
+        }
+
+        #ledCanvas.visible {
+            opacity: 1;
+        }
+
+        .privacy-mask {
+            position: absolute;
+            inset: 0;
+            background: rgba(8, 8, 8, 0.96);
+            mix-blend-mode: multiply;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: calc(var(--spacing-xl) + 88px) 0 var(--spacing-xl);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .content-overlay {
+            position: relative;
+            z-index: 2;
+        }
+
+        .invisible-spacer {
+            opacity: 0;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        .outline-text-404 {
+            -webkit-text-stroke: 0.4rem #cccccc;
+            color: transparent !important;
+            paint-order: stroke;
+            pointer-events: none;
         }
     </style>
 </head>
@@ -115,7 +167,7 @@
                 </div>
             </div>
         </header>
-        
+
         <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
         <div class="mobile-menu" id="mobile-menu">
             <div class="mobile-menu-header">
@@ -136,24 +188,25 @@
         </div>
 
         <section class="privacy-section">
-            <div class="container">
+            <canvas id="ledCanvas"></canvas>
+            
+            <div class="privacy-mask">
+                <div class="container">
+                    <div class="privacy-content">
+                        <h1>404</h1>
+                        <h2 class="invisible-spacer">Página No Encontrada</h2>
+                        <p class="invisible-spacer">Lo sentimos, la página que estás buscando no existe o ha sido movida.</p>
+                        <a href="#" class="btn btn-primary invisible-spacer">Volver al Inicio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container content-overlay">
                 <div class="privacy-content">
-                    <h1 data-i18n="privacy.title">Política de Privacidad</h1>
-                    <span class="last-updated" data-i18n="privacy.lastUpdated">Última actualización: Junio 2026</span>
-
-                    <p data-i18n="privacy.intro">En UPSTAGE PROD, estamos comprometidos a proteger tu privacidad. Esta política explica cómo recopilamos, usamos y salvaguardamos tu información personal cuando usas nuestro sitio web.</p>
-
-                    <h2 data-i18n="privacy.dataCollected.title">Información que Recopilamos</h2>
-                    <p data-i18n="privacy.dataCollected.desc">Cuando envías un formulario de contacto o solicitud de presupuesto, recopilamos la siguiente información personal: Nombre, Número de teléfono, Correo electrónico, Organización/Empresa, Detalles del proyecto y tu Mensaje.</p>
-
-                    <h2 data-i18n="privacy.cookies.title">Almacenamiento Local y Cookies</h2>
-                    <p data-i18n="privacy.cookies.desc">Utilizamos el Almacenamiento Local de tu navegador para guardar tu preferencia de idioma (`upstage_lang`) y los datos del carrito (`upstage_cart`). No utilizamos cookies de rastreo ni de marketing de terceros.</p>
-
-                    <h2 data-i18n="privacy.howWeUse.title">Cómo Usamos tu Información</h2>
-                    <p data-i18n="privacy.howWeUse.desc">La información que proporcionas se utiliza exclusivamente para responder a tus consultas, proporcionar presupuestos de producción precisos y facilitar los servicios del evento. No vendemos ni compartimos tus datos personales con terceros.</p>
-
-                    <h2 data-i18n="privacy.contact.title">Contáctanos</h2>
-                    <p data-i18n="privacy.contact.desc">Si tienes alguna pregunta sobre esta Política de Privacidad, contáctanos a través del formulario de contacto en nuestra página principal.</p>
+                    <h1 class="outline-text-404">404</h1>
+                    <h2 data-i18n="404.title">Página No Encontrada</h2>
+                    <p data-i18n="404.desc">Lo sentimos, la página que estás buscando no existe o ha sido movida.</p>
+                    <a href="index.html" class="btn btn-primary" data-i18n="404.back">Volver al Inicio</a>
                 </div>
             </div>
         </section>
@@ -339,5 +392,6 @@
 
     <script src="translations.js"></script>
     <script src="common.js"></script>
+    <script src="404-led.js"></script>
 </body>
 </html>
