@@ -13,8 +13,8 @@ window.TRANSLATIONS_RAW = {
     "es": "ELEVA<br>TU<br>PRODUCCIÓN"
   },
   "hero.subtitle": {
-    "en": "Stage design · Lighting · Soundvision · Visual scenography · Technical direction · Show control · ",
-    "es": "Diseño de escenario · Iluminación · Soundvision · Escenografía visual · Dirección técnica · Control de show · "
+    "en": "Stage design · Lighting · Soundvision · Visual scenography · Technical direction · Show control ·&nbsp;",
+    "es": "Diseño de escenario · Iluminación · Soundvision · Escenografía visual · Dirección técnica · Control de show ·&nbsp;"
   },
   "hero.browse": { "en": "Browse Catalog", "es": "Ver Catálogo" },
   "hero.services": { "en": "Our Services", "es": "Nuestros Servicios" },
