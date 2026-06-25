@@ -229,6 +229,7 @@ a {
 	padding: 0 20px;
 }
 
+/*
 .main-nav {
     display: flex;
     align-items: center;
@@ -239,6 +240,7 @@ a {
     gap: 30px;
     align-items: center;
 }
+*/
 
 .menu-toggle {
     display: none;
@@ -319,6 +321,7 @@ a {
     align-items: center;
 }
 
+/*
 .mobile-menu-nav {
     flex: 1;
     display: flex;
@@ -340,6 +343,7 @@ a {
     background: rgba(255, 255, 255, 0.05);
     color: var(--primary);
 }
+*/
 
 .mobile-nav-link.btn {
     margin-top: 20px;
