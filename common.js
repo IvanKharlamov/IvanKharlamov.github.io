@@ -22,16 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     */
+    let translationsLoaded = false;
     const translations = { en: {}, es: {} };
-    if (window.TRANSLATIONS_RAW) {
-        Object.entries(window.TRANSLATIONS_RAW).forEach(([key, val]) => {
-            translations.en[key] = val.en;
-            translations.es[key] = val.es;
-        });
-    }
+
     window.currentLang = localStorage.getItem('upstage_lang') || 'es';
-    window.changeLanguage = (lang) => {
-        if (!translations[lang]) return;
+
+    const applyTranslations = (lang) => {
         window.currentLang = lang;
         localStorage.setItem('upstage_lang', lang);
         document.querySelectorAll('.lang-opt').forEach(el => el.classList.toggle('active', el.dataset.lang === lang));
@@ -42,8 +38,35 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('[data-i18n-placeholder]').forEach(el => el.placeholder = translations[lang][el.dataset.i18nPlaceholder]);
         document.querySelectorAll('option[data-i18n]').forEach(el => el.textContent = translations[lang][el.dataset.i18n]);
         if (typeof window.applyFilters === 'function' && window.products) window.applyFilters();
-        /* CATALOG FUNCTIONALITY window.cartUI?.render(); */
     };
+
+    window.changeLanguage = (lang) => {
+        if (lang === 'es' && !translationsLoaded) {
+            window.currentLang = lang;
+            localStorage.setItem('upstage_lang', lang);
+            document.querySelectorAll('.lang-opt').forEach(el => el.classList.toggle('active', el.dataset.lang === lang));
+            return;
+        }
+
+        if (!translationsLoaded) {
+            const script = document.createElement('script');
+            script.src = 'translations.js';
+            script.onload = () => {
+                if (window.TRANSLATIONS_RAW) {
+                    Object.entries(window.TRANSLATIONS_RAW).forEach(([key, val]) => {
+                        translations.en[key] = val.en;
+                        translations.es[key] = val.es;
+                    });
+                }
+                translationsLoaded = true;
+                applyTranslations(lang);
+            };
+            document.head.appendChild(script);
+        } else {
+            applyTranslations(lang);
+        }
+    };
+
     document.querySelectorAll('.lang-opt').forEach(btn => btn.addEventListener('click', () => window.changeLanguage(btn.dataset.lang)));
 
     if (window.currentLang !== 'es') {
