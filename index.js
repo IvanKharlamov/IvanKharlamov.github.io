@@ -183,3 +183,304 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 window.addEventListener('load', () => { document.body.classList.add('loaded'); });
 
+
+document.addEventListener('DOMContentLoaded', () => {
+    const canvas = document.getElementById('hero-canvas');
+	const canvassolid = document.getElementById('hero-canvas-solid');
+        const ctx = canvas.getContext('2d');
+		const ctxsolid = canvassolid.getContext('2d');
+        let width, height, scaleFactor, particles = [];
+        const CONFIG = {
+            baseCount: 225,
+            baseDist: 85,
+            gatherRadius: 180,
+            lockRadius: 260,
+            lerp: 0.05,
+			freeSpeed: 0.3,
+            followSpeed: 0.03,
+            labelChance: 0.25,
+            transSpeed: 0.04,
+            upgradeThreshold: 5,
+            glitchStrength: 200,
+            glitchFreq: 0.01,
+            scaleBase: 70,
+            scaleVar: 0.25,
+            vertexScaleMult: 2,
+			shapeGracePeriod: 1000
+        };
+        const techLabels = [
+            "LX12ΓåÆ", "DMX(?)", "CH7*", "U4#", "FX-A", "BUS-?", "AUX+", "GND!",
+            "16A-3P", "32A~", "PH3", "3├ÿ", "V230~", "Hz50", "RX-1", "TX(9)",
+            "PWR-2", "PSU(A)", "SIG-L", "I/O", "DM3<", "LX05(C)", "UNI2(B)",
+            "SUB4.1", "CH09-", "FX7ΓåÆ", "REF(3)", "ALT-1", "TMP*", "LIVE", "CUT", "OFF"
+        ];
+        let mouse = { x: -1000, y: -1000 }, rotation = { y: 0, p: 0 }, isIn = false;
+        let shapeCenter = null, shapePoints = [], shapeEdges = [], activeGroup = [], ghostGroup = [], ghostEdges = [], shapeState = 'idle';
+        let currentScale = 70;
+		let shapeStartTime = 0;
+		let currentShapeSettings = null;
+		let lastShapeID = -1;
+        const Geo = {
+            link: (pts, edges) => ({ pts, edges }),
+            pyramid: (n, s) => {
+                const pts = [{ x: 0, y: -s, z: 0 }], edges = [], sides = n - 1;
+                for (let i = 0; i < sides; i++) {
+                    const a = (i / sides) * Math.PI * 2;
+                    pts.push({ x: Math.cos(a) * s, y: s * 0.6, z: Math.sin(a) * s });
+                    edges.push([0, i + 1], [i + 1, (i === sides - 1) ? 1 : i + 2]);
+                }
+                return Geo.link(pts, edges);
+            },
+            prism: (sides, s) => {
+                const pts = [], edges = [];
+                for (let i = 0; i < sides; i++) {
+                    const a = (i / sides) * Math.PI * 2;
+                    pts.push({ x: Math.cos(a) * s, y: -s * 0.5, z: Math.sin(a) * s }, { x: Math.cos(a) * s, y: s * 0.5, z: Math.sin(a) * s });
+                    const t = i * 2, b = i * 2 + 1, nt = (i === sides - 1) ? 0 : (i + 1) * 2, nb = (i === sides - 1) ? 1 : (i + 1) * 2 + 1;
+                    edges.push([t, b], [t, nt], [b, nb]);
+                }
+                return Geo.link(pts, edges);
+            },
+            dipyramid: (n, s) => {
+                const pts = [{ x: 0, y: -s, z: 0 }, { x: 0, y: s, z: 0 }], edges = [], sides = n - 2;
+                for (let i = 0; i < sides; i++) {
+                    const a = (i / sides) * Math.PI * 2;
+                    pts.push({ x: Math.cos(a) * s, y: 0, z: Math.sin(a) * s });
+                    const cur = i + 2, nxt = (i === sides - 1) ? 2 : i + 3;
+                    edges.push([0, cur], [1, cur], [cur, nxt]);
+                }
+                return Geo.link(pts, edges);
+            },
+            plane: (n, s) => {
+                let cols = 0;
+                for (let i = Math.floor(Math.sqrt(n)); i >= 3; i--) { if (n % i === 0 && (n / i) >= 3) { cols = i; break; } }
+                if (!cols) return null;
+                const pts = [], edges = [], rows = n / cols, sp = (s * 2.8) / Math.max(cols, rows);
+                for (let r = 0; r < rows; r++) {
+                    for (let c = 0; c < cols; c++) {
+                        const idx = r * cols + c;
+                        pts.push({ x: (c - (cols - 1) / 2) * sp, y: (r - (rows - 1) / 2) * sp, z: 0 });
+                        if (c < cols - 1) edges.push([idx, idx + 1]);
+                        if (r < rows - 1) edges.push([idx, idx + cols]);
+                    }
+                }
+                return Geo.link(pts, edges);
+            },
+            sphere: (n, s) => {
+                const pts = [], edges = [], phi = Math.PI * (3 - Math.sqrt(5));
+                for (let i = 0; i < n; i++) {
+                    const y = 1 - (i / (n - 1)) * 2, r = Math.sqrt(1 - y * y), t = phi * i;
+                    pts.push({ x: Math.cos(t) * r * s, y: y * s, z: Math.sin(t) * r * s });
+                }
+                for (let i = 0; i < n; i++) for (let j = i + 1; j < n; j++) if (Math.hypot(pts[i].x - pts[j].x, pts[i].y - pts[j].y, pts[i].z - pts[j].z) < s * 1.1) edges.push([i, j]);
+                return Geo.link(pts, edges);
+            },
+			calculate: (type, n, s) => Geo[type]?.(type === 'prism' ? n / 2 : n, s) || Geo.pyramid(n, s),
+			getNewShapeSettings: (n) => {
+				const rs = (1 + (Math.random() * 2 - 1) * CONFIG.scaleVar), gf = 1 + (n * CONFIG.vertexScaleMult) / 100;
+				let p = n <= 5 ? ['pyramid', 'dipyramid'] : n <= 14 ? ['pyramid', 'dipyramid', (n % 2 === 0 ? 'prism' : 'pyramid')] : ['plane', 'sphere', 'pyramid', 'dipyramid'];
+				let c = p.filter(t => t !== lastShapeID);
+				return { type: c[Math.floor(Math.random() * (c.length || p.length))] || p[0], randScale: rs, growthFactor: gf };
+			}
+        };
+        class Particle {
+            constructor(id) {
+                this.id = id;
+                this.reset(true);
+            }
+            reset(rand = false) {
+				this.rx = rand ? Math.random() : this.x / width;
+				this.ry = rand ? Math.random() : this.y / height;
+				this.x = this.rx * width; this.y = this.ry * height;
+                this.vx = (Math.random() - 0.5) * CONFIG.freeSpeed * scaleFactor;
+                this.vy = (Math.random() - 0.5) * CONFIG.freeSpeed * scaleFactor;
+                this.mode = 'free'; this.shapeIndex = -1; this.trans = 0;
+                this.label = Math.random() < CONFIG.labelChance ? techLabels[Math.floor(Math.random() * techLabels.length)] : null;
+                this.glitchX = this.glitchY = 0;
+            }
+            update(dt = 1) {
+                const transFactor = 1 - Math.pow(1 - CONFIG.transSpeed, dt);
+                this.trans += ((this.mode === 'shape' ? 1 : 0) - this.trans) * transFactor;
+                if (this.mode === 'shape' && Math.random() < (1 - Math.pow(1 - CONFIG.glitchFreq, dt))) {
+					const gs = currentScale / CONFIG.scaleBase;
+                    this.glitchX = (Math.random() - 0.5) * CONFIG.glitchStrength * gs;
+                    this.glitchY = (Math.random() - 0.5) * CONFIG.glitchStrength * gs;
+                } else { 
+                    const glitchDecay = Math.pow(0.7, dt);
+                    this.glitchX *= glitchDecay; this.glitchY *= glitchDecay; 
+                }
+                if (this.mode === 'free') {
+                    this.x = (this.x + this.vx * dt + width) % width;
+                    this.y = (this.y + this.vy * dt + height) % height;
+                } else if (shapeState === 'active' && shapePoints[this.shapeIndex]) {
+                    const p = shapePoints[this.shapeIndex], cy = Math.cos(rotation.y), sy = Math.sin(rotation.y), cp = Math.cos(rotation.p), sp = Math.sin(rotation.p);
+                    const dx = p.x * cy - p.z * sy, dz = p.x * sy + p.z * cy, dy = p.y * cp - dz * sp;
+                    const lerpFactor = 1 - Math.pow(1 - CONFIG.lerp, dt);
+                    this.x += (dx + shapeCenter.x + this.glitchX - this.x) * lerpFactor;
+                    this.y += (dy + shapeCenter.y + this.glitchY - this.y) * lerpFactor;
+                }
+				this.rx = this.x / width; this.ry = this.y / height;
+            }
+            draw(ox = 0, oy = 0) {
+                const dx = this.x + ox, dy = this.y + oy;
+                if (dx < -20 || dx > width + 20 || dy < -20 || dy > height + 20) return;
+                ctx.fillStyle = `rgba(255,255,255,${0.4 + this.trans * 0.6})`;
+                ctx.beginPath(); ctx.arc(dx, dy, (2.4 + this.trans) * scaleFactor, 0, Math.PI * 2); ctx.fill();
+                if (this.label) {
+                    let txt = (this.mode === 'shape' && Math.random() > 0.98) ? "ERR" : this.label;
+                    ctx.font = `${13 * scaleFactor}px monospace`; ctx.fillStyle = `rgba(255,255,255,${0.15 + this.trans * 0.5})`;
+                    ctx.fillText(txt, dx + 8, dy + 3);
+                }
+            }
+        }
+        const renderFullStructure = (group, edges, ghost = false) => {
+			const needsTilingX = shapeCenter.x < currentScale || shapeCenter.x > width - currentScale;
+			const needsTilingY = shapeCenter.y < currentScale || shapeCenter.y > height - currentScale;
+			for (let ox = needsTilingX ? -1 : 0; ox <= (needsTilingX ? 1 : 0); ox++) {
+				for (let oy = needsTilingY ? -1 : 0; oy <= (needsTilingY ? 1 : 0); oy++) {
+                    const offX = ox * width, offY = oy * height;
+                    edges.forEach(e => {
+                        const p1 = group[e[0]], p2 = group[e[1]];
+                        if (p1 && p2) {
+                            const alpha = Math.min(p1.trans, p2.trans) * (ghost ? 0.3 : 0.7);
+                            if (alpha < 0.02) return;
+							ctx.lineWidth = 2.0 * scaleFactor;
+                            ctx.strokeStyle = `rgba(255,255,255,${alpha})`;
+                            ctx.beginPath(); ctx.moveTo(p1.x + offX, p1.y + offY); ctx.lineTo(p2.x + offX, p2.y + offY); ctx.stroke();
+                        }
+                    });
+                    if (!ghost) group.forEach(p => p.draw(offX, offY));
+                }
+            }
+        };
+		const triggerShape = (potential) => {
+			if (shapeState === 'active' && (Date.now() - shapeStartTime < CONFIG.shapeGracePeriod)) return; 
+			if (activeGroup.length > 0) release();
+			activeGroup = potential.sort((a, b) => a.id - b.id);
+			currentShapeSettings = Geo.getNewShapeSettings(activeGroup.length);
+			lastShapeID = currentShapeSettings.type;
+			currentScale = CONFIG.scaleBase * currentShapeSettings.randScale * currentShapeSettings.growthFactor * scaleFactor;
+			const data = Geo.calculate(currentShapeSettings.type, activeGroup.length, currentScale);
+			shapeStartTime = Date.now();
+			shapePoints = data.pts; 
+			shapeEdges = data.edges;
+			shapeCenter = { x: mouse.x, y: mouse.y };
+			activeGroup.forEach((p, i) => { p.mode = 'shape'; p.shapeIndex = i; });
+			shapeState = 'active';
+		};
+        const release = () => {
+            if (activeGroup.length > 0) {
+                ghostGroup = activeGroup.map(p => ({ x: p.x, y: p.y, trans: p.trans }));
+                ghostEdges = [...shapeEdges];
+                activeGroup.forEach(p => { p.mode = 'free'; p.vx = (Math.random() - 0.5) * 1.5 * scaleFactor; p.vy = (Math.random() - 0.5) * 1.5 * scaleFactor; });
+            }
+            activeGroup = []; shapeState = 'idle';
+        };
+		const init = () => {
+			const ratioX = shapeCenter ? shapeCenter.x / width : null;
+			const ratioY = shapeCenter ? shapeCenter.y / height : null;
+			width = canvas.width = canvassolid.width = canvas.parentElement.offsetWidth;
+			height = canvas.height = canvassolid.height = Math.max(100, canvas.parentElement.offsetHeight);
+			scaleFactor = height / 1080;
+			if (shapeCenter && ratioX !== null) {
+				shapeCenter.x = ratioX * width;
+				shapeCenter.y = ratioY * height;
+			}
+			if (particles.length > 0) {
+				particles.forEach(p => {
+					p.x = p.rx * width;
+					p.y = p.ry * height;
+					const angle = Math.atan2(p.vy, p.vx);
+					p.vx = Math.cos(angle) * CONFIG.freeSpeed * scaleFactor;
+					p.vy = Math.sin(angle) * CONFIG.freeSpeed * scaleFactor;
+				});
+				if (shapeState === 'active' && activeGroup.length > 0 && currentShapeSettings) {
+					currentScale = CONFIG.scaleBase * currentShapeSettings.randScale * currentShapeSettings.growthFactor * scaleFactor;
+					const data = Geo.calculate(currentShapeSettings.type, activeGroup.length, currentScale);
+					shapePoints = data.pts;
+					shapeEdges = data.edges;
+				}
+			} else {
+				const count = Math.floor(CONFIG.baseCount * (width / height / 1.77));
+				for (let i = 0; i < count; i++) particles.push(new Particle(i));
+			}
+			updateMousePos(mouse.x, mouse.y);
+		};
+        let prevHeroWidth = window.innerWidth;
+        window.addEventListener('resize', () => {
+            if (window.visualViewport && Math.abs(window.visualViewport.scale - 1) > 0.01) return;
+            if (window.innerWidth === prevHeroWidth) return;
+            prevHeroWidth = window.innerWidth;
+            init();
+        });
+		window.addEventListener('pointermove', e => {
+			if (e.pointerType === 'mouse' || e.pointerType === 'touch') {
+				const r = canvas.getBoundingClientRect();
+				updateMousePos(e.clientX - r.left, e.clientY - r.top);
+			}
+		});
+		window.addEventListener('pointerdown', e => {
+			const r = canvas.getBoundingClientRect();
+			updateMousePos(e.clientX - r.left, e.clientY - r.top);
+			isIn = true;
+		});
+		const updateMousePos = (x, y) => {
+			mouse.x = x;
+			mouse.y = y;
+			isIn = (mouse.x >= 0 && mouse.x <= width && mouse.y >= 0 && mouse.y <= height);
+		};
+        init();
+        let lastAnimateTime = performance.now();
+        function animate(currentTime) {
+            const dt = (currentTime - lastAnimateTime) / (1000 / 60);
+            lastAnimateTime = currentTime;
+            const validDt = Math.min(dt || 1, 5); 
+
+            ctx.clearRect(0, 0, width, height);
+            if (isIn) {
+                const potential = particles.filter(p => Math.hypot(p.x - mouse.x, p.y - mouse.y) < CONFIG.gatherRadius * scaleFactor);
+                if (shapeState === 'idle' && potential.length >= 4) triggerShape(potential);
+                else if (shapeState === 'active') {
+                    if (Math.hypot(mouse.x - shapeCenter.x, mouse.y - shapeCenter.y) > CONFIG.lockRadius * scaleFactor) release();
+                    else if (potential.length > activeGroup.length + CONFIG.upgradeThreshold) triggerShape(potential);
+                }
+            } else if (shapeState !== 'idle') release();
+            for (let i = 0; i < particles.length; i++) {
+                const p1 = particles[i];
+                for (let j = i + 1; j < particles.length; j++) {
+                    const p2 = particles[j];
+                    const d = Math.hypot(p1.x - p2.x, p1.y - p2.y);
+                    if (d < CONFIG.baseDist * scaleFactor && p1.mode === 'free' && p2.mode === 'free') {
+						ctx.lineWidth = 1.75 * scaleFactor;
+                        ctx.strokeStyle = `rgba(255,255,255,${(1 - d / (CONFIG.baseDist * scaleFactor)) * 0.5})`;
+                        ctx.beginPath(); ctx.moveTo(p1.x, p1.y); ctx.lineTo(p2.x, p2.y); ctx.stroke();
+                    }
+                }
+            }
+            if (shapeState === 'active') {
+                rotation.y += 0.008 * validDt; rotation.p += 0.005 * validDt;
+                const followFactor = 1 - Math.pow(1 - CONFIG.followSpeed, validDt);
+                shapeCenter.x += (mouse.x - shapeCenter.x) * followFactor;
+                shapeCenter.y += (mouse.y - shapeCenter.y) * followFactor;
+                renderFullStructure(activeGroup, shapeEdges, false);
+            }
+            if (ghostGroup.length > 0) {
+                let visible = false;
+                ghostEdges.forEach(e => {
+                    const p1 = ghostGroup[e[0]], p2 = ghostGroup[e[1]];
+                    if (p1 && p2 && p1.trans > 0.01) {
+						ctx.lineWidth = 1.75 * scaleFactor;
+                        ctx.strokeStyle = `rgba(255,255,255,${Math.min(p1.trans, p2.trans) * 0.3})`;
+                        ctx.beginPath(); ctx.moveTo(p1.x, p1.y); ctx.lineTo(p2.x, p2.y); ctx.stroke();
+                        visible = true;
+                    }
+                });
+                const ghostDecay = Math.pow(0.88, validDt);
+                ghostGroup.forEach(p => p.trans *= ghostDecay);
+                if (!visible) ghostGroup = [];
+            }
+            particles.forEach(p => { if (p.mode === 'free') { p.update(validDt); p.draw(); } else { p.update(validDt); } });
+            requestAnimationFrame(animate);
+        }
+        requestAnimationFrame(animate);
+});
