@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /inventory
+Disallow: /inventory.html
 
 Sitemap: https://upstageprod.com/sitemap.xml

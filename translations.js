@@ -84,10 +84,7 @@ window.TRANSLATIONS_RAW = {
     "en": "Our approach is practical: every solution is designed to be built, installed, and operated efficiently under actual event conditions.",
     "es": "Nuestro enfoque es práctico: cada solución está diseñada para ser construida, instalada y operada de manera eficiente bajo condiciones reales del evento."
   },
-  "about.desc5": {
-    "en": "Our inventory is maintained and prepared for immediate deployment.",
-    "es": "Nuestro inventario se mantiene rigurosamente y siempre está preparado para un despliegue inmediato."
-  },
+
   "about.meetTeam": { "en": "Meet The Team", "es": "Conoce al Equipo" },
 
   "about.gallery.warehouse": { "en": "Warehouse", "es": "Almacén" },

@@ -125,8 +125,16 @@
 /* Each horizontal track */
 .carousel-track {
     display: flex;
-    gap: 15px;
+    gap: 0;
     width: max-content;
+}
+
+.track-inner {
+    display: flex;
+    gap: 15px;
+    padding-right: 15px;
+    width: max-content;
+    will-change: transform;
 }
 
 .carousel-track img {
@@ -137,30 +145,40 @@
     filter: grayscale(60%) contrast(0.9) brightness(0.8);
     transition: var(--transition-smooth);
     cursor: pointer;
+    pointer-events: auto;
+    transform: translateZ(0);
 }
 
 .carousel-track img:hover {
     opacity: 1;
     filter: grayscale(0%) contrast(1) brightness(1);
-    transform: scale(1.05);
+    transform: scale(1.05) translateZ(0);
 }
 
 /* Infinite Scrolling Animations */
-.track-1 {
+.track-1 .track-inner {
     animation: scroll-left 90s linear infinite;
 }
 
-.track-2 {
+.track-2 .track-inner {
     animation: scroll-left 70s linear infinite reverse; /* Moves right */
 }
 
-.track-3 {
+.track-3 .track-inner {
     animation: scroll-left 100s linear infinite;
+}
+
+.carousel-track .track-inner {
+    animation-play-state: paused;
+}
+
+body.loaded .carousel-track .track-inner {
+    animation-play-state: running;
 }
 
 @keyframes scroll-left {
     0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-25% - 3.75px)); }
+    100% { transform: translateX(-100%); }
 }
 
 @media (max-width: 1024px) {
