@@ -113,7 +113,44 @@ document.addEventListener('DOMContentLoaded', () => {
     initSocialSharing();
 });
 let activeDatePicker = null;
-const t = (key) => window.TRANSLATIONS_RAW?.[key]?.[window.currentLang || 'es'] || key;
+
+const JS_FALLBACK_ES = {
+    "toast.invalidDates": "Rango de fechas inválido. La fecha de fin debe ser posterior a la de inicio.",
+    "toast.itemRemoved": "Artículo eliminado del presupuesto",
+    "toast.selectValidDates": "Por favor selecciona fechas de alquiler válidas.",
+    "toast.itemAdded": "¡Artículo añadido al presupuesto!",
+    "toast.emptyQuote": "Tu presupuesto está vacío. Añade artículos para solicitar un presupuesto.",
+    "toast.quoteSubmitted": "¡Solicitud de Presupuesto Enviada! Te contactaremos pronto.",
+    "quote.error.message": "Algo salió mal. Por favor intenta de nuevo o contáctanos directamente.",
+    "cart.empty": "Tu carrito está vacío.",
+    "quote.cart.item": "Artículo",
+    "quote.cart.dates": "Fechas",
+    "quote.cart.price": "Precio",
+    "cart.customRate": "Tarifa Personalizada",
+    "cart.days": "días",
+    "cart.estimatedTotal": "Total Estimado",
+    "quote.validation.email": "Por favor ingresa un correo electrónico válido",
+    "quote.validation.phone": "Por favor ingresa un número de teléfono válido (ej: +34 612 345 678)",
+    "quote.form.sending": "Enviando...",
+    "rental.perDay": "/ día",
+    "product.details": "Ver Detalles",
+    "product.addToQuote": "Añadir al Presupuesto",
+    "catalog.empty": "No se encontraron productos.",
+    "rental.daysAndUnits": "{{days}} días x {{qty}} ud.",
+    "rental.customRate": "Tarifa Personalizada",
+    "pricing.title": "Precios del Alquiler:",
+    "pricing.day1": "1 Día: 100% de la Tarifa",
+    "pricing.day2_4": "2-4 Días: 50% de la Tarifa por Día Extra",
+    "pricing.day5_6": "5-6 Días: 25% de la Tarifa por Día Extra",
+    "pricing.day7": "7+ Días: ¡Semana Gratis!",
+    "pricing.note": "*El precio final se calculará automáticamente.",
+    "rental.selectValidDates": "Selecciona Fechas Válidas",
+    "rental.selectDates": "Seleccionar Fechas",
+    "pricing.selectDates": "Seleccionar Fechas",
+    "toast.emptyQuote": "Tu presupuesto está vacío. Añade artículos para solicitar un presupuesto."
+};
+
+const t = (key) => window.TRANSLATIONS_RAW?.[key]?.[window.currentLang || 'es'] || JS_FALLBACK_ES[key] || key;
 
 class DatePicker {
     constructor(pickerElement) {
@@ -760,7 +797,7 @@ class QuoteFormsManager {
                 this.closeGeneralQuoteModal(); this.closeCartQuoteModal();
                 this.showSuccess(); form.reset();
                 if (extraData.message?.includes('QUOTE ITEMS')) window.cartManager.clearCart();
-            } else this.showError(data.message);
+            } else this.showError();
         } catch (e) { this.showError(); }
         finally { btn.textContent = original; btn.disabled = false; }
     }
