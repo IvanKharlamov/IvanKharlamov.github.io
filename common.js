@@ -797,8 +797,18 @@ class QuoteFormsManager {
                 this.closeGeneralQuoteModal(); this.closeCartQuoteModal();
                 this.showSuccess(); form.reset();
                 if (extraData.message?.includes('QUOTE ITEMS')) window.cartManager.clearCart();
-            } else this.showError();
-        } catch (e) { this.showError(); }
+            } else {
+                console.error("Web3Forms API Error:", data);
+                if (data.message && data.message.toLowerCase().includes('spam')) {
+                    this.showError(window.currentLang === 'es' ? 'Mensaje marcado como spam. Por favor, usa datos reales y evita la palabra "test".' : 'Message marked as spam. Please use real data and avoid dummy text like "test".');
+                } else {
+                    this.showError();
+                }
+            }
+        } catch (e) {
+            console.error("Web3Forms Fetch Error:", e);
+            this.showError();
+        }
         finally { btn.textContent = original; btn.disabled = false; }
     }
     async handleContactFormSubmit(form) { await this.handleFormSubmit(form, 'Contact Form - UPSTAGE MADRID'); }
