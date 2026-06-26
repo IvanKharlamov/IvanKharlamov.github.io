@@ -140,7 +140,8 @@
 
 .carousel-track img {
     height: 30vh;
-    aspect-ratio: 1.5;
+    width: auto;
+    flex-shrink: 0;
     border-radius: 8px;
     object-fit: cover;
     opacity: 0.7;
