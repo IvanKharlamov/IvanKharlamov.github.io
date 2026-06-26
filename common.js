@@ -821,13 +821,13 @@ class QuoteFormsManager {
         */
     }
     closeGeneralQuoteModal() {
-        document.getElementById('general-quote-modal').classList.remove('active');
+        document.getElementById('general-quote-modal')?.classList.remove('active');
     }
     closeCartQuoteModal() {
-        document.getElementById('cart-quote-modal').classList.remove('active');
+        document.getElementById('cart-quote-modal')?.classList.remove('active');
     }
     closeSuccessModal() {
-        document.getElementById('quote-success-modal').classList.remove('active');
+        document.getElementById('quote-success-modal')?.classList.remove('active');
     }
 }
 
