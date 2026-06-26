@@ -953,6 +953,12 @@ a {
     border-radius: 8px;
 }
 
+@supports not (backdrop-filter: blur(10px)) {
+    .glass-card {
+        background: rgba(15, 15, 15, 0.95) !important;
+    }
+}
+
 .date-picker {
     position: relative;
     width: 100%;

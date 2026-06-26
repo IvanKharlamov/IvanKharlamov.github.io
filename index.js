@@ -419,12 +419,14 @@ document.addEventListener('DOMContentLoaded', () => {
             init();
         });
 		window.addEventListener('pointermove', e => {
+            if (e.target.closest('.contact-container')) return;
 			if (e.pointerType === 'mouse' || e.pointerType === 'touch') {
 				const r = canvas.getBoundingClientRect();
 				updateMousePos(e.clientX - r.left, e.clientY - r.top);
 			}
 		});
 		window.addEventListener('pointerdown', e => {
+            if (e.target.closest('.contact-container')) return;
 			const r = canvas.getBoundingClientRect();
 			updateMousePos(e.clientX - r.left, e.clientY - r.top);
 			isIn = true;

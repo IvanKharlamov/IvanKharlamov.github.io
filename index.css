@@ -16,6 +16,7 @@
 
 .hero-section {
     height: 100svh;
+    padding-top: 87px;
     position: relative;
     overflow: hidden;
     background-color: #000;
@@ -111,10 +112,10 @@
 /* Background Carousel (right 2/3 but absolutely positioned) */
 .hero-carousel-bg {
     position: absolute;
-    top: 0;
+    top: 87px;
     right: 0;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 87px);
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -194,6 +195,7 @@ body.loaded .carousel-track .track-inner {
     }
     .hero-carousel-bg {
         position: relative;
+        top: 0;
         width: 100%;
         height: 50vh;
         mask-image: linear-gradient(to bottom, black 0%, black 60%, transparent 100%);
