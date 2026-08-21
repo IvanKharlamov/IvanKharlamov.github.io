@@ -1671,3 +1671,17 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    gap: 0.5rem;
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.4);
+    border: none;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1DA851;
+    color: white;
+    box-shadow: 0 0 30px rgba(37, 211, 102, 0.6);
+}
