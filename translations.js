@@ -1,4 +1,4 @@
-window.TRANSLATIONS_RAW = {
+﻿window.TRANSLATIONS_RAW = {
   "nav.home": { "en": "Home", "es": "Inicio" },
   "nav.catalog": { "en": "Catalog", "es": "Catálogo" },
   "nav.services": { "en": "Services", "es": "Servicios" },
@@ -461,6 +461,6 @@ window.TRANSLATIONS_RAW = {
     "en": "Sorry, the page you are looking for does not exist or has been moved.",
     "es": "Lo sentimos, la página que estás buscando no existe o ha sido movida."
   },
-  "404.back": { "en": "Back to Home", "es": "Volver al Inicio" }
+  "404.back": { "en": "Back to Home", "es": "Volver al Inicio" },
   "btn.whatsapp": { "en": "Contact on WhatsApp", "es": "Contactar por WhatsApp" },
 }
