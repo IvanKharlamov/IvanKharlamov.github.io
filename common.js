@@ -1,4 +1,13 @@
+
+window.trackEvent = function(eventName, eventParams) {
+    if (typeof gtag === 'function') {
+        gtag('event', eventName, eventParams);
+    } else {
+        console.log('GA Track:', eventName, eventParams);
+    }
+};
 document.addEventListener('DOMContentLoaded', () => {
+    window.trackEvent('visit_page', { page_path: window.location.pathname });
     const header = document.querySelector('.site-header');
     window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 50));
     const menuToggle = document.getElementById('menu-toggle'),
@@ -30,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const applyTranslations = (lang) => {
         window.currentLang = lang;
         localStorage.setItem('upstage_lang', lang);
+        window.trackEvent('change_language', { language: lang });
         document.querySelectorAll('.lang-opt').forEach(el => el.classList.toggle('active', el.dataset.lang === lang));
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.dataset.i18n;
@@ -48,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (lang === 'es' && !translationsLoaded) {
             window.currentLang = lang;
             localStorage.setItem('upstage_lang', lang);
+        window.trackEvent('change_language', { language: lang });
             document.querySelectorAll('.lang-opt').forEach(el => el.classList.toggle('active', el.dataset.lang === lang));
             return;
         }
@@ -98,6 +109,63 @@ document.addEventListener('DOMContentLoaded', () => {
         const timeout = setTimeout(remove, 40000);
         toast.querySelector('.toast-close').addEventListener('click', () => { clearTimeout(timeout); remove(); });
     };
+    
+    document.body.addEventListener('click', (e) => {
+        const target = e.target.closest('a');
+        if (!target) return;
+        
+        if (target.id === 'hero-quote-btn') {
+            window.trackEvent('open_form', { source: 'hero' });
+        } else if (target.id === 'hero-whatsapp-btn') {
+            window.trackEvent('whatsapp_click', { source: 'hero' });
+        } else if (target.classList.contains('whatsapp')) {
+            window.trackEvent('whatsapp_click', { source: 'footer' });
+        } else if (target.getAttribute('href') === '#contact' || target.getAttribute('href') === 'index.html#contact') {
+            if (target.closest('.site-header') || target.closest('.mobile-menu')) {
+                window.trackEvent('open_form', { source: 'header' });
+            }
+        }
+    });
+
+    
+    // Scroll and Section Tracking
+    let scrollStarted = false;
+    window.addEventListener('scroll', () => {
+        if (!scrollStarted && window.scrollY > 50) {
+            scrollStarted = true;
+            window.trackEvent('scroll_start', { page: window.location.pathname });
+        }
+    });
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const sectionName = entry.target.id || entry.target.className.split(' ')[0];
+                window.trackEvent('section_view', { section_name: sectionName });
+                sectionObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('section').forEach(section => {
+        sectionObserver.observe(section);
+    });
+
+    // Form Field Interaction Tracking
+    const trackedFields = new Set();
+    document.querySelectorAll('.quote-form input, .quote-form textarea').forEach(field => {
+        field.addEventListener('change', (e) => {
+            const fieldName = e.target.name || e.target.id;
+            if (fieldName && !trackedFields.has(fieldName)) {
+                trackedFields.add(fieldName);
+                window.trackEvent('form_interaction', { 
+                    form_id: e.target.closest('form').id,
+                    field_name: fieldName 
+                });
+            }
+        });
+    });
+
     const initSocialSharing = () => {
         const shareLinks = document.querySelectorAll('.share-link');
         const url = encodeURIComponent(window.location.href),
@@ -109,12 +177,14 @@ document.addEventListener('DOMContentLoaded', () => {
             whatsapp: `https://api.whatsapp.com/send?text=${text}%20${url}`
         };
         shareLinks.forEach(link => link.href = bases[Object.keys(bases).find(k => link.classList.contains(k))]);
+        shareLinks.forEach(link => link.addEventListener('click', () => window.trackEvent('social_click', { platform: link.title })));
     };
     initSocialSharing();
 });
 let activeDatePicker = null;
 
 const JS_FALLBACK_ES = {
+    "btn.whatsapp": "Contactar por WhatsApp",
     "toast.invalidDates": "Rango de fechas inválido. La fecha de fin debe ser posterior a la de inicio.",
     "toast.itemRemoved": "Artículo eliminado del presupuesto",
     "toast.selectValidDates": "Por favor selecciona fechas de alquiler válidas.",
@@ -582,6 +652,7 @@ class CartUI {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    window.trackEvent('visit_page', { page_path: window.location.pathname });
     if (document.getElementById('cart-drawer')) {
         window.cartUI = new CartUI(window.cartManager);
     }
@@ -796,6 +867,7 @@ class QuoteFormsManager {
             if (res.ok && data.success) {
                 this.closeGeneralQuoteModal(); this.closeCartQuoteModal();
                 this.showSuccess(); form.reset();
+                window.trackEvent('generate_lead', { form_type: subject });
                 if (extraData.message?.includes('QUOTE ITEMS')) window.cartManager.clearCart();
             } else {
                 console.error("Web3Forms API Error:", data);
@@ -832,6 +904,7 @@ class QuoteFormsManager {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    window.trackEvent('visit_page', { page_path: window.location.pathname });
     window.quoteFormsManager = new QuoteFormsManager();
 
     const generalQuoteForm = document.getElementById('general-quote-form');

@@ -462,4 +462,5 @@ window.TRANSLATIONS_RAW = {
     "es": "Lo sentimos, la página que estás buscando no existe o ha sido movida."
   },
   "404.back": { "en": "Back to Home", "es": "Volver al Inicio" }
+  "btn.whatsapp": { "en": "Contact on WhatsApp", "es": "Contactar por WhatsApp" },
 }

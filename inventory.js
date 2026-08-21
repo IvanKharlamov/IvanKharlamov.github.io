@@ -237,6 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const p = window.products.find(x => x.id === id), lang = window.currentLang || 'es';
         if (!p) return;
 
+        window.trackEvent('view_item', { items: [{ item_id: p.id, item_name: p.name['en'] }] });
         document.getElementById('modal-img').src = p.image;
         document.getElementById('modal-title').textContent = p.name[lang];
         document.getElementById('modal-category').textContent = window.TRANSLATIONS_RAW[p.category][lang];
@@ -317,6 +318,7 @@ document.addEventListener('DOMContentLoaded', () => {
             closeModal();
             if (window.cartUI) window.cartUI.open();
             if (window.showToast) window.showToast(t('toast.itemAdded'), "success");
+            window.trackEvent('add_to_cart', { items: [{ item_id: currentProductId, quantity: qty, price: product.priceDay }] });
         });
     }
 
