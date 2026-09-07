@@ -1,5 +1,5 @@
 window.products = [
-{
+    {
         "id": 901,
         "name": {
             "en": "Small Event Pack",
@@ -7,28 +7,28 @@ window.products = [
         },
         "category": "cat.packs",
         "manufacturer": "UPSTAGE MADRID",
-        "priceDay": 250,
-        "image": "img/inventory/placeholder.webp",
+        "priceDay": 70,
+        "image": "img/inventory/pack_evento_pequeno.webp",
         "description": {
-            "en": "All in one audiovisual solution for small parties, weddings and intimate live events.",
-            "es": "Solución audiovisual todo en uno para fiestas pequeñas bodas y eventos íntimos."
+            "en": "Compact complete audiovisual sound solution featuring 2 HK Audio Sonar tops, 1 Shure SM58/57 vocal/instrument microphone, 1 Yamaha MG10XU mixer, and all necessary cabling.",
+            "es": "Solución de sonido compacta y completa para eventos que incluye 2 cajas HK Audio Sonar top, 1 micrófono Shure SM 58/57, 1 mesa Yamaha MG10XU y todo el cableado necesario."
         },
         "specs": {
             "en": {
-                "Audience": "≤100 pax",
-                "Sound": "2 kW PA",
-                "Lights": "4x LED PAR",
-                "Setup": "Plug & Play",
-                "Technicians": "Optional",
-                "Transport": "Car / Van"
+                "Speakers": "2x HK Sonar Top",
+                "Microphone": "1x Shure SM58/57",
+                "Mixer": "Yamaha MG10XU",
+                "Cabling": "Included",
+                "Power": "2400 W Peak",
+                "Application": "Parties / Speech"
             },
             "es": {
-                "Público": "≤100 pax",
-                "Sonido": "PA 2 kW",
-                "Luces": "4x LED PAR",
-                "Montaje": "Plug & Play",
-                "Técnicos": "Opcional",
-                "Transporte": "Coche / Furgo"
+                "Altavoces": "2x HK Sonar Top",
+                "Micrófono": "1x Shure SM58/57",
+                "Mesa": "Yamaha MG10XU",
+                "Cableado": "Incluido",
+                "Potencia": "2400 W Pico",
+                "Uso": "Fiestas / Eventos"
             }
         }
     },
@@ -62,6 +62,72 @@ window.products = [
                 "Video": "5000 lm",
                 "Técnicos": "Incluido",
                 "Uso": "Corporativo"
+            }
+        }
+    },
+    {
+        "id": 903,
+        "name": {
+            "en": "Pack DJ",
+            "es": "Pack DJ"
+        },
+        "category": "cat.packs",
+        "manufacturer": "Pioneer DJ",
+        "priceDay": 100,
+        "image": "img/inventory/pack_dj.webp",
+        "description": {
+            "en": "Professional club-standard DJ setup featuring 2 Pioneer CDJ 2000 NXS multi-players, 1 Pioneer DJM 900 Nexus 4-channel digital mixer, and link/audio cabling.",
+            "es": "Configuración estándar de club profesional para DJ que incluye 2 reproductores Pioneer CDJ 2000 NXS, 1 mesa de mezclas digital Pioneer DJM 900 de 4 canales y cableado."
+        },
+        "specs": {
+            "en": {
+                "Multi-Players": "2x CDJ 2000 NXS",
+                "Mixer": "1x DJM 900",
+                "Channels": "4 ch",
+                "Link": "Pro DJ Link",
+                "FX": "Sound Color + Beat",
+                "Cabling": "Included"
+            },
+            "es": {
+                "Reproductores": "2x CDJ 2000 NXS",
+                "Mesa": "1x DJM 900",
+                "Canales": "4 canales",
+                "Link": "Pro DJ Link",
+                "Efectos": "Sound Color + Beat",
+                "Cableado": "Incluido"
+            }
+        }
+    },
+    {
+        "id": 904,
+        "name": {
+            "en": "Pack DJ+",
+            "es": "Pack DJ+"
+        },
+        "category": "cat.packs",
+        "manufacturer": "Pioneer DJ / Meyer",
+        "priceDay": 200,
+        "image": "img/inventory/pack_dj_plus.webp",
+        "description": {
+            "en": "Premium complete DJ booth setup with 2 Pioneer CDJ 2000 NXS, 1 DJM 900 mixer, 2 high-end Meyer Sound UPM-2P active monitoring speakers, 1 UDG U91072BL foldable DJ booth table, and full cabling.",
+            "es": "Cabina de DJ profesional completa y premium con 2 reproductores CDJ 2000 NXS, 1 mesa DJM 900, 2 monitores activos Meyer Sound UPM-2P, 1 mesa soporte DJ UDG U91072BL y cableado completo."
+        },
+        "specs": {
+            "en": {
+                "DJ Gear": "2x CDJ + 1x DJM",
+                "Booth Monitors": "2x Meyer UPM-2p",
+                "DJ Table": "UDG U91072BL",
+                "Cabling": "Full set",
+                "Sound Quality": "Meyer Pro Audio",
+                "Application": "Club / Festival"
+            },
+            "es": {
+                "Equipo DJ": "2x CDJ + 1x DJM",
+                "Monitores": "2x Meyer UPM-2p",
+                "Mesa DJ": "UDG U91072BL",
+                "Cableado": "Completo",
+                "Calidad": "Meyer Pro Audio",
+                "Uso": "Club / Festival"
             }
         }
     },
