@@ -33,39 +33,6 @@ window.products = [
         }
     },
     {
-        "id": 902,
-        "name": {
-            "en": "Conference Pack",
-            "es": "Pack Conferencia"
-        },
-        "category": "cat.packs",
-        "manufacturer": "Upstage",
-        "priceDay": 350,
-        "image": "img/inventory/placeholder.webp",
-        "description": {
-            "en": "Complete conference package including sound microphones and projection for corporate use.",
-            "es": "Pack completo de conferencia con sonido micrófonos y proyección para uso corporativo."
-        },
-        "specs": {
-            "en": {
-                "Audience": "≤200 pax",
-                "Sound": "4-point PA",
-                "Mics": "3 wireless",
-                "Video": "5000 lm",
-                "Crew": "Included",
-                "Application": "Corporate"
-            },
-            "es": {
-                "Público": "≤200 pax",
-                "Sonido": "PA 4 puntos",
-                "Micros": "3 inalámbricos",
-                "Video": "5000 lm",
-                "Técnicos": "Incluido",
-                "Uso": "Corporativo"
-            }
-        }
-    },
-    {
         "id": 903,
         "name": {
             "en": "Pack DJ",
