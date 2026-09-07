@@ -593,7 +593,6 @@ a {
     color: #fff;
 }
 
-/* CATALOG FUNCTIONALITY
 .btn-icon {
     background: transparent;
     border: none;
@@ -833,7 +832,6 @@ a {
 .close-cart:hover {
     color: var(--primary);
 }
-*/
 
 .modal-overlay {
     position: fixed;
@@ -874,11 +872,9 @@ a {
     max-width: 700px;
 }
 
-/* CATALOG FUNCTIONALITY
 #cart-quote-modal .modal-content {
     max-width: 900px;
 }
-*/
 
 .close-modal {
     background: none;
@@ -1250,7 +1246,6 @@ a {
 }
 
 
-/* CATALOG FUNCTIONALITY
 .quote-cart-summary {
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid var(--glass-border);
@@ -1276,7 +1271,6 @@ a {
 #quote-cart-items-summary img {
     flex-shrink: 0;
 }
-*/
 
 
 .quote-form-footer {
@@ -1407,7 +1401,6 @@ a {
         font-size: 1.5rem;
     }
 
-/* CATALOG FUNCTIONALITY
     .quote-cart-summary {
         padding: 15px;
     }
@@ -1424,7 +1417,6 @@ a {
         width: 30px;
         height: 30px;
     }
-*/
 
     .success-modal-content {
         padding: 40px 20px;
@@ -1455,7 +1447,6 @@ a {
 .text-right { text-align: right; }
 
 
-/* CATALOG FUNCTIONALITY
 .cart-item {
     padding: 10px;
     margin-bottom: 10px;
@@ -1639,8 +1630,6 @@ a {
     font-weight: 700;
     color: var(--primary);
 }
-*/
-
 
 .service-gallery-img {
     width: 100%;

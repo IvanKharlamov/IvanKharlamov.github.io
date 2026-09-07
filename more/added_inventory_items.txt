@@ -1,0 +1,2454 @@
+================================================================================
+ADDED INVENTORY ITEMS (SYNCED FROM RMS & INNOVA INVENTORY)
+================================================================================
+
+ID: 1001
+Name (EN): HK Audio Pro 12 active
+Name (ES): HK Audio Pro 12 active
+Category: cat.sound
+Manufacturer: HKAudio
+Price/Day: €15
+Image: img/inventory/HK_PRO.webp
+Description (EN): HK Audio Premium PR:O 12 active 12-inch full-range 1200W loudspeaker for live sound and stage monitoring.
+Description (ES): Altavoz activo de 12 pulgadas y 1200W HK Audio Premium PR:O 12 para refuerzo en directo y monitores de escenario.
+Specs (EN):
+  - Type: Active speaker
+  - Power: 1200 W
+  - Max SPL: 128 dB
+  - Freq Low: 68 Hz
+  - Freq High: 19 kHz
+  - Coverage: 90° x 60°
+Specs (ES):
+  - Tipo: Altavoz activo
+  - Potencia: 1200 W
+  - SPL Máx: 128 dB
+  - Freq Baja: 68 Hz
+  - Freq Alta: 19 kHz
+  - Cobertura: 90° x 60°
+--------------------------------------------------------------------------------
+
+ID: 1002
+Name (EN): LED BAR Generic
+Name (ES): LED BAR Generic
+Category: cat.light
+Manufacturer: Unknown/Generic
+Price/Day: €5
+Image: img/inventory/LED_BAR.webp
+Description (EN): Compact linear LED batten bar providing vibrant RGB wall wash effects, pixel strobing, and stage backdrop lighting.
+Description (ES): Barra lineal LED compacta para bañado uniforme de paredes, efectos de persecución RGB e iluminación de fondos de escenario.
+Specs (EN):
+  - Light Source: RGB LED bar
+  - Beam Angle: 30°
+  - Control: DMX / Auto
+  - Channels: 3 / 7 / 24 ch
+  - Power: 60 W
+  - Housing: Aluminum
+Specs (ES):
+  - Fuente: Barra LED RGB
+  - Ángulo: 30°
+  - Control: DMX / Auto
+  - Canales: 3 / 7 / 24 ch
+  - Consumo: 60 W
+  - Carcasa: Aluminio
+--------------------------------------------------------------------------------
+
+ID: 1003
+Name (EN): SHEHDS Wireless Battery LED Uplight Par Light 6x18W
+Name (ES): SHEHDS Wireless Battery LED Uplight Par Light 6x18W
+Category: cat.light
+Manufacturer: SHEHDS
+Price/Day: €10
+Image: img/inventory/SHEHDS_battery_PAR.webp
+Description (EN): SHEHDS wireless battery-powered 6x18W RGBAW+UV LED uplight with built-in wireless DMX for rapid cable-free architectural and event lighting.
+Description (ES): Foco uplight a batería SHEHDS 6x18W RGBAW+UV con DMX inalámbrico integrado para iluminación arquitectural y decorativa sin cables.
+Specs (EN):
+  - Light Source: 6x18W RGBAW+UV
+  - Battery: 8 - 12 h
+  - Wireless DMX: 2.4 GHz
+  - Beam Angle: 25°
+  - Control: DMX / App
+  - Power: 110 W
+Specs (ES):
+  - Fuente: 6x18W RGBAW+UV
+  - Batería: 8 - 12 h
+  - DMX Wireless: 2.4 GHz
+  - Ángulo: 25°
+  - Control: DMX / App
+  - Consumo: 110 W
+--------------------------------------------------------------------------------
+
+ID: 1004
+Name (EN): Showtec Straight 2000mm
+Name (ES): Showtec Straight 2000mm
+Category: cat.structures
+Manufacturer: Showtec
+Price/Day: €10
+Image: img/inventory/Truss.webp
+Description (EN): Showtec 2.0-meter straight aluminum truss segment designed for stage roofs, exhibition booths, and lighting grids.
+Description (ES): Tramo recto de truss de aluminio de 2,0 metros Showtec para estructuras de escenario, stands y puentes de luces.
+Specs (EN):
+  - Length: 2000 mm
+  - Tube Diameter: 50 mm
+  - Thickness: 2 mm
+  - Alloy: EN AW-6082 T6
+  - Connection: Conical
+  - Application: Truss / Rig
+Specs (ES):
+  - Longitud: 2000 mm
+  - Diámetro tubo: 50 mm
+  - Grosor: 2 mm
+  - Aleación: EN AW-6082 T6
+  - Conexión: Cónica
+  - Uso: Truss / Rig
+--------------------------------------------------------------------------------
+
+ID: 1005
+Name (EN): Sunstrip Active MKII
+Name (ES): Sunstrip Active MKII
+Category: cat.light
+Manufacturer: Showtec
+Price/Day: €15
+Image: img/inventory/sunstrip.webp
+Description (EN): Showtec Sunstrip Active MKII 10x 50W tungsten halogen light batten with integrated dimmers for iconic stage blinder and chase effects.
+Description (ES): Barra cegadora halógena Showtec Sunstrip Active MKII de 10 lámparas de 50W con dimmers integrados para efectos clásicos de escenario.
+Specs (EN):
+  - Lamps: 10x GU10 50W
+  - Dimmers: 10 built-in
+  - Control: DMX 1-10 ch
+  - Effects: Built-in chases
+  - Power: 550 W
+  - Weight: 5.3 kg
+Specs (ES):
+  - Lámparas: 10x GU10 50W
+  - Dimmers: 10 integrados
+  - Control: DMX 1-10 ch
+  - Efectos: Secuencias
+  - Consumo: 550 W
+  - Peso: 5.3 kg
+--------------------------------------------------------------------------------
+
+ID: 1006
+Name (EN): SuperStrobe ABL
+Name (ES): SuperStrobe ABL
+Category: cat.light
+Manufacturer: Eurolite
+Price/Day: €10
+Image: img/inventory/SUBER_ABL_STROBE.webp
+Description (EN): Eurolite Super Strobe ABL hybrid LED strobe and blinder featuring intense cold-white strobe flashes with colorful RGB ambient backlight.
+Description (ES): Estrobo híbrido LED Eurolite Super Strobe ABL con potentes destellos blanco frío y retroiluminación ambiental RGB.
+Specs (EN):
+  - LEDs: 216 CW + 144 RGB
+  - Flash Rate: 1 - 20 Hz
+  - Beam Angle: 120°
+  - Control: DMX / Auto
+  - DMX Channels: 7 / 13 / 42 ch
+  - Power: 130 W
+Specs (ES):
+  - LEDs: 216 CW + 144 RGB
+  - Frecuencia: 1 - 20 Hz
+  - Ángulo: 120°
+  - Control: DMX / Auto
+  - Canales DMX: 7 / 13 / 42 ch
+  - Consumo: 130 W
+--------------------------------------------------------------------------------
+
+ID: 1007
+Name (EN): WASH 19x15W LED RGBW
+Name (ES): WASH 19x15W LED RGBW
+Category: cat.light
+Manufacturer: SHEHDS
+Price/Day: €10
+Image: img/inventory/Wash_17x19.webp
+Description (EN): SHEHDS 19x15W RGBW LED wash moving head with motorized zoom from 8° to 60° for beam and wash applications.
+Description (ES): Cabeza móvil wash LED SHEHDS de 19x15W RGBW con zoom lineal motorizado de 8° a 60° para bañado uniforme y haces compactos.
+Specs (EN):
+  - Light Source: 19x15W RGBW
+  - Zoom: 8° - 60°
+  - Pan: 540°
+  - Tilt: 270°
+  - Control: DMX 16/24 ch
+  - Power: 300 W
+Specs (ES):
+  - Fuente: 19x15W RGBW
+  - Zoom: 8° - 60°
+  - Pan: 540°
+  - Tilt: 270°
+  - Control: DMX 16/24 ch
+  - Consumo: 300 W
+--------------------------------------------------------------------------------
+
+ID: 1008
+Name (EN): WASH 36X18W RGBWU
+Name (ES): WASH 36X18W RGBWU
+Category: cat.light
+Manufacturer: SHEHDS
+Price/Day: €10
+Image: img/inventory/WASH_36_18.webp
+Description (EN): SHEHDS high-power 36x18W RGBWA+UV 6-in-1 LED wash moving head with wide color spectrum and motorized zoom.
+Description (ES): Cabeza móvil wash SHEHDS de alta potencia con 36 LEDs de 18W RGBWA+UV 6 en 1 con espectro completo de color y zoom motorizado.
+Specs (EN):
+  - Light Source: 36x18W 6-in-1
+  - Zoom: 10° - 60°
+  - Pan: 540°
+  - Tilt: 270°
+  - Control: DMX 16/24 ch
+  - Power: 650 W
+Specs (ES):
+  - Fuente: 36x18W 6 en 1
+  - Zoom: 10° - 60°
+  - Pan: 540°
+  - Tilt: 270°
+  - Control: DMX 16/24 ch
+  - Consumo: 650 W
+--------------------------------------------------------------------------------
+
+ID: 1009
+Name (EN): BEAM 7R 230W
+Name (ES): BEAM 7R 230W
+Category: cat.light
+Manufacturer: SHEHDS
+Price/Day: €10
+Image: img/inventory/230w_7r.webp
+Description (EN): SHEHDS 230W 7R beam moving head projector producing a razor-sharp, long-throw aerial beam with 14 colors and 17 gobos.
+Description (ES): Cabeza móvil beam SHEHDS 230W 7R con haz ultra definido de largo alcance, rueda de 14 colores y 17 gobos fijos.
+Specs (EN):
+  - Lamp: 230W 7R
+  - Beam Angle: 0° - 3.8°
+  - Colors: 14 + open
+  - Gobos: 17 static
+  - Prism: 8-facet
+  - DMX: 16 / 20 ch
+Specs (ES):
+  - Lámpara: 230W 7R
+  - Ángulo: 0° - 3.8°
+  - Colores: 14 + abierto
+  - Gobos: 17 estáticos
+  - Prisma: 8 caras
+  - DMX: 16 / 20 ch
+--------------------------------------------------------------------------------
+
+ID: 1010
+Name (EN): Digital Console M32 LIVE
+Name (ES): Digital Console M32 LIVE
+Category: cat.console
+Manufacturer: Midas
+Price/Day: €60
+Image: img/inventory/MIDAS_M32.webp
+Description (EN): Midas M32 LIVE 40-input digital mixing console with 32 award-winning Midas preamps, 25 motorized faders, and multi-channel live recording.
+Description (ES): Consola de mezcla digital Midas M32 LIVE de 40 entradas con 32 previos de micro Midas, 25 faders motorizados y grabación multipista.
+Specs (EN):
+  - Channels: 40 input ch
+  - Mix Buses: 25
+  - Preamps: 32 Midas PRO
+  - Faders: 25 motorized
+  - Network: Dual AES50
+  - Screen: 7 in TFT
+Specs (ES):
+  - Canales: 40 canales
+  - Buses: 25
+  - Previos: 32 Midas PRO
+  - Faders: 25 motorizados
+  - Red: Doble AES50
+  - Pantalla: 7 in TFT
+--------------------------------------------------------------------------------
+
+ID: 1011
+Name (EN): Shure PGA Drumkit
+Name (ES): Shure PGA Drumkit
+Category: cat.mics
+Manufacturer: Shure
+Price/Day: €15
+Image: img/inventory/PGA_MICS.webp
+Description (EN): Shure PGADRUMKIT complete multi-microphone drum microphone package with tailored clips and XLR cables for live and studio drum reinforcement.
+Description (ES): Kit completo de micrófonos para batería Shure PGADRUMKIT con pinzas y cables XLR para captación en directo y estudio.
+Specs (EN):
+  - Mics: 6 or 7 mics
+  - Bass Mic: PGA52 cardioid
+  - Snare Mic: PGA57 dynamic
+  - Tom Mics: PGA56 dynamic
+  - Overheads: PGA81 condenser
+  - Accessories: Clips & cables
+Specs (ES):
+  - Micrófonos: 6 o 7 micros
+  - Bombo: PGA52 cardioide
+  - Caja: PGA57 dinámico
+  - Toms: PGA56 dinámico
+  - Aéreos: PGA81 condensador
+  - Accesorios: Pinzas y cables
+--------------------------------------------------------------------------------
+
+ID: 1012
+Name (EN): SM58
+Name (ES): SM58
+Category: cat.mics
+Manufacturer: Shure
+Price/Day: €1.8
+Image: img/inventory/sm_58.webp
+Description (EN): Shure SM58 industry-standard dynamic vocal microphone famous for warmth, clarity, and exceptional feedback resistance on live stages.
+Description (ES): Micrófono vocal dinámico estándar de la industria Shure SM58, célebre por su calidez, inteligibilidad y resistencia a acoples.
+Specs (EN):
+  - Type: Dynamic
+  - Pattern: Cardioid
+  - Freq Low: 50 Hz
+  - Freq High: 15 kHz
+  - Impedance: 300 Ohm
+  - Connector: 3-pin XLR
+Specs (ES):
+  - Tipo: Dinámico
+  - Patrón: Cardioide
+  - Freq Baja: 50 Hz
+  - Freq Alta: 15 kHz
+  - Impedancia: 300 Ohm
+  - Conector: XLR 3 pines
+--------------------------------------------------------------------------------
+
+ID: 1013
+Name (EN): HK Audio Sonar 112 xi
+Name (ES): HK Audio Sonar 112 xi
+Category: cat.sound
+Manufacturer: HKAudio
+Price/Day: €15
+Image: img/inventory/sonar-115-xi.webp
+Description (EN): HK Audio SONAR 112 Xi active 1200W 12-inch 2-way powered loudspeaker with 24-bit DSP, 3-channel mixer, and Bluetooth stereo streaming.
+Description (ES): Caja autoamplificada HK Audio SONAR 112 Xi de 1200W y 12" con DSP de 24 bits, mezclador de 3 canales y conectividad Bluetooth estéreo.
+Specs (EN):
+  - Type: Active speaker
+  - LF Driver: 12 in
+  - HF Driver: 1 in
+  - Max SPL: 127 dB
+  - Power: 1200 W
+  - DSP: Bluetooth & LCD
+Specs (ES):
+  - Tipo: Altavoz activo
+  - Graves: 12 in
+  - Agudos: 1 in
+  - SPL Máx: 127 dB
+  - Potencia: 1200 W
+  - DSP: Bluetooth y LCD
+--------------------------------------------------------------------------------
+
+ID: 1014
+Name (EN): UPM 2P
+Name (ES): UPM 2P
+Category: cat.sound
+Manufacturer: Meyer
+Price/Day: €20
+Image: img/inventory/UPM-2P.webp
+Description (EN): Meyer Sound UPM-1P / 2P ultra-compact self-powered 2-way loudspeaker delivering high SPL, wide symmetrical coverage, and studio fidelity.
+Description (ES): Altavoz autoamplificado ultracompacto Meyer Sound UPM-1P / 2P de 2 vías con cobertura simétrica amplia y fidelidad de estudio.
+Specs (EN):
+  - Type: Active speaker
+  - LF Drivers: 2x 5 in
+  - HF Driver: 1 in
+  - Max SPL: 123 dB
+  - Coverage: 80° x 60°
+  - Power: 350 W
+Specs (ES):
+  - Tipo: Altavoz activo
+  - Graves: 2x 5 in
+  - Agudos: 1 in
+  - SPL Máx: 123 dB
+  - Cobertura: 80° x 60°
+  - Potencia: 350 W
+--------------------------------------------------------------------------------
+
+ID: 1015
+Name (EN): Cable XLR 3-5-7m
+Name (ES): Cable XLR 3-5-7m
+Category: cat.electricity
+Manufacturer: Unknown/Generic
+Price/Day: €1
+Image: img/inventory/XLR.webp
+Description (EN): Professional balanced 3-pin XLR microphone and audio signal cable with heavy-duty connectors and low-noise shielding (3m / 5m / 7m).
+Description (ES): Cable de señal de audio balanceado XLR de 3 pines profesional con blindaje silencioso y conectores resistentes (3m / 5m / 7m).
+Specs (EN):
+  - Connectors: 3-pin XLR M/F
+  - Length: 3 / 5 / 7 m
+  - Conductors: OFC copper
+  - Shielding: Braided copper
+Specs (ES):
+  - Conectores: XLR 3 pines M/H
+  - Longitud: 3 / 5 / 7 m
+  - Conductores: Cobre OFC
+  - Blindaje: Malla de cobre
+--------------------------------------------------------------------------------
+
+ID: 1016
+Name (EN): Audibax Truss Claw 48-51mm 100kg
+Name (ES): Audibax Truss Claw 48-51mm 100kg
+Category: cat.structures
+Manufacturer: Unknown/Generic
+Price/Day: €2
+Image: img/inventory/audibax_truss_claw.webp
+Description (EN): Audibax heavy-duty aluminum truss clamp trigger claw rated for 100 kg loads on standard 48-51mm truss tubes.
+Description (ES): Garra clamp de aluminio de alta resistencia Audibax para truss, certificada para cargas de hasta 100 kg en tubos de 48-51 mm.
+Specs (EN):
+  - Load Capacity: 100 kg WLL
+  - Tube Diameter: 48 - 51 mm
+  - Material: Cast aluminum
+  - Fixing: M10 bolt
+Specs (ES):
+  - Capacidad: 100 kg WLL
+  - Diámetro tubo: 48 - 51 mm
+  - Material: Aluminio fundido
+  - Fijación: Tornillo M10
+--------------------------------------------------------------------------------
+
+ID: 1017
+Name (EN): Gravity LS 431 B
+Name (ES): Gravity LS 431 B
+Category: cat.structures
+Manufacturer: Unknown/Generic
+Price/Day: €10
+Image: img/inventory/gravity_stand.webp
+Description (EN): Gravity LS 431 B heavy-duty lighting and speaker stand with square steel base for stable mounting in compact footprint environments.
+Description (ES): Soporte para iluminación y altavoces Gravity LS 431 B con base plana de acero pesada para montaje seguro ocupando el mínimo espacio.
+Specs (EN):
+  - Max Height: 2.40 m
+  - Base Weight: 14 kg
+  - Load Capacity: 20 kg
+  - Mounting: M10 / 35mm
+Specs (ES):
+  - Altura máxima: 2.40 m
+  - Peso base: 14 kg
+  - Capacidad: 20 kg
+  - Fijación: M10 / 35mm
+--------------------------------------------------------------------------------
+
+ID: 1018
+Name (EN): Showtec Straight 1500mm
+Name (ES): Showtec Straight 1500mm
+Category: cat.structures
+Manufacturer: Showtec
+Price/Day: €10
+Image: img/inventory/Truss.webp
+Description (EN): Showtec 1.5-meter straight aluminum truss segment designed for stage roofs, exhibition structures, and lighting rigs.
+Description (ES): Tramo recto de truss de aluminio de 1,5 metros Showtec para estructuras de escenario, stands y puentes de luces.
+Specs (EN):
+  - Length: 1500 mm
+  - Tube Diameter: 50 mm
+  - Alloy: EN AW-6082 T6
+  - Connection: Conical
+Specs (ES):
+  - Longitud: 1500 mm
+  - Diámetro tubo: 50 mm
+  - Aleación: EN AW-6082 T6
+  - Conexión: Cónica
+--------------------------------------------------------------------------------
+
+ID: 1019
+Name (EN): Schuko 3 socket black
+Name (ES): Schuko 3 socket black
+Category: cat.electricity
+Manufacturer: Unknown/Generic
+Price/Day: €3
+Image: img/inventory/Schucko_3_socket_black.webp
+Description (EN): Heavy-duty 3-way black Schuko power distribution strip for stage, DJ booth, and lighting equipment mains supply.
+Description (ES): Regleta de distribución de corriente Schuko negra de 3 tomas de alta resistencia para escenario, cabina DJ y equipos de iluminación.
+Specs (EN):
+  - Outlets: 3x Schuko 16A
+  - Cable: 3G1.5 mm²
+  - Max Power: 3680 W
+  - Color: Black
+Specs (ES):
+  - Tomas: 3x Schuko 16A
+  - Cable: 3G1.5 mm²
+  - Potencia máx: 3680 W
+  - Color: Negro
+--------------------------------------------------------------------------------
+
+ID: 1020
+Name (EN): Schuko 3 socket blue
+Name (ES): Schuko 3 socket blue
+Category: cat.electricity
+Manufacturer: Unknown/Generic
+Price/Day: €3
+Image: img/inventory/Schucko_3_socket_blue.webp
+Description (EN): Durable 3-way blue Schuko power extension block with grounded sockets for live sound, backline, and stage equipment.
+Description (ES): Base múltiple Schuko de 3 tomas azul resistente con toma de tierra para backline, sonido y escenario.
+Specs (EN):
+  - Outlets: 3x Schuko 16A
+  - Rating: 16A / 230V
+  - Max Power: 3680 W
+  - Color: Blue / Black
+Specs (ES):
+  - Tomas: 3x Schuko 16A
+  - Capacidad: 16A / 230V
+  - Potencia máx: 3680 W
+  - Color: Azul / Negro
+--------------------------------------------------------------------------------
+
+ID: 1021
+Name (EN): Schuko 5 socket
+Name (ES): Schuko 5 socket
+Category: cat.electricity
+Manufacturer: Unknown/Generic
+Price/Day: €3
+Image: img/inventory/Shucko_5_socket.webp
+Description (EN): Professional 5-way Schuko multi-socket power distribution box for rack systems, stage power feeds, and production desks.
+Description (ES): Base múltiple Schuko de 5 tomas profesional para sistemas en rack, acometidas de escenario y mesas de control.
+Specs (EN):
+  - Outlets: 5x Schuko 16A
+  - Rating: 16A / 230V
+  - Max Power: 3680 W
+  - Housing: Impact polymer
+Specs (ES):
+  - Tomas: 5x Schuko 16A
+  - Capacidad: 16A / 230V
+  - Potencia máx: 3680 W
+  - Carcasa: Antichoque
+--------------------------------------------------------------------------------
+
+ID: 1022
+Name (EN): Tent Foldable 3x3
+Name (ES): Tent Foldable 3x3
+Category: cat.structures
+Manufacturer: Unknown/Generic
+Price/Day: €20
+Image: img/inventory/TENT_3x3.webp
+Description (EN): Heavy-duty 3x3m pop-up folding tent / gazebo for outdoor events, DJ booths, FOH sound positions, and weather protection.
+Description (ES): Carpa plegable profesional de 3x3m de apertura rápida para eventos al aire libre, cabinas DJ, puestos de control FOH y protección climática.
+Specs (EN):
+  - Dimensions: 3.0 x 3.0 m
+  - Frame: Aluminum scissor
+  - Canopy: Waterproof UV
+  - Setup: Pop-up accordion
+Specs (ES):
+  - Dimensiones: 3.0 x 3.0 m
+  - Estructura: Aluminio acordeón
+  - Lona: Impermeable UV
+  - Montaje: Apertura rápida
+--------------------------------------------------------------------------------
+
+ID: 1023
+Name (EN): ALLEN&HEAT XONE 96
+Name (ES): ALLEN&HEAT XONE 96
+Category: cat.dj
+Manufacturer: UPSTAGE
+Price/Day: €40
+Image: img/inventory/ALLENandHEAT_XONE_96.webp
+Description (EN): Allen & Heath Xone:96 flagship 6+2 channel analog DJ mixer with dual 32-bit USB soundcards, 4-band EQ, and dual VCF filters with CRUNCH harmonic distortion.
+Description (ES): Mesa de mezclas analógica de referencia Allen & Heath Xone:96 de 6+2 canales con doble tarjeta de sonido USB de 32 bits, ecualizador de 4 bandas y filtros VCF con distorsión armónica CRUNCH.
+Specs (EN):
+  - Channels: 6 + 2 ch
+  - EQ: 4-band parametric
+  - Audio Interface: Dual 32-bit USB
+  - Filters: Dual Xone VCF
+  - Crossfader: Mini innoFADER
+  - Outputs: XLR / TRS / Booth
+Specs (ES):
+  - Canales: 6 + 2 ch
+  - EQ: 4 bandas
+  - Interfaz: Doble USB 32 bits
+  - Filtros: Doble VCF Xone
+  - Crossfader: Mini innoFADER
+  - Salidas: XLR / TRS / Booth
+--------------------------------------------------------------------------------
+
+ID: 1024
+Name (EN): PIONEER DJM
+Name (ES): PIONEER DJM
+Category: cat.dj
+Manufacturer: Pioneer
+Price/Day: €45
+Image: img/inventory/PIONEER_DJM.webp
+Description (EN): Pioneer DJ professional 4-channel club mixer series (DJM-900NXS2 / DJM-A9 / DJM-V10) with 64-bit mixing processor, Beat FX, Sound Color FX, and dual USB connectivity.
+Description (ES): Gama de mesas de mezclas profesionales de 4 canales Pioneer DJ (DJM-900NXS2 / DJM-A9 / DJM-V10) con procesamiento de 64 bits, Beat FX, Sound Color FX y doble conexión USB.
+Specs (EN):
+  - Channels: 4 audio + 2 mic
+  - Processor: 64-bit digital
+  - Sound Color FX: 6 presets
+  - Beat FX: 14 effects
+  - Audio Interface: Dual USB
+  - Outputs: XLR / RCA / Digital
+Specs (ES):
+  - Canales: 4 audio + 2 mic
+  - Procesador: 64 bits digital
+  - Sound Color FX: 6 efectos
+  - Beat FX: 14 efectos
+  - Interfaz: Doble USB
+  - Salidas: XLR / RCA / Digital
+--------------------------------------------------------------------------------
+
+ID: 1025
+Name (EN): PIONEER RMX-1000
+Name (ES): PIONEER RMX-1000
+Category: cat.dj
+Manufacturer: Pioneer
+Price/Day: €25
+Image: img/inventory/PIONEER_RMX-1000.webp
+Description (EN): Pioneer RMX-1000 all-in-one professional DJ remix station and effects unit combining Scene FX, Isolator FX, X-Pad sample triggers, and Release FX.
+Description (ES): Módulo procesador de efectos y sampler para DJ Pioneer RMX-1000 con efectos Scene FX, Isolator FX, disparador táctil X-Pad y Release FX.
+Specs (EN):
+  - Scene FX: 10 types
+  - Isolator FX: 3-band kill
+  - X-Pad: Sample roll
+  - Audio: 24-bit / 48kHz
+  - Software: remixbox / VST
+  - Connectivity: RCA / 6.3mm / USB
+Specs (ES):
+  - Scene FX: 10 tipos
+  - Isolator FX: Corte 3 bandas
+  - X-Pad: Sampler táctil
+  - Audio: 24 bits / 48kHz
+  - Software: remixbox / VST
+  - Conectividad: RCA / Jack / USB
+--------------------------------------------------------------------------------
+
+ID: 1026
+Name (EN): PIONEER XDJ
+Name (ES): PIONEER XDJ
+Category: cat.dj
+Manufacturer: Pioneer
+Price/Day: €50
+Image: img/inventory/PIONEER_XDJ.webp
+Description (EN): Pioneer XDJ professional all-in-one DJ system (XDJ-RX3 / XDJ-XZ) featuring full-size club jog wheels, color touchscreen, and multi-deck standalone USB performance.
+Description (ES): Sistema DJ todo-en-uno profesional Pioneer XDJ (XDJ-RX3 / XDJ-XZ) con jog wheels profesionales, pantalla táctil a color y reproducción autónoma por USB.
+Specs (EN):
+  - Channels: 2 to 4 ch
+  - Display: 7 - 10.1 in Touch
+  - Media: Dual USB playback
+  - Jog Wheels: Full size LCD
+  - Performance Pads: 8 per deck
+  - Software: rekordbox / Serato
+Specs (ES):
+  - Canales: 2 a 4 ch
+  - Pantalla: 7 - 10.1 in Táctil
+  - Medios: Doble puerto USB
+  - Jog Wheels: Tamaño real LCD
+  - Pads: 8 por reproductor
+  - Software: rekordbox / Serato
+--------------------------------------------------------------------------------
+
+ID: 1027
+Name (EN): PIONEER / ALPHA THETA CDJ 3000
+Name (ES): PIONEER / ALPHA THETA CDJ 3000
+Category: cat.dj
+Manufacturer: Pioneer
+Price/Day: €50
+Image: img/inventory/ALPHA_THETA_CDJ_3000.webp
+Description (EN): Pioneer DJ / AlphaTheta CDJ-3000 professional club flagship multi-player powered by MPU processor with 9-inch HD touchscreen, Key Sync, and Touch Preview.
+Description (ES): Reproductor profesional de cabina Pioneer DJ / AlphaTheta CDJ-3000 con procesador MPU avanzado, pantalla táctil HD de 9 pulgadas, Key Sync y Touch Preview.
+Specs (EN):
+  - Screen: 9 in HD Touch
+  - Processor: MPU multi-core
+  - Audio: 96kHz / 32-bit
+  - Jog Wheel: Ultra smooth LCD
+  - Hot Cues: 8 buttons
+  - Link: Gigabit Pro DJ
+Specs (ES):
+  - Pantalla: 9 in HD Táctil
+  - Procesador: MPU multinúcleo
+  - Audio: 96kHz / 32 bits
+  - Jog Wheel: Tacto suave LCD
+  - Hot Cues: 8 botones
+  - Link: Gigabit Pro DJ
+--------------------------------------------------------------------------------
+
+ID: 1028
+Name (EN): Acoustic Control par 182 cob
+Name (ES): Acoustic Control par 182 cob
+Category: cat.light
+Manufacturer: Acoustic Control
+Price/Day: €15
+Image: img/inventory/Acoustic_Control_par_182_cob.webp
+Description (EN): Acoustic Control high-power 180W COB RGB LED par light with broad 80° beam angle for smooth stage and venue wash.
+Description (ES): Foco par LED COB RGB de 180W Acoustic Control con amplio haz de 80° para bañado uniforme de escenarios y recintos.
+Specs (EN):
+  - Light Source: 200W COB LED
+  - Color: RGB 3-in-1
+  - Beam Angle: 60° flood
+  - Control: DMX 3/7 ch
+  - Dimmer: 0 - 100% linear
+  - Power: 200 W
+Specs (ES):
+  - Fuente: LED COB 200W
+  - Color: RGB 3 en 1
+  - Ángulo: 60° abierto
+  - Control: DMX 3/7 ch
+  - Dimmer: 0 - 100% lineal
+  - Consumo: 200 W
+--------------------------------------------------------------------------------
+
+ID: 1029
+Name (EN): BEAM Z Beamz RB90
+Name (ES): BEAM Z Beamz RB90
+Category: cat.light
+Manufacturer: BeamZ
+Price/Day: €20
+Image: img/inventory/BEAM_Z_Beamz_RB90.webp
+Description (EN): BeamZ RB90 Deco Retro Blinder combining vintage warm white tungsten glow with colorful RGB backlight chases.
+Description (ES): Cegadora BeamZ RB90 Deco Retro que combina luz cálida vintage de tungsteno con persecuciones RGB en retroiluminación.
+Specs (EN):
+  - Light Source: 6x10W RGBW
+  - Rotation: Infinite Pan/Tilt
+  - Beam Angle: 4° tight beam
+  - Control: DMX 14/16 ch
+  - Dimmer: 0 - 100%
+  - Power: 80 W
+Specs (ES):
+  - Fuente: 6x10W RGBW
+  - Rotación: Pan/Tilt continuo
+  - Ángulo: 4° concentrado
+  - Control: DMX 14/16 ch
+  - Dimmer: 0 - 100%
+  - Consumo: 80 W
+--------------------------------------------------------------------------------
+
+ID: 1030
+Name (EN): BEAM Z BLAZE FOG 3500
+Name (ES): BEAM Z BLAZE FOG 3500
+Category: cat.light
+Manufacturer: BeamZ
+Price/Day: €25
+Image: img/inventory/BEAM_Z_BLAZE_FOG_3500.webp
+Description (EN): BeamZ Blaze 3500 high-power vertical / horizontal illuminated geyser fogger with 48 high-output RGBA LEDs.
+Description (ES): Máquina de humo géiser iluminada vertical/horizontal BeamZ Blaze 3500 de gran potencia con 48 LEDs RGBA.
+Specs (EN):
+  - Heater: 3500 W
+  - LEDs: 48x 4W RGBA
+  - Smoke Output: 1200 m³/min
+  - Tank: 3.5 L
+  - Control: DMX / Wireless
+  - Warm-up: 8 min
+Specs (ES):
+  - Calefactor: 3500 W
+  - LEDs: 48x 4W RGBA
+  - Salida de humo: 1200 m³/min
+  - Tanque: 3.5 L
+  - Control: DMX / Wireless
+  - Calentamiento: 8 min
+--------------------------------------------------------------------------------
+
+ID: 1031
+Name (EN): BEAM Z BUV 463
+Name (ES): BEAM Z BUV 463
+Category: cat.light
+Manufacturer: BeamZ
+Price/Day: €15
+Image: img/inventory/BEAM_Z_BUV_463.webp
+Description (EN): BeamZ BUV463 high-output blacklight flood bar featuring 24x3W UV LEDs with 4 independent chase segments.
+Description (ES): Barra de luz negra BeamZ BUV463 de alta potencia con 24 LEDs UV de 3W y 4 secciones independientes de persecución.
+Specs (EN):
+  - Light Source: 24x 3W UV LEDs
+  - Wavelength: 395 - 405 nm
+  - Beam Angle: 65° wash
+  - Power: 80 W
+Specs (ES):
+  - Fuente: 24x 3W LEDs UV
+  - Longitud onda: 395 - 405 nm
+  - Ángulo: 65° baño
+  - Consumo: 80 W
+--------------------------------------------------------------------------------
+
+ID: 1032
+Name (EN): BEAM Z DMX-192S
+Name (ES): BEAM Z DMX-192S
+Category: cat.light
+Manufacturer: BeamZ
+Price/Day: €20
+Image: img/inventory/BEAM_Z_DMX-192S.webp
+Description (EN): BeamZ DMX-192S compact 192-channel universal DMX controller with 30 banks and 6 programmable chases for stage fixtures.
+Description (ES): Controlador DMX universal compacto BeamZ DMX-192S de 192 canales con 30 bancos y 6 chases programables para iluminación de escenario.
+Specs (EN):
+  - DMX Channels: 192 ch
+  - Fixtures: 12 fixtures (16 ch)
+  - Scenes: 240 scenes
+  - Chases: 6 chases
+Specs (ES):
+  - Canales DMX: 192 ch
+  - Equipos: 12 equipos (16 ch)
+  - Escenas: 240 escenas
+  - Secuencias: 6 secuencias
+--------------------------------------------------------------------------------
+
+ID: 1033
+Name (EN): BEAM Z F-1600
+Name (ES): BEAM Z F-1600
+Category: cat.light
+Manufacturer: BeamZ
+Price/Day: €25
+Image: img/inventory/BEAM_Z_F-1600.webp
+Description (EN): BeamZ F1600 Pro Fazer built into a touring flight case, producing a continuous fine mist to enhance light and laser beams.
+Description (ES): Fazer profesional BeamZ F1600 integrado en flight case, produciendo niebla fina continua para realzar haces de luz y láseres.
+Specs (EN):
+  - Heater: 1600 W
+  - Output Type: Continuous faze
+  - Tank: 3.2 L
+  - Control: DMX 2 ch / Timer
+  - Warm-up: 3 min
+  - Housing: Flightcase
+Specs (ES):
+  - Calefactor: 1600 W
+  - Tipo emisión: Niebla continua
+  - Tanque: 3.2 L
+  - Control: DMX 2 ch / Timer
+  - Calentamiento: 3 min
+  - Formato: Flightcase
+--------------------------------------------------------------------------------
+
+ID: 1034
+Name (EN): BEAM Z Foco Fresnel Zoom 200w Led RGB
+Name (ES): BEAM Z Foco Fresnel Zoom 200w Led RGB
+Category: cat.light
+Manufacturer: BeamZ
+Price/Day: €20
+Image: img/inventory/BEAM_Z_Foco_Fresnel_Zoom_200w_Led_RGB.webp
+Description (EN): BeamZ Pro BTF200CZ 200W RGBW LED Fresnel with motorized 15°-60° zoom and rotating barndoors for theater and stage wash.
+Description (ES): Foco Fresnel LED BeamZ Pro BTF200CZ de 200W RGBW con zoom motorizado de 15°-60° y viseras orientables para teatro y bañado de escenario.
+Specs (EN):
+  - Light Source: 200W COB LED
+  - Color: RGBW / Warm White
+  - Motorized Zoom: 15° - 60°
+  - CRI: ≥90
+  - Control: DMX / Manual
+  - Power: 220 W
+Specs (ES):
+  - Fuente: LED COB 200W
+  - Color: RGBW / Blanco cálido
+  - Zoom motorizado: 15° - 60°
+  - CRI: ≥90
+  - Control: DMX / Manual
+  - Consumo: 220 W
+--------------------------------------------------------------------------------
+
+ID: 1035
+Name (EN): BEAM Z MHL 74
+Name (ES): BEAM Z MHL 74
+Category: cat.light
+Manufacturer: BeamZ
+Price/Day: €20
+Image: img/inventory/BEAM_Z_MHL_74.webp
+Description (EN): BeamZ MHL74 compact moving head combining a 30W white LED spot with 6x 8W 4-in-1 RGBW wash LEDs for versatile beam and wash effects.
+Description (ES): Cabeza móvil compacta BeamZ MHL74 que combina un haz spot blanco de 30W con 6 LEDs de 8W RGBW 4 en 1 para bañado de color.
+Specs (EN):
+  - Light Source: 7x 10W 4-in-1
+  - Color: RGBW
+  - Beam Angle: 15° wash
+  - Pan / Tilt: 540° / 180°
+  - Control: DMX 7/12 ch
+  - Power: 80 W
+Specs (ES):
+  - Fuente: 7x 10W 4 en 1
+  - Color: RGBW
+  - Ángulo: 15° wash
+  - Pan / Tilt: 540° / 180°
+  - Control: DMX 7/12 ch
+  - Consumo: 80 W
+--------------------------------------------------------------------------------
+
+ID: 1036
+Name (EN): BEAM Z PANDORA 1600
+Name (ES): BEAM Z PANDORA 1600
+Category: cat.light
+Manufacturer: BeamZ
+Price/Day: €35
+Image: img/inventory/BEAM_Z_PANDORA_1600.webp
+Description (EN): BeamZ Pandora 1600 full-color 1.6W RGB laser projector with 25kpps optical scanners, ILDA graphics and DMX show control.
+Description (ES): Proyector láser BeamZ Pandora 1600 RGB de 1,6W a todo color con escáneres ópticos de 25kpps, interfaz ILDA y control DMX.
+Specs (EN):
+  - Laser Power: 1600 mW RGB
+  - Scanner: 20 kpps @ 8°
+  - Patterns: Built-in ILDA graphics
+  - Control: ILDA / DMX 12 ch
+  - Safety: Key switch & interlock
+  - Power: 80 W
+Specs (ES):
+  - Potencia láser: 1600 mW RGB
+  - Escáner: 20 kpps @ 8°
+  - Patrones: Gráficos ILDA
+  - Control: ILDA / DMX 12 ch
+  - Seguridad: Llave y enclavamiento
+  - Consumo: 80 W
+--------------------------------------------------------------------------------
+
+ID: 1037
+Name (EN): BEAM Z Par Led ip65 con batería DMX
+Name (ES): BEAM Z Par Led ip65 con batería DMX
+Category: cat.light
+Manufacturer: BeamZ
+Price/Day: €15
+Image: img/inventory/BEAM_Z_Par_Led_ip65_con_batera_DMX.webp
+Description (EN): BeamZ professional IP65 battery-powered outdoor LED uplight with RGBAW-UV color mixing and integrated Wireless DMX.
+Description (ES): Foco proyector LED a batería BeamZ IP65 para exterior con mezcla de color RGBAW-UV y DMX inalámbrico integrado.
+Specs (EN):
+  - Light Source: 6x 12W 6-in-1
+  - Color: RGBAW-UV
+  - Battery: Up to 15 h
+  - Wireless DMX: Built-in
+  - Protection: IP65 outdoor
+  - Beam Angle: 22°
+Specs (ES):
+  - Fuente: 6x 12W 6 en 1
+  - Color: RGBAW-UV
+  - Batería: Hasta 15 h
+  - DMX Wireless: Integrado
+  - Protección: IP65 intemperie
+  - Ángulo: 22°
+--------------------------------------------------------------------------------
+
+ID: 1038
+Name (EN): BEAM Z S3500
+Name (ES): BEAM Z S3500
+Category: cat.light
+Manufacturer: BeamZ
+Price/Day: €25
+Image: img/inventory/BEAM_Z_S3500.webp
+Description (EN): BeamZ S3500 professional 3500W heavy smoke machine capable of producing over 1200 m³/min for large stages and venues.
+Description (ES): Máquina de humo profesional BeamZ S3500 de 3500W capaz de generar más de 1200 m³/min para grandes escenarios y recintos.
+Specs (EN):
+  - Heater: 3500 W
+  - Output: 1217 m³/min
+  - Tank: 5 L
+  - Warm-up: 6 min
+  - Control: DMX / Wireless
+  - Power: 3500 W
+Specs (ES):
+  - Calefactor: 3500 W
+  - Salida: 1217 m³/min
+  - Tanque: 5 L
+  - Calentamiento: 6 min
+  - Control: DMX / Wireless
+  - Consumo: 3500 W
+--------------------------------------------------------------------------------
+
+ID: 1039
+Name (EN): Chauvet Dj Intimidator beam 355 irc
+Name (ES): Chauvet Dj Intimidator beam 355 irc
+Category: cat.light
+Manufacturer: Chauvet
+Price/Day: €20
+Image: img/inventory/Chauvet_Dj_Intimidator_beam_355_irc.webp
+Description (EN): Chauvet DJ Intimidator Beam 355 IRC high-output 100W LED beam moving head with 3° razor-sharp beam, rotating 8-facet prism, and motorized frost.
+Description (ES): Cabeza móvil beam Chauvet DJ Intimidator Beam 355 IRC de 100W con haz ultraconcentrado de 3°, prisma rotativo de 8 caras y filtro frost motorizado.
+Specs (EN):
+  - Light Source: 100W white LED
+  - Beam Angle: 3° tight beam
+  - Colors: 8 + white
+  - Gobos: 5 metal + open
+  - Prism: 8-facet rotating
+  - Power: 157 W
+Specs (ES):
+  - Fuente: LED blanco 100W
+  - Ángulo: 3° concentrado
+  - Colores: 8 + blanco
+  - Gobos: 5 metal + abierto
+  - Prisma: 8 caras rotativo
+  - Consumo: 157 W
+--------------------------------------------------------------------------------
+
+ID: 1040
+Name (EN): DAGE Dragon Eyes - 7x60W Beam Wash
+Name (ES): DAGE Dragon Eyes - 7x60W Beam Wash
+Category: cat.light
+Manufacturer: DAGE
+Price/Day: €35
+Image: img/inventory/DAGE_Dragon_Eyes_-_7x60W_Beam_Wash.webp
+Description (EN): DAGE DA-760 Dragon Eyes 7x60W RGBW moving head beam/wash fixture with rapid 2.5°-50° zoom and individual pixel mapping.
+Description (ES): Cabeza móvil beam/wash DAGE DA-760 Dragon Eyes 7x60W RGBW con zoom ultra rápido de 2,5°-50° y mapeo de píxeles individual.
+Specs (EN):
+  - Light Source: 7x 60W Osram RGBW
+  - Motorized Zoom: 2.5° - 50°
+  - Pixel Control: Individual
+  - CCT Range: 2500K - 10000K
+  - Pan / Tilt: 540° / 270°
+  - Power: 450 W
+Specs (ES):
+  - Fuente: 7x 60W Osram RGBW
+  - Zoom motorizado: 2.5° - 50°
+  - Control píxeles: Individual
+  - Rango CCT: 2500K - 10000K
+  - Pan / Tilt: 540° / 270°
+  - Consumo: 450 W
+--------------------------------------------------------------------------------
+
+ID: 1041
+Name (EN): DAGE Optimus Prime Mega Beam 420W
+Name (ES): DAGE Optimus Prime Mega Beam 420W
+Category: cat.light
+Manufacturer: DAGE
+Price/Day: €40
+Image: img/inventory/DAGE_Optimus_Prime_Mega_Beam_420W.webp
+Description (EN): DAGE Optimus Prime 420W touring beam moving head featuring an Osram 420W discharge lamp and massive 186mm projection optics.
+Description (ES): Cabeza móvil beam de gira DAGE Optimus Prime 420W con lámpara de descarga Osram 420W y óptica frontal gigante de 186mm.
+Specs (EN):
+  - Lamp: Osram 420W discharge
+  - Front Lens: 186 mm
+  - Beam Angle: 1.0° - 1.4°
+  - Colors: 11 + open
+  - Gobos: 14 fixed + open
+  - Prisms: 8-facet rotating
+Specs (ES):
+  - Lámpara: Osram 420W descarga
+  - Lente frontal: 186 mm
+  - Ángulo: 1.0° - 1.4°
+  - Colores: 11 + abierto
+  - Gobos: 14 fijos + abierto
+  - Prismas: 8 caras rotativo
+--------------------------------------------------------------------------------
+
+ID: 1042
+Name (EN): Tp Link TL-SG105
+Name (ES): Tp Link TL-SG105
+Category: cat.electricity
+Manufacturer: UPSTAGE
+Price/Day: €20
+Image: img/inventory/placeholder.webp
+Description (EN): TP-Link TL-SG105 5-port Gigabit desktop network switch with sturdy metal housing, plug-and-play setup, and QoS priority support for AV networks.
+Description (ES): Switch de red Gigabit de sobremesa de 5 puertos TP-Link TL-SG105 con carcasa metálica, instalación plug-and-play y soporte QoS para redes AV.
+Specs (EN):
+  - Ports: 5x Gigabit RJ45
+  - Bandwidth: 10 Gbps
+  - Housing: Shielded metal
+  - Features: 802.1p QoS / IGMP
+Specs (ES):
+  - Puertos: 5x Gigabit RJ45
+  - Ancho banda: 10 Gbps
+  - Carcasa: Metálica blindada
+  - Funciones: 802.1p QoS / IGMP
+--------------------------------------------------------------------------------
+
+ID: 1043
+Name (EN): AMATE AUDIO NITID ARRAY N208A
+Name (ES): AMATE AUDIO NITID ARRAY N208A
+Category: cat.sound
+Manufacturer: Amate Audio
+Price/Day: €60
+Image: img/inventory/AMATE_AUDIO_NITID_ARRAY_N208A.webp
+Description (EN): Amate Audio Nitid N208A active 1500W line array element featuring dual 8" neodymium drivers and onboard DSP touch control.
+Description (ES): Módulo line array activo Amate Audio Nitid N208A de 1500W con dos altavoces de 8" de neodimio y control táctil DSP integrado.
+Specs (EN):
+  - Type: Active line array
+  - Power: 1500 W Class D
+  - Max SPL: 136 dB
+  - Transducers: 2x 8 in + 2.5 in HF
+  - Freq Low: 78 Hz
+  - Freq High: 19 kHz
+Specs (ES):
+  - Tipo: Line array activo
+  - Potencia: 1500 W Clase D
+  - SPL Máx: 136 dB
+  - Transductores: 2x 8 in + 2.5 in HF
+  - Freq Baja: 78 Hz
+  - Freq Alta: 19 kHz
+--------------------------------------------------------------------------------
+
+ID: 1044
+Name (EN): AMATE AUDIO NITID ARRAY N208P
+Name (ES): AMATE AUDIO NITID ARRAY N208P
+Category: cat.sound
+Manufacturer: Amate Audio
+Price/Day: €60
+Image: img/inventory/AMATE_AUDIO_NITID_ARRAY_N208A.webp
+Description (EN): Amate Audio Nitid N208P passive 1000W 16-ohm line array module engineered for compact touring and permanent installations.
+Description (ES): Módulo line array pasivo Amate Audio Nitid N208P de 1000W y 16 ohmios diseñado para giras compactas e instalaciones permanentes.
+Specs (EN):
+  - Type: Passive line array
+  - Program Power: 1000 W (16 Ohm)
+  - Max SPL: 136 dB
+  - Transducers: 2x 8 in + 2.5 in HF
+  - Freq Low: 78 Hz
+  - Freq High: 19 kHz
+Specs (ES):
+  - Tipo: Line array pasivo
+  - Potencia: 1000 W (16 Ohm)
+  - SPL Máx: 136 dB
+  - Transductores: 2x 8 in + 2.5 in HF
+  - Freq Baja: 78 Hz
+  - Freq Alta: 19 kHz
+--------------------------------------------------------------------------------
+
+ID: 1045
+Name (EN): AMATE AUDIO NITID N 12
+Name (ES): AMATE AUDIO NITID N 12
+Category: cat.sound
+Manufacturer: Amate Audio
+Price/Day: €20
+Image: img/inventory/AMATE_AUDIO_NITID_S12.webp
+Description (EN): Amate Audio Nitid N12 active 1000W 12-inch 2-way multifunctional loudspeaker / stage monitor with touchscreen DSP control.
+Description (ES): Caja acústica / monitor activo multifunción Amate Audio Nitid N12 de 1000W y 12" con pantalla táctil LCD y DSP de 48 bits.
+Specs (EN):
+  - Type: Active speaker
+  - Power: 1000 W Class D
+  - Max SPL: 131 dB
+  - Transducers: 12 in LF + 1.4 in HF
+  - Freq Low: 53 Hz
+  - Freq High: 19 kHz
+Specs (ES):
+  - Tipo: Altavoz activo
+  - Potencia: 1000 W Clase D
+  - SPL Máx: 131 dB
+  - Transductores: 12 in LF + 1.4 in HF
+  - Freq Baja: 53 Hz
+  - Freq Alta: 19 kHz
+--------------------------------------------------------------------------------
+
+ID: 1046
+Name (EN): AMATE AUDIO NITID N18W
+Name (ES): AMATE AUDIO NITID N18W
+Category: cat.sound
+Manufacturer: Amate Audio
+Price/Day: €35
+Image: img/inventory/AMATE_AUDIO_NITID_N18W.webp
+Description (EN): Amate Audio Nitid N18W 2500W high-power active 18" subwoofer delivering high sound pressure down to 35 Hz.
+Description (ES): Subwoofer activo de alta potencia Amate Audio Nitid N18W de 2500W y 18" con respuesta de graves hasta 35 Hz.
+Specs (EN):
+  - Type: Active sub
+  - Power: 2500 W Class D
+  - Max SPL: 136 dB
+  - Driver: 18 in (4 in VC)
+  - Freq Low: 35 Hz
+  - Freq High: 140 Hz
+Specs (ES):
+  - Tipo: Sub activo
+  - Potencia: 2500 W Clase D
+  - SPL Máx: 136 dB
+  - Altavoz: 18 in (bobina 4 in)
+  - Freq Baja: 35 Hz
+  - Freq Alta: 140 Hz
+--------------------------------------------------------------------------------
+
+ID: 1047
+Name (EN): AMATE AUDIO NITID S12
+Name (ES): AMATE AUDIO NITID S12
+Category: cat.sound
+Manufacturer: Amate Audio
+Price/Day: €20
+Image: img/inventory/AMATE_AUDIO_NITID_S12.webp
+Description (EN): Amate Audio Nitid S12 active 1000W 12-inch 2-way point source speaker with built-in DSP touchscreen control for FOH reinforcement and stage monitoring.
+Description (ES): Caja acústica activa de 12 pulgadas y 1000W Amate Audio Nitid S12 con control DSP mediante pantalla táctil para P.A. y monitoreo de escenario.
+Specs (EN):
+  - Type: Active speaker
+  - Power: 1000 W Class D
+  - Max SPL: 131 dB
+  - Transducers: 12 in LF + 1.4 in HF
+  - Freq Low: 53 Hz
+  - Freq High: 19 kHz
+Specs (ES):
+  - Tipo: Altavoz activo
+  - Potencia: 1000 W Clase D
+  - SPL Máx: 131 dB
+  - Transductores: 12 in LF + 1.4 in HF
+  - Freq Baja: 53 Hz
+  - Freq Alta: 19 kHz
+--------------------------------------------------------------------------------
+
+ID: 1048
+Name (EN): AMATE AUDIO XCELLENCE X102FD
+Name (ES): AMATE AUDIO XCELLENCE X102FD
+Category: cat.sound
+Manufacturer: Amate Audio
+Price/Day: €65
+Image: img/inventory/AMATE_AUDIO_XCELLENCE_X102FD.webp
+Description (EN): Amate Audio Xcellence X102FD active 3000W dual 10-inch point source loudspeaker delivering extraordinary power, clarity, and Dante network connectivity.
+Description (ES): Caja activa de fuente puntual Amate Audio Xcellence X102FD de 3000W con doble altavoz de 10 pulgadas, máxima claridad y compatibilidad con red Dante.
+Specs (EN):
+  - Type: Active point source
+  - Power: 3000 W Class D
+  - Max SPL: 139 dB
+  - Transducers: 2x 10 in + 3 in HF
+  - Coverage: 80° x 60°
+  - Network: Dante / Ethernet
+Specs (ES):
+  - Tipo: Puntual activo
+  - Potencia: 3000 W Clase D
+  - SPL Máx: 139 dB
+  - Transductores: 2x 10 in + 3 in HF
+  - Cobertura: 80° x 60°
+  - Red: Dante / Ethernet
+--------------------------------------------------------------------------------
+
+ID: 1049
+Name (EN): AMATE AUDIO XCELLENCE X218WF
+Name (ES): AMATE AUDIO XCELLENCE X218WF
+Category: cat.sound
+Manufacturer: Amate Audio
+Price/Day: €65
+Image: img/inventory/AMATE_AUDIO_XCELLENCE_X218WF.webp
+Description (EN): Amate Audio Xcellence X218WF flyable dual 18-inch 5000W active subwoofer delivering crushing 141 dB SPL sub-bass performance.
+Description (ES): Subwoofer volable doble 18" activo Amate Audio Xcellence X218WF de 5000W capaz de entregar hasta 141 dB SPL pico.
+Specs (EN):
+  - Type: Active sub flyable
+  - Power: 5000 W Class D
+  - Max SPL: 141 dB
+  - Drivers: 2x 18 in neodymium
+  - Freq Low: 28 Hz
+  - Freq High: 120 Hz
+Specs (ES):
+  - Tipo: Sub activo volable
+  - Potencia: 5000 W Clase D
+  - SPL Máx: 141 dB
+  - Altavoces: 2x 18 in neodimio
+  - Freq Baja: 28 Hz
+  - Freq Alta: 120 Hz
+--------------------------------------------------------------------------------
+
+ID: 1050
+Name (EN): AMATE AUDIO XCELLENCE X82FD
+Name (ES): AMATE AUDIO XCELLENCE X82FD
+Category: cat.sound
+Manufacturer: Amate Audio
+Price/Day: €65
+Image: img/inventory/AMATE_AUDIO_XCELLENCE_X82FD.webp
+Description (EN): Amate Audio Xcellence X82FD active 3000W dual 8-inch high-output point source speaker designed for high-fidelity installations and touring sound.
+Description (ES): Altavoz activo de alta gama Amate Audio Xcellence X82FD de 3000W con doble altavoz de 8 pulgadas diseñado para touring e instalaciones de alta fidelidad.
+Specs (EN):
+  - Type: Active speaker
+  - Power: 3000 W Class D
+  - Max SPL: 137 dB
+  - Transducers: 2x 8 in + 3 in HF
+  - Freq Low: 60 Hz
+  - Freq High: 20 kHz
+Specs (ES):
+  - Tipo: Altavoz activo
+  - Potencia: 3000 W Clase D
+  - SPL Máx: 137 dB
+  - Transductores: 2x 8 in + 3 in HF
+  - Freq Baja: 60 Hz
+  - Freq Alta: 20 kHz
+--------------------------------------------------------------------------------
+
+ID: 1051
+Name (EN): AMATE AUDIO XCELLENCE XW118
+Name (ES): AMATE AUDIO XCELLENCE XW118
+Category: cat.sound
+Manufacturer: Amate Audio
+Price/Day: €65
+Image: img/inventory/AMATE_AUDIO_XCELLENCE_XW118.webp
+Description (EN): Amate Audio Xcellence XW118 high-end touring 2500W active 18" subwoofer delivering precise, punchy low frequencies.
+Description (ES): Subwoofer activo touring Amate Audio Xcellence XW118 de 2500W y 18" con sonido de graves potente y definición excepcional.
+Specs (EN):
+  - Type: Active sub
+  - Power: 2500 W Class D
+  - Max SPL: 138 dB
+  - Driver: 18 in neodymium
+  - Freq Low: 32 Hz
+  - Freq High: 130 Hz
+Specs (ES):
+  - Tipo: Sub activo
+  - Potencia: 2500 W Clase D
+  - SPL Máx: 138 dB
+  - Altavoz: 18 in neodimio
+  - Freq Baja: 32 Hz
+  - Freq Alta: 130 Hz
+--------------------------------------------------------------------------------
+
+ID: 1052
+Name (EN): DBX DRIVE RAC PA2
+Name (ES): DBX DRIVE RAC PA2
+Category: cat.sound
+Manufacturer: DBX
+Price/Day: €12
+Image: img/inventory/DBX_DRIVE_RAC_PA2.webp
+Description (EN): dbx DriveRack PA2 complete loudspeaker management system with AutoEQ, Advanced Feedback Suppression, and wireless network setup.
+Description (ES): Sistema completo de gestión y procesado de altavoces dbx DriveRack PA2 con AutoEQ, supresor AFS y control inalámbrico por red.
+Specs (EN):
+  - Inputs: 2 XLR + 1 RTA
+  - Outputs: 6 balanced XLR
+  - Conversion: 24-bit dbx Type IV
+  - Processing: AutoEQ / AFS / PEQ
+  - Control: Ethernet / App
+  - Rack: 1U
+Specs (ES):
+  - Entradas: 2 XLR + 1 RTA
+  - Salidas: 6 XLR balanceadas
+  - Conversión: 24 bits dbx Type IV
+  - Procesado: AutoEQ / AFS / PEQ
+  - Control: Ethernet / App
+  - Rack: 1U
+--------------------------------------------------------------------------------
+
+ID: 1053
+Name (EN): LD Systems DAVE 8 xs
+Name (ES): LD Systems DAVE 8 xs
+Category: cat.sound
+Manufacturer: LD Systems
+Price/Day: €25
+Image: img/inventory/LD_Systems_DAVE_8_xs.webp
+Description (EN): LD Systems DAVE 8 XS ultra-compact portable 2.1 powered PA system with an 8" subwoofer and dual twin 4" satellites.
+Description (ES): Sistema de sonido PA autoamplificado 2.1 ultracompacto LD Systems DAVE 8 XS con subwoofer de 8" y dos satélites dobles de 4".
+Specs (EN):
+  - System Type: 2.1 powered PA
+  - Power: 350W RMS / 1400W
+  - Max SPL: 123 dB
+  - Subwoofer: 8 in bandpass
+  - Satellites: Dual 4 in + 1 in
+  - Freq Response: 45 Hz - 19 kHz
+Specs (ES):
+  - Tipo: PA 2.1 activo
+  - Potencia: 350W RMS / 1400W
+  - SPL Máx: 123 dB
+  - Subwoofer: 8 in pasabanda
+  - Satélites: Doble 4 in + 1 in
+  - Respuesta: 45 Hz - 19 kHz
+--------------------------------------------------------------------------------
+
+ID: 1054
+Name (EN): LD Systems MAUI 11 G2
+Name (ES): LD Systems MAUI 11 G2
+Category: cat.sound
+Manufacturer: LD Systems
+Price/Day: €35
+Image: img/inventory/LD_Systems_MAUI_11_G2.webp
+Description (EN): LD Systems MAUI 11 G2 active column PA system with 1000W peak power, wide 120° dispersion, and integrated Bluetooth mixer.
+Description (ES): Sistema de columna activo LD Systems MAUI 11 G2 de 1000W pico, con cobertura homogénea de 120° y mezclador Bluetooth integrado.
+Specs (EN):
+  - System Type: Column PA system
+  - Power: 500W RMS / 1000W
+  - Max SPL: 124 dB
+  - Transducers: 3x 6.5 in + 8x 3 in
+  - Coverage: 120° x 20°
+  - Connectivity: Bluetooth / XLR
+Specs (ES):
+  - Tipo: Columna activa
+  - Potencia: 500W RMS / 1000W
+  - SPL Máx: 124 dB
+  - Transductores: 3x 6.5 in + 8x 3 in
+  - Cobertura: 120° x 20°
+  - Conexión: Bluetooth / XLR
+--------------------------------------------------------------------------------
+
+ID: 1055
+Name (EN): LD Systems MAUI 28
+Name (ES): LD Systems MAUI 28
+Category: cat.sound
+Manufacturer: LD Systems
+Price/Day: €35
+Image: img/inventory/LD_Systems_MAUI_28.webp
+Description (EN): LD Systems MAUI 28 modular all-in-one column PA system featuring dual 8" subwoofers and a 16-speaker vertical array.
+Description (ES): Sistema de sonido en columna LD Systems MAUI 28 todo-en-uno con doble subwoofer de 8" y array vertical de 16 altavoces.
+Specs (EN):
+  - System Type: Column PA system
+  - Power: 400W RMS / 800W
+  - Max SPL: 123 dB
+  - Transducers: 2x 8 in + 16x 3 in
+  - Dispersion: 120° horizontal
+  - Freq Response: 45 Hz - 20 kHz
+Specs (ES):
+  - Tipo: Columna activa
+  - Potencia: 400W RMS / 800W
+  - SPL Máx: 123 dB
+  - Transductores: 2x 8 in + 16x 3 in
+  - Dispersión: 120° horizontal
+  - Respuesta: 45 Hz - 20 kHz
+--------------------------------------------------------------------------------
+
+ID: 1056
+Name (EN): MACKIE THUMP 12
+Name (ES): MACKIE THUMP 12
+Category: cat.sound
+Manufacturer: Mackie
+Price/Day: €25
+Image: img/inventory/MACKIE_THUMP_12.webp
+Description (EN): Mackie Thump 12 active 1300W 12-inch powered loudspeaker delivering proven punchy low-end and dynamic sound for DJs, bands, and parties.
+Description (ES): Caja acústica autoamplificada de 12 pulgadas y 1300W Mackie Thump 12 con graves contundentes y sonido dinámico para DJs, grupos y eventos.
+Specs (EN):
+  - Type: Active speaker
+  - Power: 1300 W Class D
+  - Max SPL: 126 dB
+  - Transducers: 12 in LF + 1.4 in HF
+  - Freq Low: 50 Hz
+  - Freq High: 23 kHz
+Specs (ES):
+  - Tipo: Altavoz activo
+  - Potencia: 1300 W Clase D
+  - SPL Máx: 126 dB
+  - Transductores: 12 in LF + 1.4 in HF
+  - Freq Baja: 50 Hz
+  - Freq Alta: 23 kHz
+--------------------------------------------------------------------------------
+
+ID: 1057
+Name (EN): RCF EVOX J9
+Name (ES): RCF EVOX J9
+Category: cat.sound
+Manufacturer: RCF
+Price/Day: €35
+Image: img/inventory/RCF_EVOX_J9.webp
+Description (EN): RCF EVOX J-series portable column sound system with 1400W peak power, 12" sub, and FiRPHASE acoustic processing.
+Description (ES): Sistema de columna portátil RCF serie EVOX J con 1400W pico, subwoofer de 12" y procesamiento acústico FiRPHASE.
+Specs (EN):
+  - System Type: Column PA system
+  - Power: 700W RMS / 1400W
+  - Max SPL: 128 dB
+  - Transducers: 12 in LF + 8x 2 in
+  - Freq Response: 40 Hz - 20 kHz
+  - DSP: FiRPHASE
+Specs (ES):
+  - Tipo: Columna activa
+  - Potencia: 700W RMS / 1400W
+  - SPL Máx: 128 dB
+  - Transductores: 12 in LF + 8x 2 in
+  - Respuesta: 40 Hz - 20 kHz
+  - DSP: FiRPHASE
+--------------------------------------------------------------------------------
+
+ID: 1058
+Name (EN): RCF RCF ART 12
+Name (ES): RCF RCF ART 12
+Category: cat.sound
+Manufacturer: RCF
+Price/Day: €25
+Image: img/inventory/RCF_RCF_ART_12.webp
+Description (EN): RCF ART 12 active 2-way reference speaker delivering crystal-clear vocals and robust live sound reinforcement.
+Description (ES): Altavoz activo de 2 vías RCF ART 12 con excelente reproducción vocal y refuerzo de sonido profesional en directo.
+Specs (EN):
+  - Type: Active speaker
+  - Power: 700W RMS / 1400W
+  - Max SPL: 129 dB
+  - Transducers: 12 in LF + 1 in HF
+  - Coverage: 90° x 60°
+  - DSP: FiRPHASE
+Specs (ES):
+  - Tipo: Altavoz activo
+  - Potencia: 700W RMS / 1400W
+  - SPL Máx: 129 dB
+  - Transductores: 12 in LF + 1 in HF
+  - Cobertura: 90° x 60°
+  - DSP: FiRPHASE
+--------------------------------------------------------------------------------
+
+ID: 1059
+Name (EN): RCF SUB 15
+Name (ES): RCF SUB 15
+Category: cat.sound
+Manufacturer: RCF
+Price/Day: €35
+Image: img/inventory/RCF_SUB_15.webp
+Description (EN): RCF SUB 15 active compact 1400W 15-inch bass reflex subwoofer engineered to pair with ART and D-Line speakers.
+Description (ES): Subwoofer activo bass-reflex RCF SUB 15 de 1400W y 15" diseñado para combinar perfectamente con altavoces RCF ART y D-Line.
+Specs (EN):
+  - Type: Active sub
+  - Power: 700W RMS / 1400W
+  - Max SPL: 131 dB
+  - Driver: 15 in (3 in VC)
+  - Freq Low: 45 Hz
+  - Freq High: 120 Hz
+Specs (ES):
+  - Tipo: Sub activo
+  - Potencia: 700W RMS / 1400W
+  - SPL Máx: 131 dB
+  - Altavoz: 15 in (bobina 3 in)
+  - Freq Baja: 45 Hz
+  - Freq Alta: 120 Hz
+--------------------------------------------------------------------------------
+
+ID: 1060
+Name (EN): VOID AIR MOTION V2
+Name (ES): VOID AIR MOTION V2
+Category: cat.sound
+Manufacturer: Void
+Price/Day: €80
+Image: img/inventory/VOID_AIR_MOTION_V2.webp
+Description (EN): Void Acoustics Air Motion V2 iconic sculptural 3-way bi-amped loudspeaker delivering signature aesthetic and club audio performance.
+Description (ES): Altavoz escultural de 3 vías tri-coaxial Void Acoustics Air Motion V2 con diseño icónico y máximo rendimiento para club y eventos.
+Specs (EN):
+  - Type: 3-way bi-amped
+  - Power Handling: 500W LF / 250W MHF
+  - Max SPL: 137 dB
+  - Transducers: 12 in + 8 in + 1.5 in
+  - Dispersion: 60° x 50°
+  - Freq Response: 140 Hz - 20 kHz
+Specs (ES):
+  - Tipo: 3 vías bi-amplif
+  - Potencia: 500W LF / 250W MHF
+  - SPL Máx: 137 dB
+  - Transductores: 12 in + 8 in + 1.5 in
+  - Dispersión: 60° x 50°
+  - Respuesta: 140 Hz - 20 kHz
+--------------------------------------------------------------------------------
+
+ID: 1061
+Name (EN): VOID BIAS Q2
+Name (ES): VOID BIAS Q2
+Category: cat.sound
+Manufacturer: Void
+Price/Day: €50
+Image: img/inventory/VOID_BIAS_Q2.webp
+Description (EN): Void Bias Q2 professional 4-channel touring amplifier delivering up to 4x 2000W with integrated speaker processing DSP.
+Description (ES): Etapa de potencia profesional de 4 canales Void Bias Q2 que proporciona hasta 4x 2000W con DSP integral para gestión de altavoces.
+Specs (EN):
+  - Output Power: 4x 2000 W (2 Ohm)
+  - DSP: 24-bit / 96kHz FIR
+  - Frequency: 20 Hz - 20 kHz
+  - Inputs: 4x XLR analog
+  - Outputs: 4x speakON NL4
+  - Network: ArmoníaPlus
+Specs (ES):
+  - Potencia salida: 4x 2000 W (2 Ohm)
+  - DSP: 24 bits / 96kHz FIR
+  - Frecuencia: 20 Hz - 20 kHz
+  - Entradas: 4x XLR analógico
+  - Salidas: 4x speakON NL4
+  - Red: ArmoníaPlus
+--------------------------------------------------------------------------------
+
+ID: 1062
+Name (EN): YAMAHA DXR 12
+Name (ES): YAMAHA DXR 12
+Category: cat.sound
+Manufacturer: Yamaha
+Price/Day: €25
+Image: img/inventory/YAMAHA_DXR_12.webp
+Description (EN): Yamaha DXR12 1100W 12-inch 2-way active loudspeaker engineered with NEXO acoustic tuning, FIR-X linear phase crossover, and ultra-high output.
+Description (ES): Altavoz activo de 2 vías y 1100W Yamaha DXR12 y 12" desarrollado junto a NEXO con filtrado FIR-X de fase lineal y gran potencia sonora.
+Specs (EN):
+  - Type: Active speaker
+  - Power: 1100 W Class D
+  - Max SPL: 132 dB
+  - Transducers: 12 in LF + 1.4 in HF
+  - Freq Low: 52 Hz
+  - Freq High: 20 kHz
+Specs (ES):
+  - Tipo: Altavoz activo
+  - Potencia: 1100 W Clase D
+  - SPL Máx: 132 dB
+  - Transductores: 12 in LF + 1.4 in HF
+  - Freq Baja: 52 Hz
+  - Freq Alta: 20 kHz
+--------------------------------------------------------------------------------
+
+ID: 1063
+Name (EN): YAMAHA DXS15
+Name (ES): YAMAHA DXS15
+Category: cat.sound
+Manufacturer: Yamaha
+Price/Day: €35
+Image: img/inventory/YAMAHA_DXS15.webp
+Description (EN): Yamaha DXS15 high-output 950W powered 15-inch band-pass subwoofer equipped with dynamic D-XSUB processing.
+Description (ES): Subwoofer autoamplificado de 15" Yamaha DXS15 de 950W con caja acústica pasabanda y procesador dinámico D-XSUB.
+Specs (EN):
+  - Type: Active sub
+  - Power: 950 W Class D
+  - Max SPL: 132 dB
+  - Driver: 15 in bandpass
+  - Freq Low: 45 Hz
+  - Freq High: 160 Hz
+Specs (ES):
+  - Tipo: Sub activo
+  - Potencia: 950 W Clase D
+  - SPL Máx: 132 dB
+  - Altavoz: 15 in pasabanda
+  - Freq Baja: 45 Hz
+  - Freq Alta: 160 Hz
+--------------------------------------------------------------------------------
+
+ID: 1064
+Name (EN): Base Truss
+Name (ES): Base Truss
+Category: cat.structures
+Manufacturer: UPSTAGE
+Price/Day: €12
+Image: img/inventory/Kuzar_Base_Truss.webp
+Description (EN): Heavy-duty steel base plate for 29x29cm square truss totems and vertical support columns, providing robust ground stabilization.
+Description (ES): Placa base pesada de acero para tótems y columnas verticales de truss de 29x29 cm, garantizando máxima estabilidad en el suelo.
+Specs (EN):
+  - Compatibility: 290x290 mm truss
+  - Material: Galvanized steel
+  - Weight: 28 kg
+  - Fixing: Conical couplers
+Specs (ES):
+  - Compatibilidad: Truss 290x290 mm
+  - Material: Acero galvanizado
+  - Peso: 28 kg
+  - Fijación: Conectores cónicos
+--------------------------------------------------------------------------------
+
+ID: 1065
+Name (EN): Cubo Truss
+Name (ES): Cubo Truss
+Category: cat.structures
+Manufacturer: UPSTAGE
+Price/Day: €12
+Image: img/inventory/Kuzar_Cubo_Truss.webp
+Description (EN): Kuzar 6-way modular junction box cube for 29x29cm square aluminum truss, allowing multi-directional corner, tee, and cross junctions.
+Description (ES): Cubo de unión modular de 6 direcciones Kuzar para truss cuadrado de 29x29 cm, permitiendo esquinas, cruces y derivaciones en múltiples direcciones.
+Specs (EN):
+  - Compatibility: 290x290 mm truss
+  - Directions: 6 connectable faces
+  - Material: Alloy EN AW-6082 T6
+  - Connection: Conical couplers
+Specs (ES):
+  - Compatibilidad: Truss 290x290 mm
+  - Direcciones: 6 caras unión
+  - Material: Aluminio 6082 T6
+  - Conexión: Unión cónica
+--------------------------------------------------------------------------------
+
+ID: 1066
+Name (EN): Escalera Tarima
+Name (ES): Escalera Tarima
+Category: cat.structures
+Manufacturer: UPSTAGE
+Price/Day: €20
+Image: img/inventory/Kuzar_Escalera_Tarima.webp
+Description (EN): Modular aluminum access stairs designed for stage decks and modular event platforms with non-slip treads and sturdy side handrails.
+Description (ES): Escalera modular de aluminio para tarimas y escenarios de eventos con peldaños antideslizantes y pasamanos de seguridad.
+Specs (EN):
+  - Platform Height: 40 - 100 cm
+  - Treads: Anti-slip aluminum
+  - Material: Reinforced aluminum
+  - Safety: Handrail included
+Specs (ES):
+  - Altura tarima: 40 - 100 cm
+  - Peldaños: Aluminio antidesliz
+  - Material: Aluminio reforzado
+  - Seguridad: Pasamanos incluido
+--------------------------------------------------------------------------------
+
+ID: 1067
+Name (EN): Garra Tarima Doble
+Name (ES): Garra Tarima Doble
+Category: cat.structures
+Manufacturer: UPSTAGE
+Price/Day: €5
+Image: img/inventory/Kuzar_Garra_Tarima_Doble.webp
+Description (EN): Kuzar heavy-duty dual deck clamp for interlocking adjacent modular stage platforms, ensuring a seamless, rigid stage surface.
+Description (ES): Garra de unión doble Kuzar para unir sólidamente tarimas contiguas de escenario, garantizando una superficie firme y nivelada.
+Specs (EN):
+  - Function: Dual platform clamp
+  - Material: Steel / Zinc alloy
+  - Compatibility: Standard profiles
+  - Locking: Screw clamp
+Specs (ES):
+  - Función: Garra de unión doble
+  - Material: Acero cincado
+  - Compatibilidad: Perfiles estándar
+  - Bloqueo: Mordaza roscada
+--------------------------------------------------------------------------------
+
+ID: 1068
+Name (EN): Garra Tarima Simple
+Name (ES): Garra Tarima Simple
+Category: cat.structures
+Manufacturer: UPSTAGE
+Price/Day: €5
+Image: img/inventory/Kuzar_Garra_Tarima_Doble.webp
+Description (EN): Single stage platform connector clamp for securing stage deck profiles and accessories firmly in place.
+Description (ES): Garra de unión simple para fijación de perfiles de tarima de escenario y accesorios estructurales.
+Specs (EN):
+  - Function: Single deck clamp
+  - Material: Galvanized steel
+  - Compatibility: Standard profiles
+  - Locking: Ergonomic bolt
+Specs (ES):
+  - Función: Garra de unión simple
+  - Material: Acero galvanizado
+  - Compatibilidad: Perfiles estándar
+  - Bloqueo: Tornillo manual
+--------------------------------------------------------------------------------
+
+ID: 1069
+Name (EN): Nivelador Tarima
+Name (ES): Nivelador Tarima
+Category: cat.structures
+Manufacturer: UPSTAGE
+Price/Day: €20
+Image: img/inventory/Kuzar_Garra_Tarima_Doble.webp
+Description (EN): Stage deck leveling insert connector that aligns top surfaces between adjacent stage platforms to prevent trip hazards.
+Description (ES): Nivelador de tarima insertable para enrasar perfectamente las superficies superiores entre tarimas adyacentes de escenario.
+Specs (EN):
+  - Function: Profile leveler
+  - Installation: Tool-free slide-in
+  - Material: Structural polymer
+  - Compatibility: Perimeter slots
+Specs (ES):
+  - Función: Nivelador perfiles
+  - Instalación: Inserción manual
+  - Material: Polímero alta dens.
+  - Compatibilidad: Ranuras de tarima
+--------------------------------------------------------------------------------
+
+ID: 1070
+Name (EN): Pata Fija 20cm
+Name (ES): Pata Fija 20cm
+Category: cat.structures
+Manufacturer: UPSTAGE
+Price/Day: €5
+Image: img/inventory/Kuzar_Pata_Fija_20cm.webp
+Description (EN): Fixed 20cm round aluminum leg set for modular stage decks, providing low-profile risers for conferences, speakers, and catwalks.
+Description (ES): Pata fija de 20 cm de aluminio para tarimas modulares de escenario, ideal para tarimas bajas en conferencias y pasarelas.
+Specs (EN):
+  - Height: 20 cm
+  - Profile: 50x50 mm aluminum
+  - Base: Non-slip rubber
+  - Load Capacity: 750 kg/m²
+Specs (ES):
+  - Altura: 20 cm
+  - Perfil: 50x50 mm aluminio
+  - Base: Goma antideslizante
+  - Capacidad: 750 kg/m²
+--------------------------------------------------------------------------------
+
+ID: 1071
+Name (EN): Pata Fija 40cm
+Name (ES): Pata Fija 40cm
+Category: cat.structures
+Manufacturer: UPSTAGE
+Price/Day: €5
+Image: img/inventory/Kuzar_Pata_Fija_20cm.webp
+Description (EN): Fixed 40cm aluminum leg set for modular stage platforms, ideal for medium-height stages and tiered choir or seating risers.
+Description (ES): Pata fija de 40 cm de aluminio para tarimas de escenario, idónea para escenarios de media altura y gradas escalonadas.
+Specs (EN):
+  - Height: 40 cm
+  - Profile: 50x50 mm aluminum
+  - Base: Non-slip rubber
+  - Load Capacity: 750 kg/m²
+Specs (ES):
+  - Altura: 40 cm
+  - Perfil: 50x50 mm aluminio
+  - Base: Goma antideslizante
+  - Capacidad: 750 kg/m²
+--------------------------------------------------------------------------------
+
+ID: 1072
+Name (EN): Pata Regulable 60cm
+Name (ES): Pata Regulable 60cm
+Category: cat.structures
+Manufacturer: UPSTAGE
+Price/Day: €5
+Image: img/inventory/Kuzar_Pata_Fija_20cm.webp
+Description (EN): Telescopic adjustable aluminum stage leg with millimeter scale for quick leveling on uneven outdoor ground and slopes (60-100cm).
+Description (ES): Pata telescópica regulable de aluminio con escala milimétrica para nivelación rápida en terrenos irregulares o con pendiente (60-100cm).
+Specs (EN):
+  - Height Range: 60 - 100 cm
+  - Adjustment: Millimetric spindle
+  - Profile: Telescopic aluminum
+  - Load Capacity: 750 kg/m²
+Specs (ES):
+  - Rango altura: 60 - 100 cm
+  - Ajuste: Husillo milimétrico
+  - Perfil: Aluminio telescópico
+  - Capacidad: 750 kg/m²
+--------------------------------------------------------------------------------
+
+ID: 1073
+Name (EN): Perfil 1m
+Name (ES): Perfil 1m
+Category: cat.structures
+Manufacturer: UPSTAGE
+Price/Day: €20
+Image: img/inventory/Kuzar_Truss.webp
+Description (EN): 1.0-meter aluminum reinforcement profile / brace for stage substructures, platform stiffening, and perimeter framework.
+Description (ES): Perfil de refuerzo de aluminio de 1,0 metro para subestructuras de escenario, arriostramiento y rigidización de plataformas.
+Specs (EN):
+  - Length: 1000 mm
+  - Profile: Heavy aluminum rail
+  - Function: Deck alignment
+  - Compatibility: Standard decks
+Specs (ES):
+  - Longitud: 1000 mm
+  - Perfil: Carril aluminio
+  - Función: Unión y refuerzo
+  - Compatibilidad: Tarimas estándar
+--------------------------------------------------------------------------------
+
+ID: 1074
+Name (EN): Tapa Truss
+Name (ES): Tapa Truss
+Category: cat.structures
+Manufacturer: UPSTAGE
+Price/Day: €12
+Image: img/inventory/Kuzar_Base_Truss.webp
+Description (EN): Top plate cap for 29x29cm square truss totems, providing a flat aluminum surface for mounting moving heads and projectors.
+Description (ES): Tapa superior para tótems de truss cuadrado de 29x29 cm, proporcionando una superficie plana de aluminio para montaje de cabezas móviles y proyectores.
+Specs (EN):
+  - Compatibility: 290x290 mm truss
+  - Material: Laser-cut steel
+  - Mounting: Conical pins
+  - Finish: Stage Black / Silver
+Specs (ES):
+  - Compatibilidad: Truss 290x290 mm
+  - Material: Placa de acero
+  - Montaje: Bulones cónicos
+  - Acabado: Negro / Plata
+--------------------------------------------------------------------------------
+
+ID: 1075
+Name (EN): Tarima 1x1
+Name (ES): Tarima 1x1
+Category: cat.structures
+Manufacturer: UPSTAGE
+Price/Day: €15
+Image: img/inventory/stage_deck.webp
+Description (EN): Compact 1x1m modular stage platform with birch plywood non-slip surface for podiums, drum risers, and stage extensions.
+Description (ES): Tarima modular de 1x1m para escenario con tablero contrachapado de abedul antideslizante para atriles, tarimas de batería y ampliaciones.
+Specs (EN):
+  - Dimensions: 1000x1000 mm
+  - Load Capacity: 750 kg/m²
+  - Deck Surface: Phenolic non-slip
+  - Frame: Reinforced aluminum
+Specs (ES):
+  - Dimensiones: 1000x1000 mm
+  - Capacidad: 750 kg/m²
+  - Superficie: Fenólica antidesliz
+  - Bastidor: Aluminio reforzado
+--------------------------------------------------------------------------------
+
+ID: 1076
+Name (EN): Tarima 2x1
+Name (ES): Tarima 2x1
+Category: cat.structures
+Manufacturer: UPSTAGE
+Price/Day: €20
+Image: img/inventory/stage_deck.webp
+Description (EN): Standard 2x1m heavy-duty professional modular stage platform certified for 750 kg/m² loads with non-slip weatherproof surface.
+Description (ES): Tarima modular profesional estándar de 2x1m de alta resistencia certificada para 750 kg/m² con superficie antideslizante para intemperie.
+Specs (EN):
+  - Dimensions: 2000x1000 mm
+  - Load Capacity: 750 kg/m²
+  - Surface: Phenolic non-slip
+  - Leg Sockets: 50 mm round/square
+  - Weight: 32 kg
+  - Use: Modular stage
+Specs (ES):
+  - Dimensiones: 2000x1000 mm
+  - Capacidad: 750 kg/m²
+  - Superficie: Fenólica antidesliz
+  - Alojamientos: 50 mm redondo/cuad.
+  - Peso: 32 kg
+  - Uso: Escenario modular
+--------------------------------------------------------------------------------
+
+ID: 1077
+Name (EN): Tarima Dj 1.5m
+Name (ES): Tarima Dj 1.5m
+Category: cat.structures
+Manufacturer: UPSTAGE
+Price/Day: €25
+Image: img/inventory/DJ_table.webp
+Description (EN): Specialized 1.5m DJ riser table platform providing an ergonomic, rock-solid surface for DJ controllers, CDJs, and mixers.
+Description (ES): Mesa tarima para DJ de 1,5 m diseñada específicamente para ofrecer una superficie sólida y ergonómica para mesas, CDJs y controladoras.
+Specs (EN):
+  - Dimensions: 1500x750 mm
+  - Surface: Black phenolic
+  - Frame: Rigid aluminum
+  - Application: DJ riser table
+Specs (ES):
+  - Dimensiones: 1500x750 mm
+  - Superficie: Fenólica negra
+  - Bastidor: Aluminio rígido
+  - Uso: Mesa tarima DJ
+--------------------------------------------------------------------------------
+
+ID: 1078
+Name (EN): Tarima Dj 2m
+Name (ES): Tarima Dj 2m
+Category: cat.structures
+Manufacturer: UPSTAGE
+Price/Day: €25
+Image: img/inventory/DJ_table.webp
+Description (EN): Large 2.0m professional DJ booth platform providing ample space for multi-player CDJ setups, analog mixers, turntables, and laptops.
+Description (ES): Mesa tarima para DJ de 2,0 m de longitud con amplio espacio para configuraciones completas de 4 reproductores CDJ, mixer, platos y portátiles.
+Specs (EN):
+  - Dimensions: 2000x800 mm
+  - Surface: Black phenolic
+  - Capacity: 500 kg
+  - Cable Pass: Integrated slots
+Specs (ES):
+  - Dimensiones: 2000x800 mm
+  - Superficie: Fenólica negra
+  - Capacidad: 500 kg
+  - Pasacables: Ranuras integradas
+--------------------------------------------------------------------------------
+
+ID: 1079
+Name (EN): Torre K1
+Name (ES): Torre K1
+Category: cat.structures
+Manufacturer: UPSTAGE
+Price/Day: €30
+Image: img/inventory/Kuzar_Torre_K1.webp
+Description (EN): Kuzar K-1 telescopic lifter tower certified for lifting audio line arrays, lighting bars, and trusses safely up to 5.3 meters.
+Description (ES): Torre elevadora telescópica Kuzar K-1 certificada para elevación de cajas line array, puentes de luces y truss de forma segura hasta 5,3 metros.
+Specs (EN):
+  - Max Height: 5.30 m
+  - Max Load: 125 kg
+  - Sections: 4 telescopic steel
+  - Winch: Auto-brake cable
+  - Safety: KAT safety triggers
+  - Certification: BGV-C1
+Specs (ES):
+  - Altura máxima: 5.30 m
+  - Carga máxima: 125 kg
+  - Tramos: 4 telescópicos acero
+  - Cabrestante: Autofrenable
+  - Seguridad: Gatillos KAT
+  - Certificación: BGV-C1
+--------------------------------------------------------------------------------
+
+ID: 1080
+Name (EN): Torre K5
+Name (ES): Torre K5
+Category: cat.structures
+Manufacturer: UPSTAGE
+Price/Day: €50
+Image: img/inventory/Kuzar_Torre_K5.webp
+Description (EN): Kuzar K-5 heavy-load ground support tower lifter with 250 kg capacity and 5.3m lift height for large PA line arrays and heavy truss structures.
+Description (ES): Torre elevadora de gran carga Kuzar K-5 de 250 kg de capacidad y 5,3 m de elevación para sistemas line array y trusses pesados.
+Specs (EN):
+  - Max Height: 5.35 m
+  - Max Load: 250 kg
+  - Sections: Reinforced steel
+  - Safety Locks: KAT triggers
+  - Cable: Anti-torsion steel
+  - Base: Wheels + Outriggers
+Specs (ES):
+  - Altura máxima: 5.35 m
+  - Carga máxima: 250 kg
+  - Tramos: Acero reforzado
+  - Seguridad: Gatillos KAT
+  - Cable: Acero antitorsión
+  - Base: Ruedas + Husillos
+--------------------------------------------------------------------------------
+
+ID: 1081
+Name (EN): Truss 0,25m
+Name (ES): Truss 0,25m
+Category: cat.structures
+Manufacturer: UPSTAGE
+Price/Day: €12
+Image: img/inventory/Kuzar_Truss.webp
+Description (EN): Heavy-duty 0.25m square 29x29cm aluminum truss section for stage structures, lighting grids, and support corners.
+Description (ES): Tramo de truss cuadrangular de aluminio de 0,25m (29x29 cm) para estructuras de escenario, puentes y esquinas.
+Specs (EN):
+  - Truss Type: Square 290x290 mm
+  - Length: 0.25 m
+  - Main Tube: 50 x 2 mm
+  - Braces: 20 x 2 mm
+  - Alloy: EN AW-6082 T6
+  - Connection: Conical couplers
+Specs (ES):
+  - Tipo truss: Cuadrangular 290x290
+  - Longitud: 0.25 m
+  - Tubo principal: 50 x 2 mm
+  - Diagonales: 20 x 2 mm
+  - Aleación: EN AW-6082 T6
+  - Conexión: Unión cónica
+--------------------------------------------------------------------------------
+
+ID: 1082
+Name (EN): Truss 1m
+Name (ES): Truss 1m
+Category: cat.structures
+Manufacturer: UPSTAGE
+Price/Day: €12
+Image: img/inventory/Kuzar_Truss.webp
+Description (EN): 1.0m modular square 29x29cm aluminum truss section for professional stage roofs, exhibition booths, and lighting rigs.
+Description (ES): Tramo de truss cuadrangular de aluminio de 1,0m (29x29 cm) para escenarios, stands de feria y montaje de focos.
+Specs (EN):
+  - Truss Type: Square 290x290 mm
+  - Length: 1.00 m
+  - Main Tube: 50 x 2 mm
+  - Braces: 20 x 2 mm
+  - Alloy: EN AW-6082 T6
+  - Connection: Conical couplers
+Specs (ES):
+  - Tipo truss: Cuadrangular 290x290
+  - Longitud: 1.00 m
+  - Tubo principal: 50 x 2 mm
+  - Diagonales: 20 x 2 mm
+  - Aleación: EN AW-6082 T6
+  - Conexión: Unión cónica
+--------------------------------------------------------------------------------
+
+ID: 1083
+Name (EN): Truss 2m
+Name (ES): Truss 2m
+Category: cat.structures
+Manufacturer: UPSTAGE
+Price/Day: €12
+Image: img/inventory/Kuzar_Truss.webp
+Description (EN): 2.0m heavy-load square 29x29cm aluminum truss section for stage structures, ground support towers, and lighting bridges.
+Description (ES): Tramo de truss cuadrangular de aluminio de 2,0m (29x29 cm) para puentes de luces, torres de elevación y estructuras.
+Specs (EN):
+  - Truss Type: Square 290x290 mm
+  - Length: 2.00 m
+  - Main Tube: 50 x 2 mm
+  - Braces: 20 x 2 mm
+  - Alloy: EN AW-6082 T6
+  - Connection: Conical couplers
+Specs (ES):
+  - Tipo truss: Cuadrangular 290x290
+  - Longitud: 2.00 m
+  - Tubo principal: 50 x 2 mm
+  - Diagonales: 20 x 2 mm
+  - Aleación: EN AW-6082 T6
+  - Conexión: Unión cónica
+--------------------------------------------------------------------------------
+
+ID: 1084
+Name (EN): Truss 3m
+Name (ES): Truss 3m
+Category: cat.structures
+Manufacturer: UPSTAGE
+Price/Day: €12
+Image: img/inventory/Kuzar_Truss.webp
+Description (EN): 3.0m heavy-load square 29x29cm aluminum truss section designed for long spans in concert stages, festivals, and large events.
+Description (ES): Tramo de truss cuadrangular de aluminio de 3,0m (29x29 cm) diseñado para grandes vanos en conciertos, festivales y eventos.
+Specs (EN):
+  - Truss Type: Square 290x290 mm
+  - Length: 3.00 m
+  - Main Tube: 50 x 2 mm
+  - Braces: 20 x 2 mm
+  - Alloy: EN AW-6082 T6
+  - Connection: Conical couplers
+Specs (ES):
+  - Tipo truss: Cuadrangular 290x290
+  - Longitud: 3.00 m
+  - Tubo principal: 50 x 2 mm
+  - Diagonales: 20 x 2 mm
+  - Aleación: EN AW-6082 T6
+  - Conexión: Unión cónica
+--------------------------------------------------------------------------------
+
+ID: 1085
+Name (EN): VASH
+Name (ES): VASH
+Category: cat.structures
+Manufacturer: UPSTAGE
+Price/Day: €20
+Image: img/inventory/Kuzar_VH1.webp
+Description (EN): Heavy-duty modular stage stair guardrail / safety handrail providing crowd fall protection for stage staircases.
+Description (ES): Barandilla de seguridad para escalera de escenario modular que proporciona protección anticaídas reglamentaria en accesos.
+Specs (EN):
+  - Height: 1000 mm
+  - Material: Steel / Aluminum
+  - Mounting: Stair clamp brackets
+  - Safety: Crowd protection
+Specs (ES):
+  - Altura: 1000 mm
+  - Material: Acero / Aluminio
+  - Montaje: Mordazas a peldaño
+  - Seguridad: Anticaídas público
+--------------------------------------------------------------------------------
+
+ID: 1086
+Name (EN): VH1
+Name (ES): VH1
+Category: cat.structures
+Manufacturer: UPSTAGE
+Price/Day: €20
+Image: img/inventory/Kuzar_VH1.webp
+Description (EN): 1-meter modular crowd control safety barrier / stage railing with heavy-duty interlocking steel frame.
+Description (ES): Valla de seguridad peatonal modular de 1 metro con estructura de acero galvanizado y sistema de unión rápido.
+Specs (EN):
+  - Length: 1000 mm
+  - Height: 1100 mm
+  - Material: Galvanized steel
+  - Connection: Interlocking hooks
+Specs (ES):
+  - Longitud: 1000 mm
+  - Altura: 1100 mm
+  - Material: Acero galvanizado
+  - Conexión: Enganches macho/hembra
+--------------------------------------------------------------------------------
+
+ID: 1087
+Name (EN): VH2
+Name (ES): VH2
+Category: cat.structures
+Manufacturer: UPSTAGE
+Price/Day: €20
+Image: img/inventory/Kuzar_VH1.webp
+Description (EN): 2-meter professional crowd control pedestrian barrier for event perimeters, stage boundaries, and spectator flow management.
+Description (ES): Valla de contención peatonal de 2 metros para perímetros de eventos, delimitación de escenarios y encauzamiento de público.
+Specs (EN):
+  - Length: 2000 mm
+  - Height: 1100 mm
+  - Material: Galvanized steel
+  - Feet: Flat anti-trip feet
+Specs (ES):
+  - Longitud: 2000 mm
+  - Altura: 1100 mm
+  - Material: Acero galvanizado
+  - Pies: Pies planos antitropiezo
+--------------------------------------------------------------------------------
+
+ID: 1088
+Name (EN): AKG PW45 PRESENTER SET
+Name (ES): AKG PW45 PRESENTER SET
+Category: cat.mics
+Manufacturer: AKG
+Price/Day: €15
+Image: img/inventory/AKG_PW45_PRESENTER_SET.webp
+Description (EN): AKG Perception Wireless 45 Presenter Set including PT45 pocket transmitter, CK99L lavalier condenser mic, and SR45 diversity receiver for hands-free presentations.
+Description (ES): Sistema inalámbrico de solapa AKG Perception Wireless 45 Presenter Set con transmisor de petaca PT45, micro lavalier CK99L y receptor diversity SR45.
+Specs (EN):
+  - Wireless: UHF 8 frequencies
+  - Microphone: CK99L lavalier
+  - Transmitter: PT45 bodypack
+  - Receiver: SR45 diversity
+  - Range: 30 m
+  - Battery: 8 h (1x AA)
+Specs (ES):
+  - Inalámbrico: UHF 8 frecuencias
+  - Micrófono: CK99L solapa
+  - Transmisor: Petaca PT45
+  - Receptor: SR45 diversity
+  - Alcance: 30 m
+  - Batería: 8 h (1x AA)
+--------------------------------------------------------------------------------
+
+ID: 1089
+Name (EN): AKG PW45 VOCAL SET BAND M
+Name (ES): AKG PW45 VOCAL SET BAND M
+Category: cat.mics
+Manufacturer: AKG
+Price/Day: €15
+Image: img/inventory/AKG_PW45_VOCAL_SET_BAND_M.webp
+Description (EN): AKG Perception Wireless 45 Vocal Set (Band M) wireless handheld microphone system with HT45 dynamic transmitter for speech, singing, and hosting.
+Description (ES): Sistema de micrófono de mano inalámbrico AKG Perception Wireless 45 Vocal Set (Banda M) con transmisor dinámico HT45 para voz en directo y eventos.
+Specs (EN):
+  - Wireless: Band M (UHF)
+  - Microphone: HT45 dynamic
+  - Pattern: Cardioid
+  - Receiver: SR45 diversity
+  - Outputs: XLR / 6.3mm
+  - Battery: 8 h (1x AA)
+Specs (ES):
+  - Inalámbrico: Banda M (UHF)
+  - Micrófono: HT45 dinámico
+  - Patrón: Cardioide
+  - Receptor: SR45 diversity
+  - Salidas: XLR / Jack
+  - Batería: 8 h (1x AA)
+--------------------------------------------------------------------------------
+
+ID: 1090
+Name (EN): BEHRINGER XENIX1202SFX
+Name (ES): BEHRINGER XENIX1202SFX
+Category: cat.console
+Manufacturer: Behringer
+Price/Day: €18
+Image: img/inventory/BEHRINGER_XENIX1202SFX.webp
+Description (EN): Behringer Xenyx 1202SFX 12-input compact analog audio mixer with Xenyx mic preamps, Klark Teknik multi-FX processor, and USB stereo audio interface.
+Description (ES): Mesa de mezclas analógica compacta Behringer Xenyx 1202SFX de 12 entradas con previos Xenyx, multiefectos Klark Teknik e interfaz de audio USB.
+Specs (EN):
+  - Inputs: 4 mic + 4 stereo
+  - Preamps: 4x Xenyx (+48V)
+  - Effects: Klark Teknik 100 FX
+  - Audio Interface: USB stereo
+  - EQ: 3-band British
+  - Outputs: Main / Control room
+Specs (ES):
+  - Entradas: 4 mic + 4 estéreo
+  - Previos: 4x Xenyx (+48V)
+  - Efectos: Klark Teknik 100 FX
+  - Interfaz: USB estéreo
+  - EQ: 3 bandas británico
+  - Salidas: Main / Sala control
+--------------------------------------------------------------------------------
+
+ID: 1091
+Name (EN): DBX DBXDI1
+Name (ES): DBX DBXDI1
+Category: cat.mics
+Manufacturer: DBX
+Price/Day: €12
+Image: img/inventory/DBX_DBXDI1.webp
+Description (EN): dbx dB10 / dB12 passive / active direct injection box engineered to deliver pristine, uncolored instrument signal conversion from guitar, bass, and keys to balanced XLR.
+Description (ES): Caja de inyección directa profesional dbx para conversión limpia y balanceada de señales de guitarra, bajo o teclados a entradas de micro XLR.
+Specs (EN):
+  - Input: 1/4 in jack + Thru
+  - Output: Balanced 3-pin XLR
+  - Controls: Pad 0/-20/-40 dB
+  - Ground Lift: Yes
+Specs (ES):
+  - Entrada: Jack 1/4 in + Thru
+  - Salida: XLR 3 pines bal.
+  - Controles: Atenuador 0/-20/-40 dB
+  - Toma tierra: Interruptor lift
+--------------------------------------------------------------------------------
+
+ID: 1092
+Name (EN): MARK XS11451
+Name (ES): MARK XS11451
+Category: cat.mics
+Manufacturer: Mark
+Price/Day: €20
+Image: img/inventory/MARK_XS1301.webp
+Description (EN): Mark XS11451 ultra-lightweight flesh-colored omnidirectional headset microphone for discreet speech, conference, theater, and presentations.
+Description (ES): Micrófono de diadema ultraligero color carne Mark XS11451 para conferencias, teatro y presentaciones con excelente inteligibilidad vocal.
+Specs (EN):
+  - Capsule: Condenser subminiature
+  - Pattern: Omnidirectional
+  - Color: Beige flesh tone
+  - Connector: Mini-XLR / 3.5mm
+  - Frame: Dual-ear ergonomic
+  - Weight: Ultra light
+Specs (ES):
+  - Cápsula: Condensador submin.
+  - Patrón: Omnidireccional
+  - Color: Beige color carne
+  - Conector: Mini-XLR / 3.5mm
+  - Estructura: Doble oreja ergonómica
+  - Peso: Ultraligero
+--------------------------------------------------------------------------------
+
+ID: 1093
+Name (EN): MARK XS1301
+Name (ES): MARK XS1301
+Category: cat.mics
+Manufacturer: Mark
+Price/Day: €20
+Image: img/inventory/MARK_XS1301.webp
+Description (EN): Mark XS1301 professional condenser headset microphone featuring high acoustic feedback resistance and crystal-clear speech reproduction.
+Description (ES): Micrófono de diadema profesional Mark XS1301 con alta resistencia a la realimentación y óptima inteligibilidad en discursos y eventos.
+Specs (EN):
+  - Transducer: Electret condenser
+  - Pattern: Cardioid
+  - Cable: Reinforced flexible
+  - Weight: < 25 g
+Specs (ES):
+  - Transductor: Condensador electret
+  - Patrón: Cardioide
+  - Cable: Flexible reforzado
+  - Peso: < 25 g
+--------------------------------------------------------------------------------
+
+ID: 1094
+Name (EN): MIDAS MR32R
+Name (ES): MIDAS MR32R
+Category: cat.console
+Manufacturer: Midas
+Price/Day: €50
+Image: img/inventory/MIDAS_MR32R.webp
+Description (EN): Midas M32R LIVE 40-input digital mixing console with 16 Midas PRO preamps, 17 motorized faders, and 32-channel USB/SD live recording in a compact rack-mountable frame.
+Description (ES): Mesa digital compacta enracable Midas M32R LIVE de 40 canales con 16 previos Midas PRO, 17 faders motorizados y grabación multipista de 32 canales.
+Specs (EN):
+  - Channels: 40 input ch
+  - Mix Buses: 25
+  - Preamps: 16 Midas PRO
+  - Faders: 17 motorized
+  - Recording: 32x32 USB/SD
+  - Network: Dual AES50
+Specs (ES):
+  - Canales: 40 canales
+  - Buses: 25
+  - Previos: 16 Midas PRO
+  - Faders: 17 motorizados
+  - Grabación: 32x32 USB/SD
+  - Red: Doble AES50
+--------------------------------------------------------------------------------
+
+ID: 1095
+Name (EN): SENNHEISER EM 300-500-G4
+Name (ES): SENNHEISER EM 300-500-G4
+Category: cat.mics
+Manufacturer: Sennheiser
+Price/Day: €15
+Image: img/inventory/SENNHEISER_EM_300-500-G4.webp
+Description (EN): Sennheiser ew 300/500 G4 true diversity UHF wireless receiver with up to 88 MHz switching bandwidth, OLED display, and Ethernet network management.
+Description (ES): Receptor inalámbrico UHF true diversity Sennheiser ew 300/500 G4 con hasta 88 MHz de ancho de banda, pantalla OLED y gestión por red Ethernet.
+Specs (EN):
+  - Receiving System: True diversity UHF
+  - Bandwidth: Up to 88 MHz
+  - Network Port: RJ45 Ethernet
+  - Outputs: XLR / 6.3mm jack
+  - Display: OLED high contrast
+  - Housing: All-metal half-rack
+Specs (ES):
+  - Sistema: True diversity UHF
+  - Ancho banda: Hasta 88 MHz
+  - Puerto red: RJ45 Ethernet
+  - Salidas: XLR / Jack 6.3mm
+  - Pantalla: OLED alto contraste
+  - Chasis: Metálico 1/2 rack
+--------------------------------------------------------------------------------
+
+ID: 1096
+Name (EN): SENNHEISER SKM 500 G4
+Name (ES): SENNHEISER SKM 500 G4
+Category: cat.mics
+Manufacturer: Sennheiser
+Price/Day: €15
+Image: img/inventory/SENNHEISER_SKM_500_G4.webp
+Description (EN): Sennheiser SKM 500 G4 professional handheld wireless transmitter with interchangeable capsule support and rugged, lightweight aluminum housing.
+Description (ES): Transmisor de mano inalámbrico profesional Sennheiser SKM 500 G4 con compatibilidad de cápsulas intercambiables y robusto cuerpo de aluminio.
+Specs (EN):
+  - RF Power: 10 / 30 / 50 mW
+  - Compatibility: e900 / Neumann KK
+  - Battery: Up to 8 h (2x AA)
+  - Display: Backlit LCD
+Specs (ES):
+  - Potencia RF: 10 / 30 / 50 mW
+  - Compatibilidad: e900 / Neumann KK
+  - Batería: Hasta 8 h (2x AA)
+  - Pantalla: LCD retroiluminada
+--------------------------------------------------------------------------------
+
+ID: 1097
+Name (EN): SHURE BETA 58 A
+Name (ES): SHURE BETA 58 A
+Category: cat.mics
+Manufacturer: Shure
+Price/Day: €15
+Image: img/inventory/SHURE_BETA_58_A.webp
+Description (EN): Shure Beta 58A high-output supercardioid dynamic vocal microphone designed for professional lead vocal reinforcement in demanding live stage environments.
+Description (ES): Micrófono vocal dinámico supercardioide de alta ganancia Shure Beta 58A diseñado para voces principales en directos exigentes.
+Specs (EN):
+  - Type: Dynamic
+  - Pattern: Supercardioid
+  - Freq Low: 50 Hz
+  - Freq High: 16 kHz
+  - Magnet: Neodymium
+  - Grille: Hardened steel
+Specs (ES):
+  - Tipo: Dinámico
+  - Patrón: Supercardioide
+  - Freq Baja: 50 Hz
+  - Freq Alta: 16 kHz
+  - Imán: Neodimio
+  - Rejilla: Acero endurecido
+--------------------------------------------------------------------------------
+
+ID: 1098
+Name (EN): SHURE PGA52
+Name (ES): SHURE PGA52
+Category: cat.mics
+Manufacturer: Shure
+Price/Day: €15
+Image: img/inventory/SHURE_PGA52.webp
+Description (EN): Shure PGA52 cardioid dynamic kick drum microphone tuned for punchy low-frequency clarity on bass drums, bass cabinets, and low-end percussion.
+Description (ES): Micrófono dinámico cardioide Shure PGA52 optimizado para captación potente y definida de bombo de batería, bajos y percusión grave.
+Specs (EN):
+  - Type: Dynamic
+  - Pattern: Cardioid
+  - Freq Low: 50 Hz
+  - Freq High: 12 kHz
+  - Mounting: Swivel quick latch
+  - Application: Kick drum / Bass
+Specs (ES):
+  - Tipo: Dinámico
+  - Patrón: Cardioide
+  - Freq Baja: 50 Hz
+  - Freq Alta: 12 kHz
+  - Montaje: Rótula orientable
+  - Uso: Bombo / Bajo
+--------------------------------------------------------------------------------
+
+ID: 1099
+Name (EN): SHURE PGA81
+Name (ES): SHURE PGA81
+Category: cat.mics
+Manufacturer: Shure
+Price/Day: €15
+Image: img/inventory/SHURE_PGA81.webp
+Description (EN): Shure PGA81 professional cardioid condenser instrument microphone with flat frequency response for acoustic guitars, strings, pianos, and drum overheads.
+Description (ES): Micrófono de condensador cardioide para instrumentos Shure PGA81 con respuesta plana para guitarras acústicas, cuerdas, pianos y aéreos de batería.
+Specs (EN):
+  - Type: Condenser
+  - Pattern: Cardioid
+  - Freq Low: 40 Hz
+  - Freq High: 18 kHz
+  - Power: +48V Phantom
+  - Application: Instruments / OH
+Specs (ES):
+  - Tipo: Condensador
+  - Patrón: Cardioide
+  - Freq Baja: 40 Hz
+  - Freq Alta: 18 kHz
+  - Alimentación: +48V Phantom
+  - Uso: Instrumentos / Aéreos
+--------------------------------------------------------------------------------
+
+ID: 1100
+Name (EN): SHURE SM 57
+Name (ES): SHURE SM 57
+Category: cat.mics
+Manufacturer: Shure
+Price/Day: €15
+Image: img/inventory/SHURE_SM_57.webp
+Description (EN): Shure SM57 legendary cardioid dynamic instrument microphone, the industry standard for snare drums, guitar amplifier cabinets, and brass instruments.
+Description (ES): Micrófono dinámico cardioide legendario Shure SM57, el estándar indiscutible para cajas de batería, amplificadores de guitarra y metales.
+Specs (EN):
+  - Type: Dynamic
+  - Pattern: Cardioid
+  - Freq Low: 40 Hz
+  - Freq High: 15 kHz
+  - Shock Mount: Internal pneumatic
+  - Application: Snare / Guitar cab
+Specs (ES):
+  - Tipo: Dinámico
+  - Patrón: Cardioide
+  - Freq Baja: 40 Hz
+  - Freq Alta: 15 kHz
+  - Suspensión: Neumática interna
+  - Uso: Caja / Guitarra
+--------------------------------------------------------------------------------
+
+ID: 1101
+Name (EN): SOUNDCRAFT EFX12+K
+Name (ES): SOUNDCRAFT EFX12+K
+Category: cat.console
+Manufacturer: Soundcraft
+Price/Day: €18
+Image: img/inventory/SOUNDCRAFT_EFX12plusK.webp
+Description (EN): Soundcraft EFX12 12-channel compact analog audio mixer with 32-bit Lexicon digital effects processor and transparent GB30 microphone preamps.
+Description (ES): Mesa analógica compacta Soundcraft EFX12 de 12 canales con procesador de efectos digital Lexicon de 32 bits y previos de micro transparentes GB30.
+Specs (EN):
+  - Channels: 12 mono + 2 stereo
+  - Preamps: 12x Soundcraft GB30
+  - Effects: Lexicon 32-bit FX
+  - EQ: 3-band swept mid
+  - Aux Sends: 1 aux + 1 FX
+  - Phantom: +48 V
+Specs (ES):
+  - Canales: 12 mono + 2 estéreo
+  - Previos: 12x Soundcraft GB30
+  - Efectos: Lexicon 32 bits FX
+  - EQ: 3 bandas con barrido
+  - Envíos: 1 aux + 1 FX
+  - Phantom: +48 V
+--------------------------------------------------------------------------------
+
+ID: 1102
+Name (EN): SOUNDCRAFT EPM8
+Name (ES): SOUNDCRAFT EPM8
+Category: cat.console
+Manufacturer: Soundcraft
+Price/Day: €18
+Image: img/inventory/SOUNDCRAFT_EPM8.webp
+Description (EN): Soundcraft EPM8 8-channel compact analog mixing console featuring precision GB30 preamplifiers, 3-band swept-mid EQ, and dual auxiliary sends.
+Description (ES): Mesa de mezclas analógica Soundcraft EPM8 de 8 canales con preamplificadores de alta precisión GB30, EQ con medios barribles y 2 envíos auxiliares.
+Specs (EN):
+  - Inputs: 8 mono + 2 stereo
+  - Preamps: 8x Soundcraft GB30
+  - EQ: 3-band swept mid
+  - Aux Sends: 2 aux sends
+  - Faders: 60 mm precision
+  - Phantom: +48 V
+Specs (ES):
+  - Entradas: 8 mono + 2 estéreo
+  - Previos: 8x Soundcraft GB30
+  - EQ: 3 bandas con barrido
+  - Envíos: 2 envíos auxiliares
+  - Faders: 60 mm precisión
+  - Phantom: +48 V
+--------------------------------------------------------------------------------
+
+ID: 1103
+Name (EN): YAMAHA MG10XU
+Name (ES): YAMAHA MG10XU
+Category: cat.console
+Manufacturer: Yamaha
+Price/Day: €18
+Image: img/inventory/YAMAHA_MG10XU.webp
+Description (EN): Yamaha MG10XU 10-channel compact mixer with studio-grade D-PRE discrete Class-A preamps, 24 SPX digital effects, and 24-bit/192kHz USB audio interface.
+Description (ES): Mesa de mezclas de 10 canales Yamaha MG10XU con previos discretos Clase A D-PRE, 24 efectos digitales SPX e interfaz de audio USB de 24 bits/192kHz.
+Specs (EN):
+  - Inputs: 4 mic + 3 stereo
+  - Preamps: D-PRE Class-A
+  - Effects: 24 SPX programs
+  - Audio Interface: 24-bit / 192kHz USB
+  - Compressor: 1-knob (ch 1-2)
+  - Phantom: +48 V
+Specs (ES):
+  - Entradas: 4 mic + 3 estéreo
+  - Previos: D-PRE Clase A
+  - Efectos: 24 programas SPX
+  - Interfaz: USB 24 bits / 192kHz
+  - Compresor: 1 mando (ch 1-2)
+  - Phantom: +48 V
+--------------------------------------------------------------------------------

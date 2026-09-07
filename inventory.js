@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 clone.querySelector('.product-image img').src = p.image;
                 clone.querySelector('.product-image img').alt = p.name[lang];
-                clone.querySelector('.product-category').textContent = window.TRANSLATIONS_RAW[p.category][lang];
+                clone.querySelector('.product-category').textContent = window.TRANSLATIONS_RAW?.[p.category]?.[lang] || p.category;
                 clone.querySelector('.product-title').textContent = p.name[lang];
                 clone.querySelector('.price-day').textContent = `€${p.priceDay}`;
                 clone.querySelector('.price-unit').textContent = t('rental.perDay');
@@ -240,7 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.trackEvent('view_item', { items: [{ item_id: p.id, item_name: p.name['en'] }] });
         document.getElementById('modal-img').src = p.image;
         document.getElementById('modal-title').textContent = p.name[lang];
-        document.getElementById('modal-category').textContent = window.TRANSLATIONS_RAW[p.category][lang];
+        document.getElementById('modal-category').textContent = window.TRANSLATIONS_RAW?.[p.category]?.[lang] || p.category;
         document.getElementById('modal-desc').textContent = p.description?.[lang] || (lang === 'es' ? `${p.name[lang]} es una solución de alto rendimiento.` : `${p.name[lang]} is a high-performance solution.`);
 
         const specGrid = document.getElementById('spec-grid'); 
