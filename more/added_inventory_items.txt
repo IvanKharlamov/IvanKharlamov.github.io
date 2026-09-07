@@ -227,31 +227,6 @@ Specs (ES):
   - DMX: 16 / 20 ch
 --------------------------------------------------------------------------------
 
-ID: 1010
-Name (EN): Digital Console M32 LIVE
-Name (ES): Digital Console M32 LIVE
-Category: cat.console
-Manufacturer: Midas
-Price/Day: €60
-Image: img/inventory/MIDAS_M32.webp
-Description (EN): Midas M32 LIVE 40-input digital mixing console with 32 award-winning Midas preamps, 25 motorized faders, and multi-channel live recording.
-Description (ES): Consola de mezcla digital Midas M32 LIVE de 40 entradas con 32 previos de micro Midas, 25 faders motorizados y grabación multipista.
-Specs (EN):
-  - Channels: 40 input ch
-  - Mix Buses: 25
-  - Preamps: 32 Midas PRO
-  - Faders: 25 motorized
-  - Network: Dual AES50
-  - Screen: 7 in TFT
-Specs (ES):
-  - Canales: 40 canales
-  - Buses: 25
-  - Previos: 32 Midas PRO
-  - Faders: 25 motorizados
-  - Red: Doble AES50
-  - Pantalla: 7 in TFT
---------------------------------------------------------------------------------
-
 ID: 1011
 Name (EN): Shure PGA Drumkit
 Name (ES): Shure PGA Drumkit

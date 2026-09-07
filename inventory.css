@@ -151,6 +151,10 @@
     border-radius: 4px;
 }
 
+.product-card-pack {
+    grid-column: span 2;
+}
+
 .product-card:hover {
     transform: translateY(-5px);
     border-color: var(--primary);
@@ -484,6 +488,10 @@
 	.product-grid {
 		grid-template-columns: unset;
 	}
+
+    .product-card-pack {
+        grid-column: span 1;
+    }
 	
     .modal-body {
         grid-template-columns: 1fr;

@@ -1,4 +1,70 @@
 window.products = [
+{
+        "id": 901,
+        "name": {
+            "en": "Small Event Pack",
+            "es": "Pack Evento Pequeño"
+        },
+        "category": "cat.packs",
+        "manufacturer": "UPSTAGE MADRID",
+        "priceDay": 250,
+        "image": "img/inventory/placeholder.webp",
+        "description": {
+            "en": "All in one audiovisual solution for small parties, weddings and intimate live events.",
+            "es": "Solución audiovisual todo en uno para fiestas pequeñas bodas y eventos íntimos."
+        },
+        "specs": {
+            "en": {
+                "Audience": "≤100 pax",
+                "Sound": "2 kW PA",
+                "Lights": "4x LED PAR",
+                "Setup": "Plug & Play",
+                "Technicians": "Optional",
+                "Transport": "Car / Van"
+            },
+            "es": {
+                "Público": "≤100 pax",
+                "Sonido": "PA 2 kW",
+                "Luces": "4x LED PAR",
+                "Montaje": "Plug & Play",
+                "Técnicos": "Opcional",
+                "Transporte": "Coche / Furgo"
+            }
+        }
+    },
+    {
+        "id": 902,
+        "name": {
+            "en": "Conference Pack",
+            "es": "Pack Conferencia"
+        },
+        "category": "cat.packs",
+        "manufacturer": "Upstage",
+        "priceDay": 350,
+        "image": "img/inventory/placeholder.webp",
+        "description": {
+            "en": "Complete conference package including sound microphones and projection for corporate use.",
+            "es": "Pack completo de conferencia con sonido micrófonos y proyección para uso corporativo."
+        },
+        "specs": {
+            "en": {
+                "Audience": "≤200 pax",
+                "Sound": "4-point PA",
+                "Mics": "3 wireless",
+                "Video": "5000 lm",
+                "Crew": "Included",
+                "Application": "Corporate"
+            },
+            "es": {
+                "Público": "≤200 pax",
+                "Sonido": "PA 4 puntos",
+                "Micros": "3 inalámbricos",
+                "Video": "5000 lm",
+                "Técnicos": "Incluido",
+                "Uso": "Corporativo"
+            }
+        }
+    },
     {
         "id": 101,
         "name": {
@@ -1150,7 +1216,8 @@ window.products = [
             }
         }
     },
-    {
+        /* SERVICES COMMENTED OUT
+{
         "id": 801,
         "name": {
             "en": "Sound engineer (8h)",
@@ -1249,73 +1316,8 @@ window.products = [
             }
         }
     },
-    {
-        "id": 901,
-        "name": {
-            "en": "Small Event Pack",
-            "es": "Pack Evento Pequeño"
-        },
-        "category": "cat.packs",
-        "manufacturer": "UPSTAGE MADRID",
-        "priceDay": 250,
-        "image": "img/inventory/placeholder.webp",
-        "description": {
-            "en": "All in one audiovisual solution for small parties, weddings and intimate live events.",
-            "es": "Solución audiovisual todo en uno para fiestas pequeñas bodas y eventos íntimos."
-        },
-        "specs": {
-            "en": {
-                "Audience": "≤100 pax",
-                "Sound": "2 kW PA",
-                "Lights": "4x LED PAR",
-                "Setup": "Plug & Play",
-                "Technicians": "Optional",
-                "Transport": "Car / Van"
-            },
-            "es": {
-                "Público": "≤100 pax",
-                "Sonido": "PA 2 kW",
-                "Luces": "4x LED PAR",
-                "Montaje": "Plug & Play",
-                "Técnicos": "Opcional",
-                "Transporte": "Coche / Furgo"
-            }
-        }
-    },
-    {
-        "id": 902,
-        "name": {
-            "en": "Conference Pack",
-            "es": "Pack Conferencia"
-        },
-        "category": "cat.packs",
-        "manufacturer": "Upstage",
-        "priceDay": 350,
-        "image": "img/inventory/placeholder.webp",
-        "description": {
-            "en": "Complete conference package including sound microphones and projection for corporate use.",
-            "es": "Pack completo de conferencia con sonido micrófonos y proyección para uso corporativo."
-        },
-        "specs": {
-            "en": {
-                "Audience": "≤200 pax",
-                "Sound": "4-point PA",
-                "Mics": "3 wireless",
-                "Video": "5000 lm",
-                "Crew": "Included",
-                "Application": "Corporate"
-            },
-            "es": {
-                "Público": "≤200 pax",
-                "Sonido": "PA 4 puntos",
-                "Micros": "3 inalámbricos",
-                "Video": "5000 lm",
-                "Técnicos": "Incluido",
-                "Uso": "Corporativo"
-            }
-        }
-    },
-    {
+    */
+        {
         "id": 1001,
         "name": {
             "en": "HK Audio Pro 12 active",
@@ -1612,40 +1614,7 @@ window.products = [
             }
         }
     },
-    {
-        "id": 1010,
-        "name": {
-            "en": "Digital Console M32 LIVE",
-            "es": "Digital Console M32 LIVE"
-        },
-        "category": "cat.console",
-        "manufacturer": "Midas",
-        "priceDay": 60,
-        "image": "img/inventory/MIDAS_M32.webp",
-        "description": {
-            "en": "Midas M32 LIVE 40-input digital mixing console with 32 award-winning Midas preamps, 25 motorized faders, and multi-channel live recording.",
-            "es": "Consola de mezcla digital Midas M32 LIVE de 40 entradas con 32 previos de micro Midas, 25 faders motorizados y grabación multipista."
-        },
-        "specs": {
-            "en": {
-                "Channels": "40 input ch",
-                "Mix Buses": "25",
-                "Preamps": "32 Midas PRO",
-                "Faders": "25 motorized",
-                "Network": "Dual AES50",
-                "Screen": "7 in TFT"
-            },
-            "es": {
-                "Canales": "40 canales",
-                "Buses": "25",
-                "Previos": "32 Midas PRO",
-                "Faders": "25 motorizados",
-                "Red": "Doble AES50",
-                "Pantalla": "7 in TFT"
-            }
-        }
-    },
-    {
+        {
         "id": 1011,
         "name": {
             "en": "Shure PGA Drumkit",

@@ -19,6 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
             items.forEach(p => {
                 const clone = template.content.cloneNode(true);
                 const card = clone.querySelector('.product-card');
+                if (p.category === 'cat.packs') {
+                    card.classList.add('product-card-pack');
+                }
                 card.onclick = () => window.openProductModal(p.id, 'details');
                 
                 clone.querySelector('.product-image img').src = p.image;
