@@ -26,6 +26,97 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     initReviewsMarquee();
 
+    // The embedded catalog has its own scroll area. If the mouse happens to be
+    // over it while the page is still mostly on the previous section, the wheel
+    // would start scrolling the catalog instead of the page. Here we intercept
+    // the first wheel ticks and snap the page so the catalog sits right under
+    // the header (or right at the viewport bottom when coming from below), and
+    // only after that let the wheel scroll inside the catalog.
+    function initCatalogScrollSnap() {
+        const scroller = document.querySelector('.catalog-embed .catalog-scroll');
+        const header = document.querySelector('.site-header');
+        if (!scroller) return;
+
+        const GAP = 12;          // breathing room between header and catalog
+        const TOLERANCE = 8;     // px off the target that still counts as aligned
+        const DURATION = 420;    // ms of the snap animation
+        let snapping = false;
+        let snapStartedAt = 0;
+        let rafId = 0;
+
+        const easeOut = t => 1 - Math.pow(1 - t, 3);
+
+        // How far the page must move (positive = down) so the catalog top sits
+        // under the header, or (going up) its bottom sits at the viewport bottom.
+        function measureOffset(direction) {
+            const rect = scroller.getBoundingClientRect();
+            if (direction > 0) {
+                const headerBottom = header ? header.getBoundingClientRect().bottom : 0;
+                return rect.top - (headerBottom + GAP);
+            }
+            return rect.bottom - (window.innerHeight - GAP);
+        }
+
+        // The target is re-measured every frame: the fixed header shrinks while
+        // the page scrolls (its .scrolled transition), so a target computed once
+        // up front would land the catalog a few pixels off.
+        function animateTo(direction) {
+            const startY = window.scrollY;
+            const maxY = document.documentElement.scrollHeight - window.innerHeight;
+            snapping = true;
+            const t0 = performance.now();
+            snapStartedAt = t0;
+            const step = now => {
+                const t = Math.min(1, (now - t0) / DURATION);
+                const endY = Math.max(0, Math.min(window.scrollY + measureOffset(direction), maxY));
+                window.scrollTo(0, startY + (endY - startY) * easeOut(t));
+                if (t < 1) {
+                    rafId = requestAnimationFrame(step);
+                } else {
+                    snapping = false;
+                    rafId = 0;
+                }
+            };
+            cancelAnimationFrame(rafId);
+            rafId = requestAnimationFrame(step);
+        }
+
+        scroller.addEventListener('wheel', e => {
+            if (e.ctrlKey) return; // pinch-zoom on trackpads, leave it alone
+            if (snapping) {
+                // Frames stopped coming (tab throttled, etc.): never trap the wheel.
+                if (performance.now() - snapStartedAt > DURATION * 2) {
+                    cancelAnimationFrame(rafId);
+                    snapping = false;
+                } else {
+                    e.preventDefault();
+                    return;
+                }
+            }
+            if (e.deltaY === 0) return;
+
+            // Scrolling down: the catalog top must be tucked under the header
+            // first. Scrolling up: its bottom must reach the viewport bottom.
+            const direction = e.deltaY > 0 ? 1 : -1;
+            const offset = measureOffset(direction);
+            if (offset * direction > TOLERANCE) {
+                e.preventDefault();
+                animateTo(direction);
+            }
+        }, { passive: false });
+
+        // A user grabbing the page scrollbar or pressing keys cancels the snap.
+        const cancel = () => {
+            if (!snapping) return;
+            cancelAnimationFrame(rafId);
+            rafId = 0;
+            snapping = false;
+        };
+        window.addEventListener('keydown', cancel);
+        window.addEventListener('mousedown', cancel);
+    }
+    initCatalogScrollSnap();
+
     function initServiceAccordion() {
         const container = document.getElementById('service-details-container');
         const titleEl = document.getElementById('service-details-title');
