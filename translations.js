@@ -73,8 +73,8 @@
     "es": "**UPSTAGE PROD** es un equipo de producción técnica enfocado en entregar sistemas de eventos confiables y bien estructurados."
   },
   "about.desc2": {
-    "en": "Founded in 2022, the company brings together professionals with over a decade of hands-on experience in live production, covering everything from small-scale setups to complex multi-day events.",
-    "es": "Fundada en 2022, la empresa reúne a profesionales con más de una década de experiencia práctica en producción en vivo, abarcando desde configuraciones a pequeña escala hasta complejos eventos de varios días."
+    "en": "The company brings together professionals with over a decade of hands-on experience in live production, covering everything from small-scale setups to complex multi-day events.",
+    "es": "La empresa reúne a profesionales con más de una década de experiencia práctica en producción en vivo, abarcando desde configuraciones a pequeña escala hasta complejos eventos de varios días."
   },
   "about.desc3": {
     "en": "We operate across the full production cycle — from concept development and technical design to on-site execution — with a strong emphasis on system thinking, coordination, and real-world feasibility.",
