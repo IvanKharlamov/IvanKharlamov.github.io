@@ -390,21 +390,6 @@ window.products = [
         }
     },
     {
-        "id": 503,
-        "name": {
-            "en": "Shure SM 58/57",
-            "es": "Shure SM 58/57"
-        },
-        "category": "cat.mics",
-        "manufacturer": "Shure",
-        "priceDay": 10,
-        "image": "img/inventory/Shure 57 58 .avif",
-        "description": {
-            "en": "Cover the essentials of a live stage with a familiar Shure dynamic microphone. Choose the SM58 for vocals and speech, or the SM57 for instruments and amplifiers, according to the needs of your performance.",
-            "es": "Cubre los requerimientos esenciales de cualquier escenario con un micrófono dinámico Shure de absoluta referencia. Elige el SM58 para voces y discursos, o el SM57 para instrumentos y amplificadores, según las necesidades de la actuación."
-        }
-    },
-    {
         "id": 504,
         "name": {
             "en": "EV RE 20",
@@ -677,51 +662,6 @@ window.products = [
         }
     },
     {
-        "id": 1005,
-        "name": {
-            "en": "Sunstrip Active MKII",
-            "es": "Sunstrip Active MKII"
-        },
-        "category": "cat.light",
-        "manufacturer": "Showtec",
-        "priceDay": 15,
-        "image": "img/inventory/sunstrip.avif",
-        "description": {
-            "en": "Add warmth and movement to a live band's backdrop or a DJ stage. Ten individually dimmable lamps let the Sunstrip move from a gentle glow to running chases and punchy accents timed to the music.",
-            "es": "Aporta calidez, dinamismo y estilo escénico al telón de fondo de una banda o cabina de DJ. Diez lámparas regulables de forma independiente permiten desde una suave iluminación ámbar hasta secuencias y destellos contundentes sincronizados con el ritmo."
-        }
-    },
-    {
-        "id": 1006,
-        "name": {
-            "en": "SuperStrobe ABL",
-            "es": "SuperStrobe ABL"
-        },
-        "category": "cat.light",
-        "manufacturer": "Eurolite",
-        "priceDay": 10,
-        "image": "img/inventory/SUBER_ABL_STROBE.avif",
-        "description": {
-            "en": "Switch from colourful background light to striking white flashes as the music builds. This LED strobe adds contrast and energy to electronic performances, club nights and concert lighting designs.",
-            "es": "Alterna entre fondos de color envolventes e intensos destellos blancos en los momentos culminantes del show. Este estroboscopio LED añade contraste visual y dinamismo a sesiones electrónicas, discotecas y espectáculos en vivo."
-        }
-    },
-    {
-        "id": 1007,
-        "name": {
-            "en": "WASH 19x15W LED RGBW",
-            "es": "WASH 19x15W LED RGBW"
-        },
-        "category": "cat.light",
-        "manufacturer": "SHEHDS",
-        "priceDay": 10,
-        "image": "img/inventory/Wash_17x19.avif",
-        "description": {
-            "en": "Shape the mood of a stage with moving colour and adjustable beam width. This RGBW wash can spread light across performers or tighten the look for more focused accents at concerts, DJ events and corporate shows.",
-            "es": "Define el ambiente del escenario con movimiento, mezclas de color y zoom regulable. Este wash RGBW permite iluminar uniformemente a los artistas o concentrar el haz para lograr acentos impactantes en conciertos, fiestas y eventos corporativos."
-        }
-    },
-    {
         "id": 1008,
         "name": {
             "en": "WASH 36X18W RGBWU",
@@ -734,21 +674,6 @@ window.products = [
         "description": {
             "en": "Give a stage a rich colour wash that can change with each song or scene. Moving-head control and motorised zoom make this fixture useful for live music, theatrical looks and colourful event backdrops.",
             "es": "Baña el escenario con un potente espectro de color capaz de transformar cada escena o tema musical. Su cabeza móvil con zoom motorizado resulta idónea para directos musicales, montajes teatrales y llamativos fondos escenográficos."
-        }
-    },
-    {
-        "id": 1009,
-        "name": {
-            "en": "BEAM 7R 230W",
-            "es": "BEAM 7R 230W"
-        },
-        "category": "cat.light",
-        "manufacturer": "SHEHDS",
-        "priceDay": 10,
-        "image": "img/inventory/230w_7r.avif",
-        "description": {
-            "en": "Draw crisp beams through the air for club nights, concert builds and dramatic entrances. Colours, gobos and prism effects give this moving head several looks, with haze helping turn the beam paths into part of the show.",
-            "es": "Traza haces concentrados y de largo alcance a través del aire para noches de club, conciertos y aperturas impactantes. Gobos, colores y prismas aportan múltiples recursos visuales, luciendo en todo su esplendor combinados con humo escénico."
         }
     },
         {
@@ -779,36 +704,6 @@ window.products = [
         "description": {
             "en": "Keep the focus on the voice with a familiar handheld microphone for singers, hosts and speakers. The Shure SM58 is a practical choice for live bands, wedding speeches, panel discussions and everyday stage work.",
             "es": "Mantén la voz en el primer plano con el micrófono de mano más reconocido por artistas, presentadores y ponentes. El Shure SM58 es la opción de máxima confianza para grupos en directo, discursos de boda, conferencias y actuaciones cotidianas."
-        }
-    },
-    {
-        "id": 1013,
-        "name": {
-            "en": "HK Audio Sonar 112 xi",
-            "es": "HK Audio Sonar 112 xi"
-        },
-        "category": "cat.sound",
-        "manufacturer": "HKAudio",
-        "priceDay": 15,
-        "image": "img/inventory/sonar-115-xi.avif",
-        "description": {
-            "en": "Move easily between speeches, background music and party playback. This powered SONAR speaker combines onboard mixing with Bluetooth connectivity, making it convenient for presentations, private celebrations and compact mobile sound setups.",
-            "es": "Pasa con total fluidez de conferencias y música ambiental a la fiesta más animada. Esta caja autoamplificada SONAR incorpora mezclador interno y conectividad Bluetooth, aportando gran comodidad a celebraciones privadas, presentaciones y montajes móviles."
-        }
-    },
-    {
-        "id": 1014,
-        "name": {
-            "en": "UPM 2P",
-            "es": "UPM 2P"
-        },
-        "category": "cat.sound",
-        "manufacturer": "Meyer",
-        "priceDay": 20,
-        "image": "img/inventory/UPM-2P.avif",
-        "description": {
-            "en": "Add focused sound reinforcement where a larger speaker would be visually intrusive. This compact Meyer Sound cabinet suits front fills, theatre spaces, corporate presentations and local monitoring, helping bring detail to specific listening areas.",
-            "es": "Aporta refuerzo sonoro de alta fidelidad allí donde una caja acústica grande resultaría intrusiva. Este recinto compacto de Meyer Sound es perfecto para front fills, salas de teatro, presentaciones y monitorización local, garantizando máxima inteligibilidad."
         }
     },
     {
@@ -944,21 +839,6 @@ window.products = [
         "description": {
             "en": "Give DJs detailed control over long blends and layered sets with the Xone:96 analogue mixer. Four-band EQ, Xone filters and dual USB interfaces suit electronic music nights and hybrid performances that combine decks with computer audio.",
             "es": "Brinda a los DJs un control analógico excepcional para sesiones profundas, mezclas extendidas y directos híbridos. Su ecualización de cuatro bandas, filtros Xone duales y dos tarjetas de sonido USB la convierten en un referente para música electrónica."
-        }
-    },
-    {
-        "id": 1024,
-        "name": {
-            "en": "PIONEER DJM",
-            "es": "PIONEER DJM"
-        },
-        "category": "cat.dj",
-        "manufacturer": "Pioneer",
-        "priceDay": 45,
-        "image": "img/inventory/PIONEER_DJM.avif",
-        "description": {
-            "en": "Put a familiar Pioneer DJ mixer at the heart of your booth for club events, private parties and guest performances. Choose the DJM model that matches your artist's workflow, source connections and effects requirements.",
-            "es": "Sitúa una mesa Pioneer DJ en el corazón de la cabina para sesiones de club, fiestas privadas y DJs invitados. Selecciona el modelo que mejor responda al estilo del artista, conexiones de reproductores y necesidades de efectos."
         }
     },
     {
