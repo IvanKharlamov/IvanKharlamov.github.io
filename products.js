@@ -36,6 +36,7 @@ window.products = [
             "es": "Cabeza Móvil 230w"
         },
         "category": "cat.light",
+        "subcategory": "sub.movingLights",
         "manufacturer": "Generic",
         "priceDay": 30,
         "image": "img/inventory/230W.avif",
@@ -51,6 +52,7 @@ window.products = [
             "es": "LED Wash 17x19"
         },
         "category": "cat.light",
+        "subcategory": "sub.ledPar",
         "manufacturer": "Generic",
         "priceDay": 20,
         "image": "img/inventory/Wash 17x19.avif",
@@ -66,6 +68,7 @@ window.products = [
             "es": "PAR LED a Batería"
         },
         "category": "cat.light",
+        "subcategory": "sub.ledPar",
         "manufacturer": "Generic",
         "priceDay": 15,
         "image": "img/inventory/led par battery.avif",
@@ -81,6 +84,7 @@ window.products = [
             "es": "Aputure Amaran T2c"
         },
         "category": "cat.light",
+        "subcategory": "sub.ledTubes",
         "manufacturer": "Aputure",
         "priceDay": 20,
         "image": "img/inventory/amaran-t2c.avif",
@@ -96,6 +100,7 @@ window.products = [
             "es": "Showtec Sunstrip MK ii Active"
         },
         "category": "cat.light",
+        "subcategory": "sub.conventional",
         "manufacturer": "Showtec",
         "priceDay": 20,
         "image": "img/inventory/showtec-sunstrip-active-dmx-mkii.avif",
@@ -111,6 +116,7 @@ window.products = [
             "es": "Eurolite LED Strobe ABL"
         },
         "category": "cat.light",
+        "subcategory": "sub.effects",
         "manufacturer": "Eurolite",
         "priceDay": 10,
         "image": "img/inventory/Eurolite SuperStrobe ABL.avif",
@@ -126,6 +132,7 @@ window.products = [
             "es": "Consola GrandMA Command Wing"
         },
         "category": "cat.light",
+        "subcategory": "sub.lightControl",
         "manufacturer": "MA Lighting",
         "priceDay": 100,
         "image": "img/inventory/MA WING.avif",
@@ -141,6 +148,7 @@ window.products = [
             "es": "Interfaz ENTTEC DMX USB Pro"
         },
         "category": "cat.light",
+        "subcategory": "sub.lightControl",
         "manufacturer": "ENTTEC",
         "priceDay": 15,
         "image": "img/inventory/ENTTEC.avif",
@@ -156,6 +164,7 @@ window.products = [
             "es": "Truss cuadrado 50 mm, sección 30 cm, 1 m de largo"
         },
         "category": "cat.structures",
+        "subcategory": "sub.truss",
         "manufacturer": "Generic",
         "priceDay": 10,
         "image": "img/inventory/Truss.avif",
@@ -171,6 +180,7 @@ window.products = [
             "es": "Tótem 2m con base"
         },
         "category": "cat.structures",
+        "subcategory": "sub.towersStands",
         "manufacturer": "Generic",
         "priceDay": 20,
         "image": "img/inventory/Totem.avif",
@@ -186,6 +196,7 @@ window.products = [
             "es": "Tarima 2000x1000 mm"
         },
         "category": "cat.structures",
+        "subcategory": "sub.stageDecks",
         "manufacturer": "Generic",
         "priceDay": 30,
         "image": "img/inventory/STAGE MODULE.avif",
@@ -201,6 +212,7 @@ window.products = [
             "es": "Meyer UPM-2p"
         },
         "category": "cat.sound",
+        "subcategory": "sub.speakers",
         "manufacturer": "Meyer Sound",
         "priceDay": 30,
         "image": "img/inventory/UPM-2P.avif",
@@ -216,6 +228,7 @@ window.products = [
             "es": "HK Audio Sonar top"
         },
         "category": "cat.sound",
+        "subcategory": "sub.speakers",
         "manufacturer": "HK Audio",
         "priceDay": 20,
         "image": "img/inventory/sonar-115-xi.avif",
@@ -231,6 +244,7 @@ window.products = [
             "es": "HK Audio Sonar sub"
         },
         "category": "cat.sound",
+        "subcategory": "sub.subs",
         "manufacturer": "HK Audio",
         "priceDay": 30,
         "image": "img/inventory/hk-audio-sonar-115-sub-d_62bf0bb9c530e.avif",
@@ -246,6 +260,7 @@ window.products = [
             "es": "HK Audio Pro 15 activo"
         },
         "category": "cat.sound",
+        "subcategory": "sub.speakers",
         "manufacturer": "HK Audio",
         "priceDay": 30,
         "image": "img/inventory/HK PRO.avif",
@@ -261,6 +276,7 @@ window.products = [
             "es": "RCF SUB 8008-AS"
         },
         "category": "cat.sound",
+        "subcategory": "sub.subs",
         "manufacturer": "RCF",
         "priceDay": 100,
         "image": "img/inventory/003_SUB_8008_AS_RIGHT.avif",
@@ -276,6 +292,7 @@ window.products = [
             "es": "Yamaha DXR10 MKII"
         },
         "category": "cat.sound",
+        "subcategory": "sub.speakers",
         "manufacturer": "Yamaha",
         "priceDay": 20,
         "image": "img/inventory/yAMAHA DXR.avif",
@@ -291,6 +308,7 @@ window.products = [
             "es": "Consola analógica 4-8 canales"
         },
         "category": "cat.console",
+        "subcategory": "sub.analogConsoles",
         "manufacturer": "Generic",
         "priceDay": 15,
         "image": "img/inventory/Analogue console 4 8 .avif",
@@ -306,6 +324,7 @@ window.products = [
             "es": "Stage box DL 32"
         },
         "category": "cat.console",
+        "subcategory": "sub.stageboxes",
         "manufacturer": "Midas",
         "priceDay": 30,
         "image": "img/inventory/DL32.avif",
@@ -321,6 +340,7 @@ window.products = [
             "es": "Behringer X32R"
         },
         "category": "cat.console",
+        "subcategory": "sub.digitalConsoles",
         "manufacturer": "Behringer",
         "priceDay": 50,
         "image": "img/inventory/X32.avif",
@@ -336,6 +356,7 @@ window.products = [
             "es": "Shure SLXD24E/SM58 G59"
         },
         "category": "cat.mics",
+        "subcategory": "sub.wireless",
         "manufacturer": "Shure",
         "priceDay": 40,
         "image": "img/inventory/slxd24e-b58-g59.avif",
@@ -351,6 +372,7 @@ window.products = [
             "es": "Sennheiser E 906"
         },
         "category": "cat.mics",
+        "subcategory": "sub.wired",
         "manufacturer": "Sennheiser",
         "priceDay": 10,
         "image": "img/inventory/Sennheiser E 906.avif",
@@ -366,6 +388,7 @@ window.products = [
             "es": "EV RE 20"
         },
         "category": "cat.mics",
+        "subcategory": "sub.wired",
         "manufacturer": "Electro-Voice",
         "priceDay": 20,
         "image": "img/inventory/Re20 .avif",
@@ -381,6 +404,7 @@ window.products = [
             "es": "CDJ 2000 NXS"
         },
         "category": "cat.dj",
+        "subcategory": "sub.djPlayers",
         "manufacturer": "Pioneer DJ",
         "priceDay": 40,
         "image": "img/inventory/cdj-2000nxs2-angle.avif",
@@ -396,6 +420,7 @@ window.products = [
             "es": "DJM 900"
         },
         "category": "cat.dj",
+        "subcategory": "sub.djMixers",
         "manufacturer": "Pioneer DJ",
         "priceDay": 40,
         "image": "img/inventory/DJM900.avif",
@@ -411,6 +436,7 @@ window.products = [
             "es": "Technics SL1200 MK3D"
         },
         "category": "cat.dj",
+        "subcategory": "sub.djPlayers",
         "manufacturer": "Technics",
         "priceDay": 40,
         "image": "img/inventory/technics-sl-1200-mk2.avif",
@@ -426,6 +452,7 @@ window.products = [
             "es": "Mesa DJ UDG U91072BL"
         },
         "category": "cat.dj",
+        "subcategory": "sub.djFurniture",
         "manufacturer": "UDG",
         "priceDay": 15,
         "image": "img/inventory/DJ TABLE.avif",
@@ -441,6 +468,7 @@ window.products = [
             "es": "Cuadro de distribución 32A"
         },
         "category": "cat.electricity",
+        "subcategory": "sub.powerDistro",
         "manufacturer": "Generic",
         "priceDay": 20,
         "image": "img/inventory/Audibax PD32-6-16-32 Power Distributor.avif",
@@ -456,6 +484,7 @@ window.products = [
             "es": "Cuadro de distribución 63A"
         },
         "category": "cat.electricity",
+        "subcategory": "sub.powerDistro",
         "manufacturer": "Generic",
         "priceDay": 30,
         "image": "img/inventory/Audibax PD64T-4-32 Power Distributor salida 4 CEE 32A 5P.avif",
@@ -471,6 +500,7 @@ window.products = [
             "es": "Cable 32A (metros)"
         },
         "category": "cat.electricity",
+        "subcategory": "sub.cables",
         "manufacturer": "Generic",
         "priceDay": 1.5,
         "image": "img/inventory/cee-cable-32a-5g6-5m.avif",
@@ -486,6 +516,7 @@ window.products = [
             "es": "Cable 63A (metros)"
         },
         "category": "cat.electricity",
+        "subcategory": "sub.cables",
         "manufacturer": "Generic",
         "priceDay": 2.5,
         "image": "img/inventory/Cable 63.avif",
@@ -501,6 +532,7 @@ window.products = [
             "es": "Cable 16A 3P (metros)"
         },
         "category": "cat.electricity",
+        "subcategory": "sub.cables",
         "manufacturer": "Generic",
         "priceDay": 1,
         "image": "img/inventory/16a 3 phase.avif",
@@ -563,6 +595,7 @@ window.products = [
             "es": "HK Audio Pro 12 activo"
         },
         "category": "cat.sound",
+        "subcategory": "sub.speakers",
         "manufacturer": "HK Audio",
         "priceDay": 15,
         "image": "img/inventory/HK_PRO.avif",
@@ -578,6 +611,7 @@ window.products = [
             "es": "Barra LED genérica"
         },
         "category": "cat.light",
+        "subcategory": "sub.ledPar",
         "manufacturer": "Unknown/Generic",
         "priceDay": 5,
         "image": "img/inventory/LED_BAR.avif",
@@ -593,6 +627,7 @@ window.products = [
             "es": "SHEHDS PAR LED uplight 6x18W inalámbrico a batería"
         },
         "category": "cat.light",
+        "subcategory": "sub.ledPar",
         "manufacturer": "SHEHDS",
         "priceDay": 10,
         "image": "img/inventory/SHEHDS_battery_PAR.avif",
@@ -608,6 +643,7 @@ window.products = [
             "es": "Showtec truss recto 2000 mm"
         },
         "category": "cat.structures",
+        "subcategory": "sub.truss",
         "manufacturer": "Showtec",
         "priceDay": 10,
         "image": "img/inventory/Truss.avif",
@@ -623,6 +659,7 @@ window.products = [
             "es": "LED Wash 36x18W RGBWU"
         },
         "category": "cat.light",
+        "subcategory": "sub.ledPar",
         "manufacturer": "SHEHDS",
         "priceDay": 10,
         "image": "img/inventory/WASH_36_18.avif",
@@ -638,6 +675,7 @@ window.products = [
             "es": "Shure PGA kit de micrófonos para batería"
         },
         "category": "cat.mics",
+        "subcategory": "sub.wired",
         "manufacturer": "Shure",
         "priceDay": 15,
         "image": "img/inventory/PGA_MICS.avif",
@@ -653,6 +691,7 @@ window.products = [
             "es": "Shure SM58"
         },
         "category": "cat.mics",
+        "subcategory": "sub.wired",
         "manufacturer": "Shure",
         "priceDay": 1.8,
         "image": "img/inventory/sm_58.avif",
@@ -668,6 +707,7 @@ window.products = [
             "es": "Cable XLR 3/5/7 m"
         },
         "category": "cat.electricity",
+        "subcategory": "sub.cables",
         "manufacturer": "Unknown/Generic",
         "priceDay": 1,
         "image": "img/inventory/XLR.avif",
@@ -683,6 +723,7 @@ window.products = [
             "es": "Audibax garra para truss 48–51 mm 100 kg"
         },
         "category": "cat.structures",
+        "subcategory": "sub.rigging",
         "manufacturer": "Unknown/Generic",
         "priceDay": 2,
         "image": "img/inventory/audibax_truss_claw.avif",
@@ -698,6 +739,7 @@ window.products = [
             "es": "Gravity LS 431 B"
         },
         "category": "cat.structures",
+        "subcategory": "sub.towersStands",
         "manufacturer": "Unknown/Generic",
         "priceDay": 10,
         "image": "img/inventory/gravity_stand.avif",
@@ -713,6 +755,7 @@ window.products = [
             "es": "Showtec truss recto 1500 mm"
         },
         "category": "cat.structures",
+        "subcategory": "sub.truss",
         "manufacturer": "Showtec",
         "priceDay": 10,
         "image": "img/inventory/Truss.avif",
@@ -728,6 +771,7 @@ window.products = [
             "es": "Carpa plegable 3x3 m"
         },
         "category": "cat.structures",
+        "subcategory": "sub.tents",
         "manufacturer": "Unknown/Generic",
         "priceDay": 20,
         "image": "img/inventory/Tent Foldable 3x3.avif",
@@ -743,6 +787,7 @@ window.products = [
             "es": "Allen & Heath Xone:96"
         },
         "category": "cat.dj",
+        "subcategory": "sub.djMixers",
         "manufacturer": "UPSTAGE",
         "priceDay": 40,
         "image": "img/inventory/ALLENandHEAT_XONE_96.avif",
@@ -758,6 +803,7 @@ window.products = [
             "es": "Pioneer DJ RMX-1000"
         },
         "category": "cat.dj",
+        "subcategory": "sub.djMixers",
         "manufacturer": "Pioneer DJ",
         "priceDay": 25,
         "image": "img/inventory/PIONEER_RMX-1000.avif",
@@ -773,6 +819,7 @@ window.products = [
             "es": "Pioneer DJ XDJ"
         },
         "category": "cat.dj",
+        "subcategory": "sub.djPlayers",
         "manufacturer": "Pioneer DJ",
         "priceDay": 50,
         "image": "img/inventory/PIONEER_XDJ.avif",
@@ -788,6 +835,7 @@ window.products = [
             "es": "Pioneer DJ / AlphaTheta CDJ-3000"
         },
         "category": "cat.dj",
+        "subcategory": "sub.djPlayers",
         "manufacturer": "Pioneer DJ",
         "priceDay": 50,
         "image": "img/inventory/ALPHA_THETA_CDJ_3000.avif",
@@ -803,6 +851,7 @@ window.products = [
             "es": "Acoustic Control PAR 182 COB"
         },
         "category": "cat.light",
+        "subcategory": "sub.ledPar",
         "manufacturer": "Acoustic Control",
         "priceDay": 15,
         "image": "img/inventory/Acoustic_Control_par_182_cob.avif",
@@ -818,6 +867,7 @@ window.products = [
             "es": "BeamZ RB90"
         },
         "category": "cat.light",
+        "subcategory": "sub.effects",
         "manufacturer": "BeamZ",
         "priceDay": 20,
         "image": "img/inventory/BEAM_Z_Beamz_RB90.avif",
@@ -833,6 +883,7 @@ window.products = [
             "es": "BeamZ Blaze Fog 3500"
         },
         "category": "cat.light",
+        "subcategory": "sub.effects",
         "manufacturer": "BeamZ",
         "priceDay": 25,
         "image": "img/inventory/BEAM_Z_BLAZE_FOG_3500.avif",
@@ -848,6 +899,7 @@ window.products = [
             "es": "BeamZ BUV463"
         },
         "category": "cat.light",
+        "subcategory": "sub.effects",
         "manufacturer": "BeamZ",
         "priceDay": 15,
         "image": "img/inventory/BEAM_Z_BUV_463.avif",
@@ -863,6 +915,7 @@ window.products = [
             "es": "BeamZ DMX-192S"
         },
         "category": "cat.light",
+        "subcategory": "sub.lightControl",
         "manufacturer": "BeamZ",
         "priceDay": 20,
         "image": "img/inventory/BEAM_Z_DMX-192S.avif",
@@ -878,6 +931,7 @@ window.products = [
             "es": "BeamZ F1600"
         },
         "category": "cat.light",
+        "subcategory": "sub.effects",
         "manufacturer": "BeamZ",
         "priceDay": 25,
         "image": "img/inventory/BEAM_Z_F-1600.avif",
@@ -893,6 +947,7 @@ window.products = [
             "es": "BeamZ foco Fresnel zoom LED 200W RGB"
         },
         "category": "cat.light",
+        "subcategory": "sub.conventional",
         "manufacturer": "BeamZ",
         "priceDay": 20,
         "image": "img/inventory/BEAM_Z_Foco_Fresnel_Zoom_200w_Led_RGB.avif",
@@ -908,6 +963,7 @@ window.products = [
             "es": "BeamZ MHL74"
         },
         "category": "cat.light",
+        "subcategory": "sub.movingLights",
         "manufacturer": "BeamZ",
         "priceDay": 20,
         "image": "img/inventory/BEAM_Z_MHL_74.avif",
@@ -923,6 +979,7 @@ window.products = [
             "es": "BeamZ Pandora 1600"
         },
         "category": "cat.light",
+        "subcategory": "sub.effects",
         "manufacturer": "BeamZ",
         "priceDay": 35,
         "image": "img/inventory/BEAM_Z_PANDORA_1600.avif",
@@ -938,6 +995,7 @@ window.products = [
             "es": "BeamZ PAR LED IP65 a batería con DMX inalámbrico"
         },
         "category": "cat.light",
+        "subcategory": "sub.ledPar",
         "manufacturer": "BeamZ",
         "priceDay": 15,
         "image": "img/inventory/BEAM_Z_Par_Led_ip65_con_batera_DMX.avif",
@@ -953,6 +1011,7 @@ window.products = [
             "es": "BeamZ S3500"
         },
         "category": "cat.light",
+        "subcategory": "sub.effects",
         "manufacturer": "BeamZ",
         "priceDay": 25,
         "image": "img/inventory/BEAM_Z_S3500.avif",
@@ -968,6 +1027,7 @@ window.products = [
             "es": "Chauvet DJ Intimidator Beam 355 IRC"
         },
         "category": "cat.light",
+        "subcategory": "sub.movingLights",
         "manufacturer": "Chauvet DJ",
         "priceDay": 20,
         "image": "img/inventory/Chauvet_Dj_Intimidator_beam_355_irc.avif",
@@ -983,6 +1043,7 @@ window.products = [
             "es": "DAGE Dragon Eyes 7x60W Beam Wash"
         },
         "category": "cat.light",
+        "subcategory": "sub.movingLights",
         "manufacturer": "DAGE",
         "priceDay": 35,
         "image": "img/inventory/DAGE_Dragon_Eyes_-_7x60W_Beam_Wash.avif",
@@ -998,6 +1059,7 @@ window.products = [
             "es": "DAGE Optimus Prime Mega Beam 420W"
         },
         "category": "cat.light",
+        "subcategory": "sub.movingLights",
         "manufacturer": "DAGE",
         "priceDay": 40,
         "image": "img/inventory/DAGE_Optimus_Prime_Mega_Beam_420W.avif",
@@ -1013,6 +1075,7 @@ window.products = [
             "es": "Amate Audio Nitid Array N208A"
         },
         "category": "cat.sound",
+        "subcategory": "sub.lineArray",
         "manufacturer": "Amate Audio",
         "priceDay": 60,
         "image": "img/inventory/AMATE_AUDIO_NITID_ARRAY_N208A.avif",
@@ -1028,6 +1091,7 @@ window.products = [
             "es": "Amate Audio Nitid Array N208P"
         },
         "category": "cat.sound",
+        "subcategory": "sub.lineArray",
         "manufacturer": "Amate Audio",
         "priceDay": 60,
         "image": "img/inventory/AMATE_AUDIO_NITID_ARRAY_N208A.avif",
@@ -1043,6 +1107,7 @@ window.products = [
             "es": "Amate Audio Nitid N12"
         },
         "category": "cat.sound",
+        "subcategory": "sub.speakers",
         "manufacturer": "Amate Audio",
         "priceDay": 20,
         "image": "img/inventory/AMATE_AUDIO_NITID_S12.avif",
@@ -1058,6 +1123,7 @@ window.products = [
             "es": "Amate Audio Nitid N18W"
         },
         "category": "cat.sound",
+        "subcategory": "sub.subs",
         "manufacturer": "Amate Audio",
         "priceDay": 35,
         "image": "img/inventory/AMATE_AUDIO_NITID_N18W.avif",
@@ -1073,6 +1139,7 @@ window.products = [
             "es": "Amate Audio Nitid S12"
         },
         "category": "cat.sound",
+        "subcategory": "sub.speakers",
         "manufacturer": "Amate Audio",
         "priceDay": 20,
         "image": "img/inventory/AMATE_AUDIO_NITID_S12.avif",
@@ -1088,6 +1155,7 @@ window.products = [
             "es": "Amate Audio Xcellence X102FD"
         },
         "category": "cat.sound",
+        "subcategory": "sub.speakers",
         "manufacturer": "Amate Audio",
         "priceDay": 65,
         "image": "img/inventory/AMATE_AUDIO_XCELLENCE_X102FD.avif",
@@ -1103,6 +1171,7 @@ window.products = [
             "es": "Amate Audio Xcellence X218WF"
         },
         "category": "cat.sound",
+        "subcategory": "sub.subs",
         "manufacturer": "Amate Audio",
         "priceDay": 65,
         "image": "img/inventory/AMATE_AUDIO_XCELLENCE_X218WF.avif",
@@ -1118,6 +1187,7 @@ window.products = [
             "es": "Amate Audio Xcellence X82FD"
         },
         "category": "cat.sound",
+        "subcategory": "sub.speakers",
         "manufacturer": "Amate Audio",
         "priceDay": 65,
         "image": "img/inventory/AMATE_AUDIO_XCELLENCE_X82FD.avif",
@@ -1133,6 +1203,7 @@ window.products = [
             "es": "Amate Audio Xcellence XW118"
         },
         "category": "cat.sound",
+        "subcategory": "sub.subs",
         "manufacturer": "Amate Audio",
         "priceDay": 65,
         "image": "img/inventory/AMATE_AUDIO_XCELLENCE_XW118.avif",
@@ -1148,6 +1219,7 @@ window.products = [
             "es": "dbx DriveRack PA2"
         },
         "category": "cat.sound",
+        "subcategory": "sub.signal",
         "manufacturer": "dbx",
         "priceDay": 12,
         "image": "img/inventory/DBX_DRIVE_RAC_PA2.avif",
@@ -1163,6 +1235,7 @@ window.products = [
             "es": "LD Systems MAUI 11 G2"
         },
         "category": "cat.sound",
+        "subcategory": "sub.speakers",
         "manufacturer": "LD Systems",
         "priceDay": 35,
         "image": "img/inventory/LD_Systems_MAUI_11_G2.avif",
@@ -1178,6 +1251,7 @@ window.products = [
             "es": "LD Systems MAUI 28"
         },
         "category": "cat.sound",
+        "subcategory": "sub.speakers",
         "manufacturer": "LD Systems",
         "priceDay": 35,
         "image": "img/inventory/LD_Systems_MAUI_28.avif",
@@ -1193,6 +1267,7 @@ window.products = [
             "es": "Mackie Thump 12"
         },
         "category": "cat.sound",
+        "subcategory": "sub.speakers",
         "manufacturer": "Mackie",
         "priceDay": 25,
         "image": "img/inventory/MACKIE_THUMP_12.avif",
@@ -1208,6 +1283,7 @@ window.products = [
             "es": "RCF EVOX J9"
         },
         "category": "cat.sound",
+        "subcategory": "sub.speakers",
         "manufacturer": "RCF",
         "priceDay": 35,
         "image": "img/inventory/RCF_EVOX_J9.avif",
@@ -1223,6 +1299,7 @@ window.products = [
             "es": "RCF ART 12"
         },
         "category": "cat.sound",
+        "subcategory": "sub.speakers",
         "manufacturer": "RCF",
         "priceDay": 25,
         "image": "img/inventory/RCF_RCF_ART_12.avif",
@@ -1238,6 +1315,7 @@ window.products = [
             "es": "RCF SUB 15"
         },
         "category": "cat.sound",
+        "subcategory": "sub.subs",
         "manufacturer": "RCF",
         "priceDay": 35,
         "image": "img/inventory/RCF_SUB_15.avif",
@@ -1253,6 +1331,7 @@ window.products = [
             "es": "Yamaha DXR12"
         },
         "category": "cat.sound",
+        "subcategory": "sub.speakers",
         "manufacturer": "Yamaha",
         "priceDay": 25,
         "image": "img/inventory/YAMAHA_DXR_12.avif",
@@ -1268,6 +1347,7 @@ window.products = [
             "es": "Yamaha DXS15"
         },
         "category": "cat.sound",
+        "subcategory": "sub.subs",
         "manufacturer": "Yamaha",
         "priceDay": 35,
         "image": "img/inventory/YAMAHA_DXS15.avif",
@@ -1283,6 +1363,7 @@ window.products = [
             "es": "Escalera para tarima"
         },
         "category": "cat.structures",
+        "subcategory": "sub.stageDecks",
         "manufacturer": "UPSTAGE",
         "priceDay": 20,
         "image": "img/inventory/Kuzar_Escalera_Tarima.avif",
@@ -1298,6 +1379,7 @@ window.products = [
             "es": "Perfil de tarima 1 m"
         },
         "category": "cat.structures",
+        "subcategory": "sub.truss",
         "manufacturer": "UPSTAGE",
         "priceDay": 20,
         "image": "img/inventory/Kuzar_Truss.avif",
@@ -1313,6 +1395,7 @@ window.products = [
             "es": "Tapa para truss"
         },
         "category": "cat.structures",
+        "subcategory": "sub.truss",
         "manufacturer": "UPSTAGE",
         "priceDay": 12,
         "image": "img/inventory/Kuzar_Base_Truss.avif",
@@ -1328,6 +1411,7 @@ window.products = [
             "es": "Tarima 2x1 m"
         },
         "category": "cat.structures",
+        "subcategory": "sub.stageDecks",
         "manufacturer": "UPSTAGE",
         "priceDay": 20,
         "image": "img/inventory/stage_deck.avif",
@@ -1343,6 +1427,7 @@ window.products = [
             "es": "Torre elevadora K1"
         },
         "category": "cat.structures",
+        "subcategory": "sub.towersStands",
         "manufacturer": "UPSTAGE",
         "priceDay": 30,
         "image": "img/inventory/Kuzar_Torre_K1.avif",
@@ -1358,6 +1443,7 @@ window.products = [
             "es": "Torre elevadora K5"
         },
         "category": "cat.structures",
+        "subcategory": "sub.towersStands",
         "manufacturer": "UPSTAGE",
         "priceDay": 50,
         "image": "img/inventory/Kuzar_Torre_K5.avif",
@@ -1373,6 +1459,7 @@ window.products = [
             "es": "Truss 0,25 m"
         },
         "category": "cat.structures",
+        "subcategory": "sub.truss",
         "manufacturer": "UPSTAGE",
         "priceDay": 12,
         "image": "img/inventory/Kuzar_Truss.avif",
@@ -1388,6 +1475,7 @@ window.products = [
             "es": "Truss 1 m"
         },
         "category": "cat.structures",
+        "subcategory": "sub.truss",
         "manufacturer": "UPSTAGE",
         "priceDay": 12,
         "image": "img/inventory/Kuzar_Truss.avif",
@@ -1403,6 +1491,7 @@ window.products = [
             "es": "Truss 2 m"
         },
         "category": "cat.structures",
+        "subcategory": "sub.truss",
         "manufacturer": "UPSTAGE",
         "priceDay": 12,
         "image": "img/inventory/Kuzar_Truss.avif",
@@ -1418,6 +1507,7 @@ window.products = [
             "es": "Truss 3 m"
         },
         "category": "cat.structures",
+        "subcategory": "sub.truss",
         "manufacturer": "UPSTAGE",
         "priceDay": 12,
         "image": "img/inventory/Kuzar_Truss.avif",
@@ -1433,6 +1523,7 @@ window.products = [
             "es": "AKG PW45 Presenter Set"
         },
         "category": "cat.mics",
+        "subcategory": "sub.wireless",
         "manufacturer": "AKG",
         "priceDay": 15,
         "image": "img/inventory/AKG_PW45_PRESENTER_SET.avif",
@@ -1448,6 +1539,7 @@ window.products = [
             "es": "AKG PW45 Vocal Set Band M"
         },
         "category": "cat.mics",
+        "subcategory": "sub.wireless",
         "manufacturer": "AKG",
         "priceDay": 15,
         "image": "img/inventory/AKG_PW45_VOCAL_SET_BAND_M.avif",
@@ -1463,6 +1555,7 @@ window.products = [
             "es": "Behringer Xenyx 1202SFX"
         },
         "category": "cat.console",
+        "subcategory": "sub.analogConsoles",
         "manufacturer": "Behringer",
         "priceDay": 18,
         "image": "img/inventory/BEHRINGER_XENIX1202SFX.avif",
@@ -1478,6 +1571,7 @@ window.products = [
             "es": "dbx DI1"
         },
         "category": "cat.mics",
+        "subcategory": "sub.micAccessories",
         "manufacturer": "dbx",
         "priceDay": 12,
         "image": "img/inventory/DBX_DBXDI1.avif",
@@ -1493,6 +1587,7 @@ window.products = [
             "es": "Mark XS11451"
         },
         "category": "cat.mics",
+        "subcategory": "sub.headsets",
         "manufacturer": "Mark",
         "priceDay": 20,
         "image": "img/inventory/MARK_XS1301.avif",
@@ -1508,6 +1603,7 @@ window.products = [
             "es": "Mark XS1301"
         },
         "category": "cat.mics",
+        "subcategory": "sub.headsets",
         "manufacturer": "Mark",
         "priceDay": 20,
         "image": "img/inventory/MARK_XS1301.avif",
@@ -1523,6 +1619,7 @@ window.products = [
             "es": "Midas MR32R"
         },
         "category": "cat.console",
+        "subcategory": "sub.digitalConsoles",
         "manufacturer": "Midas",
         "priceDay": 50,
         "image": "img/inventory/MIDAS_MR32R.avif",
@@ -1538,6 +1635,7 @@ window.products = [
             "es": "Sennheiser EM 300-500 G4"
         },
         "category": "cat.mics",
+        "subcategory": "sub.wireless",
         "manufacturer": "Sennheiser",
         "priceDay": 15,
         "image": "img/inventory/SENNHEISER_EM_300-500-G4.avif",
@@ -1553,6 +1651,7 @@ window.products = [
             "es": "Sennheiser SKM 500 G4"
         },
         "category": "cat.mics",
+        "subcategory": "sub.wireless",
         "manufacturer": "Sennheiser",
         "priceDay": 15,
         "image": "img/inventory/SENNHEISER_SKM_500_G4.avif",
@@ -1568,6 +1667,7 @@ window.products = [
             "es": "Shure Beta 58A"
         },
         "category": "cat.mics",
+        "subcategory": "sub.wired",
         "manufacturer": "Shure",
         "priceDay": 15,
         "image": "img/inventory/SHURE_BETA_58_A.avif",
@@ -1583,6 +1683,7 @@ window.products = [
             "es": "Shure PGA52"
         },
         "category": "cat.mics",
+        "subcategory": "sub.wired",
         "manufacturer": "Shure",
         "priceDay": 15,
         "image": "img/inventory/SHURE_PGA52.avif",
@@ -1598,6 +1699,7 @@ window.products = [
             "es": "Shure PGA81"
         },
         "category": "cat.mics",
+        "subcategory": "sub.wired",
         "manufacturer": "Shure",
         "priceDay": 15,
         "image": "img/inventory/SHURE_PGA81.avif",
@@ -1613,6 +1715,7 @@ window.products = [
             "es": "Shure SM57"
         },
         "category": "cat.mics",
+        "subcategory": "sub.wired",
         "manufacturer": "Shure",
         "priceDay": 15,
         "image": "img/inventory/SHURE_SM_57.avif",
@@ -1628,6 +1731,7 @@ window.products = [
             "es": "Soundcraft EFX12+K"
         },
         "category": "cat.console",
+        "subcategory": "sub.analogConsoles",
         "manufacturer": "Soundcraft",
         "priceDay": 18,
         "image": "img/inventory/SOUNDCRAFT_EFX12plusK.avif",
@@ -1643,6 +1747,7 @@ window.products = [
             "es": "Soundcraft EPM8"
         },
         "category": "cat.console",
+        "subcategory": "sub.analogConsoles",
         "manufacturer": "Soundcraft",
         "priceDay": 18,
         "image": "img/inventory/SOUNDCRAFT_EPM8.avif",
@@ -1658,6 +1763,7 @@ window.products = [
             "es": "Yamaha MG10XU"
         },
         "category": "cat.console",
+        "subcategory": "sub.analogConsoles",
         "manufacturer": "Yamaha",
         "priceDay": 18,
         "image": "img/inventory/YAMAHA_MG10XU.avif",
@@ -1673,6 +1779,7 @@ window.products = [
             "es": "Shure BLX24 H8E"
         },
         "category": "cat.mics",
+        "subcategory": "sub.wireless",
         "manufacturer": "Shure",
         "priceDay": 19.99,
         "image": "img/inventory/01-shure-blx24-h8e.avif",
@@ -1688,6 +1795,7 @@ window.products = [
             "es": "Sennheiser EW-D ME3 R1-6"
         },
         "category": "cat.mics",
+        "subcategory": "sub.wireless",
         "manufacturer": "Sennheiser",
         "priceDay": 25,
         "image": "img/inventory/02-sennheiser-ew-d-me3.avif",
@@ -1703,6 +1811,7 @@ window.products = [
             "es": "RCF NX 945 A"
         },
         "category": "cat.sound",
+        "subcategory": "sub.speakers",
         "manufacturer": "RCF",
         "priceDay": 100,
         "image": "img/inventory/03-rcf-nx945a.avif",
@@ -1718,6 +1827,7 @@ window.products = [
             "es": "K&M 21449"
         },
         "category": "cat.sound",
+        "subcategory": "sub.signal",
         "manufacturer": "K&M",
         "priceDay": 10,
         "image": "img/inventory/04-km-21449.avif",
@@ -1733,6 +1843,7 @@ window.products = [
             "es": "Ampeg SVT 115"
         },
         "category": "cat.backline",
+        "subcategory": "sub.bassAmps",
         "manufacturer": "Ampeg",
         "priceDay": 30,
         "image": "img/inventory/05-ampeg-svt115.avif",
@@ -1748,6 +1859,7 @@ window.products = [
             "es": "Ampeg SVT-810AV"
         },
         "category": "cat.backline",
+        "subcategory": "sub.bassAmps",
         "manufacturer": "Ampeg",
         "priceDay": 40,
         "image": "img/inventory/06-ampeg-svt810av.avif",
@@ -1763,6 +1875,7 @@ window.products = [
             "es": "Ampeg PF-500"
         },
         "category": "cat.backline",
+        "subcategory": "sub.bassAmps",
         "manufacturer": "Ampeg",
         "priceDay": 20,
         "image": "img/inventory/07-ampeg-pf500.avif",
@@ -1778,6 +1891,7 @@ window.products = [
             "es": "Ampeg V-4B"
         },
         "category": "cat.backline",
+        "subcategory": "sub.bassAmps",
         "manufacturer": "Ampeg",
         "priceDay": 40,
         "image": "img/inventory/08-ampeg-v4b.avif",
@@ -1793,6 +1907,7 @@ window.products = [
             "es": "Fender Blues Junior IV Western Edition"
         },
         "category": "cat.backline",
+        "subcategory": "sub.guitarAmps",
         "manufacturer": "Fender",
         "priceDay": 20,
         "image": "img/inventory/09-fender-blues-junior.avif",
@@ -1808,6 +1923,7 @@ window.products = [
             "es": "Fender Hot Rod Deluxe IV"
         },
         "category": "cat.backline",
+        "subcategory": "sub.guitarAmps",
         "manufacturer": "Fender",
         "priceDay": 40,
         "image": "img/inventory/10-fender-hot-rod.avif",
@@ -1823,6 +1939,7 @@ window.products = [
             "es": "Nord Electro 6HP"
         },
         "category": "cat.backline",
+        "subcategory": "sub.keyboards",
         "manufacturer": "Nord",
         "priceDay": 100,
         "image": "img/inventory/11-nord-electro6hp.avif",
@@ -1838,6 +1955,7 @@ window.products = [
             "es": "Yamaha Stage Custom Hip Shell Pack Raven Black"
         },
         "category": "cat.backline",
+        "subcategory": "sub.drums",
         "manufacturer": "Yamaha",
         "priceDay": 35,
         "image": "img/inventory/12-yamaha-stage-custom-hip.avif",
@@ -1853,6 +1971,7 @@ window.products = [
             "es": "Simple Way Mini"
         },
         "category": "cat.sound",
+        "subcategory": "sub.signal",
         "manufacturer": "Simple Way",
         "priceDay": 10,
         "image": "img/inventory/13-simple-way-mini.avif",
@@ -1868,6 +1987,7 @@ window.products = [
             "es": "BSS AR-133"
         },
         "category": "cat.sound",
+        "subcategory": "sub.signal",
         "manufacturer": "BSS",
         "priceDay": 10,
         "image": "img/inventory/14-bss-ar133.avif",
@@ -1883,6 +2003,7 @@ window.products = [
             "es": "Radial BT-PRO V2"
         },
         "category": "cat.sound",
+        "subcategory": "sub.signal",
         "manufacturer": "Radial",
         "priceDay": 20,
         "image": "img/inventory/15-radial-btpro-v2.avif",
@@ -1898,6 +2019,7 @@ window.products = [
             "es": "Palmer PAN 01"
         },
         "category": "cat.sound",
+        "subcategory": "sub.signal",
         "manufacturer": "Palmer",
         "priceDay": 10,
         "image": "img/inventory/16-palmer-pan01.avif",
@@ -1913,6 +2035,7 @@ window.products = [
             "es": "Sennheiser XSW-IEM"
         },
         "category": "cat.sound",
+        "subcategory": "sub.iem",
         "manufacturer": "Sennheiser",
         "priceDay": 20,
         "image": "img/inventory/17-sennheiser-xsw-iem.avif",
@@ -1928,6 +2051,7 @@ window.products = [
             "es": "Pie de micrófono con jirafa"
         },
         "category": "cat.mics",
+        "subcategory": "sub.micAccessories",
         "manufacturer": "Generic",
         "priceDay": 5,
         "image": "img/inventory/18-mic-stand-boom.avif",
@@ -1943,6 +2067,7 @@ window.products = [
             "es": "Audibax Onyx 130 Double X"
         },
         "category": "cat.backline",
+        "subcategory": "sub.keyboards",
         "manufacturer": "Audibax",
         "priceDay": 7,
         "image": "img/inventory/19-audibax-onyx130.avif",
@@ -1958,6 +2083,7 @@ window.products = [
             "es": "Gibraltar 9608E"
         },
         "category": "cat.backline",
+        "subcategory": "sub.drums",
         "manufacturer": "Gibraltar",
         "priceDay": 15,
         "image": "img/inventory/20-gibraltar-9608e.avif",
@@ -1973,6 +2099,7 @@ window.products = [
             "es": "Pearl BC-830"
         },
         "category": "cat.backline",
+        "subcategory": "sub.drums",
         "manufacturer": "Pearl",
         "priceDay": 5,
         "image": "img/inventory/21-pearl-bc830.avif",
@@ -1988,6 +2115,7 @@ window.products = [
             "es": "SHEHDS JMS WEBB 19×40 IP65"
         },
         "category": "cat.light",
+        "subcategory": "sub.movingLights",
         "manufacturer": "SHEHDS",
         "priceDay": 40,
         "image": "img/inventory/22-shehds-jms-webb.avif",
@@ -2003,6 +2131,7 @@ window.products = [
             "es": "Audibax Dallas 300"
         },
         "category": "cat.light",
+        "subcategory": "sub.ledPar",
         "manufacturer": "Audibax",
         "priceDay": 10,
         "image": "img/inventory/23-audibax-dallas300.avif",
@@ -2018,6 +2147,7 @@ window.products = [
             "es": "PAR 64"
         },
         "category": "cat.light",
+        "subcategory": "sub.conventional",
         "manufacturer": "Generic",
         "priceDay": 15,
         "image": "img/inventory/24-par64.avif",
@@ -2033,6 +2163,7 @@ window.products = [
             "es": "FAL Stage 1000 — Fresnel 650/1000 W"
         },
         "category": "cat.light",
+        "subcategory": "sub.conventional",
         "manufacturer": "FAL",
         "priceDay": 25,
         "image": "img/inventory/25-fal-stage1000.avif",
@@ -2048,6 +2179,7 @@ window.products = [
             "es": "ETC S4 recorte zoom 25°–50°"
         },
         "category": "cat.light",
+        "subcategory": "sub.conventional",
         "manufacturer": "ETC",
         "priceDay": 30,
         "image": "img/inventory/26-etc-s4-zoom.avif",
@@ -2063,6 +2195,7 @@ window.products = [
             "es": "GLP Matrix Eye 4"
         },
         "category": "cat.light",
+        "subcategory": "sub.effects",
         "manufacturer": "GLP",
         "priceDay": 40,
         "image": "img/inventory/27-glp-matrix-eye4.avif",
@@ -2078,6 +2211,7 @@ window.products = [
             "es": "GLP JDC Burst 1"
         },
         "category": "cat.light",
+        "subcategory": "sub.effects",
         "manufacturer": "GLP",
         "priceDay": 40,
         "image": "img/inventory/28-glp-jdc-burst1.avif",
@@ -2093,6 +2227,7 @@ window.products = [
             "es": "Eurolite PAR36 Pinspot"
         },
         "category": "cat.light",
+        "subcategory": "sub.ledPar",
         "manufacturer": "Eurolite",
         "priceDay": 10,
         "image": "img/inventory/29-eurolite-par36.avif",
@@ -2108,6 +2243,7 @@ window.products = [
             "es": "Showgear SF-125"
         },
         "category": "cat.light",
+        "subcategory": "sub.effects",
         "manufacturer": "Showgear",
         "priceDay": 15,
         "image": "img/inventory/30-showgear-sf125.avif",
@@ -2123,6 +2259,7 @@ window.products = [
             "es": "Stairville HZ-1500 Pro Hazer DMX"
         },
         "category": "cat.light",
+        "subcategory": "sub.effects",
         "manufacturer": "Stairville",
         "priceDay": 30,
         "image": "img/inventory/31-stairville-hz1500.avif",
@@ -2138,6 +2275,7 @@ window.products = [
             "es": "Triton Blue DM2"
         },
         "category": "cat.light",
+        "subcategory": "sub.lightControl",
         "manufacturer": "Triton Blue",
         "priceDay": 10,
         "image": "img/inventory/32-triton-blue-dm2.avif",
@@ -2153,6 +2291,7 @@ window.products = [
             "es": "Triton Blue DM4"
         },
         "category": "cat.light",
+        "subcategory": "sub.lightControl",
         "manufacturer": "Triton Blue",
         "priceDay": 15,
         "image": "img/inventory/33-triton-blue-dm4.avif",
@@ -2168,6 +2307,7 @@ window.products = [
             "es": "Showtec DIM-4"
         },
         "category": "cat.light",
+        "subcategory": "sub.lightControl",
         "manufacturer": "Showtec",
         "priceDay": 15,
         "image": "img/inventory/34-showtec-dim4.avif",
@@ -2183,6 +2323,7 @@ window.products = [
             "es": "Stairville tubo de aluminio Ø50 mm, 1 m"
         },
         "category": "cat.structures",
+        "subcategory": "sub.rigging",
         "manufacturer": "Stairville",
         "priceDay": 3,
         "image": "img/inventory/35-stairville-pipe1m.avif",
@@ -2198,6 +2339,7 @@ window.products = [
             "es": "Stairville tubo de aluminio Ø50 mm, 2 m"
         },
         "category": "cat.structures",
+        "subcategory": "sub.rigging",
         "manufacturer": "Stairville",
         "priceDay": 7,
         "image": "img/inventory/36-stairville-pipe2m.avif",
@@ -2213,6 +2355,7 @@ window.products = [
             "es": "Showtec FP50100B — tubo negro Ø50 mm, 1 m"
         },
         "category": "cat.structures",
+        "subcategory": "sub.rigging",
         "manufacturer": "Showtec",
         "priceDay": 15,
         "image": "img/inventory/37-showtec-fp50100b.avif",
@@ -2228,6 +2371,7 @@ window.products = [
             "es": "Global Truss 5032-2B abrazadera giratoria"
         },
         "category": "cat.structures",
+        "subcategory": "sub.rigging",
         "manufacturer": "Global Truss",
         "priceDay": 1,
         "image": "img/inventory/38-global-truss-5032.avif",
@@ -2243,6 +2387,7 @@ window.products = [
             "es": "QWORK abrazadera para truss 28–34 mm"
         },
         "category": "cat.structures",
+        "subcategory": "sub.rigging",
         "manufacturer": "QWORK",
         "priceDay": 1,
         "image": "img/inventory/39-qwork-clamp.avif",
@@ -2258,6 +2403,7 @@ window.products = [
             "es": "Showtec FQ30MCMC — conector Multicube macho"
         },
         "category": "cat.structures",
+        "subcategory": "sub.truss",
         "manufacturer": "Showtec",
         "priceDay": 0.5,
         "image": "img/inventory/40-showtec-fq30mcmc.avif",
@@ -2273,6 +2419,7 @@ window.products = [
             "es": "Showtec BPFACS10 — conector semicónico M10"
         },
         "category": "cat.structures",
+        "subcategory": "sub.truss",
         "manufacturer": "Showtec",
         "priceDay": 0.5,
         "image": "img/inventory/41-showtec-bpfacs10.avif",
@@ -2288,6 +2435,7 @@ window.products = [
             "es": "Showtec T-Downrigger FT/FQ negro"
         },
         "category": "cat.structures",
+        "subcategory": "sub.rigging",
         "manufacturer": "Showtec",
         "priceDay": 25,
         "image": "img/inventory/42-showtec-t-downrigger.avif",
@@ -2303,12 +2451,706 @@ window.products = [
             "es": "Showtec Downrigger simple FT/FQ negro"
         },
         "category": "cat.structures",
+        "subcategory": "sub.rigging",
         "manufacturer": "Showtec",
         "priceDay": 15,
         "image": "img/inventory/43-showtec-single-downrigger.avif",
         "description": {
             "en": "Position a compatible fixture below the main truss line to suit the stage design. This single downrigger is useful for adding a lower lighting position in concerts, presentations and event productions.",
             "es": "Coloca un proyector compatible por debajo de la línea principal de truss según el diseño del escenario. Este downrigger simple resulta útil para añadir una posición de iluminación más baja en conciertos, presentaciones y producciones de eventos."
+        }
+    },
+    {
+        "id": 1201,
+        "name": {
+            "en": "Behringer WING",
+            "es": "Behringer WING"
+        },
+        "category": "cat.console",
+        "subcategory": "sub.digitalConsoles",
+        "manufacturer": "Behringer",
+        "priceDay": 225,
+        "image": "img/inventory/behringer-wing.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Bring live bands, playback and presenter microphones together in one flexible mixing workspace. WING gives the engineer room to shape the sound, organise monitor mixes and move confidently between sections of a show. A practical centrepiece for concerts, corporate stages and multi-act events.",
+            "es": "Reúne bandas en directo, pistas y micrófonos de presentación en una superficie de mezcla flexible. WING permite al técnico trabajar el sonido, organizar las mezclas de monitores y pasar de una parte del espectáculo a otra. Una opción versátil para conciertos, escenarios corporativos y eventos con varios artistas."
+        },
+        "scope": {
+            "en": "Console only; stagebox and multicore quoted separately.",
+            "es": "Solo consola; cajetín de escenario y manguera por separado."
+        }
+    },
+    {
+        "id": 1202,
+        "name": {
+            "en": "Behringer WING Compact",
+            "es": "Behringer WING Compact"
+        },
+        "category": "cat.console",
+        "subcategory": "sub.digitalConsoles",
+        "manufacturer": "Behringer",
+        "priceDay": 99,
+        "image": "img/inventory/behringer-wing-compact.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Take the WING workflow into venues where space at front of house is limited. This compact digital desk keeps mixing, processing and show control close at hand, making it useful for touring bands, theatre productions and corporate events that need a capable console in a smaller footprint.",
+            "es": "Lleva el flujo de trabajo WING a espacios con una zona de control reducida. Esta mesa digital compacta reúne mezcla, procesamiento y gestión del espectáculo en una superficie cómoda. Resulta práctica para bandas de gira, teatro y eventos corporativos que necesitan una consola completa sin ocupar demasiado espacio."
+        },
+        "scope": {
+            "en": "Console only; external stagebox quoted separately.",
+            "es": "Solo consola; cajetín externo por separado."
+        }
+    },
+    {
+        "id": 1203,
+        "name": {
+            "en": "Allen & Heath SQ-6",
+            "es": "Allen & Heath SQ-6"
+        },
+        "category": "cat.console",
+        "subcategory": "sub.digitalConsoles",
+        "manufacturer": "Allen & Heath",
+        "priceDay": 150,
+        "image": "img/inventory/allen-heath-sq6.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Keep live sound organised through soundchecks, guest performances and busy show schedules. The SQ-6 combines hands-on mixing with recallable settings, helping engineers manage bands, conferences and theatre productions. A useful choice when the event needs a dedicated mixing surface with room for both audience sound and stage monitors.",
+            "es": "Mantén el sonido organizado durante pruebas, actuaciones y cambios de programa. La SQ-6 combina controles directos con memorias de escena para facilitar el trabajo en conciertos, conferencias y teatro. Una opción práctica para gestionar tanto la mezcla de sala como los monitores del escenario."
+        },
+        "scope": {
+            "en": "Console only; external stagebox quoted separately.",
+            "es": "Solo consola; cajetín externo por separado."
+        }
+    },
+    {
+        "id": 1204,
+        "name": {
+            "en": "Yamaha QL5",
+            "es": "Yamaha QL5"
+        },
+        "category": "cat.console",
+        "subcategory": "sub.digitalConsoles",
+        "manufacturer": "Yamaha",
+        "priceDay": 230,
+        "image": "img/inventory/yamaha-ql5.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Give your sound engineer a familiar Yamaha workspace for concerts, conferences and theatre. QL5 brings hands-on control and scene recall to productions with multiple speakers or performers, making it easier to prepare the programme and keep transitions consistent throughout the event.",
+            "es": "Ofrece al técnico un entorno Yamaha familiar para conciertos, conferencias y teatro. La QL5 combina control directo y memorias de escena para producciones con varios ponentes o artistas. Permite preparar el programa y mantener cambios de mezcla coherentes durante todo el evento."
+        },
+        "scope": {
+            "en": "Console only; external stagebox quoted separately.",
+            "es": "Solo consola; cajetín externo por separado."
+        }
+    },
+    {
+        "id": 1205,
+        "name": {
+            "en": "Yamaha CL5",
+            "es": "Yamaha CL5"
+        },
+        "category": "cat.console",
+        "subcategory": "sub.digitalConsoles",
+        "manufacturer": "Yamaha",
+        "priceDay": 325,
+        "image": "img/inventory/yamaha-cl5.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Build a comfortable front-of-house or monitor position around Yamaha's CL workflow. CL5 suits concerts, festival stages and larger productions where the engineer needs clear access to many sources and prepared show scenes. Pair it with the appropriate stage rack for the event's input and output requirements.",
+            "es": "Prepara un puesto cómodo de mezcla de sala o monitores con el entorno Yamaha CL. La CL5 encaja en conciertos, festivales y producciones que requieren acceso claro a numerosas fuentes y escenas preparadas. Combínala con el rack de escenario adecuado para las entradas y salidas del evento."
+        },
+        "scope": {
+            "en": "Console only; Rio stage rack quoted separately.",
+            "es": "Solo consola; rack Rio por separado."
+        }
+    },
+    {
+        "id": 1206,
+        "name": {
+            "en": "Sennheiser EW IEM G4",
+            "es": "Sennheiser EW IEM G4"
+        },
+        "category": "cat.sound",
+        "subcategory": "sub.iem",
+        "manufacturer": "Sennheiser",
+        "priceDay": 58,
+        "image": "img/inventory/sennheiser-ew-iem-g4.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Help performers hear a personal monitor mix while moving freely on stage. EW IEM G4 is a practical option for vocalists, musicians and presenters who prefer in-ear monitoring to a floor wedge. It can form part of a coordinated wireless setup for concerts, rehearsals and touring shows.",
+            "es": "Permite a los artistas escuchar su mezcla personal con libertad de movimiento. EW IEM G4 es una opción práctica para cantantes, músicos y presentadores que prefieren monitorización in-ear. Puede integrarse en un sistema inalámbrico coordinado para conciertos, ensayos y espectáculos de gira."
+        },
+        "scope": {
+            "en": "One transmitter and one bodypack receiver; earphones available on request.",
+            "es": "Un transmisor y un receptor de petaca; auriculares bajo petición."
+        }
+    },
+    {
+        "id": 1207,
+        "name": {
+            "en": "Shure PSM 900",
+            "es": "Shure PSM 900"
+        },
+        "category": "cat.sound",
+        "subcategory": "sub.iem",
+        "manufacturer": "Shure",
+        "priceDay": 72,
+        "image": "img/inventory/shure-psm900.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Give performers a dedicated in-ear mix for concerts, stage shows and rehearsals. PSM 900 lets musicians keep their monitoring close as they move around the stage, supporting a more controlled performance environment. A useful addition to a live sound package when personal monitoring is part of the artist's setup.",
+            "es": "Ofrece a los artistas una mezcla in-ear dedicada para conciertos, espectáculos y ensayos. PSM 900 acompaña al músico mientras se mueve por el escenario y ayuda a mantener una escucha controlada. Un complemento útil cuando la monitorización personal forma parte del montaje del artista."
+        },
+        "scope": {
+            "en": "One P9T transmitter and one P9RA receiver; earphones available on request.",
+            "es": "Un transmisor P9T y un receptor P9RA; auriculares bajo petición."
+        }
+    },
+    {
+        "id": 1208,
+        "name": {
+            "en": "Shure PSM 1000 — Dual",
+            "es": "Shure PSM 1000 — Dual"
+        },
+        "category": "cat.sound",
+        "subcategory": "sub.iem",
+        "manufacturer": "Shure",
+        "priceDay": 140,
+        "image": "img/inventory/shure-psm1000-dual.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Prepare two personal monitoring positions with a dual PSM 1000 system. This package combines a rack transmitter with two bodypack receivers for demanding live productions and touring performances. It gives the monitor engineer a coordinated starting point for two performers, with earphones chosen separately to suit each artist.",
+            "es": "Prepara dos puestos de monitorización personal con un sistema doble PSM 1000. El conjunto reúne un transmisor de rack y dos receptores de petaca para producciones en directo y giras. Ofrece una base coordinada para dos artistas, con auriculares seleccionados por separado según sus preferencias."
+        },
+        "scope": {
+            "en": "One dual P10T transmitter and two P10R receivers; earphones excluded.",
+            "es": "Un transmisor doble P10T y dos receptores P10R; sin auriculares."
+        }
+    },
+    {
+        "id": 1209,
+        "name": {
+            "en": "Shure ULX-D / SM58 — Handheld System",
+            "es": "Shure ULX-D / SM58 — Handheld System"
+        },
+        "category": "cat.mics",
+        "subcategory": "sub.wireless",
+        "manufacturer": "Shure",
+        "priceDay": 50,
+        "image": "img/inventory/shure-ulxd-handheld.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Put a familiar handheld microphone in the performer's hands without a cable across the stage. This ULX-D system pairs a digital receiver with an SM58 handheld transmitter for vocals, presentations and live events. A clear choice when the production calls for Shure wireless handheld microphones.",
+            "es": "Pon un micrófono de mano familiar en manos del artista sin cables por el escenario. Este sistema ULX-D combina un receptor digital con un transmisor de mano SM58 para voces, presentaciones y eventos. Una opción para producciones que solicitan microfonía inalámbrica de mano Shure."
+        },
+        "scope": {
+            "en": "One ULXD4 receiver and one ULXD2/SM58 handheld transmitter.",
+            "es": "Un receptor ULXD4 y un transmisor de mano ULXD2/SM58."
+        }
+    },
+    {
+        "id": 1210,
+        "name": {
+            "en": "Shure ULX-D — Bodypack System",
+            "es": "Shure ULX-D — Bodypack System"
+        },
+        "category": "cat.mics",
+        "subcategory": "sub.wireless",
+        "manufacturer": "Shure",
+        "priceDay": 50,
+        "image": "img/inventory/shure-ulxd-bodypack.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Create a discreet wireless link for a headset or lavalier microphone. This ULX-D receiver and bodypack combination suits conferences, theatre and presentations where the speaker needs both hands free. Select the microphone and compatible adapter separately to match the performer, wardrobe and event.",
+            "es": "Crea un enlace inalámbrico discreto para un micrófono de diadema o solapa. Este conjunto de receptor ULX-D y petaca resulta útil en conferencias, teatro y presentaciones donde el ponente necesita las manos libres. El micrófono y su adaptador se eligen por separado según el artista y el evento."
+        },
+        "scope": {
+            "en": "One ULXD4 receiver and one ULXD1 bodypack; microphone and adapter excluded.",
+            "es": "Un receptor ULXD4 y una petaca ULXD1; micrófono y adaptador por separado."
+        }
+    },
+    {
+        "id": 1211,
+        "name": {
+            "en": "DPA 4066",
+            "es": "DPA 4066"
+        },
+        "category": "cat.mics",
+        "subcategory": "sub.headsets",
+        "manufacturer": "DPA",
+        "priceDay": 28,
+        "image": "img/inventory/dpa-4066.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Keep speech natural and the microphone discreet during presentations, theatre and hosted events. The lightweight DPA 4066 headset follows the speaker's movement without occupying their hands. Pair it with a compatible wireless bodypack for a tidy presentation setup that leaves the focus on the person speaking.",
+            "es": "Mantén una voz natural y una presencia discreta en presentaciones, teatro y eventos con conductor. La diadema ligera DPA 4066 acompaña los movimientos del ponente y deja las manos libres. Combínala con una petaca compatible para que la atención permanezca en quien habla."
+        },
+        "scope": {
+            "en": "One headset microphone; bodypack and connector adapter excluded.",
+            "es": "Una diadema; petaca y adaptador por separado."
+        }
+    },
+    {
+        "id": 1212,
+        "name": {
+            "en": "DPA 4088",
+            "es": "DPA 4088"
+        },
+        "category": "cat.mics",
+        "subcategory": "sub.headsets",
+        "manufacturer": "DPA",
+        "priceDay": 32,
+        "image": "img/inventory/dpa-4088.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Keep the microphone close to the voice during active presentations and stage performances. DPA 4088 offers a discreet headset format with a directional pickup, useful when the speaker moves or works near other sound sources. Combine it with the correct wireless bodypack and adapter for the production.",
+            "es": "Mantén el micrófono cerca de la voz durante presentaciones dinámicas y actuaciones. DPA 4088 ofrece una diadema discreta con captación direccional, útil cuando el ponente se mueve o comparte escenario con otras fuentes sonoras. Combínala con la petaca y el adaptador adecuados para la producción."
+        },
+        "scope": {
+            "en": "One headset microphone; bodypack and connector adapter excluded.",
+            "es": "Una diadema; petaca y adaptador por separado."
+        }
+    },
+    {
+        "id": 1213,
+        "name": {
+            "en": "L-Acoustics X12",
+            "es": "L-Acoustics X12"
+        },
+        "category": "cat.sound",
+        "subcategory": "sub.monitors",
+        "manufacturer": "L-Acoustics",
+        "priceDay": 38,
+        "image": "img/inventory/l-acoustics-x12.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Bring clear, controlled sound to a stage monitor position or a compact PA application. X12 is a versatile L-Acoustics enclosure for live music, speeches and fill coverage. Its understated appearance also suits corporate stages where sound quality and a tidy visual finish both matter.",
+            "es": "Lleva un sonido claro y controlado a un puesto de monitor o a una aplicación de PA compacta. X12 es una caja L-Acoustics versátil para música en directo, voz y refuerzo de cobertura. Su aspecto discreto también encaja en escenarios corporativos que requieren una presentación cuidada."
+        },
+        "scope": {
+            "en": "One loudspeaker enclosure; compatible amplified controller, cabling and rigging quoted separately.",
+            "es": "Una caja acústica; controlador amplificado compatible, cableado y montaje por separado."
+        }
+    },
+    {
+        "id": 1214,
+        "name": {
+            "en": "L-Acoustics X15 HiQ",
+            "es": "L-Acoustics X15 HiQ"
+        },
+        "category": "cat.sound",
+        "subcategory": "sub.monitors",
+        "manufacturer": "L-Acoustics",
+        "priceDay": 50,
+        "image": "img/inventory/l-acoustics-x15-hiq.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Give performers a focused floor-monitor position for demanding live shows. X15 HiQ is designed for stage monitoring, helping vocalists and musicians hear the elements they need while performing. A useful choice for concert stages and artist setups that call for L-Acoustics wedges.",
+            "es": "Ofrece a los artistas una escucha de escenario enfocada para actuaciones exigentes. X15 HiQ está diseñado para monitorización de suelo y permite orientar la mezcla hacia el intérprete. Una opción para conciertos y montajes de artistas que solicitan monitores L-Acoustics."
+        },
+        "scope": {
+            "en": "One loudspeaker enclosure; compatible amplified controller, cabling and rigging quoted separately.",
+            "es": "Una caja acústica; controlador amplificado compatible, cableado y montaje por separado."
+        }
+    },
+    {
+        "id": 1215,
+        "name": {
+            "en": "L-Acoustics A15 Focus",
+            "es": "L-Acoustics A15 Focus"
+        },
+        "category": "cat.sound",
+        "subcategory": "sub.lineArray",
+        "manufacturer": "L-Acoustics",
+        "priceDay": 60,
+        "image": "img/inventory/l-acoustics-a15-focus.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Build a scalable L-Acoustics sound system for live music, corporate productions and outdoor events. A15 Focus can form part of a tailored PA configuration, with coverage planned around the venue and audience. Combine it with suitable amplification and subwoofers to create the complete system.",
+            "es": "Construye un sistema L-Acoustics adaptable para música en directo, producciones corporativas y eventos exteriores. A15 Focus puede formar parte de una PA diseñada para el espacio y el público. Combínala con amplificación y subgraves adecuados para completar el sistema."
+        },
+        "scope": {
+            "en": "One loudspeaker enclosure; compatible amplified controller, cabling and rigging quoted separately.",
+            "es": "Una caja acústica; controlador amplificado compatible, cableado y montaje por separado."
+        }
+    },
+    {
+        "id": 1216,
+        "name": {
+            "en": "L-Acoustics KS21",
+            "es": "L-Acoustics KS21"
+        },
+        "category": "cat.sound",
+        "subcategory": "sub.subs",
+        "manufacturer": "L-Acoustics",
+        "priceDay": 65,
+        "image": "img/inventory/l-acoustics-ks21.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Add depth and weight to live music and DJ playback with a dedicated L-Acoustics subwoofer. KS21 complements a compatible PA system when bass impact is an important part of the event. The final quantity and placement can be planned around the venue, music and coverage requirements.",
+            "es": "Añade profundidad y presencia a la música en directo y las sesiones DJ con un subgrave L-Acoustics. KS21 complementa una PA compatible cuando el impacto de los graves forma parte de la experiencia. La cantidad y colocación se adaptan al espacio, la música y la cobertura necesaria."
+        },
+        "scope": {
+            "en": "One loudspeaker enclosure; compatible amplified controller, cabling and rigging quoted separately.",
+            "es": "Una caja acústica; controlador amplificado compatible, cableado y montaje por separado."
+        }
+    },
+    {
+        "id": 1217,
+        "name": {
+            "en": "L-Acoustics KARA II",
+            "es": "L-Acoustics KARA II"
+        },
+        "category": "cat.sound",
+        "subcategory": "sub.lineArray",
+        "manufacturer": "L-Acoustics",
+        "priceDay": 50,
+        "image": "img/inventory/l-acoustics-kara-ii.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Create a concert sound system shaped around the audience with KARA II line-array modules. This modular L-Acoustics platform suits productions that require planned coverage and a scalable system layout. Modules are combined with the appropriate amplification, subwoofers and rigging for the venue.",
+            "es": "Crea un sistema de concierto diseñado alrededor del público con módulos line array KARA II. Esta plataforma modular L-Acoustics permite adaptar la cobertura y el tamaño del montaje. Los módulos se combinan con amplificación, subgraves y elementos de montaje adecuados al recinto."
+        },
+        "scope": {
+            "en": "One loudspeaker enclosure; compatible amplified controller, cabling and rigging quoted separately.",
+            "es": "Una caja acústica; controlador amplificado compatible, cableado y montaje por separado."
+        }
+    },
+    {
+        "id": 1218,
+        "name": {
+            "en": "Astera Titan Tube",
+            "es": "Astera Titan Tube"
+        },
+        "category": "cat.light",
+        "subcategory": "sub.ledTubes",
+        "manufacturer": "Astera",
+        "priceDay": 19,
+        "image": "img/inventory/astera-titan-tube.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Use light as part of the set with a versatile Astera Titan Tube. Add colour to a DJ booth, shape an interview background or create visible lighting accents for a stage or brand event. Battery operation helps keep creative placements tidy where a permanent power cable would be awkward.",
+            "es": "Utiliza la luz como parte de la escenografía con Astera Titan Tube. Añade color a una cabina DJ, da profundidad al fondo de una entrevista o crea acentos visibles en escenarios y eventos de marca. Su funcionamiento con batería facilita colocaciones creativas con un acabado limpio."
+        },
+        "scope": {
+            "en": "One tube with charger; mounting and wireless control accessories quoted separately.",
+            "es": "Un tubo con cargador; accesorios de montaje y control inalámbrico por separado."
+        }
+    },
+    {
+        "id": 1219,
+        "name": {
+            "en": "Robe Pointe",
+            "es": "Robe Pointe"
+        },
+        "category": "cat.light",
+        "subcategory": "sub.movingLights",
+        "manufacturer": "Robe",
+        "priceDay": 92,
+        "image": "img/inventory/robe-pointe.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Create moving beams, patterned projections and bold aerial effects with Robe Pointe. This versatile moving head gives lighting designers several looks from one fixture, making it useful for concerts, DJ events and stage shows. Add suitable haze when the design calls for visible beams across the space.",
+            "es": "Crea haces móviles, proyecciones y efectos aéreos con Robe Pointe. Esta cabeza móvil ofrece diferentes recursos visuales desde un mismo aparato para conciertos, eventos DJ y espectáculos. Añade un efecto de haze adecuado cuando el diseño necesite mostrar los haces en el espacio."
+        },
+        "scope": {
+            "en": "One fixture; control desk, rigging, haze and operator quoted separately.",
+            "es": "Un aparato; mesa de control, montaje, haze y operador por separado."
+        }
+    },
+    {
+        "id": 1220,
+        "name": {
+            "en": "Martin MAC Quantum Wash",
+            "es": "Martin MAC Quantum Wash"
+        },
+        "category": "cat.light",
+        "subcategory": "sub.movingLights",
+        "manufacturer": "Martin",
+        "priceDay": 110,
+        "image": "img/inventory/martin-mac-quantum-wash.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Fill the stage with colour and change the mood as the performance develops. MAC Quantum Wash works well for live bands, dance shows and corporate stages that need broad washes and moving accents. It can support both subtle transitions and more energetic lighting sequences.",
+            "es": "Llena el escenario de color y cambia el ambiente a medida que avanza la actuación. MAC Quantum Wash resulta útil para bandas, danza y escenarios corporativos que necesitan baños de luz y acentos móviles. Permite trabajar transiciones suaves y secuencias de iluminación más dinámicas."
+        },
+        "scope": {
+            "en": "One fixture; control desk, rigging, haze and operator quoted separately.",
+            "es": "Un aparato; mesa de control, montaje, haze y operador por separado."
+        }
+    },
+    {
+        "id": 1221,
+        "name": {
+            "en": "Martin MAC Quantum Profile",
+            "es": "Martin MAC Quantum Profile"
+        },
+        "category": "cat.light",
+        "subcategory": "sub.movingLights",
+        "manufacturer": "Martin",
+        "priceDay": 100,
+        "image": "img/inventory/martin-mac-quantum-profile.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Bring movement, colour and projected texture into a concert or event lighting design. MAC Quantum Profile gives the operator a versatile profile fixture for stage looks, scenic detail and musical accents. A useful complement to wash lighting when the show needs more defined visual elements.",
+            "es": "Incorpora movimiento, color y texturas proyectadas al diseño de iluminación. MAC Quantum Profile ofrece un recurso versátil para crear escenas, detalles escenográficos y acentos musicales. Complementa la iluminación wash cuando el espectáculo necesita elementos visuales más definidos."
+        },
+        "scope": {
+            "en": "One fixture; control desk, rigging, haze and operator quoted separately.",
+            "es": "Un aparato; mesa de control, montaje, haze y operador por separado."
+        }
+    },
+    {
+        "id": 1222,
+        "name": {
+            "en": "Nord Stage 4 88",
+            "es": "Nord Stage 4 88"
+        },
+        "category": "cat.backline",
+        "subcategory": "sub.keyboards",
+        "manufacturer": "Nord",
+        "priceDay": 145,
+        "image": "img/inventory/nord-stage4-88.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Cover piano, organ and synthesizer parts from one performance keyboard. Nord Stage 4 88 suits live bands, touring artists and corporate performances where expressive playing and quick access to sounds matter. A versatile backline choice for musicians who want to prepare layers and move smoothly between songs.",
+            "es": "Cubre partes de piano, órgano y sintetizador desde un único teclado de escenario. Nord Stage 4 88 encaja en bandas, giras y actuaciones corporativas donde importan la expresividad y el acceso rápido a los sonidos. Una opción versátil para preparar capas y pasar con fluidez entre canciones."
+        },
+        "scope": {
+            "en": "One keyboard; stand, pedals and DI boxes specified separately in the quote.",
+            "es": "Un teclado; soporte, pedales y cajas DI se detallan por separado en el presupuesto."
+        }
+    },
+    {
+        "id": 1223,
+        "name": {
+            "en": "Fender '65 Twin Reverb",
+            "es": "Fender '65 Twin Reverb"
+        },
+        "category": "cat.backline",
+        "subcategory": "sub.guitarAmps",
+        "manufacturer": "Fender",
+        "priceDay": 50,
+        "image": "img/inventory/fender-twin-reverb.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Give guitarists the spacious clean sound and spring-reverb character associated with the Twin Reverb. This combo works well for blues, soul, country and pop, and provides a familiar starting point for pedal-based setups. A practical backline choice for live performances and recording sessions.",
+            "es": "Ofrece al guitarrista el sonido limpio amplio y el carácter de reverb de muelles del Twin Reverb. Este combo encaja en blues, soul, country y pop, y sirve como base familiar para equipos con pedales. Una opción de backline para actuaciones y sesiones de grabación."
+        },
+        "scope": {
+            "en": "One guitar combo amplifier.",
+            "es": "Un amplificador combo de guitarra."
+        }
+    },
+    {
+        "id": 1224,
+        "name": {
+            "en": "Marshall JCM900 4100",
+            "es": "Marshall JCM900 4100"
+        },
+        "category": "cat.backline",
+        "subcategory": "sub.guitarAmps",
+        "manufacturer": "Marshall",
+        "priceDay": 37,
+        "image": "img/inventory/marshall-jcm900.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Bring classic Marshall bite to rock, punk and heavier guitar parts. The JCM900 head gives guitarists a familiar amplifier platform for driven rhythm sounds and lead work. Pair it with a suitable speaker cabinet to complete a stage rig for rehearsals, concerts or recording.",
+            "es": "Lleva el carácter Marshall a guitarras de rock, punk y estilos más intensos. El cabezal JCM900 ofrece una plataforma familiar para ritmos con saturación y partes solistas. Combínalo con una pantalla adecuada para completar el equipo de ensayo, concierto o grabación."
+        },
+        "scope": {
+            "en": "One amplifier head; speaker cabinet excluded.",
+            "es": "Un cabezal; pantalla por separado."
+        }
+    },
+    {
+        "id": 1225,
+        "name": {
+            "en": "Marshall 1960A",
+            "es": "Marshall 1960A"
+        },
+        "category": "cat.backline",
+        "subcategory": "sub.guitarAmps",
+        "manufacturer": "Marshall",
+        "priceDay": 35,
+        "image": "img/inventory/marshall-1960a.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Complete a Marshall guitar rig with the familiar presence of a 1960A cabinet. It is a useful match for compatible amplifier heads when the player wants the look and feel of a traditional rock stage setup. The angled cabinet also makes a recognisable addition to concert backline.",
+            "es": "Completa un equipo de guitarra Marshall con la presencia de la pantalla 1960A. Es una opción para cabezales compatibles cuando el guitarrista busca la sensación y la estética de un montaje clásico de rock. Su formato inclinado también aporta una imagen reconocible al backline."
+        },
+        "scope": {
+            "en": "One speaker cabinet; amplifier head excluded.",
+            "es": "Una pantalla; cabezal por separado."
+        }
+    },
+    {
+        "id": 1226,
+        "name": {
+            "en": "DW Collector's Series — Shell Pack",
+            "es": "DW Collector's Series — Shell Pack"
+        },
+        "category": "cat.backline",
+        "subcategory": "sub.drums",
+        "manufacturer": "DW",
+        "priceDay": 90,
+        "image": "img/inventory/dw-collectors.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Build a premium acoustic drum setup around DW Collector's Series shells. A strong starting point for concerts, recording sessions and artist backline requests where tone and playing feel are priorities. Choose the final drum configuration, cymbals and supporting hardware to suit the drummer's requirements.",
+            "es": "Prepara una batería acústica de gama alta con los cascos DW Collector's Series. Una base para conciertos, grabaciones y solicitudes de backline donde importan el sonido y la respuesta al tocar. La configuración, los platos y los herrajes se ajustan a las necesidades del batería."
+        },
+        "scope": {
+            "en": "Shell pack only; drum sizes and finish confirmed on request. Cymbals, pedals, stool and additional hardware excluded.",
+            "es": "Solo cascos; medidas y acabado a confirmar. Platos, pedales, sillín y herrajes adicionales por separado."
+        }
+    },
+    {
+        "id": 1227,
+        "name": {
+            "en": "Yamaha Stage Custom Birch — Shell Pack",
+            "es": "Yamaha Stage Custom Birch — Shell Pack"
+        },
+        "category": "cat.backline",
+        "subcategory": "sub.drums",
+        "manufacturer": "Yamaha",
+        "priceDay": 85,
+        "image": "img/inventory/yamaha-stage-custom-birch.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Give the drummer a versatile full-size acoustic kit for rehearsals, live bands and event stages. Stage Custom Birch offers a straightforward foundation for a wide range of musical styles. Add the required cymbals, pedal, stool and stands to prepare the complete playing setup.",
+            "es": "Ofrece al batería una batería acústica de formato completo para ensayos, bandas y escenarios de eventos. Stage Custom Birch proporciona una base versátil para distintos estilos musicales. Añade los platos, pedal, sillín y soportes necesarios para completar el montaje."
+        },
+        "scope": {
+            "en": "Five-piece shell pack; cymbals, pedals, stool and additional hardware excluded.",
+            "es": "Cascos de cinco piezas; platos, pedales, sillín y herrajes adicionales por separado."
+        }
+    },
+    {
+        "id": 1228,
+        "name": {
+            "en": "Zildjian K Custom Dark — Cymbal Set",
+            "es": "Zildjian K Custom Dark — Cymbal Set"
+        },
+        "category": "cat.backline",
+        "subcategory": "sub.drums",
+        "manufacturer": "Zildjian",
+        "priceDay": 72,
+        "image": "img/inventory/zildjian-k-custom-dark.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Add warm, complex cymbal colours to an acoustic drum setup. K Custom Dark cymbals suit players who want expressive accents and a musical blend for jazz, soul, pop and live sessions. This set is a useful backline addition when the drummer requests a consistent family of cymbals.",
+            "es": "Añade matices cálidos y complejos a una batería acústica. Los platos K Custom Dark encajan con intérpretes que buscan acentos expresivos y una mezcla musical en jazz, soul, pop y sesiones en directo. El conjunto permite completar el backline con platos de una misma familia."
+        },
+        "scope": {
+            "en": "Hi-hat pair, two crashes and one ride; stands excluded. Sizes confirmed on request.",
+            "es": "Pareja de hi-hat, dos crashes y un ride; sin soportes. Medidas a confirmar."
+        }
+    },
+    {
+        "id": 1229,
+        "name": {
+            "en": "AKG C414 XLS",
+            "es": "AKG C414 XLS"
+        },
+        "category": "cat.mics",
+        "subcategory": "sub.condenser",
+        "manufacturer": "AKG",
+        "priceDay": 35,
+        "image": "img/inventory/akg-c414-xls.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Capture the character of vocals and acoustic instruments with a versatile studio-style condenser microphone. C414 XLS is useful for piano, overheads, ensembles and recording work where detail matters. Its flexible pickup options allow the engineer to adapt the microphone to the source and room.",
+            "es": "Capta el carácter de voces e instrumentos acústicos con un condensador versátil de estudio. C414 XLS resulta útil para piano, overheads, conjuntos y grabaciones donde importa el detalle. Sus opciones de captación permiten al técnico adaptarlo a la fuente y al espacio."
+        },
+        "scope": {
+            "en": "One microphone; mounting accessories specified in the quote.",
+            "es": "Un micrófono; accesorios de sujeción según presupuesto."
+        }
+    },
+    {
+        "id": 1230,
+        "name": {
+            "en": "Neumann KM 184 — Stereo Pair",
+            "es": "Neumann KM 184 — Stereo Pair"
+        },
+        "category": "cat.mics",
+        "subcategory": "sub.condenser",
+        "manufacturer": "Neumann",
+        "priceDay": 55,
+        "image": "img/inventory/neumann-km184-pair.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Create a natural stereo picture for acoustic instruments, ensembles or drum overheads. This pair of Neumann KM 184 microphones gives the engineer a compact, consistent starting point for detailed live capture and recording. Placement can be adapted to the instrument, stage layout and desired sense of space.",
+            "es": "Crea una imagen estéreo natural para instrumentos acústicos, conjuntos u overheads de batería. Esta pareja de Neumann KM 184 ofrece una base compacta y coherente para captación en directo y grabación. La colocación se adapta al instrumento, al escenario y a la sensación de espacio buscada."
+        },
+        "scope": {
+            "en": "Two KM 184 microphones; stands and stereo bar quoted separately.",
+            "es": "Dos micrófonos KM 184; soportes y barra estéreo por separado."
+        }
+    },
+    {
+        "id": 1231,
+        "name": {
+            "en": "DPA 4099 — Guitar Set",
+            "es": "DPA 4099 — Guitar Set"
+        },
+        "category": "cat.mics",
+        "subcategory": "sub.condenser",
+        "manufacturer": "DPA",
+        "priceDay": 30,
+        "image": "img/inventory/dpa4099-guitar.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Capture acoustic guitar close to the instrument while leaving the performer free to move. The DPA 4099 guitar set combines a discreet microphone with an instrument mount, making it useful for concerts, acoustic sessions and theatre. It helps keep microphone placement consistent throughout the performance.",
+            "es": "Capta la guitarra acústica cerca del instrumento sin limitar el movimiento del intérprete. El conjunto DPA 4099 para guitarra combina un micrófono discreto y una sujeción al instrumento para conciertos, sesiones acústicas y teatro. Ayuda a mantener una colocación estable durante la actuación."
+        },
+        "scope": {
+            "en": "One DPA 4099 microphone with guitar mount and XLR adapter; wireless system excluded.",
+            "es": "Un DPA 4099 con soporte de guitarra y adaptador XLR; sistema inalámbrico por separado."
+        }
+    },
+    {
+        "id": 1232,
+        "name": {
+            "en": "Pioneer DJ DJM-A9",
+            "es": "Pioneer DJ DJM-A9"
+        },
+        "category": "cat.dj",
+        "subcategory": "sub.djMixers",
+        "manufacturer": "Pioneer DJ",
+        "priceDay": 74,
+        "image": "img/inventory/pioneer-djm-a9.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Build a contemporary club-style DJ booth around the DJM-A9. Its familiar layout and onboard effects suit guest DJs, festival appearances and corporate afterparties. Pair it with compatible players to prepare a performance setup that gives the DJ clear control over mixing and transitions.",
+            "es": "Prepara una cabina DJ de estilo club con la DJM-A9. Su distribución familiar y sus efectos integrados encajan en sesiones de invitados, festivales y fiestas corporativas. Combínala con reproductores compatibles para ofrecer al DJ un control claro de la mezcla y las transiciones."
+        },
+        "scope": {
+            "en": "One DJ mixer; players, PA and booth monitors excluded.",
+            "es": "Una mesa DJ; reproductores, PA y monitores por separado."
+        }
+    },
+    {
+        "id": 1233,
+        "name": {
+            "en": "Pioneer DJ DJM-V10",
+            "es": "Pioneer DJ DJM-V10"
+        },
+        "category": "cat.dj",
+        "subcategory": "sub.djMixers",
+        "manufacturer": "Pioneer DJ",
+        "priceDay": 119,
+        "image": "img/inventory/pioneer-djm-v10.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Give creative DJs room to combine decks, external instruments and effects in a single performance. DJM-V10 suits extended mixing, layered sets and hybrid live/DJ workflows. A useful choice for artist requests that call for more space to shape individual sources and build detailed transitions.",
+            "es": "Da espacio a los DJs creativos para combinar reproductores, instrumentos y efectos en una misma actuación. DJM-V10 encaja en mezclas prolongadas, sesiones con capas y formatos híbridos de directo y DJ. Una opción para artistas que necesitan trabajar cada fuente y construir transiciones detalladas."
+        },
+        "scope": {
+            "en": "One DJ mixer; players, PA and booth monitors excluded.",
+            "es": "Una mesa DJ; reproductores, PA y monitores por separado."
         }
     }
 ];

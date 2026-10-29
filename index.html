@@ -357,6 +357,11 @@
                                 </div> -->
                             </div>
                         </div>
+
+                        <div class="sidebar-group sidebar-group-sub" id="subcategory-group" hidden>
+                            <h3 class="sidebar-title" data-i18n="catalog.subcategories">Subcategorías</h3>
+                            <div class="filter-list filter-list-sub" id="subcategory-filter"></div>
+                        </div>
                     </aside>
 
                     <div class="catalog-main">
@@ -1036,6 +1041,7 @@
                     
                     <div id="modal-details-view">
                         <p class="modal-desc" id="modal-desc">La descripción va aquí.</p>
+                        <p class="modal-scope" id="modal-scope" hidden></p>
 
                         <div class="modal-footer">
                             <button class="btn btn-primary btn-block" id="btn-show-quote" data-i18n="product.addToQuote">Añadir al presupuesto</button>
@@ -1103,7 +1109,7 @@
 
     <template id="product-card-template">
         <div class="glass-card product-card">
-            <div class="product-image"><img src="" alt=""></div>
+            <div class="product-image"><img src="" alt="" loading="lazy"></div>
             <div class="product-info">
                 <div class="product-category"></div>
                 <h3 class="product-title"></h3>
@@ -1111,6 +1117,9 @@
                     <span class="price-day"></span>
                     <span class="price-unit"></span>
                 </div>
+                <div class="product-availability"></div>
+                <p class="product-desc"></p>
+                <div class="product-scope"></div>
                 <div class="product-actions">
                     <button class="btn btn-outline btn-sm details-btn"></button>
                     <button class="btn btn-primary btn-sm add-to-quote-btn"></button>

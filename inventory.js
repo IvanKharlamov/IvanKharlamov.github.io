@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     let activeFilters = {
-        category: []
+        category: [],
+        subcategory: null
     };
     let searchTerm = "";
     let currentProductId = null;
@@ -42,10 +43,26 @@ document.addEventListener('DOMContentLoaded', () => {
                         imgEl.alt = p.name[lang];
                     }
                 }
-                clone.querySelector('.product-category').textContent = window.TRANSLATIONS_RAW?.[p.category]?.[lang] || p.category;
+                clone.querySelector('.product-category').textContent = labelFor(p, lang);
                 clone.querySelector('.product-title').textContent = p.name[lang];
                 clone.querySelector('.price-day').textContent = `€${p.priceDay}`;
                 clone.querySelector('.price-unit').textContent = t('rental.perDay');
+
+                const availEl = clone.querySelector('.product-availability');
+                if (availEl) {
+                    if (p.availability === 'on_request') availEl.textContent = t('product.onRequest');
+                    else availEl.remove();
+                }
+                const descEl = clone.querySelector('.product-desc');
+                if (descEl) {
+                    const d = p.description?.[lang];
+                    if (d) descEl.textContent = d; else descEl.remove();
+                }
+                const scopeEl = clone.querySelector('.product-scope');
+                if (scopeEl) {
+                    const sc = p.scope?.[lang];
+                    if (sc) scopeEl.textContent = sc; else scopeEl.remove();
+                }
                 
                 const detailsBtn = clone.querySelector('.details-btn');
                 detailsBtn.textContent = t('product.details');
@@ -61,6 +78,52 @@ document.addEventListener('DOMContentLoaded', () => {
             grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;">${t('catalog.empty')}</div>`;
         }
         injectProductSchema(items);
+    };
+
+    // Subcategory label (falls back to the category)
+    const labelFor = (p, lang) => {
+        const key = p.subcategory && window.TRANSLATIONS_RAW?.[p.subcategory] ? p.subcategory : p.category;
+        return window.TRANSLATIONS_RAW?.[key]?.[lang] || key;
+    };
+
+    // Subcategory chips for the active category
+    const renderSubcategoryChips = () => {
+        const group = document.getElementById('subcategory-group');
+        const list = document.getElementById('subcategory-filter');
+        if (!group || !list) return;
+        const lang = window.currentLang || 'es';
+        const cat = activeFilters.category[0];
+        const subs = [];
+        if (cat) {
+            window.products.forEach(p => {
+                if (p.category === cat && p.subcategory && !subs.includes(p.subcategory)) subs.push(p.subcategory);
+            });
+        }
+        if (subs.length < 2) {
+            group.hidden = true;
+            list.innerHTML = '';
+            return;
+        }
+        group.hidden = false;
+        list.innerHTML = '';
+        subs.forEach(sub => {
+            const wrap = document.createElement('div');
+            wrap.className = 'filter-chip-wrapper';
+            const input = document.createElement('input');
+            input.type = 'checkbox';
+            input.id = `sub-${sub.replace(/\W/g, '-')}`;
+            input.checked = activeFilters.subcategory === sub;
+            const label = document.createElement('label');
+            label.htmlFor = input.id;
+            label.textContent = window.TRANSLATIONS_RAW?.[sub]?.[lang] || sub;
+            input.addEventListener('change', () => {
+                activeFilters.subcategory = input.checked ? sub : null;
+                list.querySelectorAll('input').forEach(x => { x.checked = (x === input && input.checked); });
+                window.applyFilters();
+            });
+            wrap.append(input, label);
+            list.appendChild(wrap);
+        });
     };
 
     const sortProducts = (items) => {
@@ -115,9 +178,11 @@ document.addEventListener('DOMContentLoaded', () => {
     window.applyFilters = () => {
         const lang = window.currentLang || 'es', s = searchTerm.toLowerCase();
         let filtered = window.products.filter(p => 
-            (p.name[lang].toLowerCase().includes(s) || p.manufacturer.toLowerCase().includes(s)) &&
-            (!activeFilters.category.length || activeFilters.category.includes(p.category))
+            (p.name[lang].toLowerCase().includes(s) || (p.manufacturer || '').toLowerCase().includes(s)) &&
+            (!activeFilters.category.length || activeFilters.category.includes(p.category)) &&
+            (!activeFilters.subcategory || p.subcategory === activeFilters.subcategory)
         );
+        renderSubcategoryChips();
         window.renderProducts(sortProducts(filtered));
     };
 
@@ -143,6 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.filter-chip-wrapper input').forEach(cb => {
         cb.addEventListener('change', e => {
             const key = e.target.dataset.category;
+            activeFilters.subcategory = null;
 
             if (key === 'cat.all') {
                 activeFilters.category = [];
@@ -260,8 +326,14 @@ document.addEventListener('DOMContentLoaded', () => {
         window.trackEvent('view_item', { items: [{ item_id: p.id, item_name: p.name['en'] }] });
         document.getElementById('modal-img').src = p.image;
         document.getElementById('modal-title').textContent = p.name[lang];
-        document.getElementById('modal-category').textContent = window.TRANSLATIONS_RAW?.[p.category]?.[lang] || p.category;
+        document.getElementById('modal-category').textContent = labelFor(p, lang);
         document.getElementById('modal-desc').textContent = p.description?.[lang] || (lang === 'es' ? `${p.name[lang]} es una solución de alto rendimiento.` : `${p.name[lang]} is a high-performance solution.`);
+        const modalScope = document.getElementById('modal-scope');
+        if (modalScope) {
+            const sc = p.scope?.[lang];
+            modalScope.textContent = sc ? `${t('product.scope')}: ${sc}` : '';
+            modalScope.hidden = !sc;
+        }
 
         if (!datePicker && window.DatePicker) datePicker = new window.DatePicker(document.getElementById('modal-date-picker')), datePicker.onDateChange = updateModalPricing;
         else datePicker?.reset();
