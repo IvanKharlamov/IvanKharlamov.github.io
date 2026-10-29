@@ -1,6 +1,6 @@
 .catalog-layout {
     display: grid;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 320px 1fr;
     gap: 40px;
     align-items: start;
 }
@@ -10,8 +10,8 @@
 }
 
 .sidebar-group {
-    padding: 20px;
-    margin-bottom: 30px;
+    padding: 24px;
+    margin-bottom: 24px;
     border: 1px solid var(--glass-border);
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.02);
@@ -37,10 +37,10 @@
     background: rgba(0, 0, 0, 0.3);
     border: 1px solid var(--glass-border);
     border-radius: 8px;
-    padding: 12px 12px 12px 40px;
+    padding: 14px 14px 14px 44px;
     outline: none;
     transition: all 0.2s;
-	font-size: .9rem;
+    font-size: 1rem;
 }
 
 .search-input:focus {
@@ -54,12 +54,12 @@
     background: rgba(0, 0, 0, 0.3) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 12px center;
     border: 1px solid var(--glass-border);
     border-radius: 8px;
-    padding: 12px;
+    padding: 14px 40px 14px 14px;
     appearance: none;
     -webkit-appearance: none;
     cursor: pointer;
     transition: all 0.2s;
-    font-size: 0.9rem;
+    font-size: 1rem;
     outline: none;
 }
 
@@ -74,19 +74,19 @@
 }
 
 .sidebar-title {
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     color: var(--text-muted);
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     border-bottom: 1px solid var(--glass-border);
 }
 
 .filter-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 6px;
+    gap: 8px;
 }
 
 .filter-chip-wrapper input {
@@ -97,11 +97,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 6px 10px;
+    padding: 12px 10px;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--glass-border);
-    border-radius: 6px;
-    font-size: 0.75rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
     font-weight: 500;
     color: var(--text-muted);
     transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -120,14 +120,14 @@
 /* Packs: single full-width chip above the category grid */
 .filter-list-packs {
     grid-template-columns: 1fr;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 
 .filter-chip-packs label {
-    padding: 12px 14px;
-    font-size: 0.9rem;
+    padding: 16px 14px;
+    font-size: 1rem;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
 }
 
 .filter-chip-wrapper label:hover {
@@ -322,7 +322,8 @@
     justify-content: flex-start;
     text-transform: none;
     letter-spacing: 0;
-    font-size: 0.8rem;
+    font-size: 0.92rem;
+    padding: 11px 14px;
 }
 
 .btn-sm {
@@ -638,7 +639,7 @@
 
 @media (max-width: 1024px) {
     .catalog-embed .catalog-layout {
-        grid-template-columns: 220px 1fr;
+        grid-template-columns: 260px 1fr;
         gap: 24px;
     }
 }

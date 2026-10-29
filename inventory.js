@@ -229,16 +229,16 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.filter-chip-wrapper input').forEach(cb => {
         cb.addEventListener('change', e => {
             const key = e.target.dataset.category;
-            activeFilters.subcategory = null;
 
-            if (e.target.checked) {
-                activeFilters.category = [key];
-                document.querySelectorAll('.filter-chip-wrapper input')
-                    .forEach(x => { x.checked = (x === e.target); });
-            } else {
-                // no category selected = show everything
-                activeFilters.category = [];
+            // Re-clicking the active category keeps it selected (no "show everything" state)
+            if (!e.target.checked) {
+                e.target.checked = true;
+                return;
             }
+            activeFilters.subcategory = null;
+            activeFilters.category = [key];
+            document.querySelectorAll('.filter-chip-wrapper input')
+                .forEach(x => { x.checked = (x === e.target); });
             window.applyFilters();
         });
     });
@@ -475,5 +475,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    window.renderProducts(window.products);
+    // Packs is the default category
+    const defaultChip = document.getElementById('cat-packs');
+    if (defaultChip) {
+        defaultChip.checked = true;
+        activeFilters.category = [defaultChip.dataset.category];
+    }
+    window.applyFilters();
 });
