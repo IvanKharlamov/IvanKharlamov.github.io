@@ -10,26 +10,8 @@ window.products = [
         "priceDay": 70,
         "image": "img/inventory/pack_evento_pequeno.webp",
         "description": {
-            "en": "Compact complete audiovisual sound solution featuring 2 HK Audio Sonar tops, 1 Shure SM58/57 vocal/instrument microphone, 1 Yamaha MG10XU mixer, and all necessary cabling.",
-            "es": "Solución de sonido compacta y completa para eventos que incluye 2 cajas HK Audio Sonar top, 1 micrófono Shure SM 58/57, 1 mesa Yamaha MG10XU y todo el cableado necesario."
-        },
-        "specs": {
-            "en": {
-                "Speakers": "2x HK Sonar Top",
-                "Microphone": "1x Shure SM58/57",
-                "Mixer": "Yamaha MG10XU",
-                "Cabling": "Included",
-                "Power": "2400 W Peak",
-                "Application": "Parties / Speech"
-            },
-            "es": {
-                "Altavoces": "2x HK Sonar Top",
-                "Micrófono": "1x Shure SM58/57",
-                "Mesa": "Yamaha MG10XU",
-                "Cableado": "Incluido",
-                "Potencia": "2400 W Pico",
-                "Uso": "Fiestas / Eventos"
-            }
+            "en": "Keep speeches clear and music flowing at private parties, presentations and small celebrations. This compact sound package brings together two HK Audio SONAR speakers, a Shure SM58/57 microphone, a Yamaha MG10XU mixer and the cabling needed to connect them.",
+            "es": "Mantén los discursos nítidos y la música fluyendo en fiestas privadas, presentaciones y pequeñas celebraciones. Este pack compacto de sonido reúne dos altavoces HK Audio SONAR, un micrófono Shure SM58/57, una mesa de mezclas Yamaha MG10XU y todo el cableado necesario para conectarlos."
         }
     },
     {
@@ -43,26 +25,8 @@ window.products = [
         "priceDay": 100,
         "image": "img/inventory/pack_dj.webp",
         "description": {
-            "en": "Professional club-standard DJ setup featuring 2 Pioneer CDJ 2000 NXS multi-players, 1 Pioneer DJM 900 Nexus 4-channel digital mixer, and link/audio cabling.",
-            "es": "Configuración estándar de club profesional para DJ que incluye 2 reproductores Pioneer CDJ 2000 NXS, 1 mesa de mezclas digital Pioneer DJM 900 de 4 canales y cableado."
-        },
-        "specs": {
-            "en": {
-                "Multi-Players": "2x CDJ 2000 NXS",
-                "Mixer": "1x DJM 900",
-                "Channels": "4 ch",
-                "Link": "Pro DJ Link",
-                "FX": "Sound Color + Beat",
-                "Cabling": "Included"
-            },
-            "es": {
-                "Reproductores": "2x CDJ 2000 NXS",
-                "Mesa": "1x DJM 900",
-                "Canales": "4 canales",
-                "Link": "Pro DJ Link",
-                "Efectos": "Sound Color + Beat",
-                "Cableado": "Incluido"
-            }
+            "en": "Give your DJ a familiar club setup for parties, guest sets and corporate afterparties. Two Pioneer CDJ-2000NXS players, a DJM-900 mixer and connecting cables put track selection, mixing and effects within easy reach.",
+            "es": "Ofrece a tu DJ una configuración estándar de club para fiestas, sesiones de invitados y afterparties corporativos. Dos reproductores Pioneer CDJ-2000NXS, una mesa de mezclas DJM-900 y el cableado de conexión ponen la selección de pistas, la mezcla y los efectos al alcance de la mano."
         }
     },
     {
@@ -76,26 +40,8 @@ window.products = [
         "priceDay": 200,
         "image": "img/inventory/pack_dj_plus.webp",
         "description": {
-            "en": "Premium complete DJ booth setup with 2 Pioneer CDJ 2000 NXS, 1 DJM 900 mixer, 2 high-end Meyer Sound UPM-2P active monitoring speakers, 1 UDG U91072BL foldable DJ booth table, and full cabling.",
-            "es": "Cabina de DJ profesional completa y premium con 2 reproductores CDJ 2000 NXS, 1 mesa DJM 900, 2 monitores activos Meyer Sound UPM-2P, 1 mesa soporte DJ UDG U91072BL y cableado completo."
-        },
-        "specs": {
-            "en": {
-                "DJ Gear": "2x CDJ + 1x DJM",
-                "Booth Monitors": "2x Meyer UPM-2p",
-                "DJ Table": "UDG U91072BL",
-                "Cabling": "Full set",
-                "Sound Quality": "Meyer Pro Audio",
-                "Application": "Club / Festival"
-            },
-            "es": {
-                "Equipo DJ": "2x CDJ + 1x DJM",
-                "Monitores": "2x Meyer UPM-2p",
-                "Mesa DJ": "UDG U91072BL",
-                "Cableado": "Completo",
-                "Calidad": "Meyer Pro Audio",
-                "Uso": "Club / Festival"
-            }
+            "en": "Build a polished DJ booth for club nights, brand events and festival sets. Two CDJ-2000NXS players and a DJM-900 mixer come with two Meyer UPM-2P monitors, a UDG DJ table and connecting cables, giving the performer a dedicated workspace and local monitoring.",
+            "es": "Monta una cabina de DJ impecable para noches de club, eventos de marca y sets de festival. Dos reproductores CDJ-2000NXS y una mesa DJM-900 se combinan con dos monitores Meyer UPM-2P, una mesa DJ UDG y cables de conexión, brindando al artista un espacio de trabajo dedicado y monitorización local."
         }
     },
     {
@@ -109,26 +55,8 @@ window.products = [
         "priceDay": 30,
         "image": "img/inventory/230W.webp",
         "description": {
-            "en": "High intensity beam moving head designed for long throw aerial effects and sharp stage visuals.",
-            "es": "Cabeza móvil beam de alta intensidad diseñada para efectos aéreos largos y visuales definidos."
-        },
-        "specs": {
-            "en": {
-                "Source": "230W 7R lamp",
-                "Beam Angle": "0° - 3.8°",
-                "Colors": "14 + open",
-                "Gobos": "17 static",
-                "DMX": "16 / 20 ch",
-                "Power": "230 W"
-            },
-            "es": {
-                "Fuente": "Lámpara 230W 7R",
-                "Ángulo": "0° - 3.8°",
-                "Colores": "14 + abierto",
-                "Gobos": "17 estáticos",
-                "DMX": "16 / 20 ch",
-                "Consumo": "230 W"
-            }
+            "en": "Create sharp moving beams that give DJ sets, concert drops and stage entrances a stronger visual impact. Colour and gobo effects add variety, while haze helps reveal the beams across the room.",
+            "es": "Crea haces de luz móviles y nítidos que aportan mayor impacto visual a sets de DJ, transiciones de conciertos y entradas al escenario. Los efectos de color y gobos aportan dinamismo, mientras que el humo ayuda a resaltar los haces en toda la sala."
         }
     },
     {
@@ -142,26 +70,8 @@ window.products = [
         "priceDay": 20,
         "image": "img/inventory/Wash 17x19.webp",
         "description": {
-            "en": "LED wash moving head with wide zoom range for smooth washes or concentrated color beams.",
-            "es": "Cabeza móvil wash LED con amplio zoom para baños suaves o haces de color concentrados."
-        },
-        "specs": {
-            "en": {
-                "LEDs": "19x15W RGBW",
-                "Zoom": "8°–60°",
-                "Pan": "540°",
-                "Tilt": "270°",
-                "DMX": "16 / 24 ch",
-                "Power": "350 W"
-            },
-            "es": {
-                "LEDs": "19x15W RGBW",
-                "Zoom": "8°–60°",
-                "Pan": "540°",
-                "Tilt": "270°",
-                "DMX": "16 / 24 ch",
-                "Consumo": "350 W"
-            }
+            "en": "Move from broad stage colour to tighter pools of light with a versatile LED wash moving head. A useful choice for live bands, wedding dance floors and corporate shows that need changing moods throughout the event.",
+            "es": "Pasa de un amplio baño de color en el escenario a zonas de luz más concentradas con esta versátil cabeza móvil LED wash. Una opción idónea para grupos en vivo, pistas de baile en bodas y eventos corporativos que requieran crear distintas atmósferas durante el evento."
         }
     },
     {
@@ -175,26 +85,8 @@ window.products = [
         "priceDay": 15,
         "image": "img/inventory/led par battery.webp",
         "description": {
-            "en": "Battery powered LED bar for events and architecture where fast cable free setup is required.",
-            "es": "Uplight LED a batería para eventos y arquitectura donde se requiere montaje rápido sin cables."
-        },
-        "specs": {
-            "en": {
-                "LEDs": "6x12W RGBWUV",
-                "Battery": "6–8 h",
-                "Control": "W-DMX",
-                "IR Remote": "Yes",
-                "Protection": "IP65",
-                "Power": "Battery"
-            },
-            "es": {
-                "LEDs": "6x12W RGBWUV",
-                "Batería": "6–8 h",
-                "Control": "W-DMX",
-                "Mando IR": "Sí",
-                "Protección": "IP65",
-                "Consumo": "Batería"
-            }
+            "en": "Bring colour to walls, columns and entrances without running a power cable to every light. Battery operation makes this uplight a practical choice for weddings, gala dinners and brand events where a tidy finish matters.",
+            "es": "Aporta color a paredes, columnas y accesos sin necesidad de tender cables de corriente a cada foco. El funcionamiento a batería convierte a este bañador en una solución muy práctica para bodas, cenas de gala y eventos corporativos donde la estética y el orden son prioritarios."
         }
     },
     {
@@ -208,26 +100,8 @@ window.products = [
         "priceDay": 20,
         "image": "img/inventory/amaran-t2c.webp",
         "description": {
-            "en": "RGBWW LED tube light for film broadcast and creative applications with precise color control.",
-            "es": "Tubo LED RGBWW para cine broadcast y usos creativos con control preciso de color."
-        },
-        "specs": {
-            "en": {
-                "Length": "60 cm",
-                "CCT": "2500–7500K",
-                "CRI": "≥95",
-                "Color": "RGBWW",
-                "Control": "App / DMX",
-                "Power": "20 W"
-            },
-            "es": {
-                "Longitud": "60 cm",
-                "CCT": "2500–7500K",
-                "CRI": "≥95",
-                "Color": "RGBWW",
-                "Control": "App / DMX",
-                "Consumo": "20 W"
-            }
+            "en": "Add soft colour or adjustable white light to interviews, backstage content and creative event sets. This compact LED tube also works as a visible design element, bringing depth to photo corners, product displays and intimate performance spaces.",
+            "es": "Añade color suave o luz blanca regulable a entrevistas, contenidos de backstage y escenarios creativos. Este tubo LED compacto también funciona como elemento visual decorativo, aportando profundidad a photocalls, expositores de producto y espacios escénicos íntimos."
         }
     },
     {
@@ -241,26 +115,8 @@ window.products = [
         "priceDay": 20,
         "image": "img/inventory/showtec-sunstrip-active-dmx-mkii.webp",
         "description": {
-            "en": "Create powerful warm audience blinders and dynamic chase effects for concerts, clubs, and live stage productions.",
-            "es": "Crea potentes cegadoras cálidas y efectos de persecución dinámicos para conciertos, clubes y producciones en vivo."
-        },
-        "specs": {
-            "en": {
-                "Lamps": "10x GU10",
-                "Lamp Power": "50/75 W",
-                "Cells": "10",
-                "DMX": "1–10 ch",
-                "Dimmer": "Built-in",
-                "Power": "550 W"
-            },
-            "es": {
-                "Lámparas": "10x GU10",
-                "Potencia": "50/75 W",
-                "Celdas": "10",
-                "DMX": "1–10 ch",
-                "Dimmer": "Integrado",
-                "Consumo": "550 W"
-            }
+            "en": "Give your stage the warm glow of classic concert lighting. Individually controlled lamps create flowing chases, rhythmic accents and bold blinder moments for live bands, DJ booths and stage backdrops.",
+            "es": "Viste tu escenario con la calidez clásica de la iluminación de conciertos. Sus lámparas de control individual crean persecuciones fluidas, acentos rítmicos y contundentes efectos cegadora para bandas en directo, cabinas de DJ y fondos escénicos."
         }
     },
     {
@@ -274,22 +130,8 @@ window.products = [
         "priceDay": 10,
         "image": "img/inventory/logoletter.webp",
         "description": {
-            "en": "Add intense strobe bursts, blinder hits, and colorful ambient effects to concerts, clubs, and festival stages with the Eurolite LED Super Strobe ABL",
-            "es": "Añade ráfagas de estrobo intensas, impactos de cegadora y efectos ambientales coloridos a conciertos, clubes y festivales."
-        },
-        "specs": {
-            "en": {
-                "LEDs": "216 CW + 144 RGB",
-                "Color": "RGBW",
-                "Frequency": "1 - 20 Hz",
-                "Power": "130 W"
-            },
-            "es": {
-                "LEDs": "216 CW + 144 RGB",
-                "Color": "RGBW",
-                "Frecuencia": "1 - 20 Hz",
-                "Consumo": "130 W"
-            }
+            "en": "Make drops, finales and musical accents stand out with bright strobe flashes and colourful background effects. Suited to club nights, electronic sets and concert stages that need both atmosphere and bursts of visual energy.",
+            "es": "Haz destacar las subidas, finales y acentos musicales con intensos destellos estroboscópicos y efectos de fondo llenos de color. Ideal para sesiones de club, música electrónica y escenarios que busquen tanto ambientación como explosiones de dinamismo visual."
         }
     },
     {
@@ -303,26 +145,8 @@ window.products = [
         "priceDay": 100,
         "image": "img/inventory/MA WING.webp",
         "description": {
-            "en": "Portable professional lighting control surface providing full MA2 workflow via computer.",
-            "es": "Superficie portátil de control profesional que ofrece flujo completo MA2 mediante ordenador."
-        },
-        "specs": {
-            "en": {
-                "Parameters": "2048",
-                "Faders": "6",
-                "Encoders": "4 dual",
-                "DMX Out": "2x 512",
-                "USB": "Yes",
-                "Software": "MA2"
-            },
-            "es": {
-                "Parámetros": "2048",
-                "Faders": "6",
-                "Encoders": "4 dual",
-                "Salida DMX": "2x 512",
-                "USB": "Sí",
-                "Software": "MA2"
-            }
+            "en": "Bring hands-on lighting control to concerts, theatre and corporate shows with the grandMA2 onPC workflow. Physical faders and programming controls help operators build cues, manage transitions and respond to the performance from a compact control position.",
+            "es": "Lleva el control de iluminación profesional a conciertos, teatro y eventos corporativos con el flujo de trabajo de grandMA2 onPC. Faders físicos y mandos de programación dedicados permiten a los operadores lanzar memorias, gestionar transiciones y reaccionar al directo desde un puesto de control compacto."
         }
     },
     {
@@ -336,26 +160,8 @@ window.products = [
         "priceDay": 15,
         "image": "img/inventory/ENTTEC.webp",
         "description": {
-            "en": "Reliable USB to DMX interface widely used for computer based professional lighting control.",
-            "es": "Interfaz USB a DMX fiable usada ampliamente para control profesional de iluminación."
-        },
-        "specs": {
-            "en": {
-                "DMX Out": "1 universe",
-                "DMX In": "Yes",
-                "Isolation": "1500 V",
-                "Refresh": "40 Hz",
-                "USB": "Yes",
-                "OS": "Win / Mac"
-            },
-            "es": {
-                "Salida DMX": "1 universo",
-                "Entrada DMX": "Sí",
-                "Aislamiento": "1500 V",
-                "Refresco": "40 Hz",
-                "USB": "Sí",
-                "SO": "Win / Mac"
-            }
+            "en": "Turn a compatible computer into a compact lighting control station. This USB-to-DMX interface connects software to your fixtures, making it useful for small shows, exhibitions and installations with programmed lighting cues.",
+            "es": "Convierte cualquier ordenador compatible en una estación compacta de control de iluminación. Esta interfaz USB a DMX conecta el software con tus luminarias, resultando idónea para pequeños espectáculos, exposiciones e instalaciones con secuencias de iluminación programadas."
         }
     },
     {
@@ -369,26 +175,8 @@ window.products = [
         "priceDay": 10,
         "image": "img/inventory/Truss.webp",
         "description": {
-            "en": "Heavy duty square aluminum truss segment for building lighting rigs and stage structures.",
-            "es": "Tramo de truss cuadrado de aluminio para estructuras de iluminación y escenarios."
-        },
-        "specs": {
-            "en": {
-                "Length": "1000 mm",
-                "Width": "300 mm",
-                "Main Tube": "50 mm",
-                "Thickness": "2 mm",
-                "Material": "Aluminum",
-                "Max Load": "High"
-            },
-            "es": {
-                "Longitud": "1000 mm",
-                "Ancho": "300 mm",
-                "Tubo": "50 mm",
-                "Grosor": "2 mm",
-                "Material": "Aluminio",
-                "Carga": "Alta"
-            }
+            "en": "Build a lighting frame or exhibition structure around the space you have. This one-metre square truss section adds flexibility to compatible modular systems for stage backdrops, event entrances and lighting supports.",
+            "es": "Monta una estructura de soporte o pórtico ferial adaptado al espacio disponible. Este tramo de truss cuadrado de un metro añade flexibilidad a sistemas modulares compatibles para fondos de escenario, accesos y soportes de focos."
         }
     },
     {
@@ -402,26 +190,8 @@ window.products = [
         "priceDay": 20,
         "image": "img/inventory/Totem.webp",
         "description": {
-            "en": "Vertical truss totem with heavy steel base for safe mounting of lighting fixtures.",
-            "es": "Tótem vertical con base de acero pesada para montaje seguro de luminarias."
-        },
-        "specs": {
-            "en": {
-                "Height": "2 m",
-                "Base Weight": "30 kg",
-                "Top Plate": "Yes",
-                "Material": "Aluminum",
-                "Finish": "Silver",
-                "Application": "Lighting"
-            },
-            "es": {
-                "Altura": "2 m",
-                "Peso Base": "30 kg",
-                "Tapa": "Sí",
-                "Material": "Aluminio",
-                "Acabado": "Plata",
-                "Uso": "Iluminación"
-            }
+            "en": "Frame a DJ booth, entrance or presentation area with a clean vertical lighting feature. This two-metre truss totem includes a base and provides an elevated mounting position for suitable fixtures at weddings, parties and corporate events.",
+            "es": "Enmarca una cabina de DJ, entrada o zona de presentación con una elegante columna vertical iluminada. Este tótem de truss de dos metros incluye base y proporciona un punto de montaje elevado para luminarias compatibles en bodas, fiestas y actos corporativos."
         }
     },
     {
@@ -435,26 +205,8 @@ window.products = [
         "priceDay": 30,
         "image": "img/inventory/STAGE MODULE.webp",
         "description": {
-            "en": "Professional modular stage deck with anti slip surface and adjustable height legs.",
-            "es": "Tarima modular profesional con superficie antideslizante y patas de altura ajustable."
-        },
-        "specs": {
-            "en": {
-                "Dimensions": "2000x1000 mm",
-                "Height": "Adjustable",
-                "Load": "750 kg/m²",
-                "Surface": "Non-slip",
-                "Weight": "32 kg",
-                "Use": "Stage"
-            },
-            "es": {
-                "Tamaño": "2000x1000 mm",
-                "Altura": "Ajustable",
-                "Carga": "750 kg/m²",
-                "Superficie": "Antidesliz",
-                "Peso": "32 kg",
-                "Uso": "Escenario"
-            }
+            "en": "Give speakers and performers a defined space that helps them stand out. This two-by-one-metre stage deck combines with compatible modules to create presentation stages, band platforms and risers shaped around your event layout.",
+            "es": "Ofrece a ponentes y artistas un espacio definido y con visibilidad destacada. Este módulo de escenario de dos por un metro se acopla a tarimas compatibles para levantar plataformas de presentación, escenarios para bandas o gradas a la medida de tu espacio."
         }
     },
     {
@@ -468,26 +220,8 @@ window.products = [
         "priceDay": 30,
         "image": "img/inventory/UPM-2P.webp",
         "description": {
-            "en": "Deliver clear, powerful nearfield sound reinforcement for corporate events, theaters, DJ booths, and live performances with the Meyer Sound UPM-2P.",
-            "es": "Refuerzo sonoro de campo cercano claro y potente para eventos corporativos, teatros y directos."
-        },
-        "specs": {
-            "en": {
-                "Type": "Active speaker",
-                "LF Drivers": "2x 5 in",
-                "HF Driver": "1 in",
-                "Max SPL": "123 dB",
-                "Coverage": "80°",
-                "Amp": "Bi-amplified"
-            },
-            "es": {
-                "Tipo": "Altavoz activo",
-                "Graves": "2x 5 in",
-                "Agudos": "1 in",
-                "SPL Máx": "123 dB",
-                "Cobertura": "80°",
-                "Amplif": "Bi-amplif"
-            }
+            "en": "Bring clear sound to the areas that need it without filling the room with large cabinets. This compact powered speaker suits discreet corporate setups, theatre fills and local monitoring where speech and musical detail matter.",
+            "es": "Lleva un sonido claro y definido exactamente a donde se necesita sin saturar el espacio con recintos voluminosos. Este altavoz autoamplificado compacto es ideal para actos corporativos discretos, refuerzos frontales en teatro y monitorización local donde la inteligibilidad y el detalle musical son clave."
         }
     },
     {
@@ -501,26 +235,8 @@ window.products = [
         "priceDay": 20,
         "image": "img/inventory/sonar-115-xi.webp",
         "description": {
-            "en": "Deliver powerful, crystal-clear sound for DJs, live bands, presentations, and mobile events with the HK Audio SONAR.",
-            "es": "Sonido potente y nítido para DJs, bandas en vivo, presentaciones y eventos móviles."
-        },
-        "specs": {
-            "en": {
-                "Type": "Active speaker",
-                "LF Driver": "12 in",
-                "HF Driver": "1 in",
-                "Max SPL": "127 dB",
-                "Power": "1200 W",
-                "Use": "PA/Monitor"
-            },
-            "es": {
-                "Tipo": "Altavoz activo",
-                "Graves": "12 in",
-                "Agudos": "1 in",
-                "SPL Máx": "127 dB",
-                "Potencia": "1200 W",
-                "Uso": "PA/Monitor"
-            }
+            "en": "Cover speeches, playlists and live performances with a versatile powered speaker. A practical building block for parties, presentations and mobile DJ setups, it can also pair with a suitable subwoofer when the event calls for more bass.",
+            "es": "Cubre discursos, música ambiente y directos con una caja acústica autoamplificada versátil. Un elemento básico para fiestas, presentaciones y eventos itinerantes, fácilmente combinable con un subwoofer cuando la ocasión requiere mayor presencia de graves."
         }
     },
     {
@@ -534,26 +250,8 @@ window.products = [
         "priceDay": 30,
         "image": "img/inventory/hk-audio-sonar-115-sub-d_62bf0bb9c530e.webp",
         "description": {
-            "en": "Bring deep, punchy bass and powerful low-end impact to DJs, live bands, clubs, and mobile event setups with the HK Audio SONAR 115 Sub D.",
-            "es": "Graves profundos y potentes para DJs, bandas en vivo, clubes y eventos móviles."
-        },
-        "specs": {
-            "en": {
-                "Type": "Active sub",
-                "Driver": "15 in",
-                "Max SPL": "128 dB",
-                "Freq Low": "45 Hz",
-                "Freq High": "120 Hz",
-                "Power": "1200 W"
-            },
-            "es": {
-                "Tipo": "Sub activo",
-                "Altavoz": "15 in",
-                "SPL Máx": "128 dB",
-                "Freq Baja": "45 Hz",
-                "Freq Alta": "120 Hz",
-                "Potencia": "1200 W"
-            }
+            "en": "Add weight to kick drums and basslines so the dance floor feels more engaging. This powered subwoofer complements suitable full-range speakers for wedding parties, DJ sets and live music that needs a fuller low end.",
+            "es": "Añade pegada y contundencia a bombos y bajos para que la pista de baile gane energía. Este subwoofer activo complementa altavoces de rango completo en bodas, sets de DJ y directos que demandan un refuerzo de graves más profundo."
         }
     },
     {
@@ -567,26 +265,8 @@ window.products = [
         "priceDay": 30,
         "image": "img/inventory/HK PRO.webp",
         "description": {
-            "en": "Deliver powerful full-range sound and strong bass performance for DJs, live bands, events, and mobile PA setups with the HK Audio Premium PR:O 15 A.",
-            "es": "Sonido potente de rango completo y graves fuertes para DJs, bandas y eventos."
-        },
-        "specs": {
-            "en": {
-                "Type": "Active speaker",
-                "LF Driver": "15 in",
-                "HF Driver": "1 in",
-                "Max SPL": "130 dB",
-                "Power": "1200 W",
-                "Use": "PA/Monitor"
-            },
-            "es": {
-                "Tipo": "Altavoz activo",
-                "Graves": "15 in",
-                "Agudos": "1 in",
-                "SPL Máx": "130 dB",
-                "Potencia": "1200 W",
-                "Uso": "PA/Monitor"
-            }
+            "en": "Bring full-bodied sound to live bands, DJ sets and private celebrations. This powered 15-inch speaker works as part of a main PA or a suitable monitoring setup, giving you flexibility as the event moves from speeches to music.",
+            "es": "Aporta un sonido rotundo y con cuerpo a conciertos en vivo, sets de DJ y fiestas privadas. Este altavoz autoamplificado de 15 pulgadas puede utilizarse tanto de sistema principal como de monitor de escenario, adaptándose fácilmente cuando el evento pasa de la palabra a la música."
         }
     },
     {
@@ -600,26 +280,8 @@ window.products = [
         "priceDay": 100,
         "image": "img/inventory/003_SUB_8008_AS_RIGHT.webp",
         "description": {
-            "en": "Deliver massive, deep low-end power for concerts, festivals, clubs, and large-scale live events with the RCF SUB 8008-AS.",
-            "es": "Potencia masiva de bajas frecuencias para conciertos, festivales y eventos de gran escala."
-        },
-        "specs": {
-            "en": {
-                "Type": "Active sub",
-                "Drivers": "2x18 in",
-                "Max SPL": "137 dB",
-                "Freq Low": "30 Hz",
-                "Freq High": "120 Hz",
-                "Power": "4400 W"
-            },
-            "es": {
-                "Tipo": "Sub activo",
-                "Altavoces": "2x18 in",
-                "SPL Máx": "137 dB",
-                "Freq Baja": "30 Hz",
-                "Freq Alta": "120 Hz",
-                "Potencia": "4400 W"
-            }
+            "en": "Give electronic music and live productions the deep bass impact they demand. This dual-18-inch powered subwoofer is a strong foundation for a larger PA, suited to concert stages, club events and festival sound systems.",
+            "es": "Ofrece a producciones en vivo y música electrónica el impacto de graves profundos que exigen. Este subwoofer activo de doble 18 pulgadas constituye una base sólida para sistemas de sonido de gran envergadura, adecuado para conciertos, clubes y festivales."
         }
     },
     {
@@ -633,26 +295,8 @@ window.products = [
         "priceDay": 20,
         "image": "img/inventory/yAMAHA DXR.webp",
         "description": {
-            "en": "Deliver powerful, crystal-clear sound for live music, DJs, corporate events, and stage monitoring with the Yamaha DXR10 MKII.",
-            "es": "Sonido potente y cristalino para música en vivo, DJs y eventos corporativos."
-        },
-        "specs": {
-            "en": {
-                "Type": "Active speaker",
-                "LF Driver": "10 in",
-                "HF Driver": "1.4 in",
-                "Max SPL": "132 dB",
-                "Power": "1100 W",
-                "DSP": "Yes"
-            },
-            "es": {
-                "Tipo": "Altavoz activo",
-                "Graves": "10 in",
-                "Agudos": "1.4 in",
-                "SPL Máx": "132 dB",
-                "Potencia": "1100 W",
-                "DSP": "Sí"
-            }
+            "en": "Keep voices clear and music present with a compact powered speaker that fits a wide range of events. Use it for presentations, acoustic performances or stage monitoring when space is limited and intelligibility is a priority.",
+            "es": "Garantiza voces nítidas y música con excelente presencia gracias a un recinto autoamplificado compacto y polivalente. Utilízalo para ponencias, directos acústicos o monitorización cuando el espacio es ajustado y la inteligibilidad es primordial."
         }
     },
     {
@@ -666,26 +310,8 @@ window.products = [
         "priceDay": 15,
         "image": "img/inventory/Analogue console 4 8 .webp",
         "description": {
-            "en": "Compact analogue mixing console for small bands speech events and simple audio setups.",
-            "es": "Mesa analógica compacta para bandas pequeñas eventos de voz y configuraciones simples."
-        },
-        "specs": {
-            "en": {
-                "Channels": "4–8 ch",
-                "EQ": "3-band",
-                "Aux": "1 send",
-                "Phantom": "+48 V",
-                "Outputs": "Main L/R",
-                "Format": "Analog"
-            },
-            "es": {
-                "Canales": "4–8 ch",
-                "EQ": "3 bandas",
-                "Auxiliares": "1 envío",
-                "Phantom": "+48 V",
-                "Salidas": "Main L/R",
-                "Formato": "Analógico"
-            }
+            "en": "Bring microphones and music sources together with straightforward, hands-on control. This compact analogue mixer suits speeches, workshops and small performances where quick level adjustments are more useful than a complex mixing system.",
+            "es": "Conecta micrófonos y fuentes de reproducción con un control directo, cómodo e intuitivo. Esta mesa analógica compacta es ideal para charlas, talleres y pequeñas actuaciones donde se valora la inmediatez sin configuraciones complejas."
         }
     },
     {
@@ -699,26 +325,8 @@ window.products = [
         "priceDay": 30,
         "image": "img/inventory/DL32.webp",
         "description": {
-            "en": "Bring professional-grade stage connectivity and ultra-clean audio routing to live sound setups with the Midas DL32 digital stage box.",
-            "es": "Conectividad profesional y enrutamiento de audio limpio con el stage box digital Midas DL32."
-        },
-        "specs": {
-            "en": {
-                "Inputs": "32 mic",
-                "Outputs": "16 XLR",
-                "Preamps": "Midas",
-                "Network": "AES50",
-                "Sample Rate": "48 kHz",
-                "Form Factor": "Rack 4U"
-            },
-            "es": {
-                "Entradas": "32 mic",
-                "Salidas": "16 XLR",
-                "Previos": "Midas",
-                "Red": "AES50",
-                "Muestreo": "48 kHz",
-                "Formato": "Rack 4U"
-            }
+            "en": "Keep microphone connections on stage and send audio to a compatible digital console over AES50. The Midas DL32 provides 32 microphone inputs and 16 outputs for bands, multi-microphone productions and organised stage patching.",
+            "es": "Centraliza las conexiones sobre el escenario y envía el audio a consolas digitales compatibles mediante AES50. La Midas DL32 ofrece 32 entradas de micrófono y 16 salidas, perfecta para bandas, producciones complejas y un cableado limpio en el escenario."
         }
     },
     {
@@ -732,26 +340,8 @@ window.products = [
         "priceDay": 50,
         "image": "img/inventory/X32.webp",
         "description": {
-            "en": "Deliver full professional digital mixing power in a compact rack unit with full remote control, multi-channel routing, and studio-grade processing for live sound, installations, and recording setups using the Behringer X32 Rack.",
-            "es": "Potencia de mezcla digital profesional en rack con control remoto y procesamiento de estudio."
-        },
-        "specs": {
-            "en": {
-                "Inputs": "40 ch",
-                "Mix Buses": "25",
-                "Preamps": "16 Midas",
-                "Recording": "32x32 USB",
-                "Sample Rate": "48 kHz",
-                "Form Factor": "Rack 3U"
-            },
-            "es": {
-                "Entradas": "40 ch",
-                "Buses": "25",
-                "Previos": "16 Midas",
-                "Grabación": "32x32 USB",
-                "Muestreo": "48 kHz",
-                "Formato": "Rack 3U"
-            }
+            "en": "Put digital mixing, effects and routing into a compact rack setup. The X32 Rack suits bands, corporate events and monitor systems, with remote control that lets the engineer adjust the mix from a useful listening position.",
+            "es": "Reúne mezcla digital, efectos y ruteo flexible en un formato compacto en rack. La X32 Rack es idónea para grupos, eventos corporativos y sistemas de monitores, permitiendo al técnico ajustar la mezcla de forma remota desde la mejor posición de escucha."
         }
     },
     {
@@ -765,26 +355,8 @@ window.products = [
         "priceDay": 90,
         "image": "img/inventory/MIDAS M32.webp",
         "description": {
-            "en": "Deliver a fully featured digital mixing powerhouse with pro-grade sound quality, flexible routing, and intuitive live control for concerts, installations, and touring productions with the Midas M32 Live.",
-            "es": "Mezclador digital de alto rendimiento con calidad de sonido profesional y control intuitivo."
-        },
-        "specs": {
-            "en": {
-                "Inputs": "40 ch",
-                "Mix Buses": "25",
-                "Preamps": "32 Midas",
-                "Faders": "25 motor",
-                "Recording": "32x32 USB",
-                "Sample Rate": "48 kHz"
-            },
-            "es": {
-                "Entradas": "40 ch",
-                "Buses": "25",
-                "Previos": "32 Midas",
-                "Faders": "25 motor",
-                "Grabación": "32x32 USB",
-                "Muestreo": "48 kHz"
-            }
+            "en": "Take control of complex live mixes with dedicated faders, digital processing and recallable scenes. The M32 LIVE suits concerts, conferences and productions with multiple performers, helping engineers move efficiently between soundcheck, show cues and recording.",
+            "es": "Toma el control absoluto de mezclas complejas en directo con faders motorizados, procesamiento digital y memorias de escena. La M32 LIVE es óptima para conciertos, conferencias y producciones multicanal, agilizando las pruebas de sonido, el directo y la grabación multipista."
         }
     },
     {
@@ -798,26 +370,8 @@ window.products = [
         "priceDay": 40,
         "image": "img/inventory/slxd24e-b58-g59.webp",
         "description": {
-            "en": "Digital wireless handheld microphone system delivering reliable RF performance and clear vocals.",
-            "es": "Sistema inalámbrico digital de mano con rendimiento RF fiable y voces claras."
-        },
-        "specs": {
-            "en": {
-                "Type": "Digital wireless",
-                "Capsule": "SM58",
-                "Band": "470–514 MHz",
-                "Range": "100 m",
-                "Audio": "24-bit",
-                "Battery": "8 h"
-            },
-            "es": {
-                "Tipo": "Inalámbrico dig",
-                "Cápsula": "SM58",
-                "Banda": "470–514 MHz",
-                "Rango": "100 m",
-                "Audio": "24 bits",
-                "Batería": "8 h"
-            }
+            "en": "Give presenters and singers freedom to move while keeping their voice at the centre of the event. This Shure digital wireless handheld system with an SM58 capsule suits wedding speeches, conferences, hosting and live vocals.",
+            "es": "Brinda a ponentes y cantantes total libertad de movimiento manteniendo su voz como protagonista del evento. Este sistema inalámbrico digital Shure con cápsula SM58 es perfecto para discursos en bodas, congresos, presentaciones y directos vocales."
         }
     },
     {
@@ -831,26 +385,8 @@ window.products = [
         "priceDay": 10,
         "image": "img/inventory/Sennheiser E 906.webp",
         "description": {
-            "en": "The Sennheiser e 906 is a professional dynamic instrument microphone designed mainly for close-miking guitar amps, drums, and brass, known for its fast attack and very natural, detailed sound reproduction.",
-            "es": "Micrófono profesional para amplificadores de guitarra y percusión, conocido por su ataque rápido."
-        },
-        "specs": {
-            "en": {
-                "Type": "Dynamic",
-                "Pattern": "Supercardioid",
-                "Freq Low": "40 Hz",
-                "Freq High": "18 kHz",
-                "Filter Switch": "3-position",
-                "Connector": "3-pin XLR"
-            },
-            "es": {
-                "Tipo": "Dinámico",
-                "Patrón": "Supercardioide",
-                "Freq Baja": "40 Hz",
-                "Freq Alta": "18 kHz",
-                "Interruptor": "3 posiciones",
-                "Conector": "XLR 3 pines"
-            }
+            "en": "Bring guitar amplifiers into the live mix with definition and attack. The e 906 is well suited to band stages and festival backlines, with a flat profile that helps position it close to a speaker cabinet.",
+            "es": "Lleva amplificadores de guitarra a la mezcla con gran pegada, nitidez y definición. El e 906 es un estándar en escenarios y festivales gracias a su perfil plano, pensado para colgarse o colocarse pegado a la pantalla acústica."
         }
     },
     {
@@ -864,26 +400,8 @@ window.products = [
         "priceDay": 10,
         "image": "img/inventory/Shure 57 58 .webp",
         "description": {
-            "en": "Industry standard dynamic microphones for vocals instruments and general live sound use.",
-            "es": "Micrófonos dinámicos estándar de la industria para voces instrumentos y directo."
-        },
-        "specs": {
-            "en": {
-                "Type": "Dynamic",
-                "Pattern": "Cardioid",
-                "Freq Low": "50 Hz",
-                "Freq High": "15 kHz",
-                "Application": "Stage/Vocal",
-                "Connector": "3-pin XLR"
-            },
-            "es": {
-                "Tipo": "Dinámico",
-                "Patrón": "Cardioide",
-                "Freq Baja": "50 Hz",
-                "Freq Alta": "15 kHz",
-                "Uso": "Escenario/Voz",
-                "Conector": "XLR 3 pines"
-            }
+            "en": "Cover the essentials of a live stage with a familiar Shure dynamic microphone. Choose the SM58 for vocals and speech, or the SM57 for instruments and amplifiers, according to the needs of your performance.",
+            "es": "Cubre los requerimientos esenciales de cualquier escenario con un micrófono dinámico Shure de absoluta referencia. Elige el SM58 para voces y discursos, o el SM57 para instrumentos y amplificadores, según las necesidades de la actuación."
         }
     },
     {
@@ -897,26 +415,8 @@ window.products = [
         "priceDay": 20,
         "image": "img/inventory/Re20 .webp",
         "description": {
-            "en": "Deliver broadcast-quality, smooth and natural voice reproduction with excellent background rejection for radio, podcasting, and studio recording using the Electro-Voice RE20.",
-            "es": "Reproducción de voz suave y natural con calidad broadcast para radio y estudio."
-        },
-        "specs": {
-            "en": {
-                "Type": "Dynamic",
-                "Pattern": "Cardioid",
-                "Freq Low": "45 Hz",
-                "Freq High": "18 kHz",
-                "Technology": "Variable-D",
-                "Application": "Broadcast/Kick"
-            },
-            "es": {
-                "Tipo": "Dinámico",
-                "Patrón": "Cardioide",
-                "Freq Baja": "45 Hz",
-                "Freq Alta": "18 kHz",
-                "Tecnología": "Variable-D",
-                "Uso": "Broadcast/Bombo"
-            }
+            "en": "Give spoken content a full, natural sound for live podcasts, interviews and broadcast-style event coverage. The RE20 also brings controlled low-frequency pickup to suitable instruments, making it a useful option beyond the presenter desk.",
+            "es": "Consigue un sonido vocal cálido, rico y con cuerpo broadcast para podcasts en vivo, entrevistas y retransmisiones. El RE20 también ofrece una captación precisa y controlada de bajas frecuencias en diversos instrumentos musicales."
         }
     },
     {
@@ -930,26 +430,8 @@ window.products = [
         "priceDay": 40,
         "image": "img/inventory/cdj-2000nxs2-angle.webp",
         "description": {
-            "en": "Deliver professional club-standard DJ performance with fast browsing, precise beat syncing, and reliable playback from USB, CDs, and rekordbox libraries using the Pioneer CDJ-2000 Nexus.",
-            "es": "Rendimiento DJ estándar de club con navegación rápida y sincronización precisa."
-        },
-        "specs": {
-            "en": {
-                "Media": "USB / SD / CD",
-                "Formats": "MP3/AAC/WAV/AIFF",
-                "Screen": "6.1 in LCD",
-                "Link": "Pro DJ Link",
-                "DAC": "Wolfson 24-bit",
-                "Outputs": "RCA / Coaxial"
-            },
-            "es": {
-                "Medios": "USB / SD / CD",
-                "Formatos": "MP3/AAC/WAV/AIFF",
-                "Pantalla": "6.1 in LCD",
-                "Link": "Pro DJ Link",
-                "DAC": "Wolfson 24 bits",
-                "Salidas": "RCA / Coaxial"
-            }
+            "en": "Give guest DJs a familiar player for club nights, private parties and festival booths. The CDJ-2000NXS supports prepared music libraries and linked deck workflows, keeping browsing, cueing and mixing close at hand.",
+            "es": "Ofrece a DJs invitados un reproductor familiar de referencia para clubes, fiestas privadas y cabinas de festivales. El CDJ-2000NXS admite memorias preparadas y conexión de red entre platos, facilitando una búsqueda de pistas y mezcla sumamente ágiles."
         }
     },
     {
@@ -963,26 +445,8 @@ window.products = [
         "priceDay": 40,
         "image": "img/inventory/DJM900.webp",
         "description": {
-            "en": "The Pioneer DJ DJM-900 Nexus is a club-standard 4-channel digital DJ mixer designed for professional live performance, offering high-quality sound processing, built-in effects, and seamless integration with CDJs and DJ software.",
-            "es": "Mezclador DJ digital de cuatro canales para directo profesional con efectos integrados."
-        },
-        "specs": {
-            "en": {
-                "Channels": "4 ch",
-                "FX": "Color + Beat",
-                "Audio": "24-bit / 96kHz",
-                "Inputs": "Phono/Line",
-                "USB": "Yes",
-                "Sound Card": "Built-in"
-            },
-            "es": {
-                "Canales": "4 ch",
-                "FX": "Color + Beat",
-                "Audio": "24 bits / 96kHz",
-                "Entradas": "Phono/Line",
-                "USB": "Sí",
-                "Tarjeta": "Integrada"
-            }
+            "en": "Make the mixer the creative centre of your DJ booth. Four channels and onboard effects give performers room to blend sources, shape transitions and build energy at club nights, weddings and festival sets.",
+            "es": "Convierte la mesa de mezclas en el motor creativo de la cabina. Cuatro canales y efectos integrados brindan a los artistas todo lo necesario para fusionar temas, moldear transiciones y elevar la energía en discotecas, bodas y festivales."
         }
     },
     {
@@ -996,26 +460,8 @@ window.products = [
         "priceDay": 40,
         "image": "img/inventory/technics-sl-1200-mk2.webp",
         "description": {
-            "en": "Deliver precise, stable, and iconic vinyl playback for DJing and turntablism with the Technics SL-1200 MK3D.",
-            "es": "Reproducción de vinilo icónica, estable y precisa para DJ y turntablism."
-        },
-        "specs": {
-            "en": {
-                "Drive": "Direct drive",
-                "Speeds": "33 / 45 rpm",
-                "Starting Torque": "1.5 kgf·cm",
-                "Pitch": "±8 %",
-                "Wow & Flutter": "0.01%",
-                "Weight": "12.5 kg"
-            },
-            "es": {
-                "Tracción": "Directa",
-                "Velocidades": "33 / 45 rpm",
-                "Par de arranque": "1.5 kgf·cm",
-                "Pitch": "±8 %",
-                "Wow & Flutter": "0.01%",
-                "Peso": "12.5 kg"
-            }
+            "en": "Bring the feel of vinyl to club nights, listening sessions and DJ showcases. Direct drive and hands-on pitch control give selectors a familiar platform for mixing records and building a set around their collection.",
+            "es": "Lleva el tacto inconfundible del vinilo a sesiones de club, audiciones y cabinas profesionales. La tracción directa y el control analógico del pitch proporcionan a los selectores una plataforma de precisión para pinchar vinilos con máxima fiabilidad."
         }
     },
     {
@@ -1029,26 +475,8 @@ window.products = [
         "priceDay": 15,
         "image": "img/inventory/DJ TABLE.webp",
         "description": {
-            "en": "Foldable professional DJ table providing stable support for mixers and players.",
-            "es": "Mesa DJ profesional plegable que ofrece soporte estable para mezcladores y reproductores."
-        },
-        "specs": {
-            "en": {
-                "Width": "140 cm",
-                "Depth": "50 cm",
-                "Height": "95 cm",
-                "Material": "Plywood",
-                "Foldable": "Yes",
-                "Color": "Black"
-            },
-            "es": {
-                "Ancho": "140 cm",
-                "Fondo": "50 cm",
-                "Altura": "95 cm",
-                "Material": "Contrachapado",
-                "Plegable": "Sí",
-                "Color": "Negro"
-            }
+            "en": "Create a tidy, dedicated workspace for decks and a mixer at weddings, parties and temporary DJ booths. This folding UDG table gives the setup a consistent working surface and a clean black finish.",
+            "es": "Crea una superficie de trabajo cuidada y profesional para reproductores y mezclador en bodas, fiestas privadas y cabinas efímeras. Esta mesa plegable UDG aporta una altura óptima, gran estabilidad y un acabado negro sobrio."
         }
     },
     {
@@ -1062,26 +490,8 @@ window.products = [
         "priceDay": 20,
         "image": "img/inventory/Distribution 32.webp",
         "description": {
-            "en": "Professional three phase power distribution unit for lighting and audio systems.",
-            "es": "Cuadro de distribución trifásico profesional para sistemas de iluminación y sonido."
-        },
-        "specs": {
-            "en": {
-                "Input": "32A 3P+N+E",
-                "Voltage": "400 V",
-                "Outputs": "16A + CEE",
-                "Protection": "RCD + MCB",
-                "Phases": "3-phase",
-                "Mount": "Flightcase"
-            },
-            "es": {
-                "Entrada": "32A 3F+N+T",
-                "Voltaje": "400 V",
-                "Salidas": "16A + CEE",
-                "Protección": "RCD + MCB",
-                "Fases": "Trifásico",
-                "Montaje": "Flightcase"
-            }
+            "en": "Organise power for lighting, audio and event equipment from a suitable 32A supply. This distribution unit helps build a clear electrical layout for stages, DJ areas and corporate productions with several equipment circuits.",
+            "es": "Organiza la acometida eléctrica para equipos de iluminación, sonido y producción a partir de una toma de 32A. Este cuadro facilita una distribución clara y segura en escenarios, cabinas de DJ y eventos con múltiples líneas de carga."
         }
     },
     {
@@ -1095,26 +505,8 @@ window.products = [
         "priceDay": 30,
         "image": "img/inventory/logoletter.webp",
         "description": {
-            "en": "High capacity three phase power distribution for large scale event productions.",
-            "es": "Distribución de energía trifásica de alta capacidad para producciones de gran escala."
-        },
-        "specs": {
-            "en": {
-                "Input": "63A 3P+N+E",
-                "Voltage": "400 V",
-                "Outputs": "32A + Schuko",
-                "Protection": "RCBO",
-                "Phases": "3-phase",
-                "Mount": "Flightcase"
-            },
-            "es": {
-                "Entrada": "63A 3F+N+T",
-                "Voltaje": "400 V",
-                "Salidas": "32A + Schuko",
-                "Protección": "RCBO",
-                "Fases": "Trifásico",
-                "Montaje": "Flightcase"
-            }
+            "en": "Support productions with greater power demands from a suitable 63A supply. This distribution unit provides a central point for feeding planned lighting and audio circuits at concerts, festivals and larger event builds.",
+            "es": "Suministra energía a montajes exigentes desde una acometida de 63A. Este cuadro ofrece un punto neurálgico fiable para alimentar circuitos de sonido e iluminación de alta potencia en conciertos, festivales y grandes producciones."
         }
     },
     {
@@ -1128,26 +520,8 @@ window.products = [
         "priceDay": 1.5,
         "image": "img/inventory/cee-cable-32a-5g6-5m.webp",
         "description": {
-            "en": "Heavy duty three phase extension cable sold per meter for professional power runs.",
-            "es": "Cable trifásico resistente vendido por metro para alimentación profesional."
-        },
-        "specs": {
-            "en": {
-                "Rating": "32A 400V",
-                "Conductors": "5G6 mm²",
-                "Jacket": "H07RN-F",
-                "Protection": "IP44",
-                "Length": "Per meter",
-                "Application": "Outdoor/Tour"
-            },
-            "es": {
-                "Clasificación": "32A 400V",
-                "Conductores": "5G6 mm²",
-                "Cubierta": "H07RN-F",
-                "Protección": "IP44",
-                "Longitud": "Por metro",
-                "Uso": "Exterior/Giras"
-            }
+            "en": "Connect a suitable 32A supply to your event distribution where the layout needs it. Available by the metre, this cable helps plan power runs between venue connections, stage areas and technical equipment.",
+            "es": "Conecta acometidas trifásicas de 32A con los cuadros de distribución allí donde lo demande la distribución del espacio. Disponible por metros, facilita el tendido eléctrico seguro entre los puntos de toma del recinto y el área técnica."
         }
     },
     {
@@ -1161,26 +535,8 @@ window.products = [
         "priceDay": 2.5,
         "image": "img/inventory/Cable 63.webp",
         "description": {
-            "en": "High current three phase power cable for main feeds and large distribution systems.",
-            "es": "Cable trifásico de alta corriente para alimentaciones principales y grandes sistemas."
-        },
-        "specs": {
-            "en": {
-                "Rating": "63A 400V",
-                "Conductors": "5G16 mm²",
-                "Jacket": "H07RN-F",
-                "Protection": "IP67",
-                "Length": "Per meter",
-                "Application": "Mains feed"
-            },
-            "es": {
-                "Clasificación": "63A 400V",
-                "Conductores": "5G16 mm²",
-                "Cubierta": "H07RN-F",
-                "Protección": "IP67",
-                "Longitud": "Por metro",
-                "Uso": "Acometida"
-            }
+            "en": "Bridge the distance between a suitable 63A power source and your main event distribution. A practical part of concert, festival and large production layouts where the technical setup sits away from the supply point.",
+            "es": "Salva la distancia entre la toma principal de 63A del recinto y los cuadros de distribución del evento. Esencial en conciertos, festivales y montajes de gran escala donde el área técnica se ubica lejos de la acometida."
         }
     },
     {
@@ -1194,26 +550,8 @@ window.products = [
         "priceDay": 1,
         "image": "img/inventory/16a 3 phase.webp",
         "description": {
-            "en": "Standard three phase extension cable for moderate power distribution needs.",
-            "es": "Cable de extensión trifásico estándar para necesidades de potencia moderadas."
-        },
-        "specs": {
-            "en": {
-                "Rating": "16A 400V",
-                "Conductors": "5G2.5 mm²",
-                "Jacket": "H07RN-F",
-                "Protection": "IP44",
-                "Length": "Per meter",
-                "Application": "Power distro"
-            },
-            "es": {
-                "Clasificación": "16A 400V",
-                "Conductores": "5G2.5 mm²",
-                "Cubierta": "H07RN-F",
-                "Protección": "IP44",
-                "Longitud": "Por metro",
-                "Uso": "Distribución"
-            }
+            "en": "Extend a compatible event power connection to the position your setup requires. Useful for lighting areas and local distribution, with the cable length selected to suit the route between supply and equipment.",
+            "es": "Extiende conexiones eléctricas dedicadas hasta el lugar exacto que requiera el montaje. Especialmente útil para líneas de iluminación y subdistribuciones locales, ajustando la longitud al recorrido necesario."
         }
     },
     {
@@ -1227,26 +565,8 @@ window.products = [
         "priceDay": 2,
         "image": "img/inventory/SCHUKO.webp",
         "description": {
-            "en": "Standard single phase Schuko power cable for connecting equipment to mains supply.",
-            "es": "Cable Schuko monofásico estándar para conexión de equipos a la red eléctrica."
-        },
-        "specs": {
-            "en": {
-                "Rating": "16A 230V",
-                "Length": "3–5 m",
-                "Conductors": "3G2.5 mm²",
-                "Connector": "Schuko 16A",
-                "Color": "Black",
-                "Application": "Mains power"
-            },
-            "es": {
-                "Clasificación": "16A 230V",
-                "Longitud": "3–5 m",
-                "Conductores": "3G2.5 mm²",
-                "Conector": "Schuko 16A",
-                "Color": "Negro",
-                "Uso": "Alimentación"
-            }
+            "en": "Put powered speakers, lighting fixtures and DJ equipment where they work best. These Schuko extension cables cover short power runs around stages, presentation areas and control desks, helping keep the setup organised.",
+            "es": "Alimenta altavoces autoamplificados, focos y equipos de cabina en su ubicación idónea. Estos alargadores Schuko resuelven tiradas cortas de corriente en escenarios, zonas de exposición y mesas de control de forma limpia y ordenada."
         }
     },
         /* SERVICES COMMENTED OUT
@@ -1263,24 +583,6 @@ window.products = [
         "description": {
             "en": "Professional sound engineer providing setup soundcheck and live mixing during events.",
             "es": "Técnico de sonido profesional que realiza montaje prueba y mezcla en directo."
-        },
-        "specs": {
-            "en": {
-                "Shift": "8 h",
-                "Role": "FOH / Monitor",
-                "Setup": "Included",
-                "Console": "Digital",
-                "Experience": "5+ yrs",
-                "Language": "EN / ES"
-            },
-            "es": {
-                "Turno": "8 h",
-                "Rol": "FOH / Monitor",
-                "Montaje": "Incluido",
-                "Consola": "Digital",
-                "Experiencia": "5+ años",
-                "Idioma": "EN / ES"
-            }
         }
     },
     {
@@ -1296,24 +598,6 @@ window.products = [
         "description": {
             "en": "Experienced lighting operator handling programming and live operation during shows.",
             "es": "Operador de iluminación experimentado encargado de programación y operación en vivo."
-        },
-        "specs": {
-            "en": {
-                "Shift": "8 h",
-                "Role": "Lighting op",
-                "Systems": "MA / Avo",
-                "Programming": "Yes",
-                "Busking": "Yes",
-                "Experience": "5+ yrs"
-            },
-            "es": {
-                "Turno": "8 h",
-                "Rol": "Operador luces",
-                "Sistemas": "MA / Avo",
-                "Programación": "Sí",
-                "Busking": "Sí",
-                "Experiencia": "5+ años"
-            }
         }
     },
     {
@@ -1329,24 +613,6 @@ window.products = [
         "description": {
             "en": "Dedicated monitor engineer ensuring performers receive accurate and stable stage mixes.",
             "es": "Técnico dedicado a monitores que garantiza mezclas estables y precisas en escenario."
-        },
-        "specs": {
-            "en": {
-                "Shift": "8 h",
-                "Role": "Monitor mix",
-                "Systems": "IEM / Wedges",
-                "Talkback": "Yes",
-                "Console": "Digital",
-                "Experience": "5+ yrs"
-            },
-            "es": {
-                "Turno": "8 h",
-                "Rol": "Monitores",
-                "Sistemas": "IEM / Cuñas",
-                "Talkback": "Sí",
-                "Consola": "Digital",
-                "Experiencia": "5+ años"
-            }
         }
     },
     */
@@ -1361,26 +627,8 @@ window.products = [
         "priceDay": 15,
         "image": "img/inventory/HK_PRO.webp",
         "description": {
-            "en": "HK Audio Premium PR:O 12 active 12-inch full-range 1200W loudspeaker for live sound and stage monitoring.",
-            "es": "Altavoz activo de 12 pulgadas y 1200W HK Audio Premium PR:O 12 para refuerzo en directo y monitores de escenario."
-        },
-        "specs": {
-            "en": {
-                "Type": "Active speaker",
-                "Power": "1200 W",
-                "Max SPL": "128 dB",
-                "Freq Low": "68 Hz",
-                "Freq High": "19 kHz",
-                "Coverage": "90° x 60°"
-            },
-            "es": {
-                "Tipo": "Altavoz activo",
-                "Potencia": "1200 W",
-                "SPL Máx": "128 dB",
-                "Freq Baja": "68 Hz",
-                "Freq Alta": "19 kHz",
-                "Cobertura": "90° x 60°"
-            }
+            "en": "Build a straightforward sound setup for presentations, live music and private events. This powered 12-inch speaker can serve as a main PA cabinet or stage monitor, making it useful when the same equipment needs to cover different roles.",
+            "es": "Configura un refuerzo sonoro eficaz para presentaciones, directos y eventos privados. Este altavoz autoamplificado de 12 pulgadas puede funcionar como PA principal o monitor de escenario, adaptándose a múltiples roles según la ocasión."
         }
     },
     {
@@ -1394,26 +642,8 @@ window.products = [
         "priceDay": 5,
         "image": "img/inventory/LED_BAR.webp",
         "description": {
-            "en": "Compact linear LED batten bar providing vibrant RGB wall wash effects, pixel strobing, and stage backdrop lighting.",
-            "es": "Barra lineal LED compacta para bañado uniforme de paredes, efectos de persecución RGB e iluminación de fondos de escenario."
-        },
-        "specs": {
-            "en": {
-                "Light Source": "RGB LED bar",
-                "Beam Angle": "30°",
-                "Control": "DMX / Auto",
-                "Channels": "3 / 7 / 24 ch",
-                "Power": "60 W",
-                "Housing": "Aluminum"
-            },
-            "es": {
-                "Fuente": "Barra LED RGB",
-                "Ángulo": "30°",
-                "Control": "DMX / Auto",
-                "Canales": "3 / 7 / 24 ch",
-                "Consumo": "60 W",
-                "Carcasa": "Aluminio"
-            }
+            "en": "Turn a plain backdrop or wall into part of the event design. This compact RGB LED bar adds colour washes and chase effects to DJ booths, small stages, exhibition stands and branded spaces.",
+            "es": "Convierte cualquier fondo o pared lisa en parte del diseño visual del evento. Esta barra LED RGB compacta baña de color y crea efectos de barrido ideales para cabinas de DJ, pequeños escenarios, stands y espacios corporativos."
         }
     },
     {
@@ -1427,26 +657,8 @@ window.products = [
         "priceDay": 10,
         "image": "img/inventory/SHEHDS_battery_PAR.webp",
         "description": {
-            "en": "SHEHDS wireless battery-powered 6x18W RGBAW+UV LED uplight with built-in wireless DMX for rapid cable-free architectural and event lighting.",
-            "es": "Foco uplight a batería SHEHDS 6x18W RGBAW+UV con DMX inalámbrico integrado para iluminación arquitectural y decorativa sin cables."
-        },
-        "specs": {
-            "en": {
-                "Light Source": "6x18W RGBAW+UV",
-                "Battery": "8 - 12 h",
-                "Wireless DMX": "2.4 GHz",
-                "Beam Angle": "25°",
-                "Control": "DMX / App",
-                "Power": "110 W"
-            },
-            "es": {
-                "Fuente": "6x18W RGBAW+UV",
-                "Batería": "8 - 12 h",
-                "DMX Wireless": "2.4 GHz",
-                "Ángulo": "25°",
-                "Control": "DMX / App",
-                "Consumo": "110 W"
-            }
+            "en": "Carry your event colours around the room with battery uplighting and wireless DMX control. Ideal for wedding venues, gala dinners and brand activations where walls and columns should glow without visible power runs to every fixture.",
+            "es": "Baña los espacios del evento de luz ambiental mediante proyectores a batería y control DMX inalámbrico. Perfecto para salones de bodas, cenas de gala y actos de marca donde se busca iluminar paredes y pilares sin cables por el suelo."
         }
     },
     {
@@ -1460,26 +672,8 @@ window.products = [
         "priceDay": 10,
         "image": "img/inventory/Truss.webp",
         "description": {
-            "en": "Showtec 2.0-meter straight aluminum truss segment designed for stage roofs, exhibition booths, and lighting grids.",
-            "es": "Tramo recto de truss de aluminio de 2,0 metros Showtec para estructuras de escenario, stands y puentes de luces."
-        },
-        "specs": {
-            "en": {
-                "Length": "2000 mm",
-                "Tube Diameter": "50 mm",
-                "Thickness": "2 mm",
-                "Alloy": "EN AW-6082 T6",
-                "Connection": "Conical",
-                "Application": "Truss / Rig"
-            },
-            "es": {
-                "Longitud": "2000 mm",
-                "Diámetro tubo": "50 mm",
-                "Grosor": "2 mm",
-                "Aleación": "EN AW-6082 T6",
-                "Conexión": "Cónica",
-                "Uso": "Truss / Rig"
-            }
+            "en": "Build out lighting bridges, exhibition frames and stage structures with a two-metre straight truss section. Its modular format helps adapt a compatible rig to the room, backdrop or equipment positions your event needs.",
+            "es": "Construye puentes de iluminación, pórticos feriales y soportes escénicos con un tramo recto de truss de dos metros. Su formato modular facilita la adaptación de estructuras compatibles a las dimensiones del espacio y las luminarias necesarias."
         }
     },
     {
@@ -1493,26 +687,8 @@ window.products = [
         "priceDay": 15,
         "image": "img/inventory/sunstrip.webp",
         "description": {
-            "en": "Showtec Sunstrip Active MKII 10x 50W tungsten halogen light batten with integrated dimmers for iconic stage blinder and chase effects.",
-            "es": "Barra cegadora halógena Showtec Sunstrip Active MKII de 10 lámparas de 50W con dimmers integrados para efectos clásicos de escenario."
-        },
-        "specs": {
-            "en": {
-                "Lamps": "10x GU10 50W",
-                "Dimmers": "10 built-in",
-                "Control": "DMX 1-10 ch",
-                "Effects": "Built-in chases",
-                "Power": "550 W",
-                "Weight": "5.3 kg"
-            },
-            "es": {
-                "Lámparas": "10x GU10 50W",
-                "Dimmers": "10 integrados",
-                "Control": "DMX 1-10 ch",
-                "Efectos": "Secuencias",
-                "Consumo": "550 W",
-                "Peso": "5.3 kg"
-            }
+            "en": "Add warmth and movement to a live band's backdrop or a DJ stage. Ten individually dimmable lamps let the Sunstrip move from a gentle glow to running chases and punchy accents timed to the music.",
+            "es": "Aporta calidez, dinamismo y estilo escénico al telón de fondo de una banda o cabina de DJ. Diez lámparas regulables de forma independiente permiten desde una suave iluminación ámbar hasta secuencias y destellos contundentes sincronizados con el ritmo."
         }
     },
     {
@@ -1526,26 +702,8 @@ window.products = [
         "priceDay": 10,
         "image": "img/inventory/SUBER_ABL_STROBE.webp",
         "description": {
-            "en": "Eurolite Super Strobe ABL hybrid LED strobe and blinder featuring intense cold-white strobe flashes with colorful RGB ambient backlight.",
-            "es": "Estrobo híbrido LED Eurolite Super Strobe ABL con potentes destellos blanco frío y retroiluminación ambiental RGB."
-        },
-        "specs": {
-            "en": {
-                "LEDs": "216 CW + 144 RGB",
-                "Flash Rate": "1 - 20 Hz",
-                "Beam Angle": "120°",
-                "Control": "DMX / Auto",
-                "DMX Channels": "7 / 13 / 42 ch",
-                "Power": "130 W"
-            },
-            "es": {
-                "LEDs": "216 CW + 144 RGB",
-                "Frecuencia": "1 - 20 Hz",
-                "Ángulo": "120°",
-                "Control": "DMX / Auto",
-                "Canales DMX": "7 / 13 / 42 ch",
-                "Consumo": "130 W"
-            }
+            "en": "Switch from colourful background light to striking white flashes as the music builds. This LED strobe adds contrast and energy to electronic performances, club nights and concert lighting designs.",
+            "es": "Alterna entre fondos de color envolventes e intensos destellos blancos en los momentos culminantes del show. Este estroboscopio LED añade contraste visual y dinamismo a sesiones electrónicas, discotecas y espectáculos en vivo."
         }
     },
     {
@@ -1559,26 +717,8 @@ window.products = [
         "priceDay": 10,
         "image": "img/inventory/Wash_17x19.webp",
         "description": {
-            "en": "SHEHDS 19x15W RGBW LED wash moving head with motorized zoom from 8° to 60° for beam and wash applications.",
-            "es": "Cabeza móvil wash LED SHEHDS de 19x15W RGBW con zoom lineal motorizado de 8° a 60° para bañado uniforme y haces compactos."
-        },
-        "specs": {
-            "en": {
-                "Light Source": "19x15W RGBW",
-                "Zoom": "8° - 60°",
-                "Pan": "540°",
-                "Tilt": "270°",
-                "Control": "DMX 16/24 ch",
-                "Power": "300 W"
-            },
-            "es": {
-                "Fuente": "19x15W RGBW",
-                "Zoom": "8° - 60°",
-                "Pan": "540°",
-                "Tilt": "270°",
-                "Control": "DMX 16/24 ch",
-                "Consumo": "300 W"
-            }
+            "en": "Shape the mood of a stage with moving colour and adjustable beam width. This RGBW wash can spread light across performers or tighten the look for more focused accents at concerts, DJ events and corporate shows.",
+            "es": "Define el ambiente del escenario con movimiento, mezclas de color y zoom regulable. Este wash RGBW permite iluminar uniformemente a los artistas o concentrar el haz para lograr acentos impactantes en conciertos, fiestas y eventos corporativos."
         }
     },
     {
@@ -1592,26 +732,8 @@ window.products = [
         "priceDay": 10,
         "image": "img/inventory/WASH_36_18.webp",
         "description": {
-            "en": "SHEHDS high-power 36x18W RGBWA+UV 6-in-1 LED wash moving head with wide color spectrum and motorized zoom.",
-            "es": "Cabeza móvil wash SHEHDS de alta potencia con 36 LEDs de 18W RGBWA+UV 6 en 1 con espectro completo de color y zoom motorizado."
-        },
-        "specs": {
-            "en": {
-                "Light Source": "36x18W 6-in-1",
-                "Zoom": "10° - 60°",
-                "Pan": "540°",
-                "Tilt": "270°",
-                "Control": "DMX 16/24 ch",
-                "Power": "650 W"
-            },
-            "es": {
-                "Fuente": "36x18W 6 en 1",
-                "Zoom": "10° - 60°",
-                "Pan": "540°",
-                "Tilt": "270°",
-                "Control": "DMX 16/24 ch",
-                "Consumo": "650 W"
-            }
+            "en": "Give a stage a rich colour wash that can change with each song or scene. Moving-head control and motorised zoom make this fixture useful for live music, theatrical looks and colourful event backdrops.",
+            "es": "Baña el escenario con un potente espectro de color capaz de transformar cada escena o tema musical. Su cabeza móvil con zoom motorizado resulta idónea para directos musicales, montajes teatrales y llamativos fondos escenográficos."
         }
     },
     {
@@ -1625,26 +747,8 @@ window.products = [
         "priceDay": 10,
         "image": "img/inventory/230w_7r.webp",
         "description": {
-            "en": "SHEHDS 230W 7R beam moving head projector producing a razor-sharp, long-throw aerial beam with 14 colors and 17 gobos.",
-            "es": "Cabeza móvil beam SHEHDS 230W 7R con haz ultra definido de largo alcance, rueda de 14 colores y 17 gobos fijos."
-        },
-        "specs": {
-            "en": {
-                "Lamp": "230W 7R",
-                "Beam Angle": "0° - 3.8°",
-                "Colors": "14 + open",
-                "Gobos": "17 static",
-                "Prism": "8-facet",
-                "DMX": "16 / 20 ch"
-            },
-            "es": {
-                "Lámpara": "230W 7R",
-                "Ángulo": "0° - 3.8°",
-                "Colores": "14 + abierto",
-                "Gobos": "17 estáticos",
-                "Prisma": "8 caras",
-                "DMX": "16 / 20 ch"
-            }
+            "en": "Draw crisp beams through the air for club nights, concert builds and dramatic entrances. Colours, gobos and prism effects give this moving head several looks, with haze helping turn the beam paths into part of the show.",
+            "es": "Traza haces concentrados y de largo alcance a través del aire para noches de club, conciertos y aperturas impactantes. Gobos, colores y prismas aportan múltiples recursos visuales, luciendo en todo su esplendor combinados con humo escénico."
         }
     },
         {
@@ -1658,26 +762,8 @@ window.products = [
         "priceDay": 15,
         "image": "img/inventory/PGA_MICS.webp",
         "description": {
-            "en": "Shure PGADRUMKIT complete multi-microphone drum microphone package with tailored clips and XLR cables for live and studio drum reinforcement.",
-            "es": "Kit completo de micrófonos para batería Shure PGADRUMKIT con pinzas y cables XLR para captación en directo y estudio."
-        },
-        "specs": {
-            "en": {
-                "Mics": "6 or 7 mics",
-                "Bass Mic": "PGA52 cardioid",
-                "Snare Mic": "PGA57 dynamic",
-                "Tom Mics": "PGA56 dynamic",
-                "Overheads": "PGA81 condenser",
-                "Accessories": "Clips & cables"
-            },
-            "es": {
-                "Micrófonos": "6 o 7 micros",
-                "Bombo": "PGA52 cardioide",
-                "Caja": "PGA57 dinámico",
-                "Toms": "PGA56 dinámico",
-                "Aéreos": "PGA81 condensador",
-                "Accesorios": "Pinzas y cables"
-            }
+            "en": "Bring the drum kit into the mix with microphones chosen for its different voices. This Shure PGA set suits live bands, rehearsal recordings and showcase gigs, helping capture the punch of the kick and the detail of the kit.",
+            "es": "Microfona la batería al completo con cápsulas optimizadas para cada elemento acústico. Este kit Shure PGA es excelente para bandas en vivo, grabaciones de ensayo y bolos, recogiendo la pegada del bombo y la definición de platos y cajas."
         }
     },
     {
@@ -1691,26 +777,8 @@ window.products = [
         "priceDay": 1.8,
         "image": "img/inventory/sm_58.webp",
         "description": {
-            "en": "Shure SM58 industry-standard dynamic vocal microphone famous for warmth, clarity, and exceptional feedback resistance on live stages.",
-            "es": "Micrófono vocal dinámico estándar de la industria Shure SM58, célebre por su calidez, inteligibilidad y resistencia a acoples."
-        },
-        "specs": {
-            "en": {
-                "Type": "Dynamic",
-                "Pattern": "Cardioid",
-                "Freq Low": "50 Hz",
-                "Freq High": "15 kHz",
-                "Impedance": "300 Ohm",
-                "Connector": "3-pin XLR"
-            },
-            "es": {
-                "Tipo": "Dinámico",
-                "Patrón": "Cardioide",
-                "Freq Baja": "50 Hz",
-                "Freq Alta": "15 kHz",
-                "Impedancia": "300 Ohm",
-                "Conector": "XLR 3 pines"
-            }
+            "en": "Keep the focus on the voice with a familiar handheld microphone for singers, hosts and speakers. The Shure SM58 is a practical choice for live bands, wedding speeches, panel discussions and everyday stage work.",
+            "es": "Mantén la voz en el primer plano con el micrófono de mano más reconocido por artistas, presentadores y ponentes. El Shure SM58 es la opción de máxima confianza para grupos en directo, discursos de boda, conferencias y actuaciones cotidianas."
         }
     },
     {
@@ -1724,26 +792,8 @@ window.products = [
         "priceDay": 15,
         "image": "img/inventory/sonar-115-xi.webp",
         "description": {
-            "en": "HK Audio SONAR 112 Xi active 1200W 12-inch 2-way powered loudspeaker with 24-bit DSP, 3-channel mixer, and Bluetooth stereo streaming.",
-            "es": "Caja autoamplificada HK Audio SONAR 112 Xi de 1200W y 12\" con DSP de 24 bits, mezclador de 3 canales y conectividad Bluetooth estéreo."
-        },
-        "specs": {
-            "en": {
-                "Type": "Active speaker",
-                "LF Driver": "12 in",
-                "HF Driver": "1 in",
-                "Max SPL": "127 dB",
-                "Power": "1200 W",
-                "DSP": "Bluetooth & LCD"
-            },
-            "es": {
-                "Tipo": "Altavoz activo",
-                "Graves": "12 in",
-                "Agudos": "1 in",
-                "SPL Máx": "127 dB",
-                "Potencia": "1200 W",
-                "DSP": "Bluetooth y LCD"
-            }
+            "en": "Move easily between speeches, background music and party playback. This powered SONAR speaker combines onboard mixing with Bluetooth connectivity, making it convenient for presentations, private celebrations and compact mobile sound setups.",
+            "es": "Pasa con total fluidez de conferencias y música ambiental a la fiesta más animada. Esta caja autoamplificada SONAR incorpora mezclador interno y conectividad Bluetooth, aportando gran comodidad a celebraciones privadas, presentaciones y montajes móviles."
         }
     },
     {
@@ -1757,26 +807,8 @@ window.products = [
         "priceDay": 20,
         "image": "img/inventory/UPM-2P.webp",
         "description": {
-            "en": "Meyer Sound UPM-1P / 2P ultra-compact self-powered 2-way loudspeaker delivering high SPL, wide symmetrical coverage, and studio fidelity.",
-            "es": "Altavoz autoamplificado ultracompacto Meyer Sound UPM-1P / 2P de 2 vías con cobertura simétrica amplia y fidelidad de estudio."
-        },
-        "specs": {
-            "en": {
-                "Type": "Active speaker",
-                "LF Drivers": "2x 5 in",
-                "HF Driver": "1 in",
-                "Max SPL": "123 dB",
-                "Coverage": "80° x 60°",
-                "Power": "350 W"
-            },
-            "es": {
-                "Tipo": "Altavoz activo",
-                "Graves": "2x 5 in",
-                "Agudos": "1 in",
-                "SPL Máx": "123 dB",
-                "Cobertura": "80° x 60°",
-                "Potencia": "350 W"
-            }
+            "en": "Add focused sound reinforcement where a larger speaker would be visually intrusive. This compact Meyer Sound cabinet suits front fills, theatre spaces, corporate presentations and local monitoring, helping bring detail to specific listening areas.",
+            "es": "Aporta refuerzo sonoro de alta fidelidad allí donde una caja acústica grande resultaría intrusiva. Este recinto compacto de Meyer Sound es perfecto para front fills, salas de teatro, presentaciones y monitorización local, garantizando máxima inteligibilidad."
         }
     },
     {
@@ -1790,22 +822,8 @@ window.products = [
         "priceDay": 1,
         "image": "img/inventory/XLR.webp",
         "description": {
-            "en": "Professional balanced 3-pin XLR microphone and audio signal cable with heavy-duty connectors and low-noise shielding (3m / 5m / 7m).",
-            "es": "Cable de señal de audio balanceado XLR de 3 pines profesional con blindaje silencioso y conectores resistentes (3m / 5m / 7m)."
-        },
-        "specs": {
-            "en": {
-                "Connectors": "3-pin XLR M/F",
-                "Length": "3 / 5 / 7 m",
-                "Conductors": "OFC copper",
-                "Shielding": "Braided copper"
-            },
-            "es": {
-                "Conectores": "XLR 3 pines M/H",
-                "Longitud": "3 / 5 / 7 m",
-                "Conductores": "Cobre OFC",
-                "Blindaje": "Malla de cobre"
-            }
+            "en": "Connect microphones, mixers and compatible powered speakers with balanced audio cabling. A choice of three, five or seven metres helps keep stage patching tidy without leaving every connection stretched or buried in excess cable.",
+            "es": "Conecta micrófonos, mesas de sonido y cajas acústicas con señal de audio balanceada y libre de interferencias. La disponibilidad en tres, cinco o siete metros permite realizar un cableado limpio en el escenario sin tiradas tensas ni cables sobrantes."
         }
     },
     {
@@ -1819,22 +837,8 @@ window.products = [
         "priceDay": 2,
         "image": "img/inventory/audibax_truss_claw.webp",
         "description": {
-            "en": "Audibax heavy-duty aluminum truss clamp trigger claw rated for 100 kg loads on standard 48-51mm truss tubes.",
-            "es": "Garra clamp de aluminio de alta resistencia Audibax para truss, certificada para cargas de hasta 100 kg en tubos de 48-51 mm."
-        },
-        "specs": {
-            "en": {
-                "Load Capacity": "100 kg WLL",
-                "Tube Diameter": "48 - 51 mm",
-                "Material": "Cast aluminum",
-                "Fixing": "M10 bolt"
-            },
-            "es": {
-                "Capacidad": "100 kg WLL",
-                "Diámetro tubo": "48 - 51 mm",
-                "Material": "Aluminio fundido",
-                "Fijación": "Tornillo M10"
-            }
+            "en": "Mount compatible lighting fixtures to truss with a clamp sized for 48–51 mm tubing. A useful rigging component for concert lights, exhibition rigs and DJ setups where fixture positions need to be clearly planned.",
+            "es": "Fija focos y efectos en estructuras de truss de forma segura gracias a esta garra para tubos de 48 a 51 mm. Un componente esencial para montajes de iluminación en conciertos, ferias y cabinas de DJ."
         }
     },
     {
@@ -1848,22 +852,8 @@ window.products = [
         "priceDay": 10,
         "image": "img/inventory/gravity_stand.webp",
         "description": {
-            "en": "Gravity LS 431 B heavy-duty lighting and speaker stand with square steel base for stable mounting in compact footprint environments.",
-            "es": "Soporte para iluminación y altavoces Gravity LS 431 B con base plana de acero pesada para montaje seguro ocupando el mínimo espacio."
-        },
-        "specs": {
-            "en": {
-                "Max Height": "2.40 m",
-                "Base Weight": "14 kg",
-                "Load Capacity": "20 kg",
-                "Mounting": "M10 / 35mm"
-            },
-            "es": {
-                "Altura máxima": "2.40 m",
-                "Peso base": "14 kg",
-                "Capacidad": "20 kg",
-                "Fijación": "M10 / 35mm"
-            }
+            "en": "Place a compatible light or speaker on a clean, flat-base stand that suits presentation spaces and wedding venues. Adjustable height helps position the equipment while avoiding the spread of a conventional tripod around the base.",
+            "es": "Coloca focos o cajas de sonido sobre un pie de base cuadrada plana, idóneo para espacios de diseño, presentaciones y salones de boda. Su mástil extensible ajusta la altura sin el estorbo visual ni los tropiezos de un trípode convencional."
         }
     },
     {
@@ -1877,22 +867,8 @@ window.products = [
         "priceDay": 10,
         "image": "img/inventory/Truss.webp",
         "description": {
-            "en": "Showtec 1.5-meter straight aluminum truss segment designed for stage roofs, exhibition structures, and lighting rigs.",
-            "es": "Tramo recto de truss de aluminio de 1,5 metros Showtec para estructuras de escenario, stands y puentes de luces."
-        },
-        "specs": {
-            "en": {
-                "Length": "1500 mm",
-                "Tube Diameter": "50 mm",
-                "Alloy": "EN AW-6082 T6",
-                "Connection": "Conical"
-            },
-            "es": {
-                "Longitud": "1500 mm",
-                "Diámetro tubo": "50 mm",
-                "Aleación": "EN AW-6082 T6",
-                "Conexión": "Cónica"
-            }
+            "en": "Fine-tune a truss layout when a full two-metre section is too long. This 1.5-metre straight section helps shape compatible lighting structures, exhibition stands and stage frames around the available space.",
+            "es": "Ajusta las medidas de la estructura de truss cuando un tramo de dos metros resulta excesivo. Este módulo recto de 1,5 metros facilita la adaptación precisa de puentes de luces, stands y pórticos al espacio del recinto."
         }
     },
     {
@@ -1906,22 +882,8 @@ window.products = [
         "priceDay": 3,
         "image": "img/inventory/Schucko_3_socket_black.webp",
         "description": {
-            "en": "Heavy-duty 3-way black Schuko power distribution strip for stage, DJ booth, and lighting equipment mains supply.",
-            "es": "Regleta de distribución de corriente Schuko negra de 3 tomas de alta resistencia para escenario, cabina DJ y equipos de iluminación."
-        },
-        "specs": {
-            "en": {
-                "Outlets": "3x Schuko 16A",
-                "Cable": "3G1.5 mm²",
-                "Max Power": "3680 W",
-                "Color": "Black"
-            },
-            "es": {
-                "Tomas": "3x Schuko 16A",
-                "Cable": "3G1.5 mm²",
-                "Potencia máx": "3680 W",
-                "Color": "Negro"
-            }
+            "en": "Bring three local power connections to a DJ booth, control desk or equipment position. The black finish blends into stage setups and keeps short equipment connections grouped in one place.",
+            "es": "Dispone de tres tomas de corriente próximas en cabinas de DJ, mesas de control o zonas de instrumentos. Su acabado en color negro se camufla discretamente sobre el escenario, manteniendo las tomas agrupadas."
         }
     },
     {
@@ -1935,22 +897,8 @@ window.products = [
         "priceDay": 3,
         "image": "img/inventory/Schucko_3_socket_blue.webp",
         "description": {
-            "en": "Durable 3-way blue Schuko power extension block with grounded sockets for live sound, backline, and stage equipment.",
-            "es": "Base múltiple Schuko de 3 tomas azul resistente con toma de tierra para backline, sonido y escenario."
-        },
-        "specs": {
-            "en": {
-                "Outlets": "3x Schuko 16A",
-                "Rating": "16A / 230V",
-                "Max Power": "3680 W",
-                "Color": "Blue / Black"
-            },
-            "es": {
-                "Tomas": "3x Schuko 16A",
-                "Capacidad": "16A / 230V",
-                "Potencia máx": "3680 W",
-                "Color": "Azul / Negro"
-            }
+            "en": "Group three Schuko power connections where your backline or technical equipment needs them. The blue finish makes this distribution strip easy to identify during setup, equipment changes and pack-down.",
+            "es": "Agrupa tres conexiones Schuko donde lo requieran los equipos técnicos o el backline. Su color azul facilita una rápida localización e identificación durante el montaje, las actuaciones y el desmontaje."
         }
     },
     {
@@ -1964,22 +912,8 @@ window.products = [
         "priceDay": 3,
         "image": "img/inventory/Shucko_5_socket.webp",
         "description": {
-            "en": "Professional 5-way Schuko multi-socket power distribution box for rack systems, stage power feeds, and production desks.",
-            "es": "Base múltiple Schuko de 5 tomas profesional para sistemas en rack, acometidas de escenario y mesas de control."
-        },
-        "specs": {
-            "en": {
-                "Outlets": "5x Schuko 16A",
-                "Rating": "16A / 230V",
-                "Max Power": "3680 W",
-                "Housing": "Impact polymer"
-            },
-            "es": {
-                "Tomas": "5x Schuko 16A",
-                "Capacidad": "16A / 230V",
-                "Potencia máx": "3680 W",
-                "Carcasa": "Antichoque"
-            }
+            "en": "Keep a busy control desk or equipment rack organised with five local Schuko connections. Useful for mixers, playback devices and supporting electronics that need a shared power point within the circuit's total capacity.",
+            "es": "Mantén despejados y ordenados los puestos de control o racks de equipos con cinco tomas Schuko agrupadas. Ideal para mesas, reproductores y periféricos que comparten alimentación sin sobrecargar el circuito."
         }
     },
     {
@@ -1993,22 +927,8 @@ window.products = [
         "priceDay": 20,
         "image": "img/inventory/TENT_3x3.webp",
         "description": {
-            "en": "Heavy-duty 3x3m pop-up folding tent / gazebo for outdoor events, DJ booths, FOH sound positions, and weather protection.",
-            "es": "Carpa plegable profesional de 3x3m de apertura rápida para eventos al aire libre, cabinas DJ, puestos de control FOH y protección climática."
-        },
-        "specs": {
-            "en": {
-                "Dimensions": "3.0 x 3.0 m",
-                "Frame": "Aluminum scissor",
-                "Canopy": "Waterproof UV",
-                "Setup": "Pop-up accordion"
-            },
-            "es": {
-                "Dimensiones": "3.0 x 3.0 m",
-                "Estructura": "Aluminio acordeón",
-                "Lona": "Impermeable UV",
-                "Montaje": "Apertura rápida"
-            }
+            "en": "Create a defined three-by-three-metre space for event check-in, a technical desk or a temporary backstage station. The folding frame makes it a practical shelter option for outdoor event layouts with limited setup time.",
+            "es": "Monta un espacio cubierto de tres por tres metros para acreditaciones, puesto de control técnico o zona de descanso en backstage. Su estructura plegable la convierte en una solución práctica y rápida para exteriores con poco tiempo de montaje."
         }
     },
     {
@@ -2022,26 +942,8 @@ window.products = [
         "priceDay": 40,
         "image": "img/inventory/ALLENandHEAT_XONE_96.webp",
         "description": {
-            "en": "Allen & Heath Xone:96 flagship 6+2 channel analog DJ mixer with dual 32-bit USB soundcards, 4-band EQ, and dual VCF filters with CRUNCH harmonic distortion.",
-            "es": "Mesa de mezclas analógica de referencia Allen & Heath Xone:96 de 6+2 canales con doble tarjeta de sonido USB de 32 bits, ecualizador de 4 bandas y filtros VCF con distorsión armónica CRUNCH."
-        },
-        "specs": {
-            "en": {
-                "Channels": "6 + 2 ch",
-                "EQ": "4-band parametric",
-                "Audio Interface": "Dual 32-bit USB",
-                "Filters": "Dual Xone VCF",
-                "Crossfader": "Mini innoFADER",
-                "Outputs": "XLR / TRS / Booth"
-            },
-            "es": {
-                "Canales": "6 + 2 ch",
-                "EQ": "4 bandas",
-                "Interfaz": "Doble USB 32 bits",
-                "Filtros": "Doble VCF Xone",
-                "Crossfader": "Mini innoFADER",
-                "Salidas": "XLR / TRS / Booth"
-            }
+            "en": "Give DJs detailed control over long blends and layered sets with the Xone:96 analogue mixer. Four-band EQ, Xone filters and dual USB interfaces suit electronic music nights and hybrid performances that combine decks with computer audio.",
+            "es": "Brinda a los DJs un control analógico excepcional para sesiones profundas, mezclas extendidas y directos híbridos. Su ecualización de cuatro bandas, filtros Xone duales y dos tarjetas de sonido USB la convierten en un referente para música electrónica."
         }
     },
     {
@@ -2055,26 +957,8 @@ window.products = [
         "priceDay": 45,
         "image": "img/inventory/PIONEER_DJM.webp",
         "description": {
-            "en": "Pioneer DJ professional 4-channel club mixer series (DJM-900NXS2 / DJM-A9 / DJM-V10) with 64-bit mixing processor, Beat FX, Sound Color FX, and dual USB connectivity.",
-            "es": "Gama de mesas de mezclas profesionales de 4 canales Pioneer DJ (DJM-900NXS2 / DJM-A9 / DJM-V10) con procesamiento de 64 bits, Beat FX, Sound Color FX y doble conexión USB."
-        },
-        "specs": {
-            "en": {
-                "Channels": "4 audio + 2 mic",
-                "Processor": "64-bit digital",
-                "Sound Color FX": "6 presets",
-                "Beat FX": "14 effects",
-                "Audio Interface": "Dual USB",
-                "Outputs": "XLR / RCA / Digital"
-            },
-            "es": {
-                "Canales": "4 audio + 2 mic",
-                "Procesador": "64 bits digital",
-                "Sound Color FX": "6 efectos",
-                "Beat FX": "14 efectos",
-                "Interfaz": "Doble USB",
-                "Salidas": "XLR / RCA / Digital"
-            }
+            "en": "Put a familiar Pioneer DJ mixer at the heart of your booth for club events, private parties and guest performances. Choose the DJM model that matches your artist's workflow, source connections and effects requirements.",
+            "es": "Sitúa una mesa Pioneer DJ en el corazón de la cabina para sesiones de club, fiestas privadas y DJs invitados. Selecciona el modelo que mejor responda al estilo del artista, conexiones de reproductores y necesidades de efectos."
         }
     },
     {
@@ -2088,26 +972,8 @@ window.products = [
         "priceDay": 25,
         "image": "img/inventory/PIONEER_RMX-1000.webp",
         "description": {
-            "en": "Pioneer RMX-1000 all-in-one professional DJ remix station and effects unit combining Scene FX, Isolator FX, X-Pad sample triggers, and Release FX.",
-            "es": "Módulo procesador de efectos y sampler para DJ Pioneer RMX-1000 con efectos Scene FX, Isolator FX, disparador táctil X-Pad y Release FX."
-        },
-        "specs": {
-            "en": {
-                "Scene FX": "10 types",
-                "Isolator FX": "3-band kill",
-                "X-Pad": "Sample roll",
-                "Audio": "24-bit / 48kHz",
-                "Software": "remixbox / VST",
-                "Connectivity": "RCA / 6.3mm / USB"
-            },
-            "es": {
-                "Scene FX": "10 tipos",
-                "Isolator FX": "Corte 3 bandas",
-                "X-Pad": "Sampler táctil",
-                "Audio": "24 bits / 48kHz",
-                "Software": "remixbox / VST",
-                "Conectividad": "RCA / Jack / USB"
-            }
+            "en": "Make transitions and breakdowns part of the performance with hands-on effects and sampling. The RMX-1000 adds another creative layer to a compatible DJ setup, suited to club sets and showcases that call for live remixing.",
+            "es": "Convierte las transiciones y bajadas en parte activa de la actuación gracias al control táctil de efectos y samplers. El RMX-1000 añade una potente capa creativa a la cabina de DJ, ideal para actuaciones que buscan remezclas en directo."
         }
     },
     {
@@ -2121,26 +987,8 @@ window.products = [
         "priceDay": 50,
         "image": "img/inventory/PIONEER_XDJ.webp",
         "description": {
-            "en": "Pioneer XDJ professional all-in-one DJ system (XDJ-RX3 / XDJ-XZ) featuring full-size club jog wheels, color touchscreen, and multi-deck standalone USB performance.",
-            "es": "Sistema DJ todo-en-uno profesional Pioneer XDJ (XDJ-RX3 / XDJ-XZ) con jog wheels profesionales, pantalla táctil a color y reproducción autónoma por USB."
-        },
-        "specs": {
-            "en": {
-                "Channels": "2 to 4 ch",
-                "Display": "7 - 10.1 in Touch",
-                "Media": "Dual USB playback",
-                "Jog Wheels": "Full size LCD",
-                "Performance Pads": "8 per deck",
-                "Software": "rekordbox / Serato"
-            },
-            "es": {
-                "Canales": "2 a 4 ch",
-                "Pantalla": "7 - 10.1 in Táctil",
-                "Medios": "Doble puerto USB",
-                "Jog Wheels": "Tamaño real LCD",
-                "Pads": "8 por reproductor",
-                "Software": "rekordbox / Serato"
-            }
+            "en": "Bring decks and mixing together in a compact all-in-one DJ setup. USB playback makes the XDJ range a practical choice for private parties, mobile events and smaller booths where a streamlined layout matters.",
+            "es": "Integra reproductores y mesa en una solución todo en uno cómoda y portátil. La reproducción directa por USB hace de los sistemas XDJ una elección idónea para eventos móviles, celebraciones privadas y cabinas que buscan sencillez sin renunciar a calidad."
         }
     },
     {
@@ -2154,26 +1002,8 @@ window.products = [
         "priceDay": 50,
         "image": "img/inventory/ALPHA_THETA_CDJ_3000.webp",
         "description": {
-            "en": "Pioneer DJ / AlphaTheta CDJ-3000 professional club flagship multi-player powered by MPU processor with 9-inch HD touchscreen, Key Sync, and Touch Preview.",
-            "es": "Reproductor profesional de cabina Pioneer DJ / AlphaTheta CDJ-3000 con procesador MPU avanzado, pantalla táctil HD de 9 pulgadas, Key Sync y Touch Preview."
-        },
-        "specs": {
-            "en": {
-                "Screen": "9 in HD Touch",
-                "Processor": "MPU multi-core",
-                "Audio": "96kHz / 32-bit",
-                "Jog Wheel": "Ultra smooth LCD",
-                "Hot Cues": "8 buttons",
-                "Link": "Gigabit Pro DJ"
-            },
-            "es": {
-                "Pantalla": "9 in HD Táctil",
-                "Procesador": "MPU multinúcleo",
-                "Audio": "96kHz / 32 bits",
-                "Jog Wheel": "Tacto suave LCD",
-                "Hot Cues": "8 botones",
-                "Link": "Gigabit Pro DJ"
-            }
+            "en": "Give DJs a detailed view of their music and direct access to performance controls. The CDJ-3000's large touchscreen and dedicated hot cues suit festival booths, club nights and guest sets built around a modern Pioneer DJ workflow.",
+            "es": "Ofrece a los DJs una visión completa de sus pistas y acceso instantáneo a los controles de directo. La gran pantalla táctil y los botones hot cue dedicados del CDJ-3000 son el estándar actual en festivales, clubes y escenarios profesionales."
         }
     },
     {
@@ -2187,26 +1017,8 @@ window.products = [
         "priceDay": 15,
         "image": "img/inventory/Acoustic_Control_par_182_cob.webp",
         "description": {
-            "en": "Acoustic Control high-power 180W COB RGB LED par light with broad 80° beam angle for smooth stage and venue wash.",
-            "es": "Foco par LED COB RGB de 180W Acoustic Control con amplio haz de 80° para bañado uniforme de escenarios y recintos."
-        },
-        "specs": {
-            "en": {
-                "Light Source": "200W COB LED",
-                "Color": "RGB 3-in-1",
-                "Beam Angle": "60° flood",
-                "Control": "DMX 3/7 ch",
-                "Dimmer": "0 - 100% linear",
-                "Power": "200 W"
-            },
-            "es": {
-                "Fuente": "LED COB 200W",
-                "Color": "RGB 3 en 1",
-                "Ángulo": "60° abierto",
-                "Control": "DMX 3/7 ch",
-                "Dimmer": "0 - 100% lineal",
-                "Consumo": "200 W"
-            }
+            "en": "Fill a stage or event backdrop with a broad wash of colour. This COB LED PAR suits live performances, exhibition spaces and themed parties where an even colour field helps bring the whole setting together.",
+            "es": "Inunda el escenario o fondo de sala con un baño de luz homogéneo y vibrante. Este foco PAR LED COB es idóneo para directos, stands y fiestas temáticas donde una cobertura uniforme de color realza el entorno visual."
         }
     },
     {
@@ -2220,26 +1032,8 @@ window.products = [
         "priceDay": 20,
         "image": "img/inventory/BEAM_Z_Beamz_RB90.webp",
         "description": {
-            "en": "BeamZ RB90 Deco Retro Blinder combining vintage warm white tungsten glow with colorful RGB backlight chases.",
-            "es": "Cegadora BeamZ RB90 Deco Retro que combina luz cálida vintage de tungsteno con persecuciones RGB en retroiluminación."
-        },
-        "specs": {
-            "en": {
-                "Light Source": "6x10W RGBW",
-                "Rotation": "Infinite Pan/Tilt",
-                "Beam Angle": "4° tight beam",
-                "Control": "DMX 14/16 ch",
-                "Dimmer": "0 - 100%",
-                "Power": "80 W"
-            },
-            "es": {
-                "Fuente": "6x10W RGBW",
-                "Rotación": "Pan/Tilt continuo",
-                "Ángulo": "4° concentrado",
-                "Control": "DMX 14/16 ch",
-                "Dimmer": "0 - 100%",
-                "Consumo": "80 W"
-            }
+            "en": "Give your stage a warm retro look with amber light and colourful LED background effects. The RB90 works as both lighting and visible set decoration for live bands, DJ booths and vintage-inspired event designs.",
+            "es": "Viste el escenario con una cálida estética retro combinada con atractivos halos de color LED. El RB90 actúa como foco de acento y elemento decorativo escénico para bandas en directo, cabinas de DJ y eventos con personalidad propia."
         }
     },
     {
@@ -2253,26 +1047,8 @@ window.products = [
         "priceDay": 25,
         "image": "img/inventory/BEAM_Z_BLAZE_FOG_3500.webp",
         "description": {
-            "en": "BeamZ Blaze 3500 high-power vertical / horizontal illuminated geyser fogger with 48 high-output RGBA LEDs.",
-            "es": "Máquina de humo géiser iluminada vertical/horizontal BeamZ Blaze 3500 de gran potencia con 48 LEDs RGBA."
-        },
-        "specs": {
-            "en": {
-                "Heater": "3500 W",
-                "LEDs": "48x 4W RGBA",
-                "Smoke Output": "1200 m³/min",
-                "Tank": "3.5 L",
-                "Control": "DMX / Wireless",
-                "Warm-up": "8 min"
-            },
-            "es": {
-                "Calefactor": "3500 W",
-                "LEDs": "48x 4W RGBA",
-                "Salida de humo": "1200 m³/min",
-                "Tanque": "3.5 L",
-                "Control": "DMX / Wireless",
-                "Calentamiento": "8 min"
-            }
+            "en": "Punctuate an entrance, musical drop or finale with a burst of illuminated fog. Built-in colour lighting turns the plume into a visible effect for DJ shows, stage performances and event reveals.",
+            "es": "Realza aperturas, subidas musicales y momentos cumbre con una potente columna de humo iluminada. La luz de color integrada convierte el chorro en un efecto escénico llamativo para espectáculos de DJ, directos y presentaciones."
         }
     },
     {
@@ -2286,22 +1062,8 @@ window.products = [
         "priceDay": 15,
         "image": "img/inventory/BEAM_Z_BUV_463.webp",
         "description": {
-            "en": "BeamZ BUV463 high-output blacklight flood bar featuring 24x3W UV LEDs with 4 independent chase segments.",
-            "es": "Barra de luz negra BeamZ BUV463 de alta potencia con 24 LEDs UV de 3W y 4 secciones independientes de persecución."
-        },
-        "specs": {
-            "en": {
-                "Light Source": "24x 3W UV LEDs",
-                "Wavelength": "395 - 405 nm",
-                "Beam Angle": "65° wash",
-                "Power": "80 W"
-            },
-            "es": {
-                "Fuente": "24x 3W LEDs UV",
-                "Longitud onda": "395 - 405 nm",
-                "Ángulo": "65° baño",
-                "Consumo": "80 W"
-            }
+            "en": "Make fluorescent decorations, costumes and scenic details glow under ultraviolet light. This UV bar is a natural fit for neon parties, themed performances and creative event installations built around blacklight-reactive materials.",
+            "es": "Haz brillar decoraciones, prendas y elementos reactivos bajo luz ultravioleta. Esta barra UV resulta perfecta para fiestas flúor, montajes temáticos e instalaciones creativas diseñadas en torno a materiales fluorescentes."
         }
     },
     {
@@ -2315,22 +1077,8 @@ window.products = [
         "priceDay": 20,
         "image": "img/inventory/BEAM_Z_DMX-192S.webp",
         "description": {
-            "en": "BeamZ DMX-192S compact 192-channel universal DMX controller with 30 banks and 6 programmable chases for stage fixtures.",
-            "es": "Controlador DMX universal compacto BeamZ DMX-192S de 192 canales con 30 bancos y 6 chases programables para iluminación de escenario."
-        },
-        "specs": {
-            "en": {
-                "DMX Channels": "192 ch",
-                "Fixtures": "12 fixtures (16 ch)",
-                "Scenes": "240 scenes",
-                "Chases": "6 chases"
-            },
-            "es": {
-                "Canales DMX": "192 ch",
-                "Equipos": "12 equipos (16 ch)",
-                "Escenas": "240 escenas",
-                "Secuencias": "6 secuencias"
-            }
+            "en": "Run a compact lighting setup with physical faders, stored scenes and programmed chases. This DMX controller suits mobile DJs, small stages and repeat event setups that need straightforward control without a computer-based lighting desk.",
+            "es": "Controla un montaje de iluminación básico mediante faders físicos, memorias guardadas y secuencias automáticas. Este controlador DMX es ideal para DJs móviles, pequeños escenarios y salas que buscan sencillez sin recurrir a un ordenador."
         }
     },
     {
@@ -2344,26 +1092,8 @@ window.products = [
         "priceDay": 25,
         "image": "img/inventory/BEAM_Z_F-1600.webp",
         "description": {
-            "en": "BeamZ F1600 Pro Fazer built into a touring flight case, producing a continuous fine mist to enhance light and laser beams.",
-            "es": "Fazer profesional BeamZ F1600 integrado en flight case, produciendo niebla fina continua para realzar haces de luz y láseres."
-        },
-        "specs": {
-            "en": {
-                "Heater": "1600 W",
-                "Output Type": "Continuous faze",
-                "Tank": "3.2 L",
-                "Control": "DMX 2 ch / Timer",
-                "Warm-up": "3 min",
-                "Housing": "Flightcase"
-            },
-            "es": {
-                "Calefactor": "1600 W",
-                "Tipo emisión": "Niebla continua",
-                "Tanque": "3.2 L",
-                "Control": "DMX 2 ch / Timer",
-                "Calentamiento": "3 min",
-                "Formato": "Flightcase"
-            }
+            "en": "Reveal lighting beams and add depth to a stage with a fine atmospheric mist. This fazer suits live music, DJ events and theatrical looks where the lighting design benefits from visible movement through the air.",
+            "es": "Descubre los haces de luces en el aire y aporta profundidad visual al escenario con una fina bruma ambiental. Esta máquina de niebla ligera (fazer) es ideal para conciertos, sets de DJ y espectáculos que requieren visibilidad constante de los efectos."
         }
     },
     {
@@ -2377,26 +1107,8 @@ window.products = [
         "priceDay": 20,
         "image": "img/inventory/BEAM_Z_Foco_Fresnel_Zoom_200w_Led_RGB.webp",
         "description": {
-            "en": "BeamZ Pro BTF200CZ 200W RGBW LED Fresnel with motorized 15°-60° zoom and rotating barndoors for theater and stage wash.",
-            "es": "Foco Fresnel LED BeamZ Pro BTF200CZ de 200W RGBW con zoom motorizado de 15°-60° y viseras orientables para teatro y bañado de escenario."
-        },
-        "specs": {
-            "en": {
-                "Light Source": "200W COB LED",
-                "Color": "RGBW / Warm White",
-                "Motorized Zoom": "15° - 60°",
-                "CRI": "≥90",
-                "Control": "DMX / Manual",
-                "Power": "220 W"
-            },
-            "es": {
-                "Fuente": "LED COB 200W",
-                "Color": "RGBW / Blanco cálido",
-                "Zoom motorizado": "15° - 60°",
-                "CRI": "≥90",
-                "Control": "DMX / Manual",
-                "Consumo": "220 W"
-            }
+            "en": "Give presenters, performers and scenic areas a soft-edged light that can be shaped to the space. Motorised zoom and colour control make this LED Fresnel useful for theatre, corporate stages and changing event looks.",
+            "es": "Ilumina a ponentes, artistas y elementos escénicos con una luz de bordes suaves ajustable al espacio. El zoom motorizado y la mezcla de color hacen de este Fresnel LED una luminaria muy útil en teatro, conferencias y eventos dinámicos."
         }
     },
     {
@@ -2410,26 +1122,8 @@ window.products = [
         "priceDay": 20,
         "image": "img/inventory/BEAM_Z_MHL_74.webp",
         "description": {
-            "en": "BeamZ MHL74 compact moving head combining a 30W white LED spot with 6x 8W 4-in-1 RGBW wash LEDs for versatile beam and wash effects.",
-            "es": "Cabeza móvil compacta BeamZ MHL74 que combina un haz spot blanco de 30W con 6 LEDs de 8W RGBW 4 en 1 para bañado de color."
-        },
-        "specs": {
-            "en": {
-                "Light Source": "7x 10W 4-in-1",
-                "Color": "RGBW",
-                "Beam Angle": "15° wash",
-                "Pan / Tilt": "540° / 180°",
-                "Control": "DMX 7/12 ch",
-                "Power": "80 W"
-            },
-            "es": {
-                "Fuente": "7x 10W 4 en 1",
-                "Color": "RGBW",
-                "Ángulo": "15° wash",
-                "Pan / Tilt": "540° / 180°",
-                "Control": "DMX 7/12 ch",
-                "Consumo": "80 W"
-            }
+            "en": "Add moving colour to a compact stage or dance floor. This LED wash moving head brings changing positions and coordinated colour looks to mobile DJ events, small live performances and private parties.",
+            "es": "Añade dinamismo y color a pequeños escenarios o pistas de baile. Esta cabeza móvil LED wash proporciona transiciones ágiles de posición y paletas coordinadas de color para DJs móviles, pequeñas bandas y celebraciones privadas."
         }
     },
     {
@@ -2443,26 +1137,8 @@ window.products = [
         "priceDay": 35,
         "image": "img/inventory/BEAM_Z_PANDORA_1600.webp",
         "description": {
-            "en": "BeamZ Pandora 1600 full-color 1.6W RGB laser projector with 25kpps optical scanners, ILDA graphics and DMX show control.",
-            "es": "Proyector láser BeamZ Pandora 1600 RGB de 1,6W a todo color con escáneres ópticos de 25kpps, interfaz ILDA y control DMX."
-        },
-        "specs": {
-            "en": {
-                "Laser Power": "1600 mW RGB",
-                "Scanner": "20 kpps @ 8°",
-                "Patterns": "Built-in ILDA graphics",
-                "Control": "ILDA / DMX 12 ch",
-                "Safety": "Key switch & interlock",
-                "Power": "80 W"
-            },
-            "es": {
-                "Potencia láser": "1600 mW RGB",
-                "Escáner": "20 kpps @ 8°",
-                "Patrones": "Gráficos ILDA",
-                "Control": "ILDA / DMX 12 ch",
-                "Seguridad": "Llave y enclavamiento",
-                "Consumo": "80 W"
-            }
+            "en": "Create colourful laser patterns and dramatic aerial looks for electronic shows and club productions. DMX and ILDA control let the Pandora 1600 become part of a planned laser display operated by a qualified professional.",
+            "es": "Crea figuras gráficas coloridas y espectaculares efectos aéreos para espectáculos electrónicos y montajes de club. El control por DMX e ILDA permite integrar el Pandora 1600 en diseños de láser operados por personal cualificado."
         }
     },
     {
@@ -2476,26 +1152,8 @@ window.products = [
         "priceDay": 15,
         "image": "img/inventory/BEAM_Z_Par_Led_ip65_con_batera_DMX.webp",
         "description": {
-            "en": "BeamZ professional IP65 battery-powered outdoor LED uplight with RGBAW-UV color mixing and integrated Wireless DMX.",
-            "es": "Foco proyector LED a batería BeamZ IP65 para exterior con mezcla de color RGBAW-UV y DMX inalámbrico integrado."
-        },
-        "specs": {
-            "en": {
-                "Light Source": "6x 12W 6-in-1",
-                "Color": "RGBAW-UV",
-                "Battery": "Up to 15 h",
-                "Wireless DMX": "Built-in",
-                "Protection": "IP65 outdoor",
-                "Beam Angle": "22°"
-            },
-            "es": {
-                "Fuente": "6x 12W 6 en 1",
-                "Color": "RGBAW-UV",
-                "Batería": "Hasta 15 h",
-                "DMX Wireless": "Integrado",
-                "Protección": "IP65 intemperie",
-                "Ángulo": "22°"
-            }
+            "en": "Carry your event colours from indoor spaces to outdoor architectural accents. Battery operation, wireless DMX and an IP65-rated housing make this uplight useful for wedding entrances, terraces and venue features where cabling should stay discreet.",
+            "es": "Lleva los colores del evento desde salas interiores hasta fachadas y detalles arquitectónicos al aire libre. La batería, el DMX inalámbrico y su protección IP65 lo hacen perfecto para entradas de boda, terrazas y jardines sin cables a la vista."
         }
     },
     {
@@ -2509,26 +1167,8 @@ window.products = [
         "priceDay": 25,
         "image": "img/inventory/BEAM_Z_S3500.webp",
         "description": {
-            "en": "BeamZ S3500 professional 3500W heavy smoke machine capable of producing over 1200 m³/min for large stages and venues.",
-            "es": "Máquina de humo profesional BeamZ S3500 de 3500W capaz de generar más de 1200 m³/min para grandes escenarios y recintos."
-        },
-        "specs": {
-            "en": {
-                "Heater": "3500 W",
-                "Output": "1217 m³/min",
-                "Tank": "5 L",
-                "Warm-up": "6 min",
-                "Control": "DMX / Wireless",
-                "Power": "3500 W"
-            },
-            "es": {
-                "Calefactor": "3500 W",
-                "Salida": "1217 m³/min",
-                "Tanque": "5 L",
-                "Calentamiento": "6 min",
-                "Control": "DMX / Wireless",
-                "Consumo": "3500 W"
-            }
+            "en": "Build dramatic atmosphere for stage entrances, concert scenes and energetic DJ shows. This high-output fog machine creates visible clouds that give lighting effects more presence and help mark key moments in the performance.",
+            "es": "Genera una densa ambientación visual para entradas teatrales, conciertos y enérgicos shows de DJ. Esta máquina de humo de alta potencia crea nubes volumétricas que hacen destacar los focos e intensifican los momentos clave de la actuación."
         }
     },
     {
@@ -2542,26 +1182,8 @@ window.products = [
         "priceDay": 20,
         "image": "img/inventory/Chauvet_Dj_Intimidator_beam_355_irc.webp",
         "description": {
-            "en": "Chauvet DJ Intimidator Beam 355 IRC high-output 100W LED beam moving head with 3° razor-sharp beam, rotating 8-facet prism, and motorized frost.",
-            "es": "Cabeza móvil beam Chauvet DJ Intimidator Beam 355 IRC de 100W con haz ultraconcentrado de 3°, prisma rotativo de 8 caras y filtro frost motorizado."
-        },
-        "specs": {
-            "en": {
-                "Light Source": "100W white LED",
-                "Beam Angle": "3° tight beam",
-                "Colors": "8 + white",
-                "Gobos": "5 metal + open",
-                "Prism": "8-facet rotating",
-                "Power": "157 W"
-            },
-            "es": {
-                "Fuente": "LED blanco 100W",
-                "Ángulo": "3° concentrado",
-                "Colores": "8 + blanco",
-                "Gobos": "5 metal + abierto",
-                "Prisma": "8 caras rotativo",
-                "Consumo": "157 W"
-            }
+            "en": "Bring sharp moving beams and prism effects to DJ events and live stages. The Intimidator Beam adds focused aerial movement, while colour changes and frost give the lighting operator more ways to vary the look.",
+            "es": "Aporta haces concentrados y llamativos efectos de prisma a sesiones de DJ y escenarios en directo. El Intimidator Beam traza trayectorias nítidas en el aire, mientras que la rueda de color y el filtro frost amplían las variantes visuales."
         }
     },
     {
@@ -2575,26 +1197,8 @@ window.products = [
         "priceDay": 35,
         "image": "img/inventory/DAGE_Dragon_Eyes_-_7x60W_Beam_Wash.webp",
         "description": {
-            "en": "DAGE DA-760 Dragon Eyes 7x60W RGBW moving head beam/wash fixture with rapid 2.5°-50° zoom and individual pixel mapping.",
-            "es": "Cabeza móvil beam/wash DAGE DA-760 Dragon Eyes 7x60W RGBW con zoom ultra rápido de 2,5°-50° y mapeo de píxeles individual."
-        },
-        "specs": {
-            "en": {
-                "Light Source": "7x 60W Osram RGBW",
-                "Motorized Zoom": "2.5° - 50°",
-                "Pixel Control": "Individual",
-                "CCT Range": "2500K - 10000K",
-                "Pan / Tilt": "540° / 270°",
-                "Power": "450 W"
-            },
-            "es": {
-                "Fuente": "7x 60W Osram RGBW",
-                "Zoom motorizado": "2.5° - 50°",
-                "Control píxeles": "Individual",
-                "Rango CCT": "2500K - 10000K",
-                "Pan / Tilt": "540° / 270°",
-                "Consumo": "450 W"
-            }
+            "en": "Switch between tight beams and wider colour washes as the show develops. Individual pixel control adds another layer of patterns, making Dragon Eyes a versatile choice for DJ stages, concert backdrops and dynamic event lighting.",
+            "es": "Alterna entre haces penetrantes y amplios baños de color según evolucione el show. El control individual de píxeles añade atractivas secuencias gráficas, convirtiendo al Dragon Eyes en una opción muy completa para cabinas de DJ y escenarios."
         }
     },
     {
@@ -2608,26 +1212,8 @@ window.products = [
         "priceDay": 40,
         "image": "img/inventory/DAGE_Optimus_Prime_Mega_Beam_420W.webp",
         "description": {
-            "en": "DAGE Optimus Prime 420W touring beam moving head featuring an Osram 420W discharge lamp and massive 186mm projection optics.",
-            "es": "Cabeza móvil beam de gira DAGE Optimus Prime 420W con lámpara de descarga Osram 420W y óptica frontal gigante de 186mm."
-        },
-        "specs": {
-            "en": {
-                "Lamp": "Osram 420W discharge",
-                "Front Lens": "186 mm",
-                "Beam Angle": "1.0° - 1.4°",
-                "Colors": "11 + open",
-                "Gobos": "14 fixed + open",
-                "Prisms": "8-facet rotating"
-            },
-            "es": {
-                "Lámpara": "Osram 420W descarga",
-                "Lente frontal": "186 mm",
-                "Ángulo": "1.0° - 1.4°",
-                "Colores": "11 + abierto",
-                "Gobos": "14 fijos + abierto",
-                "Prismas": "8 caras rotativo"
-            }
+            "en": "Build a bold aerial lighting look for concert stages, festival sets and big musical moments. Its concentrated beam, colour changes and prism effects help create strong visual lines across a suitably hazed performance space.",
+            "es": "Diseña un potente impacto lumínico aéreo para conciertos, festivales y grandes momentos del espectáculo. Su haz ultra concentrado, filtros de color y prismas proyectan líneas de luz rotundas sobre espacios con niebla escénica."
         }
     },
     {
@@ -2641,26 +1227,8 @@ window.products = [
         "priceDay": 60,
         "image": "img/inventory/AMATE_AUDIO_NITID_ARRAY_N208A.webp",
         "description": {
-            "en": "Amate Audio Nitid N208A active 1500W line array element featuring dual 8\" neodymium drivers and onboard DSP touch control.",
-            "es": "Módulo line array activo Amate Audio Nitid N208A de 1500W con dos altavoces de 8\" de neodimio y control táctil DSP integrado."
-        },
-        "specs": {
-            "en": {
-                "Type": "Active line array",
-                "Power": "1500 W Class D",
-                "Max SPL": "136 dB",
-                "Transducers": "2x 8 in + 2.5 in HF",
-                "Freq Low": "78 Hz",
-                "Freq High": "19 kHz"
-            },
-            "es": {
-                "Tipo": "Line array activo",
-                "Potencia": "1500 W Clase D",
-                "SPL Máx": "136 dB",
-                "Transductores": "2x 8 in + 2.5 in HF",
-                "Freq Baja": "78 Hz",
-                "Freq Alta": "19 kHz"
-            }
+            "en": "Build a scalable sound system around the audience and venue. This powered line-array module suits concerts, conferences and festival stages where several cabinets are configured together to deliver planned coverage and clear musical detail.",
+            "es": "Configura un sistema de sonido escalable a la medida de la audiencia y del recinto. Este módulo line array activo es idóneo para conciertos, conferencias y festivales, distribuyendo una cobertura uniforme y una gran definición musical en conjunto."
         }
     },
     {
@@ -2674,26 +1242,8 @@ window.products = [
         "priceDay": 60,
         "image": "img/inventory/AMATE_AUDIO_NITID_ARRAY_N208A.webp",
         "description": {
-            "en": "Amate Audio Nitid N208P passive 1000W 16-ohm line array module engineered for compact touring and permanent installations.",
-            "es": "Módulo line array pasivo Amate Audio Nitid N208P de 1000W y 16 ohmios diseñado para giras compactas e instalaciones permanentes."
-        },
-        "specs": {
-            "en": {
-                "Type": "Passive line array",
-                "Program Power": "1000 W (16 Ohm)",
-                "Max SPL": "136 dB",
-                "Transducers": "2x 8 in + 2.5 in HF",
-                "Freq Low": "78 Hz",
-                "Freq High": "19 kHz"
-            },
-            "es": {
-                "Tipo": "Line array pasivo",
-                "Potencia": "1000 W (16 Ohm)",
-                "SPL Máx": "136 dB",
-                "Transductores": "2x 8 in + 2.5 in HF",
-                "Freq Baja": "78 Hz",
-                "Freq Alta": "19 kHz"
-            }
+            "en": "Expand a compatible line-array system for concerts, conferences and touring productions. This passive module works with suitable external amplification and processing, giving system designers another building block for a tailored audience coverage plan.",
+            "es": "Amplía un sistema line array compatible para conciertos, convenciones y producciones en gira. Este módulo pasivo se asocia con etapas y procesadores externos adecuados, ofreciendo una pieza modular para coberturas acústicas planificadas."
         }
     },
     {
@@ -2707,26 +1257,8 @@ window.products = [
         "priceDay": 20,
         "image": "img/inventory/AMATE_AUDIO_NITID_S12.webp",
         "description": {
-            "en": "Amate Audio Nitid N12 active 1000W 12-inch 2-way multifunctional loudspeaker / stage monitor with touchscreen DSP control.",
-            "es": "Caja acústica / monitor activo multifunción Amate Audio Nitid N12 de 1000W y 12\" con pantalla táctil LCD y DSP de 48 bits."
-        },
-        "specs": {
-            "en": {
-                "Type": "Active speaker",
-                "Power": "1000 W Class D",
-                "Max SPL": "131 dB",
-                "Transducers": "12 in LF + 1.4 in HF",
-                "Freq Low": "53 Hz",
-                "Freq High": "19 kHz"
-            },
-            "es": {
-                "Tipo": "Altavoz activo",
-                "Potencia": "1000 W Clase D",
-                "SPL Máx": "131 dB",
-                "Transductores": "12 in LF + 1.4 in HF",
-                "Freq Baja": "53 Hz",
-                "Freq Alta": "19 kHz"
-            }
+            "en": "Cover a presentation, live performance or monitor position with a versatile powered 12-inch speaker. Onboard DSP helps adapt it to the job, making the N12 useful across corporate events, band stages and smaller sound systems.",
+            "es": "Cubre conferencias, música en vivo o posiciones de monitor con un polivalente altavoz autoamplificado de 12 pulgadas. Su DSP integrado optimiza la respuesta según el uso en eventos corporativos, escenarios o sistemas de refuerzo."
         }
     },
     {
@@ -2740,26 +1272,8 @@ window.products = [
         "priceDay": 35,
         "image": "img/inventory/AMATE_AUDIO_NITID_N18W.webp",
         "description": {
-            "en": "Amate Audio Nitid N18W 2500W high-power active 18\" subwoofer delivering high sound pressure down to 35 Hz.",
-            "es": "Subwoofer activo de alta potencia Amate Audio Nitid N18W de 2500W y 18\" con respuesta de graves hasta 35 Hz."
-        },
-        "specs": {
-            "en": {
-                "Type": "Active sub",
-                "Power": "2500 W Class D",
-                "Max SPL": "136 dB",
-                "Driver": "18 in (4 in VC)",
-                "Freq Low": "35 Hz",
-                "Freq High": "140 Hz"
-            },
-            "es": {
-                "Tipo": "Sub activo",
-                "Potencia": "2500 W Clase D",
-                "SPL Máx": "136 dB",
-                "Altavoz": "18 in (bobina 4 in)",
-                "Freq Baja": "35 Hz",
-                "Freq Alta": "140 Hz"
-            }
+            "en": "Give a compatible PA the low-end foundation for dance music and live bands. This powered 18-inch subwoofer adds depth and impact to DJ events, concerts and celebrations where bass is part of the experience.",
+            "es": "Proporciona a sistemas de sonido compatibles el sustento de graves necesario para música de baile y directos. Este subwoofer autoamplificado de 18 pulgadas añade profundidad y pegada a sets de DJ, conciertos y fiestas animadas."
         }
     },
     {
@@ -2773,26 +1287,8 @@ window.products = [
         "priceDay": 20,
         "image": "img/inventory/AMATE_AUDIO_NITID_S12.webp",
         "description": {
-            "en": "Amate Audio Nitid S12 active 1000W 12-inch 2-way point source speaker with built-in DSP touchscreen control for FOH reinforcement and stage monitoring.",
-            "es": "Caja acústica activa de 12 pulgadas y 1000W Amate Audio Nitid S12 con control DSP mediante pantalla táctil para P.A. y monitoreo de escenario."
-        },
-        "specs": {
-            "en": {
-                "Type": "Active speaker",
-                "Power": "1000 W Class D",
-                "Max SPL": "131 dB",
-                "Transducers": "12 in LF + 1.4 in HF",
-                "Freq Low": "53 Hz",
-                "Freq High": "19 kHz"
-            },
-            "es": {
-                "Tipo": "Altavoz activo",
-                "Potencia": "1000 W Clase D",
-                "SPL Máx": "131 dB",
-                "Transductores": "12 in LF + 1.4 in HF",
-                "Freq Baja": "53 Hz",
-                "Freq Alta": "19 kHz"
-            }
+            "en": "Keep one speaker option flexible across event formats. The powered S12 can support main sound reinforcement or stage monitoring, with onboard processing for presentations, live acts and mobile productions that need clear, adaptable sound.",
+            "es": "Mantén una alternativa acústica versátil para múltiples formatos de evento. El recinto activo S12 funciona como refuerzo principal o monitor de escenario, con procesamiento integrado para ponencias, directos y producciones itinerantes."
         }
     },
     {
@@ -2806,26 +1302,8 @@ window.products = [
         "priceDay": 65,
         "image": "img/inventory/AMATE_AUDIO_XCELLENCE_X102FD.webp",
         "description": {
-            "en": "Amate Audio Xcellence X102FD active 3000W dual 10-inch point source loudspeaker delivering extraordinary power, clarity, and Dante network connectivity.",
-            "es": "Caja activa de fuente puntual Amate Audio Xcellence X102FD de 3000W con doble altavoz de 10 pulgadas, máxima claridad y compatibilidad con red Dante."
-        },
-        "specs": {
-            "en": {
-                "Type": "Active point source",
-                "Power": "3000 W Class D",
-                "Max SPL": "139 dB",
-                "Transducers": "2x 10 in + 3 in HF",
-                "Coverage": "80° x 60°",
-                "Network": "Dante / Ethernet"
-            },
-            "es": {
-                "Tipo": "Puntual activo",
-                "Potencia": "3000 W Clase D",
-                "SPL Máx": "139 dB",
-                "Transductores": "2x 10 in + 3 in HF",
-                "Cobertura": "80° x 60°",
-                "Red": "Dante / Ethernet"
-            }
+            "en": "Bring clear, substantial sound to live music and demanding corporate productions. This dual-10-inch powered point-source speaker suits main PA and reinforcement roles where controlled coverage and a compact cabinet format are important.",
+            "es": "Ofrece un sonido nítido y de gran contundencia para música en directo y eventos corporativos exigentes. Este recinto autoamplificado de doble 10 pulgadas es perfecto como sistema principal o de relleno donde se busca dispersión controlada y un formato compacto."
         }
     },
     {
@@ -2839,26 +1317,8 @@ window.products = [
         "priceDay": 65,
         "image": "img/inventory/AMATE_AUDIO_XCELLENCE_X218WF.webp",
         "description": {
-            "en": "Amate Audio Xcellence X218WF flyable dual 18-inch 5000W active subwoofer delivering crushing 141 dB SPL sub-bass performance.",
-            "es": "Subwoofer volable doble 18\" activo Amate Audio Xcellence X218WF de 5000W capaz de entregar hasta 141 dB SPL pico."
-        },
-        "specs": {
-            "en": {
-                "Type": "Active sub flyable",
-                "Power": "5000 W Class D",
-                "Max SPL": "141 dB",
-                "Drivers": "2x 18 in neodymium",
-                "Freq Low": "28 Hz",
-                "Freq High": "120 Hz"
-            },
-            "es": {
-                "Tipo": "Sub activo volable",
-                "Potencia": "5000 W Clase D",
-                "SPL Máx": "141 dB",
-                "Altavoces": "2x 18 in neodimio",
-                "Freq Baja": "28 Hz",
-                "Freq Alta": "120 Hz"
-            }
+            "en": "Give larger live productions a powerful low-frequency foundation. This dual-18-inch powered subwoofer suits concert and festival systems that need deep bass with impact, as part of a carefully designed full-range PA.",
+            "es": "Dota a producciones de gran formato de unos cimientos de subgraves imponentes. Este subwoofer autoamplificado con doble altavoz de 18 pulgadas está diseñado para conciertos y festivales que buscan graves profundos y con máxima pegada."
         }
     },
     {
@@ -2872,26 +1332,8 @@ window.products = [
         "priceDay": 65,
         "image": "img/inventory/AMATE_AUDIO_XCELLENCE_X82FD.webp",
         "description": {
-            "en": "Amate Audio Xcellence X82FD active 3000W dual 8-inch high-output point source speaker designed for high-fidelity installations and touring sound.",
-            "es": "Altavoz activo de alta gama Amate Audio Xcellence X82FD de 3000W con doble altavoz de 8 pulgadas diseñado para touring e instalaciones de alta fidelidad."
-        },
-        "specs": {
-            "en": {
-                "Type": "Active speaker",
-                "Power": "3000 W Class D",
-                "Max SPL": "137 dB",
-                "Transducers": "2x 8 in + 3 in HF",
-                "Freq Low": "60 Hz",
-                "Freq High": "20 kHz"
-            },
-            "es": {
-                "Tipo": "Altavoz activo",
-                "Potencia": "3000 W Clase D",
-                "SPL Máx": "137 dB",
-                "Transductores": "2x 8 in + 3 in HF",
-                "Freq Baja": "60 Hz",
-                "Freq Alta": "20 kHz"
-            }
+            "en": "Bring detailed sound to corporate stages, live performances and carefully planned reinforcement positions. The dual-8-inch powered format offers a compact option when the production needs musical clarity without an oversized cabinet in view.",
+            "es": "Aporta un sonido detallado y fiel a escenarios corporativos, recitales y puntos de refuerzo acústico de alta calidad. Su configuración activa con doble 8 pulgadas destaca cuando se precisa precisión sin un recinto voluminoso en el campo visual."
         }
     },
     {
@@ -2905,26 +1347,8 @@ window.products = [
         "priceDay": 65,
         "image": "img/inventory/AMATE_AUDIO_XCELLENCE_XW118.webp",
         "description": {
-            "en": "Amate Audio Xcellence XW118 high-end touring 2500W active 18\" subwoofer delivering precise, punchy low frequencies.",
-            "es": "Subwoofer activo touring Amate Audio Xcellence XW118 de 2500W y 18\" con sonido de graves potente y definición excepcional."
-        },
-        "specs": {
-            "en": {
-                "Type": "Active sub",
-                "Power": "2500 W Class D",
-                "Max SPL": "138 dB",
-                "Driver": "18 in neodymium",
-                "Freq Low": "32 Hz",
-                "Freq High": "130 Hz"
-            },
-            "es": {
-                "Tipo": "Sub activo",
-                "Potencia": "2500 W Clase D",
-                "SPL Máx": "138 dB",
-                "Altavoz": "18 in neodimio",
-                "Freq Baja": "32 Hz",
-                "Freq Alta": "130 Hz"
-            }
+            "en": "Add depth and definition to the rhythm section of your event. This powered 18-inch subwoofer complements suitable PA speakers for DJ performances, live bands and touring setups that need a convincing low end.",
+            "es": "Añade peso, cuerpo y definición a la sección rítmica de tu evento. Este subwoofer activo de 18 pulgadas complementa recintos de medios-agudos en actuaciones de DJ, grupos en vivo y directos que precisan una respuesta en graves sólida."
         }
     },
     {
@@ -2938,26 +1362,8 @@ window.products = [
         "priceDay": 12,
         "image": "img/inventory/DBX_DRIVE_RAC_PA2.webp",
         "description": {
-            "en": "dbx DriveRack PA2 complete loudspeaker management system with AutoEQ, Advanced Feedback Suppression, and wireless network setup.",
-            "es": "Sistema completo de gestión y procesado de altavoces dbx DriveRack PA2 con AutoEQ, supresor AFS y control inalámbrico por red."
-        },
-        "specs": {
-            "en": {
-                "Inputs": "2 XLR + 1 RTA",
-                "Outputs": "6 balanced XLR",
-                "Conversion": "24-bit dbx Type IV",
-                "Processing": "AutoEQ / AFS / PEQ",
-                "Control": "Ethernet / App",
-                "Rack": "1U"
-            },
-            "es": {
-                "Entradas": "2 XLR + 1 RTA",
-                "Salidas": "6 XLR balanceadas",
-                "Conversión": "24 bits dbx Type IV",
-                "Procesado": "AutoEQ / AFS / PEQ",
-                "Control": "Ethernet / App",
-                "Rack": "1U"
-            }
+            "en": "Bring crossover, EQ and speaker processing together in one compact rack unit. The DriveRack PA2 helps engineers tune a compatible PA for the room, making it useful for mobile sound systems, live bands and repeat event setups.",
+            "es": "Reúne filtros de cruce, ecualización y procesamiento de altavoces en una única unidad de rack compacta. El DriveRack PA2 ayuda a optimizar y proteger el sistema de sonido según la sala, siendo muy útil para giras, bandas y montajes recurrentes."
         }
     },
     {
@@ -2971,26 +1377,8 @@ window.products = [
         "priceDay": 35,
         "image": "img/inventory/LD_Systems_MAUI_11_G2.webp",
         "description": {
-            "en": "LD Systems MAUI 11 G2 active column PA system with 1000W peak power, wide 120° dispersion, and integrated Bluetooth mixer.",
-            "es": "Sistema de columna activo LD Systems MAUI 11 G2 de 1000W pico, con cobertura homogénea de 120° y mezclador Bluetooth integrado."
-        },
-        "specs": {
-            "en": {
-                "System Type": "Column PA system",
-                "Power": "500W RMS / 1000W",
-                "Max SPL": "124 dB",
-                "Transducers": "3x 6.5 in + 8x 3 in",
-                "Coverage": "120° x 20°",
-                "Connectivity": "Bluetooth / XLR"
-            },
-            "es": {
-                "Tipo": "Columna activa",
-                "Potencia": "500W RMS / 1000W",
-                "SPL Máx": "124 dB",
-                "Transductores": "3x 6.5 in + 8x 3 in",
-                "Cobertura": "120° x 20°",
-                "Conexión": "Bluetooth / XLR"
-            }
+            "en": "Keep the sound setup visually discreet for wedding ceremonies, speeches and acoustic performances. This powered column system combines a slim profile with integrated mixing and Bluetooth playback for compact events that move between voice and music.",
+            "es": "Mantén una presencia estética elegante y discreta en ceremonias de boda, presentaciones y directos acústicos. Este sistema de columna autoamplificado aúna un perfil esbelto con mezclador integrado y reproducción por Bluetooth para eventos íntimos."
         }
     },
     {
@@ -3004,26 +1392,8 @@ window.products = [
         "priceDay": 35,
         "image": "img/inventory/LD_Systems_MAUI_28.webp",
         "description": {
-            "en": "LD Systems MAUI 28 modular all-in-one column PA system featuring dual 8\" subwoofers and a 16-speaker vertical array.",
-            "es": "Sistema de sonido en columna LD Systems MAUI 28 todo-en-uno con doble subwoofer de 8\" y array vertical de 16 altavoces."
-        },
-        "specs": {
-            "en": {
-                "System Type": "Column PA system",
-                "Power": "400W RMS / 800W",
-                "Max SPL": "123 dB",
-                "Transducers": "2x 8 in + 16x 3 in",
-                "Dispersion": "120° horizontal",
-                "Freq Response": "45 Hz - 20 kHz"
-            },
-            "es": {
-                "Tipo": "Columna activa",
-                "Potencia": "400W RMS / 800W",
-                "SPL Máx": "123 dB",
-                "Transductores": "2x 8 in + 16x 3 in",
-                "Dispersión": "120° horizontal",
-                "Respuesta": "45 Hz - 20 kHz"
-            }
+            "en": "Bring music and speech into the room with a slim column system and integrated bass section. A good fit for receptions, acoustic acts and corporate gatherings where the sound equipment should sit comfortably within the event design.",
+            "es": "Llena la estancia de música y voz nítida con un sistema estilizado de columna y base de subgraves integrada. Muy indicado para recepciones, directos acústicos y encuentros de empresa donde el equipamiento debe integrarse con discreción en el espacio."
         }
     },
     {
@@ -3037,26 +1407,8 @@ window.products = [
         "priceDay": 25,
         "image": "img/inventory/MACKIE_THUMP_12.webp",
         "description": {
-            "en": "Mackie Thump 12 active 1300W 12-inch powered loudspeaker delivering proven punchy low-end and dynamic sound for DJs, bands, and parties.",
-            "es": "Caja acústica autoamplificada de 12 pulgadas y 1300W Mackie Thump 12 con graves contundentes y sonido dinámico para DJs, grupos y eventos."
-        },
-        "specs": {
-            "en": {
-                "Type": "Active speaker",
-                "Power": "1300 W Class D",
-                "Max SPL": "126 dB",
-                "Transducers": "12 in LF + 1.4 in HF",
-                "Freq Low": "50 Hz",
-                "Freq High": "23 kHz"
-            },
-            "es": {
-                "Tipo": "Altavoz activo",
-                "Potencia": "1300 W Clase D",
-                "SPL Máx": "126 dB",
-                "Transductores": "12 in LF + 1.4 in HF",
-                "Freq Baja": "50 Hz",
-                "Freq Alta": "23 kHz"
-            }
+            "en": "Bring lively sound to parties, mobile DJ events and small live performances. This powered 12-inch speaker makes a straightforward starting point for a portable PA, with a suitable subwoofer available as the next step for bass-heavy music.",
+            "es": "Aporta un sonido alegre y potente a fiestas, eventos de DJ itinerantes y pequeñas actuaciones en directo. Este altavoz autoamplificado de 12 pulgadas es un excelente punto de partida para sonorizaciones ágiles, ampliable con subwoofers para mayor pegada."
         }
     },
     {
@@ -3070,26 +1422,8 @@ window.products = [
         "priceDay": 35,
         "image": "img/inventory/RCF_EVOX_J9.webp",
         "description": {
-            "en": "RCF EVOX J-series portable column sound system with 1400W peak power, 12\" sub, and FiRPHASE acoustic processing.",
-            "es": "Sistema de columna portátil RCF serie EVOX J con 1400W pico, subwoofer de 12\" y procesamiento acústico FiRPHASE."
-        },
-        "specs": {
-            "en": {
-                "System Type": "Column PA system",
-                "Power": "700W RMS / 1400W",
-                "Max SPL": "128 dB",
-                "Transducers": "12 in LF + 8x 2 in",
-                "Freq Response": "40 Hz - 20 kHz",
-                "DSP": "FiRPHASE"
-            },
-            "es": {
-                "Tipo": "Columna activa",
-                "Potencia": "700W RMS / 1400W",
-                "SPL Máx": "128 dB",
-                "Transductores": "12 in LF + 8x 2 in",
-                "Respuesta": "40 Hz - 20 kHz",
-                "DSP": "FiRPHASE"
-            }
+            "en": "Pair clear vocals with a full musical sound in a streamlined column format. The EVOX J9 suits weddings, corporate receptions and live acts where a compact, unobtrusive PA needs to cover both spoken moments and entertainment.",
+            "es": "Combina voces perfectamente inteligibles con una reproducción musical equilibrada en un práctico formato de columna. El EVOX J9 se adapta a bodas, cócteles de empresa y directos donde se busca un sistema estético y fácil de transportar."
         }
     },
     {
@@ -3103,26 +1437,8 @@ window.products = [
         "priceDay": 25,
         "image": "img/inventory/RCF_RCF_ART_12.webp",
         "description": {
-            "en": "RCF ART 12 active 2-way reference speaker delivering crystal-clear vocals and robust live sound reinforcement.",
-            "es": "Altavoz activo de 2 vías RCF ART 12 con excelente reproducción vocal y refuerzo de sonido profesional en directo."
-        },
-        "specs": {
-            "en": {
-                "Type": "Active speaker",
-                "Power": "700W RMS / 1400W",
-                "Max SPL": "129 dB",
-                "Transducers": "12 in LF + 1 in HF",
-                "Coverage": "90° x 60°",
-                "DSP": "FiRPHASE"
-            },
-            "es": {
-                "Tipo": "Altavoz activo",
-                "Potencia": "700W RMS / 1400W",
-                "SPL Máx": "129 dB",
-                "Transductores": "12 in LF + 1 in HF",
-                "Cobertura": "90° x 60°",
-                "DSP": "FiRPHASE"
-            }
+            "en": "Keep presentations intelligible and live music engaging with a versatile powered 12-inch speaker. An RCF ART cabinet suits corporate events, private celebrations and band setups that need a practical full-range PA building block.",
+            "es": "Consigue discursos claros y música envolvente con un todoterreno autoamplificado de 12 pulgadas. La serie RCF ART es una elección fiable para actos de empresa, fiestas privadas y conciertos de bandas que requieren un equipo versátil y robusto."
         }
     },
     {
@@ -3136,26 +1452,8 @@ window.products = [
         "priceDay": 35,
         "image": "img/inventory/RCF_SUB_15.webp",
         "description": {
-            "en": "RCF SUB 15 active compact 1400W 15-inch bass reflex subwoofer engineered to pair with ART and D-Line speakers.",
-            "es": "Subwoofer activo bass-reflex RCF SUB 15 de 1400W y 15\" diseñado para combinar perfectamente con altavoces RCF ART y D-Line."
-        },
-        "specs": {
-            "en": {
-                "Type": "Active sub",
-                "Power": "700W RMS / 1400W",
-                "Max SPL": "131 dB",
-                "Driver": "15 in (3 in VC)",
-                "Freq Low": "45 Hz",
-                "Freq High": "120 Hz"
-            },
-            "es": {
-                "Tipo": "Sub activo",
-                "Potencia": "700W RMS / 1400W",
-                "SPL Máx": "131 dB",
-                "Altavoz": "15 in (bobina 3 in)",
-                "Freq Baja": "45 Hz",
-                "Freq Alta": "120 Hz"
-            }
+            "en": "Give a compact event PA more depth for DJs, live bands and dance-floor playback. This powered 15-inch subwoofer supports the low end while compatible main speakers handle vocals and musical detail.",
+            "es": "Añade cuerpo y profundidad a sistemas compactos para sesiones de DJ, grupos y música de pista. Este subwoofer autoamplificado de 15 pulgadas refuerza las frecuencias bajas dejando que los altavoces principales se concentren en la voz y los instrumentos."
         }
     },
     {
@@ -3169,26 +1467,8 @@ window.products = [
         "priceDay": 25,
         "image": "img/inventory/YAMAHA_DXR_12.webp",
         "description": {
-            "en": "Yamaha DXR12 1100W 12-inch 2-way active loudspeaker engineered with NEXO acoustic tuning, FIR-X linear phase crossover, and ultra-high output.",
-            "es": "Altavoz activo de 2 vías y 1100W Yamaha DXR12 y 12\" desarrollado junto a NEXO con filtrado FIR-X de fase lineal y gran potencia sonora."
-        },
-        "specs": {
-            "en": {
-                "Type": "Active speaker",
-                "Power": "1100 W Class D",
-                "Max SPL": "132 dB",
-                "Transducers": "12 in LF + 1.4 in HF",
-                "Freq Low": "52 Hz",
-                "Freq High": "20 kHz"
-            },
-            "es": {
-                "Tipo": "Altavoz activo",
-                "Potencia": "1100 W Clase D",
-                "SPL Máx": "132 dB",
-                "Transductores": "12 in LF + 1.4 in HF",
-                "Freq Baja": "52 Hz",
-                "Freq Alta": "20 kHz"
-            }
+            "en": "Handle speech, live vocals and music playback with one versatile powered speaker. The DXR12 suits corporate presentations, band performances and DJ events, either as part of the main PA or in a suitable stage-monitor position.",
+            "es": "Reproduce discursos, voces en directo y música con un altavoz activo de referencia y gran versatilidad. La DXR12 responde con solvencia en conferencias, bandas y actuaciones de DJ, ya sea como sistema frontal o como monitor de escenario."
         }
     },
     {
@@ -3202,26 +1482,8 @@ window.products = [
         "priceDay": 35,
         "image": "img/inventory/YAMAHA_DXS15.webp",
         "description": {
-            "en": "Yamaha DXS15 high-output 950W powered 15-inch band-pass subwoofer equipped with dynamic D-XSUB processing.",
-            "es": "Subwoofer autoamplificado de 15\" Yamaha DXS15 de 950W con caja acústica pasabanda y procesador dinámico D-XSUB."
-        },
-        "specs": {
-            "en": {
-                "Type": "Active sub",
-                "Power": "950 W Class D",
-                "Max SPL": "132 dB",
-                "Driver": "15 in bandpass",
-                "Freq Low": "45 Hz",
-                "Freq High": "160 Hz"
-            },
-            "es": {
-                "Tipo": "Sub activo",
-                "Potencia": "950 W Clase D",
-                "SPL Máx": "132 dB",
-                "Altavoz": "15 in pasabanda",
-                "Freq Baja": "45 Hz",
-                "Freq Alta": "160 Hz"
-            }
+            "en": "Add punch to kick drums and depth to basslines in a compatible sound system. This powered 15-inch subwoofer suits wedding parties, DJ sets and live bands that need more low-end presence than full-range speakers alone.",
+            "es": "Añade pegada a los bombos y consistencia a las líneas de bajo en sistemas de sonido compatibles. Este subwoofer activo de 15 pulgadas es ideal para celebraciones de boda, sets de DJ y directos que precisan mayor presencia de frecuencias graves."
         }
     },
     {
@@ -3235,22 +1497,8 @@ window.products = [
         "priceDay": 12,
         "image": "img/inventory/Kuzar_Base_Truss.webp",
         "description": {
-            "en": "Heavy-duty steel base plate for 29x29cm square truss totems and vertical support columns, providing robust ground stabilization.",
-            "es": "Placa base pesada de acero para tótems y columnas verticales de truss de 29x29 cm, garantizando máxima estabilidad en el suelo."
-        },
-        "specs": {
-            "en": {
-                "Compatibility": "290x290 mm truss",
-                "Material": "Galvanized steel",
-                "Weight": "28 kg",
-                "Fixing": "Conical couplers"
-            },
-            "es": {
-                "Compatibilidad": "Truss 290x290 mm",
-                "Material": "Acero galvanizado",
-                "Peso": "28 kg",
-                "Fijación": "Conectores cónicos"
-            }
+            "en": "Start a freestanding truss feature with a base designed for a compatible vertical section. Useful for lighting totems, event entrances and DJ booth layouts where the structure begins at floor level.",
+            "es": "Levanta estructuras verticales de truss de forma segura con una base sólida concebida para tramos compatibles. Indispensable en tótems de iluminación, accesos decorativos y cabinas de DJ donde la estructura arranca desde el suelo."
         }
     },
     {
@@ -3264,22 +1512,8 @@ window.products = [
         "priceDay": 12,
         "image": "img/inventory/Kuzar_Cubo_Truss.webp",
         "description": {
-            "en": "Kuzar 6-way modular junction box cube for 29x29cm square aluminum truss, allowing multi-directional corner, tee, and cross junctions.",
-            "es": "Cubo de unión modular de 6 direcciones Kuzar para truss cuadrado de 29x29 cm, permitiendo esquinas, cruces y derivaciones en múltiples direcciones."
-        },
-        "specs": {
-            "en": {
-                "Compatibility": "290x290 mm truss",
-                "Directions": "6 connectable faces",
-                "Material": "Alloy EN AW-6082 T6",
-                "Connection": "Conical couplers"
-            },
-            "es": {
-                "Compatibilidad": "Truss 290x290 mm",
-                "Direcciones": "6 caras unión",
-                "Material": "Aluminio 6082 T6",
-                "Conexión": "Unión cónica"
-            }
+            "en": "Take a truss design around corners or into several directions from one junction. This compatible connector cube helps create exhibition frames, stage portals and lighting structures that need more flexibility than a straight run.",
+            "es": "Crea esquinas y bifurcaciones estructurales en múltiples direcciones desde un único punto de unión. Este cubo de unión compatible permite configurar pórticos para escenarios, marcos feriales y diseños de iluminación a medida."
         }
     },
     {
@@ -3293,22 +1527,8 @@ window.products = [
         "priceDay": 20,
         "image": "img/inventory/Kuzar_Escalera_Tarima.webp",
         "description": {
-            "en": "Modular aluminum access stairs designed for stage decks and modular event platforms with non-slip treads and sturdy side handrails.",
-            "es": "Escalera modular de aluminio para tarimas y escenarios de eventos con peldaños antideslizantes y pasamanos de seguridad."
-        },
-        "specs": {
-            "en": {
-                "Platform Height": "40 - 100 cm",
-                "Treads": "Anti-slip aluminum",
-                "Material": "Reinforced aluminum",
-                "Safety": "Handrail included"
-            },
-            "es": {
-                "Altura tarima": "40 - 100 cm",
-                "Peldaños": "Aluminio antidesliz",
-                "Material": "Aluminio reforzado",
-                "Seguridad": "Pasamanos incluido"
-            }
+            "en": "Give speakers, performers and crew a defined route onto the stage. Modular stage steps make presentation platforms, award stages and performance areas easier to access when matched to the deck height and layout.",
+            "es": "Ofrece a ponentes, artistas y personal técnico un acceso cómodo y seguro a la tarima. Las escaleras modulares se acoplan a la altura del escenario, facilitando el paso en entregas de premios, ponencias y espectáculos."
         }
     },
     {
@@ -3322,22 +1542,8 @@ window.products = [
         "priceDay": 20,
         "image": "img/inventory/Kuzar_Truss.webp",
         "description": {
-            "en": "1.0-meter aluminum reinforcement profile / brace for stage substructures, platform stiffening, and perimeter framework.",
-            "es": "Perfil de refuerzo de aluminio de 1,0 metro para subestructuras de escenario, arriostramiento y rigidización de plataformas."
-        },
-        "specs": {
-            "en": {
-                "Length": "1000 mm",
-                "Profile": "Heavy aluminum rail",
-                "Function": "Deck alignment",
-                "Compatibility": "Standard decks"
-            },
-            "es": {
-                "Longitud": "1000 mm",
-                "Perfil": "Carril aluminio",
-                "Función": "Unión y refuerzo",
-                "Compatibilidad": "Tarimas estándar"
-            }
+            "en": "Complete a compatible platform build with a one-metre joining and reinforcement profile. A practical component for modular event stages and risers where the supporting structure needs to follow a planned layout.",
+            "es": "Completa el montaje de tarimas con este perfil de unión y refuerzo de un metro. Un elemento práctico para escenarios y gradas modulares donde la estructura de soporte debe adaptarse a la distribución proyectada."
         }
     },
     {
@@ -3351,22 +1557,8 @@ window.products = [
         "priceDay": 12,
         "image": "img/inventory/Kuzar_Base_Truss.webp",
         "description": {
-            "en": "Top plate cap for 29x29cm square truss totems, providing a flat aluminum surface for mounting moving heads and projectors.",
-            "es": "Tapa superior para tótems de truss cuadrado de 29x29 cm, proporcionando una superficie plana de aluminio para montaje de cabezas móviles y proyectores."
-        },
-        "specs": {
-            "en": {
-                "Compatibility": "290x290 mm truss",
-                "Material": "Laser-cut steel",
-                "Mounting": "Conical pins",
-                "Finish": "Stage Black / Silver"
-            },
-            "es": {
-                "Compatibilidad": "Truss 290x290 mm",
-                "Material": "Placa de acero",
-                "Montaje": "Bulones cónicos",
-                "Acabado": "Negro / Plata"
-            }
+            "en": "Finish a compatible truss totem with a flat top plate for suitable mounted fixtures. A useful detail for DJ booths, stage accents and event entrances where the lighting should sit neatly above the structure.",
+            "es": "Remata los tótems de truss con una pletina superior plana para el apoyo de luminarias compatibles. Un acabado limpio y seguro para cabinas de DJ, acentos escénicos y accesos donde el foco debe quedar asentado en lo alto."
         }
     },
     {
@@ -3380,22 +1572,8 @@ window.products = [
         "priceDay": 15,
         "image": "img/inventory/stage_deck.webp",
         "description": {
-            "en": "Compact 1x1m modular stage platform with birch plywood non-slip surface for podiums, drum risers, and stage extensions.",
-            "es": "Tarima modular de 1x1m para escenario con tablero contrachapado de abedul antideslizante para atriles, tarimas de batería y ampliaciones."
-        },
-        "specs": {
-            "en": {
-                "Dimensions": "1000x1000 mm",
-                "Load Capacity": "750 kg/m²",
-                "Deck Surface": "Phenolic non-slip",
-                "Frame": "Reinforced aluminum"
-            },
-            "es": {
-                "Dimensiones": "1000x1000 mm",
-                "Capacidad": "750 kg/m²",
-                "Superficie": "Fenólica antidesliz",
-                "Bastidor": "Aluminio reforzado"
-            }
+            "en": "Add a compact platform or fine-tune the footprint of a larger stage. This one-by-one-metre deck suits lectern positions, small display platforms and modular riser layouts where a full-size section would take too much space.",
+            "es": "Añade una plataforma compacta o ajusta con precisión el perímetro de un escenario mayor. Este módulo de tarima de un metro por un metro es perfecto para atriles, peanas de exposición o pequeñas gradas donde el espacio es limitado."
         }
     },
     {
@@ -3409,26 +1587,8 @@ window.products = [
         "priceDay": 20,
         "image": "img/inventory/stage_deck.webp",
         "description": {
-            "en": "Standard 2x1m heavy-duty professional modular stage platform certified for 750 kg/m² loads with non-slip weatherproof surface.",
-            "es": "Tarima modular profesional estándar de 2x1m de alta resistencia certificada para 750 kg/m² con superficie antideslizante para intemperie."
-        },
-        "specs": {
-            "en": {
-                "Dimensions": "2000x1000 mm",
-                "Load Capacity": "750 kg/m²",
-                "Surface": "Phenolic non-slip",
-                "Leg Sockets": "50 mm round/square",
-                "Weight": "32 kg",
-                "Use": "Modular stage"
-            },
-            "es": {
-                "Dimensiones": "2000x1000 mm",
-                "Capacidad": "750 kg/m²",
-                "Superficie": "Fenólica antidesliz",
-                "Alojamientos": "50 mm redondo/cuad.",
-                "Peso": "32 kg",
-                "Uso": "Escenario modular"
-            }
+            "en": "Build a stage that fits the performance with a versatile two-by-one-metre deck. Combine compatible modules for conference platforms, band stages and DJ risers, giving the event a clearly defined focal point.",
+            "es": "Construye un escenario adaptado a las necesidades de la actuación con este módulo estándar de dos por un metro. Combina piezas compatibles para crear tarimas de conferencias, escenarios para bandas y plataformas de DJ bien delimitadas."
         }
     },
     {
@@ -3442,26 +1602,8 @@ window.products = [
         "priceDay": 30,
         "image": "img/inventory/Kuzar_Torre_K1.webp",
         "description": {
-            "en": "Kuzar K-1 telescopic lifter tower certified for lifting audio line arrays, lighting bars, and trusses safely up to 5.3 meters.",
-            "es": "Torre elevadora telescópica Kuzar K-1 certificada para elevación de cajas line array, puentes de luces y truss de forma segura hasta 5,3 metros."
-        },
-        "specs": {
-            "en": {
-                "Max Height": "5.30 m",
-                "Max Load": "125 kg",
-                "Sections": "4 telescopic steel",
-                "Winch": "Auto-brake cable",
-                "Safety": "KAT safety triggers",
-                "Certification": "BGV-C1"
-            },
-            "es": {
-                "Altura máxima": "5.30 m",
-                "Carga máxima": "125 kg",
-                "Tramos": "4 telescópicos acero",
-                "Cabrestante": "Autofrenable",
-                "Seguridad": "Gatillos KAT",
-                "Certificación": "BGV-C1"
-            }
+            "en": "Position a compatible lighting support above the performance area with a telescopic lifting tower. The K1 is useful in temporary stage and event builds where equipment height needs to be planned around the room and audience.",
+            "es": "Eleva estructuras de iluminación por encima de la zona de actuación mediante una torre telescópica de carga. La K1 es un recurso idóneo en escenarios temporales y eventos donde la altura del montaje debe adecuarse a la sala y a la audiencia."
         }
     },
     {
@@ -3475,26 +1617,8 @@ window.products = [
         "priceDay": 50,
         "image": "img/inventory/Kuzar_Torre_K5.webp",
         "description": {
-            "en": "Kuzar K-5 heavy-load ground support tower lifter with 250 kg capacity and 5.3m lift height for large PA line arrays and heavy truss structures.",
-            "es": "Torre elevadora de gran carga Kuzar K-5 de 250 kg de capacidad y 5,3 m de elevación para sistemas line array y trusses pesados."
-        },
-        "specs": {
-            "en": {
-                "Max Height": "5.35 m",
-                "Max Load": "250 kg",
-                "Sections": "Reinforced steel",
-                "Safety Locks": "KAT triggers",
-                "Cable": "Anti-torsion steel",
-                "Base": "Wheels + Outriggers"
-            },
-            "es": {
-                "Altura máxima": "5.35 m",
-                "Carga máxima": "250 kg",
-                "Tramos": "Acero reforzado",
-                "Seguridad": "Gatillos KAT",
-                "Cable": "Acero antitorsión",
-                "Base": "Ruedas + Husillos"
-            }
+            "en": "Support a substantial temporary rig with a lifting tower selected for the production's equipment and layout. The K5 can form part of concert, stage and event builds requiring elevated compatible structures and a planned lifting arrangement.",
+            "es": "Soporta montajes de iluminación de gran envergadura con una torre elevadora adaptada a las cargas y dimensiones de la producción. La K5 se integra en escenarios de concierto y festivales que requieren estructuras elevadas seguras."
         }
     },
     {
@@ -3508,26 +1632,8 @@ window.products = [
         "priceDay": 12,
         "image": "img/inventory/Kuzar_Truss.webp",
         "description": {
-            "en": "Heavy-duty 0.25m square 29x29cm aluminum truss section for stage structures, lighting grids, and support corners.",
-            "es": "Tramo de truss cuadrangular de aluminio de 0,25m (29x29 cm) para estructuras de escenario, puentes y esquinas."
-        },
-        "specs": {
-            "en": {
-                "Truss Type": "Square 290x290 mm",
-                "Length": "0.25 m",
-                "Main Tube": "50 x 2 mm",
-                "Braces": "20 x 2 mm",
-                "Alloy": "EN AW-6082 T6",
-                "Connection": "Conical couplers"
-            },
-            "es": {
-                "Tipo truss": "Cuadrangular 290x290",
-                "Longitud": "0.25 m",
-                "Tubo principal": "50 x 2 mm",
-                "Diagonales": "20 x 2 mm",
-                "Aleación": "EN AW-6082 T6",
-                "Conexión": "Unión cónica"
-            }
+            "en": "Fine-tune a compatible truss structure in quarter-metre increments. This short section is useful when an exhibition frame, lighting portal or stage feature needs a precise overall dimension to fit the venue.",
+            "es": "Ajusta las medidas de una estructura de truss en incrementos precisos de veinticinco centímetros. Este tramo corto es clave para que marcos feriales, arcos o pórticos encajen con exactitud en las dimensiones del recinto."
         }
     },
     {
@@ -3541,26 +1647,8 @@ window.products = [
         "priceDay": 12,
         "image": "img/inventory/Kuzar_Truss.webp",
         "description": {
-            "en": "1.0m modular square 29x29cm aluminum truss section for professional stage roofs, exhibition booths, and lighting rigs.",
-            "es": "Tramo de truss cuadrangular de aluminio de 1,0m (29x29 cm) para escenarios, stands de feria y montaje de focos."
-        },
-        "specs": {
-            "en": {
-                "Truss Type": "Square 290x290 mm",
-                "Length": "1.00 m",
-                "Main Tube": "50 x 2 mm",
-                "Braces": "20 x 2 mm",
-                "Alloy": "EN AW-6082 T6",
-                "Connection": "Conical couplers"
-            },
-            "es": {
-                "Tipo truss": "Cuadrangular 290x290",
-                "Longitud": "1.00 m",
-                "Tubo principal": "50 x 2 mm",
-                "Diagonales": "20 x 2 mm",
-                "Aleación": "EN AW-6082 T6",
-                "Conexión": "Unión cónica"
-            }
+            "en": "Adapt a truss design with a compact one-metre section. Use it within a compatible system for stage frames, lighting features and exhibition stands that need manageable modules and flexible dimensions.",
+            "es": "Modula la estructura de truss con este versátil tramo de un metro. Utilízalo en sistemas compatibles para pórticos escénicos, soportes de iluminación y stands feriales que requieren medidas adaptables y fácil manejo."
         }
     },
     {
@@ -3574,26 +1662,8 @@ window.products = [
         "priceDay": 12,
         "image": "img/inventory/Kuzar_Truss.webp",
         "description": {
-            "en": "2.0m heavy-load square 29x29cm aluminum truss section for stage structures, ground support towers, and lighting bridges.",
-            "es": "Tramo de truss cuadrangular de aluminio de 2,0m (29x29 cm) para puentes de luces, torres de elevación y estructuras."
-        },
-        "specs": {
-            "en": {
-                "Truss Type": "Square 290x290 mm",
-                "Length": "2.00 m",
-                "Main Tube": "50 x 2 mm",
-                "Braces": "20 x 2 mm",
-                "Alloy": "EN AW-6082 T6",
-                "Connection": "Conical couplers"
-            },
-            "es": {
-                "Tipo truss": "Cuadrangular 290x290",
-                "Longitud": "2.00 m",
-                "Tubo principal": "50 x 2 mm",
-                "Diagonales": "20 x 2 mm",
-                "Aleación": "EN AW-6082 T6",
-                "Conexión": "Unión cónica"
-            }
+            "en": "Build the main runs of a lighting frame, exhibition structure or stage feature with a two-metre truss section. Its modular length makes it a useful part of event rigs designed to fit different spaces.",
+            "es": "Monta los tramos principales de puentes de luces, estructuras de feria o decorados con un módulo de dos metros. Su longitud estandarizada lo convierte en una pieza fundamental para armar estructuras en múltiples recintos."
         }
     },
     {
@@ -3607,26 +1677,8 @@ window.products = [
         "priceDay": 12,
         "image": "img/inventory/Kuzar_Truss.webp",
         "description": {
-            "en": "3.0m heavy-load square 29x29cm aluminum truss section designed for long spans in concert stages, festivals, and large events.",
-            "es": "Tramo de truss cuadrangular de aluminio de 3,0m (29x29 cm) diseñado para grandes vanos en conciertos, festivales y eventos."
-        },
-        "specs": {
-            "en": {
-                "Truss Type": "Square 290x290 mm",
-                "Length": "3.00 m",
-                "Main Tube": "50 x 2 mm",
-                "Braces": "20 x 2 mm",
-                "Alloy": "EN AW-6082 T6",
-                "Connection": "Conical couplers"
-            },
-            "es": {
-                "Tipo truss": "Cuadrangular 290x290",
-                "Longitud": "3.00 m",
-                "Tubo principal": "50 x 2 mm",
-                "Diagonales": "20 x 2 mm",
-                "Aleación": "EN AW-6082 T6",
-                "Conexión": "Unión cónica"
-            }
+            "en": "Extend a compatible stage or exhibition structure with a three-metre truss section. Useful for longer lighting runs and larger event frames where the layout calls for fewer joints along each straight section.",
+            "es": "Extiende estructuras escénicas o feriales de gran envergadura con este tramo de tres metros. Muy conveniente para vanos largos y tiradas rectas donde se busca reducir el número de uniones a lo largo de la estructura."
         }
     },
     {
@@ -3640,26 +1692,8 @@ window.products = [
         "priceDay": 15,
         "image": "img/inventory/AKG_PW45_PRESENTER_SET.webp",
         "description": {
-            "en": "AKG Perception Wireless 45 Presenter Set including PT45 pocket transmitter, CK99L lavalier condenser mic, and SR45 diversity receiver for hands-free presentations.",
-            "es": "Sistema inalámbrico de solapa AKG Perception Wireless 45 Presenter Set con transmisor de petaca PT45, micro lavalier CK99L y receptor diversity SR45."
-        },
-        "specs": {
-            "en": {
-                "Wireless": "UHF 8 frequencies",
-                "Microphone": "CK99L lavalier",
-                "Transmitter": "PT45 bodypack",
-                "Receiver": "SR45 diversity",
-                "Range": "30 m",
-                "Battery": "8 h (1x AA)"
-            },
-            "es": {
-                "Inalámbrico": "UHF 8 frecuencias",
-                "Micrófono": "CK99L solapa",
-                "Transmisor": "Petaca PT45",
-                "Receptor": "SR45 diversity",
-                "Alcance": "30 m",
-                "Batería": "8 h (1x AA)"
-            }
+            "en": "Let presenters move and use their hands while keeping a microphone discreetly clipped to their clothing. This wireless lavalier set suits conferences, training sessions and demonstrations where holding a microphone would interrupt the presentation.",
+            "es": "Permite a los ponentes desplazarse y gesticular con las manos libres gracias a un discreto micrófono de solapa. Este kit inalámbrico lavalier es idóneo para conferencias, cursos y demostraciones donde sostener un micrófono de mano sería incómodo."
         }
     },
     {
@@ -3673,26 +1707,8 @@ window.products = [
         "priceDay": 15,
         "image": "img/inventory/AKG_PW45_VOCAL_SET_BAND_M.webp",
         "description": {
-            "en": "AKG Perception Wireless 45 Vocal Set (Band M) wireless handheld microphone system with HT45 dynamic transmitter for speech, singing, and hosting.",
-            "es": "Sistema de micrófono de mano inalámbrico AKG Perception Wireless 45 Vocal Set (Banda M) con transmisor dinámico HT45 para voz en directo y eventos."
-        },
-        "specs": {
-            "en": {
-                "Wireless": "Band M (UHF)",
-                "Microphone": "HT45 dynamic",
-                "Pattern": "Cardioid",
-                "Receiver": "SR45 diversity",
-                "Outputs": "XLR / 6.3mm",
-                "Battery": "8 h (1x AA)"
-            },
-            "es": {
-                "Inalámbrico": "Banda M (UHF)",
-                "Micrófono": "HT45 dinámico",
-                "Patrón": "Cardioide",
-                "Receptor": "SR45 diversity",
-                "Salidas": "XLR / Jack",
-                "Batería": "8 h (1x AA)"
-            }
+            "en": "Keep hosts and singers mobile with a straightforward wireless handheld setup. The PW45 Vocal Set suits speeches, karaoke, private parties and small performances where a cable would limit movement or microphone handovers.",
+            "es": "Otorga libertad de movimiento a presentadores y vocalistas con un sencillo sistema inalámbrico de mano. El PW45 Vocal Set es perfecto para discursos, karaoke, fiestas privadas y pequeños espectáculos donde el cable limitaría la soltura."
         }
     },
     {
@@ -3706,26 +1722,8 @@ window.products = [
         "priceDay": 18,
         "image": "img/inventory/BEHRINGER_XENIX1202SFX.webp",
         "description": {
-            "en": "Behringer Xenyx 1202SFX 12-input compact analog audio mixer with Xenyx mic preamps, Klark Teknik multi-FX processor, and USB stereo audio interface.",
-            "es": "Mesa de mezclas analógica compacta Behringer Xenyx 1202SFX de 12 entradas con previos Xenyx, multiefectos Klark Teknik e interfaz de audio USB."
-        },
-        "specs": {
-            "en": {
-                "Inputs": "4 mic + 4 stereo",
-                "Preamps": "4x Xenyx (+48V)",
-                "Effects": "Klark Teknik 100 FX",
-                "Audio Interface": "USB stereo",
-                "EQ": "3-band British",
-                "Outputs": "Main / Control room"
-            },
-            "es": {
-                "Entradas": "4 mic + 4 estéreo",
-                "Previos": "4x Xenyx (+48V)",
-                "Efectos": "Klark Teknik 100 FX",
-                "Interfaz": "USB estéreo",
-                "EQ": "3 bandas británico",
-                "Salidas": "Main / Sala control"
-            }
+            "en": "Combine microphones, playback and onboard effects in a compact mixer for small events. The Xenyx 1202SFX suits acoustic acts, talks and streamed sessions that need simple level control and a USB audio connection.",
+            "es": "Combina micrófonos, audio auxiliar y efectos integrados en un mezclador compacto para eventos pequeños. La Xenyx 1202SFX es idónea para directos acústicos, ponencias y emisiones en streaming que precisan un control sencillo y conexión de audio USB."
         }
     },
     {
@@ -3739,22 +1737,8 @@ window.products = [
         "priceDay": 12,
         "image": "img/inventory/DBX_DBXDI1.webp",
         "description": {
-            "en": "dbx dB10 / dB12 passive / active direct injection box engineered to deliver pristine, uncolored instrument signal conversion from guitar, bass, and keys to balanced XLR.",
-            "es": "Caja de inyección directa profesional dbx para conversión limpia y balanceada de señales de guitarra, bajo o teclados a entradas de micro XLR."
-        },
-        "specs": {
-            "en": {
-                "Input": "1/4 in jack + Thru",
-                "Output": "Balanced 3-pin XLR",
-                "Controls": "Pad 0/-20/-40 dB",
-                "Ground Lift": "Yes"
-            },
-            "es": {
-                "Entrada": "Jack 1/4 in + Thru",
-                "Salida": "XLR 3 pines bal.",
-                "Controles": "Atenuador 0/-20/-40 dB",
-                "Toma tierra": "Interruptor lift"
-            }
+            "en": "Connect a bass, keyboard or suitable instrument source to the mixing desk with a balanced microphone-level feed. This DI box is a useful part of live band and backline setups, especially when audio needs to travel across the stage.",
+            "es": "Conecta bajos, teclados y otros instrumentos a la mesa con una señal balanceada a nivel de micrófono y libre de ruidos. Esta caja de inyección directa es imprescindible en bandas y backlines, especialmente en tiradas largas hacia el control."
         }
     },
     {
@@ -3768,26 +1752,8 @@ window.products = [
         "priceDay": 20,
         "image": "img/inventory/MARK_XS1301.webp",
         "description": {
-            "en": "Mark XS11451 ultra-lightweight flesh-colored omnidirectional headset microphone for discreet speech, conference, theater, and presentations.",
-            "es": "Micrófono de diadema ultraligero color carne Mark XS11451 para conferencias, teatro y presentaciones con excelente inteligibilidad vocal."
-        },
-        "specs": {
-            "en": {
-                "Capsule": "Condenser subminiature",
-                "Pattern": "Omnidirectional",
-                "Color": "Beige flesh tone",
-                "Connector": "Mini-XLR / 3.5mm",
-                "Frame": "Dual-ear ergonomic",
-                "Weight": "Ultra light"
-            },
-            "es": {
-                "Cápsula": "Condensador submin.",
-                "Patrón": "Omnidireccional",
-                "Color": "Beige color carne",
-                "Conector": "Mini-XLR / 3.5mm",
-                "Estructura": "Doble oreja ergonómica",
-                "Peso": "Ultraligero"
-            }
+            "en": "Keep a presenter's voice close to the microphone while leaving their hands free. This discreet headset suits conferences, demonstrations and stage presentations, paired with a compatible bodypack for freedom of movement.",
+            "es": "Mantén la voz del ponente nítida y constante mientras tiene total libertad en las manos. Este discreto micrófono de diadema es óptimo para conferencias, demostraciones y presentaciones escénicas, conectado a una petaca inalámbrica compatible."
         }
     },
     {
@@ -3801,22 +1767,8 @@ window.products = [
         "priceDay": 20,
         "image": "img/inventory/MARK_XS1301.webp",
         "description": {
-            "en": "Mark XS1301 professional condenser headset microphone featuring high acoustic feedback resistance and crystal-clear speech reproduction.",
-            "es": "Micrófono de diadema profesional Mark XS1301 con alta resistencia a la realimentación y óptima inteligibilidad en discursos y eventos."
-        },
-        "specs": {
-            "en": {
-                "Transducer": "Electret condenser",
-                "Pattern": "Cardioid",
-                "Cable": "Reinforced flexible",
-                "Weight": "< 25 g"
-            },
-            "es": {
-                "Transductor": "Condensador electret",
-                "Patrón": "Cardioide",
-                "Cable": "Flexible reforzado",
-                "Peso": "< 25 g"
-            }
+            "en": "Support active presenters and performers with a headset microphone that follows their movement. A practical choice for workshops, demonstrations and spoken stage roles when consistent microphone positioning is more useful than a handheld.",
+            "es": "Acompaña a presentadores dinámicos y artistas con un micrófono de diadema que sigue todos sus movimientos. Una solución muy cómoda para talleres, demostraciones y actos teatrales donde una posición fija del micrófono es preferible a uno de mano."
         }
     },
     {
@@ -3830,26 +1782,8 @@ window.products = [
         "priceDay": 50,
         "image": "img/inventory/MIDAS_MR32R.webp",
         "description": {
-            "en": "Midas M32R LIVE 40-input digital mixing console with 16 Midas PRO preamps, 17 motorized faders, and 32-channel USB/SD live recording in a compact rack-mountable frame.",
-            "es": "Mesa digital compacta enracable Midas M32R LIVE de 40 canales con 16 previos Midas PRO, 17 faders motorizados y grabación multipista de 32 canales."
-        },
-        "specs": {
-            "en": {
-                "Channels": "40 input ch",
-                "Mix Buses": "25",
-                "Preamps": "16 Midas PRO",
-                "Faders": "17 motorized",
-                "Recording": "32x32 USB/SD",
-                "Network": "Dual AES50"
-            },
-            "es": {
-                "Canales": "40 canales",
-                "Buses": "25",
-                "Previos": "16 Midas PRO",
-                "Faders": "17 motorizados",
-                "Grabación": "32x32 USB/SD",
-                "Red": "Doble AES50"
-            }
+            "en": "Bring hands-on digital mixing to productions with a compact control position. Recallable scenes, onboard processing and multitrack recording make this Midas console useful for live bands, corporate shows and events with several performers.",
+            "es": "Integra mezcla digital profesional en un formato de control extraordinariamente compacto. Memorias recuperables, procesamiento de alta gama y grabación multipista hacen de esta mesa Midas una elección sólida para bandas, convenciones y actos con múltiples participantes."
         }
     },
     {
@@ -3863,26 +1797,8 @@ window.products = [
         "priceDay": 15,
         "image": "img/inventory/SENNHEISER_EM_300-500-G4.webp",
         "description": {
-            "en": "Sennheiser ew 300/500 G4 true diversity UHF wireless receiver with up to 88 MHz switching bandwidth, OLED display, and Ethernet network management.",
-            "es": "Receptor inalámbrico UHF true diversity Sennheiser ew 300/500 G4 con hasta 88 MHz de ancho de banda, pantalla OLED y gestión por red Ethernet."
-        },
-        "specs": {
-            "en": {
-                "Receiving System": "True diversity UHF",
-                "Bandwidth": "Up to 88 MHz",
-                "Network Port": "RJ45 Ethernet",
-                "Outputs": "XLR / 6.3mm jack",
-                "Display": "OLED high contrast",
-                "Housing": "All-metal half-rack"
-            },
-            "es": {
-                "Sistema": "True diversity UHF",
-                "Ancho banda": "Hasta 88 MHz",
-                "Puerto red": "RJ45 Ethernet",
-                "Salidas": "XLR / Jack 6.3mm",
-                "Pantalla": "OLED alto contraste",
-                "Chasis": "Metálico 1/2 rack"
-            }
+            "en": "Build a professional wireless microphone channel around a compatible Sennheiser G4 transmitter. This receiver suits conference racks, live performance systems and event setups where wireless audio needs clear monitoring and organised control.",
+            "es": "Configura un canal inalámbrico profesional con este receptor para emisores de la serie G4 de Sennheiser. Ideal para racks de conferencias, actuaciones en directo e instalaciones donde la señal inalámbrica requiere monitorización clara y gestión fiable."
         }
     },
     {
@@ -3896,22 +1812,8 @@ window.products = [
         "priceDay": 15,
         "image": "img/inventory/SENNHEISER_SKM_500_G4.webp",
         "description": {
-            "en": "Sennheiser SKM 500 G4 professional handheld wireless transmitter with interchangeable capsule support and rugged, lightweight aluminum housing.",
-            "es": "Transmisor de mano inalámbrico profesional Sennheiser SKM 500 G4 con compatibilidad de cápsulas intercambiables y robusto cuerpo de aluminio."
-        },
-        "specs": {
-            "en": {
-                "RF Power": "10 / 30 / 50 mW",
-                "Compatibility": "e900 / Neumann KK",
-                "Battery": "Up to 8 h (2x AA)",
-                "Display": "Backlit LCD"
-            },
-            "es": {
-                "Potencia RF": "10 / 30 / 50 mW",
-                "Compatibilidad": "e900 / Neumann KK",
-                "Batería": "Hasta 8 h (2x AA)",
-                "Pantalla": "LCD retroiluminada"
-            }
+            "en": "Give a presenter or singer a professional handheld transmitter for a compatible Sennheiser wireless system. Interchangeable capsule options let the setup be tailored to hosting, interviews or live vocals and the performer's preferences.",
+            "es": "Equipa a presentadores y cantantes con un transmisor de mano profesional para sistemas inalámbricos Sennheiser compatibles. La opción de cápsulas intercambiables permite adaptar la respuesta vocal al presentador, la entrevista o las exigencias del directo."
         }
     },
     {
@@ -3925,26 +1827,8 @@ window.products = [
         "priceDay": 15,
         "image": "img/inventory/SHURE_BETA_58_A.webp",
         "description": {
-            "en": "Shure Beta 58A high-output supercardioid dynamic vocal microphone designed for professional lead vocal reinforcement in demanding live stage environments.",
-            "es": "Micrófono vocal dinámico supercardioide de alta ganancia Shure Beta 58A diseñado para voces principales en directos exigentes."
-        },
-        "specs": {
-            "en": {
-                "Type": "Dynamic",
-                "Pattern": "Supercardioid",
-                "Freq Low": "50 Hz",
-                "Freq High": "16 kHz",
-                "Magnet": "Neodymium",
-                "Grille": "Hardened steel"
-            },
-            "es": {
-                "Tipo": "Dinámico",
-                "Patrón": "Supercardioide",
-                "Freq Baja": "50 Hz",
-                "Freq Alta": "16 kHz",
-                "Imán": "Neodimio",
-                "Rejilla": "Acero endurecido"
-            }
+            "en": "Help lead vocals stand out on a busy stage. The Beta 58A's focused pickup suits live bands, energetic singers and event performances where the vocal needs definition alongside amplified instruments.",
+            "es": "Haz que la voz principal sobresalga con claridad y presencia en escenarios exigentes. El patrón polar supercardioide del Beta 58A ofrece gran aislamiento acústico para directos, cantantes enérgicos y montajes con amplificadores en el escenario."
         }
     },
     {
@@ -3958,26 +1842,8 @@ window.products = [
         "priceDay": 15,
         "image": "img/inventory/SHURE_PGA52.webp",
         "description": {
-            "en": "Shure PGA52 cardioid dynamic kick drum microphone tuned for punchy low-frequency clarity on bass drums, bass cabinets, and low-end percussion.",
-            "es": "Micrófono dinámico cardioide Shure PGA52 optimizado para captación potente y definida de bombo de batería, bajos y percusión grave."
-        },
-        "specs": {
-            "en": {
-                "Type": "Dynamic",
-                "Pattern": "Cardioid",
-                "Freq Low": "50 Hz",
-                "Freq High": "12 kHz",
-                "Mounting": "Swivel quick latch",
-                "Application": "Kick drum / Bass"
-            },
-            "es": {
-                "Tipo": "Dinámico",
-                "Patrón": "Cardioide",
-                "Freq Baja": "50 Hz",
-                "Freq Alta": "12 kHz",
-                "Montaje": "Rótula orientable",
-                "Uso": "Bombo / Bajo"
-            }
+            "en": "Capture the weight and attack of a kick drum or bass cabinet. The PGA52 helps anchor a live band's rhythm section, making it a useful choice for concerts, showcase gigs and drum recording setups.",
+            "es": "Capta la pegada y profundidad de bombos de batería o amplificadores de bajo. El PGA52 refuerza la base rítmica de la banda, siendo una opción práctica y solvente para conciertos, directos y grabaciones de percusión."
         }
     },
     {
@@ -3991,26 +1857,8 @@ window.products = [
         "priceDay": 15,
         "image": "img/inventory/SHURE_PGA81.webp",
         "description": {
-            "en": "Shure PGA81 professional cardioid condenser instrument microphone with flat frequency response for acoustic guitars, strings, pianos, and drum overheads.",
-            "es": "Micrófono de condensador cardioide para instrumentos Shure PGA81 con respuesta plana para guitarras acústicas, cuerdas, pianos y aéreos de batería."
-        },
-        "specs": {
-            "en": {
-                "Type": "Condenser",
-                "Pattern": "Cardioid",
-                "Freq Low": "40 Hz",
-                "Freq High": "18 kHz",
-                "Power": "+48V Phantom",
-                "Application": "Instruments / OH"
-            },
-            "es": {
-                "Tipo": "Condensador",
-                "Patrón": "Cardioide",
-                "Freq Baja": "40 Hz",
-                "Freq Alta": "18 kHz",
-                "Alimentación": "+48V Phantom",
-                "Uso": "Instrumentos / Aéreos"
-            }
+            "en": "Bring out the detail of acoustic instruments and drum overheads. This condenser microphone suits acoustic performances, ensemble sessions and live recordings where natural transients and subtle musical textures matter.",
+            "es": "Captura con detalle instrumentos acústicos y aéreos de batería. Este micrófono de condensador destaca en recitales acústicos, ensambles y grabaciones en directo donde los matices dinámicos y la naturalidad del timbre son primordiales."
         }
     },
     {
@@ -4024,26 +1872,8 @@ window.products = [
         "priceDay": 15,
         "image": "img/inventory/SHURE_SM_57.webp",
         "description": {
-            "en": "Shure SM57 legendary cardioid dynamic instrument microphone, the industry standard for snare drums, guitar amplifier cabinets, and brass instruments.",
-            "es": "Micrófono dinámico cardioide legendario Shure SM57, el estándar indiscutible para cajas de batería, amplificadores de guitarra y metales."
-        },
-        "specs": {
-            "en": {
-                "Type": "Dynamic",
-                "Pattern": "Cardioid",
-                "Freq Low": "40 Hz",
-                "Freq High": "15 kHz",
-                "Shock Mount": "Internal pneumatic",
-                "Application": "Snare / Guitar cab"
-            },
-            "es": {
-                "Tipo": "Dinámico",
-                "Patrón": "Cardioide",
-                "Freq Baja": "40 Hz",
-                "Freq Alta": "15 kHz",
-                "Suspensión": "Neumática interna",
-                "Uso": "Caja / Guitarra"
-            }
+            "en": "Put snare drums, guitar amps and other stage instruments clearly into the mix. The SM57 is a versatile dynamic microphone for live bands, festival backlines and recording sessions that call for close instrument pickup.",
+            "es": "Sitúa cajas de batería, guitarras amplificadas y otros instrumentos con absoluta definición en la mezcla. El SM57 es el micrófono dinámico más versátil de los escenarios y estudios para la captación cercana de fuentes instrumentales."
         }
     },
     {
@@ -4057,26 +1887,8 @@ window.products = [
         "priceDay": 18,
         "image": "img/inventory/SOUNDCRAFT_EFX12plusK.webp",
         "description": {
-            "en": "Soundcraft EFX12 12-channel compact analog audio mixer with 32-bit Lexicon digital effects processor and transparent GB30 microphone preamps.",
-            "es": "Mesa analógica compacta Soundcraft EFX12 de 12 canales con procesador de efectos digital Lexicon de 32 bits y previos de micro transparentes GB30."
-        },
-        "specs": {
-            "en": {
-                "Channels": "12 mono + 2 stereo",
-                "Preamps": "12x Soundcraft GB30",
-                "Effects": "Lexicon 32-bit FX",
-                "EQ": "3-band swept mid",
-                "Aux Sends": "1 aux + 1 FX",
-                "Phantom": "+48 V"
-            },
-            "es": {
-                "Canales": "12 mono + 2 estéreo",
-                "Previos": "12x Soundcraft GB30",
-                "Efectos": "Lexicon 32 bits FX",
-                "EQ": "3 bandas con barrido",
-                "Envíos": "1 aux + 1 FX",
-                "Phantom": "+48 V"
-            }
+            "en": "Mix a small band or multi-microphone event with direct analogue controls and built-in Lexicon effects. The EFX12 suits live performances, rehearsals and presentations where quick adjustments and a familiar desk layout keep things moving.",
+            "es": "Mezcla pequeños grupos o eventos con múltiples micrófonos mediante controles analógicos directos y efectos Lexicon de gran calidad. La EFX12 es idónea para directos, ensayos y presentaciones donde se valora una disposición clara e intuitiva de la mesa."
         }
     },
     {
@@ -4090,26 +1902,8 @@ window.products = [
         "priceDay": 18,
         "image": "img/inventory/SOUNDCRAFT_EPM8.webp",
         "description": {
-            "en": "Soundcraft EPM8 8-channel compact analog mixing console featuring precision GB30 preamplifiers, 3-band swept-mid EQ, and dual auxiliary sends.",
-            "es": "Mesa de mezclas analógica Soundcraft EPM8 de 8 canales con preamplificadores de alta precisión GB30, EQ con medios barribles y 2 envíos auxiliares."
-        },
-        "specs": {
-            "en": {
-                "Inputs": "8 mono + 2 stereo",
-                "Preamps": "8x Soundcraft GB30",
-                "EQ": "3-band swept mid",
-                "Aux Sends": "2 aux sends",
-                "Faders": "60 mm precision",
-                "Phantom": "+48 V"
-            },
-            "es": {
-                "Entradas": "8 mono + 2 estéreo",
-                "Previos": "8x Soundcraft GB30",
-                "EQ": "3 bandas con barrido",
-                "Envíos": "2 envíos auxiliares",
-                "Faders": "60 mm precisión",
-                "Phantom": "+48 V"
-            }
+            "en": "Balance multiple microphones and music sources with a straightforward analogue desk. The EPM8 suits panel discussions, acoustic acts and small live events, with auxiliary sends for building suitable monitor or external-effects feeds.",
+            "es": "Equilibra con sencillez varias fuentes de microfonía y música a través de una mesa de sonido analógica muy intuitiva. La EPM8 se adapta a mesas redondas, acústicos y pequeños directos, con envíos auxiliares para monitorización o efectos externos."
         }
     },
     {
@@ -4123,26 +1917,8 @@ window.products = [
         "priceDay": 18,
         "image": "img/inventory/YAMAHA_MG10XU.webp",
         "description": {
-            "en": "Yamaha MG10XU 10-channel compact mixer with studio-grade D-PRE discrete Class-A preamps, 24 SPX digital effects, and 24-bit/192kHz USB audio interface.",
-            "es": "Mesa de mezclas de 10 canales Yamaha MG10XU con previos discretos Clase A D-PRE, 24 efectos digitales SPX e interfaz de audio USB de 24 bits/192kHz."
-        },
-        "specs": {
-            "en": {
-                "Inputs": "4 mic + 3 stereo",
-                "Preamps": "D-PRE Class-A",
-                "Effects": "24 SPX programs",
-                "Audio Interface": "24-bit / 192kHz USB",
-                "Compressor": "1-knob (ch 1-2)",
-                "Phantom": "+48 V"
-            },
-            "es": {
-                "Entradas": "4 mic + 3 estéreo",
-                "Previos": "D-PRE Clase A",
-                "Efectos": "24 programas SPX",
-                "Interfaz": "USB 24 bits / 192kHz",
-                "Compresor": "1 mando (ch 1-2)",
-                "Phantom": "+48 V"
-            }
+            "en": "Bring microphones, music playback and useful effects together in a compact event mixer. The MG10XU suits wedding speeches, acoustic duos, presentations and streamed sessions, with USB audio for a connected computer.",
+            "es": "Reúne micrófonos, música ambiente y efectos útiles en una mesa de sonido muy compacta. La MG10XU es perfecta para discursos de boda, dúos acústicos, conferencias y streaming, con interfaz de audio USB para conectar a un ordenador."
         }
     }
 ];

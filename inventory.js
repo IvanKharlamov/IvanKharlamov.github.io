@@ -246,16 +246,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('modal-category').textContent = window.TRANSLATIONS_RAW?.[p.category]?.[lang] || p.category;
         document.getElementById('modal-desc').textContent = p.description?.[lang] || (lang === 'es' ? `${p.name[lang]} es una solución de alto rendimiento.` : `${p.name[lang]} is a high-performance solution.`);
 
-        const specGrid = document.getElementById('spec-grid'); 
-        specGrid.innerHTML = '';
-        const specTemplate = document.getElementById('spec-item-template');
-        Object.entries(p.specs?.[lang] || { [lang === 'es' ? 'Estado' : 'Status']: 'Available' }).forEach(([k, v]) => {
-            const clone = specTemplate.content.cloneNode(true);
-            clone.querySelector('.spec-label').textContent = k;
-            clone.querySelector('.spec-value').textContent = v;
-            specGrid.appendChild(clone);
-        });
-
         if (!datePicker && window.DatePicker) datePicker = new window.DatePicker(document.getElementById('modal-date-picker')), datePicker.onDateChange = updateModalPricing;
         else datePicker?.reset();
 
