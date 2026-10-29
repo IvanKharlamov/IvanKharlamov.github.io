@@ -86,20 +86,20 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!container || !grid) return;
         const serviceImages = {
             'rental': [
-                'img/index/service_rental1.webp',
-                'img/index/service_rental2.webp'
+                'img/index/service_rental1.avif',
+                'img/index/service_rental2.avif'
             ],
             'production': [
-                'img/index/service_production1.webp',
-                'img/index/service_production2.webp'
+                'img/index/service_production1.avif',
+                'img/index/service_production2.avif'
             ],
             'design': [
-                'img/index/service_design1.webp',
-                'img/index/service_design2.webp'
+                'img/index/service_design1.avif',
+                'img/index/service_design2.avif'
             ],
             'support': [
-                'img/index/service_event1.webp',
-                'img/index/service_event2.webp'
+                'img/index/service_event1.avif',
+                'img/index/service_event2.avif'
             ]
         };
         const cards = Array.from(grid.querySelectorAll('.service-card[data-service-id]'));
