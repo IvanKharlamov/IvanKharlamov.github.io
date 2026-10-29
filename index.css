@@ -160,15 +160,15 @@
 
 /* Infinite Scrolling Animations */
 .track-1 .track-inner {
-    animation: scroll-left 90s linear infinite;
+    animation: scroll-left 103.5s linear infinite;
 }
 
 .track-2 .track-inner {
-    animation: scroll-left 70s linear infinite reverse; /* Moves right */
+    animation: scroll-left 80.5s linear infinite reverse; /* Moves right */
 }
 
 .track-3 .track-inner {
-    animation: scroll-left 100s linear infinite;
+    animation: scroll-left 115s linear infinite;
 }
 
 .carousel-track .track-inner {
