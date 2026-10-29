@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const fromEl = clone.querySelector('.price-from');
                 if (fromEl) fromEl.textContent = t('price.from');
                 clone.querySelector('.price-day').textContent = `€${p.priceDay}`;
-                clone.querySelector('.price-unit').textContent = t('price.perDayExVat');
+                clone.querySelector('.price-unit').textContent = t('price.perDayLabel');
 
                 const availEl = clone.querySelector('.product-availability');
                 if (availEl) {

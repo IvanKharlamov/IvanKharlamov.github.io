@@ -158,12 +158,12 @@
 
 /* ---------- Product card (light "paper" card on the dark site) ---------- */
 .product-card {
-    --card-bg: #f7f7f4;
-    --card-img-bg: #e3e3df;
-    --card-border: #dedcd5;
-    --card-text: #1b1b1b;
-    --card-muted: #6a756f;
-    --card-accent: #2d6d5f;
+    --card-bg: #1b1b1b;
+    --card-img-bg: #262626;
+    --card-border: rgba(255, 255, 255, 0.09);
+    --card-text: #f2f2f2;
+    --card-muted: #9b9b9b;
+    --card-accent: #e3b56a;
     cursor: pointer;
     transition: transform var(--transition-fast), box-shadow var(--transition-fast);
     display: flex;
@@ -186,8 +186,8 @@
 
 .product-card:hover {
     transform: translateY(-4px);
-    border-color: #cfcdc5;
-    box-shadow: 0 18px 40px -18px rgba(0, 0, 0, 0.7);
+    border-color: rgba(255, 255, 255, 0.18);
+    box-shadow: 0 18px 40px -18px rgba(0, 0, 0, 0.9);
 }
 
 .product-image {
@@ -202,7 +202,7 @@
 }
 
 .product-card:hover .product-image {
-    background: #dcdcd7;
+    background: #2c2c2c;
 }
 
 .product-image-atlas {
@@ -273,6 +273,7 @@
     font-size: 1rem;
     line-height: 1.5;
     margin: 4px 0 18px;
+    color: rgba(255, 255, 255, 0.82);
 }
 
 .product-scope {
@@ -292,18 +293,13 @@
 }
 
 .product-card .btn-outline {
-    background: transparent;
-    border-color: #c9c7bf;
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.14);
 }
 
 .product-card .btn-outline:hover {
-    background: rgba(0, 0, 0, 0.05);
-    border-color: #8e8c84;
-}
-
-.product-card .btn-primary,
-.product-card .btn-primary * {
-    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.4);
 }
 
 .modal-scope {

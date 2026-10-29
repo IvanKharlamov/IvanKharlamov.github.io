@@ -122,7 +122,7 @@
   "product.onRequest": { "en": "Available on request", "es": "Disponible bajo petición" },
   "product.scope": { "en": "Rental scope", "es": "Alcance del alquiler" },
   "price.from": { "en": "From", "es": "Desde" },
-  "price.perDayExVat": { "en": "/ day · excl. VAT", "es": "/ día · sin IVA" },
+  "price.perDayLabel": { "en": "/ day", "es": "/ día" },
 
   "sub.movingLights": { "en": "Moving heads", "es": "Cabezas móviles" },
   "sub.ledPar": { "en": "LED PAR & wash", "es": "PAR LED y wash" },
