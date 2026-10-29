@@ -322,11 +322,18 @@ class DatePicker {
     }
     updateDayStyling(el, date) {
         const time = date.getTime();
-        if (this.startDate && time === this.startDate.getTime()) {
-            el.classList.add('selected', 'range-start');
-        }
-        if (this.endDate && time === this.endDate.getTime()) {
-            el.classList.add('selected', 'range-end');
+        const isStart = this.startDate && time === this.startDate.getTime();
+        const isEnd = this.endDate && time === this.endDate.getTime();
+
+        if (isStart && isEnd) {
+            el.classList.add('selected');
+        } else {
+            if (isStart) {
+                el.classList.add('selected', 'range-start');
+            }
+            if (isEnd) {
+                el.classList.add('selected', 'range-end');
+            }
         }
         if (this.startDate && this.endDate && time > this.startDate.getTime() && time < this.endDate.getTime()) {
             el.classList.add('range');
@@ -338,8 +345,6 @@ class DatePicker {
             this.endDate = null;
         } else if (date < this.startDate) {
             this.startDate = date;
-        } else if (date.getTime() === this.startDate.getTime()) {
-            this.startDate = null;
         } else {
             this.endDate = date;
 

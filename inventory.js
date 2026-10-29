@@ -24,8 +24,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 card.onclick = () => window.openProductModal(p.id, 'details');
                 
-                clone.querySelector('.product-image img').src = p.image;
-                clone.querySelector('.product-image img').alt = p.name[lang];
+                const imgWrapper = clone.querySelector('.product-image');
+                const atlasInfo = window.CATALOG_ATLAS?.items?.[p.id];
+                if (atlasInfo && window.CATALOG_ATLAS?.image) {
+                    const atlasDiv = document.createElement('div');
+                    atlasDiv.className = 'product-image-atlas';
+                    atlasDiv.style.backgroundImage = `url('${window.CATALOG_ATLAS.image}')`;
+                    atlasDiv.style.backgroundPosition = `${atlasInfo.xPct}% ${atlasInfo.yPct}%`;
+                    atlasDiv.setAttribute('role', 'img');
+                    atlasDiv.setAttribute('aria-label', p.name[lang]);
+                    imgWrapper.innerHTML = '';
+                    imgWrapper.appendChild(atlasDiv);
+                } else {
+                    const imgEl = imgWrapper.querySelector('img');
+                    if (imgEl) {
+                        imgEl.src = p.image;
+                        imgEl.alt = p.name[lang];
+                    }
+                }
                 clone.querySelector('.product-category').textContent = window.TRANSLATIONS_RAW?.[p.category]?.[lang] || p.category;
                 clone.querySelector('.product-title').textContent = p.name[lang];
                 clone.querySelector('.price-day').textContent = `€${p.priceDay}`;
@@ -123,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Event Listeners - Checkboxes
+    // Event Listeners - Checkboxes (Exclusive Categories)
     document.querySelectorAll('.filter-chip-wrapper input').forEach(cb => {
         cb.addEventListener('change', e => {
             const key = e.target.dataset.category;
@@ -131,14 +147,15 @@ document.addEventListener('DOMContentLoaded', () => {
             if (key === 'cat.all') {
                 activeFilters.category = [];
                 document.querySelectorAll('.filter-chip-wrapper input')
-                    .forEach(x => { if (x !== e.target) x.checked = false; });
+                    .forEach(x => { x.checked = (x === e.target); });
             } else {
-                document.getElementById('cat-all').checked = false;
-
                 if (e.target.checked) {
-                    activeFilters.category.push(key);
+                    activeFilters.category = [key];
+                    document.querySelectorAll('.filter-chip-wrapper input')
+                        .forEach(x => { x.checked = (x === e.target); });
                 } else {
-                    activeFilters.category = activeFilters.category.filter(k => k !== key);
+                    activeFilters.category = [];
+                    document.getElementById('cat-all').checked = true;
                 }
             }
             window.applyFilters();
