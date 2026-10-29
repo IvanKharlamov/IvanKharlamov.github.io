@@ -667,9 +667,13 @@
     position: relative;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 6px 10px 6px 4px;
+    padding: 16px 10px 16px 16px;
     -webkit-overflow-scrolling: touch;
     scrollbar-gutter: stable;
+    /* framed so the end of the scrollable list is visible against the next section */
+    background: var(--bg-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
 }
 
 .catalog-embed .product-grid {
@@ -779,6 +783,9 @@
         height: auto;
         overflow: visible;
         padding: 4px 0;
+        background: none;
+        border: 0;
+        border-radius: 0;
     }
 
     .catalog-embed .product-grid {
