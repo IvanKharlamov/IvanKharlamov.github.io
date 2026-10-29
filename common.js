@@ -10,6 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
     window.trackEvent('visit_page', { page_path: window.location.pathname });
     const header = document.querySelector('.site-header');
     window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 50));
+    // Live header height for anything that sticks right under it
+    new ResizeObserver(() => {
+        document.documentElement.style.setProperty('--header-h', `${header.offsetHeight}px`);
+    }).observe(header);
     const menuToggle = document.getElementById('menu-toggle'),
           mobileMenu = document.getElementById('mobile-menu'),
           mobileMenuOverlay = document.getElementById('mobile-menu-overlay'),

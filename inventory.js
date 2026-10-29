@@ -84,9 +84,20 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Main page: size the scroll viewport to exactly two card rows (cards keep natural height)
+    // On phones the list scrolls with the page under a sticky filter bar instead
     const scroller = document.querySelector('.catalog-embed .catalog-scroll');
+    const mobileQuery = window.matchMedia('(max-width: 768px)');
     function fitTwoRows() {
         if (!scroller) return;
+        if (mobileQuery.matches) {
+            scroller.style.height = '';
+            // Filter changed while the bar is stuck: bring the new list's top into view
+            const bar = document.querySelector('.catalog-embed .catalog-sidebar');
+            const barBottom = bar.getBoundingClientRect().bottom;
+            const listTop = scroller.getBoundingClientRect().top;
+            if (listTop < barBottom) window.scrollBy(0, listTop - barBottom - 8);
+            return;
+        }
         const grid = document.getElementById('product-grid');
         const cards = grid ? Array.from(grid.querySelectorAll('.product-card')) : [];
         const tops = [...new Set(cards.map(c => c.offsetTop))].sort((a, b) => a - b);

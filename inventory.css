@@ -717,8 +717,20 @@
         padding: 11px 14px;
     }
 
+    /* filters stay pinned under the header; the list scrolls with the page */
+    .catalog-embed .catalog-sidebar {
+        position: sticky;
+        top: var(--header-h, 68px);
+        z-index: 5;
+        margin: 0 -16px;
+        padding: 8px 16px 2px;
+        background: var(--bg-color);
+    }
+
     .catalog-embed .catalog-scroll {
-        padding: 4px 4px 4px 0;
+        height: auto;
+        overflow: visible;
+        padding: 4px 0;
     }
 
     .catalog-embed .product-grid {
