@@ -163,7 +163,7 @@
     --card-border: rgba(255, 255, 255, 0.09);
     --card-text: #f2f2f2;
     --card-muted: #9b9b9b;
-    --card-accent: #e3b56a;
+    --card-accent: #6fcf8f;
     cursor: pointer;
     transition: transform var(--transition-fast), box-shadow var(--transition-fast);
     display: flex;
@@ -274,6 +274,54 @@
     line-height: 1.5;
     margin: 4px 0 18px;
     color: rgba(255, 255, 255, 0.82);
+}
+
+.equipment-list {
+    list-style: none;
+    display: grid;
+    gap: 6px;
+}
+
+.equipment-list li {
+    position: relative;
+    padding-left: 16px;
+    line-height: 1.4;
+}
+
+.equipment-list li::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 0.6em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--card-accent, var(--primary));
+}
+
+.product-equipment {
+    font-size: 0.95rem;
+    margin: 4px 0 18px;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.equipment-list li.equipment-more {
+    color: var(--card-muted);
+}
+
+.equipment-list li.equipment-more::before {
+    display: none;
+}
+
+.modal-equipment {
+    font-size: 0.95rem;
+    margin-top: 16px;
+}
+
+.modal-conditions {
+    margin-top: 14px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
 }
 
 .product-scope {

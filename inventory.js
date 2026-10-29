@@ -40,25 +40,39 @@ document.addEventListener('DOMContentLoaded', () => {
                     const imgEl = imgWrapper.querySelector('img');
                     if (imgEl) {
                         imgEl.src = p.image;
-                        imgEl.alt = p.name[lang];
+                        imgEl.alt = p.imageAlt?.[lang] || p.name[lang];
                     }
                 }
                 clone.querySelector('.product-category').textContent = labelFor(p, lang);
                 clone.querySelector('.product-title').textContent = p.name[lang];
                 const fromEl = clone.querySelector('.price-from');
-                if (fromEl) fromEl.textContent = t('price.from');
-                clone.querySelector('.price-day').textContent = `€${p.priceDay}`;
-                clone.querySelector('.price-unit').textContent = t('price.perDayLabel');
+                const unitEl = clone.querySelector('.price-unit');
+                if (hasPrice(p)) {
+                    if (fromEl) fromEl.textContent = t('price.from');
+                    clone.querySelector('.price-day').textContent = `€${p.priceDay}`;
+                    unitEl.textContent = t('price.perDayLabel');
+                } else {
+                    fromEl?.remove();
+                    unitEl.remove();
+                    clone.querySelector('.price-day').textContent = t('price.onRequest');
+                }
 
                 const availEl = clone.querySelector('.product-availability');
                 if (availEl) {
                     if (p.availability === 'on_request') availEl.textContent = t('product.onRequest');
                     else availEl.remove();
                 }
+                // Packs list their equipment on the card; the full description lives in the modal
                 const descEl = clone.querySelector('.product-desc');
-                if (descEl) {
+                const equipEl = clone.querySelector('.product-equipment');
+                const equipment = p.equipment?.[lang];
+                if (equipment?.length && equipEl) {
+                    fillEquipment(equipEl, equipment, CARD_EQUIPMENT_LIMIT);
+                    descEl?.remove();
+                } else {
+                    equipEl?.remove();
                     const d = p.description?.[lang];
-                    if (d) descEl.textContent = d; else descEl.remove();
+                    if (descEl) { if (d) descEl.textContent = d; else descEl.remove(); }
                 }
                 const scopeEl = clone.querySelector('.product-scope');
                 if (scopeEl) {
@@ -112,6 +126,26 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('load', fitTwoRows);
     }
 
+    // Packs without a set rate are quoted individually
+    const hasPrice = (p) => typeof p.priceDay === 'number';
+
+    const CARD_EQUIPMENT_LIMIT = 6;
+    const fillEquipment = (list, items, limit = Infinity) => {
+        list.innerHTML = '';
+        const shown = items.length > limit ? items.slice(0, limit - 1) : items;
+        shown.forEach(text => {
+            const li = document.createElement('li');
+            li.textContent = text;
+            list.appendChild(li);
+        });
+        if (shown.length < items.length) {
+            const li = document.createElement('li');
+            li.className = 'equipment-more';
+            li.textContent = t('product.moreItems').replace('{{n}}', items.length - shown.length);
+            list.appendChild(li);
+        }
+    };
+
     // Subcategory label (falls back to the category)
     const labelFor = (p, lang) => {
         const key = p.subcategory && window.TRANSLATIONS_RAW?.[p.subcategory] ? p.subcategory : p.category;
@@ -160,8 +194,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const sortProducts = (items) => {
         const s = [...items];
-        return currentSort === 'lowToHigh' ? s.sort((a,b) => a.priceDay - b.priceDay) :
-               currentSort === 'highToLow' ? s.sort((a,b) => b.priceDay - a.priceDay) : s;
+        // Unpriced items go last in either direction
+        const price = (p, fallback) => hasPrice(p) ? p.priceDay : fallback;
+        return currentSort === 'lowToHigh' ? s.sort((a,b) => price(a, Infinity) - price(b, Infinity)) :
+               currentSort === 'highToLow' ? s.sort((a,b) => price(b, -Infinity) - price(a, -Infinity)) : s;
     };
 	
 	function injectProductSchema(items) {
@@ -177,16 +213,16 @@ document.addEventListener('DOMContentLoaded', () => {
 					"@type": "Product",
 					"name": product.name[currentLang],
 					"image": product.image,
-					"description": product.description && product.description[currentLang]
-						? product.description[currentLang]
-						: product.name[currentLang],
+					"description": product.description?.[currentLang]
+						|| product.equipment?.[currentLang]?.join(', ')
+						|| product.name[currentLang],
 					"brand": {
 						"@type": "Brand",
 						"name": product.manufacturer || "UPSTAGE"
 					},
 					"offers": {
 						"@type": "Offer",
-						"price": product.priceDay,
+						...(hasPrice(product) ? { "price": product.priceDay } : {}),
 						"priceCurrency": "EUR",
 						"availability": "https://schema.org/InStock"
 					}
@@ -300,7 +336,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const days = calculateDays(), p = window.products.find(x => x.id === currentProductId), qty = parseInt(productQtyInput?.value) || 1;
         const durEl = document.getElementById('rental-duration'), prEl = document.getElementById('modal-price');
 
-        if (days > 0 && p) {
+        if (p && !hasPrice(p)) {
+            durEl.textContent = days > 0
+                ? t('rental.daysAndUnits').replace('{{days}}', days).replace('{{qty}}', qty)
+                : t('rental.selectValidDates');
+            prEl.innerHTML = `<span style="font-size:1rem;color:var(--accent);">${t('rental.customRate')}</span>`;
+        } else if (days > 0 && p) {
             durEl.textContent = t('rental.daysAndUnits').replace('{{days}}', days).replace('{{qty}}', qty);
             if (days > 7) prEl.innerHTML = `<span style="font-size:1rem;color:var(--accent);">${t('rental.customRate')}</span>`;
             else {
@@ -350,10 +391,26 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!p) return;
 
         window.trackEvent('view_item', { items: [{ item_id: p.id, item_name: p.name['en'] }] });
-        document.getElementById('modal-img').src = p.image;
+        const modalImg = document.getElementById('modal-img');
+        modalImg.src = p.image;
+        modalImg.alt = p.imageAlt?.[lang] || p.name[lang];
         document.getElementById('modal-title').textContent = p.name[lang];
         document.getElementById('modal-category').textContent = labelFor(p, lang);
-        document.getElementById('modal-desc').textContent = p.description?.[lang] || (lang === 'es' ? `${p.name[lang]} es una solución de alto rendimiento.` : `${p.name[lang]} is a high-performance solution.`);
+        const equipment = p.equipment?.[lang];
+        const modalDesc = document.getElementById('modal-desc');
+        modalDesc.textContent = p.description?.[lang] || (equipment?.length ? '' : (lang === 'es' ? `${p.name[lang]} es una solución de alto rendimiento.` : `${p.name[lang]} is a high-performance solution.`));
+        modalDesc.hidden = !modalDesc.textContent;
+        const modalEquip = document.getElementById('modal-equipment');
+        if (modalEquip) {
+            if (equipment?.length) fillEquipment(modalEquip, equipment);
+            else modalEquip.innerHTML = '';
+            modalEquip.hidden = !equipment?.length;
+        }
+        const modalConditions = document.getElementById('modal-conditions');
+        if (modalConditions) {
+            modalConditions.textContent = p.conditions?.[lang] || '';
+            modalConditions.hidden = !p.conditions?.[lang];
+        }
         const modalScope = document.getElementById('modal-scope');
         if (modalScope) {
             const sc = p.scope?.[lang];
@@ -366,7 +423,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (productQtyInput) productQtyInput.value = 1;
         document.getElementById('rental-duration').textContent = t('rental.selectDates');
-        document.getElementById('modal-price').textContent = `€${p.priceDay}`;
+        updateModalPricing();
         switchModalView(view); modalOverlay.classList.add('active');
     };
 
@@ -400,7 +457,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const qty = productQtyInput ? parseInt(productQtyInput.value) || 1 : 1;
             const product = window.products.find(p => p.id === currentProductId);
-            const isCustom = days > 7;
+            const isCustom = days > 7 || !hasPrice(product);
             let totalPrice = 0;
             let multiplier = 0;
 

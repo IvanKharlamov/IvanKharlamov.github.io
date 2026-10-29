@@ -6,30 +6,6 @@ window.CATALOG_ATLAS = {
   "height": 2640,
   "image": "img/inventory/catalog_atlas.avif",
   "items": {
-    "901": {
-      "col": 0,
-      "row": 0,
-      "x": 0,
-      "y": 0,
-      "xPct": 0.0,
-      "yPct": 0.0
-    },
-    "903": {
-      "col": 1,
-      "row": 0,
-      "x": 240,
-      "y": 0,
-      "xPct": 9.0909,
-      "yPct": 0.0
-    },
-    "904": {
-      "col": 2,
-      "row": 0,
-      "x": 480,
-      "y": 0,
-      "xPct": 18.1818,
-      "yPct": 0.0
-    },
     "101": {
       "col": 3,
       "row": 0,

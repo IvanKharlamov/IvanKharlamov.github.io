@@ -464,7 +464,7 @@ class CartManager {
             const diffTime = Math.abs(end - start);
             const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)) + 1;
             item.days = diffDays;
-            item.isCustom = diffDays > 7;
+            item.isCustom = diffDays > 7 || window.products?.find(p => p.id === item.productId)?.priceDay == null;
             if (!item.isCustom && window.products) {
                 item.multiplier = this.getRentalMultiplier(diffDays);
                 const product = window.products.find(p => p.id === item.productId);

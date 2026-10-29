@@ -8,10 +8,24 @@ window.products = [
         "category": "cat.packs",
         "manufacturer": "UPSTAGE MADRID",
         "priceDay": 70,
-        "image": "img/inventory/pack_evento_pequeno.avif",
-        "description": {
-            "en": "Keep speeches clear and music flowing at private parties, presentations and small celebrations. This compact sound package brings together two HK Audio SONAR speakers, a Shure SM58/57 microphone, a Yamaha MG10XU mixer and the cabling needed to connect them.",
-            "es": "Mantén los discursos nítidos y la música fluyendo en fiestas privadas, presentaciones y pequeñas celebraciones. Este pack compacto de sonido reúne dos altavoces HK Audio SONAR, un micrófono Shure SM58/57, una mesa de mezclas Yamaha MG10XU y todo el cableado necesario para conectarlos."
+        "image": "img/inventory/packs/pack-small-event.png",
+        "imageAlt": {
+            "en": "Collage of two speakers, a compact mixer and a microphone for a small event",
+            "es": "Collage de dos altavoces, una mesa compacta y un micrófono para un evento pequeño"
+        },
+        "equipment": {
+            "en": [
+                "2 active speakers",
+                "1 dynamic microphone",
+                "1 compact mixing console",
+                "Connecting cables"
+            ],
+            "es": [
+                "2 altavoces activos",
+                "1 micrófono dinámico",
+                "1 mesa de mezclas compacta",
+                "Cableado de conexión"
+            ]
         }
     },
     {
@@ -23,10 +37,277 @@ window.products = [
         "category": "cat.packs",
         "manufacturer": "Pioneer DJ",
         "priceDay": 100,
-        "image": "img/inventory/pack_dj.avif",
+        "image": "img/inventory/packs/pack-dj.png",
+        "imageAlt": {
+            "en": "Collage of two DJ players and a four-channel DJ mixer",
+            "es": "Collage de dos reproductores DJ y una mesa de mezclas DJ de cuatro canales"
+        },
+        "equipment": {
+            "en": [
+                "2 digital DJ players",
+                "1 four-channel DJ mixer",
+                "Connecting cables"
+            ],
+            "es": [
+                "2 reproductores DJ digitales",
+                "1 mesa de mezclas DJ de 4 canales",
+                "Cableado de conexión"
+            ]
+        }
+    },
+    {
+        "id": 905,
+        "name": {
+            "en": "Party Pack",
+            "es": "Pack Fiesta"
+        },
+        "category": "cat.packs",
+        "manufacturer": "UPSTAGE MADRID",
+        "priceDay": null,
+        "image": "img/inventory/packs/pack-party.png",
+        "imageAlt": {
+            "en": "Collage of two speakers, two subwoofers, DJ equipment with a table and compact lighting",
+            "es": "Collage de dos altavoces, dos subgraves, equipo DJ con mesa e iluminación compacta"
+        },
         "description": {
-            "en": "Give your DJ a familiar club setup for parties, guest sets and corporate afterparties. Two Pioneer CDJ-2000NXS players, a DJM-900 mixer and connecting cables put track selection, mixing and effects within easy reach.",
-            "es": "Ofrece a tu DJ una configuración estándar de club para fiestas, sesiones de invitados y afterparties corporativos. Dos reproductores Pioneer CDJ-2000NXS, una mesa de mezclas DJM-900 y el cableado de conexión ponen la selección de pistas, la mezcla y los efectos al alcance de la mano."
+            "en": "A ready-made set for weddings, private parties and company celebrations. Two speakers and two subwoofers provide sound for the dance floor, the DJ equipment with a table gives a comfortable workstation, and a compact lighting set adds colour and movement.",
+            "es": "Un conjunto para bodas, fiestas privadas y celebraciones de empresa. Dos altavoces y dos subgraves proporcionan el sonido para la pista de baile, el equipo DJ con mesa ofrece un puesto de trabajo cómodo y un conjunto compacto de iluminación aporta color y movimiento."
+        },
+        "equipment": {
+            "en": [
+                "2 active speakers",
+                "2 subwoofers",
+                "2 digital DJ players",
+                "1 four-channel DJ mixer",
+                "1 DJ table",
+                "1 handheld wireless microphone system",
+                "2 moving wash lights",
+                "4 battery-powered LED uplights",
+                "1 lighting controller",
+                "2 lighting stands",
+                "Speaker stands, signal and power cabling"
+            ],
+            "es": [
+                "2 altavoces activos",
+                "2 subgraves",
+                "2 reproductores DJ digitales",
+                "1 mesa de mezclas DJ de cuatro canales",
+                "1 mesa para equipo DJ",
+                "1 sistema de microfonía inalámbrica de mano",
+                "2 cabezas móviles wash",
+                "4 focos LED uplight a batería",
+                "1 controlador de iluminación",
+                "2 soportes para iluminación",
+                "Soportes de sonido, cableado de señal y alimentación"
+            ]
+        }
+    },
+    {
+        "id": 906,
+        "name": {
+            "en": "Conference Pack",
+            "es": "Pack Conferencia"
+        },
+        "category": "cat.packs",
+        "manufacturer": "UPSTAGE MADRID",
+        "priceDay": null,
+        "image": "img/inventory/packs/pack-conference.png",
+        "imageAlt": {
+            "en": "Collage of speakers, wireless microphones, a digital mixer and conference lighting",
+            "es": "Collage de altavoces, microfonía inalámbrica, mesa digital y focos para conferencias"
+        },
+        "description": {
+            "en": "Sound and lighting for conferences, presentations, panel discussions and corporate events. The set delivers clear speech, freedom of movement for speakers and a connection for presentation audio. Front lighting highlights the participants and defines the speaking area.",
+            "es": "Sonido e iluminación para conferencias, presentaciones, mesas redondas y eventos corporativos. El conjunto ofrece voces claras, libertad de movimiento para los ponentes y conexión del audio de las presentaciones. La iluminación frontal destaca a los participantes y define la zona de intervención."
+        },
+        "equipment": {
+            "en": [
+                "2 active speakers",
+                "4 handheld wireless microphone systems",
+                "2 wireless headset microphone systems",
+                "1 digital mixing console",
+                "4 spotlights for lighting the speakers",
+                "1 lighting control system",
+                "2 speaker stands",
+                "2 lighting stands",
+                "4 microphone stands",
+                "Signal and power cabling"
+            ],
+            "es": [
+                "2 altavoces activos",
+                "4 sistemas de microfonía inalámbrica de mano",
+                "2 sistemas inalámbricos con micrófono de diadema",
+                "1 mesa de mezclas digital",
+                "4 proyectores para iluminar a los ponentes",
+                "1 sistema de control de iluminación",
+                "2 soportes para altavoces",
+                "2 soportes para iluminación",
+                "4 pies de micrófono",
+                "Cableado de señal y alimentación"
+            ]
+        }
+    },
+    {
+        "id": 907,
+        "name": {
+            "en": "Decorative Event Lighting Pack",
+            "es": "Pack Iluminación Decorativa"
+        },
+        "category": "cat.packs",
+        "manufacturer": "UPSTAGE MADRID",
+        "priceDay": null,
+        "image": "img/inventory/packs/pack-event-lighting.png",
+        "imageAlt": {
+            "en": "Collage of battery uplights, LED bars, lamp strips, LED tubes and moving wash lights",
+            "es": "Collage de uplights a batería, barras LED, barras de lámparas, tubos LED y cabezas móviles wash"
+        },
+        "description": {
+            "en": "A lighting design created for your space. The pack includes developing and adapting the decorative lighting project to the architecture, decor, guest layout and event programme. Wall and column lighting, warm accents and light compositions create a coherent atmosphere for weddings, dinners, presentations and corporate events.",
+            "es": "Un diseño de iluminación creado para tu espacio. El pack incluye el desarrollo y la adaptación del proyecto de iluminación decorativa a la arquitectura, la decoración, la distribución de los invitados y el programa del evento. La iluminación de paredes y columnas, los acentos cálidos y las composiciones de luz crean un ambiente coherente para bodas, cenas, presentaciones y eventos corporativos."
+        },
+        "equipment": {
+            "en": [
+                "12 battery-powered LED uplights",
+                "8 LED bars",
+                "4 Sunstrip-type lamp bars",
+                "4 moving wash lights",
+                "4 battery-powered LED tubes for decorative compositions",
+                "1 lighting control system",
+                "Stands, mounts, signal and power cabling",
+                "Layout design, colour palette selection and scene programming"
+            ],
+            "es": [
+                "12 focos LED uplight a batería",
+                "8 barras LED",
+                "4 barras de luz tipo Sunstrip",
+                "4 cabezas móviles wash",
+                "4 tubos LED a batería para composiciones decorativas",
+                "1 sistema de control de iluminación",
+                "Soportes, fijaciones, cableado de señal y alimentación",
+                "Diseño de la distribución, selección de la paleta de color y programación de escenas"
+            ]
+        },
+        "conditions": {
+            "en": "The number and placement of fixtures are adapted to the specific space.",
+            "es": "La cantidad y la ubicación de los aparatos se adaptan al espacio concreto."
+        }
+    },
+    {
+        "id": 908,
+        "name": {
+            "en": "Concert Pack",
+            "es": "Pack Concierto"
+        },
+        "category": "cat.packs",
+        "manufacturer": "UPSTAGE MADRID",
+        "priceDay": null,
+        "image": "img/inventory/packs/pack-concert.png",
+        "imageAlt": {
+            "en": "Collage of a line array, subwoofers, stage monitors, consoles and concert lighting",
+            "es": "Collage de line array, subgraves, monitores de escenario, consolas e iluminación de concierto"
+        },
+        "description": {
+            "en": "Sound, lighting and stage equipment for live performances. The line array provides the main PA, floor monitors and IEM systems help musicians hear their mix, and the lighting follows the dynamics of the show. The configuration is adapted to the band's technical rider and the venue.",
+            "es": "Sonido, iluminación y equipamiento de escenario para actuaciones en directo. El line array proporciona la PA principal, los monitores de suelo y los sistemas IEM ayudan a los músicos a escuchar su mezcla, y la iluminación acompaña la dinámica del espectáculo. La configuración se adapta al rider técnico de la banda y a las características del recinto."
+        },
+        "equipment": {
+            "en": [
+                "8 line array modules, 4 per side",
+                "4 subwoofers",
+                "4 floor stage monitors",
+                "4 wireless IEM monitoring systems, each with a transmitter and bodypack receiver",
+                "1 digital console for front-of-house mixing",
+                "1 digital console for monitors",
+                "1 32-input stage box",
+                "12 dynamic microphones for vocals and instruments",
+                "4 condenser microphones",
+                "8 DI channels for instruments",
+                "16 microphone stands and a set of microphone mounts",
+                "4 beam/spot moving heads",
+                "6 moving wash lights",
+                "4 front-light spotlights",
+                "4 Sunstrip-type lamp bars",
+                "2 strobes",
+                "1 haze machine",
+                "1 lighting console",
+                "Risers, truss, supports and mounts as per project",
+                "Audio and lighting cabling, power distribution and power cables"
+            ],
+            "es": [
+                "8 módulos line array, 4 por lado",
+                "4 subgraves",
+                "4 monitores de escenario de suelo",
+                "4 sistemas inalámbricos de monitorización IEM, cada uno con transmisor y receptor de petaca",
+                "1 mesa digital para la mezcla de sala",
+                "1 mesa digital para monitores",
+                "1 cajetín de escenario de 32 entradas",
+                "12 micrófonos dinámicos para voz e instrumentos",
+                "4 micrófonos de condensador",
+                "8 canales DI para instrumentos",
+                "16 pies de micrófono y un conjunto de fijaciones de microfonía",
+                "4 cabezas móviles beam/spot",
+                "6 cabezas móviles wash",
+                "4 proyectores de iluminación frontal",
+                "4 barras de luz tipo Sunstrip",
+                "2 estrobos",
+                "1 máquina de haze",
+                "1 consola de iluminación",
+                "Tarimas, truss, soportes y fijaciones según proyecto",
+                "Cableado de audio e iluminación, distribución eléctrica y cables de alimentación"
+            ]
+        },
+        "conditions": {
+            "en": "Personal earphones for IEM are agreed separately. Stage size and sound system configuration are defined for each venue.",
+            "es": "Los auriculares personales para IEM se acuerdan por separado. Las dimensiones del escenario y la configuración del sistema de sonido se definen para cada recinto."
+        }
+    },
+    {
+        "id": 909,
+        "name": {
+            "en": "Backline Pack",
+            "es": "Pack Backline"
+        },
+        "category": "cat.packs",
+        "manufacturer": "UPSTAGE MADRID",
+        "priceDay": null,
+        "image": "img/inventory/packs/pack-backline.png",
+        "imageAlt": {
+            "en": "Collage of guitar and bass amplifiers and cabinets, microphones and DI boxes",
+            "es": "Collage de amplificadores y pantallas de guitarra y bajo, micrófonos y cajas DI"
+        },
+        "description": {
+            "en": "Instrument amplification and microphones for concerts, rehearsals and band performances. The set includes two guitar rigs, one bass rig and everything needed to connect them to the sound system. The configuration is tailored to the musicians and their technical rider.",
+            "es": "Amplificación de instrumentos y microfonía para conciertos, ensayos y actuaciones de bandas. El conjunto incluye dos equipos de guitarra, un equipo de bajo y los elementos necesarios para conectarlos al sistema de sonido. La configuración se adapta a los músicos y a su rider técnico."
+        },
+        "equipment": {
+            "en": [
+                "1 guitar combo amplifier",
+                "1 guitar amplifier head",
+                "1 guitar cabinet",
+                "1 bass amplifier head",
+                "1 bass cabinet",
+                "4 dynamic instrument microphones",
+                "2 dynamic vocal microphones",
+                "4 DI channels",
+                "6 microphone stands",
+                "Signal and power cabling"
+            ],
+            "es": [
+                "1 amplificador combo de guitarra",
+                "1 cabezal de guitarra",
+                "1 pantalla de guitarra",
+                "1 cabezal de bajo",
+                "1 pantalla de bajo",
+                "4 micrófonos dinámicos de instrumento",
+                "2 micrófonos dinámicos vocales",
+                "4 canales DI",
+                "6 pies de micrófono",
+                "Cableado de señal y alimentación"
+            ]
+        },
+        "conditions": {
+            "en": "Stage keyboards, a drum kit, cymbals and the necessary hardware can be added as per the rider.",
+            "es": "Se pueden añadir teclados de escenario, batería, platos y los herrajes necesarios según el rider."
         }
     },
     {

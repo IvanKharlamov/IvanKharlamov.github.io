@@ -9,8 +9,8 @@
   "btn.getQuote": { "en": "Get Quote", "es": "Pedir Presupuesto" },
 
   "hero.title": {
-    "en": "ELEVATE<br>YOUR<br>PRODUCTION",
-    "es": "ELEVA<br>TU<br>PRODUCCIÓN"
+    "en": "ELEVATE<br>YOUR EVENT<br>PRODUCTION",
+    "es": "ELEVA<br>TU PRODUCCIÓN<br>DE EVENTOS"
   },
   "hero.subtitle": {
     "en": "Stage design · Lighting · Soundvision · Visual scenography · Technical direction · Show control ·\u00A0",
@@ -120,6 +120,8 @@
 
   "catalog.subcategories": { "en": "Subcategories", "es": "Subcategorías" },
   "product.onRequest": { "en": "Available on request", "es": "Disponible bajo petición" },
+  "product.moreItems": { "en": "+ {{n}} more", "es": "+ {{n}} más" },
+  "price.onRequest": { "en": "Custom quote", "es": "Presupuesto a medida" },
   "product.scope": { "en": "Rental scope", "es": "Alcance del alquiler" },
   "price.from": { "en": "From", "es": "Desde" },
   "price.perDayLabel": { "en": "/ day", "es": "/ día" },
