@@ -231,19 +231,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const key = e.target.dataset.category;
             activeFilters.subcategory = null;
 
-            if (key === 'cat.all') {
-                activeFilters.category = [];
+            if (e.target.checked) {
+                activeFilters.category = [key];
                 document.querySelectorAll('.filter-chip-wrapper input')
                     .forEach(x => { x.checked = (x === e.target); });
             } else {
-                if (e.target.checked) {
-                    activeFilters.category = [key];
-                    document.querySelectorAll('.filter-chip-wrapper input')
-                        .forEach(x => { x.checked = (x === e.target); });
-                } else {
-                    activeFilters.category = [];
-                    document.getElementById('cat-all').checked = true;
-                }
+                // no category selected = show everything
+                activeFilters.category = [];
             }
             window.applyFilters();
         });
