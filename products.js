@@ -30,21 +30,6 @@ window.products = [
         }
     },
     {
-        "id": 904,
-        "name": {
-            "en": "Pack DJ+",
-            "es": "Pack DJ+"
-        },
-        "category": "cat.packs",
-        "manufacturer": "Pioneer DJ / Meyer",
-        "priceDay": 200,
-        "image": "img/inventory/pack_dj_plus.avif",
-        "description": {
-            "en": "Build a polished DJ booth for club nights, brand events and festival sets. Two CDJ-2000NXS players and a DJM-900 mixer come with two Meyer UPM-2P monitors, a UDG DJ table and connecting cables, giving the performer a dedicated workspace and local monitoring.",
-            "es": "Monta una cabina de DJ impecable para noches de club, eventos de marca y sets de festival. Dos reproductores CDJ-2000NXS y una mesa DJM-900 se combinan con dos monitores Meyer UPM-2P, una mesa DJ UDG y cables de conexión, brindando al artista un espacio de trabajo dedicado y monitorización local."
-        }
-    },
-    {
         "id": 101,
         "name": {
             "en": "Moving Head 230w",
@@ -345,21 +330,6 @@ window.products = [
         }
     },
     {
-        "id": 404,
-        "name": {
-            "en": "Midas M32 live",
-            "es": "Midas M32 live"
-        },
-        "category": "cat.console",
-        "manufacturer": "Midas",
-        "priceDay": 90,
-        "image": "img/inventory/MIDAS M32.avif",
-        "description": {
-            "en": "Take control of complex live mixes with dedicated faders, digital processing and recallable scenes. The M32 LIVE suits concerts, conferences and productions with multiple performers, helping engineers move efficiently between soundcheck, show cues and recording.",
-            "es": "Toma el control absoluto de mezclas complejas en directo con faders motorizados, procesamiento digital y memorias de escena. La M32 LIVE es óptima para conciertos, conferencias y producciones multicanal, agilizando las pruebas de sonido, el directo y la grabación multipista."
-        }
-    },
-    {
         "id": 501,
         "name": {
             "en": "SLXD24E/SM58 G59",
@@ -537,21 +507,6 @@ window.products = [
         "description": {
             "en": "Extend a compatible event power connection to the position your setup requires. Useful for lighting areas and local distribution, with the cable length selected to suit the route between supply and equipment.",
             "es": "Extiende conexiones eléctricas dedicadas hasta el lugar exacto que requiera el montaje. Especialmente útil para líneas de iluminación y subdistribuciones locales, ajustando la longitud al recorrido necesario."
-        }
-    },
-    {
-        "id": 706,
-        "name": {
-            "en": "Schuko 3-5m 3x2,5 wire",
-            "es": "Cable Schuko 3-5m 3x2,5"
-        },
-        "category": "cat.electricity",
-        "manufacturer": "Generic",
-        "priceDay": 2,
-        "image": "img/inventory/SCHUKO.avif",
-        "description": {
-            "en": "Put powered speakers, lighting fixtures and DJ equipment where they work best. These Schuko extension cables cover short power runs around stages, presentation areas and control desks, helping keep the setup organised.",
-            "es": "Alimenta altavoces autoamplificados, focos y equipos de cabina en su ubicación idónea. Estos alargadores Schuko resuelven tiradas cortas de corriente en escenarios, zonas de exposición y mesas de control de forma limpia y ordenada."
         }
     },
         /* SERVICES COMMENTED OUT
@@ -764,51 +719,6 @@ window.products = [
         "description": {
             "en": "Fine-tune a truss layout when a full two-metre section is too long. This 1.5-metre straight section helps shape compatible lighting structures, exhibition stands and stage frames around the available space.",
             "es": "Ajusta las medidas de la estructura de truss cuando un tramo de dos metros resulta excesivo. Este módulo recto de 1,5 metros facilita la adaptación precisa de puentes de luces, stands y pórticos al espacio del recinto."
-        }
-    },
-    {
-        "id": 1019,
-        "name": {
-            "en": "Schuko 3 socket black",
-            "es": "Schuko 3 socket black"
-        },
-        "category": "cat.electricity",
-        "manufacturer": "Unknown/Generic",
-        "priceDay": 3,
-        "image": "img/inventory/Schucko_3_socket_black.avif",
-        "description": {
-            "en": "Bring three local power connections to a DJ booth, control desk or equipment position. The black finish blends into stage setups and keeps short equipment connections grouped in one place.",
-            "es": "Dispone de tres tomas de corriente próximas en cabinas de DJ, mesas de control o zonas de instrumentos. Su acabado en color negro se camufla discretamente sobre el escenario, manteniendo las tomas agrupadas."
-        }
-    },
-    {
-        "id": 1020,
-        "name": {
-            "en": "Schuko 3 socket blue",
-            "es": "Schuko 3 socket blue"
-        },
-        "category": "cat.electricity",
-        "manufacturer": "Unknown/Generic",
-        "priceDay": 3,
-        "image": "img/inventory/Schucko_3_socket_blue.avif",
-        "description": {
-            "en": "Group three Schuko power connections where your backline or technical equipment needs them. The blue finish makes this distribution strip easy to identify during setup, equipment changes and pack-down.",
-            "es": "Agrupa tres conexiones Schuko donde lo requieran los equipos técnicos o el backline. Su color azul facilita una rápida localización e identificación durante el montaje, las actuaciones y el desmontaje."
-        }
-    },
-    {
-        "id": 1021,
-        "name": {
-            "en": "Schuko 5 socket",
-            "es": "Schuko 5 socket"
-        },
-        "category": "cat.electricity",
-        "manufacturer": "Unknown/Generic",
-        "priceDay": 3,
-        "image": "img/inventory/Shucko_5_socket.avif",
-        "description": {
-            "en": "Keep a busy control desk or equipment rack organised with five local Schuko connections. Useful for mixers, playback devices and supporting electronics that need a shared power point within the circuit's total capacity.",
-            "es": "Mantén despejados y ordenados los puestos de control o racks de equipos con cinco tomas Schuko agrupadas. Ideal para mesas, reproductores y periféricos que comparten alimentación sin sobrecargar el circuito."
         }
     },
     {
@@ -1367,36 +1277,6 @@ window.products = [
         }
     },
     {
-        "id": 1064,
-        "name": {
-            "en": "Base Truss",
-            "es": "Base Truss"
-        },
-        "category": "cat.structures",
-        "manufacturer": "UPSTAGE",
-        "priceDay": 12,
-        "image": "img/inventory/Kuzar_Base_Truss.avif",
-        "description": {
-            "en": "Start a freestanding truss feature with a base designed for a compatible vertical section. Useful for lighting totems, event entrances and DJ booth layouts where the structure begins at floor level.",
-            "es": "Levanta estructuras verticales de truss de forma segura con una base sólida concebida para tramos compatibles. Indispensable en tótems de iluminación, accesos decorativos y cabinas de DJ donde la estructura arranca desde el suelo."
-        }
-    },
-    {
-        "id": 1065,
-        "name": {
-            "en": "Cubo Truss",
-            "es": "Cubo Truss"
-        },
-        "category": "cat.structures",
-        "manufacturer": "UPSTAGE",
-        "priceDay": 12,
-        "image": "img/inventory/Kuzar_Cubo_Truss.avif",
-        "description": {
-            "en": "Take a truss design around corners or into several directions from one junction. This compatible connector cube helps create exhibition frames, stage portals and lighting structures that need more flexibility than a straight run.",
-            "es": "Crea esquinas y bifurcaciones estructurales en múltiples direcciones desde un único punto de unión. Este cubo de unión compatible permite configurar pórticos para escenarios, marcos feriales y diseños de iluminación a medida."
-        }
-    },
-    {
         "id": 1066,
         "name": {
             "en": "Escalera Tarima",
@@ -1439,21 +1319,6 @@ window.products = [
         "description": {
             "en": "Finish a compatible truss totem with a flat top plate for suitable mounted fixtures. A useful detail for DJ booths, stage accents and event entrances where the lighting should sit neatly above the structure.",
             "es": "Remata los tótems de truss con una pletina superior plana para el apoyo de luminarias compatibles. Un acabado limpio y seguro para cabinas de DJ, acentos escénicos y accesos donde el foco debe quedar asentado en lo alto."
-        }
-    },
-    {
-        "id": 1075,
-        "name": {
-            "en": "Tarima 1x1",
-            "es": "Tarima 1x1"
-        },
-        "category": "cat.structures",
-        "manufacturer": "UPSTAGE",
-        "priceDay": 15,
-        "image": "img/inventory/stage_deck.avif",
-        "description": {
-            "en": "Add a compact platform or fine-tune the footprint of a larger stage. This one-by-one-metre deck suits lectern positions, small display platforms and modular riser layouts where a full-size section would take too much space.",
-            "es": "Añade una plataforma compacta o ajusta con precisión el perímetro de un escenario mayor. Este módulo de tarima de un metro por un metro es perfecto para atriles, peanas de exposición o pequeñas gradas donde el espacio es limitado."
         }
     },
     {
