@@ -390,6 +390,21 @@ window.products = [
         }
     },
     {
+        "id": 503,
+        "name": {
+            "en": "Shure SM 58/57",
+            "es": "Shure SM 58/57"
+        },
+        "category": "cat.mics",
+        "manufacturer": "Shure",
+        "priceDay": 10,
+        "image": "img/inventory/Shure 57 58 .avif",
+        "description": {
+            "en": "Cover the essentials of a live stage with a familiar Shure dynamic microphone. Choose the SM58 for vocals and speech, or the SM57 for instruments and amplifiers, according to the needs of your performance.",
+            "es": "Cubre los requerimientos esenciales de cualquier escenario con un micrófono dinámico Shure de absoluta referencia. Elige el SM58 para voces y discursos, o el SM57 para instrumentos y amplificadores, según las necesidades de la actuación."
+        }
+    },
+    {
         "id": 504,
         "name": {
             "en": "EV RE 20",
@@ -662,6 +677,51 @@ window.products = [
         }
     },
     {
+        "id": 1005,
+        "name": {
+            "en": "Sunstrip Active MKII",
+            "es": "Sunstrip Active MKII"
+        },
+        "category": "cat.light",
+        "manufacturer": "Showtec",
+        "priceDay": 15,
+        "image": "img/inventory/sunstrip.avif",
+        "description": {
+            "en": "Add warmth and movement to a live band's backdrop or a DJ stage. Ten individually dimmable lamps let the Sunstrip move from a gentle glow to running chases and punchy accents timed to the music.",
+            "es": "Aporta calidez, dinamismo y estilo escénico al telón de fondo de una banda o cabina de DJ. Diez lámparas regulables de forma independiente permiten desde una suave iluminación ámbar hasta secuencias y destellos contundentes sincronizados con el ritmo."
+        }
+    },
+    {
+        "id": 1006,
+        "name": {
+            "en": "SuperStrobe ABL",
+            "es": "SuperStrobe ABL"
+        },
+        "category": "cat.light",
+        "manufacturer": "Eurolite",
+        "priceDay": 10,
+        "image": "img/inventory/SUBER_ABL_STROBE.avif",
+        "description": {
+            "en": "Switch from colourful background light to striking white flashes as the music builds. This LED strobe adds contrast and energy to electronic performances, club nights and concert lighting designs.",
+            "es": "Alterna entre fondos de color envolventes e intensos destellos blancos en los momentos culminantes del show. Este estroboscopio LED añade contraste visual y dinamismo a sesiones electrónicas, discotecas y espectáculos en vivo."
+        }
+    },
+    {
+        "id": 1007,
+        "name": {
+            "en": "WASH 19x15W LED RGBW",
+            "es": "WASH 19x15W LED RGBW"
+        },
+        "category": "cat.light",
+        "manufacturer": "SHEHDS",
+        "priceDay": 10,
+        "image": "img/inventory/Wash_17x19.avif",
+        "description": {
+            "en": "Shape the mood of a stage with moving colour and adjustable beam width. This RGBW wash can spread light across performers or tighten the look for more focused accents at concerts, DJ events and corporate shows.",
+            "es": "Define el ambiente del escenario con movimiento, mezclas de color y zoom regulable. Este wash RGBW permite iluminar uniformemente a los artistas o concentrar el haz para lograr acentos impactantes en conciertos, fiestas y eventos corporativos."
+        }
+    },
+    {
         "id": 1008,
         "name": {
             "en": "WASH 36X18W RGBWU",
@@ -674,6 +734,21 @@ window.products = [
         "description": {
             "en": "Give a stage a rich colour wash that can change with each song or scene. Moving-head control and motorised zoom make this fixture useful for live music, theatrical looks and colourful event backdrops.",
             "es": "Baña el escenario con un potente espectro de color capaz de transformar cada escena o tema musical. Su cabeza móvil con zoom motorizado resulta idónea para directos musicales, montajes teatrales y llamativos fondos escenográficos."
+        }
+    },
+    {
+        "id": 1009,
+        "name": {
+            "en": "BEAM 7R 230W",
+            "es": "BEAM 7R 230W"
+        },
+        "category": "cat.light",
+        "manufacturer": "SHEHDS",
+        "priceDay": 10,
+        "image": "img/inventory/230w_7r.avif",
+        "description": {
+            "en": "Draw crisp beams through the air for club nights, concert builds and dramatic entrances. Colours, gobos and prism effects give this moving head several looks, with haze helping turn the beam paths into part of the show.",
+            "es": "Traza haces concentrados y de largo alcance a través del aire para noches de club, conciertos y aperturas impactantes. Gobos, colores y prismas aportan múltiples recursos visuales, luciendo en todo su esplendor combinados con humo escénico."
         }
     },
         {
@@ -704,6 +779,36 @@ window.products = [
         "description": {
             "en": "Keep the focus on the voice with a familiar handheld microphone for singers, hosts and speakers. The Shure SM58 is a practical choice for live bands, wedding speeches, panel discussions and everyday stage work.",
             "es": "Mantén la voz en el primer plano con el micrófono de mano más reconocido por artistas, presentadores y ponentes. El Shure SM58 es la opción de máxima confianza para grupos en directo, discursos de boda, conferencias y actuaciones cotidianas."
+        }
+    },
+    {
+        "id": 1013,
+        "name": {
+            "en": "HK Audio Sonar 112 xi",
+            "es": "HK Audio Sonar 112 xi"
+        },
+        "category": "cat.sound",
+        "manufacturer": "HKAudio",
+        "priceDay": 15,
+        "image": "img/inventory/sonar-115-xi.avif",
+        "description": {
+            "en": "Move easily between speeches, background music and party playback. This powered SONAR speaker combines onboard mixing with Bluetooth connectivity, making it convenient for presentations, private celebrations and compact mobile sound setups.",
+            "es": "Pasa con total fluidez de conferencias y música ambiental a la fiesta más animada. Esta caja autoamplificada SONAR incorpora mezclador interno y conectividad Bluetooth, aportando gran comodidad a celebraciones privadas, presentaciones y montajes móviles."
+        }
+    },
+    {
+        "id": 1014,
+        "name": {
+            "en": "UPM 2P",
+            "es": "UPM 2P"
+        },
+        "category": "cat.sound",
+        "manufacturer": "Meyer",
+        "priceDay": 20,
+        "image": "img/inventory/UPM-2P.avif",
+        "description": {
+            "en": "Add focused sound reinforcement where a larger speaker would be visually intrusive. This compact Meyer Sound cabinet suits front fills, theatre spaces, corporate presentations and local monitoring, helping bring detail to specific listening areas.",
+            "es": "Aporta refuerzo sonoro de alta fidelidad allí donde una caja acústica grande resultaría intrusiva. Este recinto compacto de Meyer Sound es perfecto para front fills, salas de teatro, presentaciones y monitorización local, garantizando máxima inteligibilidad."
         }
     },
     {
@@ -839,6 +944,21 @@ window.products = [
         "description": {
             "en": "Give DJs detailed control over long blends and layered sets with the Xone:96 analogue mixer. Four-band EQ, Xone filters and dual USB interfaces suit electronic music nights and hybrid performances that combine decks with computer audio.",
             "es": "Brinda a los DJs un control analógico excepcional para sesiones profundas, mezclas extendidas y directos híbridos. Su ecualización de cuatro bandas, filtros Xone duales y dos tarjetas de sonido USB la convierten en un referente para música electrónica."
+        }
+    },
+    {
+        "id": 1024,
+        "name": {
+            "en": "PIONEER DJM",
+            "es": "PIONEER DJM"
+        },
+        "category": "cat.dj",
+        "manufacturer": "Pioneer",
+        "priceDay": 45,
+        "image": "img/inventory/PIONEER_DJM.avif",
+        "description": {
+            "en": "Put a familiar Pioneer DJ mixer at the heart of your booth for club events, private parties and guest performances. Choose the DJM model that matches your artist's workflow, source connections and effects requirements.",
+            "es": "Sitúa una mesa Pioneer DJ en el corazón de la cabina para sesiones de club, fiestas privadas y DJs invitados. Selecciona el modelo que mejor responda al estilo del artista, conexiones de reproductores y necesidades de efectos."
         }
     },
     {
@@ -1799,6 +1919,651 @@ window.products = [
         "description": {
             "en": "Bring microphones, music playback and useful effects together in a compact event mixer. The MG10XU suits wedding speeches, acoustic duos, presentations and streamed sessions, with USB audio for a connected computer.",
             "es": "Reúne micrófonos, música ambiente y efectos útiles en una mesa de sonido muy compacta. La MG10XU es perfecta para discursos de boda, dúos acústicos, conferencias y streaming, con interfaz de audio USB para conectar a un ordenador."
+        }
+    },
+    {
+        "id": 1104,
+        "name": {
+            "en": "Shure BLX24 H8E",
+            "es": "Shure BLX24 H8E"
+        },
+        "category": "cat.mics",
+        "manufacturer": "Shure",
+        "priceDay": 19.99,
+        "image": "img/inventory/01-shure-blx24-h8e.avif",
+        "description": {
+            "en": "Give singers and presenters the freedom to move while keeping their voice at the centre of the event. This handheld wireless microphone is a practical choice for speeches, live vocals and audience participation.",
+            "es": "Da libertad de movimiento a cantantes y presentadores sin perder el protagonismo de la voz. Este micrófono inalámbrico de mano es una opción práctica para discursos, actuaciones en directo y participación del público."
+        }
+    },
+    {
+        "id": 1105,
+        "name": {
+            "en": "Sennheiser EW-D ME3 R1-6",
+            "es": "Sennheiser EW-D ME3 R1-6"
+        },
+        "category": "cat.mics",
+        "manufacturer": "Sennheiser",
+        "priceDay": 25,
+        "image": "img/inventory/02-sennheiser-ew-d-me3.avif",
+        "description": {
+            "en": "Keep your hands free and your voice close to the microphone throughout the performance. This wireless headset system suits presenters, instructors and performers who need to move naturally on stage.",
+            "es": "Mantén las manos libres y la voz cerca del micrófono durante toda la actuación. Este sistema inalámbrico de diadema es adecuado para presentadores, instructores y artistas que necesitan moverse con naturalidad por el escenario."
+        }
+    },
+    {
+        "id": 1106,
+        "name": {
+            "en": "RCF NX 945 A",
+            "es": "RCF NX 945 A"
+        },
+        "category": "cat.sound",
+        "manufacturer": "RCF",
+        "priceDay": 100,
+        "image": "img/inventory/03-rcf-nx945a.avif",
+        "description": {
+            "en": "Bring live music, DJ sets and spoken presentations to your audience with a dedicated PA loudspeaker. The RCF NX 945 A fits event sound systems where vocals and music need a clear, confident presence.",
+            "es": "Acerca la música en directo, las sesiones de DJ y las presentaciones a tu público con un altavoz de PA. El RCF NX 945 A encaja en sistemas de sonido para eventos donde las voces y la música necesitan una presencia clara."
+        }
+    },
+    {
+        "id": 1107,
+        "name": {
+            "en": "K&M 21449",
+            "es": "K&M 21449"
+        },
+        "category": "cat.sound",
+        "manufacturer": "K&M",
+        "priceDay": 10,
+        "image": "img/inventory/04-km-21449.avif",
+        "description": {
+            "en": "Position your PA speakers where they can serve the audience effectively. These speaker stands help organise the sound setup for presentations, live performances and private events while keeping the floor layout tidy.",
+            "es": "Coloca los altavoces de PA en una posición adecuada para llegar al público. Estos soportes ayudan a organizar el sonido de presentaciones, actuaciones y eventos privados, manteniendo despejada la distribución del espacio."
+        }
+    },
+    {
+        "id": 1108,
+        "name": {
+            "en": "Ampeg SVT 115",
+            "es": "Ampeg SVT 115"
+        },
+        "category": "cat.backline",
+        "manufacturer": "Ampeg",
+        "priceDay": 30,
+        "image": "img/inventory/05-ampeg-svt115.avif",
+        "description": {
+            "en": "Give the bass guitar a dedicated voice on stage with this Ampeg speaker cabinet. Pair it with a suitable bass head for rehearsals, concerts and event bands that need a straightforward backline setup.",
+            "es": "Da al bajo una voz propia en el escenario con esta pantalla Ampeg. Combínala con un cabezal compatible para ensayos, conciertos y bandas de eventos que necesitan un backline sencillo de preparar."
+        }
+    },
+    {
+        "id": 1109,
+        "name": {
+            "en": "Ampeg SVT-810AV",
+            "es": "Ampeg SVT-810AV"
+        },
+        "category": "cat.backline",
+        "manufacturer": "Ampeg",
+        "priceDay": 40,
+        "image": "img/inventory/06-ampeg-svt810av.avif",
+        "description": {
+            "en": "Build a substantial bass backline for concerts and full-band performances. This Ampeg cabinet gives visiting bassists a familiar stage format when paired with a suitable amplifier head.",
+            "es": "Prepara un backline de bajo con presencia para conciertos y actuaciones de banda. Esta pantalla Ampeg ofrece a los bajistas un formato de escenario familiar cuando se combina con un cabezal compatible."
+        }
+    },
+    {
+        "id": 1110,
+        "name": {
+            "en": "Ampeg PF-500",
+            "es": "Ampeg PF-500"
+        },
+        "category": "cat.backline",
+        "manufacturer": "Ampeg",
+        "priceDay": 20,
+        "image": "img/inventory/07-ampeg-pf500.avif",
+        "description": {
+            "en": "Shape the bass sound around the player and the song with this compact Ampeg head. Pair it with a suitable cabinet for rehearsals, live sets and event bands that need a flexible bass setup.",
+            "es": "Adapta el sonido del bajo al músico y a cada tema con este cabezal compacto Ampeg. Combínalo con una pantalla compatible para ensayos, actuaciones y bandas de eventos que necesitan un equipo de bajo versátil."
+        }
+    },
+    {
+        "id": 1111,
+        "name": {
+            "en": "Ampeg V-4B",
+            "es": "Ampeg V-4B"
+        },
+        "category": "cat.backline",
+        "manufacturer": "Ampeg",
+        "priceDay": 40,
+        "image": "img/inventory/08-ampeg-v4b.avif",
+        "description": {
+            "en": "Bring the character of an Ampeg valve bass head to your live backline. The V-4B is a natural fit for bands looking for expressive bass tone on stage, paired with a suitable speaker cabinet.",
+            "es": "Lleva el carácter de un cabezal de bajo a válvulas Ampeg a tu backline. El V-4B encaja en bandas que buscan un sonido de bajo expresivo en directo, combinado con una pantalla compatible."
+        }
+    },
+    {
+        "id": 1112,
+        "name": {
+            "en": "Fender Blues Junior IV Western Edition",
+            "es": "Fender Blues Junior IV Western Edition"
+        },
+        "category": "cat.backline",
+        "manufacturer": "Fender",
+        "priceDay": 20,
+        "image": "img/inventory/09-fender-blues-junior.avif",
+        "description": {
+            "en": "Add expressive guitar tone and a distinctive visual touch to your stage setup. This Fender combo suits blues, roots and intimate live performances where the guitar needs to feel present without dominating the space.",
+            "es": "Añade un sonido de guitarra expresivo y un detalle visual distintivo al escenario. Este combo Fender encaja en actuaciones de blues, música de raíces y conciertos íntimos donde la guitarra necesita presencia sin dominar el espacio."
+        }
+    },
+    {
+        "id": 1113,
+        "name": {
+            "en": "Fender Hot Rod Deluxe IV",
+            "es": "Fender Hot Rod Deluxe IV"
+        },
+        "category": "cat.backline",
+        "manufacturer": "Fender",
+        "priceDay": 40,
+        "image": "img/inventory/10-fender-hot-rod.avif",
+        "description": {
+            "en": "Give guitarists a familiar Fender combo for rehearsals, concerts and event bands. The Hot Rod Deluxe IV provides a practical starting point for shaping clean passages and more driven parts throughout a live set.",
+            "es": "Ofrece a los guitarristas un combo Fender familiar para ensayos, conciertos y bandas de eventos. El Hot Rod Deluxe IV permite dar forma tanto a pasajes limpios como a partes con más saturación durante la actuación."
+        }
+    },
+    {
+        "id": 1114,
+        "name": {
+            "en": "Nord Electro 6HP",
+            "es": "Nord Electro 6HP"
+        },
+        "category": "cat.backline",
+        "manufacturer": "Nord",
+        "priceDay": 100,
+        "image": "img/inventory/11-nord-electro6hp.avif",
+        "description": {
+            "en": "Move between piano-led songs, organ parts and layered keyboard textures during a live set. The Nord Electro 6HP gives keyboard players an expressive stage instrument for bands, acoustic sessions and event performances.",
+            "es": "Pasa de temas de piano a partes de órgano y texturas de teclado durante una actuación. El Nord Electro 6HP ofrece a los teclistas un instrumento expresivo para bandas, sesiones acústicas y actuaciones en eventos."
+        }
+    },
+    {
+        "id": 1115,
+        "name": {
+            "en": "Yamaha Stage Custom Hip Shell Pack Raven Black",
+            "es": "Yamaha Stage Custom Hip Shell Pack Raven Black"
+        },
+        "category": "cat.backline",
+        "manufacturer": "Yamaha",
+        "priceDay": 35,
+        "image": "img/inventory/12-yamaha-stage-custom-hip.avif",
+        "description": {
+            "en": "Build a compact acoustic drum setup for intimate gigs, rehearsals and stages where space matters. This Yamaha shell pack provides the core of the kit, ready to be matched with the hardware and cymbals your drummer needs.",
+            "es": "Prepara una batería acústica compacta para conciertos íntimos, ensayos y escenarios donde el espacio cuenta. Este conjunto de cascos Yamaha aporta la base del kit para combinarla con los herrajes y platos que necesite el batería."
+        }
+    },
+    {
+        "id": 1116,
+        "name": {
+            "en": "Simple Way Mini",
+            "es": "Simple Way Mini"
+        },
+        "category": "cat.sound",
+        "manufacturer": "Simple Way",
+        "priceDay": 10,
+        "image": "img/inventory/13-simple-way-mini.avif",
+        "description": {
+            "en": "Connect an instrument to the mixing desk as part of a tidy live sound setup. This compact DI box is useful for bands, acoustic performances and stage layouts where a direct instrument feed is needed.",
+            "es": "Conecta un instrumento a la mesa de mezclas como parte de un montaje de sonido ordenado. Esta caja DI compacta resulta útil para bandas, actuaciones acústicas y escenarios que necesitan una señal directa del instrumento."
+        }
+    },
+    {
+        "id": 1117,
+        "name": {
+            "en": "BSS AR-133",
+            "es": "BSS AR-133"
+        },
+        "category": "cat.sound",
+        "manufacturer": "BSS",
+        "priceDay": 10,
+        "image": "img/inventory/14-bss-ar133.avif",
+        "description": {
+            "en": "Give your sound engineer a direct feed from an instrument without placing another microphone on stage. The BSS AR-133 is a useful addition to concert, rehearsal and event sound systems with multiple instrument sources.",
+            "es": "Envía una señal directa del instrumento al técnico de sonido sin colocar otro micrófono en el escenario. La BSS AR-133 es un complemento útil para conciertos, ensayos y eventos con varias fuentes instrumentales."
+        }
+    },
+    {
+        "id": 1118,
+        "name": {
+            "en": "Radial BT-PRO V2",
+            "es": "Radial BT-PRO V2"
+        },
+        "category": "cat.sound",
+        "manufacturer": "Radial",
+        "priceDay": 20,
+        "image": "img/inventory/15-radial-btpro-v2.avif",
+        "description": {
+            "en": "Bring music from a Bluetooth device into the event sound system. This Radial receiver is useful for background playlists, presentation audio and other playback moments where a phone or tablet is the source.",
+            "es": "Lleva la música de un dispositivo Bluetooth al sistema de sonido del evento. Este receptor Radial resulta útil para listas de música ambiental, audio de presentaciones y otros momentos de reproducción desde un móvil o una tableta."
+        }
+    },
+    {
+        "id": 1119,
+        "name": {
+            "en": "Palmer PAN 01",
+            "es": "Palmer PAN 01"
+        },
+        "category": "cat.sound",
+        "manufacturer": "Palmer",
+        "priceDay": 10,
+        "image": "img/inventory/16-palmer-pan01.avif",
+        "description": {
+            "en": "Add a direct instrument connection to your live sound setup with this Palmer DI box. It is a practical choice for rehearsals, acoustic acts and event bands that need to feed instruments into the mixing desk.",
+            "es": "Añade una conexión directa para instrumentos a tu montaje de sonido con esta caja DI Palmer. Es una opción práctica para ensayos, actuaciones acústicas y bandas de eventos que necesitan enviar sus instrumentos a la mesa de mezclas."
+        }
+    },
+    {
+        "id": 1120,
+        "name": {
+            "en": "Sennheiser XSW-IEM",
+            "es": "Sennheiser XSW-IEM"
+        },
+        "category": "cat.sound",
+        "manufacturer": "Sennheiser",
+        "priceDay": 20,
+        "image": "img/inventory/17-sennheiser-xsw-iem.avif",
+        "description": {
+            "en": "Give performers a personal way to follow their monitor mix while moving around the stage. This wireless in-ear monitoring system suits singers and musicians preparing for rehearsals, concerts and live event performances.",
+            "es": "Ofrece a los artistas una forma personal de escuchar su mezcla de monitores mientras se mueven por el escenario. Este sistema inalámbrico de monitorización in-ear encaja en ensayos, conciertos y actuaciones en eventos."
+        }
+    },
+    {
+        "id": 1121,
+        "name": {
+            "en": "Mic stand boom",
+            "es": "Mic stand boom"
+        },
+        "category": "cat.mics",
+        "manufacturer": "Generic",
+        "priceDay": 5,
+        "image": "img/inventory/18-mic-stand-boom.avif",
+        "description": {
+            "en": "Place the microphone where the performance needs it while keeping the stand out of the way. A boom stand is useful for singers, seated musicians and instrument miking in rehearsals, concerts and presentations.",
+            "es": "Coloca el micrófono donde lo necesita la actuación sin que la base estorbe. Una jirafa resulta útil para cantantes, músicos sentados y microfonía de instrumentos en ensayos, conciertos y presentaciones."
+        }
+    },
+    {
+        "id": 1122,
+        "name": {
+            "en": "Audibax Onyx 130 Double X",
+            "es": "Audibax Onyx 130 Double X"
+        },
+        "category": "cat.backline",
+        "manufacturer": "Audibax",
+        "priceDay": 7,
+        "image": "img/inventory/19-audibax-onyx130.avif",
+        "description": {
+            "en": "Set up a dedicated playing position for your keyboard with this double-X stand. It is a practical addition to rehearsal rooms, live stages and event backlines where the instrument needs its own support.",
+            "es": "Prepara una posición de interpretación para el teclado con este soporte de doble X. Es un complemento práctico para salas de ensayo, escenarios y backlines de eventos donde el instrumento necesita su propio apoyo."
+        }
+    },
+    {
+        "id": 1123,
+        "name": {
+            "en": "Gibraltar 9608E",
+            "es": "Gibraltar 9608E"
+        },
+        "category": "cat.backline",
+        "manufacturer": "Gibraltar",
+        "priceDay": 15,
+        "image": "img/inventory/20-gibraltar-9608e.avif",
+        "description": {
+            "en": "Complete the drummer's playing position with a dedicated drum throne. The Gibraltar 9608E is a useful part of a rehearsal or live backline, helping the player settle into the kit before the performance begins.",
+            "es": "Completa la posición del batería con un asiento específico para su instrumento. El Gibraltar 9608E es una pieza útil del backline de ensayo o directo para que el músico se acomode al kit antes de empezar."
+        }
+    },
+    {
+        "id": 1124,
+        "name": {
+            "en": "Pearl BC-830",
+            "es": "Pearl BC-830"
+        },
+        "category": "cat.backline",
+        "manufacturer": "Pearl",
+        "priceDay": 5,
+        "image": "img/inventory/21-pearl-bc830.avif",
+        "description": {
+            "en": "Place a cymbal where it fits the drummer's playing style and the layout of the kit. This Pearl boom stand helps complete an acoustic drum setup for rehearsals, concerts and visiting musicians.",
+            "es": "Coloca un plato donde mejor encaje con la forma de tocar del batería y la distribución del kit. Este soporte de jirafa Pearl ayuda a completar una batería acústica para ensayos, conciertos y músicos invitados."
+        }
+    },
+    {
+        "id": 1125,
+        "name": {
+            "en": "SHEHDS JMS WEBB 19×40 IP65",
+            "es": "SHEHDS JMS WEBB 19×40 IP65"
+        },
+        "category": "cat.light",
+        "manufacturer": "SHEHDS",
+        "priceDay": 40,
+        "image": "img/inventory/22-shehds-jms-webb.avif",
+        "description": {
+            "en": "Fill the stage with colour and movement for concerts, DJ sets and live event productions. This moving wash fixture helps build changing atmospheres around performers and connect the lighting to the pace of the show.",
+            "es": "Llena el escenario de color y movimiento en conciertos, sesiones de DJ y producciones en directo. Esta cabeza móvil wash ayuda a crear ambientes cambiantes alrededor de los artistas y a acompañar el ritmo del espectáculo."
+        }
+    },
+    {
+        "id": 1126,
+        "name": {
+            "en": "Audibax Dallas 300",
+            "es": "Audibax Dallas 300"
+        },
+        "category": "cat.light",
+        "manufacturer": "Audibax",
+        "priceDay": 10,
+        "image": "img/inventory/23-audibax-dallas300.avif",
+        "description": {
+            "en": "Add colour to a stage, backdrop or event space with this LED PAR. It is a practical building block for live music lighting, decorative colour washes and creating a consistent atmosphere across the venue.",
+            "es": "Añade color a un escenario, un fondo o un espacio de eventos con este PAR LED. Es una pieza práctica para iluminar actuaciones, bañar superficies de color y crear un ambiente coherente en el recinto."
+        }
+    },
+    {
+        "id": 1127,
+        "name": {
+            "en": "PAR 64",
+            "es": "PAR 64"
+        },
+        "category": "cat.light",
+        "manufacturer": "Generic",
+        "priceDay": 15,
+        "image": "img/inventory/24-par64.avif",
+        "description": {
+            "en": "Bring a classic stage-lighting look to concerts, theatre and live performances. This PAR fixture is useful for building straightforward lighting arrangements and giving performers or scenic elements a defined presence.",
+            "es": "Aporta una estética clásica de iluminación escénica a conciertos, teatro y actuaciones en directo. Este proyector PAR resulta útil para crear montajes sencillos y dar presencia a artistas o elementos de escenografía."
+        }
+    },
+    {
+        "id": 1128,
+        "name": {
+            "en": "FAL Stage 1000 — Fresnel 650/1000 W",
+            "es": "FAL Stage 1000 — Fresnel 650/1000 W"
+        },
+        "category": "cat.light",
+        "manufacturer": "FAL",
+        "priceDay": 25,
+        "image": "img/inventory/25-fal-stage1000.avif",
+        "description": {
+            "en": "Light performers and scenic areas with the gentle transitions of a Fresnel fixture. It is a useful choice for theatre, presentations and live shows where the lighting should support the scene without a sharply defined edge.",
+            "es": "Ilumina a los artistas y las zonas de escena con las transiciones suaves de un Fresnel. Es una opción útil para teatro, presentaciones y espectáculos donde la luz debe acompañar la escena sin un borde muy marcado."
+        }
+    },
+    {
+        "id": 1129,
+        "name": {
+            "en": "ETC S4 25°–50° Zoom Profile",
+            "es": "ETC S4 25°–50° Zoom Profile"
+        },
+        "category": "cat.light",
+        "manufacturer": "ETC",
+        "priceDay": 30,
+        "image": "img/inventory/26-etc-s4-zoom.avif",
+        "description": {
+            "en": "Draw attention to a performer, lectern or selected part of the stage with a controlled pool of light. This ETC profile fixture is useful for theatre and presentations where the lit area needs a clear, deliberate shape.",
+            "es": "Dirige la atención hacia un artista, un atril o una zona concreta del escenario con una iluminación delimitada. Este proyector de recorte ETC es útil en teatro y presentaciones donde el área iluminada necesita una forma definida."
+        }
+    },
+    {
+        "id": 1130,
+        "name": {
+            "en": "GLP Matrix Eye 4",
+            "es": "GLP Matrix Eye 4"
+        },
+        "category": "cat.light",
+        "manufacturer": "GLP",
+        "priceDay": 40,
+        "image": "img/inventory/27-glp-matrix-eye4.avif",
+        "description": {
+            "en": "Add audience-facing impact to the key moments of a concert or DJ set. This blinder helps punctuate musical accents and bring the crowd into the visual energy of the show.",
+            "es": "Añade impacto hacia el público en los momentos clave de un concierto o una sesión de DJ. Este blinder ayuda a remarcar acentos musicales e involucrar al público en la energía visual del espectáculo."
+        }
+    },
+    {
+        "id": 1131,
+        "name": {
+            "en": "GLP JDC Burst 1",
+            "es": "GLP JDC Burst 1"
+        },
+        "category": "cat.light",
+        "manufacturer": "GLP",
+        "priceDay": 40,
+        "image": "img/inventory/28-glp-jdc-burst1.avif",
+        "description": {
+            "en": "Create sharp visual accents for electronic music, live bands and high-energy stage productions. This strobe adds bursts of light that can underline transitions, drops and dramatic moments in the show.",
+            "es": "Crea acentos visuales marcados para música electrónica, bandas y producciones escénicas de gran energía. Este estrobo aporta destellos que permiten destacar transiciones, drops y momentos dramáticos del espectáculo."
+        }
+    },
+    {
+        "id": 1132,
+        "name": {
+            "en": "Eurolite PAR36 Pinspot",
+            "es": "Eurolite PAR36 Pinspot"
+        },
+        "category": "cat.light",
+        "manufacturer": "Eurolite",
+        "priceDay": 10,
+        "image": "img/inventory/29-eurolite-par36.avif",
+        "description": {
+            "en": "Pick out a small decorative detail or send a focused beam towards a mirror ball. This pinspot is useful for parties, displays and event styling where a selective highlight adds more than general illumination.",
+            "es": "Destaca un pequeño detalle decorativo o dirige un haz hacia una bola de espejos. Este pinspot resulta útil para fiestas, exposiciones y ambientación de eventos donde un punto de luz aporta más que una iluminación general."
+        }
+    },
+    {
+        "id": 1133,
+        "name": {
+            "en": "Showgear SF-125",
+            "es": "Showgear SF-125"
+        },
+        "category": "cat.light",
+        "manufacturer": "Showgear",
+        "priceDay": 15,
+        "image": "img/inventory/30-showgear-sf125.avif",
+        "description": {
+            "en": "Add controlled air movement to your stage or effects setup. This fan is useful for moving haze through a scene and introducing a sense of motion during performances, shoots and event productions.",
+            "es": "Añade movimiento de aire al escenario o al montaje de efectos. Este ventilador resulta útil para distribuir la bruma por la escena y aportar sensación de movimiento en actuaciones, rodajes y producciones de eventos."
+        }
+    },
+    {
+        "id": 1134,
+        "name": {
+            "en": "Stairville HZ-1500 Pro Hazer DMX",
+            "es": "Stairville HZ-1500 Pro Hazer DMX"
+        },
+        "category": "cat.light",
+        "manufacturer": "Stairville",
+        "priceDay": 30,
+        "image": "img/inventory/31-stairville-hz1500.avif",
+        "description": {
+            "en": "Make lighting beams part of the scene with a layer of atmospheric haze. This hazer helps give concerts, DJ sets and stage performances greater visual depth when the lighting design calls for visible beams.",
+            "es": "Haz que los haces de luz formen parte de la escena con una capa de bruma ambiental. Este hazer ayuda a dar profundidad visual a conciertos, sesiones de DJ y actuaciones cuando el diseño de iluminación requiere haces visibles."
+        }
+    },
+    {
+        "id": 1135,
+        "name": {
+            "en": "Triton Blue DM2",
+            "es": "Triton Blue DM2"
+        },
+        "category": "cat.light",
+        "manufacturer": "Triton Blue",
+        "priceDay": 10,
+        "image": "img/inventory/32-triton-blue-dm2.avif",
+        "description": {
+            "en": "Bring compatible conventional fixtures into a controllable stage-lighting setup. This dimmer is useful for focused lighting arrangements in theatre, presentations and live events where brightness needs to follow the scene.",
+            "es": "Integra proyectores convencionales compatibles en un montaje de iluminación regulable. Este dimmer resulta útil en teatro, presentaciones y eventos donde la intensidad de la luz necesita acompañar cada escena."
+        }
+    },
+    {
+        "id": 1136,
+        "name": {
+            "en": "Triton Blue DM4",
+            "es": "Triton Blue DM4"
+        },
+        "category": "cat.light",
+        "manufacturer": "Triton Blue",
+        "priceDay": 15,
+        "image": "img/inventory/33-triton-blue-dm4.avif",
+        "description": {
+            "en": "Build lighting changes around the rhythm of a performance with this dimmer. It helps control compatible conventional fixtures as part of theatre, concert and presentation setups where different areas need their own lighting balance.",
+            "es": "Construye los cambios de luz alrededor del ritmo de la actuación con este dimmer. Permite controlar proyectores convencionales compatibles en teatro, conciertos y presentaciones donde cada zona necesita su propio equilibrio de iluminación."
+        }
+    },
+    {
+        "id": 1137,
+        "name": {
+            "en": "Showtec DIM-4",
+            "es": "Showtec DIM-4"
+        },
+        "category": "cat.light",
+        "manufacturer": "Showtec",
+        "priceDay": 15,
+        "image": "img/inventory/34-showtec-dim4.avif",
+        "description": {
+            "en": "Add dimming control to compatible conventional stage lights. This Showtec dimmer block is a practical part of theatre, live music and event lighting setups where intensity changes help shape the atmosphere.",
+            "es": "Añade regulación de intensidad a luces escénicas convencionales compatibles. Este bloque dimmer Showtec es una pieza práctica en teatro, música en directo y eventos donde los cambios de intensidad ayudan a crear el ambiente."
+        }
+    },
+    {
+        "id": 1138,
+        "name": {
+            "en": "Stairville Aluminium Pipe Ø50 mm, 1 m",
+            "es": "Stairville Aluminium Pipe Ø50 mm, 1 m"
+        },
+        "category": "cat.structures",
+        "manufacturer": "Stairville",
+        "priceDay": 3,
+        "image": "img/inventory/35-stairville-pipe1m.avif",
+        "description": {
+            "en": "Add a compact mounting bar to a planned lighting or stage structure. This aluminium pipe is useful when the layout calls for an additional position for compatible clamps and fixtures.",
+            "es": "Añade una barra compacta a una estructura de iluminación o escenario planificada. Este tubo de aluminio resulta útil cuando el diseño necesita una posición adicional para abrazaderas y equipos compatibles."
+        }
+    },
+    {
+        "id": 1139,
+        "name": {
+            "en": "Stairville Aluminium Pipe Ø50 mm, 2 m",
+            "es": "Stairville Aluminium Pipe Ø50 mm, 2 m"
+        },
+        "category": "cat.structures",
+        "manufacturer": "Stairville",
+        "priceDay": 7,
+        "image": "img/inventory/36-stairville-pipe2m.avif",
+        "description": {
+            "en": "Create a longer mounting span within a planned stage or lighting structure. This aluminium pipe helps position compatible fixtures along a shared bar to suit the layout of a performance or event space.",
+            "es": "Crea un tramo de montaje más largo dentro de una estructura escénica o de iluminación planificada. Este tubo de aluminio permite distribuir equipos compatibles a lo largo de una barra según el diseño del escenario o del evento."
+        }
+    },
+    {
+        "id": 1140,
+        "name": {
+            "en": "Showtec FP50100B — Black Pipe Ø50 mm, 1 m",
+            "es": "Showtec FP50100B — Black Pipe Ø50 mm, 1 m"
+        },
+        "category": "cat.structures",
+        "manufacturer": "Showtec",
+        "priceDay": 15,
+        "image": "img/inventory/37-showtec-fp50100b.avif",
+        "description": {
+            "en": "Add a discreet mounting bar to a stage or lighting arrangement. The black finish helps this Showtec pipe blend into dark scenic environments while providing a position for compatible clamps and equipment.",
+            "es": "Añade una barra de montaje discreta a una estructura escénica o de iluminación. El acabado negro ayuda a integrar este tubo Showtec en entornos oscuros y ofrece una posición para abrazaderas y equipos compatibles."
+        }
+    },
+    {
+        "id": 1141,
+        "name": {
+            "en": "Global Truss 5032-2B Swivel Coupler",
+            "es": "Global Truss 5032-2B Swivel Coupler"
+        },
+        "category": "cat.structures",
+        "manufacturer": "Global Truss",
+        "priceDay": 1,
+        "image": "img/inventory/38-global-truss-5032.avif",
+        "description": {
+            "en": "Connect compatible tubes where the stage design calls for an angled junction. This swivel coupler is useful for adapting the geometry of planned lighting and scenic structures to the event layout.",
+            "es": "Une tubos compatibles cuando el diseño del escenario requiere una conexión en ángulo. Esta abrazadera giratoria resulta útil para adaptar la geometría de estructuras de iluminación y escenografía a la distribución del evento."
+        }
+    },
+    {
+        "id": 1142,
+        "name": {
+            "en": "QWORK Truss Clamp 28–34 mm",
+            "es": "QWORK Truss Clamp 28–34 mm"
+        },
+        "category": "cat.structures",
+        "manufacturer": "QWORK",
+        "priceDay": 1,
+        "image": "img/inventory/39-qwork-clamp.avif",
+        "description": {
+            "en": "Add a mounting point for compatible equipment on a suitable tube. This QWORK clamp is a practical rigging accessory for planned lighting and event installations where the fixture and support need to be matched correctly.",
+            "es": "Añade un punto de montaje para equipos compatibles en un tubo adecuado. Esta abrazadera QWORK es un accesorio práctico para instalaciones de iluminación y eventos donde el equipo y el soporte deben ser compatibles."
+        }
+    },
+    {
+        "id": 1143,
+        "name": {
+            "en": "Showtec FQ30MCMC — Multicube Connector Male",
+            "es": "Showtec FQ30MCMC — Multicube Connector Male"
+        },
+        "category": "cat.structures",
+        "manufacturer": "Showtec",
+        "priceDay": 0.5,
+        "image": "img/inventory/40-showtec-fq30mcmc.avif",
+        "description": {
+            "en": "Complete a compatible multicube connection within a planned truss structure. This Showtec connector is useful when preparing the junctions that bring a modular stage or event design together.",
+            "es": "Completa una conexión multicubo compatible dentro de una estructura de truss planificada. Este conector Showtec resulta útil para preparar las uniones que dan forma a un montaje modular de escenario o evento."
+        }
+    },
+    {
+        "id": 1144,
+        "name": {
+            "en": "Showtec BPFACS10 — Half Conical Connector M10",
+            "es": "Showtec BPFACS10 — Half Conical Connector M10"
+        },
+        "category": "cat.structures",
+        "manufacturer": "Showtec",
+        "priceDay": 0.5,
+        "image": "img/inventory/41-showtec-bpfacs10.avif",
+        "description": {
+            "en": "Complete a compatible truss or mounting assembly with this half-conical connector. It is a useful component when preparing the connection points required by a planned stage, lighting or event structure.",
+            "es": "Completa un conjunto de truss o montaje compatible con este conector semicono. Es un componente útil para preparar los puntos de unión que necesita una estructura planificada de escenario, iluminación o evento."
+        }
+    },
+    {
+        "id": 1145,
+        "name": {
+            "en": "Showtec T-Downrigger FT/FQ Black",
+            "es": "Showtec T-Downrigger FT/FQ Black"
+        },
+        "category": "cat.structures",
+        "manufacturer": "Showtec",
+        "priceDay": 25,
+        "image": "img/inventory/42-showtec-t-downrigger.avif",
+        "description": {
+            "en": "Create a lower mounting position beneath a compatible truss arrangement. This T-downrigger helps place lighting equipment within the scene and build a stage layout with more variation in fixture height.",
+            "es": "Crea una posición de montaje más baja bajo una estructura de truss compatible. Este T-downrigger ayuda a situar equipos de iluminación dentro de la escena y a diseñar un escenario con más variedad en la altura de los proyectores."
+        }
+    },
+    {
+        "id": 1146,
+        "name": {
+            "en": "Showtec Single Downrigger FT/FQ Black",
+            "es": "Showtec Single Downrigger FT/FQ Black"
+        },
+        "category": "cat.structures",
+        "manufacturer": "Showtec",
+        "priceDay": 15,
+        "image": "img/inventory/43-showtec-single-downrigger.avif",
+        "description": {
+            "en": "Position a compatible fixture below the main truss line to suit the stage design. This single downrigger is useful for adding a lower lighting position in concerts, presentations and event productions.",
+            "es": "Coloca un proyector compatible por debajo de la línea principal de truss según el diseño del escenario. Este downrigger simple resulta útil para añadir una posición de iluminación más baja en conciertos, presentaciones y producciones de eventos."
         }
     }
 ];

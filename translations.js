@@ -110,6 +110,7 @@
   "cat.mics": { "en": "Mics", "es": "Micrófonos" },
   "cat.dj": { "en": "DJ", "es": "DJ" },
   "cat.electricity": { "en": "Electricity", "es": "Electricidad" },
+  "cat.backline": { "en": "Backline", "es": "Backline" },
   "cat.packs": { "en": "Packs", "es": "Packs" },
   "cat.service": { "en": "Service", "es": "Servicios" },
 
