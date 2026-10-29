@@ -285,6 +285,8 @@
 
   "reviews.title": { "en": "Client", "es": "Reseñas de" },
   "reviews.titleHighlight": { "en": "Reviews", "es": "Clientes" },
+  "reviews.ratingSource": { "en": "based on Google reviews", "es": "según las reseñas de Google" },
+  "reviews.googleReview": { "en": "Google review", "es": "Reseña de Google" },
 
   "contact.title": { "en": "Get In", "es": "Ponte en" },
   "contact.titleHighlight": { "en": "Touch", "es": "Contacto" },

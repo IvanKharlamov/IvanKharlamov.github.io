@@ -2,80 +2,29 @@ document.addEventListener('DOMContentLoaded', () => {
     // LED logic moved to 404-led.js
     // Hero background is now a CSS-only image carousel.
 
-    function initReviewsCarousel() {
+    function initReviewsMarquee() {
+        const marquee = document.getElementById('reviews-marquee');
         const track = document.getElementById('reviews-track');
-        const dotsContainer = document.getElementById('carousel-dots');
-        if (!track || !dotsContainer) return;
-        const cards = track.children;
+        if (!marquee || !track) return;
+        const cards = Array.from(track.children);
         if (cards.length === 0) return;
-        let currentIndex = 0;
-        let autoSlideTimer;
-        dotsContainer.innerHTML = Array.from(cards).map((_, i) => `
-            <div class="carousel-dot ${i === 0 ? 'active' : ''}" data-index="${i}"></div>
-        `).join('');
-        const dots = dotsContainer.querySelectorAll('.carousel-dot');
-        function updateCarousel(index) {
-            currentIndex = index;
-            track.style.transform = `translateX(calc(-${currentIndex} * (100% + 40px)))`;
-            dots.forEach((dot, i) => dot.classList.toggle('active', i === currentIndex));
-        }
-        let touchStartX = 0;
-        let touchEndX = 0;
-        track.addEventListener('touchstart', e => {
-            touchStartX = e.changedTouches[0].screenX;
-        }, { passive: true });
-        track.addEventListener('touchend', e => {
-            touchEndX = e.changedTouches[0].screenX;
-            handleSwipe();
-        }, { passive: true });
-        function handleSwipe() {
-            const swipeDist = touchStartX - touchEndX;
-            if (Math.abs(swipeDist) > 50) {
-                if (swipeDist > 0) {
-                    updateCarousel((currentIndex + 1) % cards.length);
-                } else {
-                    updateCarousel((currentIndex - 1 + cards.length) % cards.length);
-                }
-                startAutoSlide();
-            }
-        }
-        function startAutoSlide() {
-            stopAutoSlide();
-            autoSlideTimer = setInterval(() => {
-                updateCarousel((currentIndex + 1) % cards.length);
-            }, 5000);
-        }
-        function stopAutoSlide() {
-            clearInterval(autoSlideTimer);
-        }
-        dots.forEach(dot => {
-            dot.addEventListener('click', () => {
-                updateCarousel(parseInt(dot.dataset.index, 10));
-                startAutoSlide();
-            });
+        // Duplicate the cards once so the CSS animation can loop seamlessly.
+        cards.forEach(card => {
+            const clone = card.cloneNode(true);
+            clone.setAttribute('aria-hidden', 'true');
+            track.appendChild(clone);
         });
-        const prevBtn = document.getElementById('prev-review');
-        const nextBtn = document.getElementById('next-review');
-        if (prevBtn) {
-            prevBtn.addEventListener('click', () => {
-                updateCarousel((currentIndex - 1 + cards.length) % cards.length);
-                startAutoSlide();
-            });
-        }
-        if (nextBtn) {
-            nextBtn.addEventListener('click', () => {
-                updateCarousel((currentIndex + 1) % cards.length);
-                startAutoSlide();
-            });
-        }
-        const carousel = document.querySelector('.reviews-carousel');
-        if (carousel) {
-            carousel.addEventListener('mouseenter', stopAutoSlide);
-            carousel.addEventListener('mouseleave', startAutoSlide);
-        }
-        startAutoSlide();
+        // Seconds per card: keeps the speed slow and independent of viewport width.
+        const SECONDS_PER_CARD = 8;
+        marquee.style.setProperty('--reviews-duration', `${cards.length * SECONDS_PER_CARD}s`);
+        marquee.classList.add('is-looping');
+        // Pause while the user touches the strip so they can read a card.
+        marquee.addEventListener('touchstart', () => marquee.classList.add('is-paused'), { passive: true });
+        const resume = () => marquee.classList.remove('is-paused');
+        marquee.addEventListener('touchend', resume, { passive: true });
+        marquee.addEventListener('touchcancel', resume, { passive: true });
     }
-    initReviewsCarousel();
+    initReviewsMarquee();
 
     function initServiceAccordion() {
         const container = document.getElementById('service-details-container');
