@@ -29,33 +29,6 @@ window.products = [
         }
     },
     {
-        "id": 903,
-        "name": {
-            "en": "Pack DJ",
-            "es": "Pack DJ"
-        },
-        "category": "cat.packs",
-        "manufacturer": "Pioneer DJ",
-        "priceDay": 100,
-        "image": "img/inventory/packs/pack-dj.png",
-        "imageAlt": {
-            "en": "Collage of two DJ players and a four-channel DJ mixer",
-            "es": "Collage de dos reproductores DJ y una mesa de mezclas DJ de cuatro canales"
-        },
-        "equipment": {
-            "en": [
-                "2 digital DJ players",
-                "1 four-channel DJ mixer",
-                "Connecting cables"
-            ],
-            "es": [
-                "2 reproductores DJ digitales",
-                "1 mesa de mezclas DJ de 4 canales",
-                "Cableado de conexión"
-            ]
-        }
-    },
-    {
         "id": 905,
         "name": {
             "en": "Party Pack",
