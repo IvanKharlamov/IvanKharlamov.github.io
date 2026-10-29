@@ -152,8 +152,8 @@ window.products = [
     {
         "id": 201,
         "name": {
-            "en": "Truss 50 mm square 30 cm and 1 meter long",
-            "es": "Truss 50mm cuadrado 30 (1000mm)"
+            "en": "Square truss 50 mm, 30 cm section, 1 m long",
+            "es": "Truss cuadrado 50 mm, sección 30 cm, 1 m de largo"
         },
         "category": "cat.structures",
         "manufacturer": "Generic",
@@ -332,8 +332,8 @@ window.products = [
     {
         "id": 501,
         "name": {
-            "en": "SLXD24E/SM58 G59",
-            "es": "SLXD24E/SM58 G59"
+            "en": "Shure SLXD24E/SM58 G59",
+            "es": "Shure SLXD24E/SM58 G59"
         },
         "category": "cat.mics",
         "manufacturer": "Shure",
@@ -560,10 +560,10 @@ window.products = [
         "id": 1001,
         "name": {
             "en": "HK Audio Pro 12 active",
-            "es": "HK Audio Pro 12 active"
+            "es": "HK Audio Pro 12 activo"
         },
         "category": "cat.sound",
-        "manufacturer": "HKAudio",
+        "manufacturer": "HK Audio",
         "priceDay": 15,
         "image": "img/inventory/HK_PRO.avif",
         "description": {
@@ -574,8 +574,8 @@ window.products = [
     {
         "id": 1002,
         "name": {
-            "en": "LED BAR Generic",
-            "es": "LED BAR Generic"
+            "en": "Generic LED bar",
+            "es": "Barra LED genérica"
         },
         "category": "cat.light",
         "manufacturer": "Unknown/Generic",
@@ -589,8 +589,8 @@ window.products = [
     {
         "id": 1003,
         "name": {
-            "en": "SHEHDS Wireless Battery LED Uplight Par Light 6x18W",
-            "es": "SHEHDS Wireless Battery LED Uplight Par Light 6x18W"
+            "en": "SHEHDS wireless battery LED PAR uplight 6x18W",
+            "es": "SHEHDS PAR LED uplight 6x18W inalámbrico a batería"
         },
         "category": "cat.light",
         "manufacturer": "SHEHDS",
@@ -604,8 +604,8 @@ window.products = [
     {
         "id": 1004,
         "name": {
-            "en": "Showtec Straight 2000mm",
-            "es": "Showtec Straight 2000mm"
+            "en": "Showtec straight truss 2000 mm",
+            "es": "Showtec truss recto 2000 mm"
         },
         "category": "cat.structures",
         "manufacturer": "Showtec",
@@ -619,8 +619,8 @@ window.products = [
     {
         "id": 1008,
         "name": {
-            "en": "WASH 36X18W RGBWU",
-            "es": "WASH 36X18W RGBWU"
+            "en": "LED Wash 36x18W RGBWU",
+            "es": "LED Wash 36x18W RGBWU"
         },
         "category": "cat.light",
         "manufacturer": "SHEHDS",
@@ -634,8 +634,8 @@ window.products = [
         {
         "id": 1011,
         "name": {
-            "en": "Shure PGA Drumkit",
-            "es": "Shure PGA Drumkit"
+            "en": "Shure PGA drum microphone kit",
+            "es": "Shure PGA kit de micrófonos para batería"
         },
         "category": "cat.mics",
         "manufacturer": "Shure",
@@ -649,8 +649,8 @@ window.products = [
     {
         "id": 1012,
         "name": {
-            "en": "SM58",
-            "es": "SM58"
+            "en": "Shure SM58",
+            "es": "Shure SM58"
         },
         "category": "cat.mics",
         "manufacturer": "Shure",
@@ -664,8 +664,8 @@ window.products = [
     {
         "id": 1015,
         "name": {
-            "en": "Cable XLR 3-5-7m",
-            "es": "Cable XLR 3-5-7m"
+            "en": "XLR cable 3/5/7 m",
+            "es": "Cable XLR 3/5/7 m"
         },
         "category": "cat.electricity",
         "manufacturer": "Unknown/Generic",
@@ -679,8 +679,8 @@ window.products = [
     {
         "id": 1016,
         "name": {
-            "en": "Audibax Truss Claw 48-51mm 100kg",
-            "es": "Audibax Truss Claw 48-51mm 100kg"
+            "en": "Audibax truss claw 48–51 mm 100 kg",
+            "es": "Audibax garra para truss 48–51 mm 100 kg"
         },
         "category": "cat.structures",
         "manufacturer": "Unknown/Generic",
@@ -709,8 +709,8 @@ window.products = [
     {
         "id": 1018,
         "name": {
-            "en": "Showtec Straight 1500mm",
-            "es": "Showtec Straight 1500mm"
+            "en": "Showtec straight truss 1500 mm",
+            "es": "Showtec truss recto 1500 mm"
         },
         "category": "cat.structures",
         "manufacturer": "Showtec",
@@ -724,8 +724,8 @@ window.products = [
     {
         "id": 1022,
         "name": {
-            "en": "Tent Foldable 3x3",
-            "es": "Tent Foldable 3x3"
+            "en": "Folding tent 3x3 m",
+            "es": "Carpa plegable 3x3 m"
         },
         "category": "cat.structures",
         "manufacturer": "Unknown/Generic",
@@ -739,8 +739,8 @@ window.products = [
     {
         "id": 1023,
         "name": {
-            "en": "ALLEN&HEAT XONE 96",
-            "es": "ALLEN&HEAT XONE 96"
+            "en": "Allen & Heath Xone:96",
+            "es": "Allen & Heath Xone:96"
         },
         "category": "cat.dj",
         "manufacturer": "UPSTAGE",
@@ -754,11 +754,11 @@ window.products = [
     {
         "id": 1025,
         "name": {
-            "en": "PIONEER RMX-1000",
-            "es": "PIONEER RMX-1000"
+            "en": "Pioneer DJ RMX-1000",
+            "es": "Pioneer DJ RMX-1000"
         },
         "category": "cat.dj",
-        "manufacturer": "Pioneer",
+        "manufacturer": "Pioneer DJ",
         "priceDay": 25,
         "image": "img/inventory/PIONEER_RMX-1000.avif",
         "description": {
@@ -769,11 +769,11 @@ window.products = [
     {
         "id": 1026,
         "name": {
-            "en": "PIONEER XDJ",
-            "es": "PIONEER XDJ"
+            "en": "Pioneer DJ XDJ",
+            "es": "Pioneer DJ XDJ"
         },
         "category": "cat.dj",
-        "manufacturer": "Pioneer",
+        "manufacturer": "Pioneer DJ",
         "priceDay": 50,
         "image": "img/inventory/PIONEER_XDJ.avif",
         "description": {
@@ -784,11 +784,11 @@ window.products = [
     {
         "id": 1027,
         "name": {
-            "en": "PIONEER / ALPHA THETA CDJ 3000",
-            "es": "PIONEER / ALPHA THETA CDJ 3000"
+            "en": "Pioneer DJ / AlphaTheta CDJ-3000",
+            "es": "Pioneer DJ / AlphaTheta CDJ-3000"
         },
         "category": "cat.dj",
-        "manufacturer": "Pioneer",
+        "manufacturer": "Pioneer DJ",
         "priceDay": 50,
         "image": "img/inventory/ALPHA_THETA_CDJ_3000.avif",
         "description": {
@@ -799,8 +799,8 @@ window.products = [
     {
         "id": 1028,
         "name": {
-            "en": "Acoustic Control par 182 cob",
-            "es": "Acoustic Control par 182 cob"
+            "en": "Acoustic Control PAR 182 COB",
+            "es": "Acoustic Control PAR 182 COB"
         },
         "category": "cat.light",
         "manufacturer": "Acoustic Control",
@@ -814,8 +814,8 @@ window.products = [
     {
         "id": 1029,
         "name": {
-            "en": "BEAM Z Beamz RB90",
-            "es": "BEAM Z Beamz RB90"
+            "en": "BeamZ RB90",
+            "es": "BeamZ RB90"
         },
         "category": "cat.light",
         "manufacturer": "BeamZ",
@@ -829,8 +829,8 @@ window.products = [
     {
         "id": 1030,
         "name": {
-            "en": "BEAM Z BLAZE FOG 3500",
-            "es": "BEAM Z BLAZE FOG 3500"
+            "en": "BeamZ Blaze Fog 3500",
+            "es": "BeamZ Blaze Fog 3500"
         },
         "category": "cat.light",
         "manufacturer": "BeamZ",
@@ -844,8 +844,8 @@ window.products = [
     {
         "id": 1031,
         "name": {
-            "en": "BEAM Z BUV 463",
-            "es": "BEAM Z BUV 463"
+            "en": "BeamZ BUV463",
+            "es": "BeamZ BUV463"
         },
         "category": "cat.light",
         "manufacturer": "BeamZ",
@@ -859,8 +859,8 @@ window.products = [
     {
         "id": 1032,
         "name": {
-            "en": "BEAM Z DMX-192S",
-            "es": "BEAM Z DMX-192S"
+            "en": "BeamZ DMX-192S",
+            "es": "BeamZ DMX-192S"
         },
         "category": "cat.light",
         "manufacturer": "BeamZ",
@@ -874,8 +874,8 @@ window.products = [
     {
         "id": 1033,
         "name": {
-            "en": "BEAM Z F-1600",
-            "es": "BEAM Z F-1600"
+            "en": "BeamZ F1600",
+            "es": "BeamZ F1600"
         },
         "category": "cat.light",
         "manufacturer": "BeamZ",
@@ -889,8 +889,8 @@ window.products = [
     {
         "id": 1034,
         "name": {
-            "en": "BEAM Z Foco Fresnel Zoom 200w Led RGB",
-            "es": "BEAM Z Foco Fresnel Zoom 200w Led RGB"
+            "en": "BeamZ LED Fresnel Zoom 200W RGB",
+            "es": "BeamZ foco Fresnel zoom LED 200W RGB"
         },
         "category": "cat.light",
         "manufacturer": "BeamZ",
@@ -904,8 +904,8 @@ window.products = [
     {
         "id": 1035,
         "name": {
-            "en": "BEAM Z MHL 74",
-            "es": "BEAM Z MHL 74"
+            "en": "BeamZ MHL74",
+            "es": "BeamZ MHL74"
         },
         "category": "cat.light",
         "manufacturer": "BeamZ",
@@ -919,8 +919,8 @@ window.products = [
     {
         "id": 1036,
         "name": {
-            "en": "BEAM Z PANDORA 1600",
-            "es": "BEAM Z PANDORA 1600"
+            "en": "BeamZ Pandora 1600",
+            "es": "BeamZ Pandora 1600"
         },
         "category": "cat.light",
         "manufacturer": "BeamZ",
@@ -934,8 +934,8 @@ window.products = [
     {
         "id": 1037,
         "name": {
-            "en": "BEAM Z Par Led ip65 con batería DMX",
-            "es": "BEAM Z Par Led ip65 con batería DMX"
+            "en": "BeamZ battery LED PAR IP65 wireless DMX",
+            "es": "BeamZ PAR LED IP65 a batería con DMX inalámbrico"
         },
         "category": "cat.light",
         "manufacturer": "BeamZ",
@@ -949,8 +949,8 @@ window.products = [
     {
         "id": 1038,
         "name": {
-            "en": "BEAM Z S3500",
-            "es": "BEAM Z S3500"
+            "en": "BeamZ S3500",
+            "es": "BeamZ S3500"
         },
         "category": "cat.light",
         "manufacturer": "BeamZ",
@@ -964,11 +964,11 @@ window.products = [
     {
         "id": 1039,
         "name": {
-            "en": "Chauvet Dj Intimidator beam 355 irc",
-            "es": "Chauvet Dj Intimidator beam 355 irc"
+            "en": "Chauvet DJ Intimidator Beam 355 IRC",
+            "es": "Chauvet DJ Intimidator Beam 355 IRC"
         },
         "category": "cat.light",
-        "manufacturer": "Chauvet",
+        "manufacturer": "Chauvet DJ",
         "priceDay": 20,
         "image": "img/inventory/Chauvet_Dj_Intimidator_beam_355_irc.avif",
         "description": {
@@ -979,8 +979,8 @@ window.products = [
     {
         "id": 1040,
         "name": {
-            "en": "DAGE Dragon Eyes - 7x60W Beam Wash",
-            "es": "DAGE Dragon Eyes - 7x60W Beam Wash"
+            "en": "DAGE Dragon Eyes 7x60W Beam Wash",
+            "es": "DAGE Dragon Eyes 7x60W Beam Wash"
         },
         "category": "cat.light",
         "manufacturer": "DAGE",
@@ -1009,8 +1009,8 @@ window.products = [
     {
         "id": 1043,
         "name": {
-            "en": "AMATE AUDIO NITID ARRAY N208A",
-            "es": "AMATE AUDIO NITID ARRAY N208A"
+            "en": "Amate Audio Nitid Array N208A",
+            "es": "Amate Audio Nitid Array N208A"
         },
         "category": "cat.sound",
         "manufacturer": "Amate Audio",
@@ -1024,8 +1024,8 @@ window.products = [
     {
         "id": 1044,
         "name": {
-            "en": "AMATE AUDIO NITID ARRAY N208P",
-            "es": "AMATE AUDIO NITID ARRAY N208P"
+            "en": "Amate Audio Nitid Array N208P",
+            "es": "Amate Audio Nitid Array N208P"
         },
         "category": "cat.sound",
         "manufacturer": "Amate Audio",
@@ -1039,8 +1039,8 @@ window.products = [
     {
         "id": 1045,
         "name": {
-            "en": "AMATE AUDIO NITID N 12",
-            "es": "AMATE AUDIO NITID N 12"
+            "en": "Amate Audio Nitid N12",
+            "es": "Amate Audio Nitid N12"
         },
         "category": "cat.sound",
         "manufacturer": "Amate Audio",
@@ -1054,8 +1054,8 @@ window.products = [
     {
         "id": 1046,
         "name": {
-            "en": "AMATE AUDIO NITID N18W",
-            "es": "AMATE AUDIO NITID N18W"
+            "en": "Amate Audio Nitid N18W",
+            "es": "Amate Audio Nitid N18W"
         },
         "category": "cat.sound",
         "manufacturer": "Amate Audio",
@@ -1069,8 +1069,8 @@ window.products = [
     {
         "id": 1047,
         "name": {
-            "en": "AMATE AUDIO NITID S12",
-            "es": "AMATE AUDIO NITID S12"
+            "en": "Amate Audio Nitid S12",
+            "es": "Amate Audio Nitid S12"
         },
         "category": "cat.sound",
         "manufacturer": "Amate Audio",
@@ -1084,8 +1084,8 @@ window.products = [
     {
         "id": 1048,
         "name": {
-            "en": "AMATE AUDIO XCELLENCE X102FD",
-            "es": "AMATE AUDIO XCELLENCE X102FD"
+            "en": "Amate Audio Xcellence X102FD",
+            "es": "Amate Audio Xcellence X102FD"
         },
         "category": "cat.sound",
         "manufacturer": "Amate Audio",
@@ -1099,8 +1099,8 @@ window.products = [
     {
         "id": 1049,
         "name": {
-            "en": "AMATE AUDIO XCELLENCE X218WF",
-            "es": "AMATE AUDIO XCELLENCE X218WF"
+            "en": "Amate Audio Xcellence X218WF",
+            "es": "Amate Audio Xcellence X218WF"
         },
         "category": "cat.sound",
         "manufacturer": "Amate Audio",
@@ -1114,8 +1114,8 @@ window.products = [
     {
         "id": 1050,
         "name": {
-            "en": "AMATE AUDIO XCELLENCE X82FD",
-            "es": "AMATE AUDIO XCELLENCE X82FD"
+            "en": "Amate Audio Xcellence X82FD",
+            "es": "Amate Audio Xcellence X82FD"
         },
         "category": "cat.sound",
         "manufacturer": "Amate Audio",
@@ -1129,8 +1129,8 @@ window.products = [
     {
         "id": 1051,
         "name": {
-            "en": "AMATE AUDIO XCELLENCE XW118",
-            "es": "AMATE AUDIO XCELLENCE XW118"
+            "en": "Amate Audio Xcellence XW118",
+            "es": "Amate Audio Xcellence XW118"
         },
         "category": "cat.sound",
         "manufacturer": "Amate Audio",
@@ -1144,11 +1144,11 @@ window.products = [
     {
         "id": 1052,
         "name": {
-            "en": "DBX DRIVE RAC PA2",
-            "es": "DBX DRIVE RAC PA2"
+            "en": "dbx DriveRack PA2",
+            "es": "dbx DriveRack PA2"
         },
         "category": "cat.sound",
-        "manufacturer": "DBX",
+        "manufacturer": "dbx",
         "priceDay": 12,
         "image": "img/inventory/DBX_DRIVE_RAC_PA2.avif",
         "description": {
@@ -1189,8 +1189,8 @@ window.products = [
     {
         "id": 1056,
         "name": {
-            "en": "MACKIE THUMP 12",
-            "es": "MACKIE THUMP 12"
+            "en": "Mackie Thump 12",
+            "es": "Mackie Thump 12"
         },
         "category": "cat.sound",
         "manufacturer": "Mackie",
@@ -1219,8 +1219,8 @@ window.products = [
     {
         "id": 1058,
         "name": {
-            "en": "RCF RCF ART 12",
-            "es": "RCF RCF ART 12"
+            "en": "RCF ART 12",
+            "es": "RCF ART 12"
         },
         "category": "cat.sound",
         "manufacturer": "RCF",
@@ -1249,8 +1249,8 @@ window.products = [
     {
         "id": 1062,
         "name": {
-            "en": "YAMAHA DXR 12",
-            "es": "YAMAHA DXR 12"
+            "en": "Yamaha DXR12",
+            "es": "Yamaha DXR12"
         },
         "category": "cat.sound",
         "manufacturer": "Yamaha",
@@ -1264,8 +1264,8 @@ window.products = [
     {
         "id": 1063,
         "name": {
-            "en": "YAMAHA DXS15",
-            "es": "YAMAHA DXS15"
+            "en": "Yamaha DXS15",
+            "es": "Yamaha DXS15"
         },
         "category": "cat.sound",
         "manufacturer": "Yamaha",
@@ -1279,8 +1279,8 @@ window.products = [
     {
         "id": 1066,
         "name": {
-            "en": "Escalera Tarima",
-            "es": "Escalera Tarima"
+            "en": "Stage steps",
+            "es": "Escalera para tarima"
         },
         "category": "cat.structures",
         "manufacturer": "UPSTAGE",
@@ -1294,8 +1294,8 @@ window.products = [
     {
         "id": 1073,
         "name": {
-            "en": "Perfil 1m",
-            "es": "Perfil 1m"
+            "en": "Stage profile 1 m",
+            "es": "Perfil de tarima 1 m"
         },
         "category": "cat.structures",
         "manufacturer": "UPSTAGE",
@@ -1309,8 +1309,8 @@ window.products = [
     {
         "id": 1074,
         "name": {
-            "en": "Tapa Truss",
-            "es": "Tapa Truss"
+            "en": "Truss top plate",
+            "es": "Tapa para truss"
         },
         "category": "cat.structures",
         "manufacturer": "UPSTAGE",
@@ -1324,8 +1324,8 @@ window.products = [
     {
         "id": 1076,
         "name": {
-            "en": "Tarima 2x1",
-            "es": "Tarima 2x1"
+            "en": "Stage module 2x1 m",
+            "es": "Tarima 2x1 m"
         },
         "category": "cat.structures",
         "manufacturer": "UPSTAGE",
@@ -1339,8 +1339,8 @@ window.products = [
     {
         "id": 1079,
         "name": {
-            "en": "Torre K1",
-            "es": "Torre K1"
+            "en": "Lifting tower K1",
+            "es": "Torre elevadora K1"
         },
         "category": "cat.structures",
         "manufacturer": "UPSTAGE",
@@ -1354,8 +1354,8 @@ window.products = [
     {
         "id": 1080,
         "name": {
-            "en": "Torre K5",
-            "es": "Torre K5"
+            "en": "Lifting tower K5",
+            "es": "Torre elevadora K5"
         },
         "category": "cat.structures",
         "manufacturer": "UPSTAGE",
@@ -1369,8 +1369,8 @@ window.products = [
     {
         "id": 1081,
         "name": {
-            "en": "Truss 0,25m",
-            "es": "Truss 0,25m"
+            "en": "Truss 0.25 m",
+            "es": "Truss 0,25 m"
         },
         "category": "cat.structures",
         "manufacturer": "UPSTAGE",
@@ -1384,8 +1384,8 @@ window.products = [
     {
         "id": 1082,
         "name": {
-            "en": "Truss 1m",
-            "es": "Truss 1m"
+            "en": "Truss 1 m",
+            "es": "Truss 1 m"
         },
         "category": "cat.structures",
         "manufacturer": "UPSTAGE",
@@ -1399,8 +1399,8 @@ window.products = [
     {
         "id": 1083,
         "name": {
-            "en": "Truss 2m",
-            "es": "Truss 2m"
+            "en": "Truss 2 m",
+            "es": "Truss 2 m"
         },
         "category": "cat.structures",
         "manufacturer": "UPSTAGE",
@@ -1414,8 +1414,8 @@ window.products = [
     {
         "id": 1084,
         "name": {
-            "en": "Truss 3m",
-            "es": "Truss 3m"
+            "en": "Truss 3 m",
+            "es": "Truss 3 m"
         },
         "category": "cat.structures",
         "manufacturer": "UPSTAGE",
@@ -1429,8 +1429,8 @@ window.products = [
     {
         "id": 1088,
         "name": {
-            "en": "AKG PW45 PRESENTER SET",
-            "es": "AKG PW45 PRESENTER SET"
+            "en": "AKG PW45 Presenter Set",
+            "es": "AKG PW45 Presenter Set"
         },
         "category": "cat.mics",
         "manufacturer": "AKG",
@@ -1444,8 +1444,8 @@ window.products = [
     {
         "id": 1089,
         "name": {
-            "en": "AKG PW45 VOCAL SET BAND M",
-            "es": "AKG PW45 VOCAL SET BAND M"
+            "en": "AKG PW45 Vocal Set Band M",
+            "es": "AKG PW45 Vocal Set Band M"
         },
         "category": "cat.mics",
         "manufacturer": "AKG",
@@ -1459,8 +1459,8 @@ window.products = [
     {
         "id": 1090,
         "name": {
-            "en": "BEHRINGER XENIX1202SFX",
-            "es": "BEHRINGER XENIX1202SFX"
+            "en": "Behringer Xenyx 1202SFX",
+            "es": "Behringer Xenyx 1202SFX"
         },
         "category": "cat.console",
         "manufacturer": "Behringer",
@@ -1474,11 +1474,11 @@ window.products = [
     {
         "id": 1091,
         "name": {
-            "en": "DBX DBXDI1",
-            "es": "DBX DBXDI1"
+            "en": "dbx DI1",
+            "es": "dbx DI1"
         },
         "category": "cat.mics",
-        "manufacturer": "DBX",
+        "manufacturer": "dbx",
         "priceDay": 12,
         "image": "img/inventory/DBX_DBXDI1.avif",
         "description": {
@@ -1489,8 +1489,8 @@ window.products = [
     {
         "id": 1092,
         "name": {
-            "en": "MARK XS11451",
-            "es": "MARK XS11451"
+            "en": "Mark XS11451",
+            "es": "Mark XS11451"
         },
         "category": "cat.mics",
         "manufacturer": "Mark",
@@ -1504,8 +1504,8 @@ window.products = [
     {
         "id": 1093,
         "name": {
-            "en": "MARK XS1301",
-            "es": "MARK XS1301"
+            "en": "Mark XS1301",
+            "es": "Mark XS1301"
         },
         "category": "cat.mics",
         "manufacturer": "Mark",
@@ -1519,8 +1519,8 @@ window.products = [
     {
         "id": 1094,
         "name": {
-            "en": "MIDAS MR32R",
-            "es": "MIDAS MR32R"
+            "en": "Midas MR32R",
+            "es": "Midas MR32R"
         },
         "category": "cat.console",
         "manufacturer": "Midas",
@@ -1534,8 +1534,8 @@ window.products = [
     {
         "id": 1095,
         "name": {
-            "en": "SENNHEISER EM 300-500-G4",
-            "es": "SENNHEISER EM 300-500-G4"
+            "en": "Sennheiser EM 300-500 G4",
+            "es": "Sennheiser EM 300-500 G4"
         },
         "category": "cat.mics",
         "manufacturer": "Sennheiser",
@@ -1549,8 +1549,8 @@ window.products = [
     {
         "id": 1096,
         "name": {
-            "en": "SENNHEISER SKM 500 G4",
-            "es": "SENNHEISER SKM 500 G4"
+            "en": "Sennheiser SKM 500 G4",
+            "es": "Sennheiser SKM 500 G4"
         },
         "category": "cat.mics",
         "manufacturer": "Sennheiser",
@@ -1564,8 +1564,8 @@ window.products = [
     {
         "id": 1097,
         "name": {
-            "en": "SHURE BETA 58 A",
-            "es": "SHURE BETA 58 A"
+            "en": "Shure Beta 58A",
+            "es": "Shure Beta 58A"
         },
         "category": "cat.mics",
         "manufacturer": "Shure",
@@ -1579,8 +1579,8 @@ window.products = [
     {
         "id": 1098,
         "name": {
-            "en": "SHURE PGA52",
-            "es": "SHURE PGA52"
+            "en": "Shure PGA52",
+            "es": "Shure PGA52"
         },
         "category": "cat.mics",
         "manufacturer": "Shure",
@@ -1594,8 +1594,8 @@ window.products = [
     {
         "id": 1099,
         "name": {
-            "en": "SHURE PGA81",
-            "es": "SHURE PGA81"
+            "en": "Shure PGA81",
+            "es": "Shure PGA81"
         },
         "category": "cat.mics",
         "manufacturer": "Shure",
@@ -1609,8 +1609,8 @@ window.products = [
     {
         "id": 1100,
         "name": {
-            "en": "SHURE SM 57",
-            "es": "SHURE SM 57"
+            "en": "Shure SM57",
+            "es": "Shure SM57"
         },
         "category": "cat.mics",
         "manufacturer": "Shure",
@@ -1624,8 +1624,8 @@ window.products = [
     {
         "id": 1101,
         "name": {
-            "en": "SOUNDCRAFT EFX12+K",
-            "es": "SOUNDCRAFT EFX12+K"
+            "en": "Soundcraft EFX12+K",
+            "es": "Soundcraft EFX12+K"
         },
         "category": "cat.console",
         "manufacturer": "Soundcraft",
@@ -1639,8 +1639,8 @@ window.products = [
     {
         "id": 1102,
         "name": {
-            "en": "SOUNDCRAFT EPM8",
-            "es": "SOUNDCRAFT EPM8"
+            "en": "Soundcraft EPM8",
+            "es": "Soundcraft EPM8"
         },
         "category": "cat.console",
         "manufacturer": "Soundcraft",
@@ -1654,8 +1654,8 @@ window.products = [
     {
         "id": 1103,
         "name": {
-            "en": "YAMAHA MG10XU",
-            "es": "YAMAHA MG10XU"
+            "en": "Yamaha MG10XU",
+            "es": "Yamaha MG10XU"
         },
         "category": "cat.console",
         "manufacturer": "Yamaha",
@@ -1924,8 +1924,8 @@ window.products = [
     {
         "id": 1121,
         "name": {
-            "en": "Mic stand boom",
-            "es": "Mic stand boom"
+            "en": "Boom microphone stand",
+            "es": "Pie de micrófono con jirafa"
         },
         "category": "cat.mics",
         "manufacturer": "Generic",
@@ -2045,7 +2045,7 @@ window.products = [
         "id": 1129,
         "name": {
             "en": "ETC S4 25°–50° Zoom Profile",
-            "es": "ETC S4 25°–50° Zoom Profile"
+            "es": "ETC S4 recorte zoom 25°–50°"
         },
         "category": "cat.light",
         "manufacturer": "ETC",
@@ -2179,8 +2179,8 @@ window.products = [
     {
         "id": 1138,
         "name": {
-            "en": "Stairville Aluminium Pipe Ø50 mm, 1 m",
-            "es": "Stairville Aluminium Pipe Ø50 mm, 1 m"
+            "en": "Stairville aluminium pipe Ø50 mm, 1 m",
+            "es": "Stairville tubo de aluminio Ø50 mm, 1 m"
         },
         "category": "cat.structures",
         "manufacturer": "Stairville",
@@ -2194,8 +2194,8 @@ window.products = [
     {
         "id": 1139,
         "name": {
-            "en": "Stairville Aluminium Pipe Ø50 mm, 2 m",
-            "es": "Stairville Aluminium Pipe Ø50 mm, 2 m"
+            "en": "Stairville aluminium pipe Ø50 mm, 2 m",
+            "es": "Stairville tubo de aluminio Ø50 mm, 2 m"
         },
         "category": "cat.structures",
         "manufacturer": "Stairville",
@@ -2209,8 +2209,8 @@ window.products = [
     {
         "id": 1140,
         "name": {
-            "en": "Showtec FP50100B — Black Pipe Ø50 mm, 1 m",
-            "es": "Showtec FP50100B — Black Pipe Ø50 mm, 1 m"
+            "en": "Showtec FP50100B — black pipe Ø50 mm, 1 m",
+            "es": "Showtec FP50100B — tubo negro Ø50 mm, 1 m"
         },
         "category": "cat.structures",
         "manufacturer": "Showtec",
@@ -2224,8 +2224,8 @@ window.products = [
     {
         "id": 1141,
         "name": {
-            "en": "Global Truss 5032-2B Swivel Coupler",
-            "es": "Global Truss 5032-2B Swivel Coupler"
+            "en": "Global Truss 5032-2B swivel coupler",
+            "es": "Global Truss 5032-2B abrazadera giratoria"
         },
         "category": "cat.structures",
         "manufacturer": "Global Truss",
@@ -2239,8 +2239,8 @@ window.products = [
     {
         "id": 1142,
         "name": {
-            "en": "QWORK Truss Clamp 28–34 mm",
-            "es": "QWORK Truss Clamp 28–34 mm"
+            "en": "QWORK truss clamp 28–34 mm",
+            "es": "QWORK abrazadera para truss 28–34 mm"
         },
         "category": "cat.structures",
         "manufacturer": "QWORK",
@@ -2254,8 +2254,8 @@ window.products = [
     {
         "id": 1143,
         "name": {
-            "en": "Showtec FQ30MCMC — Multicube Connector Male",
-            "es": "Showtec FQ30MCMC — Multicube Connector Male"
+            "en": "Showtec FQ30MCMC — Multicube connector, male",
+            "es": "Showtec FQ30MCMC — conector Multicube macho"
         },
         "category": "cat.structures",
         "manufacturer": "Showtec",
@@ -2269,8 +2269,8 @@ window.products = [
     {
         "id": 1144,
         "name": {
-            "en": "Showtec BPFACS10 — Half Conical Connector M10",
-            "es": "Showtec BPFACS10 — Half Conical Connector M10"
+            "en": "Showtec BPFACS10 — half conical connector M10",
+            "es": "Showtec BPFACS10 — conector semicónico M10"
         },
         "category": "cat.structures",
         "manufacturer": "Showtec",
@@ -2284,8 +2284,8 @@ window.products = [
     {
         "id": 1145,
         "name": {
-            "en": "Showtec T-Downrigger FT/FQ Black",
-            "es": "Showtec T-Downrigger FT/FQ Black"
+            "en": "Showtec T-Downrigger FT/FQ black",
+            "es": "Showtec T-Downrigger FT/FQ negro"
         },
         "category": "cat.structures",
         "manufacturer": "Showtec",
@@ -2299,8 +2299,8 @@ window.products = [
     {
         "id": 1146,
         "name": {
-            "en": "Showtec Single Downrigger FT/FQ Black",
-            "es": "Showtec Single Downrigger FT/FQ Black"
+            "en": "Showtec single Downrigger FT/FQ black",
+            "es": "Showtec Downrigger simple FT/FQ negro"
         },
         "category": "cat.structures",
         "manufacturer": "Showtec",
