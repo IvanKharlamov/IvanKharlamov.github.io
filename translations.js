@@ -97,6 +97,9 @@
   "catalog.sort.lowToHigh": { "en": "Price: Low to High", "es": "Precio: Bajo a Alto" },
   "catalog.sort.highToLow": { "en": "Price: High to Low", "es": "Precio: Alto a Bajo" },
   "catalog.categories": { "en": "Categories", "es": "Categorías" },
+  "catalog.title": { "en": "Our", "es": "Nuestro" },
+  "catalog.titleHighlight": { "en": "Inventory", "es": "Inventario" },
+  "catalog.subtitle": { "en": "Lighting, sound and stage equipment ready for your event.", "es": "Equipo de iluminación, sonido y escenario listo para tu evento." },
   "catalog.empty": {
     "en": "No products found matching your criteria.",
     "es": "No se encontraron productos que coincidan con tu búsqueda."

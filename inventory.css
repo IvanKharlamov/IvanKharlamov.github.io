@@ -493,3 +493,195 @@
 		max-width: 85%;
 	}
 }
+
+/* ---------- Embedded catalog on the main page (#catalog) ---------- */
+.catalog-embed {
+    --cat-row: 390px;
+    --cat-gap: 20px;
+    padding: var(--spacing-lg) 0 var(--spacing-xl);
+    background: var(--bg-color);
+    position: relative;
+    z-index: 10;
+}
+
+.catalog-embed .section-subtitle {
+    margin-bottom: var(--spacing-md);
+}
+
+.catalog-embed .catalog-sidebar {
+    position: static;
+}
+
+.catalog-embed .sidebar-group:last-child {
+    margin-bottom: 0;
+}
+
+.catalog-embed .catalog-layout > *,
+.catalog-embed .sidebar-group > *,
+.catalog-embed .filter-list,
+.catalog-embed .search-input,
+.catalog-embed .sort-select {
+    min-width: 0;
+}
+
+/* Fixed-height viewport: exactly two rows of cards, scrolls inside */
+.catalog-embed .catalog-scroll {
+    height: calc(var(--cat-row) * 2 + var(--cat-gap));
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 6px 10px 6px 4px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-gutter: stable;
+}
+
+.catalog-embed .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-auto-rows: var(--cat-row);
+    gap: var(--cat-gap);
+}
+
+.catalog-embed .product-card {
+    height: 100%;
+    overflow: hidden;
+}
+
+.catalog-embed .product-image {
+    height: 200px;
+    flex-shrink: 0;
+}
+
+.catalog-embed .product-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+    .catalog-embed .catalog-layout {
+        grid-template-columns: 220px 1fr;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .catalog-embed {
+        --cat-row: 340px;
+        --cat-gap: 12px;
+        padding: var(--spacing-lg) 0;
+    }
+
+    .catalog-embed .container-wide {
+        max-width: 100%;
+        padding: 0 16px;
+    }
+
+    .catalog-embed .catalog-layout {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .catalog-embed .sidebar-group {
+        padding: 12px;
+        margin-bottom: 10px;
+    }
+
+    /* search + sort side by side */
+    .catalog-embed .catalog-sidebar .sidebar-group:first-child {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        gap: 8px;
+    }
+
+    .catalog-embed .search-bar {
+        margin-bottom: 0;
+    }
+
+    .catalog-embed .search-input,
+    .catalog-embed .sort-select {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 16px; /* avoids iOS zoom on focus */
+    }
+
+    .catalog-embed .sidebar-title {
+        margin-bottom: 10px;
+        padding-bottom: 8px;
+        font-size: 0.8rem;
+    }
+
+    /* categories as one horizontally scrollable row of chips */
+    .catalog-embed .filter-list {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 6px;
+        margin: 0 -12px;
+        padding: 0 12px 2px;
+        scrollbar-width: none;
+    }
+
+    .catalog-embed .filter-list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .catalog-embed .filter-chip-wrapper {
+        flex: 0 0 auto;
+    }
+
+    .catalog-embed .filter-chip-wrapper label {
+        white-space: nowrap;
+        padding: 7px 12px;
+    }
+
+    .catalog-embed .catalog-scroll {
+        padding: 4px 4px 4px 0;
+    }
+
+    .catalog-embed .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .catalog-embed .product-card-pack {
+        grid-column: span 1;
+    }
+
+    .catalog-embed .product-card:hover {
+        transform: none;
+    }
+
+    .catalog-embed .product-image {
+        height: 140px;
+        padding: 10px;
+    }
+
+    .catalog-embed .product-image-atlas {
+        width: 120px;
+        height: 120px;
+    }
+
+    .catalog-embed .product-info {
+        padding: 10px;
+    }
+
+    .catalog-embed .product-title {
+        font-size: 0.95rem;
+        margin-bottom: 6px;
+    }
+
+    .catalog-embed .product-price {
+        margin-bottom: 8px;
+    }
+
+    .catalog-embed .product-actions {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+    .catalog-embed .btn-sm {
+        min-height: 2.2rem;
+        padding: 0.3rem 0.5rem;
+        font-size: 0.7rem;
+    }
+}
+
