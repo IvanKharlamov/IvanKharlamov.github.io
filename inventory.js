@@ -45,8 +45,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 clone.querySelector('.product-category').textContent = labelFor(p, lang);
                 clone.querySelector('.product-title').textContent = p.name[lang];
+                const fromEl = clone.querySelector('.price-from');
+                if (fromEl) fromEl.textContent = t('price.from');
                 clone.querySelector('.price-day').textContent = `€${p.priceDay}`;
-                clone.querySelector('.price-unit').textContent = t('rental.perDay');
+                clone.querySelector('.price-unit').textContent = t('price.perDayExVat');
 
                 const availEl = clone.querySelector('.product-availability');
                 if (availEl) {
@@ -78,7 +80,26 @@ document.addEventListener('DOMContentLoaded', () => {
             grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;">${t('catalog.empty')}</div>`;
         }
         injectProductSchema(items);
+        fitTwoRows();
     };
+
+    // Main page: size the scroll viewport to exactly two card rows (cards keep natural height)
+    const scroller = document.querySelector('.catalog-embed .catalog-scroll');
+    function fitTwoRows() {
+        if (!scroller) return;
+        const grid = document.getElementById('product-grid');
+        const cards = grid ? Array.from(grid.querySelectorAll('.product-card')) : [];
+        const tops = [...new Set(cards.map(c => c.offsetTop))].sort((a, b) => a - b);
+        if (tops.length < 3) { scroller.style.height = ''; return; }
+        const gap = parseFloat(getComputedStyle(grid).rowGap) || 0;
+        const padBottom = parseFloat(getComputedStyle(scroller).paddingBottom) || 0;
+        scroller.style.height = `${Math.round(tops[2] - gap + padBottom)}px`;
+    }
+    if (scroller) {
+        let fitTimer;
+        window.addEventListener('resize', () => { clearTimeout(fitTimer); fitTimer = setTimeout(fitTwoRows, 120); });
+        window.addEventListener('load', fitTwoRows);
+    }
 
     // Subcategory label (falls back to the category)
     const labelFor = (p, lang) => {
