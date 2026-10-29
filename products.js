@@ -3024,5 +3024,278 @@ window.products = [
             "en": "One DJ mixer; players, PA and booth monitors excluded.",
             "es": "Una mesa DJ; reproductores, PA y monitores por separado."
         }
+    },
+    {
+        "id": 1301,
+        "name": {
+            "en": "Absen NT2.6 — Indoor LED Panel",
+            "es": "Absen NT2.6 — Indoor LED Panel"
+        },
+        "category": "cat.led",
+        "subcategory": "sub.ledPanels",
+        "manufacturer": "Absen",
+        "priceDay": 32.5,
+        "image": "img/inventory/absen-nt26.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Bring presentations, brand films and live visuals into focus with an indoor Absen LED wall. The finer pixel pitch suits conferences, exhibitions and stage backdrops where the audience is closer to the screen. Modular cabinets let the display take the shape and size your event needs.",
+            "es": "Da protagonismo a presentaciones, vídeos de marca y visuales en directo con una pantalla LED Absen de interior. Su paso de píxel fino encaja en congresos, ferias y fondos de escenario donde el público está cerca. Los paneles modulares permiten adaptar el formato al espacio y al contenido."
+        },
+        "scope": {
+            "en": "One 50 × 50 cm cabinet (0.25 m²). Processing, support, cabling, transport and crew quoted separately. Equivalent to €130/m²/day.",
+            "es": "Un panel de 50 × 50 cm (0,25 m²). Procesado, estructura, cableado, transporte y personal se presupuestan aparte. Equivale a 130 €/m²/día."
+        }
+    },
+    {
+        "id": 1302,
+        "name": {
+            "en": "Absen NT3.9W — Outdoor LED Panel",
+            "es": "Absen NT3.9W — Outdoor LED Panel"
+        },
+        "category": "cat.led",
+        "subcategory": "sub.ledPanels",
+        "manufacturer": "Absen",
+        "priceDay": 25,
+        "image": "img/inventory/absen-nt39w.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Give outdoor audiences a clear focal point for live video, sponsor content and event graphics. Absen NT3.9W cabinets form adaptable LED walls for festivals, open-air stages and public events. Choose the screen size around the audience and viewing distance, with the full installation planned for the venue.",
+            "es": "Crea un punto de atención para vídeo en directo, patrocinadores y grafismos en eventos al aire libre. Los paneles Absen NT3.9W permiten montar pantallas adaptadas a festivales, escenarios exteriores y actos públicos. El tamaño y la instalación se definen según el público, la distancia de visión y el recinto."
+        },
+        "scope": {
+            "en": "One 50 × 50 cm cabinet (0.25 m²). Processing, support, cabling, transport and crew quoted separately. Image shows front and rear views of one model, not a pair included in the price. Equivalent to €100/m²/day.",
+            "es": "Un panel de 50 × 50 cm (0,25 m²). Procesado, estructura, cableado, transporte y personal aparte. La imagen muestra vistas frontal y trasera; el precio no incluye dos paneles. Equivale a 100 €/m²/día."
+        }
+    },
+    {
+        "id": 1303,
+        "name": {
+            "en": "NovaStar VX1000 — LED Video Processor",
+            "es": "NovaStar VX1000 — LED Video Processor"
+        },
+        "category": "cat.led",
+        "subcategory": "sub.videoProcessing",
+        "manufacturer": "NovaStar",
+        "priceDay": 140,
+        "image": "img/inventory/novastar-vx1000.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Bring your video sources together and fit the picture to your LED wall. The NovaStar VX1000 combines screen control and video processing in one practical unit, making it a useful centrepiece for corporate events, concerts and presentations that need a consistent image across the whole display.",
+            "es": "Reúne las fuentes de vídeo y adapta la imagen a tu pantalla LED. El NovaStar VX1000 combina control de pantalla y procesado de vídeo en una unidad práctica para congresos, conciertos y presentaciones, facilitando una imagen uniforme en toda la superficie del display."
+        },
+        "scope": {
+            "en": "One processor with power lead. Screen configuration and optical accessories quoted separately.",
+            "es": "Un procesador con cable de alimentación. Configuración de pantalla y accesorios ópticos aparte."
+        }
+    },
+    {
+        "id": 1304,
+        "name": {
+            "en": "Resolume Arena — Media Server",
+            "es": "Resolume Arena — Media Server"
+        },
+        "category": "cat.led",
+        "subcategory": "sub.videoProcessing",
+        "manufacturer": "Resolume",
+        "priceDay": 390,
+        "image": "img/inventory/resolume-arena-server.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Build a show around video, motion graphics and live visuals with a Resolume Arena playback workstation. Layer content, prepare cues and shape visuals for LED walls or projection. A flexible choice for concerts, DJ sets, product launches and events that need more than a single video loop.",
+            "es": "Da forma al espectáculo con una estación de reproducción Resolume Arena. Combina vídeo y gráficos animados, prepara entradas y adapta los visuales a pantallas LED o proyección. Una opción flexible para conciertos, sesiones DJ y lanzamientos que necesitan algo más que un vídeo en bucle."
+        },
+        "scope": {
+            "en": "One configured workstation with Resolume Arena, one control monitor, keyboard and mouse. Hardware agreed per project. Content creation, operator and backup server excluded. Photo is an illustrative configuration.",
+            "es": "Una estación configurada con Resolume Arena, monitor de control, teclado y ratón. Hardware a definir por proyecto. No incluye creación de contenidos, operador ni servidor de respaldo. Foto de configuración orientativa."
+        }
+    },
+    {
+        "id": 1305,
+        "name": {
+            "en": "Roland V-1HD — Video Switcher",
+            "es": "Roland V-1HD — Video Switcher"
+        },
+        "category": "cat.led",
+        "subcategory": "sub.videoProcessing",
+        "manufacturer": "Roland",
+        "priceDay": 110,
+        "image": "img/inventory/roland-v1hd.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Switch smoothly between cameras, presentations and playback during your event. The Roland V-1HD puts live video control within easy reach, helping an operator follow the programme and keep the audience focused on the right source. Ideal for conferences, panels and compact live productions.",
+            "es": "Alterna entre cámaras, presentaciones y reproducción de vídeo durante el evento. El Roland V-1HD permite seguir el programa y mostrar al público la fuente adecuada en cada momento. Una solución práctica para congresos, mesas redondas y producciones en directo de formato compacto."
+        },
+        "scope": {
+            "en": "One V-1HD switcher and power supply. Source devices, monitor, cables and operator separate.",
+            "es": "Un mezclador V-1HD con fuente de alimentación. Fuentes de vídeo, monitor, cables y operador aparte."
+        }
+    },
+    {
+        "id": 1306,
+        "name": {
+            "en": "NovaStar CVT10-S — Optical Converter",
+            "es": "NovaStar CVT10-S — Optical Converter"
+        },
+        "category": "cat.led",
+        "subcategory": "sub.videoSignal",
+        "manufacturer": "NovaStar",
+        "priceDay": 45,
+        "image": "img/inventory/novastar-cvt10s.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Keep the video control position where the production needs it, even when the LED screen is further away. The NovaStar CVT10-S links compatible LED control equipment over optical fibre, helping build a tidy signal route between front of house and the display.",
+            "es": "Sitúa el control de vídeo donde lo necesita la producción, aunque la pantalla LED esté más alejada. El NovaStar CVT10-S enlaza equipos de control LED compatibles mediante fibra óptica y facilita una distribución ordenada de la señal entre la regiduría y el display."
+        },
+        "scope": {
+            "en": "One CVT10-S converter with matching optical modules and power lead. Fibre cable separate; number of converters depends on the controller and signal design.",
+            "es": "Un convertidor CVT10-S con módulos ópticos adecuados y alimentación. Fibra aparte; el número de convertidores depende del controlador y del diseño de señal."
+        }
+    },
+    {
+        "id": 1307,
+        "name": {
+            "en": "Sommer Cable — OS2 LC–LC Fibre Reel 100 m",
+            "es": "Sommer Cable — OS2 LC–LC Fibre Reel 100 m"
+        },
+        "category": "cat.led",
+        "subcategory": "sub.videoSignal",
+        "manufacturer": "Sommer Cable",
+        "priceDay": 30,
+        "image": "img/inventory/fiber-os2-100m.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Run a clean optical link between video control and the LED screen with a touring fibre reel. The reel makes longer cable routes easier to deploy and pack away, supporting event layouts where the control desk cannot sit close to the display.",
+            "es": "Conecta el control de vídeo y la pantalla LED con una línea óptica preparada para montajes temporales. El carrete facilita el tendido y la recogida en recorridos largos, especialmente cuando la mesa de control debe quedar alejada del display."
+        },
+        "scope": {
+            "en": "One 100 m OS2 single-mode LC–LC duplex fibre reel. Optical converters and transceivers separate.",
+            "es": "Un carrete de fibra monomodo OS2 LC–LC dúplex de 100 m. Convertidores y transceptores aparte."
+        }
+    },
+    {
+        "id": 1308,
+        "name": {
+            "en": "Decimator MD-HX — HDMI/SDI Converter",
+            "es": "Decimator MD-HX — HDMI/SDI Converter"
+        },
+        "category": "cat.led",
+        "subcategory": "sub.videoSignal",
+        "manufacturer": "Decimator",
+        "priceDay": 28,
+        "image": "img/inventory/decimator-mdhx.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Bridge different video connections and resolve format mismatches between cameras, computers and event video systems. The Decimator MD-HX is a compact problem-solver for getting sources into a usable format before they reach the switcher or LED processor, keeping the signal workflow straightforward.",
+            "es": "Conecta equipos de vídeo con conexiones distintas y adapta señales entre cámaras, ordenadores y sistemas del evento. El Decimator MD-HX ayuda a entregar un formato adecuado al mezclador o procesador LED, simplificando la integración de las diferentes fuentes de imagen."
+        },
+        "scope": {
+            "en": "One converter with power supply. Signal cables separate.",
+            "es": "Un convertidor con fuente de alimentación. Cables de señal aparte."
+        }
+    },
+    {
+        "id": 1309,
+        "name": {
+            "en": "Procab PRX606 — CAT6 Reel 50 m",
+            "es": "Procab PRX606 — CAT6 Reel 50 m"
+        },
+        "category": "cat.led",
+        "subcategory": "sub.videoSignal",
+        "manufacturer": "Procab",
+        "priceDay": 23,
+        "image": "img/inventory/cat6-reel-50m.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Connect the LED control position to the display with a practical network cable reel. The flexible cable and winding drum make it easy to handle temporary event routes, keep the work area organised and pack down efficiently after the show.",
+            "es": "Conecta el control LED con la pantalla mediante un carrete de cable de red práctico para eventos. El cable flexible y el tambor facilitan el tendido temporal, ayudan a mantener ordenada la zona de trabajo y agilizan la recogida al terminar."
+        },
+        "scope": {
+            "en": "One 50 m CAT6 reel with RJ45 ends. EtherCON housings only if specified in the confirmed order.",
+            "es": "Un carrete CAT6 de 50 m con conectores RJ45. Carcasas EtherCON solo si se especifican en el pedido confirmado."
+        }
+    },
+    {
+        "id": 1310,
+        "name": {
+            "en": "Active Optical HDMI Cable — 20 m",
+            "es": "Active Optical HDMI Cable — 20 m"
+        },
+        "category": "cat.led",
+        "subcategory": "sub.videoSignal",
+        "manufacturer": "Generic",
+        "priceDay": 4.5,
+        "image": "img/inventory/hdmi-optical-20m.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Place the presentation computer or playback source where it works best for the event. An active optical HDMI cable carries the picture across longer room layouts without a bulky cable run, making it useful for connecting video desks, processors and displays.",
+            "es": "Coloca el ordenador de presentaciones o la fuente de reproducción donde mejor encaje en el evento. Un cable HDMI óptico activo permite cubrir recorridos más largos con un tendido ligero, conectando mesas de vídeo, procesadores y pantallas."
+        },
+        "scope": {
+            "en": "One directional 20 m active optical HDMI cable. Source/display orientation must be respected. Brand may vary; image is illustrative.",
+            "es": "Un cable HDMI óptico activo direccional de 20 m. Respetar los extremos Source/Display. La marca puede variar; imagen orientativa."
+        }
+    },
+    {
+        "id": 1311,
+        "name": {
+            "en": "Prolyte LSU — LED Ground Support",
+            "es": "Prolyte LSU — LED Ground Support"
+        },
+        "category": "cat.led",
+        "subcategory": "sub.ledSupport",
+        "manufacturer": "Prolyte",
+        "priceDay": 85,
+        "image": "img/inventory/prolyte-lsu-support.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Build an LED backdrop from floor level when overhead suspension is not part of the venue plan. Prolyte LSU provides a modular support approach for indoor screens at conferences, exhibitions and stage presentations. The structure is configured around the selected wall and the available space.",
+            "es": "Monta un fondo LED desde el suelo cuando el recinto no contempla una suspensión aérea. Prolyte LSU ofrece una solución modular para pantallas interiores en congresos, ferias y presentaciones. La estructura se configura según la pantalla elegida y el espacio disponible."
+        },
+        "scope": {
+            "en": "Starting rate for a basic indoor support configuration; final parts and price depend on screen geometry and cabinet adapters. Screen, ballast, installation and transport separate. Image is an example configuration.",
+            "es": "Tarifa desde para una configuración básica de soporte interior; piezas y precio final según geometría y adaptadores del panel. Pantalla, lastre, montaje y transporte aparte. Imagen de configuración orientativa."
+        }
+    },
+    {
+        "id": 1312,
+        "name": {
+            "en": "Showgear / Showtec PSA-32A12S — Power Distribution",
+            "es": "Showgear / Showtec PSA-32A12S — Power Distribution"
+        },
+        "category": "cat.led",
+        "subcategory": "sub.ledPower",
+        "manufacturer": "Showgear",
+        "priceDay": 32,
+        "image": "img/inventory/showgear-psa32a12s.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Organise power distribution for your LED and video setup from one central unit. The PSA-32A12S helps the production team manage separate outgoing circuits and monitor the supply, keeping the technical area structured during setup and throughout the event.",
+            "es": "Organiza la distribución eléctrica del sistema LED y de vídeo desde una unidad central. El PSA-32A12S permite gestionar circuitos de salida separados y supervisar la alimentación, manteniendo ordenada la zona técnica durante el montaje y el evento."
+        },
+        "scope": {
+            "en": "One distribution unit. Feeder cable, screen power looms and electrical installation separate. Indoor/protected technical position only.",
+            "es": "Un distribuidor. Manguera de acometida, latiguillos de pantalla e instalación eléctrica aparte. Solo para una posición técnica interior o protegida."
+        }
+    },
+    {
+        "id": 1313,
+        "name": {
+            "en": "Dell P2422H — Video Control Monitor",
+            "es": "Dell P2422H — Video Control Monitor"
+        },
+        "category": "cat.led",
+        "subcategory": "sub.videoProcessing",
+        "manufacturer": "Dell",
+        "priceDay": 14,
+        "image": "img/inventory/dell-p2422h.avif",
+        "availability": "on_request",
+        "description": {
+            "en": "Keep presentation cues, playback controls or a video preview visible at the production desk. This Dell monitor gives operators a dedicated workspace without taking over the whole control area, making it a useful addition to a compact video or LED control setup.",
+            "es": "Mantén a la vista las presentaciones, los controles de reproducción o una previsualización de vídeo en la mesa técnica. Este monitor Dell ofrece un espacio de trabajo dedicado sin ocupar toda la zona de control, ideal como apoyo en una configuración compacta de vídeo o LED."
+        },
+        "scope": {
+            "en": "One monitor with stand, power lead and one HDMI cable. This is an additional monitor; the media-server package already includes one control monitor.",
+            "es": "Un monitor con peana, alimentación y un cable HDMI. Monitor adicional: el paquete de servidor multimedia ya incluye un monitor de control."
+        }
     }
 ];

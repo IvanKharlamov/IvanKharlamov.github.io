@@ -114,6 +114,7 @@
   "cat.dj": { "en": "DJ", "es": "DJ" },
   "cat.electricity": { "en": "Electricity", "es": "Electricidad" },
   "cat.backline": { "en": "Backline", "es": "Backline" },
+  "cat.led": { "en": "LED", "es": "LED" },
   "cat.packs": { "en": "Packs", "es": "Packs" },
   "cat.service": { "en": "Service", "es": "Servicios" },
 
@@ -157,6 +158,11 @@
   "sub.tents": { "en": "Tents", "es": "Carpas" },
   "sub.powerDistro": { "en": "Power distribution", "es": "Cuadros de distribución" },
   "sub.cables": { "en": "Cables", "es": "Cables" },
+  "sub.ledPanels": { "en": "LED panels", "es": "Paneles LED" },
+  "sub.videoProcessing": { "en": "Video processing & control", "es": "Control y procesado de vídeo" },
+  "sub.videoSignal": { "en": "Signal & cabling", "es": "Señal y cableado" },
+  "sub.ledSupport": { "en": "LED support structures", "es": "Estructuras para LED" },
+  "sub.ledPower": { "en": "Power distribution", "es": "Alimentación" },
 
   "product.details": {
     "en": "Details",
