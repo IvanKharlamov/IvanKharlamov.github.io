@@ -1357,38 +1357,6 @@ window.products = [
         }
     },
     {
-        "id": 1066,
-        "name": {
-            "en": "Stage steps",
-            "es": "Escalera para tarima"
-        },
-        "category": "cat.structures",
-        "subcategory": "sub.stageDecks",
-        "manufacturer": "UPSTAGE",
-        "priceDay": 20,
-        "image": "img/inventory/Kuzar_Escalera_Tarima.avif",
-        "description": {
-            "en": "Give speakers, performers and crew a defined route onto the stage. Modular stage steps make presentation platforms, award stages and performance areas easier to access when matched to the deck height and layout.",
-            "es": "Ofrece a ponentes, artistas y personal técnico un acceso cómodo y seguro a la tarima. Las escaleras modulares se acoplan a la altura del escenario, facilitando el paso en entregas de premios, ponencias y espectáculos."
-        }
-    },
-    {
-        "id": 1073,
-        "name": {
-            "en": "Stage profile 1 m",
-            "es": "Perfil de tarima 1 m"
-        },
-        "category": "cat.structures",
-        "subcategory": "sub.truss",
-        "manufacturer": "UPSTAGE",
-        "priceDay": 20,
-        "image": "img/inventory/Kuzar_Truss.avif",
-        "description": {
-            "en": "Complete a compatible platform build with a one-metre joining and reinforcement profile. A practical component for modular event stages and risers where the supporting structure needs to follow a planned layout.",
-            "es": "Completa el montaje de tarimas con este perfil de unión y refuerzo de un metro. Un elemento práctico para escenarios y gradas modulares donde la estructura de soporte debe adaptarse a la distribución proyectada."
-        }
-    },
-    {
         "id": 1074,
         "name": {
             "en": "Truss top plate",
@@ -1450,70 +1418,6 @@ window.products = [
         "description": {
             "en": "Support a substantial temporary rig with a lifting tower selected for the production's equipment and layout. The K5 can form part of concert, stage and event builds requiring elevated compatible structures and a planned lifting arrangement.",
             "es": "Soporta montajes de iluminación de gran envergadura con una torre elevadora adaptada a las cargas y dimensiones de la producción. La K5 se integra en escenarios de concierto y festivales que requieren estructuras elevadas seguras."
-        }
-    },
-    {
-        "id": 1081,
-        "name": {
-            "en": "Truss 0.25 m",
-            "es": "Truss 0,25 m"
-        },
-        "category": "cat.structures",
-        "subcategory": "sub.truss",
-        "manufacturer": "UPSTAGE",
-        "priceDay": 12,
-        "image": "img/inventory/Kuzar_Truss.avif",
-        "description": {
-            "en": "Fine-tune a compatible truss structure in quarter-metre increments. This short section is useful when an exhibition frame, lighting portal or stage feature needs a precise overall dimension to fit the venue.",
-            "es": "Ajusta las medidas de una estructura de truss en incrementos precisos de veinticinco centímetros. Este tramo corto es clave para que marcos feriales, arcos o pórticos encajen con exactitud en las dimensiones del recinto."
-        }
-    },
-    {
-        "id": 1082,
-        "name": {
-            "en": "Truss 1 m",
-            "es": "Truss 1 m"
-        },
-        "category": "cat.structures",
-        "subcategory": "sub.truss",
-        "manufacturer": "UPSTAGE",
-        "priceDay": 12,
-        "image": "img/inventory/Kuzar_Truss.avif",
-        "description": {
-            "en": "Adapt a truss design with a compact one-metre section. Use it within a compatible system for stage frames, lighting features and exhibition stands that need manageable modules and flexible dimensions.",
-            "es": "Modula la estructura de truss con este versátil tramo de un metro. Utilízalo en sistemas compatibles para pórticos escénicos, soportes de iluminación y stands feriales que requieren medidas adaptables y fácil manejo."
-        }
-    },
-    {
-        "id": 1083,
-        "name": {
-            "en": "Truss 2 m",
-            "es": "Truss 2 m"
-        },
-        "category": "cat.structures",
-        "subcategory": "sub.truss",
-        "manufacturer": "UPSTAGE",
-        "priceDay": 12,
-        "image": "img/inventory/Kuzar_Truss.avif",
-        "description": {
-            "en": "Build the main runs of a lighting frame, exhibition structure or stage feature with a two-metre truss section. Its modular length makes it a useful part of event rigs designed to fit different spaces.",
-            "es": "Monta los tramos principales de puentes de luces, estructuras de feria o decorados con un módulo de dos metros. Su longitud estandarizada lo convierte en una pieza fundamental para armar estructuras en múltiples recintos."
-        }
-    },
-    {
-        "id": 1084,
-        "name": {
-            "en": "Truss 3 m",
-            "es": "Truss 3 m"
-        },
-        "category": "cat.structures",
-        "subcategory": "sub.truss",
-        "manufacturer": "UPSTAGE",
-        "priceDay": 12,
-        "image": "img/inventory/Kuzar_Truss.avif",
-        "description": {
-            "en": "Extend a compatible stage or exhibition structure with a three-metre truss section. Useful for longer lighting runs and larger event frames where the layout calls for fewer joints along each straight section.",
-            "es": "Extiende estructuras escénicas o feriales de gran envergadura con este tramo de tres metros. Muy conveniente para vanos largos y tiradas rectas donde se busca reducir el número de uniones a lo largo de la estructura."
         }
     },
     {
@@ -2314,38 +2218,6 @@ window.products = [
         "description": {
             "en": "Add dimming control to compatible conventional stage lights. This Showtec dimmer block is a practical part of theatre, live music and event lighting setups where intensity changes help shape the atmosphere.",
             "es": "Añade regulación de intensidad a luces escénicas convencionales compatibles. Este bloque dimmer Showtec es una pieza práctica en teatro, música en directo y eventos donde los cambios de intensidad ayudan a crear el ambiente."
-        }
-    },
-    {
-        "id": 1138,
-        "name": {
-            "en": "Stairville aluminium pipe Ø50 mm, 1 m",
-            "es": "Stairville tubo de aluminio Ø50 mm, 1 m"
-        },
-        "category": "cat.structures",
-        "subcategory": "sub.rigging",
-        "manufacturer": "Stairville",
-        "priceDay": 3,
-        "image": "img/inventory/35-stairville-pipe1m.avif",
-        "description": {
-            "en": "Add a compact mounting bar to a planned lighting or stage structure. This aluminium pipe is useful when the layout calls for an additional position for compatible clamps and fixtures.",
-            "es": "Añade una barra compacta a una estructura de iluminación o escenario planificada. Este tubo de aluminio resulta útil cuando el diseño necesita una posición adicional para abrazaderas y equipos compatibles."
-        }
-    },
-    {
-        "id": 1139,
-        "name": {
-            "en": "Stairville aluminium pipe Ø50 mm, 2 m",
-            "es": "Stairville tubo de aluminio Ø50 mm, 2 m"
-        },
-        "category": "cat.structures",
-        "subcategory": "sub.rigging",
-        "manufacturer": "Stairville",
-        "priceDay": 7,
-        "image": "img/inventory/36-stairville-pipe2m.avif",
-        "description": {
-            "en": "Create a longer mounting span within a planned stage or lighting structure. This aluminium pipe helps position compatible fixtures along a shared bar to suit the layout of a performance or event space.",
-            "es": "Crea un tramo de montaje más largo dentro de una estructura escénica o de iluminación planificada. Este tubo de aluminio permite distribuir equipos compatibles a lo largo de una barra según el diseño del escenario o del evento."
         }
     },
     {
