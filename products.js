@@ -955,22 +955,6 @@ window.products = [
         }
     },
     {
-        "id": 1015,
-        "name": {
-            "en": "XLR cable 3/5/7 m",
-            "es": "Cable XLR 3/5/7 m"
-        },
-        "category": "cat.electricity",
-        "subcategory": "sub.cables",
-        "manufacturer": "Unknown/Generic",
-        "priceDay": 1,
-        "image": "img/inventory/refresh/1015.avif",
-        "description": {
-            "en": "Connect microphones, mixers and compatible powered speakers with balanced audio cabling. A choice of three, five or seven metres helps keep stage patching tidy without leaving every connection stretched or buried in excess cable.",
-            "es": "Conecta micrófonos, mesas de sonido y cajas acústicas con señal de audio balanceada y libre de interferencias. La disponibilidad en tres, cinco o siete metros permite realizar un cableado limpio en el escenario sin tiradas tensas ni cables sobrantes."
-        }
-    },
-    {
         "id": 1016,
         "name": {
             "en": "Audibax truss claw 48–51 mm 100 kg",
