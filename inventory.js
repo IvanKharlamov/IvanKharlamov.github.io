@@ -94,19 +94,49 @@ document.addEventListener('DOMContentLoaded', () => {
             grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;">${t('catalog.empty')}</div>`;
         }
         injectProductSchema(items);
+        fitColumns();
         fitTwoRows();
     };
 
-    // Main page: size the scroll viewport to exactly two card rows (cards keep natural height)
-    // On phones the list scrolls with the page under a sticky filter bar instead
     const scroller = document.querySelector('.catalog-embed .catalog-scroll');
     const mobileQuery = window.matchMedia('(max-width: 768px)');
+
+    // Pick the column count so the cards always fill the full grid width.
+    // Pack cards span two columns, so an odd count would leave an empty column
+    // on the right whenever a row holds only packs: keep the count even.
+    const CARD_MIN = 300, CARD_HARD_MIN = 250;
+    function fitColumns() {
+        const grid = document.getElementById('product-grid');
+        if (!grid) return;
+        if (mobileQuery.matches) {
+            grid.style.gridTemplateColumns = '';
+            grid.classList.remove('single-col');
+            return;
+        }
+        const width = grid.clientWidth;
+        if (!width) return;
+        const gap = parseFloat(getComputedStyle(grid).columnGap) || 0;
+        const colWidth = n => (width - gap * (n - 1)) / n;
+        let n = Math.max(1, Math.floor((width + gap) / (CARD_MIN + gap)));
+        if (n > 1 && n % 2) n = colWidth(n + 1) >= CARD_HARD_MIN ? n + 1 : n - 1;
+        grid.style.gridTemplateColumns = `repeat(${n}, minmax(0, 1fr))`;
+        grid.classList.toggle('single-col', n === 1);
+    }
+    window.addEventListener('load', fitColumns);
+    {
+        let colTimer;
+        window.addEventListener('resize', () => { clearTimeout(colTimer); colTimer = setTimeout(fitColumns, 100); });
+    }
+
+    // Main page: size the scroll viewport to exactly two card rows (cards keep natural height)
+    // On phones the list scrolls with the page under a sticky filter bar instead
     function fitTwoRows() {
         if (!scroller) return;
         if (mobileQuery.matches) {
             scroller.style.height = '';
             return;
         }
+        fitColumns();
         const grid = document.getElementById('product-grid');
         const cards = grid ? Array.from(grid.querySelectorAll('.product-card')) : [];
         const tops = [...new Set(cards.map(c => c.offsetTop))].sort((a, b) => a - b);
