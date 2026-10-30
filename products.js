@@ -309,7 +309,7 @@ window.products = [
         "subcategory": "sub.ledPar",
         "manufacturer": "Generic",
         "priceDay": 20,
-        "image": "img/inventory/Wash 17x19.avif",
+        "image": "img/inventory/refresh/102.avif",
         "description": {
             "en": "Move from broad stage colour to tighter pools of light with a versatile LED wash moving head. A useful choice for live bands, wedding dance floors and corporate shows that need changing moods throughout the event.",
             "es": "Pasa de un amplio baño de color en el escenario a zonas de luz más concentradas con esta versátil cabeza móvil LED wash. Una opción idónea para grupos en vivo, pistas de baile en bodas y eventos corporativos que requieran crear distintas atmósferas durante el evento."
@@ -341,7 +341,7 @@ window.products = [
         "subcategory": "sub.ledTubes",
         "manufacturer": "Aputure",
         "priceDay": 20,
-        "image": "img/inventory/amaran-t2c.avif",
+        "image": "img/inventory/refresh/105.avif",
         "description": {
             "en": "Add soft colour or adjustable white light to interviews, backstage content and creative event sets. This compact LED tube also works as a visible design element, bringing depth to photo corners, product displays and intimate performance spaces.",
             "es": "Añade color suave o luz blanca regulable a entrevistas, contenidos de backstage y escenarios creativos. Este tubo LED compacto también funciona como elemento visual decorativo, aportando profundidad a photocalls, expositores de producto y espacios escénicos íntimos."
@@ -389,7 +389,7 @@ window.products = [
         "subcategory": "sub.lightControl",
         "manufacturer": "MA Lighting",
         "priceDay": 100,
-        "image": "img/inventory/MA WING.avif",
+        "image": "img/inventory/refresh/108.avif",
         "description": {
             "en": "Bring hands-on lighting control to concerts, theatre and corporate shows with the grandMA2 onPC workflow. Physical faders and programming controls help operators build cues, manage transitions and respond to the performance from a compact control position.",
             "es": "Lleva el control de iluminación profesional a conciertos, teatro y eventos corporativos con el flujo de trabajo de grandMA2 onPC. Faders físicos y mandos de programación dedicados permiten a los operadores lanzar memorias, gestionar transiciones y reaccionar al directo desde un puesto de control compacto."
@@ -469,7 +469,7 @@ window.products = [
         "subcategory": "sub.speakers",
         "manufacturer": "Meyer Sound",
         "priceDay": 30,
-        "image": "img/inventory/UPM-2P.avif",
+        "image": "img/inventory/refresh/301.avif",
         "description": {
             "en": "Bring clear sound to the areas that need it without filling the room with large cabinets. This compact powered speaker suits discreet corporate setups, theatre fills and local monitoring where speech and musical detail matter.",
             "es": "Lleva un sonido claro y definido exactamente a donde se necesita sin saturar el espacio con recintos voluminosos. Este altavoz autoamplificado compacto es ideal para actos corporativos discretos, refuerzos frontales en teatro y monitorización local donde la inteligibilidad y el detalle musical son clave."
@@ -485,7 +485,7 @@ window.products = [
         "subcategory": "sub.speakers",
         "manufacturer": "HK Audio",
         "priceDay": 20,
-        "image": "img/inventory/sonar-115-xi.avif",
+        "image": "img/inventory/refresh/302.avif",
         "description": {
             "en": "Cover speeches, playlists and live performances with a versatile powered speaker. A practical building block for parties, presentations and mobile DJ setups, it can also pair with a suitable subwoofer when the event calls for more bass.",
             "es": "Cubre discursos, música ambiente y directos con una caja acústica autoamplificada versátil. Un elemento básico para fiestas, presentaciones y eventos itinerantes, fácilmente combinable con un subwoofer cuando la ocasión requiere mayor presencia de graves."
@@ -549,7 +549,7 @@ window.products = [
         "subcategory": "sub.speakers",
         "manufacturer": "Yamaha",
         "priceDay": 20,
-        "image": "img/inventory/yAMAHA DXR.avif",
+        "image": "img/inventory/refresh/306.avif",
         "description": {
             "en": "Keep voices clear and music present with a compact powered speaker that fits a wide range of events. Use it for presentations, acoustic performances or stage monitoring when space is limited and intelligibility is a priority.",
             "es": "Garantiza voces nítidas y música con excelente presencia gracias a un recinto autoamplificado compacto y polivalente. Utilízalo para ponencias, directos acústicos o monitorización cuando el espacio es ajustado y la inteligibilidad es primordial."
@@ -597,7 +597,7 @@ window.products = [
         "subcategory": "sub.digitalConsoles",
         "manufacturer": "Behringer",
         "priceDay": 50,
-        "image": "img/inventory/X32.avif",
+        "image": "img/inventory/refresh/403.avif",
         "description": {
             "en": "Put digital mixing, effects and routing into a compact rack setup. The X32 Rack suits bands, corporate events and monitor systems, with remote control that lets the engineer adjust the mix from a useful listening position.",
             "es": "Reúne mezcla digital, efectos y ruteo flexible en un formato compacto en rack. La X32 Rack es idónea para grupos, eventos corporativos y sistemas de monitores, permitiendo al técnico ajustar la mezcla de forma remota desde la mejor posición de escucha."
@@ -613,7 +613,7 @@ window.products = [
         "subcategory": "sub.wireless",
         "manufacturer": "Shure",
         "priceDay": 40,
-        "image": "img/inventory/slxd24e-b58-g59.avif",
+        "image": "img/inventory/refresh/501.avif",
         "description": {
             "en": "Give presenters and singers freedom to move while keeping their voice at the centre of the event. This Shure digital wireless handheld system with an SM58 capsule suits wedding speeches, conferences, hosting and live vocals.",
             "es": "Brinda a ponentes y cantantes total libertad de movimiento manteniendo su voz como protagonista del evento. Este sistema inalámbrico digital Shure con cápsula SM58 es perfecto para discursos en bodas, congresos, presentaciones y directos vocales."
@@ -629,7 +629,7 @@ window.products = [
         "subcategory": "sub.wired",
         "manufacturer": "Sennheiser",
         "priceDay": 10,
-        "image": "img/inventory/Sennheiser E 906.avif",
+        "image": "img/inventory/refresh/502.avif",
         "description": {
             "en": "Bring guitar amplifiers into the live mix with definition and attack. The e 906 is well suited to band stages and festival backlines, with a flat profile that helps position it close to a speaker cabinet.",
             "es": "Lleva amplificadores de guitarra a la mezcla con gran pegada, nitidez y definición. El e 906 es un estándar en escenarios y festivales gracias a su perfil plano, pensado para colgarse o colocarse pegado a la pantalla acústica."
@@ -645,7 +645,7 @@ window.products = [
         "subcategory": "sub.wired",
         "manufacturer": "Electro-Voice",
         "priceDay": 20,
-        "image": "img/inventory/Re20 .avif",
+        "image": "img/inventory/refresh/504.avif",
         "description": {
             "en": "Give spoken content a full, natural sound for live podcasts, interviews and broadcast-style event coverage. The RE20 also brings controlled low-frequency pickup to suitable instruments, making it a useful option beyond the presenter desk.",
             "es": "Consigue un sonido vocal cálido, rico y con cuerpo broadcast para podcasts en vivo, entrevistas y retransmisiones. El RE20 también ofrece una captación precisa y controlada de bajas frecuencias en diversos instrumentos musicales."
@@ -677,7 +677,7 @@ window.products = [
         "subcategory": "sub.djMixers",
         "manufacturer": "Pioneer DJ",
         "priceDay": 40,
-        "image": "img/inventory/DJM900.avif",
+        "image": "img/inventory/refresh/602.avif",
         "description": {
             "en": "Make the mixer the creative centre of your DJ booth. Four channels and onboard effects give performers room to blend sources, shape transitions and build energy at club nights, weddings and festival sets.",
             "es": "Convierte la mesa de mezclas en el motor creativo de la cabina. Cuatro canales y efectos integrados brindan a los artistas todo lo necesario para fusionar temas, moldear transiciones y elevar la energía en discotecas, bodas y festivales."
@@ -709,7 +709,7 @@ window.products = [
         "subcategory": "sub.djFurniture",
         "manufacturer": "UDG",
         "priceDay": 15,
-        "image": "img/inventory/DJ TABLE.avif",
+        "image": "img/inventory/refresh/604.avif",
         "description": {
             "en": "Create a tidy, dedicated workspace for decks and a mixer at weddings, parties and temporary DJ booths. This folding UDG table gives the setup a consistent working surface and a clean black finish.",
             "es": "Crea una superficie de trabajo cuidada y profesional para reproductores y mezclador en bodas, fiestas privadas y cabinas efímeras. Esta mesa plegable UDG aporta una altura óptima, gran estabilidad y un acabado negro sobrio."
@@ -948,7 +948,7 @@ window.products = [
         "subcategory": "sub.wired",
         "manufacturer": "Shure",
         "priceDay": 1.8,
-        "image": "img/inventory/sm_58.avif",
+        "image": "img/inventory/refresh/1012.avif",
         "description": {
             "en": "Keep the focus on the voice with a familiar handheld microphone for singers, hosts and speakers. The Shure SM58 is a practical choice for live bands, wedding speeches, panel discussions and everyday stage work.",
             "es": "Mantén la voz en el primer plano con el micrófono de mano más reconocido por artistas, presentadores y ponentes. El Shure SM58 es la opción de máxima confianza para grupos en directo, discursos de boda, conferencias y actuaciones cotidianas."
@@ -964,7 +964,7 @@ window.products = [
         "subcategory": "sub.cables",
         "manufacturer": "Unknown/Generic",
         "priceDay": 1,
-        "image": "img/inventory/XLR.avif",
+        "image": "img/inventory/refresh/1015.avif",
         "description": {
             "en": "Connect microphones, mixers and compatible powered speakers with balanced audio cabling. A choice of three, five or seven metres helps keep stage patching tidy without leaving every connection stretched or buried in excess cable.",
             "es": "Conecta micrófonos, mesas de sonido y cajas acústicas con señal de audio balanceada y libre de interferencias. La disponibilidad en tres, cinco o siete metros permite realizar un cableado limpio en el escenario sin tiradas tensas ni cables sobrantes."
@@ -996,7 +996,7 @@ window.products = [
         "subcategory": "sub.towersStands",
         "manufacturer": "Unknown/Generic",
         "priceDay": 10,
-        "image": "img/inventory/gravity_stand.avif",
+        "image": "img/inventory/refresh/1017.avif",
         "description": {
             "en": "Place a compatible light or speaker on a clean, flat-base stand that suits presentation spaces and wedding venues. Adjustable height helps position the equipment while avoiding the spread of a conventional tripod around the base.",
             "es": "Coloca focos o cajas de sonido sobre un pie de base cuadrada plana, idóneo para espacios de diseño, presentaciones y salones de boda. Su mástil extensible ajusta la altura sin el estorbo visual ni los tropiezos de un trípode convencional."
@@ -1044,7 +1044,7 @@ window.products = [
         "subcategory": "sub.djMixers",
         "manufacturer": "UPSTAGE",
         "priceDay": 40,
-        "image": "img/inventory/ALLENandHEAT_XONE_96.avif",
+        "image": "img/inventory/refresh/1023.avif",
         "description": {
             "en": "Give DJs detailed control over long blends and layered sets with the Xone:96 analogue mixer. Four-band EQ, Xone filters and dual USB interfaces suit electronic music nights and hybrid performances that combine decks with computer audio.",
             "es": "Brinda a los DJs un control analógico excepcional para sesiones profundas, mezclas extendidas y directos híbridos. Su ecualización de cuatro bandas, filtros Xone duales y dos tarjetas de sonido USB la convierten en un referente para música electrónica."
@@ -1060,7 +1060,7 @@ window.products = [
         "subcategory": "sub.djMixers",
         "manufacturer": "Pioneer DJ",
         "priceDay": 25,
-        "image": "img/inventory/PIONEER_RMX-1000.avif",
+        "image": "img/inventory/refresh/1025.avif",
         "description": {
             "en": "Make transitions and breakdowns part of the performance with hands-on effects and sampling. The RMX-1000 adds another creative layer to a compatible DJ setup, suited to club sets and showcases that call for live remixing.",
             "es": "Convierte las transiciones y bajadas en parte activa de la actuación gracias al control táctil de efectos y samplers. El RMX-1000 añade una potente capa creativa a la cabina de DJ, ideal para actuaciones que buscan remezclas en directo."
@@ -1076,7 +1076,7 @@ window.products = [
         "subcategory": "sub.djPlayers",
         "manufacturer": "Pioneer DJ",
         "priceDay": 50,
-        "image": "img/inventory/PIONEER_XDJ.avif",
+        "image": "img/inventory/refresh/1026.avif",
         "description": {
             "en": "Bring decks and mixing together in a compact all-in-one DJ setup. USB playback makes the XDJ range a practical choice for private parties, mobile events and smaller booths where a streamlined layout matters.",
             "es": "Integra reproductores y mesa en una solución todo en uno cómoda y portátil. La reproducción directa por USB hace de los sistemas XDJ una elección idónea para eventos móviles, celebraciones privadas y cabinas que buscan sencillez sin renunciar a calidad."
@@ -1092,7 +1092,7 @@ window.products = [
         "subcategory": "sub.djPlayers",
         "manufacturer": "Pioneer DJ",
         "priceDay": 50,
-        "image": "img/inventory/ALPHA_THETA_CDJ_3000.avif",
+        "image": "img/inventory/refresh/1027.avif",
         "description": {
             "en": "Give DJs a detailed view of their music and direct access to performance controls. The CDJ-3000's large touchscreen and dedicated hot cues suit festival booths, club nights and guest sets built around a modern Pioneer DJ workflow.",
             "es": "Ofrece a los DJs una visión completa de sus pistas y acceso instantáneo a los controles de directo. La gran pantalla táctil y los botones hot cue dedicados del CDJ-3000 son el estándar actual en festivales, clubes y escenarios profesionales."
@@ -1108,7 +1108,7 @@ window.products = [
         "subcategory": "sub.ledPar",
         "manufacturer": "Acoustic Control",
         "priceDay": 15,
-        "image": "img/inventory/Acoustic_Control_par_182_cob.avif",
+        "image": "img/inventory/refresh/1028.avif",
         "description": {
             "en": "Fill a stage or event backdrop with a broad wash of colour. This COB LED PAR suits live performances, exhibition spaces and themed parties where an even colour field helps bring the whole setting together.",
             "es": "Inunda el escenario o fondo de sala con un baño de luz homogéneo y vibrante. Este foco PAR LED COB es idóneo para directos, stands y fiestas temáticas donde una cobertura uniforme de color realza el entorno visual."
@@ -1204,7 +1204,7 @@ window.products = [
         "subcategory": "sub.conventional",
         "manufacturer": "BeamZ",
         "priceDay": 20,
-        "image": "img/inventory/BEAM_Z_Foco_Fresnel_Zoom_200w_Led_RGB.avif",
+        "image": "img/inventory/refresh/1034.avif",
         "description": {
             "en": "Give presenters, performers and scenic areas a soft-edged light that can be shaped to the space. Motorised zoom and colour control make this LED Fresnel useful for theatre, corporate stages and changing event looks.",
             "es": "Ilumina a ponentes, artistas y elementos escénicos con una luz de bordes suaves ajustable al espacio. El zoom motorizado y la mezcla de color hacen de este Fresnel LED una luminaria muy útil en teatro, conferencias y eventos dinámicos."
@@ -1220,7 +1220,7 @@ window.products = [
         "subcategory": "sub.movingLights",
         "manufacturer": "BeamZ",
         "priceDay": 20,
-        "image": "img/inventory/BEAM_Z_MHL_74.avif",
+        "image": "img/inventory/refresh/1035.avif",
         "description": {
             "en": "Add moving colour to a compact stage or dance floor. This LED wash moving head brings changing positions and coordinated colour looks to mobile DJ events, small live performances and private parties.",
             "es": "Añade dinamismo y color a pequeños escenarios o pistas de baile. Esta cabeza móvil LED wash proporciona transiciones ágiles de posición y paletas coordinadas de color para DJs móviles, pequeñas bandas y celebraciones privadas."
@@ -1236,7 +1236,7 @@ window.products = [
         "subcategory": "sub.effects",
         "manufacturer": "BeamZ",
         "priceDay": 35,
-        "image": "img/inventory/BEAM_Z_PANDORA_1600.avif",
+        "image": "img/inventory/refresh/1036.avif",
         "description": {
             "en": "Create colourful laser patterns and dramatic aerial looks for electronic shows and club productions. DMX and ILDA control let the Pandora 1600 become part of a planned laser display operated by a qualified professional.",
             "es": "Crea figuras gráficas coloridas y espectaculares efectos aéreos para espectáculos electrónicos y montajes de club. El control por DMX e ILDA permite integrar el Pandora 1600 en diseños de láser operados por personal cualificado."
@@ -1284,7 +1284,7 @@ window.products = [
         "subcategory": "sub.movingLights",
         "manufacturer": "Chauvet DJ",
         "priceDay": 20,
-        "image": "img/inventory/Chauvet_Dj_Intimidator_beam_355_irc.avif",
+        "image": "img/inventory/refresh/1039.avif",
         "description": {
             "en": "Bring sharp moving beams and prism effects to DJ events and live stages. The Intimidator Beam adds focused aerial movement, while colour changes and frost give the lighting operator more ways to vary the look.",
             "es": "Aporta haces concentrados y llamativos efectos de prisma a sesiones de DJ y escenarios en directo. El Intimidator Beam traza trayectorias nítidas en el aire, mientras que la rueda de color y el filtro frost amplían las variantes visuales."
@@ -1364,7 +1364,7 @@ window.products = [
         "subcategory": "sub.speakers",
         "manufacturer": "Amate Audio",
         "priceDay": 20,
-        "image": "img/inventory/AMATE_AUDIO_NITID_S12.avif",
+        "image": "img/inventory/refresh/1047.avif",
         "description": {
             "en": "Cover a presentation, live performance or monitor position with a versatile powered 12-inch speaker. Onboard DSP helps adapt it to the job, making the N12 useful across corporate events, band stages and smaller sound systems.",
             "es": "Cubre conferencias, música en vivo o posiciones de monitor con un polivalente altavoz autoamplificado de 12 pulgadas. Su DSP integrado optimiza la respuesta según el uso en eventos corporativos, escenarios o sistemas de refuerzo."
@@ -1444,7 +1444,7 @@ window.products = [
         "subcategory": "sub.speakers",
         "manufacturer": "Amate Audio",
         "priceDay": 65,
-        "image": "img/inventory/AMATE_AUDIO_XCELLENCE_X82FD.avif",
+        "image": "img/inventory/refresh/1050.avif",
         "description": {
             "en": "Bring detailed sound to corporate stages, live performances and carefully planned reinforcement positions. The dual-8-inch powered format offers a compact option when the production needs musical clarity without an oversized cabinet in view.",
             "es": "Aporta un sonido detallado y fiel a escenarios corporativos, recitales y puntos de refuerzo acústico de alta calidad. Su configuración activa con doble 8 pulgadas destaca cuando se precisa precisión sin un recinto voluminoso en el campo visual."
@@ -1460,7 +1460,7 @@ window.products = [
         "subcategory": "sub.subs",
         "manufacturer": "Amate Audio",
         "priceDay": 65,
-        "image": "img/inventory/AMATE_AUDIO_XCELLENCE_XW118.avif",
+        "image": "img/inventory/refresh/1051.avif",
         "description": {
             "en": "Add depth and definition to the rhythm section of your event. This powered 18-inch subwoofer complements suitable PA speakers for DJ performances, live bands and touring setups that need a convincing low end.",
             "es": "Añade peso, cuerpo y definición a la sección rítmica de tu evento. Este subwoofer activo de 18 pulgadas complementa recintos de medios-agudos en actuaciones de DJ, grupos en vivo y directos que precisan una respuesta en graves sólida."
@@ -1476,7 +1476,7 @@ window.products = [
         "subcategory": "sub.signal",
         "manufacturer": "dbx",
         "priceDay": 12,
-        "image": "img/inventory/DBX_DRIVE_RAC_PA2.avif",
+        "image": "img/inventory/refresh/1052.avif",
         "description": {
             "en": "Bring crossover, EQ and speaker processing together in one compact rack unit. The DriveRack PA2 helps engineers tune a compatible PA for the room, making it useful for mobile sound systems, live bands and repeat event setups.",
             "es": "Reúne filtros de cruce, ecualización y procesamiento de altavoces en una única unidad de rack compacta. El DriveRack PA2 ayuda a optimizar y proteger el sistema de sonido según la sala, siendo muy útil para giras, bandas y montajes recurrentes."
@@ -1492,7 +1492,7 @@ window.products = [
         "subcategory": "sub.speakers",
         "manufacturer": "LD Systems",
         "priceDay": 35,
-        "image": "img/inventory/LD_Systems_MAUI_11_G2.avif",
+        "image": "img/inventory/refresh/1054.avif",
         "description": {
             "en": "Keep the sound setup visually discreet for wedding ceremonies, speeches and acoustic performances. This powered column system combines a slim profile with integrated mixing and Bluetooth playback for compact events that move between voice and music.",
             "es": "Mantén una presencia estética elegante y discreta en ceremonias de boda, presentaciones y directos acústicos. Este sistema de columna autoamplificado aúna un perfil esbelto con mezclador integrado y reproducción por Bluetooth para eventos íntimos."
@@ -1828,7 +1828,7 @@ window.products = [
         "subcategory": "sub.wired",
         "manufacturer": "Shure",
         "priceDay": 15,
-        "image": "img/inventory/SHURE_BETA_58_A.avif",
+        "image": "img/inventory/refresh/1097.avif",
         "description": {
             "en": "Help lead vocals stand out on a busy stage. The Beta 58A's focused pickup suits live bands, energetic singers and event performances where the vocal needs definition alongside amplified instruments.",
             "es": "Haz que la voz principal sobresalga con claridad y presencia en escenarios exigentes. El patrón polar supercardioide del Beta 58A ofrece gran aislamiento acústico para directos, cantantes enérgicos y montajes con amplificadores en el escenario."
@@ -1844,7 +1844,7 @@ window.products = [
         "subcategory": "sub.wired",
         "manufacturer": "Shure",
         "priceDay": 15,
-        "image": "img/inventory/SHURE_PGA52.avif",
+        "image": "img/inventory/refresh/1098.avif",
         "description": {
             "en": "Capture the weight and attack of a kick drum or bass cabinet. The PGA52 helps anchor a live band's rhythm section, making it a useful choice for concerts, showcase gigs and drum recording setups.",
             "es": "Capta la pegada y profundidad de bombos de batería o amplificadores de bajo. El PGA52 refuerza la base rítmica de la banda, siendo una opción práctica y solvente para conciertos, directos y grabaciones de percusión."
@@ -1876,7 +1876,7 @@ window.products = [
         "subcategory": "sub.wired",
         "manufacturer": "Shure",
         "priceDay": 15,
-        "image": "img/inventory/SHURE_SM_57.avif",
+        "image": "img/inventory/refresh/1100.avif",
         "description": {
             "en": "Put snare drums, guitar amps and other stage instruments clearly into the mix. The SM57 is a versatile dynamic microphone for live bands, festival backlines and recording sessions that call for close instrument pickup.",
             "es": "Sitúa cajas de batería, guitarras amplificadas y otros instrumentos con absoluta definición en la mezcla. El SM57 es el micrófono dinámico más versátil de los escenarios y estudios para la captación cercana de fuentes instrumentales."
@@ -1908,7 +1908,7 @@ window.products = [
         "subcategory": "sub.analogConsoles",
         "manufacturer": "Soundcraft",
         "priceDay": 18,
-        "image": "img/inventory/SOUNDCRAFT_EPM8.avif",
+        "image": "img/inventory/refresh/1102.avif",
         "description": {
             "en": "Balance multiple microphones and music sources with a straightforward analogue desk. The EPM8 suits panel discussions, acoustic acts and small live events, with auxiliary sends for building suitable monitor or external-effects feeds.",
             "es": "Equilibra con sencillez varias fuentes de microfonía y música a través de una mesa de sonido analógica muy intuitiva. La EPM8 se adapta a mesas redondas, acústicos y pequeños directos, con envíos auxiliares para monitorización o efectos externos."
@@ -1924,7 +1924,7 @@ window.products = [
         "subcategory": "sub.analogConsoles",
         "manufacturer": "Yamaha",
         "priceDay": 18,
-        "image": "img/inventory/YAMAHA_MG10XU.avif",
+        "image": "img/inventory/refresh/1103.avif",
         "description": {
             "en": "Bring microphones, music playback and useful effects together in a compact event mixer. The MG10XU suits wedding speeches, acoustic duos, presentations and streamed sessions, with USB audio for a connected computer.",
             "es": "Reúne micrófonos, música ambiente y efectos útiles en una mesa de sonido muy compacta. La MG10XU es perfecta para discursos de boda, dúos acústicos, conferencias y streaming, con interfaz de audio USB para conectar a un ordenador."
@@ -2848,7 +2848,7 @@ window.products = [
         "subcategory": "sub.monitors",
         "manufacturer": "L-Acoustics",
         "priceDay": 38,
-        "image": "img/inventory/l-acoustics-x12.avif",
+        "image": "img/inventory/refresh/1213.avif",
         "availability": "on_request",
         "description": {
             "en": "Bring clear, controlled sound to a stage monitor position or a compact PA application. X12 is a versatile L-Acoustics enclosure for live music, speeches and fill coverage. Its understated appearance also suits corporate stages where sound quality and a tidy visual finish both matter.",
