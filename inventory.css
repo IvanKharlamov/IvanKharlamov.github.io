@@ -685,6 +685,16 @@
     height: 220px;
 }
 
+/* Pack collages are wide: give them a taller, less padded frame so they fill the card */
+.product-card-pack .product-image {
+    height: 340px;
+    padding: 12px 16px;
+}
+
+.catalog-embed .product-card-pack .product-image {
+    height: 320px;
+}
+
 @media (max-width: 1024px) {
     .catalog-embed .catalog-layout {
         grid-template-columns: 260px 1fr;
@@ -808,6 +818,11 @@
     .catalog-embed .product-image {
         height: 200px;
         padding: 16px;
+    }
+
+    .catalog-embed .product-card-pack .product-image {
+        height: 230px;
+        padding: 8px 12px;
     }
 
     .catalog-embed .product-image-atlas {
