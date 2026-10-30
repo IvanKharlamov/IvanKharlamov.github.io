@@ -37,7 +37,7 @@ window.products = [
         "category": "cat.packs",
         "manufacturer": "UPSTAGE MADRID",
         "priceDay": null,
-        "image": "img/inventory/packs/pack-party.png",
+        "image": "img/inventory/packs/pack-party.png?v=20261031",
         "imageAlt": {
             "en": "Collage of two speakers, two subwoofers, DJ equipment with a table and compact lighting",
             "es": "Collage de dos altavoces, dos subgraves, equipo DJ con mesa e iluminación compacta"
@@ -84,7 +84,7 @@ window.products = [
         "category": "cat.packs",
         "manufacturer": "UPSTAGE MADRID",
         "priceDay": null,
-        "image": "img/inventory/packs/pack-conference.png",
+        "image": "img/inventory/packs/pack-conference.png?v=20261031",
         "imageAlt": {
             "en": "Collage of speakers, wireless microphones, a digital mixer and conference lighting",
             "es": "Collage de altavoces, microfonía inalámbrica, mesa digital y focos para conferencias"
@@ -129,7 +129,7 @@ window.products = [
         "category": "cat.packs",
         "manufacturer": "UPSTAGE MADRID",
         "priceDay": null,
-        "image": "img/inventory/packs/pack-event-lighting.png",
+        "image": "img/inventory/packs/pack-event-lighting.png?v=20261031",
         "imageAlt": {
             "en": "Collage of battery uplights, LED bars, lamp strips, LED tubes and moving wash lights",
             "es": "Collage de uplights a batería, barras LED, barras de lámparas, tubos LED y cabezas móviles wash"
@@ -174,7 +174,7 @@ window.products = [
         "category": "cat.packs",
         "manufacturer": "UPSTAGE MADRID",
         "priceDay": null,
-        "image": "img/inventory/packs/pack-concert.png",
+        "image": "img/inventory/packs/pack-concert.png?v=20261031",
         "imageAlt": {
             "en": "Collage of a line array, subwoofers, stage monitors, consoles and concert lighting",
             "es": "Collage de line array, subgraves, monitores de escenario, consolas e iluminación de concierto"
