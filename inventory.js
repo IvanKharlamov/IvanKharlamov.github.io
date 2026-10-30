@@ -57,11 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     clone.querySelector('.price-day').textContent = t('price.onRequest');
                 }
 
-                const availEl = clone.querySelector('.product-availability');
-                if (availEl) {
-                    if (p.availability === 'on_request') availEl.textContent = t('product.onRequest');
-                    else availEl.remove();
-                }
                 // Packs list their equipment on the card; the full description lives in the modal
                 const descEl = clone.querySelector('.product-desc');
                 const equipEl = clone.querySelector('.product-equipment');

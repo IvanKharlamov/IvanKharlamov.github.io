@@ -119,7 +119,6 @@
   "cat.service": { "en": "Service", "es": "Servicios" },
 
   "catalog.subcategories": { "en": "Subcategories", "es": "Subcategorías" },
-  "product.onRequest": { "en": "Available on request", "es": "Disponible bajo petición" },
   "product.moreItems": { "en": "+ {{n}} more", "es": "+ {{n}} más" },
   "price.onRequest": { "en": "Custom quote", "es": "Presupuesto a medida" },
   "product.scope": { "en": "Rental scope", "es": "Alcance del alquiler" },

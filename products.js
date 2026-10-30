@@ -412,6 +412,66 @@ window.products = [
         }
     },
     {
+        "id": 110,
+        "name": {
+            "en": "grandMA2 full-size console",
+            "es": "Consola grandMA2 full-size"
+        },
+        "category": "cat.light",
+        "subcategory": "sub.lightControl",
+        "manufacturer": "MA Lighting",
+        "priceDay": 500,
+        "image": "img/inventory/grandma2-full-size.avif",
+        "description": {
+            "en": "Take control of demanding live shows with the grandMA2 full-size. Its spacious work surface keeps lighting looks, cues and playback controls within easy reach, giving operators room to programme detailed shows and react confidently during a performance. A strong choice for concerts, festivals and theatre productions built around the grandMA2 workflow, especially when visiting designers need a familiar desk for their show.",
+            "es": "Controla espectáculos exigentes con la grandMA2 full-size. Su amplia superficie de trabajo permite organizar escenas, secuencias y controles de reproducción con comodidad, tanto al programar un show como al improvisar durante una actuación. Una opción para conciertos, festivales y producciones teatrales que trabajan con grandMA2 y necesitan ofrecer a sus diseñadores de iluminación una mesa familiar para llevar su espectáculo a escena."
+        },
+        "scope": {
+            "en": "One console. External monitors, processing units, programming, operator and transport quoted separately. Software version and show-file requirements agreed before hire.",
+            "es": "Una consola. Monitores externos, unidades de procesado, programación, operador y transporte se presupuestan aparte. Versión de software y requisitos del archivo de show a acordar antes del alquiler."
+        }
+    },
+    {
+        "id": 111,
+        "name": {
+            "en": "grandMA3 compact console",
+            "es": "Consola grandMA3 compact"
+        },
+        "category": "cat.light",
+        "subcategory": "sub.lightControl",
+        "manufacturer": "MA Lighting",
+        "priceDay": 210,
+        "image": "img/inventory/grandma3-compact.avif",
+        "description": {
+            "en": "Bring the grandMA3 workflow to productions where control space is limited. The grandMA3 compact combines a clear touchscreen workspace with hands-on playback, making it comfortable to build looks, organise cues and operate a show from a smaller control position. It suits corporate events, theatre, club shows and touring productions that want a self-contained MA console in a format that is easy to transport.",
+            "es": "Lleva el entorno grandMA3 a producciones con poco espacio en control. La grandMA3 compact combina una pantalla táctil clara con controles físicos para crear ambientes, organizar secuencias y manejar el espectáculo cómodamente desde una cabina reducida. Encaja en eventos corporativos, teatro, conciertos de sala y giras que buscan una consola MA autónoma en un formato cómodo de transportar."
+        },
+        "scope": {
+            "en": "One grandMA3 compact console. Operator, programming, additional processing and transport quoted separately. Software mode and version agreed before hire.",
+            "es": "Una consola grandMA3 compact. Operador, programación, procesado adicional y transporte se presupuestan aparte. Modo y versión de software a acordar antes del alquiler."
+        }
+    },
+    {
+        "id": 112,
+        "name": {
+            "en": "grandMA3 onPC command wing",
+            "es": "grandMA3 onPC command wing"
+        },
+        "category": "cat.light",
+        "subcategory": "sub.lightControl",
+        "manufacturer": "MA Lighting",
+        "priceDay": 135,
+        "image": "img/inventory/grandma3-onpc-command-wing.avif",
+        "description": {
+            "en": "Turn a compatible computer into a hands-on grandMA3 lighting workspace. The onPC command wing brings familiar MA keys, encoders and playback controls to a portable setup for club shows, corporate events, rehearsals and programming sessions. It gives operators tactile control of their show while keeping the system easy to move. A separate computer running grandMA3 onPC is required and is quoted separately.",
+            "es": "Convierte un ordenador compatible en un puesto de control de iluminación grandMA3 con mandos físicos. El onPC command wing reúne teclas, encoders y controles de reproducción MA en un formato portátil para conciertos de sala, eventos corporativos, ensayos y sesiones de programación. Permite manejar el show de forma directa y cómoda. Requiere un ordenador externo con grandMA3 onPC, que se presupuesta aparte."
+        },
+        "scope": {
+            "en": "One grandMA3 onPC command wing control surface. Compatible computer and display are not included. Operator, programming and transport quoted separately.",
+            "es": "Una superficie de control grandMA3 onPC command wing. Ordenador compatible y pantalla no incluidos. Operador, programación y transporte se presupuestan aparte."
+        }
+    },
+    {
         "id": 201,
         "name": {
             "en": "Square truss 50 mm, 30 cm section, 1 m long",
@@ -2581,7 +2641,6 @@ window.products = [
         "manufacturer": "Behringer",
         "priceDay": 225,
         "image": "img/inventory/behringer-wing.avif",
-        "availability": "on_request",
         "description": {
             "en": "Bring live bands, playback and presenter microphones together in one flexible mixing workspace. WING gives the engineer room to shape the sound, organise monitor mixes and move confidently between sections of a show. A practical centrepiece for concerts, corporate stages and multi-act events.",
             "es": "Reúne bandas en directo, pistas y micrófonos de presentación en una superficie de mezcla flexible. WING permite al técnico trabajar el sonido, organizar las mezclas de monitores y pasar de una parte del espectáculo a otra. Una opción versátil para conciertos, escenarios corporativos y eventos con varios artistas."
@@ -2602,7 +2661,6 @@ window.products = [
         "manufacturer": "Behringer",
         "priceDay": 99,
         "image": "img/inventory/behringer-wing-compact.avif",
-        "availability": "on_request",
         "description": {
             "en": "Take the WING workflow into venues where space at front of house is limited. This compact digital desk keeps mixing, processing and show control close at hand, making it useful for touring bands, theatre productions and corporate events that need a capable console in a smaller footprint.",
             "es": "Lleva el flujo de trabajo WING a espacios con una zona de control reducida. Esta mesa digital compacta reúne mezcla, procesamiento y gestión del espectáculo en una superficie cómoda. Resulta práctica para bandas de gira, teatro y eventos corporativos que necesitan una consola completa sin ocupar demasiado espacio."
@@ -2623,7 +2681,6 @@ window.products = [
         "manufacturer": "Allen & Heath",
         "priceDay": 150,
         "image": "img/inventory/allen-heath-sq6.avif",
-        "availability": "on_request",
         "description": {
             "en": "Keep live sound organised through soundchecks, guest performances and busy show schedules. The SQ-6 combines hands-on mixing with recallable settings, helping engineers manage bands, conferences and theatre productions. A useful choice when the event needs a dedicated mixing surface with room for both audience sound and stage monitors.",
             "es": "Mantén el sonido organizado durante pruebas, actuaciones y cambios de programa. La SQ-6 combina controles directos con memorias de escena para facilitar el trabajo en conciertos, conferencias y teatro. Una opción práctica para gestionar tanto la mezcla de sala como los monitores del escenario."
@@ -2644,7 +2701,6 @@ window.products = [
         "manufacturer": "Yamaha",
         "priceDay": 230,
         "image": "img/inventory/yamaha-ql5.avif",
-        "availability": "on_request",
         "description": {
             "en": "Give your sound engineer a familiar Yamaha workspace for concerts, conferences and theatre. QL5 brings hands-on control and scene recall to productions with multiple speakers or performers, making it easier to prepare the programme and keep transitions consistent throughout the event.",
             "es": "Ofrece al técnico un entorno Yamaha familiar para conciertos, conferencias y teatro. La QL5 combina control directo y memorias de escena para producciones con varios ponentes o artistas. Permite preparar el programa y mantener cambios de mezcla coherentes durante todo el evento."
@@ -2665,7 +2721,6 @@ window.products = [
         "manufacturer": "Yamaha",
         "priceDay": 325,
         "image": "img/inventory/yamaha-cl5.avif",
-        "availability": "on_request",
         "description": {
             "en": "Build a comfortable front-of-house or monitor position around Yamaha's CL workflow. CL5 suits concerts, festival stages and larger productions where the engineer needs clear access to many sources and prepared show scenes. Pair it with the appropriate stage rack for the event's input and output requirements.",
             "es": "Prepara un puesto cómodo de mezcla de sala o monitores con el entorno Yamaha CL. La CL5 encaja en conciertos, festivales y producciones que requieren acceso claro a numerosas fuentes y escenas preparadas. Combínala con el rack de escenario adecuado para las entradas y salidas del evento."
@@ -2686,7 +2741,6 @@ window.products = [
         "manufacturer": "Sennheiser",
         "priceDay": 58,
         "image": "img/inventory/sennheiser-ew-iem-g4.avif",
-        "availability": "on_request",
         "description": {
             "en": "Help performers hear a personal monitor mix while moving freely on stage. EW IEM G4 is a practical option for vocalists, musicians and presenters who prefer in-ear monitoring to a floor wedge. It can form part of a coordinated wireless setup for concerts, rehearsals and touring shows.",
             "es": "Permite a los artistas escuchar su mezcla personal con libertad de movimiento. EW IEM G4 es una opción práctica para cantantes, músicos y presentadores que prefieren monitorización in-ear. Puede integrarse en un sistema inalámbrico coordinado para conciertos, ensayos y espectáculos de gira."
@@ -2707,7 +2761,6 @@ window.products = [
         "manufacturer": "Shure",
         "priceDay": 72,
         "image": "img/inventory/shure-psm900.avif",
-        "availability": "on_request",
         "description": {
             "en": "Give performers a dedicated in-ear mix for concerts, stage shows and rehearsals. PSM 900 lets musicians keep their monitoring close as they move around the stage, supporting a more controlled performance environment. A useful addition to a live sound package when personal monitoring is part of the artist's setup.",
             "es": "Ofrece a los artistas una mezcla in-ear dedicada para conciertos, espectáculos y ensayos. PSM 900 acompaña al músico mientras se mueve por el escenario y ayuda a mantener una escucha controlada. Un complemento útil cuando la monitorización personal forma parte del montaje del artista."
@@ -2728,7 +2781,6 @@ window.products = [
         "manufacturer": "Shure",
         "priceDay": 140,
         "image": "img/inventory/shure-psm1000-dual.avif",
-        "availability": "on_request",
         "description": {
             "en": "Prepare two personal monitoring positions with a dual PSM 1000 system. This package combines a rack transmitter with two bodypack receivers for demanding live productions and touring performances. It gives the monitor engineer a coordinated starting point for two performers, with earphones chosen separately to suit each artist.",
             "es": "Prepara dos puestos de monitorización personal con un sistema doble PSM 1000. El conjunto reúne un transmisor de rack y dos receptores de petaca para producciones en directo y giras. Ofrece una base coordinada para dos artistas, con auriculares seleccionados por separado según sus preferencias."
@@ -2749,7 +2801,6 @@ window.products = [
         "manufacturer": "Shure",
         "priceDay": 50,
         "image": "img/inventory/shure-ulxd-handheld.avif",
-        "availability": "on_request",
         "description": {
             "en": "Put a familiar handheld microphone in the performer's hands without a cable across the stage. This ULX-D system pairs a digital receiver with an SM58 handheld transmitter for vocals, presentations and live events. A clear choice when the production calls for Shure wireless handheld microphones.",
             "es": "Pon un micrófono de mano familiar en manos del artista sin cables por el escenario. Este sistema ULX-D combina un receptor digital con un transmisor de mano SM58 para voces, presentaciones y eventos. Una opción para producciones que solicitan microfonía inalámbrica de mano Shure."
@@ -2770,7 +2821,6 @@ window.products = [
         "manufacturer": "Shure",
         "priceDay": 50,
         "image": "img/inventory/shure-ulxd-bodypack.avif",
-        "availability": "on_request",
         "description": {
             "en": "Create a discreet wireless link for a headset or lavalier microphone. This ULX-D receiver and bodypack combination suits conferences, theatre and presentations where the speaker needs both hands free. Select the microphone and compatible adapter separately to match the performer, wardrobe and event.",
             "es": "Crea un enlace inalámbrico discreto para un micrófono de diadema o solapa. Este conjunto de receptor ULX-D y petaca resulta útil en conferencias, teatro y presentaciones donde el ponente necesita las manos libres. El micrófono y su adaptador se eligen por separado según el artista y el evento."
@@ -2791,7 +2841,6 @@ window.products = [
         "manufacturer": "DPA",
         "priceDay": 28,
         "image": "img/inventory/dpa-4066.avif",
-        "availability": "on_request",
         "description": {
             "en": "Keep speech natural and the microphone discreet during presentations, theatre and hosted events. The lightweight DPA 4066 headset follows the speaker's movement without occupying their hands. Pair it with a compatible wireless bodypack for a tidy presentation setup that leaves the focus on the person speaking.",
             "es": "Mantén una voz natural y una presencia discreta en presentaciones, teatro y eventos con conductor. La diadema ligera DPA 4066 acompaña los movimientos del ponente y deja las manos libres. Combínala con una petaca compatible para que la atención permanezca en quien habla."
@@ -2812,7 +2861,6 @@ window.products = [
         "manufacturer": "DPA",
         "priceDay": 32,
         "image": "img/inventory/dpa-4088.avif",
-        "availability": "on_request",
         "description": {
             "en": "Keep the microphone close to the voice during active presentations and stage performances. DPA 4088 offers a discreet headset format with a directional pickup, useful when the speaker moves or works near other sound sources. Combine it with the correct wireless bodypack and adapter for the production.",
             "es": "Mantén el micrófono cerca de la voz durante presentaciones dinámicas y actuaciones. DPA 4088 ofrece una diadema discreta con captación direccional, útil cuando el ponente se mueve o comparte escenario con otras fuentes sonoras. Combínala con la petaca y el adaptador adecuados para la producción."
@@ -2833,7 +2881,6 @@ window.products = [
         "manufacturer": "L-Acoustics",
         "priceDay": 38,
         "image": "img/inventory/refresh/1213.avif",
-        "availability": "on_request",
         "description": {
             "en": "Bring clear, controlled sound to a stage monitor position or a compact PA application. X12 is a versatile L-Acoustics enclosure for live music, speeches and fill coverage. Its understated appearance also suits corporate stages where sound quality and a tidy visual finish both matter.",
             "es": "Lleva un sonido claro y controlado a un puesto de monitor o a una aplicación de PA compacta. X12 es una caja L-Acoustics versátil para música en directo, voz y refuerzo de cobertura. Su aspecto discreto también encaja en escenarios corporativos que requieren una presentación cuidada."
@@ -2854,7 +2901,6 @@ window.products = [
         "manufacturer": "L-Acoustics",
         "priceDay": 50,
         "image": "img/inventory/l-acoustics-x15-hiq.avif",
-        "availability": "on_request",
         "description": {
             "en": "Give performers a focused floor-monitor position for demanding live shows. X15 HiQ is designed for stage monitoring, helping vocalists and musicians hear the elements they need while performing. A useful choice for concert stages and artist setups that call for L-Acoustics wedges.",
             "es": "Ofrece a los artistas una escucha de escenario enfocada para actuaciones exigentes. X15 HiQ está diseñado para monitorización de suelo y permite orientar la mezcla hacia el intérprete. Una opción para conciertos y montajes de artistas que solicitan monitores L-Acoustics."
@@ -2875,7 +2921,6 @@ window.products = [
         "manufacturer": "L-Acoustics",
         "priceDay": 60,
         "image": "img/inventory/l-acoustics-a15-focus.avif",
-        "availability": "on_request",
         "description": {
             "en": "Build a scalable L-Acoustics sound system for live music, corporate productions and outdoor events. A15 Focus can form part of a tailored PA configuration, with coverage planned around the venue and audience. Combine it with suitable amplification and subwoofers to create the complete system.",
             "es": "Construye un sistema L-Acoustics adaptable para música en directo, producciones corporativas y eventos exteriores. A15 Focus puede formar parte de una PA diseñada para el espacio y el público. Combínala con amplificación y subgraves adecuados para completar el sistema."
@@ -2896,7 +2941,6 @@ window.products = [
         "manufacturer": "L-Acoustics",
         "priceDay": 65,
         "image": "img/inventory/l-acoustics-ks21.avif",
-        "availability": "on_request",
         "description": {
             "en": "Add depth and weight to live music and DJ playback with a dedicated L-Acoustics subwoofer. KS21 complements a compatible PA system when bass impact is an important part of the event. The final quantity and placement can be planned around the venue, music and coverage requirements.",
             "es": "Añade profundidad y presencia a la música en directo y las sesiones DJ con un subgrave L-Acoustics. KS21 complementa una PA compatible cuando el impacto de los graves forma parte de la experiencia. La cantidad y colocación se adaptan al espacio, la música y la cobertura necesaria."
@@ -2917,7 +2961,6 @@ window.products = [
         "manufacturer": "L-Acoustics",
         "priceDay": 50,
         "image": "img/inventory/l-acoustics-kara-ii.avif",
-        "availability": "on_request",
         "description": {
             "en": "Create a concert sound system shaped around the audience with KARA II line-array modules. This modular L-Acoustics platform suits productions that require planned coverage and a scalable system layout. Modules are combined with the appropriate amplification, subwoofers and rigging for the venue.",
             "es": "Crea un sistema de concierto diseñado alrededor del público con módulos line array KARA II. Esta plataforma modular L-Acoustics permite adaptar la cobertura y el tamaño del montaje. Los módulos se combinan con amplificación, subgraves y elementos de montaje adecuados al recinto."
@@ -2938,7 +2981,6 @@ window.products = [
         "manufacturer": "Astera",
         "priceDay": 19,
         "image": "img/inventory/astera-titan-tube.avif",
-        "availability": "on_request",
         "description": {
             "en": "Use light as part of the set with a versatile Astera Titan Tube. Add colour to a DJ booth, shape an interview background or create visible lighting accents for a stage or brand event. Battery operation helps keep creative placements tidy where a permanent power cable would be awkward.",
             "es": "Utiliza la luz como parte de la escenografía con Astera Titan Tube. Añade color a una cabina DJ, da profundidad al fondo de una entrevista o crea acentos visibles en escenarios y eventos de marca. Su funcionamiento con batería facilita colocaciones creativas con un acabado limpio."
@@ -2959,7 +3001,6 @@ window.products = [
         "manufacturer": "Robe",
         "priceDay": 92,
         "image": "img/inventory/robe-pointe.avif",
-        "availability": "on_request",
         "description": {
             "en": "Create moving beams, patterned projections and bold aerial effects with Robe Pointe. This versatile moving head gives lighting designers several looks from one fixture, making it useful for concerts, DJ events and stage shows. Add suitable haze when the design calls for visible beams across the space.",
             "es": "Crea haces móviles, proyecciones y efectos aéreos con Robe Pointe. Esta cabeza móvil ofrece diferentes recursos visuales desde un mismo aparato para conciertos, eventos DJ y espectáculos. Añade un efecto de haze adecuado cuando el diseño necesite mostrar los haces en el espacio."
@@ -2980,7 +3021,6 @@ window.products = [
         "manufacturer": "Martin",
         "priceDay": 110,
         "image": "img/inventory/martin-mac-quantum-wash.avif",
-        "availability": "on_request",
         "description": {
             "en": "Fill the stage with colour and change the mood as the performance develops. MAC Quantum Wash works well for live bands, dance shows and corporate stages that need broad washes and moving accents. It can support both subtle transitions and more energetic lighting sequences.",
             "es": "Llena el escenario de color y cambia el ambiente a medida que avanza la actuación. MAC Quantum Wash resulta útil para bandas, danza y escenarios corporativos que necesitan baños de luz y acentos móviles. Permite trabajar transiciones suaves y secuencias de iluminación más dinámicas."
@@ -3001,7 +3041,6 @@ window.products = [
         "manufacturer": "Martin",
         "priceDay": 100,
         "image": "img/inventory/martin-mac-quantum-profile.avif",
-        "availability": "on_request",
         "description": {
             "en": "Bring movement, colour and projected texture into a concert or event lighting design. MAC Quantum Profile gives the operator a versatile profile fixture for stage looks, scenic detail and musical accents. A useful complement to wash lighting when the show needs more defined visual elements.",
             "es": "Incorpora movimiento, color y texturas proyectadas al diseño de iluminación. MAC Quantum Profile ofrece un recurso versátil para crear escenas, detalles escenográficos y acentos musicales. Complementa la iluminación wash cuando el espectáculo necesita elementos visuales más definidos."
@@ -3022,7 +3061,6 @@ window.products = [
         "manufacturer": "Nord",
         "priceDay": 145,
         "image": "img/inventory/nord-stage4-88.avif",
-        "availability": "on_request",
         "description": {
             "en": "Cover piano, organ and synthesizer parts from one performance keyboard. Nord Stage 4 88 suits live bands, touring artists and corporate performances where expressive playing and quick access to sounds matter. A versatile backline choice for musicians who want to prepare layers and move smoothly between songs.",
             "es": "Cubre partes de piano, órgano y sintetizador desde un único teclado de escenario. Nord Stage 4 88 encaja en bandas, giras y actuaciones corporativas donde importan la expresividad y el acceso rápido a los sonidos. Una opción versátil para preparar capas y pasar con fluidez entre canciones."
@@ -3043,7 +3081,6 @@ window.products = [
         "manufacturer": "Fender",
         "priceDay": 50,
         "image": "img/inventory/fender-twin-reverb.avif",
-        "availability": "on_request",
         "description": {
             "en": "Give guitarists the spacious clean sound and spring-reverb character associated with the Twin Reverb. This combo works well for blues, soul, country and pop, and provides a familiar starting point for pedal-based setups. A practical backline choice for live performances and recording sessions.",
             "es": "Ofrece al guitarrista el sonido limpio amplio y el carácter de reverb de muelles del Twin Reverb. Este combo encaja en blues, soul, country y pop, y sirve como base familiar para equipos con pedales. Una opción de backline para actuaciones y sesiones de grabación."
@@ -3064,7 +3101,6 @@ window.products = [
         "manufacturer": "Marshall",
         "priceDay": 37,
         "image": "img/inventory/marshall-jcm900.avif",
-        "availability": "on_request",
         "description": {
             "en": "Bring classic Marshall bite to rock, punk and heavier guitar parts. The JCM900 head gives guitarists a familiar amplifier platform for driven rhythm sounds and lead work. Pair it with a suitable speaker cabinet to complete a stage rig for rehearsals, concerts or recording.",
             "es": "Lleva el carácter Marshall a guitarras de rock, punk y estilos más intensos. El cabezal JCM900 ofrece una plataforma familiar para ritmos con saturación y partes solistas. Combínalo con una pantalla adecuada para completar el equipo de ensayo, concierto o grabación."
@@ -3085,7 +3121,6 @@ window.products = [
         "manufacturer": "Marshall",
         "priceDay": 35,
         "image": "img/inventory/marshall-1960a.avif",
-        "availability": "on_request",
         "description": {
             "en": "Complete a Marshall guitar rig with the familiar presence of a 1960A cabinet. It is a useful match for compatible amplifier heads when the player wants the look and feel of a traditional rock stage setup. The angled cabinet also makes a recognisable addition to concert backline.",
             "es": "Completa un equipo de guitarra Marshall con la presencia de la pantalla 1960A. Es una opción para cabezales compatibles cuando el guitarrista busca la sensación y la estética de un montaje clásico de rock. Su formato inclinado también aporta una imagen reconocible al backline."
@@ -3106,7 +3141,6 @@ window.products = [
         "manufacturer": "DW",
         "priceDay": 90,
         "image": "img/inventory/dw-collectors.avif",
-        "availability": "on_request",
         "description": {
             "en": "Build a premium acoustic drum setup around DW Collector's Series shells. A strong starting point for concerts, recording sessions and artist backline requests where tone and playing feel are priorities. Choose the final drum configuration, cymbals and supporting hardware to suit the drummer's requirements.",
             "es": "Prepara una batería acústica de gama alta con los cascos DW Collector's Series. Una base para conciertos, grabaciones y solicitudes de backline donde importan el sonido y la respuesta al tocar. La configuración, los platos y los herrajes se ajustan a las necesidades del batería."
@@ -3127,7 +3161,6 @@ window.products = [
         "manufacturer": "Yamaha",
         "priceDay": 85,
         "image": "img/inventory/yamaha-stage-custom-birch.avif",
-        "availability": "on_request",
         "description": {
             "en": "Give the drummer a versatile full-size acoustic kit for rehearsals, live bands and event stages. Stage Custom Birch offers a straightforward foundation for a wide range of musical styles. Add the required cymbals, pedal, stool and stands to prepare the complete playing setup.",
             "es": "Ofrece al batería una batería acústica de formato completo para ensayos, bandas y escenarios de eventos. Stage Custom Birch proporciona una base versátil para distintos estilos musicales. Añade los platos, pedal, sillín y soportes necesarios para completar el montaje."
@@ -3148,7 +3181,6 @@ window.products = [
         "manufacturer": "Zildjian",
         "priceDay": 72,
         "image": "img/inventory/zildjian-k-custom-dark.avif",
-        "availability": "on_request",
         "description": {
             "en": "Add warm, complex cymbal colours to an acoustic drum setup. K Custom Dark cymbals suit players who want expressive accents and a musical blend for jazz, soul, pop and live sessions. This set is a useful backline addition when the drummer requests a consistent family of cymbals.",
             "es": "Añade matices cálidos y complejos a una batería acústica. Los platos K Custom Dark encajan con intérpretes que buscan acentos expresivos y una mezcla musical en jazz, soul, pop y sesiones en directo. El conjunto permite completar el backline con platos de una misma familia."
@@ -3169,7 +3201,6 @@ window.products = [
         "manufacturer": "AKG",
         "priceDay": 35,
         "image": "img/inventory/akg-c414-xls.avif",
-        "availability": "on_request",
         "description": {
             "en": "Capture the character of vocals and acoustic instruments with a versatile studio-style condenser microphone. C414 XLS is useful for piano, overheads, ensembles and recording work where detail matters. Its flexible pickup options allow the engineer to adapt the microphone to the source and room.",
             "es": "Capta el carácter de voces e instrumentos acústicos con un condensador versátil de estudio. C414 XLS resulta útil para piano, overheads, conjuntos y grabaciones donde importa el detalle. Sus opciones de captación permiten al técnico adaptarlo a la fuente y al espacio."
@@ -3190,7 +3221,6 @@ window.products = [
         "manufacturer": "Neumann",
         "priceDay": 55,
         "image": "img/inventory/neumann-km184-pair.avif",
-        "availability": "on_request",
         "description": {
             "en": "Create a natural stereo picture for acoustic instruments, ensembles or drum overheads. This pair of Neumann KM 184 microphones gives the engineer a compact, consistent starting point for detailed live capture and recording. Placement can be adapted to the instrument, stage layout and desired sense of space.",
             "es": "Crea una imagen estéreo natural para instrumentos acústicos, conjuntos u overheads de batería. Esta pareja de Neumann KM 184 ofrece una base compacta y coherente para captación en directo y grabación. La colocación se adapta al instrumento, al escenario y a la sensación de espacio buscada."
@@ -3211,7 +3241,6 @@ window.products = [
         "manufacturer": "DPA",
         "priceDay": 30,
         "image": "img/inventory/dpa4099-guitar.avif",
-        "availability": "on_request",
         "description": {
             "en": "Capture acoustic guitar close to the instrument while leaving the performer free to move. The DPA 4099 guitar set combines a discreet microphone with an instrument mount, making it useful for concerts, acoustic sessions and theatre. It helps keep microphone placement consistent throughout the performance.",
             "es": "Capta la guitarra acústica cerca del instrumento sin limitar el movimiento del intérprete. El conjunto DPA 4099 para guitarra combina un micrófono discreto y una sujeción al instrumento para conciertos, sesiones acústicas y teatro. Ayuda a mantener una colocación estable durante la actuación."
@@ -3232,7 +3261,6 @@ window.products = [
         "manufacturer": "Pioneer DJ",
         "priceDay": 74,
         "image": "img/inventory/pioneer-djm-a9.avif",
-        "availability": "on_request",
         "description": {
             "en": "Build a contemporary club-style DJ booth around the DJM-A9. Its familiar layout and onboard effects suit guest DJs, festival appearances and corporate afterparties. Pair it with compatible players to prepare a performance setup that gives the DJ clear control over mixing and transitions.",
             "es": "Prepara una cabina DJ de estilo club con la DJM-A9. Su distribución familiar y sus efectos integrados encajan en sesiones de invitados, festivales y fiestas corporativas. Combínala con reproductores compatibles para ofrecer al DJ un control claro de la mezcla y las transiciones."
@@ -3253,7 +3281,6 @@ window.products = [
         "manufacturer": "Pioneer DJ",
         "priceDay": 119,
         "image": "img/inventory/pioneer-djm-v10.avif",
-        "availability": "on_request",
         "description": {
             "en": "Give creative DJs room to combine decks, external instruments and effects in a single performance. DJM-V10 suits extended mixing, layered sets and hybrid live/DJ workflows. A useful choice for artist requests that call for more space to shape individual sources and build detailed transitions.",
             "es": "Da espacio a los DJs creativos para combinar reproductores, instrumentos y efectos en una misma actuación. DJM-V10 encaja en mezclas prolongadas, sesiones con capas y formatos híbridos de directo y DJ. Una opción para artistas que necesitan trabajar cada fuente y construir transiciones detalladas."
@@ -3274,7 +3301,6 @@ window.products = [
         "manufacturer": "Absen",
         "priceDay": 32.5,
         "image": "img/inventory/absen-nt26.avif",
-        "availability": "on_request",
         "description": {
             "en": "Bring presentations, brand films and live visuals into focus with an indoor Absen LED wall. The finer pixel pitch suits conferences, exhibitions and stage backdrops where the audience is closer to the screen. Modular cabinets let the display take the shape and size your event needs.",
             "es": "Da protagonismo a presentaciones, vídeos de marca y visuales en directo con una pantalla LED Absen de interior. Su paso de píxel fino encaja en congresos, ferias y fondos de escenario donde el público está cerca. Los paneles modulares permiten adaptar el formato al espacio y al contenido."
@@ -3295,7 +3321,6 @@ window.products = [
         "manufacturer": "Absen",
         "priceDay": 25,
         "image": "img/inventory/absen-nt39w.avif",
-        "availability": "on_request",
         "description": {
             "en": "Give outdoor audiences a clear focal point for live video, sponsor content and event graphics. Absen NT3.9W cabinets form adaptable LED walls for festivals, open-air stages and public events. Choose the screen size around the audience and viewing distance, with the full installation planned for the venue.",
             "es": "Crea un punto de atención para vídeo en directo, patrocinadores y grafismos en eventos al aire libre. Los paneles Absen NT3.9W permiten montar pantallas adaptadas a festivales, escenarios exteriores y actos públicos. El tamaño y la instalación se definen según el público, la distancia de visión y el recinto."
@@ -3316,7 +3341,6 @@ window.products = [
         "manufacturer": "NovaStar",
         "priceDay": 140,
         "image": "img/inventory/novastar-vx1000.avif",
-        "availability": "on_request",
         "description": {
             "en": "Bring your video sources together and fit the picture to your LED wall. The NovaStar VX1000 combines screen control and video processing in one practical unit, making it a useful centrepiece for corporate events, concerts and presentations that need a consistent image across the whole display.",
             "es": "Reúne las fuentes de vídeo y adapta la imagen a tu pantalla LED. El NovaStar VX1000 combina control de pantalla y procesado de vídeo en una unidad práctica para congresos, conciertos y presentaciones, facilitando una imagen uniforme en toda la superficie del display."
@@ -3337,7 +3361,6 @@ window.products = [
         "manufacturer": "Resolume",
         "priceDay": 390,
         "image": "img/inventory/resolume-arena-server.avif",
-        "availability": "on_request",
         "description": {
             "en": "Build a show around video, motion graphics and live visuals with a Resolume Arena playback workstation. Layer content, prepare cues and shape visuals for LED walls or projection. A flexible choice for concerts, DJ sets, product launches and events that need more than a single video loop.",
             "es": "Da forma al espectáculo con una estación de reproducción Resolume Arena. Combina vídeo y gráficos animados, prepara entradas y adapta los visuales a pantallas LED o proyección. Una opción flexible para conciertos, sesiones DJ y lanzamientos que necesitan algo más que un vídeo en bucle."
@@ -3358,7 +3381,6 @@ window.products = [
         "manufacturer": "Roland",
         "priceDay": 110,
         "image": "img/inventory/roland-v1hd.avif",
-        "availability": "on_request",
         "description": {
             "en": "Switch smoothly between cameras, presentations and playback during your event. The Roland V-1HD puts live video control within easy reach, helping an operator follow the programme and keep the audience focused on the right source. Ideal for conferences, panels and compact live productions.",
             "es": "Alterna entre cámaras, presentaciones y reproducción de vídeo durante el evento. El Roland V-1HD permite seguir el programa y mostrar al público la fuente adecuada en cada momento. Una solución práctica para congresos, mesas redondas y producciones en directo de formato compacto."
@@ -3379,7 +3401,6 @@ window.products = [
         "manufacturer": "NovaStar",
         "priceDay": 45,
         "image": "img/inventory/novastar-cvt10s.avif",
-        "availability": "on_request",
         "description": {
             "en": "Keep the video control position where the production needs it, even when the LED screen is further away. The NovaStar CVT10-S links compatible LED control equipment over optical fibre, helping build a tidy signal route between front of house and the display.",
             "es": "Sitúa el control de vídeo donde lo necesita la producción, aunque la pantalla LED esté más alejada. El NovaStar CVT10-S enlaza equipos de control LED compatibles mediante fibra óptica y facilita una distribución ordenada de la señal entre la regiduría y el display."
@@ -3400,7 +3421,6 @@ window.products = [
         "manufacturer": "Sommer Cable",
         "priceDay": 30,
         "image": "img/inventory/fiber-os2-100m.avif",
-        "availability": "on_request",
         "description": {
             "en": "Run a clean optical link between video control and the LED screen with a touring fibre reel. The reel makes longer cable routes easier to deploy and pack away, supporting event layouts where the control desk cannot sit close to the display.",
             "es": "Conecta el control de vídeo y la pantalla LED con una línea óptica preparada para montajes temporales. El carrete facilita el tendido y la recogida en recorridos largos, especialmente cuando la mesa de control debe quedar alejada del display."
@@ -3421,7 +3441,6 @@ window.products = [
         "manufacturer": "Decimator",
         "priceDay": 28,
         "image": "img/inventory/decimator-mdhx.avif",
-        "availability": "on_request",
         "description": {
             "en": "Bridge different video connections and resolve format mismatches between cameras, computers and event video systems. The Decimator MD-HX is a compact problem-solver for getting sources into a usable format before they reach the switcher or LED processor, keeping the signal workflow straightforward.",
             "es": "Conecta equipos de vídeo con conexiones distintas y adapta señales entre cámaras, ordenadores y sistemas del evento. El Decimator MD-HX ayuda a entregar un formato adecuado al mezclador o procesador LED, simplificando la integración de las diferentes fuentes de imagen."
@@ -3442,7 +3461,6 @@ window.products = [
         "manufacturer": "Procab",
         "priceDay": 23,
         "image": "img/inventory/cat6-reel-50m.avif",
-        "availability": "on_request",
         "description": {
             "en": "Connect the LED control position to the display with a practical network cable reel. The flexible cable and winding drum make it easy to handle temporary event routes, keep the work area organised and pack down efficiently after the show.",
             "es": "Conecta el control LED con la pantalla mediante un carrete de cable de red práctico para eventos. El cable flexible y el tambor facilitan el tendido temporal, ayudan a mantener ordenada la zona de trabajo y agilizan la recogida al terminar."
@@ -3463,7 +3481,6 @@ window.products = [
         "manufacturer": "Generic",
         "priceDay": 4.5,
         "image": "img/inventory/hdmi-optical-20m.avif",
-        "availability": "on_request",
         "description": {
             "en": "Place the presentation computer or playback source where it works best for the event. An active optical HDMI cable carries the picture across longer room layouts without a bulky cable run, making it useful for connecting video desks, processors and displays.",
             "es": "Coloca el ordenador de presentaciones o la fuente de reproducción donde mejor encaje en el evento. Un cable HDMI óptico activo permite cubrir recorridos más largos con un tendido ligero, conectando mesas de vídeo, procesadores y pantallas."
@@ -3484,7 +3501,6 @@ window.products = [
         "manufacturer": "Prolyte",
         "priceDay": 85,
         "image": "img/inventory/prolyte-lsu-support.avif",
-        "availability": "on_request",
         "description": {
             "en": "Build an LED backdrop from floor level when overhead suspension is not part of the venue plan. Prolyte LSU provides a modular support approach for indoor screens at conferences, exhibitions and stage presentations. The structure is configured around the selected wall and the available space.",
             "es": "Monta un fondo LED desde el suelo cuando el recinto no contempla una suspensión aérea. Prolyte LSU ofrece una solución modular para pantallas interiores en congresos, ferias y presentaciones. La estructura se configura según la pantalla elegida y el espacio disponible."
@@ -3505,7 +3521,6 @@ window.products = [
         "manufacturer": "Showgear",
         "priceDay": 32,
         "image": "img/inventory/showgear-psa32a12s.avif",
-        "availability": "on_request",
         "description": {
             "en": "Organise power distribution for your LED and video setup from one central unit. The PSA-32A12S helps the production team manage separate outgoing circuits and monitor the supply, keeping the technical area structured during setup and throughout the event.",
             "es": "Organiza la distribución eléctrica del sistema LED y de vídeo desde una unidad central. El PSA-32A12S permite gestionar circuitos de salida separados y supervisar la alimentación, manteniendo ordenada la zona técnica durante el montaje y el evento."
@@ -3526,7 +3541,6 @@ window.products = [
         "manufacturer": "Dell",
         "priceDay": 14,
         "image": "img/inventory/dell-p2422h.avif",
-        "availability": "on_request",
         "description": {
             "en": "Keep presentation cues, playback controls or a video preview visible at the production desk. This Dell monitor gives operators a dedicated workspace without taking over the whole control area, making it a useful addition to a compact video or LED control setup.",
             "es": "Mantén a la vista las presentaciones, los controles de reproducción o una previsualización de vídeo en la mesa técnica. Este monitor Dell ofrece un espacio de trabajo dedicado sin ocupar toda la zona de control, ideal como apoyo en una configuración compacta de vídeo o LED."
