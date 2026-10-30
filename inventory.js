@@ -105,11 +105,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!scroller) return;
         if (mobileQuery.matches) {
             scroller.style.height = '';
-            // Filter changed while the bar is stuck: bring the new list's top into view
-            const bar = document.querySelector('.catalog-embed .catalog-sidebar');
-            const barBottom = bar.getBoundingClientRect().bottom;
-            const listTop = scroller.getBoundingClientRect().top;
-            if (listTop < barBottom) window.scrollBy(0, listTop - barBottom - 8);
             return;
         }
         const grid = document.getElementById('product-grid');
@@ -124,6 +119,19 @@ document.addEventListener('DOMContentLoaded', () => {
         let fitTimer;
         window.addEventListener('resize', () => { clearTimeout(fitTimer); fitTimer = setTimeout(fitTwoRows, 120); });
         window.addEventListener('load', fitTwoRows);
+    }
+
+    // Phones: a category chip was tapped while the filter bar is stuck under the
+    // header, so the start of the new list is hidden behind it. Bring it into view.
+    // Only called from the chip handlers: doing this on resize/load/render made the
+    // page jump back to the list top every time the mobile URL bar toggled.
+    function revealListTop() {
+        if (!scroller || !mobileQuery.matches) return;
+        const bar = document.querySelector('.catalog-embed .catalog-sidebar');
+        if (!bar) return;
+        const barBottom = bar.getBoundingClientRect().bottom;
+        const listTop = scroller.getBoundingClientRect().top;
+        if (listTop < barBottom) window.scrollBy(0, listTop - barBottom - 8);
     }
 
     // Packs without a set rate are quoted individually
@@ -186,6 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 activeFilters.subcategory = input.checked ? sub : null;
                 list.querySelectorAll('input').forEach(x => { x.checked = (x === input && input.checked); });
                 window.applyFilters();
+                revealListTop();
             });
             wrap.append(input, label);
             list.appendChild(wrap);
@@ -287,6 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelectorAll('.filter-chip-wrapper input')
                 .forEach(x => { x.checked = (x === e.target); });
             window.applyFilters();
+            revealListTop();
         });
     });
 
