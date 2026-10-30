@@ -861,8 +861,8 @@ window.products = [
     {
         "id": 1002,
         "name": {
-            "en": "Generic LED bar",
-            "es": "Barra LED genérica"
+            "en": "LED bar",
+            "es": "Barra LED"
         },
         "category": "cat.light",
         "subcategory": "sub.ledPar",
@@ -877,8 +877,8 @@ window.products = [
     {
         "id": 1003,
         "name": {
-            "en": "SHEHDS wireless battery LED PAR uplight 6x18W",
-            "es": "SHEHDS PAR LED uplight 6x18W inalámbrico a batería"
+            "en": "Wireless battery LED PAR uplight 6x18W",
+            "es": "PAR LED uplight 6x18W inalámbrico a batería"
         },
         "category": "cat.light",
         "subcategory": "sub.ledPar",
@@ -1757,8 +1757,8 @@ window.products = [
     {
         "id": 1094,
         "name": {
-            "en": "Midas MR32R",
-            "es": "Midas MR32R"
+            "en": "Midas M32R",
+            "es": "Midas M32R"
         },
         "category": "cat.console",
         "subcategory": "sub.digitalConsoles",
@@ -2253,8 +2253,8 @@ window.products = [
     {
         "id": 1125,
         "name": {
-            "en": "SHEHDS JMS WEBB 19×40 IP65",
-            "es": "SHEHDS JMS WEBB 19×40 IP65"
+            "en": "JMS WEBB 19×40 IP65",
+            "es": "JMS WEBB 19×40 IP65"
         },
         "category": "cat.light",
         "subcategory": "sub.movingLights",
@@ -2301,8 +2301,8 @@ window.products = [
     {
         "id": 1128,
         "name": {
-            "en": "FAL Stage 1000 — Fresnel 650/1000 W",
-            "es": "FAL Stage 1000 — Fresnel 650/1000 W"
+            "en": "Fresnel 650/1000 W",
+            "es": "Fresnel 650/1000 W"
         },
         "category": "cat.light",
         "subcategory": "sub.conventional",
