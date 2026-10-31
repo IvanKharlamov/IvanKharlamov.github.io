@@ -383,9 +383,16 @@ body.loaded .carousel-track .track-inner {
     animation: reviews-scroll var(--reviews-duration, 70s) linear infinite;
 }
 
-.reviews-marquee.is-looping:hover .reviews-track,
 .reviews-marquee.is-looping.is-paused .reviews-track {
     animation-play-state: paused;
+}
+
+/* Pause on hover only where hover is real: on touch screens :hover sticks
+   after a tap, which left the strip frozen until the user tapped elsewhere */
+@media (hover: hover) {
+    .reviews-marquee.is-looping:hover .reviews-track {
+        animation-play-state: paused;
+    }
 }
 
 @keyframes reviews-scroll {

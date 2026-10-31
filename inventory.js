@@ -10,81 +10,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const t = (key) => window.TRANSLATIONS_RAW[key]?.[window.currentLang || 'es'] || key;
 
+    // Phones: the list scrolls with the page, so it is paged behind a "show more" button
+    const MOBILE_PAGE = 8;
+    let currentItems = [];
+    let shownCount = 0;
+
     window.renderProducts = (items) => {
-        const grid = document.getElementById('product-grid'), lang = window.currentLang || 'es';
+        const grid = document.getElementById('product-grid');
         if (!grid) return;
 
+        currentItems = items;
+        shownCount = 0;
         grid.innerHTML = '';
         if (items.length) {
-            const template = document.getElementById('product-card-template');
-            items.forEach(p => {
-                const clone = template.content.cloneNode(true);
-                const card = clone.querySelector('.product-card');
-                if (p.category === 'cat.packs') {
-                    card.classList.add('product-card-pack');
-                }
-                card.onclick = () => window.openProductModal(p.id, 'details');
-                
-                const imgWrapper = clone.querySelector('.product-image');
-                const atlasInfo = window.CATALOG_ATLAS?.items?.[p.id];
-                if (atlasInfo && window.CATALOG_ATLAS?.image) {
-                    const atlasDiv = document.createElement('div');
-                    atlasDiv.className = 'product-image-atlas';
-                    atlasDiv.style.backgroundImage = `url('${window.CATALOG_ATLAS.image}')`;
-                    atlasDiv.style.backgroundPosition = `${atlasInfo.xPct}% ${atlasInfo.yPct}%`;
-                    atlasDiv.setAttribute('role', 'img');
-                    atlasDiv.setAttribute('aria-label', p.name[lang]);
-                    imgWrapper.innerHTML = '';
-                    imgWrapper.appendChild(atlasDiv);
-                } else {
-                    const imgEl = imgWrapper.querySelector('img');
-                    if (imgEl) {
-                        imgEl.src = p.image;
-                        imgEl.alt = p.imageAlt?.[lang] || p.name[lang];
-                    }
-                }
-                clone.querySelector('.product-category').textContent = labelFor(p, lang);
-                clone.querySelector('.product-title').textContent = p.name[lang];
-                const fromEl = clone.querySelector('.price-from');
-                const unitEl = clone.querySelector('.price-unit');
-                if (hasPrice(p)) {
-                    if (fromEl) fromEl.textContent = t('price.from');
-                    clone.querySelector('.price-day').textContent = `€${p.priceDay}`;
-                    unitEl.textContent = t('price.perDayLabel');
-                } else {
-                    fromEl?.remove();
-                    unitEl.remove();
-                    clone.querySelector('.price-day').textContent = t('price.onRequest');
-                }
-
-                // Packs list their equipment on the card; the full description lives in the modal
-                const descEl = clone.querySelector('.product-desc');
-                const equipEl = clone.querySelector('.product-equipment');
-                const equipment = p.equipment?.[lang];
-                if (equipment?.length && equipEl) {
-                    fillEquipment(equipEl, equipment, CARD_EQUIPMENT_LIMIT);
-                    descEl?.remove();
-                } else {
-                    equipEl?.remove();
-                    const d = p.description?.[lang];
-                    if (descEl) { if (d) descEl.textContent = d; else descEl.remove(); }
-                }
-                const scopeEl = clone.querySelector('.product-scope');
-                if (scopeEl) {
-                    const sc = p.scope?.[lang];
-                    if (sc) scopeEl.textContent = sc; else scopeEl.remove();
-                }
-                
-                const detailsBtn = clone.querySelector('.details-btn');
-                detailsBtn.textContent = t('product.details');
-                detailsBtn.onclick = (e) => { e.stopPropagation(); window.openProductModal(p.id, 'details'); };
-                
-                const addBtn = clone.querySelector('.add-to-quote-btn');
-                addBtn.textContent = t('product.addToQuote');
-                addBtn.onclick = (e) => { e.stopPropagation(); window.openProductModal(p.id, 'quote'); };
-                
-                grid.appendChild(clone);
-            });
+            appendCards(mobileQuery.matches ? MOBILE_PAGE : items.length);
         } else {
             grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;">${t('catalog.empty')}</div>`;
         }
@@ -93,8 +32,108 @@ document.addEventListener('DOMContentLoaded', () => {
         fitTwoRows();
     };
 
+    function appendCards(count) {
+        const grid = document.getElementById('product-grid'), lang = window.currentLang || 'es';
+        const template = document.getElementById('product-card-template');
+        grid.querySelector('.show-more-wrap')?.remove();
+        const slice = currentItems.slice(shownCount, shownCount + count);
+        slice.forEach(p => {
+            const clone = template.content.cloneNode(true);
+            const card = clone.querySelector('.product-card');
+            if (p.category === 'cat.packs') {
+                card.classList.add('product-card-pack');
+            }
+            card.onclick = () => window.openProductModal(p.id, 'details');
+            
+            const imgWrapper = clone.querySelector('.product-image');
+            const atlas = window.CATALOG_ATLAS;
+            const atlasInfo = atlas?.items?.[p.id];
+            if (atlasInfo && atlas?.image) {
+                const atlasDiv = document.createElement('div');
+                atlasDiv.className = 'product-image-atlas';
+                atlasDiv.style.backgroundImage = `url('${atlas.image}')`;
+                // Zoom into the tile so the product fills the frame: the tile is
+                // enlarged `zoom` times and its centre is kept at the centre of the box
+                const zoom = atlasInfo.zoom || 1;
+                if (zoom > 1 && atlas.cols && atlas.rows) {
+                    const pos = (i, n) => ((i + 0.5) * zoom - 0.5) / (n * zoom - 1) * 100;
+                    atlasDiv.style.backgroundSize = `${atlas.cols * zoom * 100}% ${atlas.rows * zoom * 100}%`;
+                    atlasDiv.style.backgroundPosition = `${pos(atlasInfo.col, atlas.cols)}% ${pos(atlasInfo.row, atlas.rows)}%`;
+                } else {
+                    atlasDiv.style.backgroundPosition = `${atlasInfo.xPct}% ${atlasInfo.yPct}%`;
+                }
+                atlasDiv.setAttribute('role', 'img');
+                atlasDiv.setAttribute('aria-label', p.name[lang]);
+                imgWrapper.innerHTML = '';
+                imgWrapper.appendChild(atlasDiv);
+            } else {
+                const imgEl = imgWrapper.querySelector('img');
+                if (imgEl) {
+                    imgEl.src = p.image;
+                    imgEl.alt = p.imageAlt?.[lang] || p.name[lang];
+                }
+            }
+            clone.querySelector('.product-category').textContent = labelFor(p, lang);
+            clone.querySelector('.product-title').textContent = p.name[lang];
+            const fromEl = clone.querySelector('.price-from');
+            const unitEl = clone.querySelector('.price-unit');
+            if (hasPrice(p)) {
+                if (fromEl) fromEl.textContent = t('price.from');
+                clone.querySelector('.price-day').textContent = `€${p.priceDay}`;
+                unitEl.textContent = t('price.perDayLabel');
+            } else {
+                fromEl?.remove();
+                unitEl.remove();
+                clone.querySelector('.price-day').textContent = t('price.onRequest');
+            }
+
+            // Packs list their equipment on the card; the full description lives in the modal
+            const descEl = clone.querySelector('.product-desc');
+            const equipEl = clone.querySelector('.product-equipment');
+            const equipment = p.equipment?.[lang];
+            if (equipment?.length && equipEl) {
+                fillEquipment(equipEl, equipment, CARD_EQUIPMENT_LIMIT);
+                descEl?.remove();
+            } else {
+                equipEl?.remove();
+                const d = p.description?.[lang];
+                if (descEl) { if (d) descEl.textContent = d; else descEl.remove(); }
+            }
+            const scopeEl = clone.querySelector('.product-scope');
+            if (scopeEl) {
+                const sc = p.scope?.[lang];
+                if (sc) scopeEl.textContent = sc; else scopeEl.remove();
+            }
+            
+            const detailsBtn = clone.querySelector('.details-btn');
+            detailsBtn.textContent = t('product.details');
+            detailsBtn.onclick = (e) => { e.stopPropagation(); window.openProductModal(p.id, 'details'); };
+            
+            const addBtn = clone.querySelector('.add-to-quote-btn');
+            addBtn.textContent = t('product.addToQuote');
+            addBtn.onclick = (e) => { e.stopPropagation(); window.openProductModal(p.id, 'quote'); };
+            
+            grid.appendChild(clone);
+        });
+        shownCount += slice.length;
+        const remaining = currentItems.length - shownCount;
+        if (remaining > 0) {
+            const wrap = document.createElement('div');
+            wrap.className = 'show-more-wrap';
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'btn btn-outline show-more-btn';
+            btn.textContent = t('catalog.showMore').replace('{{n}}', remaining);
+            btn.onclick = () => appendCards(MOBILE_PAGE);
+            wrap.appendChild(btn);
+            grid.appendChild(wrap);
+        }
+    }
+
     const scroller = document.querySelector('.catalog-embed .catalog-scroll');
     const mobileQuery = window.matchMedia('(max-width: 768px)');
+    // Crossing the phone breakpoint switches between the paged and the full list
+    mobileQuery.addEventListener('change', () => window.applyFilters());
 
     // Pick the column count so the cards always fill the full grid width.
     // Pack cards span two columns, so an odd count would leave an empty column

@@ -100,6 +100,7 @@
   "catalog.title": { "en": "Our", "es": "Nuestro" },
   "catalog.titleHighlight": { "en": "Inventory", "es": "Inventario" },
   "catalog.subtitle": { "en": "Lighting, sound and stage equipment ready for your event.", "es": "Equipo de iluminación, sonido y escenario listo para tu evento." },
+  "catalog.showMore": { "en": "Show more ({{n}})", "es": "Mostrar más ({{n}})" },
   "catalog.empty": {
     "en": "No products found matching your criteria.",
     "es": "No se encontraron productos que coincidan con tu búsqueda."

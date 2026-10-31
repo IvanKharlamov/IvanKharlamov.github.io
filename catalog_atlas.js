@@ -11,6 +11,7 @@ window.CATALOG_ATLAS = {
       "row": 0,
       "x": 720,
       "y": 0,
+      "zoom": 1.03,
       "xPct": 27.2727,
       "yPct": 0.0
     },
@@ -19,6 +20,7 @@ window.CATALOG_ATLAS = {
       "row": 0,
       "x": 1200,
       "y": 0,
+      "zoom": 1.07,
       "xPct": 45.4545,
       "yPct": 0.0
     },
@@ -27,6 +29,7 @@ window.CATALOG_ATLAS = {
       "row": 0,
       "x": 1680,
       "y": 0,
+      "zoom": 1.06,
       "xPct": 63.6364,
       "yPct": 0.0
     },
@@ -35,6 +38,7 @@ window.CATALOG_ATLAS = {
       "row": 0,
       "x": 1920,
       "y": 0,
+      "zoom": 1.06,
       "xPct": 72.7273,
       "yPct": 0.0
     },
@@ -43,6 +47,7 @@ window.CATALOG_ATLAS = {
       "row": 0,
       "x": 2400,
       "y": 0,
+      "zoom": 1.11,
       "xPct": 90.9091,
       "yPct": 0.0
     },
@@ -51,6 +56,7 @@ window.CATALOG_ATLAS = {
       "row": 0,
       "x": 2640,
       "y": 0,
+      "zoom": 1.26,
       "xPct": 100.0,
       "yPct": 0.0
     },
@@ -59,6 +65,7 @@ window.CATALOG_ATLAS = {
       "row": 1,
       "x": 0,
       "y": 240,
+      "zoom": 1.44,
       "xPct": 0.0,
       "yPct": 10.0
     },
@@ -67,6 +74,7 @@ window.CATALOG_ATLAS = {
       "row": 1,
       "x": 240,
       "y": 240,
+      "zoom": 1.22,
       "xPct": 9.0909,
       "yPct": 10.0
     },
@@ -75,6 +83,7 @@ window.CATALOG_ATLAS = {
       "row": 1,
       "x": 960,
       "y": 240,
+      "zoom": 1.39,
       "xPct": 36.3636,
       "yPct": 10.0
     },
@@ -83,6 +92,7 @@ window.CATALOG_ATLAS = {
       "row": 1,
       "x": 1200,
       "y": 240,
+      "zoom": 1.09,
       "xPct": 45.4545,
       "yPct": 10.0
     },
@@ -91,6 +101,7 @@ window.CATALOG_ATLAS = {
       "row": 1,
       "x": 1440,
       "y": 240,
+      "zoom": 1.07,
       "xPct": 54.5455,
       "yPct": 10.0
     },
@@ -99,6 +110,7 @@ window.CATALOG_ATLAS = {
       "row": 1,
       "x": 1920,
       "y": 240,
+      "zoom": 1.03,
       "xPct": 72.7273,
       "yPct": 10.0
     },
@@ -107,6 +119,7 @@ window.CATALOG_ATLAS = {
       "row": 1,
       "x": 2160,
       "y": 240,
+      "zoom": 1.03,
       "xPct": 81.8182,
       "yPct": 10.0
     },
@@ -115,6 +128,7 @@ window.CATALOG_ATLAS = {
       "row": 1,
       "x": 2640,
       "y": 240,
+      "zoom": 1.06,
       "xPct": 100.0,
       "yPct": 10.0
     },
@@ -123,6 +137,7 @@ window.CATALOG_ATLAS = {
       "row": 2,
       "x": 480,
       "y": 480,
+      "zoom": 1.11,
       "xPct": 18.1818,
       "yPct": 20.0
     },
@@ -131,6 +146,7 @@ window.CATALOG_ATLAS = {
       "row": 2,
       "x": 960,
       "y": 480,
+      "zoom": 1.06,
       "xPct": 36.3636,
       "yPct": 20.0
     },
@@ -139,6 +155,7 @@ window.CATALOG_ATLAS = {
       "row": 2,
       "x": 1440,
       "y": 480,
+      "zoom": 1.04,
       "xPct": 54.5455,
       "yPct": 20.0
     },
@@ -147,6 +164,7 @@ window.CATALOG_ATLAS = {
       "row": 2,
       "x": 1920,
       "y": 480,
+      "zoom": 1.09,
       "xPct": 72.7273,
       "yPct": 20.0
     },
@@ -155,6 +173,7 @@ window.CATALOG_ATLAS = {
       "row": 2,
       "x": 2160,
       "y": 480,
+      "zoom": 1.09,
       "xPct": 81.8182,
       "yPct": 20.0
     },
@@ -163,6 +182,7 @@ window.CATALOG_ATLAS = {
       "row": 2,
       "x": 2400,
       "y": 480,
+      "zoom": 1.05,
       "xPct": 90.9091,
       "yPct": 20.0
     },
@@ -171,6 +191,7 @@ window.CATALOG_ATLAS = {
       "row": 2,
       "x": 2640,
       "y": 480,
+      "zoom": 1.09,
       "xPct": 100.0,
       "yPct": 20.0
     },
@@ -179,6 +200,7 @@ window.CATALOG_ATLAS = {
       "row": 3,
       "x": 0,
       "y": 720,
+      "zoom": 1.36,
       "xPct": 0.0,
       "yPct": 30.0
     },
@@ -187,6 +209,7 @@ window.CATALOG_ATLAS = {
       "row": 3,
       "x": 240,
       "y": 720,
+      "zoom": 1.03,
       "xPct": 9.0909,
       "yPct": 30.0
     },
@@ -195,6 +218,7 @@ window.CATALOG_ATLAS = {
       "row": 3,
       "x": 480,
       "y": 720,
+      "zoom": 1.09,
       "xPct": 18.1818,
       "yPct": 30.0
     },
@@ -203,6 +227,7 @@ window.CATALOG_ATLAS = {
       "row": 3,
       "x": 720,
       "y": 720,
+      "zoom": 1.12,
       "xPct": 27.2727,
       "yPct": 30.0
     },
@@ -211,6 +236,7 @@ window.CATALOG_ATLAS = {
       "row": 3,
       "x": 960,
       "y": 720,
+      "zoom": 1.18,
       "xPct": 36.3636,
       "yPct": 30.0
     },
@@ -219,6 +245,7 @@ window.CATALOG_ATLAS = {
       "row": 3,
       "x": 1200,
       "y": 720,
+      "zoom": 1.26,
       "xPct": 45.4545,
       "yPct": 30.0
     },
@@ -227,6 +254,7 @@ window.CATALOG_ATLAS = {
       "row": 3,
       "x": 1440,
       "y": 720,
+      "zoom": 1.06,
       "xPct": 54.5455,
       "yPct": 30.0
     },
@@ -235,6 +263,7 @@ window.CATALOG_ATLAS = {
       "row": 3,
       "x": 1680,
       "y": 720,
+      "zoom": 1.06,
       "xPct": 63.6364,
       "yPct": 30.0
     },
@@ -243,6 +272,7 @@ window.CATALOG_ATLAS = {
       "row": 3,
       "x": 1920,
       "y": 720,
+      "zoom": 1.5,
       "xPct": 72.7273,
       "yPct": 30.0
     },
@@ -251,6 +281,7 @@ window.CATALOG_ATLAS = {
       "row": 3,
       "x": 2160,
       "y": 720,
+      "zoom": 1.39,
       "xPct": 81.8182,
       "yPct": 30.0
     },
@@ -259,6 +290,7 @@ window.CATALOG_ATLAS = {
       "row": 3,
       "x": 2400,
       "y": 720,
+      "zoom": 1.17,
       "xPct": 90.9091,
       "yPct": 30.0
     },
@@ -267,6 +299,7 @@ window.CATALOG_ATLAS = {
       "row": 3,
       "x": 2640,
       "y": 720,
+      "zoom": 1.3,
       "xPct": 100.0,
       "yPct": 30.0
     },
@@ -275,6 +308,7 @@ window.CATALOG_ATLAS = {
       "row": 4,
       "x": 240,
       "y": 960,
+      "zoom": 1.21,
       "xPct": 9.0909,
       "yPct": 40.0
     },
@@ -283,6 +317,7 @@ window.CATALOG_ATLAS = {
       "row": 4,
       "x": 480,
       "y": 960,
+      "zoom": 1.1,
       "xPct": 18.1818,
       "yPct": 40.0
     },
@@ -291,6 +326,7 @@ window.CATALOG_ATLAS = {
       "row": 4,
       "x": 960,
       "y": 960,
+      "zoom": 1.25,
       "xPct": 36.3636,
       "yPct": 40.0
     },
@@ -299,6 +335,7 @@ window.CATALOG_ATLAS = {
       "row": 4,
       "x": 1440,
       "y": 960,
+      "zoom": 1.26,
       "xPct": 54.5455,
       "yPct": 40.0
     },
@@ -307,6 +344,7 @@ window.CATALOG_ATLAS = {
       "row": 4,
       "x": 1680,
       "y": 960,
+      "zoom": 1.11,
       "xPct": 63.6364,
       "yPct": 40.0
     },
@@ -315,6 +353,7 @@ window.CATALOG_ATLAS = {
       "row": 4,
       "x": 1920,
       "y": 960,
+      "zoom": 1.04,
       "xPct": 72.7273,
       "yPct": 40.0
     },
@@ -323,6 +362,7 @@ window.CATALOG_ATLAS = {
       "row": 4,
       "x": 2160,
       "y": 960,
+      "zoom": 1.12,
       "xPct": 81.8182,
       "yPct": 40.0
     },
@@ -331,6 +371,7 @@ window.CATALOG_ATLAS = {
       "row": 4,
       "x": 2400,
       "y": 960,
+      "zoom": 1.34,
       "xPct": 90.9091,
       "yPct": 40.0
     },
@@ -339,6 +380,7 @@ window.CATALOG_ATLAS = {
       "row": 5,
       "x": 0,
       "y": 1200,
+      "zoom": 1.13,
       "xPct": 0.0,
       "yPct": 50.0
     },
@@ -347,6 +389,7 @@ window.CATALOG_ATLAS = {
       "row": 5,
       "x": 1200,
       "y": 1200,
+      "zoom": 1.03,
       "xPct": 45.4545,
       "yPct": 50.0
     },
@@ -355,6 +398,7 @@ window.CATALOG_ATLAS = {
       "row": 5,
       "x": 1440,
       "y": 1200,
+      "zoom": 1.13,
       "xPct": 54.5455,
       "yPct": 50.0
     },
@@ -363,6 +407,7 @@ window.CATALOG_ATLAS = {
       "row": 5,
       "x": 1680,
       "y": 1200,
+      "zoom": 1.03,
       "xPct": 63.6364,
       "yPct": 50.0
     },
@@ -371,6 +416,7 @@ window.CATALOG_ATLAS = {
       "row": 5,
       "x": 1920,
       "y": 1200,
+      "zoom": 1.03,
       "xPct": 72.7273,
       "yPct": 50.0
     },
@@ -379,6 +425,7 @@ window.CATALOG_ATLAS = {
       "row": 5,
       "x": 2160,
       "y": 1200,
+      "zoom": 1.03,
       "xPct": 81.8182,
       "yPct": 50.0
     },
@@ -387,6 +434,7 @@ window.CATALOG_ATLAS = {
       "row": 6,
       "x": 240,
       "y": 1440,
+      "zoom": 1.48,
       "xPct": 9.0909,
       "yPct": 60.0
     },
@@ -395,6 +443,7 @@ window.CATALOG_ATLAS = {
       "row": 6,
       "x": 480,
       "y": 1440,
+      "zoom": 1.22,
       "xPct": 18.1818,
       "yPct": 60.0
     },
@@ -403,6 +452,7 @@ window.CATALOG_ATLAS = {
       "row": 6,
       "x": 960,
       "y": 1440,
+      "zoom": 1.2,
       "xPct": 36.3636,
       "yPct": 60.0
     },
@@ -411,6 +461,7 @@ window.CATALOG_ATLAS = {
       "row": 6,
       "x": 1200,
       "y": 1440,
+      "zoom": 1.17,
       "xPct": 45.4545,
       "yPct": 60.0
     },
@@ -419,6 +470,7 @@ window.CATALOG_ATLAS = {
       "row": 6,
       "x": 1440,
       "y": 1440,
+      "zoom": 1.27,
       "xPct": 54.5455,
       "yPct": 60.0
     },
@@ -427,6 +479,7 @@ window.CATALOG_ATLAS = {
       "row": 6,
       "x": 1680,
       "y": 1440,
+      "zoom": 1.27,
       "xPct": 63.6364,
       "yPct": 60.0
     },
@@ -435,6 +488,7 @@ window.CATALOG_ATLAS = {
       "row": 6,
       "x": 1920,
       "y": 1440,
+      "zoom": 1.21,
       "xPct": 72.7273,
       "yPct": 60.0
     },
@@ -443,6 +497,7 @@ window.CATALOG_ATLAS = {
       "row": 6,
       "x": 2160,
       "y": 1440,
+      "zoom": 1.39,
       "xPct": 81.8182,
       "yPct": 60.0
     },
@@ -451,6 +506,7 @@ window.CATALOG_ATLAS = {
       "row": 6,
       "x": 2640,
       "y": 1440,
+      "zoom": 1.21,
       "xPct": 100.0,
       "yPct": 60.0
     },
@@ -459,6 +515,7 @@ window.CATALOG_ATLAS = {
       "row": 7,
       "x": 0,
       "y": 1680,
+      "zoom": 1.5,
       "xPct": 0.0,
       "yPct": 70.0
     },
@@ -467,6 +524,7 @@ window.CATALOG_ATLAS = {
       "row": 7,
       "x": 1200,
       "y": 1680,
+      "zoom": 1.1,
       "xPct": 45.4545,
       "yPct": 70.0
     },
@@ -475,6 +533,7 @@ window.CATALOG_ATLAS = {
       "row": 7,
       "x": 1440,
       "y": 1680,
+      "zoom": 1.22,
       "xPct": 54.5455,
       "yPct": 70.0
     },
@@ -483,6 +542,7 @@ window.CATALOG_ATLAS = {
       "row": 7,
       "x": 1680,
       "y": 1680,
+      "zoom": 1.09,
       "xPct": 63.6364,
       "yPct": 70.0
     },
@@ -491,6 +551,7 @@ window.CATALOG_ATLAS = {
       "row": 7,
       "x": 1920,
       "y": 1680,
+      "zoom": 1.12,
       "xPct": 72.7273,
       "yPct": 70.0
     },
@@ -499,6 +560,7 @@ window.CATALOG_ATLAS = {
       "row": 7,
       "x": 2160,
       "y": 1680,
+      "zoom": 1.2,
       "xPct": 81.8182,
       "yPct": 70.0
     },
@@ -507,6 +569,7 @@ window.CATALOG_ATLAS = {
       "row": 7,
       "x": 2400,
       "y": 1680,
+      "zoom": 1.06,
       "xPct": 90.9091,
       "yPct": 70.0
     },
@@ -515,6 +578,7 @@ window.CATALOG_ATLAS = {
       "row": 7,
       "x": 2640,
       "y": 1680,
+      "zoom": 1.11,
       "xPct": 100.0,
       "yPct": 70.0
     },
@@ -523,6 +587,7 @@ window.CATALOG_ATLAS = {
       "row": 8,
       "x": 0,
       "y": 1920,
+      "zoom": 1.12,
       "xPct": 0.0,
       "yPct": 80.0
     },
@@ -531,6 +596,7 @@ window.CATALOG_ATLAS = {
       "row": 8,
       "x": 240,
       "y": 1920,
+      "zoom": 1.44,
       "xPct": 9.0909,
       "yPct": 80.0
     },
@@ -539,6 +605,7 @@ window.CATALOG_ATLAS = {
       "row": 8,
       "x": 480,
       "y": 1920,
+      "zoom": 1.41,
       "xPct": 18.1818,
       "yPct": 80.0
     },
@@ -547,6 +614,7 @@ window.CATALOG_ATLAS = {
       "row": 8,
       "x": 720,
       "y": 1920,
+      "zoom": 1.03,
       "xPct": 27.2727,
       "yPct": 80.0
     },
@@ -555,6 +623,7 @@ window.CATALOG_ATLAS = {
       "row": 8,
       "x": 960,
       "y": 1920,
+      "zoom": 1.12,
       "xPct": 36.3636,
       "yPct": 80.0
     },
@@ -563,6 +632,7 @@ window.CATALOG_ATLAS = {
       "row": 8,
       "x": 1200,
       "y": 1920,
+      "zoom": 1.18,
       "xPct": 45.4545,
       "yPct": 80.0
     },
@@ -571,6 +641,7 @@ window.CATALOG_ATLAS = {
       "row": 8,
       "x": 1440,
       "y": 1920,
+      "zoom": 1.18,
       "xPct": 54.5455,
       "yPct": 80.0
     },
@@ -579,6 +650,7 @@ window.CATALOG_ATLAS = {
       "row": 8,
       "x": 1680,
       "y": 1920,
+      "zoom": 1.08,
       "xPct": 63.6364,
       "yPct": 80.0
     },
@@ -587,6 +659,7 @@ window.CATALOG_ATLAS = {
       "row": 8,
       "x": 1920,
       "y": 1920,
+      "zoom": 1.08,
       "xPct": 72.7273,
       "yPct": 80.0
     },
@@ -595,6 +668,7 @@ window.CATALOG_ATLAS = {
       "row": 8,
       "x": 2160,
       "y": 1920,
+      "zoom": 1.03,
       "xPct": 81.8182,
       "yPct": 80.0
     },
@@ -603,6 +677,7 @@ window.CATALOG_ATLAS = {
       "row": 8,
       "x": 2400,
       "y": 1920,
+      "zoom": 1.03,
       "xPct": 90.9091,
       "yPct": 80.0
     },
@@ -611,6 +686,7 @@ window.CATALOG_ATLAS = {
       "row": 8,
       "x": 2640,
       "y": 1920,
+      "zoom": 1.03,
       "xPct": 100.0,
       "yPct": 80.0
     },
@@ -619,6 +695,7 @@ window.CATALOG_ATLAS = {
       "row": 9,
       "x": 0,
       "y": 2160,
+      "zoom": 1.03,
       "xPct": 0.0,
       "yPct": 90.0
     },
@@ -627,6 +704,7 @@ window.CATALOG_ATLAS = {
       "row": 9,
       "x": 240,
       "y": 2160,
+      "zoom": 1.13,
       "xPct": 9.0909,
       "yPct": 90.0
     },
@@ -635,6 +713,7 @@ window.CATALOG_ATLAS = {
       "row": 9,
       "x": 480,
       "y": 2160,
+      "zoom": 1.11,
       "xPct": 18.1818,
       "yPct": 90.0
     },
@@ -643,6 +722,7 @@ window.CATALOG_ATLAS = {
       "row": 9,
       "x": 720,
       "y": 2160,
+      "zoom": 1.08,
       "xPct": 27.2727,
       "yPct": 90.0
     },
@@ -651,6 +731,7 @@ window.CATALOG_ATLAS = {
       "row": 9,
       "x": 960,
       "y": 2160,
+      "zoom": 1.03,
       "xPct": 36.3636,
       "yPct": 90.0
     },
@@ -659,6 +740,7 @@ window.CATALOG_ATLAS = {
       "row": 9,
       "x": 1200,
       "y": 2160,
+      "zoom": 1.3,
       "xPct": 45.4545,
       "yPct": 90.0
     },
@@ -667,6 +749,7 @@ window.CATALOG_ATLAS = {
       "row": 9,
       "x": 1440,
       "y": 2160,
+      "zoom": 1.3,
       "xPct": 54.5455,
       "yPct": 90.0
     },
@@ -675,6 +758,7 @@ window.CATALOG_ATLAS = {
       "row": 9,
       "x": 1680,
       "y": 2160,
+      "zoom": 1.05,
       "xPct": 63.6364,
       "yPct": 90.0
     },
@@ -683,6 +767,7 @@ window.CATALOG_ATLAS = {
       "row": 9,
       "x": 1920,
       "y": 2160,
+      "zoom": 1.07,
       "xPct": 72.7273,
       "yPct": 90.0
     },
@@ -691,6 +776,7 @@ window.CATALOG_ATLAS = {
       "row": 9,
       "x": 2160,
       "y": 2160,
+      "zoom": 1.33,
       "xPct": 81.8182,
       "yPct": 90.0
     },
@@ -699,6 +785,7 @@ window.CATALOG_ATLAS = {
       "row": 10,
       "x": 0,
       "y": 2400,
+      "zoom": 1.05,
       "xPct": 0.0,
       "yPct": 100.0
     },
@@ -707,6 +794,7 @@ window.CATALOG_ATLAS = {
       "row": 10,
       "x": 480,
       "y": 2400,
+      "zoom": 1.1,
       "xPct": 18.1818,
       "yPct": 100.0
     }

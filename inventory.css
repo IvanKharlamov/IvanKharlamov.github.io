@@ -136,6 +136,20 @@
     color: inherit;
 }
 
+/* Phones: the list is paged, this row holds the "show more" button */
+.show-more-wrap {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    padding: 4px 0 8px;
+}
+
+.show-more-btn {
+    width: 100%;
+    max-width: 420px;
+    min-height: 3rem;
+}
+
 .product-grid {
     display: grid;
     /* fallback; inventory.js sets an even column count so the cards fill the width */
@@ -196,12 +210,12 @@
 }
 
 .product-image {
-    height: 240px;
+    height: 260px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--card-img-bg);
-    padding: 24px;
+    padding: 14px;
     flex-shrink: 0;
     transition: background 0.3s ease;
 }
@@ -211,9 +225,10 @@
 }
 
 .product-image-atlas {
-    width: 190px;
-    height: 190px;
+    width: min(100%, 230px);
+    aspect-ratio: 1 / 1;
     background-repeat: no-repeat;
+    /* size/position are set per item by inventory.js (tile zoom) */
     background-size: 1200% 1100%;
     background-position: center;
     transition: transform 0.3s ease;
@@ -682,7 +697,7 @@
 }
 
 .catalog-embed .product-image {
-    height: 220px;
+    height: 250px;
 }
 
 /* Pack collages are wide: give them a taller, less padded frame so they fill the card */
@@ -779,14 +794,10 @@
         padding: 11px 14px;
     }
 
-    /* filters stay pinned under the header; the list scrolls with the page */
+    /* filters scroll away with the page: pinned under the header they
+       covered a third of the screen and hid the list */
     .catalog-embed .catalog-sidebar {
-        position: sticky;
-        top: var(--header-h, 68px);
-        z-index: 5;
-        margin: 0 -16px;
-        padding: 8px 16px 2px;
-        background: var(--bg-color);
+        position: static;
     }
 
     .catalog-embed .catalog-scroll {
@@ -816,8 +827,8 @@
     }
 
     .catalog-embed .product-image {
-        height: 200px;
-        padding: 16px;
+        height: 260px;
+        padding: 10px;
     }
 
     .catalog-embed .product-card-pack .product-image {
@@ -826,8 +837,7 @@
     }
 
     .catalog-embed .product-image-atlas {
-        width: 160px;
-        height: 160px;
+        width: min(100%, 240px);
     }
 
     .catalog-embed .product-info {
