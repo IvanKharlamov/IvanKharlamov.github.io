@@ -10,7 +10,7 @@
 	<link rel="icon" type="image/svg+xml" href="favicon.svg">
 	<link rel="icon" type="image/x-icon" href="favicon.ico" sizes="any">
 	<link rel="apple-touch-icon" href="apple.png">
-    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="common.css?v=20261103b">
     <style>
         #app {
             display: flex;
@@ -130,35 +130,24 @@
                 </div>
 
                 <div class="header-actions mobile-actions">
-                    <button class="menu-toggle" id="menu-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+                    <div class="lang-menu" id="lang-menu">
+                        <button type="button" class="btn-icon lang-menu-toggle" id="lang-menu-toggle" aria-label="Idioma / Language" aria-haspopup="true" aria-expanded="false">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                        </button>
+                        <div class="lang-menu-dropdown">
+                            <button type="button" class="lang-opt active" data-lang="es">Español</button>
+                            <button type="button" class="lang-opt" data-lang="en">English</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
         
-        <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
-        <div class="mobile-menu" id="mobile-menu">
-            <div class="mobile-menu-header">
-                <span class="logo"></span>
-                <button class="close-mobile-menu" id="close-mobile-menu">&times;</button>
-            </div>
-            <nav class="mobile-menu-nav">
-                <!--
-                <a href="index.html" class="mobile-nav-link" data-i18n="nav.home">Inicio</a>
-                -->
-                <a href="index.html#contact" class="mobile-nav-link btn btn-primary" data-i18n="btn.getQuote">Pedir Presupuesto</a>
-            </nav>
-            <div class="mobile-menu-footer">
-                <div class="lang-switch">
-                    <span class="lang-opt" data-lang="en">EN</span>
-                    <span class="divider">/</span>
-                    <span class="lang-opt active" data-lang="es">ES</span>
-                </div>
-            </div>
-        </div>
 
         <section class="privacy-section">
             <div class="container">
@@ -208,9 +197,9 @@
                     </div>
                 </div>
                 <div class="footer-social">
-                    <div style="display: flex; flex-direction: column; gap: 5px; align-items: flex-end;">
+                    <div class="footer-legal">
                         <span data-i18n="footer.copyright">© 2026 UPSTAGE PROD. All rights reserved.</span>
-                        <a href="privacy" style="color: var(--text-muted); text-decoration: none; font-size: 0.9rem; margin-top: 5px;" data-i18n="nav.privacy">Política de Privacidad</a>
+                        <a href="privacy" class="footer-legal-link" data-i18n="nav.privacy">Política de Privacidad</a>
                     </div>
                     <div class="footer-share">
                         <span data-i18n="footer.share">compartir:</span>
@@ -369,7 +358,7 @@
     <div id="toast-container"></div>
 
 
-    <script src="translations.js"></script>
-    <script src="common.js"></script>
+    <script src="translations.js?v=20261103c"></script>
+    <script src="common.js?v=20261103b"></script>
 </body>
 </html>

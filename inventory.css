@@ -642,9 +642,6 @@
 		padding: 20px;
 	}
 	
-	.date-picker {
-		max-width: 85%;
-	}
 }
 
 /* ---------- Embedded catalog on the main page (#catalog) ---------- */
@@ -864,3 +861,11 @@
     }
 }
 
+/* Phones: no Packs chip, the regular categories are the whole list.
+   Kept last so it wins over the embedded catalog's flex filter row. */
+@media (max-width: 768px) {
+    .filter-list.filter-list-packs,
+    .catalog-embed .filter-list.filter-list-packs {
+        display: none;
+    }
+}

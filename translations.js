@@ -324,6 +324,22 @@
 	  "en": "Excellent service and great professionalism. The whole process was organized, punctual and wonderfully coordinated. The team is attentive and very responsible.",
 	  "es": "Excelente servicio y gran profesionalidad. Todo el proceso estuvo organizado, fue puntual y estuvo de maravilla coordinado. El equipo es atento y muy responsable."
 	},
+	"review.9.quote": {
+	  "en": "A great experience recording a DJ set. They helped us with the whole setup: sound, lights, cameras and recording. Everything went wonderfully. 100% recommended!",
+	  "es": "Una experiencia genial grabando un DJ set. Nos ayudaron con todo el montaje: sonido, luces, cámaras y grabación. Todo salió de maravilla. ¡100% recomendables!"
+	},
+	"review.10.quote": {
+	  "en": "A very professional team and a good selection of equipment to set up sound and lights for events of any size. Ivan is a fantastic sound engineer, we will work with them again.",
+	  "es": "Un equipo muy profesional y buena selección de material para configurar sonido y luces para eventos de cualquier tamaño. Ivan es un fantástico ingeniero de sonido, volveremos a contar con ellos."
+	},
+	"review.11.quote": {
+	  "en": "They are professionals at their job, everything fast and on time, and they advise you on everything. I recommend them to everyone.",
+	  "es": "Son profesionales en su trabajo, todo rápido y a tiempo, te asesoran en todo. Los recomiendo a todos."
+	},
+	"review.8.quote": {
+	  "en": "The guys were real pros and took care of everything quickly. Great communication, they always answered my questions throughout the process. I recommend their services 100%.",
+	  "es": "Los chicos fueron muy pros, se encargaron de todo rápidamente. Muy buena comunicación, siempre contestaron a mis dudas durante el proceso. Recomiendo al 100% sus servicios."
+	},
   "footer.desc": {
     "en": "From concept to showtime",
     "es": "Del concepto al espectáculo"

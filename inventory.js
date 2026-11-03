@@ -561,67 +561,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    const checkoutModal = document.getElementById('checkout-modal');
-    const closeCheckoutBtn = document.getElementById('close-checkout');
-    const cancelCheckoutBtn = document.getElementById('cancel-checkout');
-    const requestQuoteBtn = document.getElementById('btn-request-quote');
-    const checkoutForm = document.getElementById('checkout-form');
-
-    function openCheckout() {
-        if (window.cartManager.getCount() === 0) {
-            if (window.showToast) window.showToast(t('toast.emptyQuote'), "error");
-            return;
+    // Packs is the default category. The Packs chip is hidden on phones, so there
+    // the first regular category is the default instead.
+    const chipVisible = (cb) => (cb.closest('.filter-chip-wrapper')?.getClientRects().length || 0) > 0;
+    const firstVisibleChip = () => Array.from(document.querySelectorAll('.filter-chip-wrapper input')).find(chipVisible);
+    const selectChip = (chip) => {
+        if (!chip) return;
+        activeFilters.subcategory = null;
+        activeFilters.category = [chip.dataset.category];
+        document.querySelectorAll('.filter-chip-wrapper input').forEach(x => { x.checked = (x === chip); });
+    };
+    selectChip(mobileQuery.matches ? firstVisibleChip() : document.getElementById('cat-packs'));
+    // Shrinking to a phone while Packs is active would leave a filter with no visible chip
+    mobileQuery.addEventListener('change', () => {
+        const active = document.querySelector('.filter-chip-wrapper input:checked');
+        if (mobileQuery.matches && active && !chipVisible(active)) {
+            selectChip(firstVisibleChip());
+            window.applyFilters();
         }
-        if (window.cartUI) window.cartUI.close();
-        if (checkoutModal) checkoutModal.classList.add('active');
-    }
-
-    function closeCheckout() {
-        if (checkoutModal) checkoutModal.classList.remove('active');
-    }
-
-    if (requestQuoteBtn) requestQuoteBtn.addEventListener('click', openCheckout);
-    if (closeCheckoutBtn) closeCheckoutBtn.addEventListener('click', closeCheckout);
-    if (cancelCheckoutBtn) cancelCheckoutBtn.addEventListener('click', closeCheckout);
-
-    if (checkoutModal) {
-        checkoutModal.addEventListener('click', (e) => {
-            if (e.target === checkoutModal) closeCheckout();
-        });
-    }
-
-    if (checkoutForm) {
-        checkoutForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-
-            const formData = {
-                contact: {
-                    name: document.getElementById('name').value,
-                    email: document.getElementById('email').value,
-                    phone: document.getElementById('phone').value,
-                    company: document.getElementById('company').value,
-                    project: document.getElementById('project').value,
-                    notes: document.getElementById('notes').value
-                },
-                items: window.cartManager.getItems(),
-                totalEstimated: window.cartManager.getTotal()
-            };
-
-            console.log("Submitting Quote Request:", formData);
-
-            if (window.showToast) window.showToast(t('toast.quoteSubmitted'), "success");
-
-            window.cartManager.clearCart();
-            checkoutForm.reset();
-            closeCheckout();
-        });
-    }
-
-    // Packs is the default category
-    const defaultChip = document.getElementById('cat-packs');
-    if (defaultChip) {
-        defaultChip.checked = true;
-        activeFilters.category = [defaultChip.dataset.category];
-    }
+    });
     window.applyFilters();
 });

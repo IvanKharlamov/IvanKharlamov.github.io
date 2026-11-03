@@ -10,10 +10,10 @@
 	<link rel="icon" type="image/svg+xml" href="favicon.svg">
 	<link rel="icon" type="image/x-icon" href="favicon.ico" sizes="any">
 	<link rel="apple-touch-icon" href="apple.png">
-    <link rel="stylesheet" href="common.css?v=20261031d">
+    <link rel="stylesheet" href="common.css?v=20261103b">
 
-    <link rel="stylesheet" href="index.css?v=20261031d">
-    <link rel="stylesheet" href="inventory.css?v=20261031d">
+    <link rel="stylesheet" href="index.css?v=20261103c">
+    <link rel="stylesheet" href="inventory.css?v=20261103b">
 	<script type="application/ld+json">
 	{
 	  "@context": "https://schema.org",
@@ -119,37 +119,25 @@
                         </svg>
                         <span class="cart-badge" id="cart-count-mobile">0</span>
                     </button>
-                    <button class="menu-toggle" id="menu-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+                    <div class="lang-menu" id="lang-menu">
+                        <button type="button" class="btn-icon lang-menu-toggle" id="lang-menu-toggle" aria-label="Idioma / Language" aria-haspopup="true" aria-expanded="false">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                        </button>
+                        <div class="lang-menu-dropdown">
+                            <button type="button" class="lang-opt active" data-lang="es">Español</button>
+                            <button type="button" class="lang-opt" data-lang="en">English</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
         
         
-        <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
-        <div class="mobile-menu" id="mobile-menu">
-            <div class="mobile-menu-header">
-                <span class="logo"></span>
-                <button class="close-mobile-menu" id="close-mobile-menu">&times;</button>
-            </div>
-            <nav class="mobile-menu-nav">
-                <!--
-                <a href="#" class="mobile-nav-link" data-i18n="nav.home">El Homo</a>
-                -->
-                <a href="#catalog" class="mobile-nav-link" data-i18n="nav.catalog">Catálogo</a>
-                <a href="#contact" class="mobile-nav-link btn btn-primary" data-i18n="btn.getQuote">Pedir Presupuesto</a>
-            </nav>
-            <div class="mobile-menu-footer">
-                <div class="lang-switch">
-                    <span class="lang-opt" data-lang="en">EN</span>
-                    <span class="divider">/</span>
-                    <span class="lang-opt active" data-lang="es">ES</span>
-                </div>
-            </div>
-        </div>
 
         <section class="hero-section hero-split">
             <!-- Carousel Background (right 2/3) -->
@@ -496,7 +484,47 @@
 
                     <article class="review-card">
                         <div class="review-head">
-                            <div class="review-avatar review-avatar--initial" aria-hidden="true">M</div>
+                            <div class="review-avatar"><img src="img/index/review_maks.png" alt="" loading="lazy"></div>
+                            <div class="review-meta">
+                                <p class="review-author">Maks</p>
+                                <p class="review-company" data-i18n="reviews.googleReview">Reseña de Google</p>
+                            </div>
+                            <svg class="review-google" aria-hidden="true"><use href="#icon-google"/></svg>
+                        </div>
+                        <div class="review-stars" aria-label="5/5">★★★★★</div>
+                        <p class="review-quote" data-i18n="review.9.quote">Una experiencia genial grabando un DJ set. Nos ayudaron con todo el montaje: sonido, luces, cámaras y grabación. Todo salió de maravilla. ¡100% recomendables!</p>
+                        <img class="review-photo" src="img/index/review_maks_photo.jpg" alt="" loading="lazy">
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-head">
+                            <div class="review-avatar"><img src="img/index/review_gregbernal.png" alt="" loading="lazy"></div>
+                            <div class="review-meta">
+                                <p class="review-author">gregbernal</p>
+                                <p class="review-company" data-i18n="reviews.googleReview">Reseña de Google</p>
+                            </div>
+                            <svg class="review-google" aria-hidden="true"><use href="#icon-google"/></svg>
+                        </div>
+                        <div class="review-stars" aria-label="5/5">★★★★★</div>
+                        <p class="review-quote" data-i18n="review.10.quote">Un equipo muy profesional y buena selección de material para configurar sonido y luces para eventos de cualquier tamaño. Ivan es un fantástico ingeniero de sonido, volveremos a contar con ellos.</p>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-head">
+                            <div class="review-avatar"><img src="img/index/review_emma.png" alt="" loading="lazy"></div>
+                            <div class="review-meta">
+                                <p class="review-author">Emma</p>
+                                <p class="review-company" data-i18n="reviews.googleReview">Reseña de Google</p>
+                            </div>
+                            <svg class="review-google" aria-hidden="true"><use href="#icon-google"/></svg>
+                        </div>
+                        <div class="review-stars" aria-label="5/5">★★★★★</div>
+                        <p class="review-quote" data-i18n="review.8.quote">Los chicos fueron muy pros, se encargaron de todo rápidamente. Muy buena comunicación, siempre contestaron a mis dudas durante el proceso. Recomiendo al 100% sus servicios.</p>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-head">
+                            <div class="review-avatar"><img src="img/index/review_mariia.webp" alt="" loading="lazy"></div>
                             <div class="review-meta">
                                 <p class="review-author">Mariia S</p>
                                 <p class="review-company" data-i18n="reviews.googleReview">Reseña de Google</p>
@@ -509,7 +537,7 @@
 
                     <article class="review-card">
                         <div class="review-head">
-                            <div class="review-avatar review-avatar--initial" aria-hidden="true">K</div>
+                            <div class="review-avatar"><img src="img/index/review_kirill.jpg" alt="" loading="lazy"></div>
                             <div class="review-meta">
                                 <p class="review-author">kirill kozlov</p>
                                 <p class="review-company" data-i18n="reviews.googleReview">Reseña de Google</p>
@@ -522,7 +550,7 @@
 
                     <article class="review-card">
                         <div class="review-head">
-                            <div class="review-avatar review-avatar--initial" aria-hidden="true">C</div>
+                            <div class="review-avatar"><img src="img/index/review_carmelo.jpg" alt="" loading="lazy"></div>
                             <div class="review-meta">
                                 <p class="review-author">Carmelo Hernandez</p>
                                 <p class="review-company" data-i18n="reviews.googleReview">Reseña de Google</p>
@@ -531,11 +559,12 @@
                         </div>
                         <div class="review-stars" aria-label="5/5">★★★★★</div>
                         <p class="review-quote" data-i18n="review.4.quote">Los servicios proporcionados fueron sobresalientes. No solo alquiler, sino proveedores de soluciones con criterio y experiencia real. 100% recomendados.</p>
+                        <img class="review-photo" src="img/index/review_carmelo_photo.jpg" alt="" loading="lazy">
                     </article>
 
                     <article class="review-card">
                         <div class="review-head">
-                            <div class="review-avatar review-avatar--initial" aria-hidden="true">J</div>
+                            <div class="review-avatar"><img src="img/index/review_juan.png" alt="" loading="lazy"></div>
                             <div class="review-meta">
                                 <p class="review-author">Juan Julián Cea Moran</p>
                                 <p class="review-company" data-i18n="reviews.googleReview">Reseña de Google</p>
@@ -548,7 +577,7 @@
 
                     <article class="review-card">
                         <div class="review-head">
-                            <div class="review-avatar review-avatar--initial" aria-hidden="true">N</div>
+                            <div class="review-avatar"><img src="img/index/review_narek.jpg" alt="" loading="lazy"></div>
                             <div class="review-meta">
                                 <p class="review-author">Narek Bagratuni</p>
                                 <p class="review-company" data-i18n="reviews.googleReview">Reseña de Google</p>
@@ -561,7 +590,7 @@
 
                     <article class="review-card">
                         <div class="review-head">
-                            <div class="review-avatar review-avatar--initial" aria-hidden="true">P</div>
+                            <div class="review-avatar"><img src="img/index/review_parsa.png" alt="" loading="lazy"></div>
                             <div class="review-meta">
                                 <p class="review-author">Parsa</p>
                                 <p class="review-company" data-i18n="reviews.googleReview">Reseña de Google</p>
@@ -570,6 +599,19 @@
                         </div>
                         <div class="review-stars" aria-label="5/5">★★★★★</div>
                         <p class="review-quote" data-i18n="review.7.quote">Excelente servicio y gran profesionalidad. Todo el proceso estuvo organizado, fue puntual y estuvo de maravilla coordinado. El equipo es atento y muy responsable.</p>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-head">
+                            <div class="review-avatar"><img src="img/index/review_djpizza.png" alt="" loading="lazy"></div>
+                            <div class="review-meta">
+                                <p class="review-author">Dj Pizza</p>
+                                <p class="review-company" data-i18n="reviews.googleReview">Reseña de Google</p>
+                            </div>
+                            <svg class="review-google" aria-hidden="true"><use href="#icon-google"/></svg>
+                        </div>
+                        <div class="review-stars" aria-label="5/5">★★★★★</div>
+                        <p class="review-quote" data-i18n="review.11.quote">Son profesionales en su trabajo, todo rápido y a tiempo, te asesoran en todo. Los recomiendo a todos.</p>
                     </article>
                 </div>
             </div>
@@ -715,9 +757,9 @@
                     </div>
                 </div>
                 <div class="footer-social">
-                    <div style="display: flex; flex-direction: column; gap: 5px; align-items: flex-end;">
+                    <div class="footer-legal">
                         <span data-i18n="footer.copyright">© 2026 UPSTAGE PROD. All rights reserved.</span>
-                        <a href="privacy" style="color: var(--text-muted); text-decoration: none; font-size: 0.9rem; margin-top: 5px;" data-i18n="nav.privacy">Política de Privacidad</a>
+                        <a href="privacy" class="footer-legal-link" data-i18n="nav.privacy">Política de Privacidad</a>
                     </div>
                     <div class="footer-share">
                         <span data-i18n="footer.share">compartir:</span>
@@ -1154,14 +1196,14 @@
 
     
 
-    <script src="translations.js?v=20261031d"></script>
-    <script src="products.js?v=20261031d"></script>
-    <script src="catalog_atlas.js?v=20261031d"></script>
+    <script src="translations.js?v=20261103c"></script>
+    <script src="products.js?v=20261103a"></script>
+    <script src="catalog_atlas.js?v=20261103a"></script>
 
-    <script src="common.js?v=20261031d"></script>
+    <script src="common.js?v=20261103b"></script>
 
-    <script src="inventory.js?v=20261031d"></script>
-    <script src="index.js?v=20261031d"></script>
+    <script src="inventory.js?v=20261103a"></script>
+    <script src="index.js?v=20261103a"></script>
 
 </body>
 

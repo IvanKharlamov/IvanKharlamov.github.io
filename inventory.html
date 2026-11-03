@@ -10,9 +10,9 @@
 	<link rel="icon" type="image/svg+xml" href="favicon.svg">
 	<link rel="icon" type="image/x-icon" href="favicon.ico" sizes="any">
 	<link rel="apple-touch-icon" href="apple.png">
-    <link rel="stylesheet" href="common.css?v=20261031d">
+    <link rel="stylesheet" href="common.css?v=20261103b">
 
-    <link rel="stylesheet" href="inventory.css?v=20261031d">
+    <link rel="stylesheet" href="inventory.css?v=20261103b">
 	<script type="application/ld+json">
 	{
 	  "@context": "https://schema.org",
@@ -102,35 +102,25 @@
                         </svg>
                         <span class="cart-badge" id="cart-count-mobile">0</span>
                     </button>
-                    <button class="menu-toggle" id="menu-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+                    <div class="lang-menu" id="lang-menu">
+                        <button type="button" class="btn-icon lang-menu-toggle" id="lang-menu-toggle" aria-label="Idioma / Language" aria-haspopup="true" aria-expanded="false">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                        </button>
+                        <div class="lang-menu-dropdown">
+                            <button type="button" class="lang-opt active" data-lang="es">Español</button>
+                            <button type="button" class="lang-opt" data-lang="en">English</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
         
         
-        <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
-        <div class="mobile-menu" id="mobile-menu">
-            <div class="mobile-menu-header">
-                <span class="logo"></span>
-                <button class="close-mobile-menu" id="close-mobile-menu">&times;</button>
-            </div>
-            <nav class="mobile-menu-nav">
-                <a href="index" class="mobile-nav-link" data-i18n="nav.home">Inicio</a>
-                <a href="#" class="mobile-nav-link" data-i18n="nav.catalog">Catálogo</a>
-                <a href="index#contact" class="mobile-nav-link btn btn-primary" data-i18n="btn.getQuote">Pedir Presupuesto</a>
-            </nav>
-            <div class="mobile-menu-footer">
-                <div class="lang-switch">
-                    <span class="lang-opt" data-lang="en">EN</span>
-                    <span class="divider">/</span>
-                    <span class="lang-opt active" data-lang="es">ES</span>
-                </div>
-            </div>
-        </div>
 
         <main class="catalog-section">
             <div class="container-wide">
@@ -663,12 +653,12 @@
     </template>
 
 
-	<script src="translations.js?v=20261031d"></script>
-	<script src="products.js?v=20261031d"></script>
-	<script src="catalog_atlas.js?v=20261031d"></script>
+	<script src="translations.js?v=20261103c"></script>
+	<script src="products.js?v=20261103a"></script>
+	<script src="catalog_atlas.js?v=20261103a"></script>
 
-	<script src="common.js?v=20261031d"></script>
-	<script src="inventory.js?v=20261031d"></script>
+	<script src="common.js?v=20261103b"></script>
+	<script src="inventory.js?v=20261103a"></script>
 
 </body>
 

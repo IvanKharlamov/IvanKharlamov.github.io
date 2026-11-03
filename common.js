@@ -14,18 +14,25 @@ document.addEventListener('DOMContentLoaded', () => {
     new ResizeObserver(() => {
         document.documentElement.style.setProperty('--header-h', `${header.offsetHeight}px`);
     }).observe(header);
-    const menuToggle = document.getElementById('menu-toggle'),
-          mobileMenu = document.getElementById('mobile-menu'),
-          mobileMenuOverlay = document.getElementById('mobile-menu-overlay'),
-          closeMobileMenu = document.getElementById('close-mobile-menu');
-    const setMenuState = (active) => {
-        [mobileMenu, mobileMenuOverlay, menuToggle].forEach(el => el?.classList.toggle('active', active));
-        document.body.style.overflow = active ? 'hidden' : '';
+    // Phone header: globe button opens the language dropdown
+    const langMenu = document.getElementById('lang-menu'),
+          langMenuToggle = document.getElementById('lang-menu-toggle');
+    const setLangMenu = (open) => {
+        if (!langMenu) return;
+        langMenu.classList.toggle('open', open);
+        langMenuToggle?.setAttribute('aria-expanded', String(open));
     };
-    menuToggle.addEventListener('click', () => setMenuState(!mobileMenu?.classList.contains('active')));
-    closeMobileMenu.addEventListener('click', () => setMenuState(false));
-    mobileMenuOverlay.addEventListener('click', () => setMenuState(false));
-    document.querySelectorAll('.mobile-nav-link').forEach(link => link.addEventListener('click', () => setMenuState(false)));
+    if (langMenu && langMenuToggle) {
+        langMenuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            setLangMenu(!langMenu.classList.contains('open'));
+        });
+        langMenu.querySelectorAll('.lang-opt').forEach(opt => opt.addEventListener('click', () => setLangMenu(false)));
+        document.addEventListener('click', (e) => {
+            if (!langMenu.contains(e.target)) setLangMenu(false);
+        });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setLangMenu(false); });
+    }
 
     const cartToggleMobile = document.getElementById('cart-toggle-mobile');
     if (cartToggleMobile) {
@@ -131,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (target.classList.contains('whatsapp')) {
             window.trackEvent('whatsapp_click', { source: 'footer' });
         } else if (target.getAttribute('href') === '#contact' || target.getAttribute('href') === 'index.html#contact') {
-            if (target.closest('.site-header') || target.closest('.mobile-menu')) {
+            if (target.closest('.site-header')) {
                 window.trackEvent('open_form', { source: 'header' });
             }
         }
@@ -254,6 +261,7 @@ class DatePicker {
         if (!this.picker || !this.display || !this.calendar) return;
         const prevBtn = this.calendar.querySelector('.calendar-nav-btn:first-child');
         const nextBtn = this.calendar.querySelector('.calendar-nav-btn:last-child');
+        this.prevBtn = prevBtn;
         if (prevBtn) prevBtn.addEventListener('click', (e) => {
             e.stopPropagation();
             this.changeMonth(-1);
@@ -274,6 +282,9 @@ class DatePicker {
 			}
 			this.picker.classList.add('active');
 			activeDatePicker = this;
+			// Phones: the calendar opens inline, make sure it is scrolled into view
+			if (window.matchMedia('(max-width: 768px)').matches)
+				requestAnimationFrame(() => this.calendar.scrollIntoView({ block: 'nearest', behavior: 'smooth' }));
 			if (this.startDate && this.endDate) {
 				this.savedStartDate = this.startDate;
 				this.savedEndDate = this.endDate;
@@ -296,6 +307,9 @@ class DatePicker {
     }
     changeMonth(offset) {
         this.viewDate.setMonth(this.viewDate.getMonth() + offset);
+        // Past months hold nothing selectable: never go before the current month
+        const now = new Date(), thisMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+        if (this.viewDate < thisMonth) this.viewDate = thisMonth;
         this.render();
     }
     render() {
@@ -305,6 +319,10 @@ class DatePicker {
             "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
         ];
         this.currentMonthDisplay.textContent = `${monthNames[month] || ''} ${year}`;
+        if (this.prevBtn) {
+            const now = new Date();
+            this.prevBtn.disabled = year < now.getFullYear() || (year === now.getFullYear() && month <= now.getMonth());
+        }
         const dayNames = window.TRANSLATIONS_RAW?.["calendar.days"]?.[lang] || ["Lu", "Ma", "Mi", "Ju", "Vi", "Sá", "Do"];
         this.calendar.querySelectorAll('.calendar-grid-header span').forEach((h, i) => h.textContent = dayNames?.[i] || '');
         this.daysGrid.innerHTML = '';
