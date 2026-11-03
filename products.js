@@ -316,22 +316,6 @@ window.products = [
         }
     },
     {
-        "id": 103,
-        "name": {
-            "en": "LED PAR battery",
-            "es": "PAR LED a Batería"
-        },
-        "category": "cat.light",
-        "subcategory": "sub.ledPar",
-        "manufacturer": "Generic",
-        "priceDay": 15,
-        "image": "img/inventory/led par battery.avif",
-        "description": {
-            "en": "Bring colour to walls, columns and entrances without running a power cable to every light. Battery operation makes this uplight a practical choice for weddings, gala dinners and brand events where a tidy finish matters.",
-            "es": "Aporta color a paredes, columnas y accesos sin necesidad de tender cables de corriente a cada foco. El funcionamiento a batería convierte a este bañador en una solución muy práctica para bodas, cenas de gala y eventos corporativos donde la estética y el orden son prioritarios."
-        }
-    },
-    {
         "id": 105,
         "name": {
             "en": "Aputure Amaran T2c",
@@ -520,6 +504,86 @@ window.products = [
         }
     },
     {
+        "id": 1057,
+        "name": {
+            "en": "RCF EVOX J9",
+            "es": "RCF EVOX J9"
+        },
+        "category": "cat.sound",
+        "subcategory": "sub.speakers",
+        "manufacturer": "RCF",
+        "priceDay": 35,
+        "image": "img/inventory/RCF_EVOX_J9.avif",
+        "description": {
+            "en": "Pair clear vocals with a full musical sound in a streamlined column format. The EVOX J9 suits weddings, corporate receptions and live acts where a compact, unobtrusive PA needs to cover both spoken moments and entertainment.",
+            "es": "Combina voces perfectamente inteligibles con una reproducción musical equilibrada en un práctico formato de columna. El EVOX J9 se adapta a bodas, cócteles de empresa y directos donde se busca un sistema estético y fácil de transportar."
+        }
+    },
+    {
+        "id": 1058,
+        "name": {
+            "en": "RCF ART 12",
+            "es": "RCF ART 12"
+        },
+        "category": "cat.sound",
+        "subcategory": "sub.speakers",
+        "manufacturer": "RCF",
+        "priceDay": 25,
+        "image": "img/inventory/RCF_RCF_ART_12.avif",
+        "description": {
+            "en": "Keep presentations intelligible and live music engaging with a versatile powered 12-inch speaker. An RCF ART cabinet suits corporate events, private celebrations and band setups that need a practical full-range PA building block.",
+            "es": "Consigue discursos claros y música envolvente con un todoterreno autoamplificado de 12 pulgadas. La serie RCF ART es una elección fiable para actos de empresa, fiestas privadas y conciertos de bandas que requieren un equipo versátil y robusto."
+        }
+    },
+    {
+        "id": 1106,
+        "name": {
+            "en": "RCF NX 945 A",
+            "es": "RCF NX 945 A"
+        },
+        "category": "cat.sound",
+        "subcategory": "sub.speakers",
+        "manufacturer": "RCF",
+        "priceDay": 100,
+        "image": "img/inventory/03-rcf-nx945a.avif",
+        "description": {
+            "en": "Bring live music, DJ sets and spoken presentations to your audience with a dedicated PA loudspeaker. The RCF NX 945 A fits event sound systems where vocals and music need a clear, confident presence.",
+            "es": "Acerca la música en directo, las sesiones de DJ y las presentaciones a tu público con un altavoz de PA. El RCF NX 945 A encaja en sistemas de sonido para eventos donde las voces y la música necesitan una presencia clara."
+        }
+    },
+    {
+        "id": 305,
+        "name": {
+            "en": "RCF SUB 8008-AS",
+            "es": "RCF SUB 8008-AS"
+        },
+        "category": "cat.sound",
+        "subcategory": "sub.subs",
+        "manufacturer": "RCF",
+        "priceDay": 100,
+        "image": "img/inventory/003_SUB_8008_AS_RIGHT.avif",
+        "description": {
+            "en": "Give electronic music and live productions the deep bass impact they demand. This dual-18-inch powered subwoofer is a strong foundation for a larger PA, suited to concert stages, club events and festival sound systems.",
+            "es": "Ofrece a producciones en vivo y música electrónica el impacto de graves profundos que exigen. Este subwoofer activo de doble 18 pulgadas constituye una base sólida para sistemas de sonido de gran envergadura, adecuado para conciertos, clubes y festivales."
+        }
+    },
+    {
+        "id": 1059,
+        "name": {
+            "en": "RCF SUB 15",
+            "es": "RCF SUB 15"
+        },
+        "category": "cat.sound",
+        "subcategory": "sub.subs",
+        "manufacturer": "RCF",
+        "priceDay": 35,
+        "image": "img/inventory/RCF_SUB_15.avif",
+        "description": {
+            "en": "Give a compact event PA more depth for DJs, live bands and dance-floor playback. This powered 15-inch subwoofer supports the low end while compatible main speakers handle vocals and musical detail.",
+            "es": "Añade cuerpo y profundidad a sistemas compactos para sesiones de DJ, grupos y música de pista. Este subwoofer autoamplificado de 15 pulgadas refuerza las frecuencias bajas dejando que los altavoces principales se concentren en la voz y los instrumentos."
+        }
+    },
+    {
         "id": 301,
         "name": {
             "en": "Meyer UPM-2p",
@@ -581,22 +645,6 @@ window.products = [
         "description": {
             "en": "Bring full-bodied sound to live bands, DJ sets and private celebrations. This powered 15-inch speaker works as part of a main PA or a suitable monitoring setup, giving you flexibility as the event moves from speeches to music.",
             "es": "Aporta un sonido rotundo y con cuerpo a conciertos en vivo, sets de DJ y fiestas privadas. Este altavoz autoamplificado de 15 pulgadas puede utilizarse tanto de sistema principal como de monitor de escenario, adaptándose fácilmente cuando el evento pasa de la palabra a la música."
-        }
-    },
-    {
-        "id": 305,
-        "name": {
-            "en": "RCF SUB 8008-AS",
-            "es": "RCF SUB 8008-AS"
-        },
-        "category": "cat.sound",
-        "subcategory": "sub.subs",
-        "manufacturer": "RCF",
-        "priceDay": 100,
-        "image": "img/inventory/003_SUB_8008_AS_RIGHT.avif",
-        "description": {
-            "en": "Give electronic music and live productions the deep bass impact they demand. This dual-18-inch powered subwoofer is a strong foundation for a larger PA, suited to concert stages, club events and festival sound systems.",
-            "es": "Ofrece a producciones en vivo y música electrónica el impacto de graves profundos que exigen. Este subwoofer activo de doble 18 pulgadas constituye una base sólida para sistemas de sonido de gran envergadura, adecuado para conciertos, clubes y festivales."
         }
     },
     {
@@ -855,22 +903,6 @@ window.products = [
             "es": "Extiende conexiones eléctricas dedicadas hasta el lugar exacto que requiera el montaje. Especialmente útil para líneas de iluminación y subdistribuciones locales, ajustando la longitud al recorrido necesario."
         }
     },
-        /* SERVICES COMMENTED OUT
-{
-        "id": 801,
-        "name": {
-            "en": "Sound engineer (8h)",
-            "es": "Técnico de sonido (8h)"
-        },
-        "category": "cat.service",
-        "manufacturer": "UPSTAGE MADRID",
-        "priceDay": 150,
-        "image": "img/inventory/live_sound_engineering_article_image_2025.avif",
-        "description": {
-            "en": "Professional sound engineer providing setup soundcheck and live mixing during events.",
-            "es": "Técnico de sonido profesional que realiza montaje prueba y mezcla en directo."
-        }
-    },
     {
         "id": 802,
         "name": {
@@ -899,23 +931,6 @@ window.products = [
         "description": {
             "en": "Dedicated monitor engineer ensuring performers receive accurate and stable stage mixes.",
             "es": "Técnico dedicado a monitores que garantiza mezclas estables y precisas en escenario."
-        }
-    },
-    */
-        {
-        "id": 1001,
-        "name": {
-            "en": "HK Audio Pro 12 active",
-            "es": "HK Audio Pro 12 activo"
-        },
-        "category": "cat.sound",
-        "subcategory": "sub.speakers",
-        "manufacturer": "HK Audio",
-        "priceDay": 15,
-        "image": "img/inventory/HK_PRO.avif",
-        "description": {
-            "en": "Build a straightforward sound setup for presentations, live music and private events. This powered 12-inch speaker can serve as a main PA cabinet or stage monitor, making it useful when the same equipment needs to cover different roles.",
-            "es": "Configura un refuerzo sonoro eficaz para presentaciones, directos y eventos privados. Este altavoz autoamplificado de 12 pulgadas puede funcionar como PA principal o monitor de escenario, adaptándose a múltiples roles según la ocasión."
         }
     },
     {
@@ -980,22 +995,6 @@ window.products = [
         "description": {
             "en": "Give a stage a rich colour wash that can change with each song or scene. Moving-head control and motorised zoom make this fixture useful for live music, theatrical looks and colourful event backdrops.",
             "es": "Baña el escenario con un potente espectro de color capaz de transformar cada escena o tema musical. Su cabeza móvil con zoom motorizado resulta idónea para directos musicales, montajes teatrales y llamativos fondos escenográficos."
-        }
-    },
-        {
-        "id": 1011,
-        "name": {
-            "en": "Shure PGA drum microphone kit",
-            "es": "Shure PGA kit de micrófonos para batería"
-        },
-        "category": "cat.mics",
-        "subcategory": "sub.wired",
-        "manufacturer": "Shure",
-        "priceDay": 15,
-        "image": "img/inventory/PGA_MICS.avif",
-        "description": {
-            "en": "Bring the drum kit into the mix with microphones chosen for its different voices. This Shure PGA set suits live bands, rehearsal recordings and showcase gigs, helping capture the punch of the kick and the detail of the kit.",
-            "es": "Microfona la batería al completo con cápsulas optimizadas para cada elemento acústico. Este kit Shure PGA es excelente para bandas en vivo, grabaciones de ensayo y bolos, recogiendo la pegada del bombo y la definición de platos y cajas."
         }
     },
     {
@@ -1575,54 +1574,6 @@ window.products = [
         }
     },
     {
-        "id": 1057,
-        "name": {
-            "en": "RCF EVOX J9",
-            "es": "RCF EVOX J9"
-        },
-        "category": "cat.sound",
-        "subcategory": "sub.speakers",
-        "manufacturer": "RCF",
-        "priceDay": 35,
-        "image": "img/inventory/RCF_EVOX_J9.avif",
-        "description": {
-            "en": "Pair clear vocals with a full musical sound in a streamlined column format. The EVOX J9 suits weddings, corporate receptions and live acts where a compact, unobtrusive PA needs to cover both spoken moments and entertainment.",
-            "es": "Combina voces perfectamente inteligibles con una reproducción musical equilibrada en un práctico formato de columna. El EVOX J9 se adapta a bodas, cócteles de empresa y directos donde se busca un sistema estético y fácil de transportar."
-        }
-    },
-    {
-        "id": 1058,
-        "name": {
-            "en": "RCF ART 12",
-            "es": "RCF ART 12"
-        },
-        "category": "cat.sound",
-        "subcategory": "sub.speakers",
-        "manufacturer": "RCF",
-        "priceDay": 25,
-        "image": "img/inventory/RCF_RCF_ART_12.avif",
-        "description": {
-            "en": "Keep presentations intelligible and live music engaging with a versatile powered 12-inch speaker. An RCF ART cabinet suits corporate events, private celebrations and band setups that need a practical full-range PA building block.",
-            "es": "Consigue discursos claros y música envolvente con un todoterreno autoamplificado de 12 pulgadas. La serie RCF ART es una elección fiable para actos de empresa, fiestas privadas y conciertos de bandas que requieren un equipo versátil y robusto."
-        }
-    },
-    {
-        "id": 1059,
-        "name": {
-            "en": "RCF SUB 15",
-            "es": "RCF SUB 15"
-        },
-        "category": "cat.sound",
-        "subcategory": "sub.subs",
-        "manufacturer": "RCF",
-        "priceDay": 35,
-        "image": "img/inventory/RCF_SUB_15.avif",
-        "description": {
-            "en": "Give a compact event PA more depth for DJs, live bands and dance-floor playback. This powered 15-inch subwoofer supports the low end while compatible main speakers handle vocals and musical detail.",
-            "es": "Añade cuerpo y profundidad a sistemas compactos para sesiones de DJ, grupos y música de pista. Este subwoofer autoamplificado de 15 pulgadas refuerza las frecuencias bajas dejando que los altavoces principales se concentren en la voz y los instrumentos."
-        }
-    },
-    {
         "id": 1062,
         "name": {
             "en": "Yamaha DXR12",
@@ -2004,22 +1955,6 @@ window.products = [
         "description": {
             "en": "Keep your hands free and your voice close to the microphone throughout the performance. This wireless headset system suits presenters, instructors and performers who need to move naturally on stage.",
             "es": "Mantén las manos libres y la voz cerca del micrófono durante toda la actuación. Este sistema inalámbrico de diadema es adecuado para presentadores, instructores y artistas que necesitan moverse con naturalidad por el escenario."
-        }
-    },
-    {
-        "id": 1106,
-        "name": {
-            "en": "RCF NX 945 A",
-            "es": "RCF NX 945 A"
-        },
-        "category": "cat.sound",
-        "subcategory": "sub.speakers",
-        "manufacturer": "RCF",
-        "priceDay": 100,
-        "image": "img/inventory/03-rcf-nx945a.avif",
-        "description": {
-            "en": "Bring live music, DJ sets and spoken presentations to your audience with a dedicated PA loudspeaker. The RCF NX 945 A fits event sound systems where vocals and music need a clear, confident presence.",
-            "es": "Acerca la música en directo, las sesiones de DJ y las presentaciones a tu público con un altavoz de PA. El RCF NX 945 A encaja en sistemas de sonido para eventos donde las voces y la música necesitan una presencia clara."
         }
     },
     {
