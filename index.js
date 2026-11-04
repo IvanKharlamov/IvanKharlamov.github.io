@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
                 }
                 if (window.changeLanguage && window.currentLang) {
-                    window.changeLanguage(window.currentLang);
+                    window.changeLanguage(window.currentLang, container);
                 }
                 container.style.display = 'block';
                 
@@ -459,7 +459,7 @@ document.addEventListener('DOMContentLoaded', () => {
             init();
         });
 		window.addEventListener('pointermove', e => {
-            if (e.target.closest('.contact-container')) return;
+            if (!visible || e.target.closest('.contact-container')) return;
 			if (e.pointerType === 'mouse' || e.pointerType === 'touch') {
 				const r = canvas.getBoundingClientRect();
 				updateMousePos(e.clientX - r.left, e.clientY - r.top);
@@ -477,8 +477,22 @@ document.addEventListener('DOMContentLoaded', () => {
 			isIn = (mouse.x >= 0 && mouse.x <= width && mouse.y >= 0 && mouse.y <= height);
 		};
         init();
+        // The particle field only animates while the contact section is on screen;
+        // off screen it would cost a full frame of work every 16 ms for nothing.
         let lastAnimateTime = performance.now();
+        let running = false, visible = false;
+        const start = () => {
+            if (running || !visible) return;
+            running = true;
+            lastAnimateTime = performance.now();
+            requestAnimationFrame(animate);
+        };
+        new IntersectionObserver(entries => {
+            visible = entries.some(e => e.isIntersecting);
+            if (visible) start();
+        }).observe(canvas.parentElement);
         function animate(currentTime) {
+            if (!visible) { running = false; return; }
             const dt = (currentTime - lastAnimateTime) / (1000 / 60);
             lastAnimateTime = currentTime;
             const validDt = Math.min(dt || 1, 5); 
@@ -529,5 +543,5 @@ document.addEventListener('DOMContentLoaded', () => {
             particles.forEach(p => { if (p.mode === 'free') { p.update(validDt); p.draw(); } else { p.update(validDt); } });
             requestAnimationFrame(animate);
         }
-        requestAnimationFrame(animate);
+        // The observer above starts the loop once the section scrolls into view
 });

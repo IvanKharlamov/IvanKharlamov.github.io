@@ -10,9 +10,9 @@
 	<link rel="icon" type="image/svg+xml" href="favicon.svg">
 	<link rel="icon" type="image/x-icon" href="favicon.ico" sizes="any">
 	<link rel="apple-touch-icon" href="apple.png">
-    <link rel="stylesheet" href="common.css?v=20261103d">
+    <link rel="stylesheet" href="common.css?v=20261104a">
 
-    <link rel="stylesheet" href="index.css?v=20261103c">
+    <link rel="stylesheet" href="index.css?v=20261104a">
 	<script type="application/ld+json">
 	{
 	  "@context": "https://schema.org",
@@ -42,13 +42,33 @@
 	  "url": "https://upstageprod.com/"
 	}
 	</script>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-31W1NNSBL4"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-
 	  gtag('config', 'G-31W1NNSBL4');
+	  // Analytics loads once the page is ready (or on the first interaction), so it never
+	  // competes with the page's own scripts. Events fired before that stay queued in dataLayer.
+	  (function () {
+	    var loaded = false;
+	    function load() {
+	      if (loaded) return;
+	      loaded = true;
+	      var s = document.createElement('script');
+	      s.async = true;
+	      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-31W1NNSBL4';
+	      document.head.appendChild(s);
+	    }
+	    function whenIdle() {
+	      if ('requestIdleCallback' in window) requestIdleCallback(load, { timeout: 2000 });
+	      else setTimeout(load, 1000);
+	    }
+	    if (document.readyState === 'complete') whenIdle();
+	    else window.addEventListener('load', whenIdle);
+	    ['pointerdown', 'keydown', 'touchstart', 'scroll'].forEach(function (ev) {
+	      window.addEventListener(ev, load, { once: true, passive: true });
+	    });
+	  })();
 	</script>
 </head>
 
@@ -143,96 +163,96 @@
             <div class="hero-carousel-bg">
                 <div class="carousel-track track-1">
                     <div class="track-inner">
-                        <img src="img/index/rotate/1.avif" alt="Production">
-                        <img src="img/index/rotate/2.avif" alt="Production">
-                        <img src="img/index/rotate/3.avif" alt="Production">
-                        <img src="img/index/rotate/4.avif" alt="Production">
-                        <img src="img/index/rotate/5.avif" alt="Production">
-                        <img src="img/index/rotate/6.avif" alt="Production">
+                        <img src="img/index/rotate/1.avif" srcset="img/index/rotate/sm/1.avif 600w, img/index/rotate/1.avif 1200w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="1200" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/2.avif" srcset="img/index/rotate/sm/2.avif 600w, img/index/rotate/2.avif 1200w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="1200" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/3.avif" srcset="img/index/rotate/sm/3.avif 600w, img/index/rotate/3.avif 1200w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="1200" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/4.avif" srcset="img/index/rotate/sm/4.avif 300w, img/index/rotate/4.avif 600w" sizes="(max-width: 1024px) 10.5vh, 22.5vh" width="600" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/5.avif" srcset="img/index/rotate/sm/5.avif 604w, img/index/rotate/5.avif 1207w" sizes="(max-width: 1024px) 21.1vh, 45.3vh" width="1207" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/6.avif" srcset="img/index/rotate/sm/6.avif 592w, img/index/rotate/6.avif 1185w" sizes="(max-width: 1024px) 20.7vh, 44.4vh" width="1185" height="800" alt="Production" decoding="async">
                     </div>
 <div class="track-inner">
-                        <img src="img/index/rotate/1.avif" alt="Production">
-                        <img src="img/index/rotate/2.avif" alt="Production">
-                        <img src="img/index/rotate/3.avif" alt="Production">
-                        <img src="img/index/rotate/4.avif" alt="Production">
-                        <img src="img/index/rotate/5.avif" alt="Production">
-                        <img src="img/index/rotate/6.avif" alt="Production">
+                        <img src="img/index/rotate/1.avif" srcset="img/index/rotate/sm/1.avif 600w, img/index/rotate/1.avif 1200w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="1200" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/2.avif" srcset="img/index/rotate/sm/2.avif 600w, img/index/rotate/2.avif 1200w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="1200" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/3.avif" srcset="img/index/rotate/sm/3.avif 600w, img/index/rotate/3.avif 1200w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="1200" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/4.avif" srcset="img/index/rotate/sm/4.avif 300w, img/index/rotate/4.avif 600w" sizes="(max-width: 1024px) 10.5vh, 22.5vh" width="600" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/5.avif" srcset="img/index/rotate/sm/5.avif 604w, img/index/rotate/5.avif 1207w" sizes="(max-width: 1024px) 21.1vh, 45.3vh" width="1207" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/6.avif" srcset="img/index/rotate/sm/6.avif 592w, img/index/rotate/6.avif 1185w" sizes="(max-width: 1024px) 20.7vh, 44.4vh" width="1185" height="800" alt="Production" decoding="async">
                     </div>
 <div class="track-inner">
-                        <img src="img/index/rotate/1.avif" alt="Production">
-                        <img src="img/index/rotate/2.avif" alt="Production">
-                        <img src="img/index/rotate/3.avif" alt="Production">
-                        <img src="img/index/rotate/4.avif" alt="Production">
-                        <img src="img/index/rotate/5.avif" alt="Production">
-                        <img src="img/index/rotate/6.avif" alt="Production">
+                        <img src="img/index/rotate/1.avif" srcset="img/index/rotate/sm/1.avif 600w, img/index/rotate/1.avif 1200w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="1200" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/2.avif" srcset="img/index/rotate/sm/2.avif 600w, img/index/rotate/2.avif 1200w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="1200" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/3.avif" srcset="img/index/rotate/sm/3.avif 600w, img/index/rotate/3.avif 1200w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="1200" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/4.avif" srcset="img/index/rotate/sm/4.avif 300w, img/index/rotate/4.avif 600w" sizes="(max-width: 1024px) 10.5vh, 22.5vh" width="600" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/5.avif" srcset="img/index/rotate/sm/5.avif 604w, img/index/rotate/5.avif 1207w" sizes="(max-width: 1024px) 21.1vh, 45.3vh" width="1207" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/6.avif" srcset="img/index/rotate/sm/6.avif 592w, img/index/rotate/6.avif 1185w" sizes="(max-width: 1024px) 20.7vh, 44.4vh" width="1185" height="800" alt="Production" decoding="async">
                     </div>
 <div class="track-inner">
-                        <img src="img/index/rotate/1.avif" alt="Production">
-                        <img src="img/index/rotate/2.avif" alt="Production">
-                        <img src="img/index/rotate/3.avif" alt="Production">
-                        <img src="img/index/rotate/4.avif" alt="Production">
-                        <img src="img/index/rotate/5.avif" alt="Production">
-                        <img src="img/index/rotate/6.avif" alt="Production">
+                        <img src="img/index/rotate/1.avif" srcset="img/index/rotate/sm/1.avif 600w, img/index/rotate/1.avif 1200w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="1200" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/2.avif" srcset="img/index/rotate/sm/2.avif 600w, img/index/rotate/2.avif 1200w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="1200" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/3.avif" srcset="img/index/rotate/sm/3.avif 600w, img/index/rotate/3.avif 1200w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="1200" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/4.avif" srcset="img/index/rotate/sm/4.avif 300w, img/index/rotate/4.avif 600w" sizes="(max-width: 1024px) 10.5vh, 22.5vh" width="600" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/5.avif" srcset="img/index/rotate/sm/5.avif 604w, img/index/rotate/5.avif 1207w" sizes="(max-width: 1024px) 21.1vh, 45.3vh" width="1207" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/6.avif" srcset="img/index/rotate/sm/6.avif 592w, img/index/rotate/6.avif 1185w" sizes="(max-width: 1024px) 20.7vh, 44.4vh" width="1185" height="800" alt="Production" decoding="async">
                     </div>
                 </div>
                 <div class="carousel-track track-2">
                     <div class="track-inner">
-                        <img src="img/index/rotate/7.avif" alt="Production">
-                        <img src="img/index/rotate/9.avif" alt="Production">
-                        <img src="img/index/rotate/10.avif" alt="Production">
-                        <img src="img/index/rotate/11.avif" alt="Production">
-                        <img src="img/index/rotate/12.avif" alt="Production">
+                        <img src="img/index/rotate/7.avif" srcset="img/index/rotate/sm/7.avif 592w, img/index/rotate/7.avif 1185w" sizes="(max-width: 1024px) 20.7vh, 44.4vh" width="1185" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/9.avif" srcset="img/index/rotate/sm/9.avif 578w, img/index/rotate/9.avif 800w" sizes="(max-width: 1024px) 20.2vh, 43.3vh" width="800" height="554" alt="Production" decoding="async">
+                        <img src="img/index/rotate/10.avif" srcset="img/index/rotate/sm/10.avif 475w, img/index/rotate/10.avif 800w" sizes="(max-width: 1024px) 16.6vh, 35.6vh" width="800" height="674" alt="Production" decoding="async">
+                        <img src="img/index/rotate/11.avif" srcset="img/index/rotate/sm/11.avif 599w, img/index/rotate/11.avif 800w" sizes="(max-width: 1024px) 21.0vh, 44.9vh" width="800" height="534" alt="Production" decoding="async">
+                        <img src="img/index/rotate/12.avif" srcset="img/index/rotate/sm/12.avif 600w, img/index/rotate/12.avif 800w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="800" height="533" alt="Production" decoding="async">
                     </div>
 <div class="track-inner">
-                        <img src="img/index/rotate/7.avif" alt="Production">
-                        <img src="img/index/rotate/9.avif" alt="Production">
-                        <img src="img/index/rotate/10.avif" alt="Production">
-                        <img src="img/index/rotate/11.avif" alt="Production">
-                        <img src="img/index/rotate/12.avif" alt="Production">
+                        <img src="img/index/rotate/7.avif" srcset="img/index/rotate/sm/7.avif 592w, img/index/rotate/7.avif 1185w" sizes="(max-width: 1024px) 20.7vh, 44.4vh" width="1185" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/9.avif" srcset="img/index/rotate/sm/9.avif 578w, img/index/rotate/9.avif 800w" sizes="(max-width: 1024px) 20.2vh, 43.3vh" width="800" height="554" alt="Production" decoding="async">
+                        <img src="img/index/rotate/10.avif" srcset="img/index/rotate/sm/10.avif 475w, img/index/rotate/10.avif 800w" sizes="(max-width: 1024px) 16.6vh, 35.6vh" width="800" height="674" alt="Production" decoding="async">
+                        <img src="img/index/rotate/11.avif" srcset="img/index/rotate/sm/11.avif 599w, img/index/rotate/11.avif 800w" sizes="(max-width: 1024px) 21.0vh, 44.9vh" width="800" height="534" alt="Production" decoding="async">
+                        <img src="img/index/rotate/12.avif" srcset="img/index/rotate/sm/12.avif 600w, img/index/rotate/12.avif 800w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="800" height="533" alt="Production" decoding="async">
                     </div>
 <div class="track-inner">
-                        <img src="img/index/rotate/7.avif" alt="Production">
-                        <img src="img/index/rotate/9.avif" alt="Production">
-                        <img src="img/index/rotate/10.avif" alt="Production">
-                        <img src="img/index/rotate/11.avif" alt="Production">
-                        <img src="img/index/rotate/12.avif" alt="Production">
+                        <img src="img/index/rotate/7.avif" srcset="img/index/rotate/sm/7.avif 592w, img/index/rotate/7.avif 1185w" sizes="(max-width: 1024px) 20.7vh, 44.4vh" width="1185" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/9.avif" srcset="img/index/rotate/sm/9.avif 578w, img/index/rotate/9.avif 800w" sizes="(max-width: 1024px) 20.2vh, 43.3vh" width="800" height="554" alt="Production" decoding="async">
+                        <img src="img/index/rotate/10.avif" srcset="img/index/rotate/sm/10.avif 475w, img/index/rotate/10.avif 800w" sizes="(max-width: 1024px) 16.6vh, 35.6vh" width="800" height="674" alt="Production" decoding="async">
+                        <img src="img/index/rotate/11.avif" srcset="img/index/rotate/sm/11.avif 599w, img/index/rotate/11.avif 800w" sizes="(max-width: 1024px) 21.0vh, 44.9vh" width="800" height="534" alt="Production" decoding="async">
+                        <img src="img/index/rotate/12.avif" srcset="img/index/rotate/sm/12.avif 600w, img/index/rotate/12.avif 800w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="800" height="533" alt="Production" decoding="async">
                     </div>
 <div class="track-inner">
-                        <img src="img/index/rotate/7.avif" alt="Production">
-                        <img src="img/index/rotate/9.avif" alt="Production">
-                        <img src="img/index/rotate/10.avif" alt="Production">
-                        <img src="img/index/rotate/11.avif" alt="Production">
-                        <img src="img/index/rotate/12.avif" alt="Production">
+                        <img src="img/index/rotate/7.avif" srcset="img/index/rotate/sm/7.avif 592w, img/index/rotate/7.avif 1185w" sizes="(max-width: 1024px) 20.7vh, 44.4vh" width="1185" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/9.avif" srcset="img/index/rotate/sm/9.avif 578w, img/index/rotate/9.avif 800w" sizes="(max-width: 1024px) 20.2vh, 43.3vh" width="800" height="554" alt="Production" decoding="async">
+                        <img src="img/index/rotate/10.avif" srcset="img/index/rotate/sm/10.avif 475w, img/index/rotate/10.avif 800w" sizes="(max-width: 1024px) 16.6vh, 35.6vh" width="800" height="674" alt="Production" decoding="async">
+                        <img src="img/index/rotate/11.avif" srcset="img/index/rotate/sm/11.avif 599w, img/index/rotate/11.avif 800w" sizes="(max-width: 1024px) 21.0vh, 44.9vh" width="800" height="534" alt="Production" decoding="async">
+                        <img src="img/index/rotate/12.avif" srcset="img/index/rotate/sm/12.avif 600w, img/index/rotate/12.avif 800w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="800" height="533" alt="Production" decoding="async">
                     </div>
                 </div>
                 <div class="carousel-track track-3">
                     <div class="track-inner">
-                        <img src="img/index/rotate/13.avif" alt="Production">
-                        <img src="img/index/rotate/14.avif" alt="Production">
-                        <img src="img/index/rotate/15.avif" alt="Production">
-                        <img src="img/index/rotate/16.avif" alt="Production">
-                        <img src="img/index/rotate/17.avif" alt="Production">
+                        <img src="img/index/rotate/13.avif" srcset="img/index/rotate/sm/13.avif 600w, img/index/rotate/13.avif 800w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="800" height="533" alt="Production" decoding="async">
+                        <img src="img/index/rotate/14.avif" srcset="img/index/rotate/sm/14.avif 529w, img/index/rotate/14.avif 619w" sizes="(max-width: 1024px) 18.5vh, 39.7vh" width="619" height="468" alt="Production" decoding="async">
+                        <img src="img/index/rotate/15.avif" srcset="img/index/rotate/sm/15.avif 600w, img/index/rotate/15.avif 1200w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="1200" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/16.avif" srcset="img/index/rotate/sm/16.avif 266w, img/index/rotate/16.avif 533w" sizes="(max-width: 1024px) 9.3vh, 20.0vh" width="533" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/17.avif" srcset="img/index/rotate/sm/17.avif 600w, img/index/rotate/17.avif 1200w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="1200" height="800" alt="Production" decoding="async">
                     </div>
 <div class="track-inner">
-                        <img src="img/index/rotate/13.avif" alt="Production">
-                        <img src="img/index/rotate/14.avif" alt="Production">
-                        <img src="img/index/rotate/15.avif" alt="Production">
-                        <img src="img/index/rotate/16.avif" alt="Production">
-                        <img src="img/index/rotate/17.avif" alt="Production">
+                        <img src="img/index/rotate/13.avif" srcset="img/index/rotate/sm/13.avif 600w, img/index/rotate/13.avif 800w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="800" height="533" alt="Production" decoding="async">
+                        <img src="img/index/rotate/14.avif" srcset="img/index/rotate/sm/14.avif 529w, img/index/rotate/14.avif 619w" sizes="(max-width: 1024px) 18.5vh, 39.7vh" width="619" height="468" alt="Production" decoding="async">
+                        <img src="img/index/rotate/15.avif" srcset="img/index/rotate/sm/15.avif 600w, img/index/rotate/15.avif 1200w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="1200" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/16.avif" srcset="img/index/rotate/sm/16.avif 266w, img/index/rotate/16.avif 533w" sizes="(max-width: 1024px) 9.3vh, 20.0vh" width="533" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/17.avif" srcset="img/index/rotate/sm/17.avif 600w, img/index/rotate/17.avif 1200w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="1200" height="800" alt="Production" decoding="async">
                     </div>
 <div class="track-inner">
-                        <img src="img/index/rotate/13.avif" alt="Production">
-                        <img src="img/index/rotate/14.avif" alt="Production">
-                        <img src="img/index/rotate/15.avif" alt="Production">
-                        <img src="img/index/rotate/16.avif" alt="Production">
-                        <img src="img/index/rotate/17.avif" alt="Production">
+                        <img src="img/index/rotate/13.avif" srcset="img/index/rotate/sm/13.avif 600w, img/index/rotate/13.avif 800w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="800" height="533" alt="Production" decoding="async">
+                        <img src="img/index/rotate/14.avif" srcset="img/index/rotate/sm/14.avif 529w, img/index/rotate/14.avif 619w" sizes="(max-width: 1024px) 18.5vh, 39.7vh" width="619" height="468" alt="Production" decoding="async">
+                        <img src="img/index/rotate/15.avif" srcset="img/index/rotate/sm/15.avif 600w, img/index/rotate/15.avif 1200w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="1200" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/16.avif" srcset="img/index/rotate/sm/16.avif 266w, img/index/rotate/16.avif 533w" sizes="(max-width: 1024px) 9.3vh, 20.0vh" width="533" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/17.avif" srcset="img/index/rotate/sm/17.avif 600w, img/index/rotate/17.avif 1200w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="1200" height="800" alt="Production" decoding="async">
                     </div>
 <div class="track-inner">
-                        <img src="img/index/rotate/13.avif" alt="Production">
-                        <img src="img/index/rotate/14.avif" alt="Production">
-                        <img src="img/index/rotate/15.avif" alt="Production">
-                        <img src="img/index/rotate/16.avif" alt="Production">
-                        <img src="img/index/rotate/17.avif" alt="Production">
+                        <img src="img/index/rotate/13.avif" srcset="img/index/rotate/sm/13.avif 600w, img/index/rotate/13.avif 800w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="800" height="533" alt="Production" decoding="async">
+                        <img src="img/index/rotate/14.avif" srcset="img/index/rotate/sm/14.avif 529w, img/index/rotate/14.avif 619w" sizes="(max-width: 1024px) 18.5vh, 39.7vh" width="619" height="468" alt="Production" decoding="async">
+                        <img src="img/index/rotate/15.avif" srcset="img/index/rotate/sm/15.avif 600w, img/index/rotate/15.avif 1200w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="1200" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/16.avif" srcset="img/index/rotate/sm/16.avif 266w, img/index/rotate/16.avif 533w" sizes="(max-width: 1024px) 9.3vh, 20.0vh" width="533" height="800" alt="Production" decoding="async">
+                        <img src="img/index/rotate/17.avif" srcset="img/index/rotate/sm/17.avif 600w, img/index/rotate/17.avif 1200w" sizes="(max-width: 1024px) 21.0vh, 45.0vh" width="1200" height="800" alt="Production" decoding="async">
                     </div>
                 </div>
             </div>
@@ -470,7 +490,7 @@
                 <div class="reviews-track" id="reviews-track">
                     <article class="review-card">
                         <div class="review-head">
-                            <div class="review-avatar"><img src="img/index/review_hector.avif" alt="" loading="lazy"></div>
+                            <div class="review-avatar"><img src="img/index/review_hector.avif" width="48" height="48" alt="" loading="lazy"></div>
                             <div class="review-meta">
                                 <p class="review-author">Héctor Álvarez Sánchez</p>
                                 <p class="review-company">CEO Autopia Festival</p>
@@ -483,7 +503,7 @@
 
                     <article class="review-card">
                         <div class="review-head">
-                            <div class="review-avatar"><img src="img/index/review_maks.png" alt="" loading="lazy"></div>
+                            <div class="review-avatar"><img src="img/index/review_maks.png" width="48" height="48" alt="" loading="lazy"></div>
                             <div class="review-meta">
                                 <p class="review-author">Maks</p>
                                 <p class="review-company" data-i18n="reviews.googleReview">Reseña de Google</p>
@@ -492,12 +512,12 @@
                         </div>
                         <div class="review-stars" aria-label="5/5">★★★★★</div>
                         <p class="review-quote" data-i18n="review.9.quote">Una experiencia genial grabando un DJ set. Nos ayudaron con todo el montaje: sonido, luces, cámaras y grabación. Todo salió de maravilla. ¡100% recomendables!</p>
-                        <img class="review-photo" src="img/index/review_maks_photo.jpg" alt="" loading="lazy">
+                        <img class="review-photo" src="img/index/review_maks_photo.avif" width="900" height="875" alt="" loading="lazy">
                     </article>
 
                     <article class="review-card">
                         <div class="review-head">
-                            <div class="review-avatar"><img src="img/index/review_gregbernal.png" alt="" loading="lazy"></div>
+                            <div class="review-avatar"><img src="img/index/review_gregbernal.png" width="48" height="48" alt="" loading="lazy"></div>
                             <div class="review-meta">
                                 <p class="review-author">gregbernal</p>
                                 <p class="review-company" data-i18n="reviews.googleReview">Reseña de Google</p>
@@ -510,7 +530,7 @@
 
                     <article class="review-card">
                         <div class="review-head">
-                            <div class="review-avatar"><img src="img/index/review_emma.png" alt="" loading="lazy"></div>
+                            <div class="review-avatar"><img src="img/index/review_emma.png" width="48" height="48" alt="" loading="lazy"></div>
                             <div class="review-meta">
                                 <p class="review-author">Emma</p>
                                 <p class="review-company" data-i18n="reviews.googleReview">Reseña de Google</p>
@@ -523,7 +543,7 @@
 
                     <article class="review-card">
                         <div class="review-head">
-                            <div class="review-avatar"><img src="img/index/review_mariia.webp" alt="" loading="lazy"></div>
+                            <div class="review-avatar"><img src="img/index/review_mariia.webp" width="48" height="48" alt="" loading="lazy"></div>
                             <div class="review-meta">
                                 <p class="review-author">Mariia S</p>
                                 <p class="review-company" data-i18n="reviews.googleReview">Reseña de Google</p>
@@ -536,7 +556,7 @@
 
                     <article class="review-card">
                         <div class="review-head">
-                            <div class="review-avatar"><img src="img/index/review_kirill.jpg" alt="" loading="lazy"></div>
+                            <div class="review-avatar"><img src="img/index/review_kirill.jpg" width="48" height="48" alt="" loading="lazy"></div>
                             <div class="review-meta">
                                 <p class="review-author">kirill kozlov</p>
                                 <p class="review-company" data-i18n="reviews.googleReview">Reseña de Google</p>
@@ -549,7 +569,7 @@
 
                     <article class="review-card">
                         <div class="review-head">
-                            <div class="review-avatar"><img src="img/index/review_carmelo.jpg" alt="" loading="lazy"></div>
+                            <div class="review-avatar"><img src="img/index/review_carmelo.jpg" width="48" height="48" alt="" loading="lazy"></div>
                             <div class="review-meta">
                                 <p class="review-author">Carmelo Hernandez</p>
                                 <p class="review-company" data-i18n="reviews.googleReview">Reseña de Google</p>
@@ -558,12 +578,12 @@
                         </div>
                         <div class="review-stars" aria-label="5/5">★★★★★</div>
                         <p class="review-quote" data-i18n="review.4.quote">Los servicios proporcionados fueron sobresalientes. No solo alquiler, sino proveedores de soluciones con criterio y experiencia real. 100% recomendados.</p>
-                        <img class="review-photo" src="img/index/review_carmelo_photo.jpg" alt="" loading="lazy">
+                        <img class="review-photo" src="img/index/review_carmelo_photo.avif" width="900" height="675" alt="" loading="lazy">
                     </article>
 
                     <article class="review-card">
                         <div class="review-head">
-                            <div class="review-avatar"><img src="img/index/review_juan.png" alt="" loading="lazy"></div>
+                            <div class="review-avatar"><img src="img/index/review_juan.png" width="48" height="48" alt="" loading="lazy"></div>
                             <div class="review-meta">
                                 <p class="review-author">Juan Julián Cea Moran</p>
                                 <p class="review-company" data-i18n="reviews.googleReview">Reseña de Google</p>
@@ -576,7 +596,7 @@
 
                     <article class="review-card">
                         <div class="review-head">
-                            <div class="review-avatar"><img src="img/index/review_narek.jpg" alt="" loading="lazy"></div>
+                            <div class="review-avatar"><img src="img/index/review_narek.jpg" width="48" height="48" alt="" loading="lazy"></div>
                             <div class="review-meta">
                                 <p class="review-author">Narek Bagratuni</p>
                                 <p class="review-company" data-i18n="reviews.googleReview">Reseña de Google</p>
@@ -589,7 +609,7 @@
 
                     <article class="review-card">
                         <div class="review-head">
-                            <div class="review-avatar"><img src="img/index/review_parsa.png" alt="" loading="lazy"></div>
+                            <div class="review-avatar"><img src="img/index/review_parsa.png" width="48" height="48" alt="" loading="lazy"></div>
                             <div class="review-meta">
                                 <p class="review-author">Parsa</p>
                                 <p class="review-company" data-i18n="reviews.googleReview">Reseña de Google</p>
@@ -602,7 +622,7 @@
 
                     <article class="review-card">
                         <div class="review-head">
-                            <div class="review-avatar"><img src="img/index/review_djpizza.png" alt="" loading="lazy"></div>
+                            <div class="review-avatar"><img src="img/index/review_djpizza.png" width="48" height="48" alt="" loading="lazy"></div>
                             <div class="review-meta">
                                 <p class="review-author">Dj Pizza</p>
                                 <p class="review-company" data-i18n="reviews.googleReview">Reseña de Google</p>
@@ -1062,7 +1082,7 @@
     <div id="toast-container"></div>
 
     <template id="service-img-template">
-        <img class="service-gallery-img" src="" alt="Service image">
+        <img class="service-gallery-img" src="" alt="Service image" loading="lazy" decoding="async">
     </template>
 
     <div class="modal-overlay" id="product-modal">
@@ -1196,12 +1216,12 @@
     
 
     <script src="translations.js?v=20261103c"></script>
-    <script src="products.js?v=20261104b"></script>
+    <script src="products.js?v=20261104c"></script>
     <script src="catalog_atlas.js?v=20261104a"></script>
 
-    <script src="common.js?v=20261103d"></script>
+    <script src="common.js?v=20261104a"></script>
 
-    <script src="index.js?v=20261103a"></script>
+    <script src="index.js?v=20261104a"></script>
 
 </body>
 

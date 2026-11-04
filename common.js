@@ -45,12 +45,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.currentLang = localStorage.getItem('upstage_lang') || 'es';
 
-    const applyTranslations = (lang) => {
-        window.currentLang = lang;
-        localStorage.setItem('upstage_lang', lang);
-        window.trackEvent('change_language', { language: lang });
-        document.querySelectorAll('.lang-opt').forEach(el => el.classList.toggle('active', el.dataset.lang === lang));
-        document.querySelectorAll('[data-i18n]').forEach(el => {
+    // `root` limits the pass to one subtree (a panel just filled from a template, say).
+    // The page-wide pass also stores the choice and re-renders the catalog.
+    const applyTranslations = (lang, root = document) => {
+        const pageWide = root === document;
+        if (pageWide) {
+            window.currentLang = lang;
+            localStorage.setItem('upstage_lang', lang);
+            window.trackEvent('change_language', { language: lang });
+            document.querySelectorAll('.lang-opt').forEach(el => el.classList.toggle('active', el.dataset.lang === lang));
+        }
+        root.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.dataset.i18n;
             let val = translations[lang][key];
             if (val) {
@@ -58,9 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 el.innerHTML = val;
             }
         });
-        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => el.placeholder = translations[lang][el.dataset.i18nPlaceholder]);
-        document.querySelectorAll('option[data-i18n]').forEach(el => el.textContent = translations[lang][el.dataset.i18n]);
-        if (typeof window.applyFilters === 'function' && window.products) window.applyFilters();
+        root.querySelectorAll('[data-i18n-placeholder]').forEach(el => el.placeholder = translations[lang][el.dataset.i18nPlaceholder]);
+        root.querySelectorAll('option[data-i18n]').forEach(el => el.textContent = translations[lang][el.dataset.i18n]);
+        if (pageWide && typeof window.applyFilters === 'function' && window.products) window.applyFilters();
     };
 
     if (window.TRANSLATIONS_RAW) {
@@ -71,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         translationsLoaded = true;
     }
 
-    window.changeLanguage = (lang) => {
+    window.changeLanguage = (lang, root) => {
         if (lang === 'es' && !translationsLoaded) {
             window.currentLang = lang;
             localStorage.setItem('upstage_lang', lang);
@@ -91,11 +96,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
                 }
                 translationsLoaded = true;
-                applyTranslations(lang);
+                applyTranslations(lang, root);
             };
             document.head.appendChild(script);
         } else {
-            applyTranslations(lang);
+            applyTranslations(lang, root);
         }
     };
 
@@ -690,7 +695,6 @@ class CartUI {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    window.trackEvent('visit_page', { page_path: window.location.pathname });
     if (document.getElementById('cart-drawer')) {
         window.cartUI = new CartUI(window.cartManager);
     }
@@ -933,7 +937,6 @@ class QuoteFormsManager {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    window.trackEvent('visit_page', { page_path: window.location.pathname });
     window.quoteFormsManager = new QuoteFormsManager();
 
     const generalQuoteForm = document.getElementById('general-quote-form');
@@ -1015,21 +1018,38 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentItems = [];
     let shownCount = 0;
 
+    // Desktop: the first rows are built right away and the rest of the list in small
+    // batches while the browser is idle, so the page never blocks on ~200 cards at once.
+    // A new render (filter, search, language) drops the batches still pending.
+    const FIRST_BATCH = 24, BATCH = 24;
+    let renderJob = 0;
+    const whenIdle = (fn) => ('requestIdleCallback' in window) ? requestIdleCallback(fn, { timeout: 500 }) : setTimeout(fn, 16);
+
     window.renderProducts = (items) => {
         const grid = document.getElementById('product-grid');
         if (!grid) return;
 
+        const job = ++renderJob;
         currentItems = items;
         shownCount = 0;
         grid.innerHTML = '';
         if (items.length) {
-            appendCards(mobileQuery.matches ? MOBILE_PAGE : items.length);
+            appendCards(mobileQuery.matches ? MOBILE_PAGE : FIRST_BATCH);
         } else {
             grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;">${t('catalog.empty')}</div>`;
         }
-        injectProductSchema(items);
         fitColumns();
         fitTwoRows();
+        const finish = () => {
+            if (job !== renderJob) return;
+            if (!mobileQuery.matches && shownCount < currentItems.length) {
+                appendCards(BATCH);
+                whenIdle(finish);
+                return;
+            }
+            injectProductSchema(items);
+        };
+        whenIdle(finish);
     };
 
     function appendCards(count) {
@@ -1117,7 +1137,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         shownCount += slice.length;
         const remaining = currentItems.length - shownCount;
-        if (remaining > 0) {
+        // Only phones page the list; on desktop the remaining cards follow in idle batches
+        if (remaining > 0 && mobileQuery.matches) {
             const wrap = document.createElement('div');
             wrap.className = 'show-more-wrap';
             const btn = document.createElement('button');

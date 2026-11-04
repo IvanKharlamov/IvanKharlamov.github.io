@@ -460,6 +460,7 @@ body.loaded .carousel-track .track-inner {
 .review-photo {
     display: block;
     width: 100%;
+    height: auto;
     max-height: 240px;
     object-fit: cover;
     margin-top: 1rem;
