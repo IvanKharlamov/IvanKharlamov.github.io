@@ -40,6 +40,13 @@
     z-index: 2;
 }
 
+.hero-actions {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
 .hero-content-left::before {
     content: '';
     position: absolute;
@@ -225,6 +232,28 @@ body.loaded .carousel-track .track-inner {
     }
     .hero-about-text .section-title {
         text-align: center;
+    }
+    /* quote + WhatsApp share one row instead of stacking */
+    .hero-actions {
+        width: 100%;
+        flex-wrap: nowrap;
+        gap: 8px;
+    }
+    /* equal halves; the longer Spanish WhatsApp label wraps to two lines
+       and both buttons stretch to the same height */
+    .hero-actions .btn {
+        flex: 1 1 0;
+        min-width: 0;
+        padding: 0.65rem 0.5rem;
+        font-size: 0.78rem;
+        letter-spacing: 0.3px;
+        line-height: 1.25;
+        text-align: center;
+    }
+    .hero-actions .btn svg {
+        flex: 0 0 auto;
+        width: 18px;
+        height: 18px;
     }
 }
 

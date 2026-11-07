@@ -643,8 +643,10 @@ class CartUI {
             if (item.isCustom) {
                 priceEl.innerHTML = `<span style="color: var(--accent);">${t('cart.customRate')}</span>`;
             } else {
+                // the struck-out base price only makes sense when a discount applied
+                const discounted = item.totalPrice < item.basePrice;
                 priceEl.innerHTML = `
-                    <span class="price-base">€${item.basePrice.toLocaleString()}</span>
+                    ${discounted ? `<span class="price-base">€${item.basePrice.toLocaleString()}</span>` : ''}
                     <span class="price-final">€${item.totalPrice.toLocaleString()}</span>
                 `;
             }
@@ -1441,7 +1443,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (days > 7) prEl.innerHTML = `<span style="font-size:1rem;color:var(--accent);">${t('rental.customRate')}</span>`;
             else {
                 const m = window.cartManager.getRentalMultiplier(days), base = p.priceDay * days * qty, total = p.priceDay * m * qty;
-                prEl.innerHTML = `<span class="price-base">€${base.toLocaleString()}</span><span class="price-final">€${total.toLocaleString()}</span>${m > 1 ? ` 
+                prEl.innerHTML = `${total < base ? `<span class="price-base">€${base.toLocaleString()}</span>` : ''}<span class="price-final">€${total.toLocaleString()}</span>${m > 1 ? `
                     <span class="price-multiplier">(x${m.toFixed(2)})</span>
                     <div class="price-info-trigger">
                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
@@ -1597,3 +1599,31 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     window.applyFilters();
 });
+
+// Lock page scroll while the quote drawer or any modal is open. Every open
+// and close path toggles `.active` on the element, so a class observer covers
+// them all. iOS ignores overflow: hidden on body, hence the pinned body in
+// common.css and the restored scroll position on close.
+(() => {
+    let lockedAt = null;
+    const update = (targets) => {
+        const open = targets.some(el => el.classList.contains('active'));
+        if (open && lockedAt === null) {
+            lockedAt = window.scrollY;
+            document.body.style.top = `-${lockedAt}px`;
+            document.body.classList.add('scroll-locked');
+        } else if (!open && lockedAt !== null) {
+            document.body.classList.remove('scroll-locked');
+            document.body.style.top = '';
+            window.scrollTo(0, lockedAt);
+            lockedAt = null;
+        }
+    };
+    document.addEventListener('DOMContentLoaded', () => {
+        const targets = [...document.querySelectorAll('.cart-drawer, .modal-overlay')];
+        if (!targets.length) return;
+        const observer = new MutationObserver(() => update(targets));
+        targets.forEach(el => observer.observe(el, { attributes: true, attributeFilter: ['class'] }));
+        update(targets);
+    });
+})();

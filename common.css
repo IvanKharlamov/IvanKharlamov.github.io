@@ -62,6 +62,17 @@ body {
     overflow-x: hidden;
 }
 
+/* While the quote drawer or a modal is open the page behind must not
+   scroll. iOS ignores overflow: hidden on body, so the body is pinned
+   in place instead; common.js sets `top` to keep the scroll position. */
+body.scroll-locked {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -2433,12 +2444,39 @@ a {
         padding: 7px 12px;
     }
 
+    /* Packs sits pinned at the left of the same row, a touch bigger than
+       the rest; the other categories scroll next to it. A full-width Packs
+       chip on its own row made the small chips below look inactive. */
+    .catalog-embed .sidebar-group:has(.filter-list-packs) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .catalog-embed .sidebar-group:has(.filter-list-packs) .sidebar-title {
+        flex: 0 0 100%;
+    }
+
+    .catalog-embed .filter-list-packs {
+        flex: 0 0 auto;
+        margin: 0 6px 0 0;
+        padding: 0;
+        overflow: visible;
+    }
+
     .catalog-embed .filter-list-packs .filter-chip-wrapper {
-        flex: 1 1 100%;
+        flex: 0 0 auto;
     }
 
     .catalog-embed .filter-chip-packs label {
-        padding: 11px 14px;
+        padding: 9px 14px;
+        font-size: 0.9rem;
+    }
+
+    .catalog-embed .filter-list-packs + .filter-list {
+        flex: 1 1 0;
+        margin: 0 -12px 0 0;
+        padding: 0 12px 0 0;
     }
 
     /* filters scroll away with the page: pinned under the header they
