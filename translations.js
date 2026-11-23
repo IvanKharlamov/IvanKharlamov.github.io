@@ -534,4 +534,13 @@
   },
   "404.back": { "en": "Back to Home", "es": "Volver al Inicio" },
   "btn.whatsapp": { "en": "Contact on WhatsApp", "es": "Contactar por WhatsApp" },
+  "quick.title": { "en": "Planning an event?", "es": "¿Tienes un evento?" },
+  "quick.subtitle": {
+    "en": "Leave your phone number and we'll call you back with a quote.",
+    "es": "Déjanos tu teléfono y te llamamos con un presupuesto."
+  },
+  "quick.name": { "en": "Your name", "es": "Tu nombre" },
+  "quick.phone": { "en": "Phone / WhatsApp", "es": "Teléfono / WhatsApp" },
+  "quick.need": { "en": "What do you need? (date, type of event)", "es": "¿Qué necesitas? (fecha, tipo de evento)" },
+  "quick.submit": { "en": "Request a call", "es": "Pedir llamada" },
 }

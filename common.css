@@ -2548,3 +2548,73 @@ a {
         font-size: 0.75rem;
     }
 }
+
+/* ==========================================================================
+   Contact shortcuts: phone header quote button, floating WhatsApp, field errors
+   ========================================================================== */
+.btn-header-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-actions .btn-header-mobile {
+        display: inline-flex;
+        padding: 0.5rem 0.8rem;
+        font-size: 0.72rem;
+        letter-spacing: 0.3px;
+        white-space: nowrap;
+    }
+    .mobile-actions {
+        gap: 10px;
+    }
+}
+
+.wa-float {
+    position: fixed;
+    right: 18px;
+    bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+    z-index: 900;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1DA851;
+    color: #fff;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45), 0 0 20px rgba(37, 211, 102, 0.35);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.wa-float:hover {
+    background: #25D366;
+    color: #fff;
+    transform: scale(1.06);
+}
+
+body.scroll-locked .wa-float {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .wa-float {
+        width: 52px;
+        height: 52px;
+        right: 14px;
+        bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+    }
+}
+
+.quote-form-input.is-invalid,
+.quote-form-textarea.is-invalid {
+    border-color: #ef4444;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+}
+
+.field-error {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.85rem;
+    color: #f87171;
+    text-align: left;
+}

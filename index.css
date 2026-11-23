@@ -960,3 +960,131 @@ body.loaded .carousel-track .track-inner {
     position: absolute; inset: 0;
     background: radial-gradient(circle, transparent 30%, black 150%);
     pointer-events: none;
+}
+
+/* ==========================================================================
+   Hero must fit one screen on 768px-tall laptops: title scales with height too
+   ========================================================================== */
+@media (min-width: 1025px) {
+    .hero-title-left {
+        font-size: min(4vw, 8.5vh);
+        margin-bottom: min(2rem, 3vh);
+    }
+    .hero-ui-subtitle-marquee {
+        margin-bottom: min(2.5rem, 4vh);
+    }
+    .hero-actions {
+        margin-top: min(2rem, 3vh);
+    }
+}
+
+/* Phones: buttons right under the title, the about text after them */
+@media (max-width: 1024px) {
+    .hero-carousel-bg {
+        height: 40vh;
+    }
+    .hero-title-left { order: 1; }
+    .hero-ui-subtitle-marquee { order: 2; }
+    .hero-actions { order: 3; margin-top: 0; margin-bottom: 2rem; }
+    .hero-about-text { order: 4; }
+}
+
+/* ==========================================================================
+   Quick call request strip right after the hero
+   ========================================================================== */
+.quick-request-section {
+    padding: 2.5rem 0 1rem;
+    background: #000;
+}
+
+.quick-request {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.75rem 2rem;
+}
+
+.quick-request-text {
+    flex: 0 0 auto;
+    max-width: 320px;
+}
+
+.quick-request-title {
+    font-size: 1.6rem;
+    margin-bottom: 0.35rem;
+}
+
+.quick-request-subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.45;
+}
+
+.quick-form {
+    flex: 1 1 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.4fr auto;
+    gap: 12px;
+    align-items: start;
+}
+
+.quick-form .btn {
+    white-space: nowrap;
+    height: 100%;
+    min-height: 48px;
+}
+
+@media (max-width: 1024px) {
+    .quick-request {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.25rem;
+        padding: 1.5rem 1.25rem;
+    }
+    .quick-request-text {
+        max-width: none;
+        text-align: center;
+    }
+    .quick-form {
+        grid-template-columns: 1fr 1fr;
+    }
+    .quick-form-need,
+    .quick-form .btn {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 480px) {
+    .quick-form {
+        grid-template-columns: 1fr;
+    }
+}
+
+.quick-form .field-error {
+    grid-column: 1 / -1;
+    order: 10;
+    margin-top: -4px;
+}
+
+@media (min-width: 1025px) {
+    /* never push the title up under the header when the column is taller than the screen */
+    .hero-content-left {
+        justify-content: safe center;
+        padding: 0 3rem;
+    }
+    .hero-actions {
+        gap: 0.75rem;
+    }
+    .hero-actions .btn {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+        font-size: 0.82rem;
+    }
+}
+
+/* Short laptop screens (768px and less): one paragraph of text so both buttons stay on screen */
+@media (min-width: 1025px) and (max-height: 860px) {
+    .hero-about-text .about-text[data-i18n="about.desc2"] {
+        display: none;
+    }
+}

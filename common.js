@@ -138,16 +138,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const target = e.target.closest('a');
         if (!target) return;
         
+        const href = target.getAttribute('href') || '';
         if (target.id === 'hero-quote-btn') {
             window.trackEvent('open_form', { source: 'hero' });
-        } else if (target.id === 'hero-whatsapp-btn') {
-            window.trackEvent('whatsapp_click', { source: 'hero' });
-        } else if (target.classList.contains('whatsapp')) {
-            window.trackEvent('whatsapp_click', { source: 'footer' });
-        } else if (target.getAttribute('href') === '#contact' || target.getAttribute('href') === 'index.html#contact') {
-            if (target.closest('.site-header')) {
-                window.trackEvent('open_form', { source: 'header' });
-            }
+        } else if (href.includes('wa.me/')) {
+            // Contact links only; the footer WhatsApp *share* icon is counted as social_click
+            window.trackEvent('whatsapp_click', { source: target.dataset.source || (target.id === 'hero-whatsapp-btn' ? 'hero' : 'other') });
+        } else if (href.startsWith('tel:')) {
+            window.trackEvent('phone_click', { source: target.dataset.source || 'other' });
+        } else if (href.startsWith('mailto:')) {
+            window.trackEvent('email_click', { source: target.dataset.source || 'other' });
+        } else if (href.endsWith('#contact') && target.closest('.site-header')) {
+            window.trackEvent('open_form', { source: 'header' });
         }
     });
 
@@ -161,15 +163,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // A section counts as seen once 30% of it, or half the screen, is showing; sections taller
+    // than ~3 screens (the catalog on phones) could never reach 30% and were never counted
     const sectionObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
+            if (entry.isIntersecting && (entry.intersectionRatio >= 0.3 || entry.intersectionRect.height >= window.innerHeight * 0.5)) {
                 const sectionName = entry.target.id || entry.target.className.split(' ')[0];
                 window.trackEvent('section_view', { section_name: sectionName });
                 sectionObserver.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.3 });
+    }, { threshold: Array.from({ length: 21 }, (_, i) => i / 20) });
 
     document.querySelectorAll('section').forEach(section => {
         sectionObserver.observe(section);
@@ -204,6 +208,19 @@ document.addEventListener('DOMContentLoaded', () => {
         shareLinks.forEach(link => link.addEventListener('click', () => window.trackEvent('social_click', { platform: link.title })));
     };
     initSocialSharing();
+
+    // Floating WhatsApp button on every page, so contact is one tap away wherever the visitor is
+    if (!document.querySelector('.wa-float')) {
+        const wa = document.createElement('a');
+        wa.className = 'wa-float';
+        wa.href = 'https://wa.me/34685245506';
+        wa.target = '_blank';
+        wa.rel = 'noopener';
+        wa.dataset.source = 'floating';
+        wa.setAttribute('aria-label', 'WhatsApp');
+        wa.innerHTML = '<svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.432 5.628 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>';
+        document.body.appendChild(wa);
+    }
 });
 let activeDatePicker = null;
 
@@ -723,7 +740,23 @@ class QuoteFormsManager {
     }
 
     validateEmail(e) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e); }
-    validateSpanishPhone(p) { return /^(\+34|0034|34)?[6789]\d{8}$/.test(p.replace(/\s+/g, '')); }
+    // Any country: spaces, dashes, dots and brackets are ignored, 7–15 digits with an optional + / 00 prefix
+    validatePhone(p) { return /^(\+|00)?\d{7,15}$/.test(p.replace(/[\s\-.()\/]/g, '')); }
+    markFieldError(field, msg) {
+        field.classList.add('is-invalid');
+        let err = field.parentElement.querySelector('.field-error');
+        if (!err) {
+            err = document.createElement('span');
+            err.className = 'field-error';
+            field.insertAdjacentElement('afterend', err);
+        }
+        err.textContent = msg;
+        field.focus();
+        field.addEventListener('input', () => {
+            field.classList.remove('is-invalid');
+            err.remove();
+        }, { once: true });
+    }
     formatCartItems(items) {
         if (!items || items.length === 0) return '';
         const currentLang = window.currentLang || 'es';
@@ -771,6 +804,8 @@ class QuoteFormsManager {
         const headerQuoteBtns = document.querySelectorAll('.btn-primary[data-i18n="btn.getQuote"]');
         headerQuoteBtns.forEach(btn => {
             btn.addEventListener('click', (e) => {
+                // Pages without the modal (privacy, 404) follow the link to the home page form
+                if (!document.getElementById('general-quote-modal')) return;
                 e.preventDefault();
                 this.openGeneralQuoteModal();
             });
@@ -890,9 +925,19 @@ class QuoteFormsManager {
     }
     async handleFormSubmit(form, subject, extraData = {}) {
         const btn = form.querySelector('button[type="submit"]'), original = btn.textContent;
-        const email = form.querySelector('[type="email"]')?.value, phone = form.querySelector('[type="tel"]')?.value;
-        if (email && !this.validateEmail(email)) return this.showError(this.t('quote.validation.email'));
-        if (phone && !this.validateSpanishPhone(phone)) return this.showError(this.t('quote.validation.phone'));
+        const emailField = form.querySelector('[type="email"]'), phoneField = form.querySelector('[type="tel"]');
+        const email = emailField?.value.trim(), phone = phoneField?.value.trim();
+        window.trackEvent('form_submit_attempt', { form_id: form.id });
+        if (email && !this.validateEmail(email)) {
+            window.trackEvent('form_validation_error', { form_id: form.id, field_name: 'email' });
+            this.markFieldError(emailField, this.t('quote.validation.email'));
+            return this.showError(this.t('quote.validation.email'));
+        }
+        if (phone && !this.validatePhone(phone)) {
+            window.trackEvent('form_validation_error', { form_id: form.id, field_name: 'phone' });
+            this.markFieldError(phoneField, this.t('quote.validation.phone'));
+            return this.showError(this.t('quote.validation.phone'));
+        }
         const fd = new FormData(form);
         fd.append('access_key', this.accessKey);
         fd.append('subject', subject);
@@ -921,6 +966,7 @@ class QuoteFormsManager {
         finally { btn.textContent = original; btn.disabled = false; }
     }
     async handleContactFormSubmit(form) { await this.handleFormSubmit(form, 'Contact Form - UPSTAGE MADRID'); }
+    async handleQuickFormSubmit(form) { await this.handleFormSubmit(form, 'Quick Call Request - UPSTAGE MADRID'); }
     async handleGeneralQuoteSubmit(form) { await this.handleFormSubmit(form, 'General Quote Request - UPSTAGE MADRID'); }
     async handleCartQuoteSubmit(form) {
         const items = window.cartManager.getItems(), text = this.formatCartItems(items);
@@ -946,6 +992,13 @@ document.addEventListener('DOMContentLoaded', () => {
         generalQuoteForm.addEventListener('submit', (e) => {
             e.preventDefault();
             window.quoteFormsManager.handleGeneralQuoteSubmit(generalQuoteForm);
+        });
+    }
+    const quickForm = document.getElementById('quick-form');
+    if (quickForm) {
+        quickForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            window.quoteFormsManager.handleQuickFormSubmit(quickForm);
         });
     }
     const cartQuoteForm = document.getElementById('cart-quote-form');
