@@ -1066,6 +1066,125 @@ body.loaded .carousel-track .track-inner {
     margin-top: -4px;
 }
 
+/* Desktop: a full-width band lined up with the catalog below, not a small floating card */
+@media (min-width: 1025px) {
+    .quick-request-section {
+        padding: 3rem 0 1.5rem;
+    }
+    .quick-request-section .container {
+        max-width: 95%;
+        padding: 0 var(--spacing-md);
+    }
+    .quick-request {
+        position: relative;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.25rem;
+        padding: 1.75rem 2rem 2rem 2.25rem;
+        border-radius: 12px;
+        border-color: rgba(255, 255, 255, 0.12);
+        background:
+            linear-gradient(100deg, rgba(153, 27, 27, 0.34) 0%, rgba(153, 27, 27, 0.1) 40%, rgba(153, 27, 27, 0) 75%),
+            #121212;
+    }
+    .quick-request::before {
+        content: '';
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 3px;
+        background: var(--primary-hover);
+        box-shadow: 0 0 28px 2px var(--primary-hover-glow);
+    }
+    .quick-request-text {
+        max-width: none;
+        display: flex;
+        align-items: baseline;
+        gap: 1.25rem;
+    }
+    .quick-request-title {
+        font-size: 2rem;
+        margin-bottom: 0;
+        white-space: nowrap;
+    }
+    .quick-request-subtitle {
+        color: #cfcfcf;
+        font-size: 1.05rem;
+    }
+    .quick-form {
+        grid-template-columns: 1fr 1fr 1.7fr auto;
+        align-items: stretch;
+    }
+    .quick-form .quote-form-input {
+        min-height: 56px;
+        padding: 14px 18px;
+        border-radius: 6px;
+        background: rgba(0, 0, 0, 0.45);
+        border-color: rgba(255, 255, 255, 0.16);
+    }
+    .quick-form .quote-form-input:focus {
+        background: rgba(0, 0, 0, 0.6);
+    }
+    .quick-form .btn {
+        min-height: 56px;
+        height: auto;
+        padding: 0 2.25rem;
+        border-radius: 6px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Small laptops: tighten things so the placeholders are not cut off */
+@media (min-width: 1025px) and (max-width: 1199px) {
+    .quick-request {
+        padding: 1.5rem 1.5rem 1.75rem 1.75rem;
+    }
+    .quick-request-title {
+        font-size: 1.75rem;
+    }
+    .quick-request-subtitle {
+        font-size: 1rem;
+    }
+    .quick-form {
+        grid-template-columns: 1fr 1.1fr 1.85fr auto;
+        gap: 10px;
+    }
+    .quick-form .quote-form-input {
+        padding: 14px 12px;
+        font-size: 0.95rem;
+    }
+    .quick-form .btn {
+        padding: 0 1.25rem;
+    }
+}
+
+/* Wide screens: text on the left, form on the right, all in one row */
+@media (min-width: 1600px) {
+    .quick-request {
+        flex-direction: row;
+        align-items: center;
+        gap: 3rem;
+        padding: 2rem 2.25rem 2rem 2.75rem;
+    }
+    .quick-request-text {
+        flex: 0 0 360px;
+        display: block;
+    }
+    .quick-request-title {
+        margin-bottom: 0.4rem;
+    }
+}
+
+/* Very wide screens have room to keep the subtitle on one line */
+@media (min-width: 2000px) {
+    .quick-request-text {
+        flex-basis: auto;
+    }
+    .quick-request-subtitle {
+        white-space: nowrap;
+    }
+}
+
 @media (min-width: 1025px) {
     /* never push the title up under the header when the column is taller than the screen */
     .hero-content-left {
