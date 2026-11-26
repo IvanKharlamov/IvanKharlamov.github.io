@@ -2605,6 +2605,78 @@ body.scroll-locked .wa-float {
     }
 }
 
+/* Small cookie banner: bottom-right, beside the WhatsApp button, clear of the hero's call-to-action buttons */
+.cookie-banner {
+    position: fixed;
+    right: 90px;
+    bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+    z-index: 900;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 14px 16px;
+    background: #161616;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.55);
+    font-size: 0.85rem;
+    line-height: 1.45;
+    color: #d6d6d6;
+}
+
+.cookie-banner-text {
+    margin: 0;
+}
+
+.cookie-banner a {
+    color: #fff;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+.cookie-banner-actions {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.cookie-banner .btn {
+    padding: 0.5rem 1.1rem;
+    font-size: 0.78rem;
+}
+
+.cookie-banner .cookie-reject {
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #e4e4e4;
+}
+
+.cookie-banner .cookie-reject:hover {
+    border-color: #fff;
+    color: #fff;
+}
+
+body.scroll-locked .cookie-banner {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .cookie-banner {
+        left: 10px;
+        right: 76px;
+        max-width: none;
+        bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+        padding: 12px;
+        gap: 10px;
+        font-size: 0.8rem;
+    }
+    .cookie-banner .btn {
+        flex: 1;
+        padding: 0.5rem 0.6rem;
+    }
+}
+
 .quote-form-input.is-invalid,
 .quote-form-textarea.is-invalid {
     border-color: #ef4444;

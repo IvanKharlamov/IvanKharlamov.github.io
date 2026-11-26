@@ -10,7 +10,7 @@
 	<link rel="icon" type="image/svg+xml" href="favicon.svg">
 	<link rel="icon" type="image/x-icon" href="favicon.ico" sizes="any">
 	<link rel="apple-touch-icon" href="apple.png">
-    <link rel="stylesheet" href="common.css?v=20261123a">
+    <link rel="stylesheet" href="common.css?v=20261126a">
 
     <link rel="stylesheet" href="index.css?v=20261126a">
 	<script type="application/ld+json">
@@ -45,6 +45,11 @@
 	<script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
+	  // Consent Mode: analytics and ad cookies stay off until the visitor accepts the cookie banner
+	  var cookieChoice = null;
+	  try { cookieChoice = localStorage.getItem('upstage_cookies'); } catch (e) {}
+	  var cookieState = cookieChoice === 'granted' ? 'granted' : 'denied';
+	  gtag('consent', 'default', { analytics_storage: cookieState, ad_storage: cookieState, ad_user_data: cookieState, ad_personalization: 'denied' });
 	  gtag('js', new Date());
 	  gtag('config', 'G-31W1NNSBL4');
 	  // Analytics loads once the page is ready (or on the first interaction), so it never
@@ -1228,11 +1233,11 @@
 
     
 
-    <script src="translations.js?v=20261126a"></script>
+    <script src="translations.js?v=20261126b"></script>
     <script src="products.js?v=20261104c"></script>
     <script src="catalog_atlas.js?v=20261104a"></script>
 
-    <script src="common.js?v=20261126a"></script>
+    <script src="common.js?v=20261126b"></script>
 
     <script src="index.js?v=20261104a"></script>
 

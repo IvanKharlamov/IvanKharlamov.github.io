@@ -514,8 +514,8 @@
   },
   "privacy.cookies.title": { "en": "Local Storage & Cookies", "es": "Almacenamiento Local y Cookies" },
   "privacy.cookies.desc": { 
-    "en": "We use your browser's Local Storage to save your language preference (`upstage_lang`) and cart data (`upstage_cart`). We do not use tracking or third-party marketing cookies.",
-    "es": "Utilizamos el Almacenamiento Local de tu navegador para guardar tu preferencia de idioma (`upstage_lang`) y los datos del carrito (`upstage_cart`). No utilizamos cookies de rastreo ni de marketing de terceros."
+    "en": "We use your browser's Local Storage to save your language preference (`upstage_lang`), cart data (`upstage_cart`) and your cookie choice (`upstage_cookies`). Only if you accept, Google Analytics uses cookies to measure visits to the site and the performance of our Google advertising. We do not use cookies for personalised advertising.",
+    "es": "Utilizamos el Almacenamiento Local de tu navegador para guardar tu preferencia de idioma (`upstage_lang`), los datos del carrito (`upstage_cart`) y tu elección sobre las cookies (`upstage_cookies`). Solo si aceptas, Google Analytics utiliza cookies para medir las visitas al sitio y el rendimiento de nuestra publicidad en Google. No utilizamos cookies para publicidad personalizada."
   },
   "privacy.howWeUse.title": { "en": "How We Use Your Information", "es": "Cómo Usamos tu Información" },
   "privacy.howWeUse.desc": { 
@@ -543,4 +543,11 @@
   "quick.phone": { "en": "Phone / WhatsApp", "es": "Teléfono / WhatsApp" },
   "quick.need": { "en": "What do you need? (date, type of event)", "es": "Qué necesitas? (fecha, tipo de evento)" },
   "quick.submit": { "en": "Request a call", "es": "Pedir llamada" },
+  "cookie.text": {
+    "en": "We use analytics cookies to measure visits and our advertising.",
+    "es": "Usamos cookies de analítica para medir las visitas y nuestra publicidad."
+  },
+  "cookie.more": { "en": "Learn more", "es": "Más información" },
+  "cookie.accept": { "en": "Accept", "es": "Aceptar" },
+  "cookie.reject": { "en": "Reject", "es": "Rechazar" },
 }
