@@ -1672,8 +1672,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Packs is the default category on every screen size
-    const defaultChip = document.getElementById('cat-packs');
+    // A category can be preselected from the address (inventory.html?cat=sound), so ads and
+    // links can open it directly. Without it, Packs is the default on every screen size.
+    const urlCat = new URLSearchParams(window.location.search).get('cat');
+    const defaultChip = (urlCat && /^[a-z]+$/.test(urlCat) && document.getElementById(`cat-${urlCat}`))
+        || document.getElementById('cat-packs');
     if (defaultChip) {
         defaultChip.checked = true;
         activeFilters.category = [defaultChip.dataset.category];
