@@ -212,7 +212,7 @@
   },
   "pricing.title": {
     "en": "Automatic Multi-Day Discount",
-    "es": "Descuento automático por varios días"
+    "es": "Descuento por alquiler de varios días"
   },
   "pricing.day1": {
     "en": "1 Day: Standard rate",
@@ -565,7 +565,7 @@
     "en": "Delivery, setup and a technician if you need them",
     "es": "Entrega, montaje y técnico si los necesitas"
   },
-  "landing.sound.benefit3": { "en": "Automatic multi-day discount", "es": "Descuento automático por varios días" },
+  "landing.sound.benefit3": { "en": "Discount on multi-day rentals", "es": "Descuento por alquiler de varios días" },
   "landing.sound.benefit4": {
     "en": "Over a decade of experience in live production",
     "es": "Más de una década de experiencia en producción en vivo"
@@ -573,8 +573,8 @@
   "landing.sound.pricesTitle": { "en": "Day rates", "es": "Precios por día" },
   "landing.sound.from": { "en": "from", "es": "desde" },
   "landing.sound.pricesNote": {
-    "en": "Day rate of the lowest-priced item in each group.",
-    "es": "Precio por día del artículo más económico de cada grupo."
+    "en": "The price depends on the model. The full catalogue is below.",
+    "es": "El precio depende del modelo. Tienes el catálogo completo más abajo."
   },
   "landing.sound.group.mixers": { "en": "Mixing consoles", "es": "Mesas de mezclas" },
   "landing.sound.group.dj": { "en": "DJ gear", "es": "Equipo DJ" },
