@@ -579,10 +579,10 @@
   "landing.sound.group.mixers": { "en": "Mixing consoles", "es": "Mesas de mezclas" },
   "landing.sound.group.dj": { "en": "DJ gear", "es": "Equipo DJ" },
   "landing.sound.group.packs": { "en": "Event packs", "es": "Packs para eventos" },
-  "landing.sound.catalogTitle": { "en": "Catalog with day rates", "es": "Catálogo con precios por día" },
+  "landing.sound.catalogTitle": { "en": "Sound equipment for hire", "es": "Equipos de sonido en alquiler" },
   "landing.sound.catalogSubtitle": {
-    "en": "It opens on Sound. Switch category if you also need microphones, mixing consoles, DJ gear or lighting.",
-    "es": "Se abre en Sonido. Cambia de categoría si también necesitas micrófonos, mesas de mezclas, DJ o iluminación."
+    "en": "Prices are per day. Add what you need to your quote; the other categories have microphones, mixing consoles, DJ gear and lighting.",
+    "es": "Precios por día. Añade lo que necesitas a tu presupuesto; en las demás categorías tienes micrófonos, mesas de mezclas, equipo DJ e iluminación."
   },
   "landing.sound.stepsTitle": { "en": "How it works", "es": "Cómo funciona" },
   "landing.sound.step1.title": { "en": "Tell us what you need", "es": "Cuéntanos qué necesitas" },
