@@ -286,7 +286,7 @@
   },
   "toast.itemAdded": {
     "en": "Item added to quote!",
-    "es": "¡Artículo añadido al presupuesto!"
+    "es": "Artículo añadido al presupuesto!"
   },
   "toast.emptyQuote": {
     "en": "Your quote is empty. Add items to request a quote.",
@@ -294,11 +294,11 @@
   },
   "toast.quoteSubmitted": {
     "en": "Quote Request Submitted Successfully! We will contact you shortly.",
-    "es": "¡Solicitud de Presupuesto Enviada! Te contactaremos pronto."
+    "es": "Solicitud de Presupuesto Enviada! Te contactaremos pronto."
   },
 	"review.1.quote": {
 	  "en": "UPSTAGE PROD has been working with Autopia Festival for more than 3 years now. Their technical production is always top-tier, and the flawless integration of light and sound is simply unmatched. A highly recommended, professional team!",
-	  "es": "Llevamos trabajando con UPSTAGE PROD más de 3 años para el festival Autopia y siempre ofrecen resultados de primer nivel. Su experiencia técnica, sus equipos de última generación y su ejecución impecable los convierten en un socio incalculable. ¡Totalmente recomendados!"
+	  "es": "Llevamos trabajando con UPSTAGE PROD más de 3 años para el festival Autopia y siempre ofrecen resultados de primer nivel. Su experiencia técnica, sus equipos de última generación y su ejecución impecable los convierten en un socio incalculable. Totalmente recomendados!"
 	},
 	"review.2.quote": {
 	  "en": "We ordered some audio equipment and they are simply great!! Incredible sound and build quality, a large selection and hassle-free delivery. Very, very satisfied!",
@@ -314,7 +314,7 @@
 	},
 	"review.5.quote": {
 	  "en": "Super professional. Their equipment is amazing and the service simply fantastic. Everything went perfectly!",
-	  "es": "Súper profesionales. Sus equipos son increíbles y el servicio sencillamente fantástico. ¡Todo salió perfecto!"
+	  "es": "Súper profesionales. Sus equipos son increíbles y el servicio sencillamente fantástico. Todo salió perfecto!"
 	},
 	"review.6.quote": {
 	  "en": "High professional team, and the best prices for sound and light equipment rental.",
@@ -326,7 +326,7 @@
 	},
 	"review.9.quote": {
 	  "en": "A great experience recording a DJ set. They helped us with the whole setup: sound, lights, cameras and recording. Everything went wonderfully. 100% recommended!",
-	  "es": "Una experiencia genial grabando un DJ set. Nos ayudaron con todo el montaje: sonido, luces, cámaras y grabación. Todo salió de maravilla. ¡100% recomendables!"
+	  "es": "Una experiencia genial grabando un DJ set. Nos ayudaron con todo el montaje: sonido, luces, cámaras y grabación. Todo salió de maravilla. 100% recomendables!"
 	},
 	"review.10.quote": {
 	  "en": "A very professional team and a good selection of equipment to set up sound and lights for events of any size. Ivan is a fantastic sound engineer, we will work with them again.",
@@ -457,7 +457,7 @@
   },
   "quote.success.title": {
     "en": "Quote Request Sent!",
-    "es": "¡Solicitud Enviada!"
+    "es": "Solicitud Enviada!"
   },
   "quote.success.message": {
     "en": "Thank you for your request. We will contact you shortly with a personalized quote.",
@@ -534,13 +534,13 @@
   },
   "404.back": { "en": "Back to Home", "es": "Volver al Inicio" },
   "btn.whatsapp": { "en": "Contact on WhatsApp", "es": "Contactar por WhatsApp" },
-  "quick.title": { "en": "Planning an event?", "es": "¿Tienes un evento?" },
+  "quick.title": { "en": "Planning an event?", "es": "Tienes un evento?" },
   "quick.subtitle": {
-    "en": "Leave your phone number and we'll call you back with a quote.",
-    "es": "Déjanos tu teléfono y te llamamos con un presupuesto."
+    "en": "Leave your phone number and we'll call you back with a no-obligation quote.",
+    "es": "Déjanos tu teléfono y te llamamos con un presupuesto sin compromiso."
   },
   "quick.name": { "en": "Your name", "es": "Tu nombre" },
   "quick.phone": { "en": "Phone / WhatsApp", "es": "Teléfono / WhatsApp" },
-  "quick.need": { "en": "What do you need? (date, type of event)", "es": "¿Qué necesitas? (fecha, tipo de evento)" },
+  "quick.need": { "en": "What do you need? (date, type of event)", "es": "Qué necesitas? (fecha, tipo de evento)" },
   "quick.submit": { "en": "Request a call", "es": "Pedir llamada" },
 }
