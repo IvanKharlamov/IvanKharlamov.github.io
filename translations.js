@@ -212,7 +212,7 @@
   },
   "pricing.title": {
     "en": "Automatic Multi-Day Discount",
-    "es": "Descuento por alquiler de varios días"
+    "es": "Descuento automático por varios días"
   },
   "pricing.day1": {
     "en": "1 Day: Standard rate",
