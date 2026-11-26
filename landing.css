@@ -1,0 +1,510 @@
+/* ==========================================================================
+   Ad landing page (alquiler-sonido.html): hero with the quick request, "prices
+   from" tiles, how-it-works strip and the closing call to action.
+   Header, footer, buttons, form fields, catalog and modals come from common.css.
+   ========================================================================== */
+.lp {
+    --lp-price: #6fcf8f; /* the green the catalog cards use for prices */
+}
+
+/* Same width and side padding as .container-wide, so every block lines up with the catalog */
+.lp-container {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+/* ---------- Hero: title, quick request + WhatsApp, benefits, prices ---------- */
+.lp-hero {
+    /* 87px is the height of the fixed header at the top of the page */
+    padding: calc(87px + clamp(1.25rem, 4.5vh, 3rem)) 0 clamp(2rem, 6vh, 4rem);
+    background:
+        radial-gradient(70rem 32rem at 10% 0%, rgba(153, 27, 27, 0.28), transparent 70%),
+        #000;
+}
+
+.lp-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+    gap: clamp(2rem, 4vw, 4.5rem);
+    align-items: start;
+}
+
+.lp-title {
+    font-size: clamp(2.25rem, 3.1vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.08;
+    text-wrap: balance;
+    margin-bottom: 0.75rem;
+}
+
+.lp-subtitle {
+    max-width: 38em;
+    margin-bottom: 1.5rem;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    text-wrap: balance;
+    color: #d2d2d2;
+}
+
+/* Quick request card. The form keeps the home page markup (#quick-form, handled by
+   common.js); its fields and button are laid out on the card's own grid so the
+   WhatsApp button sits right next to the submit button. */
+.lp-contact {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+    gap: 10px;
+    padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+    border-radius: 12px;
+    border-color: rgba(255, 255, 255, 0.12);
+    background:
+        linear-gradient(100deg, rgba(153, 27, 27, 0.34) 0%, rgba(153, 27, 27, 0.1) 45%, rgba(153, 27, 27, 0) 80%),
+        #121212;
+}
+
+.lp-contact::before {
+    content: '';
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 3px;
+    background: var(--primary-hover);
+    box-shadow: 0 0 28px 2px var(--primary-hover-glow);
+}
+
+.lp-contact .quick-form {
+    display: contents;
+}
+
+.lp-contact > *,
+.lp-contact .quick-form > * {
+    grid-column: span 5;
+}
+
+.lp-contact .lp-contact-title,
+.lp-contact .quick-form-need,
+.lp-contact .field-error {
+    grid-column: 1 / -1;
+}
+
+.lp-contact-title {
+    margin-bottom: 2px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+/* `input`, not the field class: the focus, valid and invalid states from common.css must still win */
+.lp-contact input {
+    min-height: 52px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.45);
+    border-color: rgba(255, 255, 255, 0.16);
+    text-overflow: ellipsis;
+}
+
+.lp-contact input:focus {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.lp-contact .btn {
+    min-height: 52px;
+    padding: 0.5rem 0.9rem;
+    border-radius: 6px;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.lp-contact .btn svg {
+    flex: 0 0 auto;
+}
+
+.lp-contact .field-error {
+    order: 10;
+    margin-top: -4px;
+}
+
+.lp-benefits {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.6rem 1.75rem;
+    margin-top: 1.4rem;
+}
+
+.lp-benefits li {
+    position: relative;
+    padding-left: 1.75rem;
+    font-size: 0.98rem;
+    line-height: 1.4;
+    text-wrap: balance;
+    color: #e4e4e4;
+}
+
+.lp-benefits li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.12em;
+    width: 1.15rem;
+    height: 1.15rem;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236fcf8f' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+
+/* "Prices from" tiles: landing.js fills in the lowest day rate of each group and
+   only then shows the block */
+.lp-prices[hidden] {
+    display: none;
+}
+
+.lp-prices-title {
+    font-size: 1.35rem;
+    margin-bottom: 0.9rem;
+}
+
+.lp-price-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.lp-price-tile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.4rem;
+    /* compact on short laptop screens, so the block ends above the cookie banner */
+    min-height: clamp(84px, 13vh, 104px);
+    padding: 13px 38px 13px 18px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.lp-price-tile::after {
+    content: '';
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid var(--text-muted);
+    border-right: 2px solid var(--text-muted);
+    transform: rotate(45deg);
+    transition: border-color var(--transition-fast);
+}
+
+.lp-price-tile:hover {
+    border-color: var(--primary-hover);
+    background: rgba(255, 255, 255, 0.07);
+    transform: translateY(-2px);
+}
+
+.lp-price-tile:hover::after {
+    border-color: #fff;
+}
+
+.lp-price-name {
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.lp-price-line,
+.lp-price-line span {
+    font-size: 0.95rem;
+    line-height: 1.2;
+    color: var(--text-muted);
+}
+
+.lp-price-line strong {
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+    color: var(--lp-price);
+}
+
+.lp-prices-note {
+    margin-top: 0.8rem;
+    font-size: 0.82rem;
+    line-height: 1.4;
+    color: var(--text-muted);
+}
+
+/* ---------- Catalog (markup and behaviour are the shared ones) ---------- */
+/* The next block is a short strip, not a full section: half the gap the home page leaves */
+.lp .catalog-embed {
+    padding-bottom: var(--spacing-lg);
+}
+
+/* ---------- How it works ---------- */
+.lp-steps {
+    padding: var(--spacing-lg) 0;
+    background: linear-gradient(to bottom, var(--bg-color), #000);
+}
+
+.lp-steps-grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 2.5rem;
+    counter-reset: lp-step;
+}
+
+.lp-step {
+    padding: 28px;
+    background: rgba(255, 255, 255, 0.03);
+    counter-increment: lp-step;
+}
+
+.lp-step::before {
+    content: counter(lp-step);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    margin-bottom: 18px;
+    border-radius: 50%;
+    background: var(--primary);
+    box-shadow: 0 0 20px var(--primary-glow);
+    font-size: 1.1rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.lp-step h3 {
+    font-size: 1.35rem;
+    margin-bottom: 0.5rem;
+}
+
+.lp-step p {
+    font-size: 1rem;
+    line-height: 1.55;
+    color: var(--text-muted);
+}
+
+/* ---------- Closing call to action ---------- */
+.lp-cta {
+    padding: var(--spacing-lg) 0 5rem;
+    background: #000;
+}
+
+.lp-cta-card {
+    padding: clamp(1.75rem, 4vw, 3.25rem) clamp(1.25rem, 4vw, 3rem);
+    border-radius: 12px;
+    border-color: rgba(255, 255, 255, 0.12);
+    text-align: center;
+    background:
+        radial-gradient(60rem 20rem at 50% 0%, rgba(153, 27, 27, 0.32), transparent 70%),
+        #121212;
+}
+
+.lp-cta-title {
+    font-size: clamp(1.7rem, 2.6vw, 2.5rem);
+    text-wrap: balance;
+    margin-bottom: 0.75rem;
+}
+
+.lp-cta-text {
+    max-width: 40em;
+    margin: 0 auto 1.6rem;
+    font-size: 1.08rem;
+    line-height: 1.55;
+    color: #cfcfcf;
+}
+
+.lp-cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.lp-cta-actions .btn {
+    min-height: 52px;
+    padding: 0.75rem 1.75rem;
+}
+
+.lp-cta-call {
+    margin-top: 1.25rem;
+}
+
+.lp-cta-call,
+.lp-cta-call span {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.lp-cta-call a {
+    font-size: 0.95rem;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+/* ---------- Tablets and small laptops: one column ---------- */
+@media (max-width: 1024px) {
+    .lp-hero-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 2rem;
+    }
+
+    .lp-price-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* ---------- Phones ---------- */
+@media (max-width: 768px) {
+    .lp-container {
+        max-width: 100%;
+        padding: 0 16px;
+    }
+
+    /* common.css only carries the desktop size of the section titles */
+    .lp .section-title {
+        font-size: 2rem;
+    }
+
+    .lp .section-subtitle {
+        margin-bottom: 2rem;
+    }
+
+    .lp-hero {
+        padding: calc(87px + 0.9rem) 0 2.25rem;
+    }
+
+    .lp-title {
+        font-size: clamp(1.7rem, 7.6vw, 2.25rem);
+        margin-bottom: 0.5rem;
+    }
+
+    .lp-subtitle {
+        margin-bottom: 0.9rem;
+        font-size: 0.95rem;
+        line-height: 1.45;
+    }
+
+    /* Both buttons must stay on the first screen, above the cookie banner: tight
+       spacing, name and phone on one row, and the card's caption moved under them */
+    .lp-contact {
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .lp-contact .quick-form > [name="name"] {
+        grid-column: span 4;
+    }
+
+    .lp-contact .quick-form > [name="phone"] {
+        grid-column: span 6;
+    }
+
+    .lp-contact .lp-contact-title {
+        order: 20;
+        margin: 2px 0 0;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-align: center;
+        color: #cfcfcf;
+    }
+
+    .lp-contact input {
+        min-height: 46px;
+        padding: 10px;
+    }
+
+    .lp-contact .btn {
+        min-height: 48px;
+        padding: 0.5rem;
+        font-size: 0.78rem;
+        letter-spacing: 0.3px;
+    }
+
+    .lp-contact .btn svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .lp-benefits {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.45rem;
+        margin-top: 1.1rem;
+    }
+
+    .lp-benefits li {
+        font-size: 0.92rem;
+    }
+
+    .lp-price-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .lp-price-tile {
+        min-height: 86px;
+        padding: 12px 28px 12px 12px;
+    }
+
+    .lp-price-tile::after {
+        top: 16px;
+        right: 12px;
+    }
+
+    .lp-price-tile:hover {
+        transform: none;
+    }
+
+    .lp-price-name {
+        font-size: 0.95rem;
+    }
+
+    .lp-price-line strong {
+        font-size: 1.2rem;
+    }
+
+    .lp-steps {
+        padding: 3rem 0;
+    }
+
+    .lp-steps-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+        margin-top: 1.5rem;
+    }
+
+    /* number on the left, text on the right */
+    .lp-step {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        column-gap: 14px;
+        padding: 18px;
+    }
+
+    .lp-step::before {
+        grid-row: span 2;
+        width: 38px;
+        height: 38px;
+        margin-bottom: 0;
+    }
+
+    .lp-step h3 {
+        font-size: 1.15rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .lp-step p {
+        font-size: 0.95rem;
+    }
+
+    .lp-cta {
+        padding: 3rem 0 4rem;
+    }
+
+    .lp-cta-actions .btn {
+        flex: 1 1 220px;
+    }
+}

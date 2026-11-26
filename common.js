@@ -6,6 +6,21 @@ window.trackEvent = function(eventName, eventParams) {
         console.log('GA Track:', eventName, eventParams);
     }
 };
+// A copy of every request sent from the site, and a ping when someone taps the phone number,
+// goes to the owner's Telegram through his Google Apps Script web app (which also logs requests
+// to a spreadsheet). E-mail via Web3Forms stays the main channel; this never blocks the visitor.
+const OWNER_WEBHOOK = 'https://script.google.com/macros/s/AKfycbyxrhAJHDFs_tcQWrDKPm_GasP-XoYnhaF2tNw-euQgOLdSLqUhpnGEjsQSnp__AKyO/exec';
+window.notifyOwner = function(payload) {
+    try {
+        fetch(OWNER_WEBHOOK, {
+            method: 'POST',
+            mode: 'no-cors',
+            keepalive: true,
+            headers: { 'Content-Type': 'text/plain' },
+            body: JSON.stringify({ page: window.location.pathname, ...payload, source: 'site', key: 'upstage-site' })
+        }).catch(() => {});
+    } catch (e) { /* nothing to do: the request itself still goes out by e-mail */ }
+};
 document.addEventListener('DOMContentLoaded', () => {
     window.trackEvent('visit_page', { page_path: window.location.pathname });
     const header = document.querySelector('.site-header');
@@ -134,6 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
         toast.querySelector('.toast-close').addEventListener('click', () => { clearTimeout(timeout); remove(); });
     };
     
+    let lastPhonePing = 0;
     document.body.addEventListener('click', (e) => {
         const target = e.target.closest('a');
         if (!target) return;
@@ -146,6 +162,11 @@ document.addEventListener('DOMContentLoaded', () => {
             window.trackEvent('whatsapp_click', { source: target.dataset.source || (target.id === 'hero-whatsapp-btn' ? 'hero' : 'other') });
         } else if (href.startsWith('tel:')) {
             window.trackEvent('phone_click', { source: target.dataset.source || 'other' });
+            // Tell the owner a call may be coming; at most one ping a minute per visitor
+            if (Date.now() - lastPhonePing > 60000) {
+                lastPhonePing = Date.now();
+                window.notifyOwner({ event: 'phone_click' });
+            }
         } else if (href.startsWith('mailto:')) {
             window.trackEvent('email_click', { source: target.dataset.source || 'other' });
         } else if (href.endsWith('#contact') && target.closest('.site-header')) {
@@ -951,6 +972,21 @@ class QuoteFormsManager {
         `;
         container.innerHTML = html;
     }
+    // Every filled field of a form, keyed by its name. Some forms' fields only carry an id
+    // ("cart-quote-phone", "general-quote-org"): those are keyed by the id's last part, so
+    // their contents are sent too instead of being silently left out of the request.
+    collectFields(form) {
+        const fields = {};
+        form.querySelectorAll('input, textarea, select').forEach(el => {
+            if (['submit', 'button', 'file'].includes(el.type)) return;
+            if ((el.type === 'checkbox' || el.type === 'radio') && !el.checked) return;
+            let key = el.name || (el.id || '').replace(/^(general|cart)-quote-/, '');
+            if (key === 'org') key = 'organization';
+            const value = (el.value || '').trim();
+            if (key && value) fields[key] = value;
+        });
+        return fields;
+    }
     async handleFormSubmit(form, subject, extraData = {}) {
         const btn = form.querySelector('button[type="submit"]'), original = btn.textContent;
         const emailField = form.querySelector('[type="email"]'), phoneField = form.querySelector('[type="tel"]');
@@ -966,10 +1002,16 @@ class QuoteFormsManager {
             this.markFieldError(phoneField, this.t('quote.validation.phone'));
             return this.showError(this.t('quote.validation.phone'));
         }
-        const fd = new FormData(form);
+        const fields = { ...this.collectFields(form), ...extraData };
+        // The cart form folds its free-text box into `message` (see handleCartQuoteSubmit)
+        if (extraData.message) delete fields.additional;
+        const fd = new FormData();
+        Object.entries(fields).forEach(([k, v]) => fd.append(k, v));
         fd.append('access_key', this.accessKey);
         fd.append('subject', subject);
-        Object.entries(extraData).forEach(([k, v]) => fd.append(k, v));
+        // Copy to the owner's Telegram; it does not wait for, or depend on, the e-mail below
+        const { source, ...leadFields } = fields;
+        window.notifyOwner({ form: source ? `${subject} · ${source}` : subject, ...leadFields });
         btn.textContent = this.t('quote.form.sending'); btn.disabled = true;
         try {
             const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: fd });
@@ -1673,10 +1715,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // A category can be preselected from the address (inventory.html?cat=sound), so ads and
-    // links can open it directly. Without it, Packs is the default on every screen size.
+    // links can open it directly. A page can also name its own default on the element that
+    // wraps the catalog (data-default-category="sound"); the address still wins over it.
+    // Without either, Packs is the default on every screen size.
+    const chipFor = (cat) => (cat && /^[a-z]+$/.test(cat) && document.getElementById(`cat-${cat}`)) || null;
     const urlCat = new URLSearchParams(window.location.search).get('cat');
-    const defaultChip = (urlCat && /^[a-z]+$/.test(urlCat) && document.getElementById(`cat-${urlCat}`))
-        || document.getElementById('cat-packs');
+    const pageCat = document.getElementById('product-grid').closest('[data-default-category]')?.dataset.defaultCategory;
+    const defaultChip = chipFor(urlCat) || chipFor(pageCat) || document.getElementById('cat-packs');
     if (defaultChip) {
         defaultChip.checked = true;
         activeFilters.category = [defaultChip.dataset.category];

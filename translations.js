@@ -519,8 +519,8 @@
   },
   "privacy.howWeUse.title": { "en": "How We Use Your Information", "es": "Cómo Usamos tu Información" },
   "privacy.howWeUse.desc": { 
-    "en": "The information you provide is exclusively used to respond to your inquiries, provide accurate production quotes, and facilitate event services. We do not sell or share your personal data with any third parties.",
-    "es": "La información que proporcionas se utiliza exclusivamente para responder a tus consultas, proporcionar presupuestos de producción precisos y facilitar los servicios del evento. No vendemos ni compartimos tus datos personales con terceros."
+    "en": "The information you provide is exclusively used to respond to your inquiries, provide accurate production quotes, and facilitate event services. We do not sell or share your personal data with any third parties. To receive and handle your request we use technical providers (Web3Forms for form delivery, and Google and Telegram for internal notifications), which process the data only for that purpose.",
+    "es": "La información que proporcionas se utiliza exclusivamente para responder a tus consultas, proporcionar presupuestos de producción precisos y facilitar los servicios del evento. No vendemos ni compartimos tus datos personales con terceros. Para recibir y gestionar tu solicitud utilizamos proveedores técnicos (Web3Forms para el envío del formulario, y Google y Telegram para avisos internos), que tratan los datos únicamente con ese fin."
   },
   "privacy.contact.title": { "en": "Contact Us", "es": "Contáctanos" },
   "privacy.contact.desc": { 
@@ -550,4 +550,60 @@
   "cookie.more": { "en": "Learn more", "es": "Más información" },
   "cookie.accept": { "en": "Accept", "es": "Aceptar" },
   "cookie.reject": { "en": "Reject", "es": "Rechazar" },
+
+  "landing.sound.title": { "en": "Sound equipment rental in Madrid", "es": "Alquiler de sonido en Madrid" },
+  "landing.sound.subtitle": {
+    "en": "Speakers, microphones, mixing consoles and DJ gear, with day rates shown up front.",
+    "es": "Altavoces, micrófonos, mesas de mezclas y equipo DJ con precios por día a la vista."
+  },
+  "landing.sound.formTitle": {
+    "en": "We'll call you back with a no-obligation quote",
+    "es": "Te llamamos con un presupuesto sin compromiso"
+  },
+  "landing.sound.benefit1": { "en": "Gear tested before every rental", "es": "Equipo probado antes de cada alquiler" },
+  "landing.sound.benefit2": {
+    "en": "Delivery, setup and a technician if you need them",
+    "es": "Entrega, montaje y técnico si los necesitas"
+  },
+  "landing.sound.benefit3": { "en": "Automatic multi-day discount", "es": "Descuento automático por varios días" },
+  "landing.sound.benefit4": {
+    "en": "Over a decade of experience in live production",
+    "es": "Más de una década de experiencia en producción en vivo"
+  },
+  "landing.sound.pricesTitle": { "en": "Day rates", "es": "Precios por día" },
+  "landing.sound.from": { "en": "from", "es": "desde" },
+  "landing.sound.pricesNote": {
+    "en": "Day rate of the lowest-priced item in each group.",
+    "es": "Precio por día del artículo más económico de cada grupo."
+  },
+  "landing.sound.group.mixers": { "en": "Mixing consoles", "es": "Mesas de mezclas" },
+  "landing.sound.group.dj": { "en": "DJ gear", "es": "Equipo DJ" },
+  "landing.sound.group.packs": { "en": "Event packs", "es": "Packs para eventos" },
+  "landing.sound.catalogTitle": { "en": "Catalog with day rates", "es": "Catálogo con precios por día" },
+  "landing.sound.catalogSubtitle": {
+    "en": "It opens on Sound. Switch category if you also need microphones, mixing consoles, DJ gear or lighting.",
+    "es": "Se abre en Sonido. Cambia de categoría si también necesitas micrófonos, mesas de mezclas, DJ o iluminación."
+  },
+  "landing.sound.stepsTitle": { "en": "How it works", "es": "Cómo funciona" },
+  "landing.sound.step1.title": { "en": "Tell us what you need", "es": "Cuéntanos qué necesitas" },
+  "landing.sound.step1.text": {
+    "en": "Date, venue and type of event. Through the form, on WhatsApp or by phone.",
+    "es": "Fecha, lugar y tipo de evento. Por el formulario, por WhatsApp o por teléfono."
+  },
+  "landing.sound.step2.title": { "en": "We send you a quote", "es": "Te enviamos un presupuesto" },
+  "landing.sound.step2.text": {
+    "en": "With the gear itemised and priced. No obligation.",
+    "es": "Con el equipo detallado y su precio. Sin compromiso."
+  },
+  "landing.sound.step3.title": { "en": "Delivery and setup", "es": "Entrega y montaje" },
+  "landing.sound.step3.text": {
+    "en": "We arrange delivery and, if you need it, setup and a technician for the event.",
+    "es": "Coordinamos la entrega y, si lo necesitas, el montaje y un técnico para el evento."
+  },
+  "landing.sound.ctaTitle": { "en": "Need sound for your event?", "es": "Necesitas sonido para tu evento?" },
+  "landing.sound.ctaText": {
+    "en": "Tell us the date, the venue and the type of event and we'll send you a no-obligation quote.",
+    "es": "Dinos la fecha, el lugar y el tipo de evento y te enviamos un presupuesto sin compromiso."
+  },
+  "landing.sound.ctaCall": { "en": "Or call us:", "es": "O llámanos:" },
 }

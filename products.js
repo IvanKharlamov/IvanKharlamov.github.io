@@ -1006,7 +1006,7 @@ window.products = [
         "category": "cat.mics",
         "subcategory": "sub.wired",
         "manufacturer": "Shure",
-        "priceDay": 1.8,
+        "priceDay": 8,
         "image": "img/inventory/refresh/1012.avif",
         "description": {
             "en": "Keep the focus on the voice with a familiar handheld microphone for singers, hosts and speakers. The Shure SM58 is a practical choice for live bands, wedding speeches, panel discussions and everyday stage work.",
